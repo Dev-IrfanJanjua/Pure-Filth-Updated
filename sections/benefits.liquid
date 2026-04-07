@@ -1,0 +1,532 @@
+{% style %}
+
+.section-{{ section.id }}{
+  background: {{ section.settings.section_bg }};
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  position: relative;
+}
+
+.section-{{ section.id }} .page-width{
+    padding-right: 0;
+    position: relative;
+}
+
+.section-{{ section.id }} .benefits-wrapper{
+  display:flex;
+  gap: 50px;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.section-{{ section.id }} .benefits-content{
+      max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.section-{{ section.id }} .benefits-title{
+      margin: 0 0 12px;
+    font-family: 'PP Formula';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: {{ section.settings.text_color }} ;
+}
+
+.section-{{ section.id }} .benefits-subtitle{
+      margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    /* max-width: 531px; */
+    color: {{ section.settings.text_color }} ;
+}
+
+.section-{{ section.id }} .benefits-blocks{
+      display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.section-{{ section.id }} .benefits-block{
+      display: flex;
+    gap: 18px;
+    max-width: calc(50% - 8px);
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.section-{{ section.id }} .benefits-block:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1.02)
+}
+
+.section-{{ section.id }} .benefit-block-icon{
+    max-width: 75px;
+    width: 100%;
+    height: auto;
+}
+
+.section-{{ section.id }} .benefit-block-icon img{
+  width:100%;
+  height: 100%;
+  display:block;
+  object-fit: cover;
+}
+
+.section-{{ section.id }} .benefits-block_title{
+      margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20.8px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.section-{{ section.id }} .benefits-block-subtitle{
+      margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #000;
+}
+
+.section-{{ section.id }} .benefits-button{
+    display: inline-flex;
+    gap: 10px;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 70px;
+    transition: all .3s ease;
+    max-width: fit-content;
+    align-items: center;
+    justify-content: center;
+  background: {{ section.settings.button_bg }};
+}
+
+.section-{{ section.id }} .benefits-btn-text{
+    color: #fff;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.section-{{ section.id }} .benefits-btn-icon{
+  background: {{ section.settings.button_icon_bg }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    border-radius: 60px;
+    transition: all .3s ease;
+}
+
+.section-{{ section.id }} .benefits-button:hover .benefits-btn-icon{
+  transform:translateX(4px);
+}
+
+.section-{{ section.id }} .benefits-btn-icon img{
+      width: 26px;
+    display: block;
+    height: 16px;
+}
+
+.section-{{ section.id }} .benefits-image{
+      max-width: 50%;
+    width: 100%;
+}
+
+.section-{{ section.id }} .benefits-image img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+}
+
+.section-{{ section.id }} .benefits-section-img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.section-{{ section.id }} .benefits-section-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .page-width{
+    padding: 0;
+}
+
+.section-{{ section.id }} .benefits-wrapper{
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.section-{{ section.id }} .benefits-image {
+    max-width: 100%;
+    width: 100%;
+}
+
+.section-{{ section.id }} .benefits-content{
+      max-width: 100%;
+    padding: 0 16px;
+    gap: 16px;
+    align-items: center;
+}
+
+.section-{{ section.id }} .benefits-title {
+    font-size: 32px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-{{ section.id }} .benefits-subtitle {
+    font-size: 16px;
+}
+
+.section-{{ section.id }} .benefits-blocks {
+    gap: 10px;
+}
+
+.section-{{ section.id }} .benefits-block {
+    gap: 12px;
+    max-width: calc(50% - 5px);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.section-{{ section.id }} .benefit-block-icon {
+    max-width: 56px;
+}
+
+.section-{{ section.id }} .benefits-block_title {
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.section-{{ section.id }} .benefits-block-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.section-{{ section.id }} .benefits-section-img-desk{
+    display: none !important;
+}
+
+.section-{{ section.id }} .benefits-section-img-mob{
+    display: block !important;
+}
+
+}
+
+{% endstyle %}
+
+
+<section class="benefits-section section-{{ section.id }}">
+    {% if section.settings.sec_img_desk != blank or section.settings.sec_img_mob != blank %}
+        <div class="benefits-section-img">
+            {% if section.settings.sec_img_desk != blank %}
+                {{ section.settings.sec_img_desk | image_url: width: 1600 | image_tag:
+                    widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                    alt: "image",
+                    class: 'benefits-section-img-desk',
+                    loading: "eager"
+                }}
+            {% endif %}
+            {% if section.settings.sec_img_mob != blank %}
+                {{ section.settings.sec_img_mob | image_url: width: 1600 | image_tag:
+                    widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                    alt: "image",
+                    class: 'benefits-section-img-mob',
+                    style: 'display: none;',
+                    loading: "eager"
+                }}
+            {% endif %}
+        </div>
+    {% endif %}
+  <div class="page-width">
+
+    <div class="benefits-wrapper">
+
+      <div class="benefits-content">
+
+        <div class="benefits-head">
+
+          {% if section.settings.title != blank %}
+          <h2 class="benefits-title">
+            {{ section.settings.title }}
+          </h2>
+          {% endif %}
+
+          {% if section.settings.subtitle != blank %}
+          <p class="benefits-subtitle">
+            {{ section.settings.subtitle }}
+          </p>
+          {% endif %}
+
+        </div>
+
+        {% if section.blocks.size > 0 %}
+        <div class="benefits-blocks">
+
+          {% for block in section.blocks %}
+          <div class="benefits-block" {{ block.shopify_attributes }}>
+
+            {% if block.settings.icon != blank %}
+            <div class="benefit-block-icon">
+              {{ block.settings.icon | image_url: width:200 | image_tag }}
+            </div>
+            {% endif %}
+
+              {% if block.settings.title != blank %}
+              <h3 class="benefits-block_title">
+                {{ block.settings.title | replace: '<p>', '' | replace: '</p>', '' }}
+              </h3>
+              {% endif %}
+
+              {% if block.settings.subtitle != blank %}
+              <p class="benefits-block-subtitle">
+                {{ block.settings.subtitle }}
+              </p>
+              {% endif %}
+
+          </div>
+          {% endfor %}
+
+        </div>
+        {% endif %}
+
+        {% if section.settings.button_text != blank %}
+        <a href="{{ section.settings.button_link }}" class="benefits-button">
+
+          <span class="benefits-btn-text">
+            {{ section.settings.button_text }}
+          </span>
+
+          {% if section.settings.button_icon != blank %}
+          <div class="benefits-btn-icon">
+            {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+          </div>
+          {% endif %}
+
+        </a>
+        {% endif %}
+
+      </div>
+
+
+      {% if section.settings.image != blank %}
+      <div class="benefits-image">
+        {{ section.settings.image | image_url: width:1600 | image_tag }}
+      </div>
+      {% endif %}
+
+
+    </div>
+
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Benefits Section",
+  "settings": [
+
+    {
+      "type": "image_picker",
+      "id": "sec_img_desk",
+      "label": "Section BG Image Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "sec_img_mob",
+      "label": "Section BG Image Mobile"
+    },
+
+    {
+      "type": "color_background",
+      "id": "section_bg",
+      "label": "Section Background"
+    },
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Right Image"
+    },
+
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button Icon"
+    },
+
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#000000"
+    },
+
+    {
+      "type": "color",
+      "id": "button_icon_bg",
+      "label": "Button Icon Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Heading Color",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Bottom Mobile"
+    }
+
+  ],
+
+  "blocks":[
+    {
+      "type":"benefit",
+      "name":"Benefit Block",
+      "settings":[
+
+        {
+          "type":"image_picker",
+          "id":"icon",
+          "label":"Icon"
+        },
+
+        {
+          "type":"richtext",
+          "id":"title",
+          "label":"Title"
+        },
+
+        {
+          "type":"text",
+          "id":"subtitle",
+          "label":"Subtitle"
+        }
+
+      ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Benefits Section",
+      "category":"Custom",
+      "blocks":[
+        {"type":"benefit"},
+        {"type":"benefit"},
+        {"type":"benefit"}
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,168 @@
+.cstm_header {
+    background: #FFFFFF33 !important;
+    /* backdrop-filter: blur(60px); */
+}
+
+.cstm_header:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(60px);
+  z-index:-1;
+}
+
+.cstm_header a.header__nav-link.js-nav-link.text--link {
+    /* color: #fff; */
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 12px 0;
+}
+
+.template--index .cstm_header a.header__nav-link.js-nav-link.text--link{
+    color: #fff;
+}
+
+.cstm_header ul.header__nav-items {
+    gap: 18px;
+}
+
+.cstm_header li.header__utils-item.header__utils-item--search.header__utils-item--mobile {
+    display: none;
+}
+
+.cstm_header li.header__utils-item:not(.header__utils-item--cart) a.header__utils-link.text--link {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px solid #000;
+    padding: 14px 25px;
+    border-radius: 80px;
+}
+
+.template--index .cstm_header li.header__utils-item:not(.header__utils-item--cart) a.header__utils-link.text--link{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a:before,
+.cstm_header li.header__utils-item:not(.header__utils-item--cart) a.header__utils-link.text--link:before{
+    display: none;
+}
+
+.cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile,
+.cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a {
+    padding: 0;
+}
+
+.cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a {
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg {
+    width: 44px;
+    height: 44px;
+}
+
+.cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg path{
+    fill: #000;
+    stroke: #000;
+}
+
+.template--index .cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg path{
+    fill: #fff;
+    stroke: #fff;
+}
+
+
+/* ====== scroll behaviour ======= */
+
+.cstm_header.is-scrolled a.header__nav-link.js-nav-link.text--link{
+    color: #000;
+}
+
+.cstm_header.is-scrolled li.header__utils-item:not(.header__utils-item--cart) a.header__utils-link.text--link {
+    color: #000;
+    border-color: #000;
+}
+
+.cstm_header.is-scrolled li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg path {
+    fill: #000;
+    stroke: #1a1a1a;
+}
+
+
+.cstm_header ul.header__nav-items li.header__nav-item:last-of-type a {
+    padding-inline: 25px;
+    background: #000;
+    color: #fff;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    border-radius: 80px;
+}
+
+.template--index .cstm_header ul.header__nav-items li.header__nav-item:last-of-type a{
+    background: #fff;
+    color: #000;
+}  
+
+.cstm_header.is-scrolled ul.header__nav-items li.header__nav-item:last-of-type a{
+    background: #000;
+    color: #fff;
+}
+
+.cstm_header ul.header__nav-items li.header__nav-item:last-of-type a:before{
+    display: none;
+}
+
+.cstm_header ul.header__nav-items li.header__nav-item.has-dropdown.dropdown > a {
+    display: flex;
+    gap: 6px;
+}
+
+.cstm_header.is-scrolled:after {
+    display: none;
+}
+
+.cstm_header span.cart-count-badge {
+    margin: 0 !important;
+    top: 0;
+    left: auto !important;
+    right: 0px !important;
+}
+
+@media screen and (max-width: 768px){
+
+.cstm_header div.menu-panels ul li a.h4 {
+    font-size: 16px;
+    padding-block: 18px !important;
+    font-weight: 600 !important;
+    font-family: 'GT Cinetype';
+    letter-spacing: 0;
+    line-height: 100%;
+}
+
+.cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a {
+    width: 30px;
+    height: 30px;
+}
+
+}

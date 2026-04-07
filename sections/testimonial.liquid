@@ -1,0 +1,532 @@
+{% style %}
+
+.section-{{ section.id }}{
+  background: {{ section.settings.section_bg }};
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+}
+
+.section-{{ section.id }} .page-width{
+    padding: 0;
+}
+
+.section-{{ section.id }} .testimonial-wrapper{
+  text-align:center;
+}
+
+.section-{{ section.id }} .testimonial-title{
+    font-family: 'PP Formula';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    padding: 0 16px;
+    margin: 0;
+}
+
+.section-{{ section.id }} .testimonial-card{
+  background: {{ section.settings.card_bg }};
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-{{ section.id }} .testimonial-card-img{
+      max-width: 100%;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 3 /2;
+}
+
+.section-{{ section.id }} .testimonial-card-img img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+  border-radius: 6px;
+}
+
+.section-{{ section.id }} .testimonial-stars-img{
+      max-width: 116px;
+    width: 100%;
+    height: auto;
+}
+
+.section-{{ section.id }} .testimonial-stars-img img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+}
+
+.section-{{ section.id }} .testimonial-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.section-{{ section.id }} .testimonial-card-msg{
+      margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #000;
+    text-align: left;
+}
+
+.section-{{ section.id }} .testimonial-card-name{
+      margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.section-{{ section.id }} .swiper-slide {
+    display: flex;
+    height: auto;
+}
+
+.testimonial-reviews-img {
+    max-width: 116px;
+    width: 100%;
+    height: auto;
+}
+
+.testimonial-reviews-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+span.testimonial-reviews-title {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #1e1e1e;
+    margin: 0;
+    text-decoration: underline;
+}
+
+span.testimonial-reviews-subtitle {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #000;
+    margin-top: 8px;
+    display: block;
+}
+
+.testimonial-reviews-head {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+}
+
+.testimonial-wrapper_head {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 12px;
+}
+
+{% if section.settings.title_first %}
+  .testimonial-wrapper_head {
+      flex-direction: column;
+  }
+{% endif %}
+
+.testimonial-stars-img_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+span.testimonial-stars-title {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0;
+    text-decoration-skip-ink: auto;
+    color: #1e1e1e;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .testimonial-title {
+    /* margin-bottom: 24px; */
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.section-{{ section.id }} .testimonial-card {
+    padding: 13px;
+    gap: 16px;
+}
+
+.section-{{ section.id }} .testimonial-stars-img {
+    max-width: 96px;
+    width: 100%;
+    height: auto;
+}
+
+.section-{{ section.id }} .testimonial-card-content {
+    gap: 20px;
+}
+
+.section-{{ section.id }} .testimonial-card-msg {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.section-{{ section.id }} .testimonial-card-name {
+    font-size: 16px;
+}
+
+.section-{{ section.id }} .testimonial-cards {
+    padding-left: 16px;
+}
+
+.testimonial-wrapper_head {
+    margin-bottom: 24px;
+}
+
+span.testimonial-reviews-title {
+    font-size: 18px;
+}
+
+}
+
+{% endstyle %}
+
+
+<section class="testimonial-section section-{{ section.id }}">
+
+  {% comment %} <div class="page-width"> {% endcomment %}
+
+    <div class="testimonial-wrapper">
+
+      <div class="testimonial-wrapper_head">
+        {% if section.settings.title != blank %}
+        <h2 class="testimonial-title">
+          {{ section.settings.title }}
+        </h2>
+        {% endif %}
+
+        {% if section.settings.reviews_title != blank %}
+          <div class="testimonial-reviews-wrapper">
+            <div class="testimonial-reviews-head">
+              {% if section.settings.reviews_img != blank %}
+                <div class="testimonial-reviews-img">
+                  {{ section.settings.reviews_img | image_url: width: 1600 | image_tag:
+                        widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                        alt: "image",
+                        loading: "lazy"
+                    }}
+                </div>
+              {% endif %}
+              {% if section.settings.reviews_title != blank %}
+                <span class="testimonial-reviews-title">
+                  {{ section.settings.reviews_title }}
+                </span>
+              {% endif %}
+            </div>
+            {% if section.settings.reviews_subtitle != blank %}
+              <span class="testimonial-reviews-subtitle">
+                {{ section.settings.reviews_subtitle }}
+              </span>
+            {% endif %}
+          </div>
+        {% endif %}
+
+      </div>
+
+
+      {% if section.blocks.size > 0 %}
+      <div class="testimonial-cards">
+
+        <div class="swiper testimonial-swiper-{{ section.id }}">
+
+          <div class="swiper-wrapper testimonial-swiper">
+
+            {% for block in section.blocks %}
+            <div class="swiper-slide" {{ block.shopify_attributes }}>
+
+              <div class="testimonial-card">
+
+                {% if block.settings.image != blank %}
+                <div class="testimonial-card-img">
+                  {{ block.settings.image | image_url: width: 1600 | image_tag }}
+                </div>
+                {% endif %}
+
+                <div class="testimonial-stars-img_wrapper">
+                  {% if block.settings.stars != blank %}
+                  <div class="testimonial-stars-img">
+                    {{ block.settings.stars | image_url: width: 1000 | image_tag }}
+                  </div>
+                  {% endif %}
+                  {% if block.settings.stars_title != blank %}
+                    <span class="testimonial-stars-title">
+                      {{ block.settings.stars_title }}
+                    </span>
+                  {% endif %}
+                </div>
+
+                <div class="testimonial-card-content">
+
+                  {% if block.settings.message != blank %}
+                  <p class="testimonial-card-msg">
+                    {{ block.settings.message }}
+                  </p>
+                  {% endif %}
+
+                  {% if block.settings.name != blank %}
+                  <p class="testimonial-card-name">
+                    {{ block.settings.name }}
+                  </p>
+                  {% endif %}
+
+                </div>
+
+              </div>
+
+            </div>
+            {% endfor %}
+
+          </div>
+
+        </div>
+
+      </div>
+      {% endif %}
+
+    </div>
+
+  {% comment %} </div> {% endcomment %}
+
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+
+  new Swiper('.testimonial-swiper-{{ section.id }}', {
+
+    slidesPerView: {{ section.settings.slides_per_view }},
+    spaceBetween: 16,
+    loop: true,
+
+    centeredSlides: {{ section.settings.center_slide }},
+
+    speed: 1000,
+
+    breakpoints: {
+
+      0:{
+        slidesPerView: 1.1,
+        centeredSlides: false
+      },
+
+      768:{
+        slidesPerView: {{ section.settings.slides_per_view }}
+      }
+
+    }
+
+  });
+
+});
+</script>
+
+
+
+{% schema %}
+{
+  "name": "Testimonial Slider",
+  "settings": [
+
+    {
+      "type": "checkbox",
+      "id": "title_first",
+      "label": "Display Title First",
+      "default": false
+    },
+    {
+      "type": "color_background",
+      "id": "section_bg",
+      "label": "Section Background"
+    },
+
+    {
+      "type": "color",
+      "id": "card_bg",
+      "label": "Card Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "reviews_img",
+      "label": "Reviews Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "reviews_title",
+      "label": "Reviews Heading"
+    },
+    {
+      "type": "text",
+      "id": "reviews_subtitle",
+      "label": "Reviews Sub Heading"
+    },
+
+    {
+      "type": "range",
+      "id": "slides_per_view",
+      "label": "Slides Per View (Desktop)",
+      "min": 2,
+      "max": 6.5,
+      "step": 0.1,
+      "default": 3.5
+    },
+
+    {
+      "type": "checkbox",
+      "id": "center_slide",
+      "label": "Enable Centered Slides",
+      "default": true
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Bottom Mobile"
+    }
+
+  ],
+
+  "blocks":[
+    {
+      "type":"testimonial",
+      "name":"Testimonial",
+      "settings":[
+
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Customer Image"
+        },
+
+        {
+          "type":"image_picker",
+          "id":"stars",
+          "label":"Stars Image"
+        },
+
+        {
+          "type":"text",
+          "id":"stars_title",
+          "label":"Stars Title"
+        },
+
+        {
+          "type":"textarea",
+          "id":"message",
+          "label":"Testimonial Message"
+        },
+
+        {
+          "type":"text",
+          "id":"name",
+          "label":"Customer Name"
+        }
+
+      ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Testimonial Slider",
+      "category":"Custom",
+      "blocks":[
+        {"type":"testimonial"},
+        {"type":"testimonial"},
+        {"type":"testimonial"},
+        {"type":"testimonial"}
+      ]
+    }
+  ]
+}
+{% endschema %}

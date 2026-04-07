@@ -1,0 +1,73 @@
+{% style %}
+
+.pdp_custom-list-item__image {
+    max-width: 24px;
+    width: 100%;
+    height: auto;
+}
+
+.pdp_custom-list-item__image img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+li.pdp_custom-list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style-type: none;
+}
+
+ul.pdp_custom-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0px 0 24px;
+}
+
+span.pdp_custom-list-item__text {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+@media screen and (max-width: 768px){
+  ul.pdp_custom-list {
+    margin-bottom: 16px;
+}
+}
+
+{% endstyle %}
+
+
+<ul class="pdp_custom-list">
+
+  {% for i in (1..5) %}
+    {% assign item_key = 'list_item_' | append: i %}
+    {% assign item_text = block.settings[item_key] %}
+
+    {% if item_text != blank %}
+      <li class="pdp_custom-list-item">
+        <div class="pdp_custom-list-item__image">
+          {{ block.settings.list_icon | image_url: width: 1600 | image_tag:
+            widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+            alt: "image",
+            loading: "lazy"
+          }}
+        </div>
+        <span class="pdp_custom-list-item__text">
+          {{ item_text }}
+        </span>
+      </li>
+    {% endif %}
+  {% endfor %}
+
+</ul>

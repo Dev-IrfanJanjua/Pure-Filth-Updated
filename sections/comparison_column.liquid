@@ -1,0 +1,835 @@
+<section class="comparison-section dental-comapre">
+ <div class="page-width">
+    {% if section.settings.tab_text != blank %}
+      <div class="dental-section-tab">
+        {{ section.settings.tab_text }}
+      </div>
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h2 class="dental-heading">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+      
+  <div class="comparison-wrapper">
+    <!-- LEFT CONTENT -->
+   
+
+    <!-- RIGHT TABLE -->
+    <div class="comparison-right  dekstop">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'text_column' %}
+            <div class="comparison-col text-col">
+              <div class="comparison-cell cs-cell">
+                {% if block.settings.row_1 != blank %}{{ block.settings.row_1 }}{% endif %}
+              </div>
+              <div class="comparison-cell sec-cell">{{ block.settings.row_2 }}</div>
+              <div class="comparison-cell">{{ block.settings.row_3 }}</div>
+              <div class="comparison-cell">{{ block.settings.row_4 }}</div>
+              <div class="comparison-cell">{{ block.settings.row_5 }}</div>
+              <div class="comparison-cell cs-border">{{ block.settings.row_6 }}</div>
+              <div class="comparison-cell cs-border">{{ block.settings.row_7 }}</div>
+              <div class="comparison-cell cs-border">{{ block.settings.row_8 }}</div>
+              <div class="comparison-cell cs-border">{{ block.settings.row_9 }}</div>
+            </div>
+
+          {% when 'image_column' %}
+            <a class="comparison-col logo-col" id="cell-{{ forloop.index }}" href="{{ block.settings.product_link }}">
+              {% if block.settings.img_1 %}
+                <div class="comparison-cell logo cs-cell "><img src="{{ block.settings.img_1 | image_url }}"></div>
+              {% endif %}
+              {% if block.settings.img_2 %}
+                <div class="comparison-cell"><img src="{{ block.settings.img_2 | image_url }}"></div>
+              {% endif %}
+              {% if block.settings.img_3 %}
+                <div class="comparison-cell"><img src="{{ block.settings.img_3 | image_url }}"></div>
+              {% endif %}
+              {% if block.settings.img_4 %}
+                <div class="comparison-cell"><img src="{{ block.settings.img_4 | image_url }}"></div>
+              {% endif %}
+              {% if block.settings.img_5 %}
+                <div class="comparison-cell"><img src="{{ block.settings.img_5 | image_url }}"></div>
+              {% endif %}
+              {% if block.settings.img_6 %}
+                <div class="comparison-cell csp-border"><img src="{{ block.settings.img_6 | image_url }}"></div>
+              {% endif %}
+            </a>
+
+         {% when 'mixed_column' %}
+<div class="comparison-col mixed-col" id="celled-{{ forloop.index }}">
+
+  <div class="comparison-cell mixed_top">
+    {% if block.settings.img_1 %}
+        <img src="{{ block.settings.img_1 | image_url }}" class="mixed_img">
+      {% endif %}
+      <span class="dental-compae-price">
+        {{ block.settings.top_text }}
+      </span>
+</div>
+
+  {% if  block.settings.text_1 %}
+    <div class="comparison-cell sec-cell cs_mexed_text">
+      
+      {% if block.settings.text_1 %}
+        <p>{{ block.settings.text_1 }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if block.settings.text_2 %}
+    <div class="comparison-cell  cs_mexed_text">
+      <p>{{ block.settings.text_2 }}</p>
+    </div>
+  {% endif %}
+
+  {% if block.settings.text_3 %}
+    <div class="comparison-cell cs_mexed_text">
+      <p>{{ block.settings.text_3 }}</p>
+    </div>
+  {% endif %}
+
+
+
+  {% if block.settings.img_5 %}
+    <div class="comparison-cell">
+      <img src="{{ block.settings.img_5 | image_url }}">
+    </div>
+  {% endif %}
+
+  {% if block.settings.img_6 %}
+    <div class="comparison-cell">
+      <img src="{{ block.settings.img_6 | image_url }}">
+    </div>
+  {% endif %}
+
+  {% if block.settings.img_7 %}
+    <div class="comparison-cell">
+      <img src="{{ block.settings.img_7 | image_url }}">
+    </div>
+  {% endif %}
+
+  {% if block.settings.img_8 %}
+    <div class="comparison-cell">
+      <img src="{{ block.settings.img_8 | image_url }}">
+    </div>
+  {% endif %}
+
+  {% if block.settings.img_9 %}
+    <div class="comparison-cell">
+      <img src="{{ block.settings.img_9 | image_url }}">
+    </div>
+  {% endif %}
+
+</div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+    
+        <!-- RIGHT TABLE (Mobile) -->
+    <div class="comparison-right mob">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'text_column' %}
+          <div class="mob-comparison-col text-col mob-sticky">
+              <div class="comparison-cell cs-cell">
+                {% if block.settings.row_1 != blank %}{{ block.settings.row_1 }}{% endif %}
+              </div>
+              <div class="comparison-cell">{{ block.settings.row_2 }}</div>
+              <div class="comparison-cell">{{ block.settings.row_3 }}</div>
+              <div class="comparison-cell">{{ block.settings.row_4 }}</div>
+              <div class="comparison-cell">{{ block.settings.row_5 }}</div>
+              <div class="comparison-cell cs-border">{{ block.settings.row_6 }}</div>
+              <div class="comparison-cell cs-border">{{ block.settings.row_7 }}</div>
+              <div class="comparison-cell cs-border">{{ block.settings.row_8 }}</div>
+              <div class="comparison-cell cs-border">{{ block.settings.row_9 }}</div>
+            </div>
+
+
+      {% when 'image_column' %}
+
+        <div class="mob-comparison-col logo-col mob-sticky" id="celled-{{ forloop.index }}">
+              {% if block.settings.img_1 %}
+                <div class="comparison-cell logo cs-cell"><img src="{{ block.settings.img_1 | image_url }}"></div>
+              {% endif %}
+              {% if block.settings.img_2 %}
+                <div class="comparison-cell"><img src="{{ block.settings.img_2 | image_url }}"></div>
+              {% endif %}
+              {% if block.settings.img_3 %}
+                <div class="comparison-cell"><img src="{{ block.settings.img_3 | image_url }}"></div>
+              {% endif %}
+              {% if block.settings.img_4 %}
+                <div class="comparison-cell"><img src="{{ block.settings.img_4 | image_url }}"></div>
+              {% endif %}
+              {% if block.settings.img_5 %}
+                <div class="comparison-cell"><img src="{{ block.settings.img_5 | image_url }}"></div>
+              {% endif %}
+              {% if block.settings.img_6 %}
+                <div class="comparison-cell csp-border"><img src="{{ block.settings.img_6 | image_url }}"></div>
+              {% endif %}
+        </div>
+
+      {% when 'mixed_column' %}
+        {% comment %} <div class="mob-comparison-col mixed-col">
+          <div class="comparison-cell">{{ block.settings.top_text }}</div>
+          {% for i in (1..8) %}
+            {% assign img_key = "img_" | append: i %}
+            {% assign img_value = block.settings[img_key] %}
+            {% if img_value != blank %}
+              <div class="comparison-cell">
+                <img src="{{ img_value | image_url }}">
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div> {% endcomment %}
+        <div class="mob-comparison-col comparison-col mixed-col" id="celled-{{ forloop.index }}">
+
+  <div class="comparison-cell mixed_top">
+    {% if block.settings.img_1 %}
+        <img src="{{ block.settings.img_1 | image_url }}" class="mixed_img">
+      {% endif %}
+      <span class="dental-compae-price">
+        {{ block.settings.top_text }}
+      </span>
+</div>
+
+  {% if  block.settings.text_1 %}
+    <div class="comparison-cell sec-cell cs_mexed_text">
+      
+      {% if block.settings.text_1 %}
+        <p>{{ block.settings.text_1 }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if block.settings.text_2 %}
+    <div class="comparison-cell  cs_mexed_text">
+      <p>{{ block.settings.text_2 }}</p>
+    </div>
+  {% endif %}
+
+  {% if block.settings.text_3 %}
+    <div class="comparison-cell cs_mexed_text">
+      <p>{{ block.settings.text_3 }}</p>
+    </div>
+  {% endif %}
+
+
+
+  {% if block.settings.img_5 %}
+    <div class="comparison-cell">
+      <img src="{{ block.settings.img_5 | image_url }}">
+    </div>
+  {% endif %}
+
+  {% if block.settings.img_6 %}
+    <div class="comparison-cell">
+      <img src="{{ block.settings.img_6 | image_url }}">
+    </div>
+  {% endif %}
+
+  {% if block.settings.img_7 %}
+    <div class="comparison-cell">
+      <img src="{{ block.settings.img_7 | image_url }}">
+    </div>
+  {% endif %}
+
+  {% if block.settings.img_8 %}
+    <div class="comparison-cell">
+      <img src="{{ block.settings.img_8 | image_url }}">
+    </div>
+  {% endif %}
+
+  {% if block.settings.img_9 %}
+    <div class="comparison-cell">
+      <img src="{{ block.settings.img_9 | image_url }}">
+    </div>
+  {% endif %}
+
+</div>
+    {% endcase %}
+  {% endfor %}
+</div>
+
+
+  </div>
+  </div>
+</section>  
+
+
+
+<style>
+.comparison-col.logo-col {
+  cursor:pointer;
+}
+#celled-2 {
+    border-radius: 10px;
+    
+}
+#celled-2 .comparison-cell:first-child {
+     background: var(--8, linear-gradient(180deg, #0040FF 0%, #0E29EF 22.6%, #6421BF 50.96%, #C721A5 79.81%, #FF00CB 100%));
+}
+#celled-2 span.dental-compae-price * { color:white !important; }
+#celled-2 .comparison-cell {
+  background:white;
+}
+.comparison-cell:last-child {
+        border:0px !important;
+}
+.mixed_img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100px;
+    max-height: 35px;
+}
+.mixed_top {
+    display: flex;
+    height: 100px !important;
+    padding: 11px 13px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.comparison-cell.sec-cell {
+    height: 82px;
+}
+.mixed-col .cs_mexed_text  p {
+    color: #000000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+    text-transform: capitalize;
+    margin:0px;
+}
+span.dental-compae-price strong {
+    color: #545454;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+span.dental-compae-price p {
+   font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin:0px;
+}
+      /* ================================
+     SECTION BASE
+  ================================ */
+  .comparison-section {
+    background:{{ section.settings.section_bg }};
+    background:#E9ECFE;
+    padding: 80px 0;
+  }
+  .comparison-right.mob {
+
+    display:none;
+  }
+
+  .comparison-wrapper {
+     max-width:1130px;
+     margin:0 auto;
+  }
+
+  /* ================================
+     LEFT CONTENT
+  ================================ */
+  .comparison-left h2 {
+       /* 50.998px */
+      display:flex;
+      gap:10px;
+      align-items:center;
+      margin:0 0;
+  }
+  .head-smile  {
+    color: #000;
+    text-align: center;
+    font-family: "Source Code Pro" !important; 
+    font-size: 36px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 53px; /* 147.222% */
+    text-transform: uppercase;
+    max-width:480px;
+    margin:0 auto 32px;
+  }
+  .comparsion-cell:first-child {
+     border:0px;
+  }
+  .comparison-cell.cs-border {
+        border-radius: 0 0 0 6px;
+  }
+  #cell-4 .comparison-cell.csp-border {
+        border-radius: 0 0px 6px 0;
+  }
+  .comparison-col .comparsion-cell {
+     border: 1px solid rgba(0, 0, 0, 0.10);
+  }
+
+  .comparison-left p {
+    color: #000;
+    
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117%; /* 37.44px */
+    margin:32px 0;
+    max-width:350px;
+  }
+
+  .comparison-btn {
+    color: #FFF;
+    text-align: center;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #4378FF;
+    display: inline-flex;
+    padding: 13px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width:max-content;
+    text-decoration:none;
+  }
+
+  .comparison-btn:hover {
+    background: #2f4ae0;
+  }
+
+  /* ================================
+     RIGHT TABLE LAYOUT
+  ================================ */
+  .comparison-right {
+    display: flex;
+    align-items: stretch;
+  }
+
+  /* Column containers */
+  .comparison-col {
+    overflow: hidden;
+  }
+
+  /* ================================
+     COLUMN WIDTHS
+  ================================ */
+.text-col {
+    width: 420px;
+}
+
+  .logo-col {
+    width: 222px;
+  }
+
+
+.comparison-right .comparison-col.logo-col:nth-child(2) {
+     background: #889F85;
+     border-radius: 6px 6px 0 0;
+}
+.comparison-right .comparison-cell.logo.cs-cell:nth-child(2) {
+    background:transparent;
+}
+
+      
+
+
+  .mixed-col {
+    width: 180px;
+  }
+
+  /* ================================
+     ROW STYLING
+  ================================ */
+  .comparison-cell {
+    height: 55px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 14px;
+    color: #222;
+    border-bottom: 1px solid #DDD;
+
+  }
+
+  {% comment %} .comparison-cell:last-child {
+    border-bottom: none;
+  } {% endcomment %}
+
+  /* ================================
+     TEXT COLUMN
+  ================================ */
+  .text-col .comparison-cell {
+        color: #000;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 133.333% */
+        text-transform: capitalize;
+  }
+
+
+
+  .logo-col img {
+    max-width: 24px;
+    height: auto;
+  }
+
+  /* ================================
+     MIXED COLUMN
+  ================================ */
+
+  .comparison-cell.logo img {
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+        min-width: 100px;
+        max-height: 80px;
+    }
+  .comparison-col.text-col .comparison-cell {
+     justify-content:start;
+  }
+  .comparison-cell.cs-cell {
+    height: 100px;
+  }
+
+  /* ================================
+     MOBILE BEHAVIOR
+  ================================ */
+@media (max-width: 768px) {
+    .comparison-section {
+       padding:40px 0;
+    }
+    .comparison-wrapper {
+      grid-template-columns: 1fr;
+      gap:29px;
+    }
+
+    .comparison-right {
+      overflow-x: auto;
+      padding-bottom: 8px;
+    }
+
+
+    .text-col,
+    .logo-col {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+    }
+
+    .logo-col {
+      left: 200px;
+      z-index: 3;
+    }
+
+.comparison-left p {
+  color: #000;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 117%; /* 21.06px */
+margin:20px 0  28px;
+}
+.comparison-btn {
+
+font-size: 18px;
+padding:14px 20px;
+min-width:100%;
+}
+
+
+
+.comparison-cell {
+   padding:0px;
+}
+.text-col .comparison-cell {
+    
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal; /* 21.06px */
+}
+
+
+
+.comparison-right.dekstop {
+   display:none;
+}
+.comparison-cell.logo.cs-cell img  {
+    width: 63px !important;
+    height: auto !important;
+    object-fit: contain;
+    min-width: 60px;
+    max-height: 40px;
+}
+.comparison-cell.logo img {
+   width: 20.508px !important;
+    height: 18.311px !important;
+}
+.mixed-col .cs_mexed_text p {
+    font-size: 12px;
+    line-height:normal;
+
+}
+
+}
+
+
+
+/* ================================
+   MOBILE LAYOUT
+================================ */
+{% comment %} @media (max-width: 768px) {
+
+  .comparison-right.mob {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .mob-comparison-col {
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Sticky columns (first two) */
+  .mob-sticky {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 5;
+  }
+
+  .mob .text-col.mob-sticky {
+    left: 0;
+  }
+
+  .mob .logo-col.mob-sticky {
+    left: 120px;
+  }
+
+  /* Mixed column scrolls */
+  .mob .mixed-col {
+    flex-shrink: 0;
+  }
+
+  .mob-comparison-col .comparison-cell {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+  }
+
+
+
+  .mob-comparison-col.text-col .comparison-cell {
+    justify-content: flex-start;
+  }
+}
+ {% endcomment %}
+
+
+/* ================================
+   MOBILE LAYOUT  Cluade
+================================ */
+@media (max-width: 768px) {
+
+  .comparison-right.mob {
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
+  }
+
+  .mob-comparison-col {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    max-width:30%;
+  }
+
+  /* Sticky columns (first two) */
+  .mob-sticky {
+    position: sticky;
+    z-index: 5;
+  }
+
+  .mob .text-col.mob-sticky {
+    left: 0;
+     max-width:40%;
+
+  }
+
+  .mob #celled-2 {
+    left: 40%; /* Width of the first column */
+    position: sticky;
+    z-index: 5;
+  }
+
+  /* Mixed column scrolls */
+  .mob .mixed-col {
+    flex-shrink: 0;
+    z-index:1;
+  }
+
+  .mob-comparison-col .comparison-cell {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+  }
+  .mixed_top {
+    display: flex;
+    height: 65px !important;
+}
+.comparison-cell.cs-cell {
+    height: 65px !important;
+}
+
+  .mob-comparison-col.text-col .comparison-cell {
+    justify-content: flex-start;
+  }
+  .mixed-col .comparison-cell:first-child {
+    color: #000;
+    text-align: center;
+    
+    font-size: 16px;
+  }
+  .mixed-col .comparison-cell:first-child * {
+      font-size:16px;
+   }
+
+   #celled-2 .comparison-cell {
+     background: #ffffff;
+   }
+   .mixed_img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-width: 80px;
+    }
+
+   div#celled-4 .comparison-cell  {
+    border-right: 0px;
+   }
+    #celled-2  .comparison-cell.logo.cs-cell {
+        border-radius: 6px 6px 0 0;
+    }
+     .head-smile  {
+        margin:0 0 24px;
+      
+    }
+    .comparison-cell.cs-cell:first-child {
+        border: 0px;
+    }
+    .mob-comparison-col.comparison-col.mixed-col {
+        z-index:1;
+    }
+    .mixed_top {
+       height:62px;
+    }
+        #celled-2 .comparison-cell {
+        background: #ffffff;
+        padding: 10px;
+    }
+}
+
+</style>
+
+{% schema %}
+{
+  "name": "Comparison Table",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tab_text",
+      "label": "Tab",
+      "default": "PRACTICE FIT"
+    },
+
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Who This Is For"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#E9ECFE"
+    },
+  ],
+  "blocks": [
+        {
+            "type": "text_column",
+            "name": "Text column",
+            "settings": [
+            { "type": "text", "id": "row_1", "label": "Row 1" },
+            { "type": "text", "id": "row_2", "label": "Row 2" },
+            { "type": "text", "id": "row_3", "label": "Row 3" },
+            { "type": "text", "id": "row_4", "label": "Row 4" },
+            { "type": "text", "id": "row_5", "label": "Row 5" },
+            { "type": "text", "id": "row_6", "label": "Row 6" },
+            { "type": "text", "id": "row_7", "label": "Row 7" },
+            { "type": "text", "id": "row_8", "label": "Row 8" },
+            { "type": "text", "id": "row_9", "label": "Row 9" }
+            ]
+        },
+
+        {
+            "type": "image_column",
+            "name": "Image column",
+            "settings": [
+            { "type": "image_picker", "id": "img_1", "label": "Image 1" },
+            { "type": "image_picker", "id": "img_2", "label": "Image 2" },
+            { "type": "image_picker", "id": "img_3", "label": "Image 3" },
+            { "type": "image_picker", "id": "img_4", "label": "Image 4" },
+            { "type": "image_picker", "id": "img_5", "label": "Image 5" },
+            { "type": "image_picker", "id": "img_6", "label": "Image 6" },
+            { "type": "image_picker", "id": "img_7", "label": "Image 7" },
+            { "type": "image_picker", "id": "img_8", "label": "Image 8" },
+            { "type": "image_picker", "id": "img_9", "label": "Image 9" },
+            { "type": "url", "id": "product_link", "label": "product link" }
+            ]
+        },
+
+        {
+            "type": "mixed_column",
+            "name": "Mixed column",
+            "settings": [
+                { "type": "richtext", "id": "top_text", "label": "Top text" },
+
+                { "type": "image_picker", "id": "img_1", "label": "Row 1 Image" },
+                { "type": "text", "id": "text_1", "label": "Row 1 Caption" },
+
+                { "type": "text", "id": "text_2", "label": "Row 2 Caption" },
+                { "type": "text", "id": "text_3", "label": "Row 3 Caption" },
+
+                { "type": "image_picker", "id": "img_5", "label": "Image 5" },
+                { "type": "image_picker", "id": "img_6", "label": "Image 6" },
+                { "type": "image_picker", "id": "img_7", "label": "Image 7" },
+                { "type": "image_picker", "id": "img_8", "label": "Image 8" },
+                { "type": "image_picker", "id": "img_9", "label": "Image 9" }
+            ]
+        }
+    ],
+  "max_blocks": 6,
+  "presets": [{ "name": "Comparison Table", "category": "Custom" }]
+}
+{% endschema %}

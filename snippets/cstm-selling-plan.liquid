@@ -1,0 +1,464 @@
+{% style %}
+
+.pdp_purchase-options {
+    margin-bottom: 32px;
+}
+
+h3.pdp_purchase-options-title {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 0 16px;
+}
+
+.pdp_purchase-options-bndl {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+}
+
+.pdp_purchase-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #00000033;
+    padding: 20px 12px;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+span.pdp_purchase-option_title {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.pdp_purchase-option:has(input:checked) {
+  background:{{ block.settings.bg_color }};
+  border-color: #000;
+}
+
+label.pdp_purchase-option.pdp_purchase-option_selling {
+    flex-direction: column;
+    align-items: self-start;
+    padding: 0 0 20px;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.pdp_purchase-option_bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    gap: 8px;
+    padding-inline: 12px;
+    flex-direction: column;
+}
+
+ul.pdp_purchase-option_list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+li.pdp_purchase-option_list-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+span.pdp_purchase-option_list-text {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #000;
+}
+
+.pdp_subscription-options select {
+    padding: 10px;
+    border-radius: 12px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    border: 1px solid #00000033;
+    max-width: 100%;
+    width: 100%;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: GT Cinetype;
+    line-height: 120%;
+}
+
+label.pdp_purchase-option input {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+span.pdp_purchase-option_icon {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    border: 1px solid var(--gary, #969696);
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.pdp_purchase-option_top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+span.pdp_purchase-option_icon:before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: block;
+    /* background: #4E377D; */
+    background: {{ block.settings.icon_color }};
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.pdp_purchase-option:has(input:checked) span.pdp_purchase-option_icon{
+   /* border-color:  #4E377D; */
+   border-color:  {{ block.settings.icon_color }} ;
+}
+
+.pdp_purchase-option:has(input:checked) span.pdp_purchase-option_icon:before{
+    opacity: 1;
+}
+
+.pdp_purchase-option-seperate {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Creating the lines */
+.pdp_purchase-option-seperate:before,
+.pdp_purchase-option-seperate:after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #00000033;
+}
+
+.pdp_purchase-option-seperate span {
+    padding: 0 13px;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: #000;
+}
+
+label.pdp_purchase-option.pdp_purchase-option_one {
+    justify-content: space-between;
+}
+
+.pdp_purchase-option_selling_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    gap: 10px;
+    padding: 0 12px;
+}
+
+.pdp_price_price {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #000;
+    min-width: fit-content;
+}
+
+.pdp_purchase-option-head{
+    background: {{ block.settings.headline_bg_color }};
+    padding: 12px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+span.pdp_purchase-option-head-title {
+    color: {{ block.settings.headline_text_color }};
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px){
+.pdp_purchase-options {
+    margin-bottom: 24px;
+}
+
+h3.pdp_purchase-options-title {
+    font-size: 18px;
+}
+
+.pdp_purchase-option_bottom {
+    gap: 10px;
+}
+
+label.pdp_purchase-option.pdp_purchase-option_selling {
+    gap: 12px;
+}
+
+span.pdp_purchase-option-head-title {
+    font-size: 16px;
+}
+
+.pdp_subscription-options select {
+    max-width: 100%;
+    width: 100%;
+}
+
+.pdp_purchase-option {
+    border-radius: 8px;
+}
+
+}
+
+
+{% endstyle %}
+
+
+<div class="pdp_purchase-options">
+
+
+  <h3 class="pdp_purchase-options-title">Choose Your PLAN:</h3>
+
+  <div class="pdp_purchase-options-bndl">
+
+    <!-- ONE TIME -->
+    {% unless current_variant.requires_selling_plan %}
+      <label class="pdp_purchase-option pdp_purchase-option_one">
+        <div class="pdp_purchase-option_top">
+            <input
+              type="radio"
+              name="purchase_option"
+              value="one-time"
+              id="one_time"
+            >
+            <span class="pdp_purchase-option_icon" style="display: block;"></span>
+            <span class="pdp_purchase-option_title">One-time purchase</span>
+        </div>
+        <span class="pdp_price pdp_price_price"></span>
+      </label>
+    {% endunless %}
+
+    <div class="pdp_purchase-option-seperate">
+        <span>OR</span>
+    </div>
+
+    <!-- SUBSCRIPTION -->
+    {% for group in product.selling_plan_groups %}
+
+      <label class="pdp_purchase-option pdp_purchase-option_selling">
+
+        <div class="pdp_purchase-option-head">
+          <span class="pdp_purchase-option-head-title">
+            {{ block.settings.headline }}
+          </span>
+        </div>
+
+        <div class="pdp_purchase-option_selling_top">
+            <div class="pdp_purchase-option_top">
+                <input
+                  type="radio"
+                  name="purchase_option"
+                  value="subscription"
+                  id="subscription"
+                  checked
+                >
+                <span class="pdp_purchase-option_icon" style="display: block;"></span>
+                <span class="pdp_purchase-option_title">
+                  {{ group.name }}
+                </span>
+            </div>
+            <span class="pdp_compare_price pdp_price_price"></span>
+        </div>
+        
+
+        <div class="pdp_purchase-option_bottom">
+
+          <!-- ✅ DYNAMIC LIST (MAX 5) -->
+          <ul class="pdp_purchase-option_list">
+            {% for i in (1..5) %}
+              {% assign text_key = 'list_text_' | append: i %}
+              {% assign text_value = block.settings[text_key] %}
+
+              {% if text_value != blank %}
+                <li class="pdp_purchase-option_list-item">
+                  <span class="pdp_purchase-option_list-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M3 8.5L6.5 12C9.5 8 12 4.5 12 4.5" stroke="black" stroke-width="2" stroke-linecap="square"/>
+                    </svg>
+                  </span>
+                  <span class="pdp_purchase-option_list-text">
+                    {{ text_value }}
+                  </span>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+
+          
+
+          <!-- ✅ ALWAYS VISIBLE DROPDOWN -->
+          <div class="pdp_subscription-options">
+            <select
+              name="selling_plan"
+              data-selling-plan-selector
+              form="{{ product_form_id }}"
+            >
+              {% for plan in group.selling_plans %}
+                <option value="{{ plan.id }}">
+                  {{ plan.name }}
+                </option>
+              {% endfor %}
+            </select>
+          </div>
+
+        </div>
+
+      </label>
+
+    {% endfor %}
+
+  </div>
+
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector('.pdp_purchase-options');
+  const hiddenInput = document.querySelector('.selling_plan_id');
+  
+  if (!container || !hiddenInput) return;
+
+  const radios = container.querySelectorAll('input[name="purchase_option"]');
+
+  // Yeh function value ko update karne ke liye hai
+  function syncSellingPlan() {
+    const activeRadio = container.querySelector('input[name="purchase_option"]:checked');
+
+    if (activeRadio && activeRadio.value === 'subscription') {
+      // Usi card ka select dhoondein
+      const parentLabel = activeRadio.closest('.pdp_purchase-option');
+      const select = parentLabel ? parentLabel.querySelector('select[name="selling_plan"]') : null;
+
+      if (select) {
+        // Dropdown ki default/selected value fauran hidden input mein daalein
+        hiddenInput.value = select.value;
+        hiddenInput.disabled = false;
+        hiddenInput.removeAttribute('disabled');
+        console.log("Subscription Selected: ", select.value); // Debugging ke liye
+      }
+    } else {
+      // One-time ke liye disable karein
+      hiddenInput.value = '';
+      hiddenInput.disabled = true;
+      hiddenInput.setAttribute('disabled', 'disabled');
+      console.log("One-time Selected");
+    }
+  }
+
+  // 1. Jab radio button tabdil ho (One-time -> Subscription)
+  container.addEventListener('change', function(e) {
+    if (e.target.name === 'purchase_option') {
+      syncSellingPlan();
+    }
+  });
+
+  // 2. Jab dropdown (Frequency) tabdil ho
+  container.addEventListener('change', function(e) {
+    if (e.target.matches('select[name="selling_plan"]')) {
+      const parentRadio = e.target.closest('.pdp_purchase-option').querySelector('input[name="purchase_option"]');
+      if (parentRadio && parentRadio.checked) {
+        hiddenInput.value = e.target.value;
+        console.log("Frequency Changed: ", e.target.value);
+      }
+    }
+  });
+
+  // 3. Page load par check karein
+  syncSellingPlan();
+});
+</script>
+
+
+
+{% comment %} ========== pricess ======= {% endcomment %}
+
+<script>
+  function updatePriceDisplay(input) {
+    const label = document.querySelector(`label[for="${input.id}"]`);
+    if (!label) return;
+
+    const price = label.getAttribute('data-price');
+    const discPrice = label.getAttribute('data-disc_price');
+
+    const priceEl = document.querySelector('.pdp_price');
+    const comparePriceEl = document.querySelector('.pdp_compare_price');
+
+    if (priceEl) priceEl.textContent = price || '';
+    if (comparePriceEl) comparePriceEl.textContent = discPrice || '';
+  }
+
+  // Handle swatch change
+  document.addEventListener('change', function (e) {
+    if (e.target.matches('input[data-color]')) {
+      updatePriceDisplay(e.target);
+    }
+  });
+
+  // On page load
+  document.addEventListener('DOMContentLoaded', function () {
+    const swatches = document.querySelectorAll('input[data-color]');
+    let checked = document.querySelector('input[data-color]:checked');
+
+    // If none are checked, default to first swatch
+    if (!checked && swatches.length) {
+      checked = swatches[0];
+      checked.checked = true;
+    }
+
+    if (checked) updatePriceDisplay(checked);
+  });
+</script>

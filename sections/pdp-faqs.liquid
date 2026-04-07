@@ -1,0 +1,450 @@
+<style>
+    .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+        background: {{ section.settings.bg_color }};
+        letter-spacing: 0px;
+    }
+
+    .section-{{ section.id }}-padding .page-width{
+        padding: 0 100px;
+    }
+
+    .faq-accordion-section .faqs-des a {
+        color: #000000;
+        font-family: PP Mori !important;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0;
+        vertical-align: middle;
+        text-decoration: none !important;
+        font-style: italic;
+    }
+    .faq-accordion-section .faq-main-wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .faq-accordion-section .faq-left-content .faqs-title {
+            font-family: 'PP Formula';
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 66px;
+            letter-spacing: 2px;
+            vertical-align: middle;
+            text-transform: uppercase;
+            color: #000;
+            margin: 0;
+    }
+    .faq-accordion-section .faqs-des p {
+        color: #000;
+        font-family: "PP Mori";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+  .faq-accordion-section .faq-right-accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: calc(100% - (42% + 60px));
+}
+
+    .faq-accordion-section .faq-left-content {
+            position: sticky;
+            top: 20px;
+            max-width: 42%;
+            width: 100%;
+    }
+    .faq-accordion-section .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        gap: 20px;
+    }
+.faq-accordion-section .accordion-question {
+    color: #000;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+    .faq-accordion-section .accordion-icon {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        flex-shrink: 0;
+    }
+    .faq-accordion-section .accordion-icon svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .accordion-content p{
+        margin: 0;
+    }
+    .faq-accordion-section .accordion-content{
+        padding: 0 !important;
+    }
+    .faq-accordion-section .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+    .accordion-item{
+        border-radius: 10px;
+        background-color: {{ section.settings.bg_color_faqs }} ;
+        border: 1px solid {{ section.settings.item_border }} ;
+        padding: 19px 20px;
+    }
+    .accordion-item.active .accordion-content {
+        max-height: 500px;
+    }
+    .faq-accordion-section .accordion-answer p {
+            color: #000;
+            padding-top: 20px;
+            transition: all 0.3s ease;
+            font-family: GT Cinetype;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0px;
+    }
+
+    .section-{{ section.id }} .faqs-button{
+    display: inline-flex;
+    gap: 10px;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 70px;
+    transition: all .3s ease;
+    max-width: fit-content;
+    align-items: center;
+    justify-content: center;
+  background: {{ section.settings.button_bg }};
+  margin-top: 40px;
+}
+
+.section-{{ section.id }} .faqs-btn-text{
+    color: #fff;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.section-{{ section.id }} .faqs-btn-icon{
+  background: {{ section.settings.button_icon_bg }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    border-radius: 60px;
+    transition: all .3s ease;
+}
+
+.section-{{ section.id }} .faqs-button:hover .faqs-btn-icon{
+  transform:translateX(4px);
+}
+
+.section-{{ section.id }} .faqs-btn-icon img{
+      width: 26px;
+    display: block;
+    height: 16px;
+}
+
+    /* Mobile */
+    @media screen and (max-width: 749px) {
+    .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.mbl_padding_top }}px;
+        padding-bottom: {{ section.settings.mbl_padding_bottom }}px;
+    }
+    .section-{{ section.id }}-padding .page-width {
+        padding: 0 16px !important;
+    }
+    .faq-accordion-section .faq-main-wrapper {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .faq-accordion-section .faq-left-content {
+        max-width: 100%;
+        text-align: center;
+        position: unset;
+        height: auto;
+    }
+    .faq-accordion-section .faqs-des a,
+    .faq-accordion-section .faqs-des p {
+        font-size: 14px !important;
+        line-height: 19px !important;
+        font-style:normal !important;
+    }
+    .faq-accordion-section .faq-left-content .faqs-title {
+        font-size: 32px;
+        line-height: 100%;
+    }
+
+    .section-{{ section.id }} a.faqs-button {
+    display: none;
+}
+
+
+    .faq-accordion-section .faq-right-accordion {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+         gap: 8px;
+    }
+
+    .accordion-item {
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.faq-accordion-section .accordion-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+    .faq-accordion-section .accordion-icon svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .faq-accordion-section .accordion-question {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .faq-accordion-section .accordion-answer p{
+        font-size: 14px;
+        padding-top: 10px;
+    }
+}
+</style>
+
+<section class="section-{{ section.id }}-padding section-{{ section.id }} faq-accordion-section pdp-section">
+  <div class="faq--wrapper">
+    <div class="page-width">
+      <div class="faq-main-wrapper csp-img">
+        <div class="faq-left-content">
+            {% if section.settings.heading != blank %}
+                <div class="faqs-title">{{ section.settings.heading }}</div>
+            {% endif %}
+            {% if section.settings.description != blank %}
+                <div class="faqs-des">{{ section.settings.description }}</div>
+            {% endif %}
+            {% if section.settings.button_text != blank %}
+                <a href="{{ section.settings.button_link }}" class="faqs-button">
+
+                <span class="faqs-btn-text">
+                    {{ section.settings.button_text }}
+                </span>
+
+                {% if section.settings.button_icon != blank %}
+                <div class="faqs-btn-icon">
+                    {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                </div>
+                {% endif %}
+
+                </a>
+            {% endif %}
+        </div>
+        <div class="faq-right-accordion">
+          {% for block in section.blocks %}
+            <div class="accordion-item" data-accordion-item>
+              <div class="accordion-header">
+                <div class="accordion-question">{{ block.settings.question }}</div>
+                <div class="accordion-icon">
+                    <span>
+                        {% render 'plus-icon' %}
+                    </span>
+                </div>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-answer">{{ block.settings.answer }}</div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('[data-accordion-item]');
+    const plus = `{% render 'plus-icon' %}`;
+    const minus = `{% render 'minus-icon' %}`;
+    const PAD = 30;
+
+    items.forEach((item) => {
+      const header = item.querySelector('.accordion-header');
+      const content = item.querySelector('.accordion-content');
+      const answer = content.querySelector('.accordion-answer');
+      const icon = item.querySelector('.accordion-icon');
+
+      header.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+
+        // close all before opening another
+        items.forEach((i) => {
+          i.classList.remove('active');
+          i.querySelector('.accordion-content').style.maxHeight = '0';
+          i.querySelector('.accordion-content').style.paddingBottom = '0';
+          i.querySelector('.accordion-icon').innerHTML = plus;
+        });
+
+        if (!isOpen) {
+          item.classList.add('active');
+          content.style.maxHeight = answer.scrollHeight + PAD + 'px';
+          content.style.paddingBottom = PAD + 'px';
+          icon.innerHTML = minus;
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "FAQs Section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "Desktop Top Padding",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "Desktop Bottom Padding",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "mbl_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile Top Padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "mbl_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile Bottom Padding",
+      "default": 50
+    },
+    {
+      "type": "color_background",
+      "id": "bg_color_faqs",
+      "label": "Inner Box Background"
+    },
+    {
+      "type": "color",
+      "id": "item_border",
+      "label": "Inner Box Border"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "description"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button Icon"
+    },
+
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#000000"
+    },
+
+    {
+      "type": "color",
+      "id": "button_icon_bg",
+      "label": "Button Icon Background",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "accordion_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQs Section",
+      "category": "Faqs"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,354 @@
+{% style %}
+
+.section-{{ section.id }}{
+  background: {{ section.settings.section_bg }};
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+}
+
+.section-{{ section.id }} .enjoy-slider-title{
+      margin-bottom: 40px;
+    font-family: 'PP Formula';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.section-{{ section.id }} .enjoy-slider-card{
+  overflow:hidden;
+}
+
+.section-{{ section.id }} .enjoy-slider-card_img{
+      position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 2.5;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.section-{{ section.id }} .enjoy-slider-card_img img{
+      width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.section-{{ section.id }} .enjoy-slider-card-step{
+      position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #FAF7ED66;
+    padding: 12px;
+    border-radius: 46px;
+    backdrop-filter: blur(60px);
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+}
+
+.section-{{ section.id }} .enjoy-slider-card-content{
+    padding: 24px 0 0;
+    height: 100%;
+    text-align: center;
+}
+
+.section-{{ section.id }} .wnjoy-slider-card_title{
+      margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.section-{{ section.id }} .enjoy-slider-card_subtitle{
+    margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #111;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .page-width{
+    padding-right: 0;
+}
+
+.section-{{ section.id }} .enjoy-slider-title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 100%;
+    /* padding-right: 16px; */
+    max-width: 264px;
+    margin-inline: auto;
+}
+
+.section-{{ section.id }} .enjoy-slider-card-content {
+    padding: 24px 0 0;
+}
+
+.section-{{ section.id }} .wnjoy-slider-card_title {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.section-{{ section.id }} .enjoy-slider-card_subtitle {;
+    font-size: 16px;
+    padding-right: 0;
+}
+
+}
+
+{% endstyle %}
+
+
+<section class="enjoy-slider-section section-{{ section.id }}">
+  <div class="page-width">
+
+    <div class="enjoy-slider-wrapper">
+
+      {% if section.settings.title != blank %}
+      <h2 class="enjoy-slider-title">
+        {{ section.settings.title }}
+      </h2>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+      <div class="enjoy-slider-blocks">
+
+        <div class="swiper enjoy-slider-swiper-{{ section.id }}">
+
+          <div class="swiper-wrapper enjoy-swiper">
+
+            {% for block in section.blocks %}
+            <div class="swiper-slide" {{ block.shopify_attributes }}>
+
+              <div class="enjoy-slider-card">
+
+                <div class="enjoy-slider-card_img">
+
+                  {% if block.settings.image != blank %}
+                  {{ block.settings.image | image_url: width:1000 | image_tag }}
+                  {% endif %}
+
+                  {% if block.settings.step != blank %}
+                  <span class="enjoy-slider-card-step">
+                    {{ block.settings.step }}
+                  </span>
+                  {% endif %}
+
+                </div>
+
+                <div class="enjoy-slider-card-content">
+
+                  {% if block.settings.title != blank %}
+                  <h3 class="wnjoy-slider-card_title">
+                    {{ block.settings.title }}
+                  </h3>
+                  {% endif %}
+
+                  {% if block.settings.subtitle != blank %}
+                  <p class="enjoy-slider-card_subtitle">
+                    {{ block.settings.subtitle }}
+                  </p>
+                  {% endif %}
+
+                </div>
+
+              </div>
+
+            </div>
+            {% endfor %}
+
+          </div>
+
+        </div>
+
+      </div>
+      {% endif %}
+
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+
+  function initEnjoySlider(){
+
+    const screenWidth = window.innerWidth;
+
+    const swiper = new Swiper('.enjoy-slider-swiper-{{ section.id }}', {
+
+      slidesPerView: screenWidth <= 768
+        ? {{ section.settings.mobile_slides }}
+        : {{ section.settings.desktop_slides }},
+
+      spaceBetween: 12,
+      speed: 1000
+
+    });
+
+  }
+
+  initEnjoySlider();
+
+});
+</script>
+
+
+{% schema %}
+{
+  "name": "Enjoy Slider",
+  "settings": [
+
+    {
+      "type": "color_background",
+      "id": "section_bg",
+      "label": "Section Background"
+    },
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+
+    {
+      "type": "range",
+      "id": "desktop_slides",
+      "label": "Slides Per View (Desktop)",
+      "min": 3,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+
+    {
+      "type": "range",
+      "id": "mobile_slides",
+      "label": "Slides Per View (Mobile)",
+      "min": 1,
+      "max": 2.2,
+      "step": 0.1,
+      "default": 1.2
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Bottom Mobile"
+    }
+
+  ],
+
+  "blocks":[
+    {
+      "type":"slide",
+      "name":"Slider Card",
+      "settings":[
+
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Card Image"
+        },
+
+        {
+          "type":"text",
+          "id":"step",
+          "label":"Step Label"
+        },
+
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Title"
+        },
+
+        {
+          "type":"text",
+          "id":"subtitle",
+          "label":"Subtitle"
+        }
+
+      ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Enjoy Slider",
+      "category":"Custom",
+      "blocks":[
+        {"type":"slide"},
+        {"type":"slide"},
+        {"type":"slide"},
+        {"type":"slide"}
+      ]
+    }
+  ]
+}
+{% endschema %}

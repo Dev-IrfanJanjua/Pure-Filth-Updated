@@ -1,0 +1,934 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_reviews_9gTjYL": {
+          "type": "custom-reviews",
+          "settings": {}
+        },
+        "pdp_tag_kttQH3": {
+          "type": "pdp_tag",
+          "settings": {
+            "pdp_tag": "Relax & CLARITY"
+          }
+        },
+        "1e0c79e9-7de0-4eee-b9c5-f27132635fb8": {
+          "type": "title",
+          "settings": {
+            "spacing_bottom": "1"
+          }
+        },
+        "custom_richtext_a9Tp7h": {
+          "type": "custom-richtext",
+          "settings": {
+            "rich-text": "<p>Support mental clarity, focus, and cognitive performance with 100% pure Lion’s Mane mushroom, crafted for daily routines and long-term brain health.</p>"
+          }
+        },
+        "custom_list_JjVr6n": {
+          "type": "custom_list",
+          "settings": {
+            "list_icon": "shopify://shop_images/verify_2.svg",
+            "list_item_1": "100% Fruiting body extract",
+            "list_item_2": "Sugar & caffeine free",
+            "list_item_3": "Third-party tested",
+            "list_item_4": "",
+            "list_item_5": ""
+          }
+        },
+        "custom_icon_text_phnHQx": {
+          "type": "custom-icon-text",
+          "settings": {
+            "bg_clr": "#FFE6F9",
+            "image1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_1.svg",
+            "text1": "Maintenance (daily)",
+            "image2": "shopify://shop_images/icon.svg_-_2026-03-18T122528.567_1.svg",
+            "text2": "Hydrates Skin",
+            "image3": "shopify://shop_images/Exp-1.-O.svg",
+            "text3": "Skin Elasticity",
+            "image4": "shopify://shop_images/icon.svg_-_2026-03-18T122258.281_1.svg",
+            "text4": "Clears Skin"
+          }
+        },
+        "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "spacing_bottom": "1",
+            "show_price_tax_info": true,
+            "show_price_shipping_info": false,
+            "show_price_custom_info": ""
+          }
+        },
+        "1e939cd6-0958-4135-a9e5-c50faef01437": {
+          "type": "variant_picker",
+          "settings": {
+            "title": "Variant picker",
+            "spacing_bottom": "1",
+            "variant_picker_type": "buttons",
+            "show_variant_images": false,
+            "variant_picker_layout": "product-selector--default",
+            "size_guide_page": "size-guide",
+            "sizes_option": "Choose your Size:"
+          }
+        },
+        "1e939cd6-0955-4135-a9e5-c50faef01437": {
+          "type": "purchase_options",
+          "settings": {
+            "bg_color": "#FFE6F9",
+            "icon_color": "#d27abc",
+            "spacing_bottom": "1",
+            "list_text_1": "Delivered every 30 days",
+            "list_text_2": "Pause or cancel anytime",
+            "list_text_3": "Early access to new drops",
+            "list_text_4": "Never run out",
+            "list_text_5": ""
+          }
+        },
+        "8604a6ff-ad0b-44dd-8068-1de4e062f8e8": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_icon": true,
+            "spacing_bottom": "1",
+            "show_quantity": false,
+            "quantity_type": "inline",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "custom_feature_rB8z8F": {
+          "type": "custom_feature",
+          "settings": {
+            "list_icon_1": "shopify://shop_images/Vector_3.svg",
+            "list_item_1": "Ships within 24 hours",
+            "list_icon_2": "shopify://shop_images/icon.svg_-_2026-03-10T152143.679_1.svg",
+            "list_item_2": "Secure checkout",
+            "list_icon_3": "shopify://shop_images/icon.svg_-_2026-03-10T152305.312_1.svg",
+            "list_item_3": "30-day money back guarantee"
+          }
+        },
+        "content_tabs_fEGJi4": {
+          "type": "content_tabs",
+          "disabled": true,
+          "settings": {
+            "tabs_alignment": "start",
+            "tabs_content_alignment": "start"
+          }
+        },
+        "description_qA3HqH": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "spacing_bottom": "auto",
+            "behaviour": "tab",
+            "heading": "Description",
+            "text_truncate": 0,
+            "icon": "theme-plus"
+          }
+        },
+        "content_block_idt6CB": {
+          "type": "content_block",
+          "disabled": true,
+          "settings": {
+            "behaviour": "row",
+            "heading": "Description",
+            "row_content": "",
+            "icon": "",
+            "page": "",
+            "spacing_bottom": "0"
+          }
+        },
+        "content_block_y7VbNC": {
+          "type": "content_block",
+          "disabled": true,
+          "settings": {
+            "behaviour": "row",
+            "heading": "Delivery & Returns",
+            "row_content": "",
+            "icon": "",
+            "page": "",
+            "spacing_bottom": "0"
+          }
+        },
+        "e6d841d6-2f71-40b3-956a-912df13f9f6e": {
+          "type": "inventory_notice",
+          "disabled": true,
+          "settings": {
+            "spacing_bottom": "1",
+            "inventory_threshold": 15,
+            "notice_just_text": true
+          }
+        },
+        "7be6b89c-da83-4ff2-9b85-44fb28cbfa27": {
+          "type": "pickup-availability",
+          "disabled": true,
+          "settings": {
+            "spacing_bottom": "1"
+          }
+        },
+        "content_grid_W3Mqy6": {
+          "type": "content_grid",
+          "disabled": true,
+          "settings": {
+            "heading": "Fast global shipping",
+            "icon": "theme-box"
+          }
+        },
+        "complementary_products_h7nWQd": {
+          "type": "complementary_products",
+          "disabled": true,
+          "settings": {
+            "spacing_bottom": "1",
+            "heading": "You may also like",
+            "icon": "theme-box",
+            "limit": 4
+          }
+        },
+        "optiona_product_PtrBpJ": {
+          "type": "optiona_product",
+          "settings": {
+            "show_svg": true,
+            "main_heading": "Complete Your Routine",
+            "inner_title": "",
+            "inner_subtitle": "",
+            "bg_color": "#ffe6f9"
+          }
+        },
+        "tabs_block_nbWnUF": {
+          "type": "tabs_block",
+          "settings": {
+            "border_clr": "#d27abc",
+            "tab_title_1": "HOW TO USE",
+            "tab_content_1": "<p>Add 1 teaspoon daily to coffee, tea, smoothies, or warm water. Best taken consistently for noticeable results.</p>",
+            "tab_title_2": "INGREDIENTS",
+            "tab_content_2": "<p>Lorem 1</p>",
+            "tab_title_3": "SHIPPING & RETURN",
+            "tab_content_3": "<p>Lorem 2</p>"
+          }
+        },
+        "goback_WQBHtg": {
+          "type": "goback",
+          "disabled": true,
+          "settings": {
+            "goback_style": "text",
+            "goback_label": "Back",
+            "display_goback_mobile": "on-media"
+          }
+        }
+      },
+      "block_order": [
+        "custom_reviews_9gTjYL",
+        "pdp_tag_kttQH3",
+        "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
+        "custom_richtext_a9Tp7h",
+        "custom_list_JjVr6n",
+        "custom_icon_text_phnHQx",
+        "8effeb43-55b7-4ec4-ab9b-68bcd89b865b",
+        "1e939cd6-0958-4135-a9e5-c50faef01437",
+        "1e939cd6-0955-4135-a9e5-c50faef01437",
+        "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
+        "custom_feature_rB8z8F",
+        "content_tabs_fEGJi4",
+        "description_qA3HqH",
+        "content_block_idt6CB",
+        "content_block_y7VbNC",
+        "e6d841d6-2f71-40b3-956a-912df13f9f6e",
+        "7be6b89c-da83-4ff2-9b85-44fb28cbfa27",
+        "content_grid_W3Mqy6",
+        "complementary_products_h7nWQd",
+        "optiona_product_PtrBpJ",
+        "tabs_block_nbWnUF",
+        "goback_WQBHtg"
+      ],
+      "settings": {
+        "custoom-class": true,
+        "product_media_layout": "product__media-layout--full",
+        "product_media_layout_mobile": "product__media-layout--full--sm",
+        "product_media_with_thumbs": "none",
+        "product_media_thumbs_ratio": "portrait",
+        "product_media_object_fit": "contain",
+        "adaptive_ratio_and_auto_height": "default",
+        "media_transparent_background": false,
+        "disable_media_zoom": true,
+        "gallery_arrows_show_on": "desktop",
+        "display_media_gallery_pagination": "none",
+        "show_media_index": false,
+        "media_gallery_info": "",
+        "metafield_as_seen_on": "",
+        "color_scheme_arrows": "",
+        "enable_sticky_info": true,
+        "enable_actions_bar": false,
+        "media_grid_size": "large",
+        "media_grid_position": "start",
+        "grid_gap": "1",
+        "spacing_grid": 1.6,
+        "grid_content_alignment": "start",
+        "section_width": "max-w-fluid",
+        "color_scheme": "",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
+    "complete_the_set_LAN4cq": {
+      "type": "complete-the-set",
+      "blocks": {
+        "collapsible_UeyH3r": {
+          "type": "collapsible",
+          "settings": {
+            "block_type": "drawer",
+            "heading": "Description",
+            "link": "",
+            "content": "<p>Chaga is the immune system's powerhouse, it is one of the most potent natural superfoods in the world. A single teaspoon of Chaga is said to have the same amount of antioxidants as a whopping 600 blueberries. This mighty mushroom is an all-around immunity juggernaut— anti-inflammatory, antiviral, antibacterial, and antifungal. A true legend in the mushroom game. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_A663MD": {
+          "type": "collapsible",
+          "settings": {
+            "block_type": "drawer",
+            "heading": "Delivery & Returns",
+            "link": "",
+            "content": "<p>Shipping and returns can be inserted here.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_qFP38k": {
+          "type": "collapsible",
+          "settings": {
+            "block_type": "drawer",
+            "heading": "Contact us",
+            "link": "",
+            "content": "<p>Contact information can be entered here.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_UeyH3r",
+        "collapsible_A663MD",
+        "collapsible_qFP38k"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Complete the <em>set</em>",
+        "heading_size": "h3",
+        "content_type": "products",
+        "featured_image_aspect_ratio": "4/3",
+        "flip_desktop": true,
+        "flip_mobile": true,
+        "section_width": "max-w-page",
+        "color_scheme": "",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "layout": "layout-1",
+        "enable_slideshow_overflow": false,
+        "heading": "You may also like",
+        "heading_size": "h3",
+        "subheading": "",
+        "button_label": "View all",
+        "button_link": "",
+        "button_style": "button--filled",
+        "show_navigation_arrows": true,
+        "slider_autoplay": 10,
+        "tabs_button_style": "tab-btn-filled",
+        "max_products": 8,
+        "show_unavailable_products": false,
+        "section_width": "max-w-page",
+        "color_scheme": "",
+        "spacing_top": "4",
+        "spacing_bottom": "4"
+      }
+    },
+    "benefits_cQkaGh": {
+      "type": "benefits",
+      "blocks": {
+        "benefit_WKqMVF": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147228878_20.svg",
+            "title": "Boosts Brain Health",
+            "subtitle": "Enhances memory, focus, and cognitive performance."
+          }
+        },
+        "benefit_t6Y68M": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147228878_21.svg",
+            "title": "Supports Nerve Growth",
+            "subtitle": "Stimulates nerve growth, promoting brain health."
+          }
+        },
+        "benefit_zetj78": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147228878_22.svg",
+            "title": "Reduces Inflammation",
+            "subtitle": "Fights inflammation and oxidative stress naturally."
+          }
+        },
+        "benefit_KrxLfN": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147228878_23.svg",
+            "title": "Enhances Mood",
+            "subtitle": "Reduces anxiety and promotes emotional balance."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_WKqMVF",
+        "benefit_t6Y68M",
+        "benefit_zetj78",
+        "benefit_KrxLfN"
+      ],
+      "name": "Benefits Section",
+      "settings": {
+        "sec_img_desk": "shopify://shop_images/Our_story_15.png",
+        "sec_img_mob": "shopify://shop_images/Our_story_16.png",
+        "section_bg": "",
+        "title": "Real Benefits You Can Feel",
+        "subtitle": "",
+        "image": "shopify://shop_images/Rectangle_6_1.png",
+        "button_text": "Shop Pure Filth",
+        "button_link": "",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "text_color": "#ffffff",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "story_behind_TKeagc": {
+      "type": "story-behind",
+      "name": "Story Behind Section",
+      "settings": {
+        "pdp": true,
+        "abs_image": "shopify://shop_images/0st7MqmOLuNNmDy9SoFwE67dXmM.png_1.png",
+        "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM.png_8.png",
+        "title": "Fuel Your Mind, Naturally",
+        "description": "<p>Lion’s Mane is a functional mushroom known for supporting focus, mental clarity, and general brain health - without any stimulants.</p><p></p><ul><li>Contains hericenones and erinacines associated with brain support</li><li>15:1 concentrated extract for higher active compounds</li><li>100% fruiting body extract (no grain-grown mycelium)</li><li>Dual extracted to capture the full spectrum of compounds</li><li>No fillers, additives or hidden ingredients</li></ul>",
+        "list_icon": "shopify://shop_images/verify_4fb1713f-9459-42e1-8740-4abcd7aeffc0.svg",
+        "button_text": "Shop Pure Filth",
+        "button_link": "shopify://collections/all",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "section_bg": "#ffffff",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "enjoy_slider_fPXa9h": {
+      "type": "enjoy-slider",
+      "blocks": {
+        "slide_UWhNpb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/912dde7a52d74e7b9a0c30419d0073759472a465.png",
+            "step": "First Step",
+            "title": "Add 1 teaspoon",
+            "subtitle": "Stir into coffee, tea or smoothies"
+          }
+        },
+        "slide_dUQCh6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/12e955b7dd8430ff3ffc421603eff24c17d1d48e.png",
+            "step": "Second Step",
+            "title": "MIX INTO YOUR DRINK",
+            "subtitle": "Hot or cold works perfectly"
+          }
+        },
+        "slide_Wan4td": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/5b7e7d92c7ce5c45a9e8718148c443f92f0448be.png",
+            "step": "Third Step",
+            "title": "ENJOY DAILY",
+            "subtitle": "Build it into your routine"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UWhNpb",
+        "slide_dUQCh6",
+        "slide_Wan4td"
+      ],
+      "name": "Enjoy Slider",
+      "settings": {
+        "section_bg": "",
+        "title": "ONE SCOOP. ANY DRINK. DONE.",
+        "desktop_slides": 3,
+        "mobile_slides": 1.1,
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "special_section_74QzEN": {
+      "type": "special-section",
+      "blocks": {
+        "simple_card_xedpn4": {
+          "type": "simple_card",
+          "settings": {
+            "bg_color": "#ffffff",
+            "simple_title": "15:1 HIGH-POTENCY EXTRACT",
+            "simple_desc": "<p>Delivers significantly more active compounds than standard mushroom powders (usually 10:1).</p>"
+          }
+        },
+        "simple_card_UNnWaW": {
+          "type": "simple_card",
+          "settings": {
+            "bg_color": "#ffffff",
+            "simple_title": "FRUITING BODY ONLY",
+            "simple_desc": "<p>No grain-grown mycelium. Only the part of the mushroom that contains the highest levels of active compounds.</p>"
+          }
+        },
+        "simple_card_f6xAQg": {
+          "type": "simple_card",
+          "settings": {
+            "bg_color": "#ffffff",
+            "simple_title": "DUAL EXTRACTION",
+            "simple_desc": "<p>Water and alcohol extraction ensures the full spectrum of beneficial compounds is available.</p>"
+          }
+        },
+        "top_card_8bnhGk": {
+          "type": "top_card",
+          "disabled": true,
+          "settings": {
+            "head_icon": "shopify://shop_images/icon.svg_-_2026-01-26T131622.723_1.svg",
+            "title": "Nothing Hidden Nothing Added",
+            "list_icon": "shopify://shop_images/Image_1.svg",
+            "image": "shopify://shop_images/image_2793_5.png",
+            "item_1": "Boosts Brain Health & Focus",
+            "item_2": "Promotes Nerve Growth & Clarity",
+            "item_3": "100% Pure, No Additives",
+            "item_4": "",
+            "item_5": "",
+            "item_6": ""
+          }
+        },
+        "bottom_card_4DXj6B": {
+          "type": "bottom_card",
+          "disabled": true,
+          "settings": {
+            "title": "100% Pure. One Ingredient.",
+            "image": "shopify://shop_images/Frame_2147241896.png",
+            "icon_1": "shopify://shop_images/Frame_2147241930.svg",
+            "item_1": "100% Organic",
+            "icon_2": "shopify://shop_images/Group_2.svg",
+            "item_2": "NO Additives",
+            "icon_3": "shopify://shop_images/Group_3.svg",
+            "item_3": "Non GMO",
+            "item_4": "",
+            "item_5": "",
+            "item_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "simple_card_xedpn4",
+        "simple_card_UNnWaW",
+        "simple_card_f6xAQg",
+        "top_card_8bnhGk",
+        "bottom_card_4DXj6B"
+      ],
+      "name": "Special Section",
+      "settings": {
+        "section_bg": "#D27ABC",
+        "title": "WHY PURE FILTH LION'S MANE HITS DIFFERENT",
+        "title_color": "#ffffff",
+        "main_image": "shopify://shop_images/Background_Border_6.png",
+        "overlay_title": "",
+        "overlay_text": "",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "money_back_aG9pad": {
+      "type": "money-back",
+      "name": "Money Back Section",
+      "settings": {
+        "image": "shopify://shop_images/image_2861_1.png",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
+        "title": "30 day money back guarantee",
+        "text_color": "#ffffff",
+        "button_text": "LEARN MORE",
+        "button_link": "shopify://collections/all",
+        "button_icon": "shopify://shop_images/Frame_2147242027.svg",
+        "section_bg": "#ffffff",
+        "Content_bg": "#D27ABC",
+        "button_bg": "#ffffff",
+        "button_icon_bg": "#000000",
+        "padding_top_desktop": 180,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 70,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "video_slider_GxwPPg": {
+      "type": "video-slider",
+      "blocks": {
+        "video_VybHWr": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/PUREFILTHSTEP1-ezgif.com-gif-to-mp4-converter.mp4",
+            "abs_img": "shopify://shop_images/Group_5.svg",
+            "abs_text": "Focus"
+          }
+        },
+        "video_NtCqTx": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
+            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-15T134441.846_1.svg",
+            "abs_text": "Clarity"
+          }
+        },
+        "video_ztAQQm": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
+            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-27T192103.195_1.svg",
+            "abs_text": "Memory"
+          }
+        },
+        "video_kqd6mn": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
+            "abs_img": "shopify://shop_images/Group_6.svg",
+            "abs_text": "Mood"
+          }
+        },
+        "video_QNWTHC": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
+            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-15T134441.846_1.svg",
+            "abs_text": "Clarity"
+          }
+        },
+        "video_jhgrAE": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
+            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-27T192103.195_1.svg",
+            "abs_text": "Memory"
+          }
+        },
+        "video_icqw6X": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
+            "abs_img": "shopify://shop_images/Group_6.svg",
+            "abs_text": "Mood"
+          }
+        }
+      },
+      "block_order": [
+        "video_VybHWr",
+        "video_NtCqTx",
+        "video_ztAQQm",
+        "video_kqd6mn",
+        "video_QNWTHC",
+        "video_jhgrAE",
+        "video_icqw6X"
+      ],
+      "name": "Video Slider Formulas",
+      "settings": {
+        "pdp": false,
+        "stars_image": "shopify://shop_images/Frame_36_4.svg",
+        "rating_text": "2,440+ Reviews",
+        "header_text": "<p>REAL PEOPLE. <br/>REAL FILTHY RESULTS.</p>",
+        "slides_per_view_desktop": 4,
+        "background_color": "rgba(0,0,0,0)",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 25,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "items_primary_color": "",
+        "items_light_color": ""
+      }
+    },
+    "routine_MaXLqX": {
+      "type": "routine",
+      "blocks": {
+        "step_jWeXwC": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165.png",
+            "top_title": "MORNING",
+            "image": "shopify://shop_images/Frame_2147242242_16.png",
+            "title": "FOCUS FIRST. GUT READY.",
+            "subtitle": "Tremella + Lion’s Mane",
+            "button_text": "ADD Tremella TAIL",
+            "button_link": "#",
+            "button_text_scnd": " Learn more",
+            "button_link_scnd": "#"
+          }
+        },
+        "step_CWVnBj": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
+            "top_title": "AFTERNOON",
+            "image": "shopify://shop_images/Frame_2147242242_17.png",
+            "title": "STAY SHARP. POWER THROUGH.",
+            "subtitle": "Tremella + Cordyceps",
+            "button_text": "ADD CORDYCEPS",
+            "button_link": "#",
+            "button_text_scnd": " Learn more",
+            "button_link_scnd": "#"
+          }
+        },
+        "step_WMAKfL": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
+            "top_title": "EVENING",
+            "image": "shopify://shop_images/Frame_2147242242_18.png",
+            "title": "CLARITY BY DAY. CALM BY NIGHT.",
+            "subtitle": "Tremella + Reishi",
+            "button_text": "ADD REISHI",
+            "button_link": "#",
+            "button_text_scnd": " Learn more",
+            "button_link_scnd": "#"
+          }
+        }
+      },
+      "block_order": [
+        "step_jWeXwC",
+        "step_CWVnBj",
+        "step_WMAKfL"
+      ],
+      "name": "Routine Section",
+      "settings": {
+        "title": "Build Your Routine",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "section_bg": "#ffffff",
+        "cards_bg": "#ffe6f9",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "testimonial_YNU6TX": {
+      "type": "testimonial",
+      "blocks": {
+        "testimonial_FT3Gtf": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_AmmcKy": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_cDn9rc": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_ce4Ne3": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_BGwVYX": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_wgWXkb": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_jkYx8Y": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_FT3Gtf",
+        "testimonial_AmmcKy",
+        "testimonial_cDn9rc",
+        "testimonial_ce4Ne3",
+        "testimonial_BGwVYX",
+        "testimonial_wgWXkb",
+        "testimonial_jkYx8Y"
+      ],
+      "name": "Testimonial Slider",
+      "settings": {
+        "section_bg": "",
+        "card_bg": "#ffe6f9",
+        "title": "Filthy Reviews",
+        "reviews_img": "shopify://shop_images/Stars.png",
+        "reviews_title": "4.8 average rating",
+        "reviews_subtitle": "Based on 2,470+ verified reviews",
+        "slides_per_view": 3.5,
+        "center_slide": true,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "pdp_faqs_tiNRVd": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "accordion_item_gW8bkU": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "What is Lion’s Mane?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_BAtKnY": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "What does Lion’s Mane help with?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_kHLwPL": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Is Pure Filth Lion’s Mane blended with anything else?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_aJgbxJ": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Will this make me feel wired or overstimulated?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_eij4i7": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Can I take this daily?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_kT9Mcr": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Is this suitable for beginners?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_gW8bkU",
+        "accordion_item_BAtKnY",
+        "accordion_item_kHLwPL",
+        "accordion_item_aJgbxJ",
+        "accordion_item_eij4i7",
+        "accordion_item_kT9Mcr"
+      ],
+      "name": "FAQs Section",
+      "settings": {
+        "bg_color": "",
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "mbl_padding_top": 0,
+        "mbl_padding_bottom": 40,
+        "bg_color_faqs": "#FFE6F9",
+        "item_border": "#ffe6f9",
+        "heading": "Have Questions? We’ve Got Answers",
+        "description": "",
+        "button_text": "get started today",
+        "button_link": "#",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff"
+      }
+    },
+    "166904322806a89075": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "complete_the_set_LAN4cq",
+    "recommendations",
+    "benefits_cQkaGh",
+    "story_behind_TKeagc",
+    "enjoy_slider_fPXa9h",
+    "special_section_74QzEN",
+    "money_back_aG9pad",
+    "video_slider_GxwPPg",
+    "routine_MaXLqX",
+    "testimonial_YNU6TX",
+    "pdp_faqs_tiNRVd",
+    "166904322806a89075"
+  ]
+}

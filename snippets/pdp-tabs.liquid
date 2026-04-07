@@ -1,0 +1,320 @@
+{% style %}
+
+.pdp_tabs__nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pdp_tabs__btn {
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.pdp_tabs__btn.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background: {{ block.settings.border_clr }} ; /* green underline */
+}
+
+.pdp_tabs__pane {
+    display: none;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.pdp_tabs__pane-content {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #000;
+}
+
+.pdp_tabs__pane.active {
+  display: block;
+}
+
+.pdp_tabs {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pdp_tabs__pane-header{
+    display: none;
+}
+
+/* Accordion for mobile */
+@media (max-width: 768px) {
+  .pdp_tabs__nav {
+    display: none; /* hide tabs navigation on mobile */
+  }
+
+  .pdp_tabs__pane {
+    display: block;
+    border-bottom: 1px dashed #767676;
+  }
+
+  .pdp_tabs__pane-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 0;
+  }
+
+  .pdp_tabs__pane-content {
+    max-height: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    transition: all 0.3s ease;
+  }
+
+  .pdp_tabs__pane.active .pdp_tabs__pane-content {
+    max-height: 500px;
+  }
+
+  span.pdp_tabs__pane-header_text {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.pdp_tabs__pane.active {
+  padding-bottom: 20px;
+}
+
+span.pdp_tabs__pane-header_icon_minus {
+    display: none;
+}
+
+.pdp_tabs__pane.active span.pdp_tabs__pane-header_icon_minus {
+    display: block;
+}
+
+.pdp_tabs__pane.active  span.pdp_tabs__pane-header_icon_plus {
+    display: none;
+}
+
+}
+
+
+{% endstyle %}
+
+<div class="pdp_tabs" id="pdp-tabs-{{ block.id }}">
+  
+  <div class="pdp_tabs__nav">
+    <button class="pdp_tabs__btn active" data-tab="1">
+      {{ block.settings.tab_title_1 }}
+    </button>
+    <button class="pdp_tabs__btn" data-tab="2">
+      {{ block.settings.tab_title_2 }}
+    </button>
+    <button class="pdp_tabs__btn" data-tab="3">
+      {{ block.settings.tab_title_3 }}
+    </button>
+  </div>
+
+  {% comment %} <div class="pdp_tabs__content">
+    
+    <div class="pdp_tabs__pane active" data-content="1">
+      {{ block.settings.tab_content_1 | replace: "<p>", '' | replace: "</p>", '' }}
+    </div>
+
+    <div class="pdp_tabs__pane" data-content="2">
+      {{ block.settings.tab_content_2 | replace: "<p>", '' | replace: "</p>", '' }}
+    </div>
+
+    <div class="pdp_tabs__pane" data-content="3">
+      {{ block.settings.tab_content_3 | replace: "<p>", '' | replace: "</p>", '' }}
+    </div>
+
+  </div> {% endcomment %}
+
+  <div class="pdp_tabs__content">
+  <div class="pdp_tabs__pane active" data-content="1">
+    <div class="pdp_tabs__pane-header">
+        <span class="pdp_tabs__pane-header_text">{{ block.settings.tab_title_1 }}</span>
+        <div class="pdp_tabs__pane-header_icon">
+            <span class="pdp_tabs__pane-header_icon_plus">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 10H17" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3V17" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <span class="pdp_tabs__pane-header_icon_minus">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 10H17" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </div> 
+    </div>
+    <div class="pdp_tabs__pane-content">
+      {{ block.settings.tab_content_1 | replace: "<p>", '' | replace: "</p>", '' }}
+    </div>
+  </div>
+
+  <div class="pdp_tabs__pane" data-content="2">
+    <div class="pdp_tabs__pane-header">
+        <span class="pdp_tabs__pane-header_text">{{ block.settings.tab_title_2 }}</span>
+        <div class="pdp_tabs__pane-header_icon">
+            <span class="pdp_tabs__pane-header_icon_plus">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 10H17" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3V17" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <span class="pdp_tabs__pane-header_icon_minus">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 10H17" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </div> 
+    </div>
+    <div class="pdp_tabs__pane-content">
+      {{ block.settings.tab_content_2 | replace: "<p>", '' | replace: "</p>", '' }}
+    </div>
+  </div>
+
+  <div class="pdp_tabs__pane" data-content="3">
+    <div class="pdp_tabs__pane-header">
+        <span class="pdp_tabs__pane-header_text">{{ block.settings.tab_title_3 }}</span>
+        <div class="pdp_tabs__pane-header_icon">
+            <span class="pdp_tabs__pane-header_icon_plus">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 10H17" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3V17" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <span class="pdp_tabs__pane-header_icon_minus">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 10H17" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </div> 
+    </div>
+    <div class="pdp_tabs__pane-content">
+      {{ block.settings.tab_content_3 | replace: "<p>", '' | replace: "</p>", '' }}
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+{% comment %} <script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".pdp_tabs").forEach((tabsWrapper) => {
+    
+    const buttons = tabsWrapper.querySelectorAll(".pdp_tabs__btn");
+    const panes = tabsWrapper.querySelectorAll(".pdp_tabs__pane");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tab = btn.getAttribute("data-tab");
+
+        // remove active
+        buttons.forEach(b => b.classList.remove("active"));
+        panes.forEach(p => p.classList.remove("active"));
+
+        // add active
+        btn.classList.add("active");
+        tabsWrapper.querySelector(`[data-content="${tab}"]`).classList.add("active");
+      });
+    });
+
+  });
+});
+</script> {% endcomment %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".pdp_tabs").forEach((tabsWrapper) => {
+
+    const buttons = tabsWrapper.querySelectorAll(".pdp_tabs__btn");
+    const panes = tabsWrapper.querySelectorAll(".pdp_tabs__pane");
+
+    // Tab click (desktop)
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tab = btn.getAttribute("data-tab");
+
+        buttons.forEach(b => b.classList.remove("active"));
+        panes.forEach(p => p.classList.remove("active"));
+
+        btn.classList.add("active");
+        tabsWrapper.querySelector(`[data-content="${tab}"]`).classList.add("active");
+      });
+    });
+
+    // Accordion click (mobile)
+    const headers = tabsWrapper.querySelectorAll(".pdp_tabs__pane-header");
+    headers.forEach((header) => {
+      header.addEventListener("click", () => {
+        const pane = header.parentElement;
+        const content = pane.querySelector(".pdp_tabs__pane-content");
+
+        if (pane.classList.contains("active")) {
+          // Close accordion
+          content.style.maxHeight = '0px';
+          pane.classList.remove("active");
+        } else {
+          // Close other panes (if only one open at a time)
+          panes.forEach(p => {
+            p.classList.remove("active");
+            p.querySelector(".pdp_tabs__pane-content").style.maxHeight = '0px';
+          });
+
+          // Open clicked pane
+          pane.classList.add("active");
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Set initial max-height for any active panes (on page load)
+    panes.forEach(p => {
+      const content = p.querySelector(".pdp_tabs__pane-content");
+      if (p.classList.contains("active")) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+
+  });
+});
+</script>

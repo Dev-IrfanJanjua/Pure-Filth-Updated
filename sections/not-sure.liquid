@@ -1,0 +1,368 @@
+{% style %}
+
+.section-{{ section.id }}{
+  position: relative;
+  background: {{ section.settings.section_bg }};
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+}
+
+.section-{{ section.id }} .not-sure-section_img{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+
+h2.not-sure-title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 0 16px;
+    max-width: 574px;
+    width: 100%;
+}
+
+p.not-sure-subtitle {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+    margin: 0;
+}
+
+span.not-sure-btn-text {
+    color: {{ section.settings.button_icon_bg }};
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.section-{{ section.id }} .not-sure-section_img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.section-{{ section.id }} .not-sure-wrapper{
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 20px;
+}
+
+.section-{{ section.id }} .not-sure-content{
+    max-width: 46.4%;
+    width: 100%;
+}
+
+.not-sure-image {
+    max-width: 44%;
+    width: 100%;
+    height: auto;
+}
+
+.section-{{ section.id }} .not-sure-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.section-{{ section.id }} .not-sure-button{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  background: {{ section.settings.button_bg }};
+  padding:10px 16px;
+  border-radius:60px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section-{{ section.id }} .not-sure-btn-icon{
+  background: {{ section.settings.button_icon_bg }};
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 10px 12px;
+  border-radius:60px;
+  transition: all 0.3s ease;
+}
+
+.section-{{ section.id }} .not-sure-button:hover{
+  transform: translateY(-2px);
+}
+
+.section-{{ section.id }} .not-sure-button:hover .not-sure-btn-icon{
+    transform: translateX(4px);
+}
+
+.section-{{ section.id }} .not-sure-btn-icon img{
+    width: 26px;
+    height: 16px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .not-sure-wrapper{
+  flex-direction:column;
+  text-align: center;
+  gap: 0;
+}
+
+.section-{{ section.id }} .not-sure-content {
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+h2.not-sure-title {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 0px 0 12px;
+    text-align: left;
+}
+
+p.not-sure-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.section-{{ section.id }} .not-sure-button {
+    margin-top: 24px;
+}
+
+.not-sure-image {
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.not-sure-section_img-desk{
+    display: none !important;
+}
+
+.not-sure-section_img-mob{
+    display: block !important;
+}
+
+}
+
+{% endstyle %}
+
+
+
+<section class="not-sure-section section-{{ section.id }}">
+
+    {% if section.settings.bg_image != blank or section.settings.bg_image_mob != blank %}
+        <div class="not-sure-section_img">
+            {% if section.settings.bg_image != blank %}
+                {{ section.settings.bg_image | image_url: width:1600 | image_tag: class: 'not-sure-section_img-desk' }}
+            {% endif %}
+            {% if section.settings.bg_image_mob != blank %}
+                {{ section.settings.bg_image_mob | image_url: width:1600 | image_tag: class: 'not-sure-section_img-mob', style: 'display: none' }}
+            {% endif %}
+        </div>
+    {% endif %}
+
+    <div class="page-width">
+        <div class="not-sure-wrapper">
+
+            <div class="not-sure-content">
+
+                <div class="not-sure-head">
+
+                    {% if section.settings.title != blank %}
+                        <h2 class="not-sure-title">
+                            {{ section.settings.title }}
+                        </h2>
+                    {% endif %}
+
+                    {% if section.settings.subtitle != blank %}
+                        <p class="not-sure-subtitle">
+                            {{ section.settings.subtitle }}
+                        </p>
+                    {% endif %}
+
+                </div>
+
+                {% if section.settings.button_text != blank %}
+                <a href="{{ section.settings.button_link }}" class="not-sure-button">
+
+                    <span class="not-sure-btn-text">
+                        {{ section.settings.button_text }}
+                    </span>
+
+                    {% if section.settings.button_icon != blank %}
+                    <div class="not-sure-btn-icon">
+                        {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                    </div>
+                    {% endif %}
+
+                </a>
+                {% endif %}
+
+            </div>
+
+
+            <div class="not-sure-image">
+                {% if section.settings.image != blank %}
+                    {{ section.settings.image | image_url: width:900 | image_tag }}
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Not Sure Section",
+  "settings": [
+
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image Desktop"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "bg_image_mob",
+      "label": "Background Image Mobile"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Right Image"
+    },
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button Icon"
+    },
+
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#000000"
+    },
+
+    {
+      "type": "color",
+      "id": "button_icon_bg",
+      "label": "Button Icon Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Bottom Mobile"
+    }
+
+  ],
+
+  "presets":[
+    {
+      "name":"Not Sure Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

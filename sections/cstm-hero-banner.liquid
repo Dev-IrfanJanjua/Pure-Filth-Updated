@@ -1,0 +1,526 @@
+{% style %}
+
+.section-{{ section.id }}{
+  position: relative;
+  background: {{ section.settings.bg_color }};
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+}
+
+.hero-abs-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section-{{ section.id }} .hero-abs-image{
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.section-{{ section.id }} .her-abs-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.section-{{ section.id }} .hero-banner-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translatey(-50%);
+    max-width: 564px;
+}
+
+.section-{{ section.id }} .mobile-banner{
+  display:none;
+}
+
+.section-{{ section.id }} .hero-banner_button{
+    display:inline-flex;
+    align-items:center;
+    gap: 10px;
+    background: {{ section.settings.button_bg }};
+    text-decoration:none;
+    transition: all .35s ease;
+    padding: 10px 16px;
+    margin-top: 40px;
+    border-radius: 75px;
+}
+
+span.her-banner_button-text {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.section-{{ section.id }} .hero-banner_button-icon{
+  background: {{ section.settings.button_icon_bg }};
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition: all .35s ease;
+  max-width: 50px;
+    height: auto;
+    padding: 10px 12px;
+    border-radius: 70px;
+}
+
+.hero-banner_button-icon img {
+    width: 100%;
+    height: 16px;
+    display: block;
+}
+
+.section-{{ section.id }} .hero-banner_button:hover{
+  transform: translateY(-2px);
+}
+
+.section-{{ section.id }} .hero-banner_button:hover .hero-banner_button-icon{
+  transform: translateX(4px);
+}
+
+.hero-banner_reviews-img {
+    max-width: 85px;
+    height: auto;
+    width: 100%;
+}
+
+.hero-banner_reviews-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-banner_reviews-content_img {
+    max-width: 120px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.hero-banner_reviews-content_img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+small.hero-banner_reviews-content_text {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+}
+
+.hero-banner_reviews {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 19px;
+}
+
+h2.hero-banner_title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: clamp(44px, 5.28vw, 76px);
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    max-width: 400px;
+}
+
+.hero-banner_desc {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 17px;
+}
+
+.hero-banner_desc ul {
+    padding: 0;
+    margin: 12px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hero-banner_desc ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero-banner_desc ul li:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url({{ section.settings.list_icon | image_url }});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-banner-money_back-icon {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 130px;
+    right: 100px;
+}
+
+.hero-banner-money_back-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .desktop-banner{
+  display:none;
+}
+
+.section-{{ section.id }} .mobile-banner{
+  display:block;
+}
+
+.section-{{ section.id }} .hero-banner-wrapper {
+    position: absolute;
+    top: 90px;
+    left: 16px;
+    transform: unset;
+    right: 16px;
+}
+
+.hero-banner_reviews {
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.hero-banner_reviews-img {
+    max-width: 55px;
+}
+
+.hero-banner_reviews-content_img {
+    max-width: 100px;
+    margin-bottom: 3px;
+}
+
+small.hero-banner_reviews-content_text {
+    font-size: 12px;
+}
+
+.hero-banner_desc {
+    font-size: 16px;
+    margin-top: 8px;
+    max-width: 350px;
+}
+
+.hero-banner_desc ul {
+    margin: 8px 0 0;
+    gap: 8px;
+}
+
+.hero-banner_desc ul li {
+    gap: 8px;
+}
+
+.hero-banner_desc ul li:before {
+    width: 16px;
+    height: 16px;
+}
+
+.section-{{ section.id }} .hero-banner_button {
+    margin-top: 24px;
+}
+
+.section-{{ section.id }} .hero-banner_button-icon {
+    padding: 8px 9px;
+    border-radius: 56px;
+}
+
+.hero-banner-money_back-icon {
+    max-width: 70px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    right: 20px;
+}
+
+}
+
+{% endstyle %}
+
+
+
+<section class="hero-banner-section section-{{ section.id }}">
+
+    <div class="hero-abs-image">
+        {% if section.settings.main_img != blank %}
+                {{ section.settings.main_img | image_url: width: 1600 | image_tag:
+                    widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                    alt: "image",
+                    loading: "eager",
+                    class: 'desktop-banner'
+                }}
+        {% endif %}
+        {% if section.settings.mobile_img != blank %}
+                {{ section.settings.mobile_img | image_url: width: 1600 | image_tag:
+                    widths: '50, 100, 150, 200, 250, 300, 400, 500,600,900',
+                    alt: "image",
+                    loading: "eager",
+                    class: 'mobile-banner'
+                }}
+        {% endif %}
+    </div>
+
+    <div class="page-width">
+        <div class="hero-banner-wrapper">
+
+            <div class="hero-banner_reviews">
+                {% if section.settings.review_img != blank %}
+                    <div class="hero-banner_reviews-img">
+                        {{ section.settings.review_img | image_url: width: 1000 | image_tag:
+                            widths: '50, 100, 150, 200',
+                            alt: "image",
+                            loading: "lazy"
+                        }}
+                    </div>
+                {% endif %}
+
+                <div class="her-banner_reviews-content">
+
+                    {% if section.settings.review_logo != blank %}
+                        <div class="hero-banner_reviews-content_img">
+                            {{ section.settings.review_logo | image_url: width: 1000 | image_tag:
+                                widths: '50, 100, 120',
+                                alt: "image",
+                                loading: "lazy"
+                            }}
+                        </div>
+                    {% endif %}
+
+                    <small class="hero-banner_reviews-content_text">
+                        {{ section.settings.review_text }}
+                    </small>
+
+                </div>
+            </div>
+
+            {% if section.settings.title != blank %}
+                <h2 class="hero-banner_title">{{ section.settings.title | remove: '<p>' | remove: '</p>' }}</h2>
+            {% endif %}
+
+            {% if section.settings.description != blank %}
+                <div class="hero-banner_desc">{{ section.settings.description | remove: '<p>' | remove: '</p>' }}</div>
+            {% endif %}
+
+            {% if section.settings.button_text != blank %}
+                <a href="{{ section.settings.button_link }}" class="hero-banner_button">
+                    <span class="her-banner_button-text">{{ section.settings.button_text }}</span>
+                    {% if section.settings.button_icon != blank %}
+                        <div class="hero-banner_button-icon">
+                            {{ section.settings.button_icon | image_url: width: 1000 | image_tag:
+                                widths: '50, 100, 120',
+                                alt: "image",
+                                loading: "lazy"
+                            }}
+                        </div>
+                    {% endif %}
+                </a>
+            {% endif %}
+        </div>
+        {% if section.settings.money != blank %}
+          <div class="hero-banner-money_back-icon">
+            {{ section.settings.money | image_url: width: 1600 | image_tag:
+                  widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                  alt: "image",
+                  loading: "lazy"
+              }}
+          </div>
+        {% endif %}
+    </div>
+
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [
+
+    {
+      "type": "image_picker",
+      "id": "money",
+      "label": "Money Back Icon"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "main_img",
+      "label": "Desktop Banner Image"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "mobile_img",
+      "label": "Mobile Banner Image"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "review_img",
+      "label": "Review Avatar Image"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "review_logo",
+      "label": "Review Logo"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "list_icon",
+      "label": "List Icon",
+      "info": "Select icon, If List is used in Deskcription"
+    },
+
+    {
+      "type": "text",
+      "id": "review_text",
+      "label": "Review Text"
+    },
+
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Banner Title"
+    },
+
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button Icon"
+    },
+
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#000000"
+    },
+
+    {
+      "type": "color",
+      "id": "button_icon_bg",
+      "label": "Button Icon Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "label": "Padding Top Desktop",
+      "default": 80
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "label": "Padding Bottom Desktop",
+      "default": 80
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "label": "Padding Top Mobile",
+      "default": 40
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "label": "Padding Bottom Mobile",
+      "default": 40
+    }
+
+  ],
+
+  "presets": [
+    {
+      "name": "Hero Banner",
+      "category": "custom"
+    }
+  ]
+}
+{% endschema %}

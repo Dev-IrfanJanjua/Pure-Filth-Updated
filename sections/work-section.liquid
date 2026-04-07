@@ -1,0 +1,412 @@
+{% style %}
+
+.section-{{ section.id }}{
+  background: {{ section.settings.section_bg }};
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+}
+
+.section-{{ section.id }} .work-wrapper-title{
+    margin: 0 0 32px;
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-{{ section.id }} .work-cards{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+}
+
+.section-{{ section.id }} .work-card{
+  background: {{ section.settings.card_bg }};
+  padding: 32px;
+  border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-{{ section.id }} .work-card_img img{
+  width:100%;
+  height: 100%;
+  display:block;
+}
+
+.section-{{ section.id }} .work-card-button,
+.section-{{ section.id }} .work-wrapper-button{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  background: {{ section.settings.button_bg }};
+  padding:10px 16px;
+  border-radius:75px;
+  transition:all .3s ease;
+  max-width: fit-content;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+span.work-card-btn-text {
+    color: #fff;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+/* .section-{{ section.id }} .work-card-button:hover,
+.section-{{ section.id }} .work-wrapper-button:hover{
+  transform:translateY(-3px);
+} */
+
+.section-{{ section.id }} .work-card-button:hover,
+.section-{{ section.id }} .work-wrapper-button:hover{
+  transform: translatey(-2px);
+}
+
+.section-{{ section.id }} .work-card-button:hover .work-card-btn-icon,
+.section-{{ section.id }} .work-wrapper-button:hover .work-card-btn-icon{
+    transform: translateX(4px);
+}
+
+.section-{{ section.id }} .work-card-btn-icon{
+  background: {{ section.settings.button_icon_bg }};
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:7px 9px;
+  border-radius: 53px;
+  transition:all .3s ease;
+}
+
+.section-{{ section.id }} .work-card-btn-icon img{
+  width: 20px;
+  height: 12px;
+  display:block;
+}
+
+.section-{{ section.id }} .work-wrapper-button{
+  margin: 32px auto 0;
+}
+
+.work-card_img {
+    max-width: 86px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+h3.work-card-title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+    color: #000;
+}
+
+.work-card-desc {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    margin: 0;
+    color: #000;
+}
+
+.work-card-desc p {
+    margin: 0;
+}
+
+.work-card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.work-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .work-cards{
+  grid-template-columns:1fr;
+}
+
+.section-{{ section.id }} .work-wrapper-title {
+    margin: 0 0 24px;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.section-{{ section.id }} .work-card {
+    padding: 32px 24px;
+    flex-direction: row-reverse;
+    gap: 6px;
+    justify-content: space-between;
+}
+
+.work-card_img {
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+}
+
+h3.work-card-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.section-{{ section.id }} .work-wrapper-button{
+  margin-top: 24px;
+}
+
+}
+
+{% endstyle %}
+
+
+<section class="work-section section-{{ section.id }}">
+    <div class="page-width">
+        <div class="work-wrapper">
+
+            {% if section.settings.title != blank %}
+            <h2 class="work-wrapper-title">
+                {{ section.settings.title }}
+            </h2>
+            {% endif %}
+
+            <div class="work-cards">
+
+                {% for block in section.blocks %}
+                <div class="work-card" {{ block.shopify_attributes }}>
+
+                    {% if block.settings.card_icon != blank %}
+                    <div class="work-card_img">
+                        {{ block.settings.card_icon | image_url: width:500 | image_tag }}
+                    </div>
+                    {% endif %}
+
+                    <div class="work-card-content-wrapper">
+                        <div class="work-card-content">
+                            {% if block.settings.card_title != blank %}
+                            <h3 class="work-card-title">{{ block.settings.card_title }}</h3>
+                            {% endif %}
+                            {% if block.settings.card_desc != blank %}
+                            <div class="work-card-desc">{{ block.settings.card_desc }}</div>
+                            {% endif %}
+                        </div>
+                        {% if block.settings.button_text != blank %}
+                        <a href="{{ block.settings.button_link }}" class="work-card-button work-buttoon">
+                            <span class="work-card-btn-text">
+                                {{ block.settings.button_text }}
+                            </span>
+                            {% if section.settings.button_icon != blank %}
+                            <div class="work-card-btn-icon">
+                                {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                            </div>
+                            {% endif %}
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+
+
+            {% if section.settings.outer_button_text != blank %}
+            <a href="{{ section.settings.outer_button_link }}" class="work-wrapper-button work-buttoon">
+                <span class="work-card-btn-text">
+                    {{ section.settings.outer_button_text }}
+                </span>
+
+                {% if section.settings.button_icon != blank %}
+                <div class="work-card-btn-icon">
+                    {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                </div>
+                {% endif %}
+            </a>
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Work Cards",
+  "settings": [
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title"
+    },
+
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color_background",
+      "id": "card_bg",
+      "label": "Card Background",
+      "default": "#f5f5f5"
+    },
+
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#000000"
+    },
+
+    {
+      "type": "color",
+      "id": "button_icon_bg",
+      "label": "Button Icon Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button Icon"
+    },
+
+    {
+      "type": "text",
+      "id": "outer_button_text",
+      "label": "Mobile Button Text"
+    },
+
+    {
+      "type": "url",
+      "id": "outer_button_link",
+      "label": "Mobile Button Link"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Bottom Mobile"
+    }
+
+  ],
+
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Work Card",
+      "settings": [
+
+        {
+          "type": "image_picker",
+          "id": "card_icon",
+          "label": "Card Icon"
+        },
+
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Card Title"
+        },
+
+        {
+          "type": "richtext",
+          "id": "card_desc",
+          "label": "Card Description"
+        },
+
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+
+      ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Work Cards",
+      "category": "Custom",
+      "blocks":[
+        {"type":"card"},
+        {"type":"card"},
+        {"type":"card"}
+      ]
+    }
+  ]
+}
+{% endschema %}

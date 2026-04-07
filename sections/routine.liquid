@@ -1,0 +1,549 @@
+{% style %}
+
+.section-{{ section.id }}{
+  position:relative;
+  background: {{ section.settings.section_bg }};
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+}
+
+.section-{{ section.id }} .page-width{
+    padding: 0 120px;
+}
+
+.section-{{ section.id }} .routine_abs_img{
+  position:absolute;
+  top:0;
+  left:0;
+  max-width: 200px;
+  width:100%;
+}
+
+.section-{{ section.id }} .routine_abs_img img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
+}
+
+.section-{{ section.id }} .routine-wrapper{
+  position:relative;
+}
+
+.section-{{ section.id }} .routine-title{
+    text-align: center;
+    margin-bottom: 32px;
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.section-{{ section.id }} .routine-blocks{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap: 16px;
+}
+
+.section-{{ section.id }} .routine-block{
+    background-color: {{ section.settings.cards_bg }} ;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 14px;
+    padding: 24px 44px;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.section-{{ section.id }} .routine-block:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1.02);
+}
+
+.section-{{ section.id }} .routine-blcok_img {
+    max-width: fit-content;
+    width: 100%;
+    height: 164px;
+    align-self: center;
+}
+
+.section-{{ section.id }} .routine-blcok_img img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+}
+
+.section-{{ section.id }} .routine-block_title{
+    margin: 0 0 8px;
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.section-{{ section.id }} .routine-block_subtitle{
+    margin:0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000;
+}
+
+.section-{{ section.id }} .routine-block-button{
+  display: flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  background: {{ section.settings.button_bg }};
+  padding: 10px 16px;
+  border-radius: 75px;
+  transition:all .3s ease;
+}
+
+a.routine-block-button_secondary {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0;
+    text-decoration-skip-ink: auto;
+    color: #000;
+    text-align: center;
+    display: block;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+}
+
+a.routine-block-button_secondary:hover{
+    text-decoration: none;
+}
+
+span.routine-block-btn-text {
+    color: #fff;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.template--chaga-2 span.routine-block-btn-text,
+.template--mushroom-powder span.routine-block-btn-text{
+  color: #000;
+}
+
+.section-{{ section.id }} .routine-block-button:hover .routine-block-btn-icon{
+  transform:translateX(4px);
+}
+
+.section-{{ section.id }} .routine-block-btn-icon{
+  background: {{ section.settings.button_icon_bg }};
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 8px 10px;
+  border-radius:60px;
+  transition:all .3s ease;
+}
+
+.routine-block_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.section-{{ section.id }} .routine-block-btn-icon img{
+  width: 22px;
+  height: 13px;
+  display:block;
+}
+
+.routine-blcok_head_icon{
+    max-width: 64px;
+    width: 100%;
+    height: auto;
+}
+
+.routine-blcok_head_icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.routine-blcok_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+h4.routine-blcok_head_title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .page-width{
+    padding: 0 16px;
+}
+
+.section-{{ section.id }} .routine-blocks{
+  grid-template-columns:1fr;
+  gap: 16px;
+}
+
+.section-{{ section.id }} .routine-title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.section-{{ section.id }} .routine-block {
+    gap: 18px;
+}
+
+.routine-blcok_head {
+    gap: 8px;
+}
+
+.routine-blcok_head_icon {
+    max-width: 56px;
+}
+
+h4.routine-blcok_head_title {
+    font-size: 32px;
+}
+
+.section-{{ section.id }} .routine-blcok_img {
+    height: 140px;
+}
+
+.routine-block_content {
+    gap: 18px;
+}
+
+.section-{{ section.id }} .routine-block_subtitle {
+    margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000;
+}
+
+}
+
+{% endstyle %}
+
+
+<section class="routine-section section-{{ section.id }}">
+
+    {% if section.settings.abs_image != blank %}
+    <div class="routine_abs_img">
+        {{ section.settings.abs_image | image_url: width:1600 | image_tag }}
+    </div>
+    {% endif %}
+
+    <div class="page-width">
+        <div class="routine-wrapper">
+
+            {% if section.settings.title != blank %}
+            <h2 class="routine-title">
+                {{ section.settings.title }}
+            </h2>
+            {% endif %}
+
+            {% if section.blocks.size > 0 %}
+            <div class="routine-blocks">
+
+                {% for block in section.blocks %}
+                <div class="routine-block" {{ block.shopify_attributes }}>
+
+                    <div class="routine-blcok_head">
+                        {% if block.settings.header_icon != blank %}
+                            <div class="routine-blcok_head_icon">
+                                {{ block.settings.header_icon | image_url: width: 1600 | image_tag:
+                                    widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                                    alt: "image",
+                                    loading: "lazy"
+                                }}
+                            </div>
+                        {% endif %}
+                        {% if block.settings.top_title != blank %}
+                            <h4 class="routine-blcok_head_title">{{ block.settings.top_title }}</h4>
+                        {% endif %}
+                    </div>
+
+                    {% if block.settings.image != blank %}
+                    <div class="routine-blcok_img">
+                        {{ block.settings.image | image_url: width:800 | image_tag }}
+                    </div>
+                    {% endif %}
+
+                    <div class="routine-block_content">
+
+                        <div class="routine-block_head">
+
+                            {% if block.settings.title != blank %}
+                            <h3 class="routine-block_title">
+                                {{ block.settings.title }}
+                            </h3>
+                            {% endif %}
+
+                            {% if block.settings.subtitle != blank %}
+                            <p class="routine-block_subtitle">
+                                {{ block.settings.subtitle }}
+                            </p>
+                            {% endif %}
+
+                        </div>
+
+                        <div class="routine-block-buttons">
+                            {% if block.settings.button_text != blank %}
+                            <a href="{{ block.settings.button_link }}" class="routine-block-button">
+    
+                                <span class="routine-block-btn-text">
+                                    {{ block.settings.button_text }}
+                                </span>
+    
+                                {% if section.settings.button_icon != blank %}
+                                <div class="routine-block-btn-icon">
+                                    {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                                </div>
+                                {% endif %}
+    
+                            </a>
+                            {% endif %}
+    
+                            {% if block.settings.button_text_scnd != blank %}
+                                <a class="routine-block-button_secondary" href="{{ block.settings.button_link_scnd }}">{{ block.settings.button_text_scnd }}</a>
+                            {% endif %}
+                        </div>
+
+                    </div>
+
+                </div>
+                {% endfor %}
+
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Routine Section",
+  "settings": [
+
+    {
+      "type": "image_picker",
+      "id": "abs_image",
+      "label": "Absolute Background Image"
+    },
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button Icon"
+    },
+
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#000000"
+    },
+
+    {
+      "type": "color",
+      "id": "button_icon_bg",
+      "label": "Button Icon Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color",
+      "id": "cards_bg",
+      "label": "Cards Background",
+      "default": "#FAF7ED"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Bottom Mobile"
+    }
+
+  ],
+
+  "blocks":[
+    {
+      "type":"step",
+      "name":"Routine Block",
+      "settings":[
+
+        {
+          "type":"image_picker",
+          "id":"header_icon",
+          "label":"Block Icon"
+        },
+
+        {
+          "type":"text",
+          "id":"top_title",
+          "label":"Block Top Title"
+        },
+
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Block Image"
+        },
+
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Block Title"
+        },
+
+        {
+          "type":"text",
+          "id":"subtitle",
+          "label":"Block Subtitle"
+        },
+
+        {
+          "type":"text",
+          "id":"button_text",
+          "label":"Button Text"
+        },
+
+        {
+          "type":"url",
+          "id":"button_link",
+          "label":"Button Link"
+        },
+
+        {
+          "type":"text",
+          "id":"button_text_scnd",
+          "label":"Secondary Button Text"
+        },
+
+        {
+          "type":"url",
+          "id":"button_link_scnd",
+          "label":"Secondary Button Link"
+        }
+
+      ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Routine Section",
+      "category": "Custom",
+      "blocks":[
+        {"type":"step"},
+        {"type":"step"},
+        {"type":"step"}
+      ]
+    }
+  ]
+}
+{% endschema %}

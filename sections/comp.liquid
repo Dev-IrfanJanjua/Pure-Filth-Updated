@@ -1,0 +1,571 @@
+{% style %}
+  .section-{{ section.id }}{
+    background: {{ section.settings.section_bg }};
+    padding-top: {{ section.settings.padding_top_desktop }}px;
+    padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+    position: relative;
+  }
+
+  .section-{{ section.id }} .page-width{
+    padding:0 100px;
+  }
+
+  .section-{{ section.id }} .comparison-head{
+    text-align:center;
+    margin-bottom:50px;
+  }
+
+h2.comparison-title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+    color: #000;
+}
+
+p.comparison-subtitle {
+    margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.comparison_table-wrapper {
+    overflow-x: auto;
+    position: relative;
+    border-radius: 24px;
+    backdrop-filter: blur(80px);
+    background: #FAF7ED66;
+    padding-left: 24px;
+}
+
+td.col-typical,
+th.col-typical {
+    border-right: 1px solid #827454;
+}
+
+  .comparison_table{
+    width:100%;
+    border-collapse:collapse;
+  }
+
+  .comparison_table th,
+  .comparison_table td{
+    padding:20px 10px;
+    border-bottom:0.5px solid #0000004D;
+    font-family: GT Cinetype;
+    font-size:16px;
+    text-align:center;
+    min-height:92px;
+  }
+
+  .comparison_table th{
+    background: {{ section.settings.table_head_bg }};
+    font-family: PP Formula;
+    text-transform:uppercase;
+  }
+
+  .col-feature{
+    width:30%;
+    text-align:left;
+  }
+
+  .col-brand,
+  .col-typical,
+  .col-why{
+    width:23.3%;
+  }
+
+  .highlight{
+    background: {{ section.settings.highlight_bg }};
+  }
+
+  .comparison-logo img{
+    max-width:120px;
+    width: 100%;
+    height:30px;
+    object-fit:contain;
+  }
+
+  .comparison-cell_inner-text{
+    max-width: 146px;
+    display:inline-block;
+  }
+
+  /* th.col-feature {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 17.86px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #000;
+} */
+
+th.col-typical, th.col-why, th.col-feature {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+td.col-feature {
+    text-align: left !important;
+    font-weight: 700 !important;
+    font-family: PP Formula !important;
+}
+
+th.col-feature {
+    text-align: start;
+}
+
+.comparison_table td {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.comparison_table th {
+    height: 92px;
+}
+
+.comparison_section-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.comparison_section-img {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 70%;
+}
+
+td.col-why {
+    padding: 20px;
+}
+
+.highlight span.comparison-cell_inner-text {
+    font-weight: 700;
+}
+
+  /* MOBILE */
+
+  @media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .page-width{
+  padding:0 16px;
+}
+
+/* wrapper allows horizontal scroll */
+
+.comparison_table-wrapper{
+  overflow-x:auto;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #FFBFC1 #f0f0f0;
+}
+
+.comparison_table-wrapper::-webkit-scrollbar {
+    height: 10px; /* horizontal scrollbar height */
+}
+
+.comparison_table-wrapper::-webkit-scrollbar-track {
+    background: #f0f0f0; /* track color */
+    margin: 5px 0; /* vertical margins on track */
+}
+
+.comparison_table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #FFBFC1; /* scrollbar color */
+    border-radius: 5px;
+    border: 1px solid #FFBFC1; /* optional: adds space around thumb */
+}
+
+/* 4 columns but viewport shows 3 */
+
+.comparison_table{
+  width:133.33%;
+  min-width:unset;
+  table-layout:fixed;
+}
+
+/* every column = 33.33% of viewport */
+
+.comparison_table th,
+.comparison_table td{
+  width:33.33%;
+  padding: 10px 8px;
+}
+
+.comparison-logo img {
+    max-width: 80px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* sticky columns */
+
+.col-feature{
+  position:sticky;
+  left:0;
+  z-index:3;
+}
+
+.col-brand{
+  position:sticky;
+  left:33.33%;
+  z-index:3;
+}
+
+/* scroll columns */
+
+.col-typical,
+.col-why{
+  width:33.33%;
+}
+
+th.col-feature,
+th.col-typical,
+th.col-why,
+.comparison_table td {
+    font-size: 14px;
+}
+.comparison_table td {
+    font-size: 13px;
+}
+td.col-typical, th.col-typical {
+    border-right: none;
+}
+
+.section-{{ section.id }} .comparison-head {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+h2.comparison-title {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+p.comparison-subtitle {
+    font-size: 16px;
+    max-width: 278px;
+    margin: 0 auto;
+}
+
+img.comparison_section-img-desk {
+    display: none !important;
+}
+
+img.comparison_section-img-mob {
+    display: block !important;
+}
+
+td.col-feature {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+}
+
+
+  /* scroll fade hint */
+
+  /* .comparison_table-wrapper::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    width:40px;
+    height:100%;
+    background:linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+    pointer-events:none;
+  } */
+{% endstyle %}
+
+<section class="comparison-section section-{{ section.id }}">
+    {% if section.settings.image_bg_mob != blank %}
+        <div class="comparison_section-img">
+            {% if section.settings.image_bg_mob != blank %}
+                {{ section.settings.image_bg | image_url: width: 1600 | image_tag:
+                    widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                    alt: "image",
+                    loading: "eager",
+                    class: 'comparison_section-img-desk'
+                }}
+            {% endif %}
+            {% if section.settings.image_bg_mob != blank %}
+                {{ section.settings.image_bg_mob | image_url: width: 1600 | image_tag:
+                    widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                    alt: "image",
+                    loading: "eager",
+                    class: 'comparison_section-img-mob',
+                    style: 'display: none;'
+                }}
+            {% endif %}
+        </div>
+    {% endif %}
+  <div class="page-width">
+    <div class="comparison-head">
+      {% if section.settings.title != blank %}
+        <h2 class="comparison-title">
+          {{ section.settings.title }}
+        </h2>
+      {% endif %}
+
+      {% if section.settings.subtitle != blank %}
+        <p class="comparison-subtitle">
+          {{ section.settings.subtitle }}
+        </p>
+      {% endif %}
+    </div>
+
+    <div class="comparison_table-wrapper">
+      <table class="comparison_table">
+        <thead>
+          <tr>
+            <th class="col-feature">
+              {{ section.settings.col_1 }}
+            </th>
+
+            <th class="col-brand highlight comparison-logo">
+              {% if section.settings.brand_logo != blank %}
+                {{ section.settings.brand_logo | image_url: width: 200 | image_tag }}
+              {% else %}
+                {{ section.settings.col_2 }}
+              {% endif %}
+            </th>
+
+            <th class="col-typical">
+              {{ section.settings.col_3 }}
+            </th>
+
+            <th class="col-why">
+              {{ section.settings.col_4 }}
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for block in section.blocks %}
+            <tr {{ block.shopify_attributes }}>
+              <td class="col-feature">
+                {{ block.settings.feature }}
+              </td>
+
+              <td class="col-brand highlight">
+                <span class="comparison-cell_inner-text">
+                  {{ block.settings.brand }}
+                </span>
+              </td>
+
+              <td class="col-typical">
+                <span class="comparison-cell_inner-text">
+                  {{ block.settings.typical }}
+                </span>
+              </td>
+
+              <td class="col-why">
+                {{ block.settings.why }}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Comparison (Scrollable)",
+  "settings": [
+
+    {
+      "type": "image_picker",
+      "id": "image_bg",
+      "label": "Section Background Image Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_bg_mob",
+      "label": "Section Background Image Mobile"
+    },
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+
+    {
+      "type": "text",
+      "id": "col_1",
+      "label": "Column 1 Heading",
+      "default": "Features"
+    },
+
+    {
+      "type": "text",
+      "id": "col_2",
+      "label": "Column 2 Heading",
+      "default": "Your Brand"
+    },
+
+    {
+      "type": "text",
+      "id": "col_3",
+      "label": "Column 3 Heading",
+      "default": "Typical Brands"
+    },
+
+    {
+      "type": "text",
+      "id": "col_4",
+      "label": "Column 4 Heading",
+      "default": "Why This Matters"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "brand_logo",
+      "label": "Brand Logo (optional)"
+    },
+
+    {
+      "type": "color_background",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color",
+      "id": "highlight_bg",
+      "label": "Highlight Column Background",
+      "default": "#f0f0f0"
+    },
+
+    {
+      "type": "color_background",
+      "id": "table_head_bg",
+      "label": "Table Header Background",
+      "default": "#f5f5f5"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 80,
+      "label": "Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 80,
+      "label": "Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "label": "Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "label": "Padding Bottom Mobile"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Comparison Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Feature"
+        },
+
+        {
+          "type": "textarea",
+          "id": "brand",
+          "label": "Your Brand"
+        },
+
+        {
+          "type": "textarea",
+          "id": "typical",
+          "label": "Typical Brands"
+        },
+
+        {
+          "type": "textarea",
+          "id": "why",
+          "label": "Why This Matters"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Comparison Table (Scrollable)",
+      "category": "Custom",
+      "blocks": [{ "type": "row" }, { "type": "row" }, { "type": "row" }, { "type": "row" }]
+    }
+  ]
+}
+{% endschema %}

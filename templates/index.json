@@ -1,0 +1,1515 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1658995208ad05f95f": {
+      "type": "hero-banner",
+      "blocks": {
+        "8d591e0b-d408-44f1-8bd2-9b71f529aa90": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme": "scheme-6",
+            "header_menu_text_color": "#ffffff",
+            "image": "shopify://shop_images/Desktop-Soild-Hero-4.webp",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "enable_media_overlay_desktop": false,
+            "image_mobile": "shopify://shop_images/Mobile-Soild-Hero-6.webp",
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "enable_media_overlay_mobile": true,
+            "content_position_horizontal": "align-start text-left",
+            "content_position_vertical": "justify-center",
+            "heading": "<p><em>The </em>filthiest </p><p><em>supplement </em></p><p><em>of them all.</em></p>",
+            "subheading": "",
+            "subheading_link": "",
+            "text": "<p>Pure mushroom powders to keep your mind sharp, body banging and your wellness on point.</p>",
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify://collections/all",
+            "button_style_1": "button--filled",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "button--outlined"
+          }
+        }
+      },
+      "block_order": [
+        "8d591e0b-d408-44f1-8bd2-9b71f529aa90"
+      ],
+      "disabled": true,
+      "settings": {
+        "slider_height": 100,
+        "slideshow_autoplay_interval": 0,
+        "show_slideshow_navigation": true,
+        "slideshow_navigation_position": "hero__swiper-buttons--sides",
+        "color_scheme_arrows": "scheme-6",
+        "show_slideshow_pagination": true,
+        "slideshow_pagination_style": "style-2",
+        "floating_bar": false
+      }
+    },
+    "marquees_TFD63r": {
+      "type": "marquees",
+      "blocks": {
+        "item_gj8RYW": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
+            "title": "100% ORGANIC MUSHROOM POWDER",
+            "link": ""
+          }
+        },
+        "item_79URt3": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
+            "title": "NON GMO",
+            "link": ""
+          }
+        },
+        "item_RJGMEf": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
+            "title": "DAIRY FREE",
+            "link": ""
+          }
+        },
+        "item_aqCq7k": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
+            "title": "SUGAR FREE",
+            "link": ""
+          }
+        },
+        "item_iaztEL": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
+            "title": "NO ADDITIVES, PRESERVATIVES OR FILLERS",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_gj8RYW",
+        "item_79URt3",
+        "item_RJGMEf",
+        "item_aqCq7k",
+        "item_iaztEL"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "marquee_duration_rate": 5,
+        "marquee_font_size": 2,
+        "marquee_items_spacing": 0,
+        "color_scheme": "scheme-6",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
+    "cstm_hero_banner_c6dCKV": {
+      "type": "cstm-hero-banner",
+      "name": "Hero Banner",
+      "settings": {
+        "main_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0_png_2fe56c58-c3fe-4ce9-8787-2bc267518ff7.png",
+        "mobile_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_2.png",
+        "review_img": "shopify://shop_images/Stars_8.svg",
+        "list_icon": "shopify://shop_images/verify.svg",
+        "review_text": "2,240+ FILTHY customers",
+        "title": "<p>FEEL SHARPER. <br/>MOVE CLEANER. <br/>PERFORM DAILY.</p>",
+        "description": "<p>FUNCtional Mushroom extracts designed for:</p><ul><li>focus + Clean Energy</li><li>Calm + Better sleep</li><li>Immunity + Gut + SKIN</li></ul>",
+        "button_text": "FIND YOUR FILTH",
+        "button_icon": "shopify://shop_images/Frame_2147242027.svg",
+        "button_link": "shopify://collections",
+        "bg_color": "#ffffff",
+        "button_bg": "#ffffff",
+        "button_icon_bg": "#000000",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "collection_card_VQBY8r": {
+      "type": "collection-card",
+      "blocks": {
+        "collection_CNRwJw": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-filthy-products",
+            "tag": "FOCUS",
+            "custom_image": "shopify://shop_images/am02clipped.webm_12.png",
+            "title": "Lion's Mane",
+            "subtitle": "Cognitive Performance",
+            "card_bg": "#fff1c6"
+          }
+        },
+        "collection_Cayzz9": {
+          "type": "collection",
+          "settings": {
+            "collection": "powders",
+            "tag": "ENERGY",
+            "custom_image": "shopify://shop_images/am02clipped.webm_7.png",
+            "title": "cordyceps",
+            "subtitle": "Physical Performance",
+            "card_bg": "#ffbfc1"
+          }
+        },
+        "collection_h3gbQ6": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-filthy-lineup",
+            "tag": "RELAX",
+            "custom_image": "shopify://shop_images/am02clipped.webm_8.png",
+            "title": "Reishi",
+            "subtitle": "Stress & Sleep Support",
+            "card_bg": "#ddccff"
+          }
+        },
+        "collection_C8ecWR": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-filthy-lineup",
+            "tag": "GUT HEALTH",
+            "custom_image": "shopify://shop_images/am02clipped.webm_9.png",
+            "title": "turkey tail",
+            "subtitle": "Digestive Support",
+            "card_bg": "#c3ffde"
+          }
+        },
+        "collection_BgX6tD": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-filthy-products",
+            "tag": "BEAUTY",
+            "custom_image": "shopify://shop_images/am02clipped.webm_10.png",
+            "title": "TREMELLA",
+            "subtitle": "Skin Hydration",
+            "card_bg": "#fdd4f3"
+          }
+        },
+        "collection_C8ECKa": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-filthy-products",
+            "tag": "IMMUNITY",
+            "custom_image": "shopify://shop_images/am02clipped.webm_11.png",
+            "title": "CHAGA",
+            "subtitle": "Immune Defence",
+            "card_bg": "#7cc9f6"
+          }
+        }
+      },
+      "block_order": [
+        "collection_CNRwJw",
+        "collection_Cayzz9",
+        "collection_h3gbQ6",
+        "collection_C8ecWR",
+        "collection_BgX6tD",
+        "collection_C8ECKa"
+      ],
+      "name": "Collection Cards",
+      "settings": {
+        "sec_img": "shopify://shop_images/tempImageYExoTd_1_4.png",
+        "title": "WHAT BENEFIT DO YOU NEED?",
+        "button_text": "Shop Pure Filth",
+        "button_link": "shopify://collections",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "card_icon": "shopify://shop_images/67caea9cdd6f427348ad4714_ButtonNavigation_20_1__svg.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "section_bg": "#ffffff",
+        "mobile_layout": "swiper",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "bg_content_section_3KYDXn": {
+      "type": "bg_content-section",
+      "name": "Background Content Section",
+      "settings": {
+        "main_img": "shopify://shop_images/us_vs_them.png",
+        "mobile_img": "shopify://shop_images/us_vs_them_1.png",
+        "title": "<p>ADD SOME FILTH TO YOUR DAY</p>",
+        "description": "<p>One scoop. One mug. Once Daily Habit. <br/>No hacks. No overthinking. No Nonsense.</p>",
+        "button_text": "Choose your filth",
+        "button_icon": "shopify://shop_images/Frame_2147242027.svg",
+        "button_link": "shopify://collections",
+        "bg_color": "#ffffff",
+        "button_bg": "#ffffff",
+        "button_icon_bg": "#000000",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "work_section_BDfdgD": {
+      "type": "work-section",
+      "blocks": {
+        "card_dwkBKm": {
+          "type": "card",
+          "settings": {
+            "card_icon": "shopify://shop_images/Frame_2147230279.svg",
+            "card_title": "FRUITING BODY ONLY",
+            "card_desc": "<p>The part of the mushroom that actually does something.</p>",
+            "button_text": "",
+            "button_link": "#"
+          }
+        },
+        "card_Hh8ffh": {
+          "type": "card",
+          "settings": {
+            "card_icon": "shopify://shop_images/Frame_2147230279_1.svg",
+            "card_title": "HIGH RATIO POTENCY",
+            "card_desc": "<p>Higher ratio. <br/>Stronger serving.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "card_UTKxAW": {
+          "type": "card",
+          "settings": {
+            "card_icon": "shopify://shop_images/Frame_2147230279_2.svg",
+            "card_title": "ADVANCED EXTRACTION",
+            "card_desc": "<p>Bioactive ingredients pulled properly so your body can use it.</p>",
+            "button_text": "",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "card_dwkBKm",
+        "card_Hh8ffh",
+        "card_UTKxAW"
+      ],
+      "name": "Work Cards",
+      "settings": {
+        "title": "WHY PURE FILTH WORKS",
+        "section_bg": "#ffffff",
+        "card_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "outer_button_text": "Learn more",
+        "outer_button_link": "#",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "reviews_slider_UaegAV": {
+      "type": "reviews-slider",
+      "blocks": {
+        "review_FrgTzL": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Stars.svg",
+            "desc": "\"This Lion's Mane is a game changer for me. No jitters, just laser focus.\"",
+            "name": "Max.F"
+          }
+        },
+        "review_tMPGXC": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Stars.svg",
+            "desc": "\"Always struggled sleeping till I tried Pure Filth’s Reishi. Wow.\"",
+            "name": "Steph.G"
+          }
+        },
+        "review_aA3jXe": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Stars.svg",
+            "desc": "\"My bad skin disappeared in 2 weeks, since taking Tremella.\"",
+            "name": "Alex.G"
+          }
+        }
+      },
+      "block_order": [
+        "review_FrgTzL",
+        "review_tMPGXC",
+        "review_aA3jXe"
+      ],
+      "name": "Reviews Section",
+      "settings": {
+        "title": "REAL ReSULTS. NO NONSENSE.",
+        "subtitle": "",
+        "stars_image": "shopify://shop_images/Stars.svg",
+        "rating_text": "4.8/5 Star Average",
+        "section_bg": "#ffffff",
+        "card_bg": "#f8f6ef",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "not_sure_tAHGVr": {
+      "type": "not-sure",
+      "name": "Not Sure Section",
+      "settings": {
+        "bg_image": "shopify://shop_images/Frame_2147241648.png",
+        "bg_image_mob": "shopify://shop_images/Banner_2_2.png",
+        "image": "shopify://shop_images/Frame_2147242212_dedecf42-2156-43b1-9767-99c30c2fdd20.png",
+        "title": "Not sure where to start? We’ll point you to the right Filth.",
+        "subtitle": "Answer a few quick questions to discover what suits you best. Get personalized recommendations tailored to your goals.",
+        "button_text": "Start the Quiz",
+        "button_link": "shopify://collections/all",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "section_bg": "#ffffff",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 64,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 32,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "how_to_buy_68BkDx": {
+      "type": "How-to-buy",
+      "blocks": {
+        "step_cmjGgk": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/image_2793_1.png",
+            "title": "STARTER Pack (10g Set)",
+            "subtitle": "Try all of them out in one pack",
+            "button_text": "Shop All",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "step_DixFdq": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/Frame_2147242205.png",
+            "title": "DAILY DRIVER (100g)",
+            "subtitle": "Best value for every day use.",
+            "button_text": "Shop All",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "step_zdYXG6": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/image_2793.png",
+            "title": "AUTO-PILOT (Subscribe)",
+            "subtitle": "Save 20% and never run out.",
+            "button_text": "Shop All",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "step_cmjGgk",
+        "step_DixFdq",
+        "step_zdYXG6"
+      ],
+      "name": "How To Buy Section",
+      "settings": {
+        "abs_image": "shopify://shop_images/tempImageYExoTd_1_2.png",
+        "title": "HOW TO BUY",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#151515",
+        "button_icon_bg": "#ffffff",
+        "section_bg": "#ffffff",
+        "cards_bg": "#faf7ed",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "build_perfect_eDHefQ": {
+      "type": "build-perfect",
+      "blocks": {
+        "feature_KUWLD4": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Frame_2147242089.png",
+            "title": "MORNING",
+            "description": "<ul><li>Focus</li><li>Skin Hydration</li></ul>",
+            "button_text": "Shop MORNING",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "feature_jazjQR": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Frame_2147242089_2.png",
+            "title": "AFTERNOON",
+            "description": "<ul><li>Immunity</li><li>Energy</li></ul>",
+            "button_text": "Shop AFTERNOON",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "feature_9bL4Qj": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Frame_2147242089_1.png",
+            "title": "EVENING",
+            "description": "<ul><li>Gut Support</li><li>Sleep Support</li></ul>",
+            "button_text": "Shop EVENING",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "feature_KUWLD4",
+        "feature_jazjQR",
+        "feature_9bL4Qj"
+      ],
+      "name": "Build Perfect Section",
+      "settings": {
+        "abs_image": "shopify://shop_images/col-right_2.png",
+        "abs_image_mob": "shopify://shop_images/col-right_3.png",
+        "list_icon": "shopify://shop_images/verify_1.svg",
+        "title": "Build Your Perfect Routine",
+        "subtitle": "Choose mushrooms for any time of day.",
+        "section_bg": "#ffffff",
+        "Content_bg": "#fec700",
+        "Cards_bg": "#faf7ed",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "routine_67g93h": {
+      "type": "routine",
+      "blocks": {
+        "step_BNEJye": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165.png",
+            "top_title": "MORNING",
+            "image": "shopify://shop_images/Frame_2147242242_718aa5ab-bb6f-4264-9f2f-2bb1925a3959.png",
+            "title": "FOCUS FIRST. HYDRATE SKIN.",
+            "subtitle": "Lion’s Mane + Tremella",
+            "button_text": "SHOP MORNING",
+            "button_link": "#",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        },
+        "step_iYPNA8": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
+            "top_title": "AFTERNOON",
+            "image": "shopify://shop_images/Frame_2147242242_1_d21db629-5c81-4a16-9675-97ba8eba5b67.png",
+            "title": "DEFEND DAILY. ENERGY BOOST.",
+            "subtitle": "Chaga + Cordyceps",
+            "button_text": "sHOP AFTERNOON",
+            "button_link": "#",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        },
+        "step_M7x4Ry": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
+            "top_title": "EVENING",
+            "image": "shopify://shop_images/Frame_2147242242_2_fd66dd82-318f-490a-8981-727543d96797.png",
+            "title": "CALM DOWN. RESET GUT.",
+            "subtitle": "Reishi + Turkey Tail",
+            "button_text": "SHOP EVENING",
+            "button_link": "#",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        }
+      },
+      "block_order": [
+        "step_BNEJye",
+        "step_iYPNA8",
+        "step_M7x4Ry"
+      ],
+      "name": "Routine Section",
+      "settings": {
+        "title": "",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "section_bg": "#ffffff",
+        "cards_bg": "#faf7ed",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "marquee_39wPP9": {
+      "type": "marquee",
+      "blocks": {
+        "feature_qnVrtC": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2841.png",
+            "title": ""
+          }
+        },
+        "feature_3M4xkF": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2842.png",
+            "title": ""
+          }
+        },
+        "feature_xaYiXa": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2843.png",
+            "title": ""
+          }
+        },
+        "feature_EePfxb": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2844.png",
+            "title": ""
+          }
+        },
+        "feature_HV9LEX": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2867.png",
+            "title": ""
+          }
+        },
+        "feature_j7egWj": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2845.png",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_qnVrtC",
+        "feature_3M4xkF",
+        "feature_xaYiXa",
+        "feature_EePfxb",
+        "feature_HV9LEX",
+        "feature_j7egWj"
+      ],
+      "name": "Custom Marquee",
+      "settings": {
+        "hide": false,
+        "border": false,
+        "sec_title": "our stockists",
+        "background_color": "rgba(0,0,0,0)",
+        "border_color": "",
+        "padding_block": 35,
+        "padding_block_mob": 0,
+        "padding_sec_top": 100,
+        "padding_sec_bottom": 100,
+        "padding_sec_top_mob": 40,
+        "padding_sec_bottom_mob": 40
+      }
+    },
+    "video_slider_qw3NeQ": {
+      "type": "video-slider",
+      "blocks": {
+        "video_htq99g": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/PUREFILTHSTEP1-ezgif.com-gif-to-mp4-converter.mp4",
+            "abs_text": ""
+          }
+        },
+        "video_ieBJpq": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
+            "abs_text": ""
+          }
+        },
+        "video_qXD8fc": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
+            "abs_text": ""
+          }
+        },
+        "video_mdnne6": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
+            "abs_text": ""
+          }
+        },
+        "video_Ukx7bP": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
+            "abs_text": ""
+          }
+        },
+        "video_MmgJDm": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
+            "abs_text": ""
+          }
+        },
+        "video_FCLcP4": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
+            "abs_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_htq99g",
+        "video_ieBJpq",
+        "video_qXD8fc",
+        "video_mdnne6",
+        "video_Ukx7bP",
+        "video_MmgJDm",
+        "video_FCLcP4"
+      ],
+      "name": "Video Slider Formulas",
+      "settings": {
+        "pdp": false,
+        "stars_image": "shopify://shop_images/Frame_36_a748b337-fff3-4d6f-8873-c4cb696114e2.svg",
+        "rating_text": "2,440+ Reviews",
+        "header_text": "<p>what our loyal customers are saying?</p>",
+        "slides_per_view_desktop": 4,
+        "background_color": "#fffcf6",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "items_primary_color": "",
+        "items_light_color": ""
+      }
+    },
+    "story_behind_jtdUt8": {
+      "type": "story-behind",
+      "name": "Story Behind Section",
+      "settings": {
+        "pdp": false,
+        "abs_image": "shopify://shop_images/tempImageYExoTd_1.png",
+        "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM_png.png",
+        "title": "THE STORY BEHIND THE FILTH",
+        "description": "<p>I’m Olly, the guy behind this filthy venture. The story kicked off in 2023 while wrestling with my pesky ADHD. My hunt for pure, uninterrupted focus led me to Lion’s Mane. <br/><br/>What started as a personal experiment soon morphed into a full-blown mushroom business. But not just any mushrooms would do. I spent two years chasing down the purest, most potent fungi. And in February 2025, we finally launched PURE FILTH into the wild, proudly built in the UAE.</p>",
+        "button_text": "Shop Pure Filth",
+        "button_link": "shopify://pages/our-story",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "section_bg": "#ffffff",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "comp_jNz79M": {
+      "type": "comp",
+      "blocks": {
+        "row_GLJjKR": {
+          "type": "row",
+          "settings": {
+            "feature": "100% FRUITING BODY",
+            "brand": "ONLY FRUITING BODY USED",
+            "typical": "Often mycelium grown on grain.",
+            "why": "The fruiting body contains the highest levels of active compounds."
+          }
+        },
+        "row_4yx7Ae": {
+          "type": "row",
+          "settings": {
+            "feature": "RATIO (POTENCY)",
+            "brand": "15:1 - 20: 1 EXTRACT",
+            "typical": "4:1 - 10:1 Extract",
+            "why": "The higher the ratio, the more potent the supplement."
+          }
+        },
+        "row_kxzGJY": {
+          "type": "row",
+          "settings": {
+            "feature": "EXTRACTION METHOD",
+            "brand": "DUAL EXTRACTION",
+            "typical": "Often single extraction or not disclosed",
+            "why": "To get the most bioactive ingredients \nout of the mushroom, dual extraction is needed."
+          }
+        },
+        "row_akUUnq": {
+          "type": "row",
+          "settings": {
+            "feature": "THIRD PARTY TESTED",
+            "brand": "INDEPENDENTLY LAB TESTED",
+            "typical": "Rarely disclosed",
+            "why": "Ensures purity and checks for heavy metals or contaminants."
+          }
+        },
+        "row_UfJ3zm": {
+          "type": "row",
+          "settings": {
+            "feature": "Active Compound  Transparency",
+            "brand": "Yes",
+            "typical": "Not disclosed",
+            "why": "Shows exactly how much of the active compounds you're getting."
+          }
+        }
+      },
+      "block_order": [
+        "row_GLJjKR",
+        "row_4yx7Ae",
+        "row_kxzGJY",
+        "row_akUUnq",
+        "row_UfJ3zm"
+      ],
+      "name": "Comparison Table (Scrollable)",
+      "settings": {
+        "image_bg": "shopify://shop_images/image_2793_2.png",
+        "image_bg_mob": "shopify://shop_images/image_2793_3.png",
+        "title": "WHY PURE FILTH HITS DIFFERENT",
+        "subtitle": "Not all mushroom supplements are created equal.",
+        "col_1": "FEATURES",
+        "col_2": "Your Brand",
+        "col_3": "TYPICAL MUSHROOM BRANDs",
+        "col_4": "WHY THIS MATTERS",
+        "brand_logo": "shopify://shop_images/image_2764.png",
+        "section_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
+        "highlight_bg": "#ffffff",
+        "table_head_bg": "",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "run_out_section_rePwTx": {
+      "type": "run-out-section",
+      "blocks": {
+        "feature_cRwMRP": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/Background_effac959-c4f7-4355-9557-907a28eb6c71.svg",
+            "text": "<p>Save 20% on </p><p>orders</p>"
+          }
+        },
+        "feature_iFCNNV": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/Background_1_e5826dfa-8844-4caa-9069-7b4ad05ef3d6.svg",
+            "text": "<p>Pause, or cancel at </p><p>any time</p>"
+          }
+        },
+        "feature_YQe9cj": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/Background_2_0ffc9018-4ba0-4a2c-af84-4943f739dfca.svg",
+            "text": "<p>Change frequency </p><p>anytime</p>"
+          }
+        },
+        "feature_AkgNPx": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/Background_3_7c88ce28-445e-47ad-b134-0f70b72c7d3c.svg",
+            "text": "<p>Free delivery for subscription </p><p>orders</p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_cRwMRP",
+        "feature_iFCNNV",
+        "feature_YQe9cj",
+        "feature_AkgNPx"
+      ],
+      "name": "Run Out Section",
+      "settings": {
+        "title": "NEVER RUN OUT OF FILTH",
+        "subtitle": "Enjoy hassle-free delivery with our subscription program.",
+        "image": "shopify://shop_images/col-right.png",
+        "image_mob": "shopify://shop_images/col-right_1.png",
+        "wrapper_bg": "#fffcf6",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_text": "SUBSCRIBE NOW",
+        "button_link": "shopify://collections/all",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "money_back_txhgnB": {
+      "type": "money-back",
+      "name": "Money Back Section",
+      "settings": {
+        "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
+        "image": "shopify://shop_images/Group_1707479854.svg",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll REFUND YOU",
+        "title": "30 day money back guarantee",
+        "text_color": "#000000",
+        "button_text": "LEARN MORE",
+        "button_link": "shopify://collections/all",
+        "button_icon": "shopify://shop_images/Frame_2147242027_e2029eb5-2cf1-4f25-8c0f-ee810464ebb2.svg",
+        "section_bg": "#ffffff",
+        "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 180,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 70,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "highlighted_product_ea6Q3F": {
+      "type": "highlighted-product",
+      "blocks": {
+        "title_kVkU4U": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_aDPepr": {
+          "type": "price",
+          "settings": {
+            "show_price_tax_info": true,
+            "show_price_shipping_info": false,
+            "show_price_custom_info": ""
+          }
+        },
+        "badge_4jfnKk": {
+          "type": "badge",
+          "disabled": true,
+          "settings": {}
+        },
+        "description_8FbNdL": {
+          "type": "description",
+          "settings": {
+            "d_block": "<p>Curious about the filth? The 6 Small Ones Multipack lets you sample all six powerhouse mushrooms in a starter-sized bundle—perfect for testing the magic before going all in. Each 10g pouch packs 5 servings of pure, potent goodness.</p>"
+          }
+        },
+        "text_Wp8XUp": {
+          "type": "text",
+          "settings": {
+            "text": "10g Lion's Mane (Focus)",
+            "text_style": "body",
+            "link_to_resource": "none"
+          }
+        },
+        "text_fncCHw": {
+          "type": "text",
+          "settings": {
+            "text": "10g Cordyceps (Energy)",
+            "text_style": "body",
+            "link_to_resource": "none"
+          }
+        },
+        "text_g3jwHH": {
+          "type": "text",
+          "settings": {
+            "text": "10g Reishi (Relax)",
+            "text_style": "body",
+            "link_to_resource": "none"
+          }
+        },
+        "text_xyNzA3": {
+          "type": "text",
+          "settings": {
+            "text": "10g Chaga (Immunity)",
+            "text_style": "body",
+            "link_to_resource": "none"
+          }
+        },
+        "text_inLEQH": {
+          "type": "text",
+          "settings": {
+            "text": "10g Turkey Tail (Gut Health)",
+            "text_style": "body",
+            "link_to_resource": "none"
+          }
+        },
+        "text_CqTyYL": {
+          "type": "text",
+          "settings": {
+            "text": "10g Tremella (Skin)",
+            "text_style": "body",
+            "link_to_resource": "none"
+          }
+        },
+        "divider_AWGfiQ": {
+          "type": "divider",
+          "settings": {}
+        },
+        "variant_picker_nFQepe": {
+          "type": "variant_picker",
+          "settings": {
+            "title": "Variant picker",
+            "variant_picker_type": "buttons",
+            "variant_picker_layout": "product-selector--default",
+            "size_guide_page": "",
+            "sizes_option": "Size"
+          }
+        },
+        "buy_buttons_y6kzxj": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity": true,
+            "quantity_type": "inline",
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "product_link_NBy3MR": {
+          "type": "product_link",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_kVkU4U",
+        "price_aDPepr",
+        "badge_4jfnKk",
+        "description_8FbNdL",
+        "text_Wp8XUp",
+        "text_fncCHw",
+        "text_g3jwHH",
+        "text_xyNzA3",
+        "text_inLEQH",
+        "text_CqTyYL",
+        "divider_AWGfiQ",
+        "variant_picker_nFQepe",
+        "buy_buttons_y6kzxj",
+        "product_link_NBy3MR"
+      ],
+      "disabled": true,
+      "settings": {
+        "highlighted_product": "new-the-small-ones-6-mushrooms-mulitpack-10g",
+        "heading": "<p>THE 6 SMALL ONES <em>MULTIPACK</em></p>",
+        "product_media_object_fit": "contain",
+        "adaptive_ratio_and_auto_height": "slider_auto_height",
+        "media_transparent_background": true,
+        "disable_media_zoom": true,
+        "show_media_index": false,
+        "media_gallery_info": "",
+        "color_scheme_arrows": "scheme-1",
+        "section_width": "max-w-fluid",
+        "color_scheme": "scheme-1",
+        "spacing_top": "2",
+        "spacing_bottom": "6"
+      }
+    },
+    "featured_products_9NJzmF": {
+      "type": "featured-products",
+      "blocks": {
+        "collection_JBz4Aj": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "products": [
+              "reishi-mushroom-powder",
+              "cordyceps-mushroom-powder",
+              "chaga-mushroom-powder",
+              "turkey-tail-mushroom-powder",
+              "tremella-mushroom-powder",
+              "lions-mane-mushroom-powder"
+            ],
+            "collection": "",
+            "show_unavailable_products": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_JBz4Aj"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "layout-1",
+        "heading": "THE FILTHY LINEUP",
+        "heading_size": "h3",
+        "subheading": "",
+        "button_label": "View all",
+        "button_link": "shopify://collections/powders",
+        "button_style": "button--filled",
+        "max_products": 8,
+        "enable_slideshow_overflow": false,
+        "show_navigation_arrows": true,
+        "slideshow_autoplay_interval": 0,
+        "tab_button_style": "button--filled",
+        "section_width": "max-w-fluid",
+        "color_scheme": "",
+        "spacing_top": "4",
+        "spacing_bottom": "4"
+      }
+    },
+    "highlighted_product_ThBVxG": {
+      "type": "highlighted-product",
+      "blocks": {
+        "title_riU63x": {
+          "type": "title",
+          "settings": {}
+        },
+        "badge_4dechi": {
+          "type": "badge",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_pHnwkk": {
+          "type": "text",
+          "settings": {
+            "text": "THE ENERGY MUSHROOM",
+            "text_style": "link",
+            "link_to_resource": "none"
+          }
+        },
+        "price_A6YVxy": {
+          "type": "price",
+          "settings": {
+            "show_price_tax_info": true,
+            "show_price_shipping_info": false,
+            "show_price_custom_info": ""
+          }
+        },
+        "divider_VRkHfn": {
+          "type": "divider",
+          "settings": {}
+        },
+        "variant_picker_nK6gbz": {
+          "type": "variant_picker",
+          "settings": {
+            "title": "Variant picker",
+            "variant_picker_type": "buttons",
+            "variant_picker_layout": "product-selector--default",
+            "size_guide_page": "",
+            "sizes_option": "Size"
+          }
+        },
+        "buy_buttons_FpCy86": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity": true,
+            "quantity_type": "inline",
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "product_link_8QiEm3": {
+          "type": "product_link",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_riU63x",
+        "badge_4dechi",
+        "text_pHnwkk",
+        "price_A6YVxy",
+        "divider_VRkHfn",
+        "variant_picker_nK6gbz",
+        "buy_buttons_FpCy86",
+        "product_link_8QiEm3"
+      ],
+      "disabled": true,
+      "settings": {
+        "highlighted_product": "cordyceps-mushroom-powder",
+        "heading": "<p>FILTH of the week</p>",
+        "product_media_object_fit": "cover",
+        "adaptive_ratio_and_auto_height": "default",
+        "media_transparent_background": false,
+        "disable_media_zoom": true,
+        "show_media_index": false,
+        "media_gallery_info": "",
+        "color_scheme_arrows": "",
+        "section_width": "max-w-fluid",
+        "color_scheme": "",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
+      }
+    },
+    "marquees_HKn6Ap": {
+      "type": "marquees",
+      "blocks": {
+        "item_yf3dN6": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
+            "title": "OBSESSED WITH THE DIRTIER SIDE OF NATURE",
+            "link": ""
+          }
+        },
+        "item_bYGXni": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
+            "title": "OBSESSED WITH THE DIRTIER SIDE OF NATURE",
+            "link": ""
+          }
+        },
+        "item_AqhtXD": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
+            "title": "OBSESSED WITH THE DIRTIER SIDE OF NATURE",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_yf3dN6",
+        "item_bYGXni",
+        "item_AqhtXD"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "marquee_duration_rate": 10,
+        "marquee_font_size": 3,
+        "marquee_items_spacing": 0.4,
+        "color_scheme": "scheme-6",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
+    "accordions_7hFxxC": {
+      "type": "accordions",
+      "blocks": {
+        "topic_34mEtj": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "MADE FROM 100% FRUITING BODIED MUSHROOM",
+            "text": "<p>It's not as saucy as it sounds (unfortunately).<br/><br/>The fruiting body is the part of the mushroom is where all the good stuff lives (bioactive ingredients - polysaccharides and triterpenes) from. </p><p>Rule 101 of buying any mushroom supplement: if it isn't made from the fruiting body, then don't bother. </p><p>Some not so good mushroom supplement brands use the 'mycelium' part instead of the fruiting body. This is a root-like structure grown on grains like rice or oats. When this is farmed, you get a mix of mycelium and grain—more filler, less fungi. Better off feeding it to the birds.<em> </em></p><p>Stick with the filthy fruiting body for the real deal.</p>",
+            "page": ""
+          }
+        },
+        "topic_izcVfG": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "MADE BY DUAL EXTRACTION METHOD",
+            "text": "<p>It may sound like the 20th sequel of The Bourne Identity film franchise. But, it's not. Much more boring but arguably much more important (sorry Matt).<br/><br/>It's basically how we get all those juicy bioactive ingredients out of the mushroom fruiting body. Dual extraction uses both water and alcohol to pull out the full spectrum of bioactive goodies. </p><p>The water extracts the immune-boosting polysaccharides, while the alcohol traps the triterpenes, which are great for their anti-inflammatory and antioxidant benefits. </p><p>No alcohol or water remains in the final dried product. This method ensures you're getting the purest filth possible.</p>",
+            "page": ""
+          }
+        },
+        "topic_YVNCDq": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "OUR PRODUCTS ARE 3RD PARTY TESTED",
+            "text": "<p>To ensure double safety and the best purity, each batch is third-party tested for nasties and heavy metals by a third party.</p>",
+            "page": ""
+          }
+        },
+        "topic_3Rgixh": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "OUR MUSHROOMS ARE ORGANIC",
+            "text": "<p>Not sure this one needs a drop down as it's pretty self explanatory, but yeah, our mushrooms are Organic. Lovely stuff. </p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "topic_34mEtj",
+        "topic_izcVfG",
+        "topic_YVNCDq",
+        "topic_3Rgixh"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "section_width": "max-w-narrower",
+        "color_scheme": "",
+        "spacing_top": "4",
+        "spacing_bottom": "4"
+      }
+    },
+    "full_width_banner_gb3pHh": {
+      "type": "full-width-banner",
+      "blocks": {
+        "heading_CmHYX3": {
+          "type": "heading",
+          "settings": {
+            "block_width": "max-w-full",
+            "heading": "TESTIMONIALS",
+            "heading_size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CmHYX3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width_banner_height": 20,
+        "full_width_banner_mobile_height": 20,
+        "content_position_horizontal": "align-center text-center",
+        "content_position_vertical": "justify-center",
+        "video_desktop_external": "",
+        "show_controls_on_video": false,
+        "video_mobile_external": "",
+        "show_controls_on_video_mobile": false,
+        "section_width": "max-w-full",
+        "color_scheme": "",
+        "color_scheme_for_content": "scheme-6",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
+    "ss_testimonial_10_3BA4aF": {
+      "type": "ss-testimonial-10",
+      "blocks": {
+        "testimonial_nhT89e": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-1.2.png",
+            "stars_count": 5,
+            "text": "<p><em>\"I normally struggle to concentrate for long periods when editing and require 20 coffees to get through it (giving me jitters). This Lion's Mane is a game changer for me No jitters, just laser focus.\"</em></p>",
+            "author": "Max.F"
+          }
+        },
+        "testimonial_hQLDhR": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-2_97642b7f-565c-474a-bcfb-f26ba273773c.png",
+            "stars_count": 5,
+            "text": "<p><em>\"Since moving to Dubai, my gut hasn't been happy. I’ve tested multiple different supplements and none have worked until I tried Pure Filth’s Turkey Tail. It’s amazing!\"</em></p>",
+            "author": "Steph.G"
+          }
+        },
+        "testimonial_Ut7Wah": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-3_c44be34a-ae64-4696-8b35-0a8f834c24d7.png",
+            "stars_count": 5,
+            "text": "<p><em>\"Perfect way to start my day, I mix my mushrooms to get all the benefits in one supercharged morning coffee.\"</em></p>",
+            "author": "Mark.F"
+          }
+        },
+        "testimonial_epLdeM": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-4.png",
+            "stars_count": 5,
+            "text": "<p><em>\"Always struggled to concentrate due to having ADHD. This is no longer the case. Never knew it was possible to concentrate like this!\"</em></p>",
+            "author": "Simon.W"
+          }
+        },
+        "testimonial_KytwKh": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-5.png",
+            "stars_count": 5,
+            "text": "<p><em>\"I have Pure Filth's Lion's Mane to get me going in the morning and their Reishi to help me unwind at the end of the day. Can't recommend it highly enough!\"</em></p>",
+            "author": "Natalie.H"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_nhT89e",
+        "testimonial_hQLDhR",
+        "testimonial_Ut7Wah",
+        "testimonial_epLdeM",
+        "testimonial_KytwKh"
+      ],
+      "disabled": true,
+      "settings": {
+        "body_padding_vertical": 0,
+        "body_padding_vertical_mobile": 16,
+        "body_padding_horizontal": 50,
+        "body_padding_horizontal_mobile": 16,
+        "body_radius": 12,
+        "body_border_thickness": 0,
+        "heading": "",
+        "heading_custom": true,
+        "heading_font": "jost_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 24,
+        "heading_height": 150,
+        "heading_align": "left",
+        "heading_align_mobile": "left",
+        "sub_heading": "",
+        "sub_heading_custom": false,
+        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading_size": 18,
+        "sub_heading_size_mobile": 14,
+        "sub_heading_height": 150,
+        "slider_view": 4,
+        "slider_view_mobile": 1,
+        "slider_gap": 36,
+        "slider_gap_mobile": 20,
+        "slider_mt": 20,
+        "image_radius": 12,
+        "image_border_thickness": 0,
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "stars_size": 20,
+        "stars_mt": 24,
+        "stars_align": "start",
+        "stars_align_mobile": "start",
+        "text_custom": false,
+        "text_font": "jost_n4",
+        "text_size": 16,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_mt": 12,
+        "text_align": "left",
+        "text_align_mobile": "left",
+        "author_custom": false,
+        "author_font": "josefin_sans_n4",
+        "author_size": 16,
+        "author_size_mobile": 14,
+        "author_height": 130,
+        "author_mt": 8,
+        "author_align": "left",
+        "author_align_mobile": "left",
+        "arrow_size": 50,
+        "arrow_size_mobile": 42,
+        "arrow_icon_size": 40,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "dots_mt": 32,
+        "dots_show_desktop": false,
+        "dots_show_mobile": true,
+        "body_bg_color": "#ffffff",
+        "body_border_color": "#000000",
+        "stars_color": "#000000",
+        "text_color": "#756e67",
+        "author_color": "#000000",
+        "arrow_color": "#756e67",
+        "arrow_hover_color": "#ffffff",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#756e67",
+        "arrow_border_color": "#756e67",
+        "arrow_border_hover_color": "#756e67",
+        "dots_color": "#756e67",
+        "heading_color": "#000000",
+        "sub_heading_color": "#756e67",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "full_width_banner_NnPFqA": {
+      "type": "full-width-banner",
+      "blocks": {
+        "subheading_C6htwd": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<strong>Who are Pure Filth?</strong>",
+            "link": ""
+          }
+        },
+        "heading_Vt347B": {
+          "type": "heading",
+          "settings": {
+            "block_width": "max-w-narrow",
+            "heading": "Our STORY",
+            "heading_size": "h2"
+          }
+        },
+        "buttons_AwTNPf": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Tell me more",
+            "button_link_1": "shopify://pages/our-story",
+            "button_style_1": "button--filled",
+            "color_scheme_first_button": "scheme-8",
+            "button_label_2": "",
+            "button_link_2": "shopify://collections/all",
+            "button_style_2": "button--outlined",
+            "color_scheme_second_button": "scheme-6"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_C6htwd",
+        "heading_Vt347B",
+        "buttons_AwTNPf"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width_banner_height": 60,
+        "full_width_banner_mobile_height": 50,
+        "content_position_horizontal": "align-center text-center",
+        "content_position_vertical": "justify-center",
+        "image_desktop": "shopify://shop_images/Our-Story-v2.png",
+        "video_desktop_external": "",
+        "show_controls_on_video": false,
+        "video_mobile_external": "",
+        "show_controls_on_video_mobile": false,
+        "section_width": "max-w-full",
+        "color_scheme": "scheme-8",
+        "color_scheme_for_content": "scheme-8",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    }
+  },
+  "order": [
+    "1658995208ad05f95f",
+    "marquees_TFD63r",
+    "cstm_hero_banner_c6dCKV",
+    "collection_card_VQBY8r",
+    "bg_content_section_3KYDXn",
+    "work_section_BDfdgD",
+    "reviews_slider_UaegAV",
+    "not_sure_tAHGVr",
+    "how_to_buy_68BkDx",
+    "build_perfect_eDHefQ",
+    "routine_67g93h",
+    "marquee_39wPP9",
+    "video_slider_qw3NeQ",
+    "story_behind_jtdUt8",
+    "comp_jNz79M",
+    "run_out_section_rePwTx",
+    "money_back_txhgnB",
+    "highlighted_product_ea6Q3F",
+    "featured_products_9NJzmF",
+    "highlighted_product_ThBVxG",
+    "marquees_HKn6Ap",
+    "accordions_7hFxxC",
+    "full_width_banner_gb3pHh",
+    "ss_testimonial_10_3BA4aF",
+    "full_width_banner_NnPFqA"
+  ]
+}

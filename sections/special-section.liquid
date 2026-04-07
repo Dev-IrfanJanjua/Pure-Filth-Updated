@@ -1,0 +1,776 @@
+{% style %}
+  .section-{{ section.id }}{
+    position:relative;
+    background-color: {{ section.settings.section_bg }};
+    padding-top: {{ section.settings.padding_top_desktop }}px;
+    padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  }
+
+  .section-{{ section.id }} .special-section-bg_image{
+    position:absolute;
+    inset:0;
+    z-index:-1;
+  }
+
+  .section-{{ section.id }} .special-section-bg_image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .section-{{ section.id }} .special-section-wrapper{
+    position:relative;
+  }
+
+  .section-{{ section.id }} .special-section-title{
+    text-align: center;
+    margin-bottom: 42px;
+    font-family: 'PP Formula';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: {{ section.settings.title_color }} ;
+  }
+
+  .section-{{ section.id }} .special-section-body{
+        display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .section-{{ section.id }} .special-section-content{
+        display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 52%;
+    width: 100%;
+  }
+
+  .section-{{ section.id }} .special-card-top{
+    display: flex;
+    gap: 0px;
+    background: #fff;
+    padding: 0px;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  .special-card-top-content {
+    padding: 40px;
+    padding-right: 0;
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+  .section-{{ section.id }} .special-card-bottom{
+        display: flex;
+    gap: 36px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+  }
+
+  .special-card-top-head_icon {
+    max-width: 42px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+  .section-{{ section.id }} .special-card-top-head_icon img{
+        width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  h4.special-card-top-head_title {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+}
+
+  .section-{{ section.id }} ul.special-card-top-list{
+        margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .section-{{ section.id }} li.special-card-top-list-item{
+    display:flex;
+    gap: 8px;
+  }
+
+  span.special-card-top-list-item_icon {
+    max-width: 16px;
+    height: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .section-{{ section.id }} .special-card-top-list-item_icon img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  span.special-card-top-list-item_text {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+}
+
+  .section-{{ section.id }} .special-card-bottom_list-icon img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .section-{{ section.id }} .special-card-top-image{
+    max-width: 45%;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .section-{{ section.id }} .special-card-top-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .section-{{ section.id }} .special-card-bottom_image{
+        max-width: 40%;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .special-card-bottom-content {
+    max-width: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+h4.special-card-bottom_title {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+}
+
+ul.special-card-bottom_list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+li.special-card-bottom_list-item {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+span.special-card-bottom-_list-text {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000;
+}
+
+span.special-card-bottom_list-icon {
+    max-width: 24px;
+    width: 100%;
+    height: 24px;
+    display: block;
+}
+
+  .section-{{ section.id }} .special-card-bottom_image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .section-{{ section.id }} .special-content-image{
+        position: relative;
+    max-width: calc(100% - (52% + 16px));
+    width: 100%;
+    height: auto;
+  }
+
+  .section-{{ section.id }} .special-content-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    border-radius: 16px;
+  }
+
+  .section-{{ section.id }} .special-content_image-content{
+        position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: #fff;
+    padding: 20px 24px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    backdrop-filter: blur(60px);
+    border-radius: 12px;
+  }
+
+  h4.special-content_image-title {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+    color: #000;
+}
+
+p.special-content_image-subtitle {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+    margin: 0;
+    max-width: 222px;
+    width: 100%;
+}
+
+.special-content_image_icon {
+    max-width: 75px;
+    width: 100%;
+    height: 75px;
+}
+
+  .section-{{ section.id }} .special-content_image_icon img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .special-simple-card {
+    border-radius: 16px;
+    padding: 40px;
+}
+
+h3.special-simple-card_title {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin: 0;
+    color: #000;
+}
+
+.special-simple-card_desc {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    margin: 12px 0 0;
+    color: #000;
+}
+
+.special-simple-card_desc p{
+    margin: 0;
+}
+
+  /* MOBILE */
+
+  @media(max-width:768px){
+
+  .section-{{ section.id }}{
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  .section-{{ section.id }} .special-section-body{
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .special-simple-card {
+    border-radius: 12px;
+    padding: 24px;
+}
+
+h3.special-simple-card_title {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.special-simple-card_desc {
+    font-size: 16px;
+}
+
+  .section-{{ section.id }} .special-section-title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.section-{{ section.id }} .special-section-content {
+    gap: 12px;
+    max-width: 100%;
+}
+
+.section-{{ section.id }} .special-card-top {
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.special-card-top-content {
+    padding: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+    gap: 8px;
+}
+
+h4.special-card-top-head_title {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+span.special-card-top-list-item_text {
+    font-size: 14px;
+}
+
+.section-{{ section.id }} .special-card-top-image {
+    max-width: 100%;
+    padding-top: 0;
+}
+
+.section-{{ section.id }} .special-card-bottom {
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    flex-direction: column;
+}
+
+.section-{{ section.id }} .special-card-bottom_image {
+    max-width: 100%;
+    width: 100%;
+}
+
+.special-card-bottom-content {
+    max-width: 100%;
+    gap: 12px;
+}
+
+h4.special-card-bottom_title {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+li.special-card-bottom_list-item {
+    max-width: calc(50% - 5px);
+    width: 100%;
+}
+
+span.special-card-bottom-_list-text {
+    font-size: 16px;
+}
+
+.section-{{ section.id }} .special-content-image {
+    max-width: 100%;
+}
+
+.section-{{ section.id }} .special-content_image-content {
+    bottom: 12px;
+    left: 12px;
+    padding: 8px 12px;
+    right: 12px;
+}
+
+.special-content_image_icon {
+    max-width: 70px;
+    height: 70px;
+}
+
+h4.special-content_image-title {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+p.special-content_image-subtitle {
+    font-size: 14px;
+}
+
+  }
+{% endstyle %}
+
+<section class="special-section section-{{ section.id }}">
+  <div class="special-section-bg_image">
+    {% if section.settings.bg_desktop != blank %}
+      {{ section.settings.bg_desktop | image_url: width: 2000 | image_tag }}
+    {% endif %}
+  </div>
+
+  <div class="page-width">
+    <div class="special-section-wrapper">
+      {% if section.settings.title != blank %}
+        <h2 class="special-section-title">{{ section.settings.title }}</h2>
+      {% endif %}
+
+      <div class="special-section-body">
+        <div class="special-section-content">
+          {% for block in section.blocks %}
+            {% if block.type == 'top_card' %}
+              <div class="special-card-top" {{ block.shopify_attributes }}>
+                <div class="special-card-top-content">
+                  <div class="special-card-top-head">
+                    {% if block.settings.head_icon != blank %}
+                      <div class="special-card-top-head_icon">
+                        {{ block.settings.head_icon | image_url: width: 100 | image_tag }}
+                      </div>
+                    {% endif %}
+
+                    <h4 class="special-card-top-head_title">
+                      {{ block.settings.title }}
+                    </h4>
+                  </div>
+
+                  <ul class="special-card-top-list">
+                    {% for i in (1..6) %}
+                      {% assign text_key = 'item_' | append: i %}
+                      {% assign text = block.settings[text_key] %}
+
+                      {% if text != blank %}
+                        <li class="special-card-top-list-item">
+                          <span class="special-card-top-list-item_icon">
+                            {{ block.settings.list_icon | image_url: width: 60 | image_tag }}
+                          </span>
+
+                          <span class="special-card-top-list-item_text">
+                            {{ text }}
+                          </span>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+
+                {% if block.settings.image != blank %}
+                  <div class="special-card-top-image">
+                    {{ block.settings.image | image_url: width: 800 | image_tag }}
+                  </div>
+                {% endif %}
+              </div>
+            {% endif %}
+
+            {% if block.type == 'bottom_card' %}
+              <div class="special-card-bottom" {{ block.shopify_attributes }}>
+                {% if block.settings.image != blank %}
+                  <div class="special-card-bottom_image">
+                    {{ block.settings.image | image_url: width: 800 | image_tag }}
+                  </div>
+                {% endif %}
+
+                <div class="special-card-bottom-content">
+                  <h4 class="special-card-bottom_title">
+                    {{ block.settings.title }}
+                  </h4>
+
+                  <ul class="special-card-bottom_list">
+                    {% for i in (1..6) %}
+                      {% assign text_key = 'item_' | append: i %}
+                      {% assign icon_key = 'icon_' | append: i %}
+
+                      {% assign text = block.settings[text_key] %}
+                      {% assign icon = block.settings[icon_key] %}
+
+                      {% if text != blank %}
+                        <li class="special-card-bottom_list-item">
+                          <span class="special-card-bottom_list-icon">
+                            {{ icon | image_url: width: 60 | image_tag }}
+                          </span>
+
+                          <span class="special-card-bottom-_list-text">
+                            {{ text }}
+                          </span>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            {% endif %}
+            {% if block.type == 'simple_card' %}
+              <div class="special-simple-card" style="background-color: {{ block.settings.bg_color }}">
+                {% if block.settings.simple_title != blank %}
+                  <h3 class="special-simple-card_title">{{ block.settings.simple_title }}</h3>
+                {% endif %}
+                {% if block.settings.simple_desc != blank %}
+                  <div class="special-simple-card_desc">{{ block.settings.simple_desc }}</div>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <div class="special-content-image">
+          {% if section.settings.main_image != blank %}
+            {{ section.settings.main_image | image_url: width: 1600 | image_tag }}
+          {% endif %}
+
+          {% if section.settings.overlay_icon != blank or section.settings.overlay_title != blank %}
+            <div class="special-content_image-content">
+              {% if section.settings.overlay_icon != blank %}
+                <div class="special-content_image_icon">
+                  {{ section.settings.overlay_icon | image_url: width: 100 | image_tag }}
+                </div>
+              {% endif %}
+  
+              <div class="special-content_image-head">
+                <h4 class="special-content_image-title">
+                  {{ section.settings.overlay_title }}
+                </h4>
+  
+                <p class="special-content_image-subtitle">
+                  {{ section.settings.overlay_text }}
+                </p>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Special Section",
+  "settings": [
+    {
+      "type": "color_background",
+      "id": "section_bg",
+      "label": "Section Background Color",
+      "default": "#fff"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "bg_desktop",
+      "label": "Background Image Desktop"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "bg_mobile",
+      "label": "Background Image Mobile"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "overlay_icon",
+      "label": "Overlay Icon"
+    },
+
+    {
+      "type": "text",
+      "id": "overlay_title",
+      "label": "Overlay Title"
+    },
+
+    {
+      "type": "text",
+      "id": "overlay_text",
+      "label": "Overlay Subtitle"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 80,
+      "label": "Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 80,
+      "label": "Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "label": "Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "label": "Padding Bottom Mobile"
+    }
+  ],
+
+  "blocks": [
+
+    {
+      "type": "simple_card",
+      "name": "Simple Card",
+      "settings": [
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Card Background",
+          "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "simple_title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "simple_desc",
+          "label": "Description"
+        }
+      ]
+    },
+
+    {
+      "type": "top_card",
+      "name": "Top Card",
+      "settings": [
+        { "type": "image_picker", "id": "head_icon", "label": "Heading Icon" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "image_picker", "id": "list_icon", "label": "List Icon" },
+        { "type": "image_picker", "id": "image", "label": "Card Image" },
+
+        { "type": "text", "id": "item_1", "label": "Item 1" },
+        { "type": "text", "id": "item_2", "label": "Item 2" },
+        { "type": "text", "id": "item_3", "label": "Item 3" },
+        { "type": "text", "id": "item_4", "label": "Item 4" },
+        { "type": "text", "id": "item_5", "label": "Item 5" },
+        { "type": "text", "id": "item_6", "label": "Item 6" }
+      ]
+    },
+
+    {
+      "type": "bottom_card",
+      "name": "Bottom Card",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "image_picker", "id": "image", "label": "Card Image" },
+
+        { "type": "image_picker", "id": "icon_1", "label": "Icon 1" },
+        { "type": "text", "id": "item_1", "label": "Item 1" },
+
+        { "type": "image_picker", "id": "icon_2", "label": "Icon 2" },
+        { "type": "text", "id": "item_2", "label": "Item 2" },
+
+        { "type": "image_picker", "id": "icon_3", "label": "Icon 3" },
+        { "type": "text", "id": "item_3", "label": "Item 3" },
+
+        { "type": "image_picker", "id": "icon_4", "label": "Icon 4" },
+        { "type": "text", "id": "item_4", "label": "Item 4" },
+
+        { "type": "image_picker", "id": "icon_5", "label": "Icon 5" },
+        { "type": "text", "id": "item_5", "label": "Item 5" },
+
+        { "type": "image_picker", "id": "icon_6", "label": "Icon 6" },
+        { "type": "text", "id": "item_6", "label": "Item 6" }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Special Section",
+      "blocks": [{ "type": "top_card" }, { "type": "bottom_card" }]
+    }
+  ]
+}
+{% endschema %}

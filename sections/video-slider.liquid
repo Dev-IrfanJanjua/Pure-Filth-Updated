@@ -1,0 +1,594 @@
+<style>
+  .section-{{ section.id }}{
+      background-color: {{ section.settings.background_color }};
+      padding-top: {{  section.settings.padding_top_desktop }}px ;
+      padding-bottom: {{  section.settings.padding_bottom_desktop }}px ;
+  }
+.video_title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    max-width: 688px;
+    margin: 0 auto;
+}
+  .container-fluid {
+      position: relative;
+  }
+  .vs-seekbar-container {
+    flex: 1;
+    height: 5px;
+    {% comment %} background: #1ABC9C4D; {% endcomment %}
+    background-color: {{ section.settings.items_light_color }};
+    cursor: pointer;
+    position: relative;
+  }
+  .vs-seekbar {
+    height: 100%;
+    {% comment %} background: #1ABC9C; {% endcomment %}
+    background: {{ section.settings.items_primary_color }} ;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .vs-play-btn-bottom {
+        border-radius: 30px;
+      padding: 0px 6px;
+      border: 1.06px solid {{ section.settings.items_primary_color }} ;
+      color: {{ section.settings.items_primary_color }} ;
+      {% comment %} border: 1.06px solid #1ABC9C;
+      color: #1ABC9C; {% endcomment %}
+      margin-right: 5px;
+      cursor: pointer;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after{
+    display: none;
+  }
+  .form-hd {
+    font-weight: 700;
+    color: #000;
+  }
+  .form-hd span {
+   font-family: 'Clash Display Bold' !important;
+   color: #538775;
+   font-weight: 500;
+   font-style: italic;
+   font-weight: bold;
+  }
+  .vs-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor:pointer;
+    z-index: 999;
+  }
+  .vs-play-btn svg{
+    width: 42px;
+    height: 42px;
+  }
+
+  .vs-video-card {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 /3;
+    position: relative;
+}
+
+  .vs-video-card video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 12px;
+    cursor: pointer;
+    object-fit: cover;
+  }
+  .swiper-pagination.effectiveFormulas {
+    display: block;
+  }
+  .three-slides {
+    max-width:1200px;
+    margin:0 auto;
+  }
+  {% comment %} .three-slides .swiper-slide {
+      max-width:32% !important;
+  } {% endcomment %}
+
+  .vide-slider_head {
+    max-width: 775px;
+    margin: 0 auto 32px;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.vide-slider-ratings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.vide-slider-starts_img {
+    max-width: 100px;
+    height: auto;
+    width: 100%;
+}
+
+.vide-slider-starts_img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.vide-slider-text {
+    color: #1e1e1e;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1;
+    text-decoration-skip-ink: auto;
+}
+
+.video-slider-formulas .container-fluid {
+    overflow: hidden !important; /* Prevents horizontal scroll on the whole page */
+    padding-right: 0 !important; /* Allows the 'peek' effect for the next slide */
+  }
+
+  .swiper-container {
+    overflow: visible !important; /* Essential for Swiper to render slides outside the box */
+  }
+
+  .vs-slide {
+    height: auto; /* Ensures the aspect ratio 2/3 works */
+  }
+
+  .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.vs-video-card_abs-icon{
+  max-width: 30px;
+  min-width: 28px;
+  width: 100%;
+  height: auto;
+}
+
+.vs-video-card_abs-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vs-video-card_abs-content {
+    padding: 6px 12px;
+    background-color: #FAF7ED;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 110px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+span.vs-video-card_abs-text {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #010e11;
+    display: block;
+}
+
+
+
+    @media (max-width: 768px) {
+      .section-{{ section.id }}{
+          padding-top: {{  section.settings.padding_top_mobile }}px ;
+          padding-bottom: {{  section.settings.padding_bottom_mobile }}px ;
+      }
+
+      div#video-slider-formulas-section .container-fluid {
+          padding: 0 16px;
+          padding-right: 0;
+      }
+     
+      #vs-container .swiper-button-next, #vs-container .swiper-button-prev {
+        top: 45%;
+      }
+        .three-slides {
+          max-width:100%;
+        }
+
+        {% comment %} .video-slider-formulas .container-fluid {
+    overflow: hidden !important; /* Prevents horizontal scroll on the whole page */
+    padding-right: 0 !important; /* Allows the 'peek' effect for the next slide */
+  }
+
+  .swiper-container {
+    overflow: visible !important; /* Essential for Swiper to render slides outside the box */
+  }
+
+  .vs-slide {
+    height: auto; /* Ensures the aspect ratio 2/3 works */
+  } {% endcomment %}
+
+.video_title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    max-width: 688px;
+    margin: 0 auto;
+}
+
+
+
+    }
+
+</style>
+
+
+<div id="video-slider-formulas-section" class="video-slider-formulas section-{{ section.id }} {% if section.settings.slides_per_view_desktop == 3 %}three-slides-container{% endif %} {% if section.settings.pdp %} pdp-{{ section.id }} {% endif %}">
+    <div class="vide-slider_head">
+        <div class="vide-slider-ratings">
+            {% if section.settings.stars_image != blank %}
+            <div class="vide-slider-starts_img">
+                {{ section.settings.stars_image | image_url: width:200 | image_tag }}
+            </div>
+            {% endif %}
+            {% if section.settings.rating_text != blank %}
+            <div class="vide-slider-text">
+                {{ section.settings.rating_text }}
+            </div>
+            {% endif %}
+        </div>
+        {% if section.settings.header_text != blank %}
+            <h3 class="video_title">{{ section.settings.header_text | replace: "<p>", '' | replace: "</p>", '' }}</h3>
+        {% endif %}
+    </div>
+  <div class="container-fluid">
+    <div id="vs-container" class="swiper-container">
+      <div class="swiper-wrapper cstm_video-wrapper {% if section.settings.slides_per_view_desktop == 3 %}three-slides{% endif %}" data-slide="{{ section.settings.slides_per_view_desktop }}" >
+        {% for block in section.blocks %}
+            {% assign video_poster = block.settings.video | img_url: ""   %}
+          <div class="swiper-slide vs-slide">
+            <div class="vs-video-card">
+              {% if block.settings.abs_img != blank or block.settings.abs_text != blank %}
+                <div class="vs-video-card_abs-content">
+                  {% if block.settings.abs_img != blank %}
+                    <div class="vs-video-card_abs-icon">
+                      {{ block.settings.abs_img | image_url: width: 1600 | image_tag:
+                            widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                            alt: "image",
+                            loading: "lazy"
+                        }}
+                    </div>
+                  {% endif %}
+                  {% if block.settings.abs_text != blank %}
+                    <span class="vs-video-card_abs-text">
+                      {{ block.settings.abs_text }}
+                    </span>
+                  {% endif %}
+                </div>
+              {% endif %}
+              <div class="vs-play-btn">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="21" fill="white"/>
+                    <path d="M30.9328 21.0001C30.9334 21.2411 30.8716 21.4781 30.7534 21.6882C30.6353 21.8982 30.4648 22.0741 30.2585 22.1987L17.476 30.0183C17.2605 30.1503 17.0137 30.2223 16.761 30.227C16.5083 30.2317 16.259 30.1688 16.0388 30.0449C15.8206 29.923 15.6389 29.7451 15.5123 29.5296C15.3857 29.3141 15.3187 29.0688 15.3184 28.8189V13.1814C15.3187 12.9314 15.3857 12.6861 15.5123 12.4706C15.6389 12.2551 15.8206 12.0772 16.0388 11.9553C16.259 11.8314 16.5083 11.7685 16.761 11.7732C17.0137 11.7779 17.2605 11.8499 17.476 11.9819L30.2585 19.8015C30.4648 19.9261 30.6353 20.102 30.7534 20.3121C30.8716 20.5221 30.9334 20.7591 30.9328 21.0001Z" fill="#FEC700"/>
+                </svg>
+              </div>
+              {% comment %} <video
+                loading="lazy"
+                playsinline
+                controls="false"
+                preload="metadata"
+                src="{{ block.settings.video_url }}"
+                {% if block.settings.video_thumbnail != blank %}
+                  poster="{{ block.settings.video_thumbnail | image_url }}"
+                {% endif %}
+              ></video> {% endcomment %}
+              {{ block.settings.video | video_tag: class: 'custom-video-slider', controls: false, muted: false, poster: video_poster
+                  }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+     var swiper = new Swiper('#vs-container', {
+  slidesPerView: {{ section.settings.slides_per_view_desktop | default: 4 }},
+  spaceBetween: 12,
+  speed: 1000,
+  pagination: {
+    el: '.swiper-pagination.effectiveFormulas',
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: {{ section.settings.slides_per_view_desktop | default: 4 }},
+    },
+  },
+}); 
+
+    setTimeout(() => {
+      swiper.update();
+    }, 500);
+
+    document.querySelectorAll('.vs-slide').forEach(function (slide) {
+      const video = slide.querySelector('video');
+      const playBtn = slide.querySelector('.vs-play-btn');
+      const playBtnBottom = slide.querySelector('.vs-play-btn-bottom');
+      const seekbar = slide.querySelector('.vs-seekbar');
+      const seekbarContainer = slide.querySelector('.vs-seekbar-container');
+
+      if (!video) return;
+
+      // Initialize video controls state
+      video.controls = false;
+
+      function pauseOtherVideos() {
+        document.querySelectorAll('.vs-slide').forEach((otherSlide) => {
+          if (otherSlide !== slide) {
+            const otherVideo = otherSlide.querySelector('video');
+            if (otherVideo) {
+              otherVideo.pause();
+              otherVideo.controls = false;
+              const otherPlayBtn = otherSlide.querySelector('.vs-play-btn');
+              if (otherPlayBtn) otherPlayBtn.style.display = 'block';
+              const otherBottomBtn = otherSlide.querySelector('.vs-play-btn-bottom');
+              if (otherBottomBtn) otherBottomBtn.textContent = '▶';
+            }
+          }
+        });
+      }
+
+      function togglePlay() {
+        if (video.paused) {
+          pauseOtherVideos();
+          video.play().catch((error) => console.error('Video play failed:', error));
+          video.controls = false;
+          if (playBtn) playBtn.style.display = 'none';
+          if (playBtnBottom) playBtnBottom.textContent = '❚❚';
+        } else {
+          video.pause();
+          video.controls = false;
+          {% comment %} video.controls = true; {% endcomment %}
+          if (playBtn) playBtn.style.display = 'block';
+          if (playBtnBottom) playBtnBottom.textContent = '▶';
+        }
+      }
+
+      // Event listeners
+      playBtn?.addEventListener('click', togglePlay);
+      playBtnBottom?.addEventListener('click', togglePlay);
+      // ✅ FIX: click on video toggles play/pause
+      video.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        togglePlay();
+      });
+
+      video.addEventListener('timeupdate', function () {
+        if (video.duration && seekbar) {
+          seekbar.style.width = `${(video.currentTime / video.duration) * 100}%`;
+        }
+      });
+
+      video.addEventListener('ended', () => {
+        video.controls = true;
+        if (playBtn) playBtn.style.display = 'block';
+        if (playBtnBottom) playBtnBottom.textContent = '▶';
+      });
+
+      seekbarContainer?.addEventListener('click', function (e) {
+        const rect = this.getBoundingClientRect();
+        const pos = (e.clientX - rect.left) / rect.width;
+        video.currentTime = pos * video.duration;
+      });
+
+      // Optional: Hide native controls on mouse leave
+      video.addEventListener('mouseleave', () => {
+        if (!video.paused) video.controls = false;
+      });
+    });
+  });
+
+  document.querySelectorAll('video').forEach((video) => {
+    // iOS poster fallback
+    if (!video.poster && /iPad|iPhone|iPod/.test(navigator.userAgent)) {
+      const thumbnail = video.getAttribute('data-fallback-poster');
+      if (thumbnail) {
+        video.poster = thumbnail;
+      }
+    }
+
+    // Preload first frame for iOS
+    video.addEventListener('loadedmetadata', () => {
+      if (video.paused) {
+        video.currentTime = 0.1;
+      }
+    });
+  });
+</script>
+
+
+
+{% schema %}
+{
+  "name": "Video Slider Formulas",
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+            "type": "video",
+            "id": "video",
+            "label": "Select a Video"
+        },
+        {
+          "type": "image_picker",
+          "id": "abs_img",
+          "label": "Absolute Icon"
+        },
+        {
+          "type": "text",
+          "id": "abs_text",
+          "label": "Absolute Text"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "pdp",
+      "label": "PDP Stylling",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Video Slider Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "stars_image",
+      "label": "Stars Image"
+    },
+
+    {
+      "type": "text",
+      "id": "rating_text",
+      "label": "Rating Text"
+    },
+    {
+      "type": "richtext",
+      "id": "header_text",
+      "label": "Header Text",
+    },
+    {
+      "type": "header",
+      "content": "Slider Controls"
+    },
+    {
+      "type": "range",
+      "id": "slides_per_view_desktop",
+      "label": "Slides Per View (Desktop)",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 4,
+      "info": "Number of slides visible on desktop"
+    },
+    {
+      "type": "header",
+      "content": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Padding Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "label": "Padding Top (Desktop)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "label": "Padding Bottom (Desktop)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Padding Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding Top (Mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding Bottom (Mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "items_primary_color",
+      "label": "Items Primary Color",
+      "info": "Dark and Primary Color for icons"
+    },
+    {
+      "type": "color_background",
+      "id": "items_light_color",
+      "label": "Video Path Color",
+      "info": "Video Path BG Light"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Slider Formulas",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

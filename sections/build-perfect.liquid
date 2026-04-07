@@ -1,0 +1,522 @@
+{% style %}
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  background: {{ section.settings.section_bg }};
+}
+
+.section-{{ section.id }} .build-perfect-wrapper{
+  position:relative;
+}
+
+.section-{{ section.id }} .build-perfect-content-wrapper{
+    position: relative;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: {{ section.settings.Content_bg }} ;
+    align-items: center;
+    padding-left: 60px;
+    border-radius: 23px;
+    overflow: hidden;
+}
+
+.section-{{ section.id }} .build-perfect-content-abs-img{
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section-{{ section.id }} .build-perfect-content-abs-img img{
+  display:block;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-{{ section.id }} .build-perfect-title{
+    margin: 0 0 12px;
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.section-{{ section.id }} .build-perfect-sub-title{
+    margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+}
+
+.build-perfect-content {
+    max-width: 50%;
+    width: 100%;
+    padding-block: 30px;
+    margin-right: auto;
+}
+
+.section-{{ section.id }} .build-perfect-blocks{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+}
+
+li.build-perfect-block {
+    padding: 32px 24px;
+    background-color: {{ section.settings.Cards_bg }};
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.build-perfect-block-img {
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+}
+
+.section-{{ section.id }} .build-perfect-block-img img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+}
+
+.section-{{ section.id }} .build-perfect-block-title{
+    margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.section-{{ section.id }} .build-perfect-block-desc{
+  margin-bottom: 0px;
+}
+
+.section-{{ section.id }} .build-perfect-block-desc ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-{{ section.id }}  .build-perfect-block-desc ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #000;
+    position: relative;
+}
+
+.section-{{ section.id }} .build-perfect-block-desc ul li:before {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-image: url({{ section.settings.list_icon | image_url }});
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.build-perfect-block-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section-{{ section.id }} .build-perfect-block-btn{
+    text-decoration: none;
+    border: 1px solid #000000;
+    padding: 10px 24px;
+    background-color: #000;
+    border-radius: 75px;
+    max-width: fit-content;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    gap: 5px;
+    min-width: fit-content;
+    align-items: center;
+}
+
+.section-{{ section.id }} .build-perfect-block-btn:hover{
+    transform: translateY(-2px);
+}
+
+.build-perfect-block-btn-icon{
+  transition: all 0.3s ease;
+}
+
+.section-{{ section.id }} .build-perfect-block-btn:hover .build-perfect-block-btn-icon{
+    transform: translateX(4px);
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .build-perfect-blocks{
+  grid-template-columns:1fr;
+  gap: 12px;
+}
+
+.section-{{ section.id }} .build-perfect-content-wrapper {
+    margin-bottom: 12px;
+    flex-direction: column-reverse;
+    padding: 32px 0 0;
+    border-radius: 16px;
+    gap: 40px;
+}
+
+.section-{{ section.id }} .build-perfect-content-abs-img {
+    max-width: 100%;
+    position: static;
+}
+
+.section-{{ section.id }} img.build-perfect-content-abs-img-desk {
+    display: none;
+}
+
+.section-{{ section.id }} img.build-perfect-content-abs-img-mob {
+    display: block !important;
+}
+
+.build-perfect-content {
+    max-width: 100%;
+    padding: 0 12px;
+}
+
+.section-{{ section.id }} .build-perfect-title {
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.section-{{ section.id }} .build-perfect-sub-title {
+    font-size: 16px;
+    text-align: center;
+}
+
+li.build-perfect-block {
+    padding: 16px;
+    gap: 20px;
+}
+
+.build-perfect-block-img {
+    max-width: 114px;
+}
+
+.build-perfect-block-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-{{ section.id }} .build-perfect-block-title {
+    line-height: 100%;
+}
+
+.section-{{ section.id }} .build-perfect-block-desc ul {
+    gap: 8px;
+}
+
+.section-{{ section.id }} .build-perfect-block-desc ul li:before {
+    min-width: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.section-{{ section.id }} .build-perfect-block-btn {
+    font-size: 14px;
+}
+
+}
+
+{% endstyle %}
+
+
+<section class="build-perfect-section section-{{ section.id }}">
+    <div class="page-width">
+        <div class="build-perfect-wrapper">
+
+            <div class="build-perfect-content-wrapper">
+
+                {% if section.settings.abs_image != blank or section.settings.abs_image_mob != blank %}
+                <div class="build-perfect-content-abs-img">
+                    {% if section.settings.abs_image != blank %}
+                        {{ section.settings.abs_image | image_url: width: 1600 | image_tag: class: 'build-perfect-content-abs-img-desk' }}
+                    {% endif %}
+                    {% if section.settings.abs_image_mob != blank %}
+                        {{ section.settings.abs_image_mob | image_url: width: 1600 | image_tag: class: 'build-perfect-content-abs-img-mob', style: 'display: none' }}
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                <div class="build-perfect-content">
+
+                    {% if section.settings.title != blank %}
+                    <h2 class="build-perfect-title">
+                        {{ section.settings.title }}
+                    </h2>
+                    {% endif %}
+
+                    {% if section.settings.subtitle != blank %}
+                    <p class="build-perfect-sub-title">
+                        {{ section.settings.subtitle }}
+                    </p>
+                    {% endif %}
+
+                </div>
+
+            </div>
+
+
+            {% if section.blocks.size > 0 %}
+            <ul class="build-perfect-blocks">
+
+                {% for block in section.blocks %}
+                <li class="build-perfect-block" {{ block.shopify_attributes }}>
+
+                    {% if block.settings.image != blank %}
+                    <div class="build-perfect-block-img">
+                        {{ block.settings.image | image_url: width: 1000 | image_tag }}
+                    </div>
+                    {% endif %}
+
+                    <div class="build-perfect-block-content">
+
+                        {% if block.settings.title != blank %}
+                        <h3 class="build-perfect-block-title">
+                            {{ block.settings.title }}
+                        </h3>
+                        {% endif %}
+
+                        {% if block.settings.description != blank %}
+                        <div class="build-perfect-block-desc">
+                            {{ block.settings.description }}
+                        </div>
+                        {% endif %}
+
+                        {% if block.settings.button_text != blank %}
+                        <a href="{{ block.settings.button_link }}" class="build-perfect-block-btn">
+                            {{ block.settings.button_text }}
+                            <div class="build-perfect-block-btn-icon">
+                              <svg width="43" height="31" viewBox="0 0 43 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="42.8571" height="30.8571" rx="15.4286" fill="white"/>
+                                <path d="M10.2856 15.1394H32.5714M32.5714 15.1394L25.7142 8.28223M32.5714 15.1394L25.7142 21.9965" stroke="black" stroke-width="0.857143" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </div>
+                        </a>
+                        {% endif %}
+
+                    </div>
+
+                </li>
+                {% endfor %}
+
+            </ul>
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Build Perfect Section",
+  "settings": [
+
+    {
+      "type": "image_picker",
+      "id": "abs_image",
+      "label": "Content BG Image Desktop"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "abs_image_mob",
+      "label": "Content BG Image Mobile"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "list_icon",
+      "label": "List Icon",
+      "info": "Select icon, If List is used in Deskcription"
+    },
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title"
+    },
+
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Section Subtitle"
+    },
+
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color",
+      "id": "Content_bg",
+      "label": "Content Background",
+      "default": "#FEC700"
+    },
+
+    {
+      "type": "color",
+      "id": "Cards_bg",
+      "label": "Cards Background",
+      "default": "#FAF7ED"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Bottom Mobile"
+    }
+
+  ],
+
+  "blocks":[
+    {
+      "type":"feature",
+      "name":"Build Perfect Block",
+      "settings":[
+
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Block Image"
+        },
+
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Block Title"
+        },
+
+        {
+          "type":"richtext",
+          "id":"description",
+          "label":"Block Description"
+        },
+
+        {
+          "type":"text",
+          "id":"button_text",
+          "label":"Button Text"
+        },
+
+        {
+          "type":"url",
+          "id":"button_link",
+          "label":"Button Link"
+        }
+
+      ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Build Perfect Section",
+      "category": "Custom",
+      "blocks":[
+        {"type":"feature"},
+        {"type":"feature"},
+        {"type":"feature"}
+      ]
+    }
+  ]
+}
+{% endschema %}

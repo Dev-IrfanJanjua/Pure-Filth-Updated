@@ -1,0 +1,242 @@
+<!doctype html>
+
+<html class="no-js" lang="{{ request.locale.iso_code }}"{%- if request.locale.iso_code == 'ar' or request.locale.iso_code == 'he' -%} dir="rtl"{%- endif -%}>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- endif -%}
+
+    {% render 'font-family' %}
+
+    {%- unless settings.type_heading_font.system? and settings.type_body_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+
+    {% render 'meta-tags' %}
+
+    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <noscript>
+      <style>
+        img[loading='lazy'] { opacity: 1; }
+      </style>
+    </noscript>
+    <script src="{{ 'cookies.js' | asset_url }}" defer="defer"></script>
+
+    {{ content_for_header }}
+
+    {%- render 'settings' -%}
+
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
+    {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+    {% render 'css', css: 'component-drawer.css' %}
+
+    {%- if settings.enable_predictive_search -%}
+      {% render 'css', css: 'component-predictive-search.css' %}
+      <script src="{{- 'predictive-search.js' | asset_url -}}" defer="defer"></script>
+    {%- endif -%}
+
+    {% comment %}theme-check-disable AssetPreload{% endcomment %}
+    {%- unless settings.type_heading_font.system? -%}
+      <link rel="preload" as="font" href="{{ settings.type_heading_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless -%}
+    {%- unless settings.type_body_font.system? -%}
+      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+      {%- endunless -%}
+    {% comment %}theme-check-enable AssetPreload{% endcomment %}
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      if (Shopify.designMode) {
+        document.documentElement.classList.add('shopify-design-mode');
+      }
+    </script>
+
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{- 'bodyScrollLock.min.js' | asset_url -}}" defer="defer"></script>
+    <style>
+      .shopify-payment-button__button--unbranded:hover:not([disabled]) {
+            background-color: #000000 !important;
+            color:#fff !important;
+        }
+    </style>
+
+
+  </head>
+
+
+
+  <body class="template template--{{ template.name }}{% if template.suffix %} template--{{- template.suffix -}}{% endif %}">
+    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+      {{- 'theme.accessibility.skip_to_content' | t -}}
+    </a>
+
+    {%- sections 'header-group' -%}
+
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+
+    <footer class="js-animation-fade-in">
+      {%- sections 'footer-group' -%}
+    </footer>
+
+    {%- sections 'overlay-group' -%}
+
+    <ul hidden>
+      <li id="a11y-refresh-page-message">{{- 'theme.accessibility.refresh_page' | t -}}</li>
+    </ul>
+
+    <script>
+      window.theme = window.theme || {};
+      theme = {
+        settings: {
+          money_with_currency_format: {{ shop.money_format | json }},
+          cart_free_shipping_threshold: {{ settings.shipping_notification_threshold | times: 100 }},
+          cart_free_shipping_text: `{{ 'cart.free_shipping_text_html' | t: amount: '0' }}`,
+          cart_free_shipping_text_success: `{{ 'cart.free_shipping_text_success' | t }}`,
+        }
+      }
+      window.shopUrl = '{{ request.origin }}';
+      window.routes = {
+        cart_add_url: '{{ routes.cart_add_url }}',
+        cart_change_url: '{{ routes.cart_change_url }}',
+        cart_update_url: '{{ routes.cart_update_url }}'
+      };
+      window.cartStrings = {
+        error: `{{ 'cart.error' | t }}`,
+        quantityError: `{{ 'cart.quantity_error_html' | t: quantity: '[quantity]' }}`
+      }
+      window.variantStrings = {
+        addToCart: '{{ 'theme.actions.add_to_cart' | t }}',
+        unavailable: '{{ 'product.unavailable' | t }}',
+        soldOut: '{{ 'product.sold_out' | t }}',
+        addSubscriptionToCart: 'Add subscription to cart'
+      }
+      window.validationStrings = {
+        invalidEmail: '{{ 'theme.form.invalid_email' | t }}'
+      }
+      window.accessibilityStrings = {
+        recipientFormExpanded: `{{ 'gift_card.recipient.expanded' | t }}`,
+        recipientFormCollapsed: `{{ 'gift_card.recipient.collapsed' | t }}`,
+      };
+    </script>
+
+    {% if settings.enable_back_to_top_button %}
+      {% render 'back-to-top' %}
+    {% endif %}
+
+    {% render 'subify-snippet' %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+jQuery(document).on('click', 'ul.shopify_subscriptions_app_block_label_children li input[type=radio]', function() {
+  var my_value = jQuery(this).attr('data-selling-plan-id');
+  console.log(my_value);
+  jQuery('input.selected-selling-plan-id').val(my_value);
+});
+
+  
+var intervalId = setInterval(function() {
+    $('label').each(function() {
+        var labelText = $(this).html();
+        if (labelText.includes(", 20% off")) {
+            var updatedText = labelText.replace(", 20% off", "");
+            $(this).html(updatedText);  
+        }
+    });  
+}, 500);  
+  
+$('.shopify_subscriptions_in_widget_price').each(function() {
+    var labelText = $(this).html().trim();
+    var updatedText = labelText.replace(/\s*AED\s*/g, "");  
+    $(this).html(updatedText);  
+});
+
+$('.cart-drawer__total-price').each(function() {
+    var labelText = $(this).html().trim();
+    var updatedText = labelText.replace(/\s*AED\s*/g, "");  
+    $(this).html(updatedText);  
+});  
+  
+
+
+  jQuery(document).ready(function() {
+    jQuery('.shopify_subscriptions_app_block_label').first().addClass('active');
+    jQuery('.shopify_subscriptions_app_block_label').click(function(){
+        jQuery('.shopify_subscriptions_app_block_label').removeClass('active');
+        jQuery(this).addClass('active');
+    });
+});
+  
+jQuery('body').on('click', '.shopify_subscriptions_app_block_label .shopify_subscriptions_purchase_option_wrapper', function() {
+    // Find the active <li> element
+    const activeLi = jQuery('.shopify_subscriptions_app_block_label_children li.active input[type="radio"]');
+    
+    // Get the data-selling-plan-id value
+    const sellingPlanId = activeLi.data('selling-plan-id');
+    
+    // Update the hidden input field with the value
+    jQuery('input.selected-selling-plan-id').val(sellingPlanId);
+});
+  
+</script>
+<script>
+document.querySelectorAll('.shopify_subscriptions_app_block_label_children li')[0].classList.add('active');
+
+document.querySelectorAll('.shopify_subscriptions_app_block_label_children li').forEach(function(li) {
+    li.addEventListener('click', function() {
+        // Remove the 'active' class from all list items
+        document.querySelectorAll('.shopify_subscriptions_app_block_label_children li').forEach(function(item) {
+            item.classList.remove('active');
+        });
+        
+
+        li.classList.add('active');
+    });
+});
+
+
+
+  jQuery('.swatch.swatch--square').click(function() {
+    setTimeout(function() {
+        var price = jQuery('.product__price.product__block .price__regular span.visually-hidden + span').text();
+        var numericPrice = price.replace(/Dhs.\s*/g, '');       
+        var discountLabel = jQuery('.shopify_subscriptions_purchase_option_wrapper label').text();
+        var discountMatch = discountLabel.match(/(\d+)%/);
+        var discount = discountMatch ? parseInt(discountMatch[1]) : 0; 
+        var discount_price = (discount / 100).toFixed(2); 
+        var mult = numericPrice * discount_price; // gives the value for subtract from main value
+        var discont_price = numericPrice - mult;
+
+        // Round the discounted price to two decimal places
+        discont_price = discont_price.toFixed(2);
+
+        // Log the values for debugging
+        console.log(price);
+        console.log(numericPrice);
+        console.log(discount);
+        console.log(discount_price);
+        console.log(mult);
+        console.log(discont_price);
+
+        // Update the price in the widget
+        jQuery('.shopify_subscriptions_in_widget_price').text(price); 
+        jQuery('.shopify_subscriptions_in_widget_price.allocation_price').text('Dhs. ' + discont_price);
+    }, 1000); 
+});
+
+</script>
+
+  </body>
+</html>

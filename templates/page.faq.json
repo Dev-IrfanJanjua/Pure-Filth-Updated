@@ -1,0 +1,340 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "e4a22221-96e8-47eb-8e41-ff9780104ed3": {
+      "type": "page-banner",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "text": "<p>If you have a question, please consult our list of frequently asked questions before reaching out for assistance.</p>",
+        "text_truncate": 3,
+        "content_position": "center",
+        "content_alignment": "center",
+        "media_position": "background",
+        "page_menu": "",
+        "enable_breadcrumbs": true,
+        "section_height": "50svh",
+        "video_external": "",
+        "show_controls_on_video": false,
+        "section_height_mobile": "50svh",
+        "video_external_mobile": "",
+        "show_controls_on_video_mobile": false,
+        "section_width": "max-w-page",
+        "color_scheme": "scheme-5",
+        "color_scheme_for_media": "",
+        "spacing_top": "2",
+        "spacing_bottom": "1"
+      }
+    },
+    "seo_content_jjGDDL": {
+      "type": "seo-content",
+      "settings": {
+        "heading": "Frequently asked questions",
+        "heading_size": "h3",
+        "text": "",
+        "content_alignment": "start",
+        "section_width": "max-w-narrower",
+        "color_scheme": "",
+        "spacing_inner": "0",
+        "spacing_top": "2",
+        "spacing_bottom": "0"
+      }
+    },
+    "15d37dcd-dfe5-404c-80f1-8f76c2017e23": {
+      "type": "accordions",
+      "blocks": {
+        "template--17062096503099__15d37dcd-dfe5-404c-80f1-8f76c2017e23-16696259764c4b7b62-0": {
+          "type": "topic",
+          "settings": {
+            "is_open": true,
+            "title": "Are your mushrooms third-party tested?",
+            "text": "<p>Damn right they are. We wouldn't dream of letting anything less than filthy perfection pass through the lab. Each batch is tested for quality, potency, and purity, so you know you're getting the good stuff‚ no fillers, no nasties, just 100% mushroom goodness.</p>",
+            "page": ""
+          }
+        },
+        "template--17062096503099__15d37dcd-dfe5-404c-80f1-8f76c2017e23-16696259764c4b7b62-1": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "How are your mushroom powders made?",
+            "text": "<p>We use a dual extraction method to make sure we’re pulling out all the good stuff. That means both water and alcohol extractions to get every last drop of those bioactive compounds. What you end up with is a potent, powerful powder ready to fuel your day.</p>",
+            "page": ""
+          }
+        },
+        "template--17062096503099__15d37dcd-dfe5-404c-80f1-8f76c2017e23-16696259764c4b7b62-2": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Do your supplements have any alcohol in them?",
+            "text": "<p>I know we said the dual extraction method invovled alcohol as part of the process. But there are zero traces of it in the final product. So unless you're chugging your mushrooms down with a whiskey chaser (no judgement here), no, there's absolutely no alcohol involved. Our products are all sober and straight to the point.</p>",
+            "page": ""
+          }
+        },
+        "topic_tbVqpp": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "How do I take Pure Filth mushrooms?",
+            "text": "<p>Mix 'em, sip 'em, sprinkle 'em on your avo toast‚ whatever floats your fungi boat. Our powders are versatile enough to slip into your daily routine. Hot drinks, smoothies, protein shakes or even on your favourite dessert. Filthy, but functional.</p>",
+            "page": ""
+          }
+        },
+        "topic_ejc3cx": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Are your mushrooms legal?",
+            "text": "<p>Only on the path to better health, mate. These are functional mushrooms (aKa, healthy and legal), not the psychedelic kind. You'll be more 'focused and fabulous'  than ‚'floating in outer space.'</p>",
+            "page": ""
+          }
+        },
+        "topic_txPMFK": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Do your products actually work?",
+            "text": "<p>We wouldn't have spent two years tracking down the best mushrooms on the planet if they didn't. Each one is packed with bioactive compounds that support your energy, focus, stress levels, gut health, skin  and overall well-being. You'll feel it, and if you don't, well‚ maybe you're already superhuman.</p>",
+            "page": ""
+          }
+        },
+        "topic_PUUHKt": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "How long does shipping take?",
+            "text": "<p>We don't mess around. Orders are shipped straight from the UAE, and we aim to get them to your door as fast as possible. Typically, you'll have your hands on them within 1-2  business days. If it's a mushroom emergency, we do also offer same day delivery to mainland Dubai if you order before 2pm and you pay a little extra shipping.</p>",
+            "page": ""
+          }
+        },
+        "topic_4m4iX8": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Are Pure Filth mushrooms vegan and gluten-free?",
+            "text": "<p>Yes and Yes. Our mushrooms are all plant-based and free from any gluten or other rubbish  you don't need. Just pure fungi goodness, with nothing hiding in the shadows or small print.</p>",
+            "page": ""
+          }
+        },
+        "topic_PQLqJR": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "What's the difference between fruiting body and mycelium?",
+            "text": "<p>Glad you asked. Fruiting body is the real MVP. It's where all the bioactive goodness lives. Mycelium? That's the rooty stuff some brands use, but it's packed with grains and filler. Not our vibe. Stick with the fruiting body and you're golden.</p>",
+            "page": ""
+          }
+        },
+        "topic_44qfR3": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "What's your return policy?",
+            "text": "<p>If you're not feeling the filth, we've got you covered. You've got 30 days to send it back, no questions asked (well, maybe a few, but we'll be nice). Just make sure the product's unopened, and we'll sort you out.</p>",
+            "page": ""
+          }
+        },
+        "topic_twQDzf": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Can I take these supplements daily?",
+            "text": "<p>Absolutely! These mushrooms are the daily habit you never knew you needed. Think of it as a filthy little ritual for better energy, focus, and zen vibes all day long.</p>",
+            "page": ""
+          }
+        },
+        "topic_r4nryD": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "How should I store the mushrooms?",
+            "text": "<p>Cool, dry, and out of direct sunlight, just like you after a heavy brunch. Also, keep them sealed air tight otherwise the moisture in the air may make them go hard. Hard powders are not the one. </p>",
+            "page": ""
+          }
+        },
+        "topic_yhmhxd": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Are your products sugar-free?",
+            "text": "<p>Correct, no added sugar here. We keep it pure and natural. This does mean they do taste a little 'earthy', so if you are a snowflake can can't stomach a little filth, maybe mix it in a smoothie or add some honey. But whatever you do, don't whinge. No one likes a whinger. Get a grip and  suck it up. It's good for you, like really good. Your body will thank you.</p>",
+            "page": ""
+          }
+        },
+        "topic_gBt6tQ": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "How do I know which mushroom is right for me?",
+            "text": "<p>Easy. Need focus? Go for Lion's Mane. Looking for stress relief? Reishi’s got your back. Craving more energy? Cordyceps is your jam. Need to boost immunity? Chaga’s your go-to. Want glowing skin? Tremella’s here to hydrate. Feeling like your gut could use some love? Turkey Tail’s got you covered. We’ve got a filthy fix for whatever you need.</p>",
+            "page": ""
+          }
+        },
+        "topic_BBtVjh": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Can I take more than one Pure Filth product at once?",
+            "text": "<p>We recommend a serving of 2 grams at once. You can take up to 6 grams of mushrooms over a 24 hour period. Therefore, you can mix and match if you fancy it. Stack 'em up if you need to supercharge your day, or just stick with one if you're keeping it simple. Either way, you're on the right path to filth-fuelled wellness.</p>",
+            "page": ""
+          }
+        },
+        "topic_eHBRGr": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Where are your ingredients sourced from?",
+            "text": "<p>Our filthy little mushrooms are sourced from the best growers in China, where they've been cultivating these fungi for centuries. We've scoured the earth to bring you the most potent and pure mushrooms‚ because only the best will do for our crew.</p>",
+            "page": ""
+          }
+        },
+        "topic_VrCgBe": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Are your mushrooms organic?",
+            "text": "<p>Oh, you bet they are. Pure, organic, and free from any dodgy chemicals. We like to keep things as natural as possible—just mushrooms, as Mother Nature intended. No pesticides, no nasty surprises, just the real deal.</p>",
+            "page": ""
+          }
+        },
+        "topic_Uq8Gjw": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Can I take them if I'm breastfeeding or pregnant?",
+            "text": "<p>We love a good mushroom, but if you’re pregnant or breastfeeding, it’s always best to check with your healthcare provider before diving in. We’re potent, but we want to be safe, too.</p>",
+            "page": ""
+          }
+        },
+        "topic_cBFUTE": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "How often do I take them?",
+            "text": "<p>Daily, baby! These mushrooms are designed to be a filthy little habit you can keep up with every day. Whether it's in your morning coffee or your afternoon smoothie, just make sure you’re getting your daily dose of fungi goodness.</p>",
+            "page": ""
+          }
+        },
+        "topic_Qyt9RH": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Where do you ship to?",
+            "text": "<p>Right now, we’re keeping it local to the UAE. If you’re outside the UAE and desperate for a taste of the filthy life, drop us an email at hello@getpurefilth.com and we’ll see what we can do. No promises, but we’ll give it a go!</p>",
+            "page": ""
+          }
+        },
+        "topic_NkVtdr": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "How many servings are in a pouch?",
+            "text": "<p>Each 100g pouch packs in 50 servings of pure mushroom goodness (that’s 2 grams or one teaspoon per serving). So, if you’re the kind who likes to keep it all to yourself, you’ve got about two months' worth of filth to enjoy.</p>",
+            "page": ""
+          }
+        },
+        "topic_eYkKR7": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Do you work with distributors, partners, influencers, or unicorns?",
+            "text": "<p>We’re open to chats with all the above—especially unicorns. However, if you’re any of the above and reading this, feel free to drop us a line at hello@getpurefilth.com. Let’s make some filthy magic happen.</p>",
+            "page": ""
+          }
+        },
+        "topic_DdFVb8": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Do you take cash payments?",
+            "text": "<p>As much as we love caaaaash money, we only take online payments, I’m afraid. Also, this is the 21st century, next you'll be asking us if we still accept carrier pigeons or take cheques! Come on now, let’s keep it digital folks.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17062096503099__15d37dcd-dfe5-404c-80f1-8f76c2017e23-16696259764c4b7b62-0",
+        "template--17062096503099__15d37dcd-dfe5-404c-80f1-8f76c2017e23-16696259764c4b7b62-1",
+        "template--17062096503099__15d37dcd-dfe5-404c-80f1-8f76c2017e23-16696259764c4b7b62-2",
+        "topic_tbVqpp",
+        "topic_ejc3cx",
+        "topic_txPMFK",
+        "topic_PUUHKt",
+        "topic_4m4iX8",
+        "topic_PQLqJR",
+        "topic_44qfR3",
+        "topic_twQDzf",
+        "topic_r4nryD",
+        "topic_yhmhxd",
+        "topic_gBt6tQ",
+        "topic_BBtVjh",
+        "topic_eHBRGr",
+        "topic_VrCgBe",
+        "topic_Uq8Gjw",
+        "topic_cBFUTE",
+        "topic_Qyt9RH",
+        "topic_NkVtdr",
+        "topic_eYkKR7",
+        "topic_DdFVb8"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "section_width": "max-w-narrower",
+        "color_scheme": "scheme-1",
+        "spacing_top": "0",
+        "spacing_bottom": "4"
+      }
+    },
+    "accordions": {
+      "type": "accordions",
+      "blocks": {
+        "06f97daa-496a-417b-aa49-d8a47260cf78": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Do I have to create an account?",
+            "text": "<p>No, you don't have to create an account. However, we strongly recommend that you create an account so that you can take advantage of the various benefits it offers. For example, you will be able to access your account easily the next time you visit us, and you will also be able to get personalized recommendations and services tailored to your needs. By creating an account with us, you will be able to make the most out of our services and save time in the future.</p>",
+            "page": ""
+          }
+        },
+        "e957eb44-fbe4-4f40-a034-48a4d0a4099a": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "How do I change my account password?",
+            "text": "<p>If you have forgotten your password, don't worry. You can easily reset it by clicking the 'forgot password' link. Once you click the link, you will receive an email with instructions on how to create a new password. Follow the instructions to set a new password that is secure and easy to remember. Remember to keep your password safe and never share it with anyone.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "06f97daa-496a-417b-aa49-d8a47260cf78",
+        "e957eb44-fbe4-4f40-a034-48a4d0a4099a"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Frequently asked questions",
+        "heading_size": "h3",
+        "section_width": "max-w-narrower",
+        "color_scheme": "scheme-3ecfe127-9e1a-41fc-b9f0-518d3d1cf67c",
+        "spacing_top": "2",
+        "spacing_bottom": "6"
+      }
+    }
+  },
+  "order": [
+    "e4a22221-96e8-47eb-8e41-ff9780104ed3",
+    "seo_content_jjGDDL",
+    "15d37dcd-dfe5-404c-80f1-8f76c2017e23",
+    "accordions"
+  ]
+}

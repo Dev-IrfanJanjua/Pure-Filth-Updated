@@ -1,0 +1,443 @@
+{% style %}
+  .section-{{ section.id }}{
+    background: {{ section.settings.section_bg }};
+    padding-top: {{ section.settings.padding_top_desktop }}px;
+    padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  }
+
+  .section-{{ section.id }} .page-width {
+        padding: 0 100px;
+    }
+
+  .section-{{ section.id }} .comparison-head{
+    text-align:center;
+    margin-bottom: 50px;
+  }
+
+  h2.comparison-title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 0 6px;
+}
+
+p.comparison-subtitle {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #000;
+    margin: 0;
+}
+
+  .section-{{ section.id }} .comparison_table{
+    border-radius: 24px;
+    overflow: hidden;
+    padding-left: 24px;
+    background: #FAF7ED66;
+    backdrop-filter: blur(80px);
+    position: relative;
+  }
+
+  .section-{{ section.id }} .comparison-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-{{ section.id }} .comparison-cell{
+    padding: 10px;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 92px;
+    border-bottom: 0.5px solid #0000004D;
+  }
+
+  .section-{{ section.id }} .comparison-cell.highlight{
+    background: {{ section.settings.highlight_bg }};
+  }
+
+  .comparison-head-brand.comparison-logo {
+    background: {{ section.settings.highlight_bg }};
+}
+
+  .section-{{ section.id }} .comparison-table_head{
+    background: {{ section.settings.table_head_bg }};
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .comparison-head-feature {
+        max-width: 30%;
+        width: 100%;
+        font-family: GT Cinetype;
+        font-weight: 700;
+        font-size: 17.86px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        color: #000;
+    }
+
+  .section-{{ section.id }} .comparison-table_head div{
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid #0000004D;
+    min-height: 92px;
+  }
+
+  .comparison-head-brand.comparison-logo,
+  .comparison-head-typical,
+  .comparison-head-why {
+    max-width: 23.4%;
+    width: 100%;
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    padding-inline: 10px !important;
+}
+
+  .section-{{ section.id }} .comparison-logo img{
+    max-width: 120px;
+    width: 100%;
+    display: block;
+    height: 31px;
+    object-fit: contain;
+  }
+
+  .comparison-cell.comparison-cell_feature {
+    max-width: 30%;
+    width: 100%;
+    justify-content: start;
+}
+
+.comparison-cell.comparison-cell_half, .comparison-cell.highlight {
+    max-width: 23.4%;
+    width: 100%;
+}
+
+.comparison-cell.comparison-cell_half:last-child {
+    border-left: 0.5px solid #827454;
+}
+
+.comparison-head-why {
+    border-left: 0.5px solid #827454;
+}
+
+span.comparison-cell_inner-text {
+    max-width: 146px;
+    width: 100%;
+}
+
+
+
+  /* Mobile */
+
+  @media(max-width:768px){
+
+  .section-{{ section.id }}{
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  .section-{{ section.id }} .page-width {
+        padding: 0 16px;
+    }
+
+  .section-{{ section.id }} .comparison-row,
+  .section-{{ section.id }} .comparison-table_head{
+    grid-template-columns:1fr;
+  }
+
+  .section-{{ section.id }} .comparison-cell{
+    border-bottom:1px solid rgba(0,0,0,0.08);
+  }
+
+  .comparison-head-brand.comparison-logo, .comparison-head-typical, .comparison-head-why {
+    font-size: 14px;
+}
+
+.comparison-head-feature {
+    font-size: 14px;
+}
+
+.section-{{ section.id }} .comparison_table{
+    padding: 0;
+}
+
+.section-{{ section.id }} .comparison-cell {
+    font-size: 14px;
+}
+
+.section-{{ section.id }} .comparison-table_head div {
+    min-width: 33.4%;
+    width: 100%;
+}
+
+.section-{{ section.id }} .comparison-cell {
+    min-width: 33.4%;
+    width: 100%;
+}
+
+
+
+  }
+
+
+{% endstyle %}
+
+<section class="comparison-section section-{{ section.id }}">
+  <div class="page-width">
+    <div class="comparison-wrapper">
+      <div class="comparison-head">
+        {% if section.settings.title != blank %}
+          <h2 class="comparison-title">
+            {{ section.settings.title }}
+          </h2>
+        {% endif %}
+
+        {% if section.settings.subtitle != blank %}
+          <p class="comparison-subtitle">
+            {{ section.settings.subtitle }}
+          </p>
+        {% endif %}
+      </div>
+
+      <div class="comparison_table">
+        <!-- Table Head -->
+
+        <div class="comparison-table_head">
+          <div class="comparison-head-feature">
+            {{ section.settings.col_1 }}
+          </div>
+
+          <div class="comparison-head-brand comparison-logo">
+            {% if section.settings.brand_logo != blank %}
+              {{ section.settings.brand_logo | image_url: width: 200 | image_tag }}
+            {% else %}
+              {{ section.settings.col_2 }}
+            {% endif %}
+          </div>
+
+          <div class="comparison-head-typical">
+            {{ section.settings.col_3 }}
+          </div>
+
+          <div class="comparison-head-why">
+            {{ section.settings.col_4 }}
+          </div>
+        </div>
+
+        <!-- Table Rows -->
+
+        {% for block in section.blocks %}
+          <div class="comparison-row comparison-row-{{ forloop.index }}" {{ block.shopify_attributes }}>
+            <div class="comparison-cell comparison-cell_feature">
+              {{ block.settings.feature }}
+            </div>
+
+            <div class="comparison-cell highlight">
+                <span class="comparison-cell_inner-text">
+                    {{ block.settings.brand }}
+                </span>
+            </div>
+
+            <div class="comparison-cell comparison-cell_half">
+                <span class="comparison-cell_inner-text">
+                    {{ block.settings.typical }}
+                </span>
+            </div>
+
+            <div class="comparison-cell comparison-cell_half">
+                <span>
+                    {{ block.settings.why }}
+                </span>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Comparison Table",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+
+    {
+      "type": "text",
+      "id": "col_1",
+      "label": "Column 1 Heading",
+      "default": "Features"
+    },
+
+    {
+      "type": "text",
+      "id": "col_2",
+      "label": "Column 2 Heading",
+      "default": "Pure Filth"
+    },
+
+    {
+      "type": "text",
+      "id": "col_3",
+      "label": "Column 3 Heading",
+      "default": "Typical Mushroom Brands"
+    },
+
+    {
+      "type": "text",
+      "id": "col_4",
+      "label": "Column 4 Heading",
+      "default": "Why This Matters"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "brand_logo",
+      "label": "Brand Logo (optional)"
+    },
+
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color_background",
+      "id": "table_head_bg",
+      "label": "Table Header Background",
+      "default": "#f5f5f5"
+    },
+
+    {
+      "type": "color",
+      "id": "highlight_bg",
+      "label": "Highlight Column Background",
+      "default": "#f0f0f0"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 80,
+      "label": "Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 80,
+      "label": "Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "label": "Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "label": "Padding Bottom Mobile"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Comparison Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Feature"
+        },
+
+        {
+          "type": "textarea",
+          "id": "brand",
+          "label": "Your Brand"
+        },
+
+        {
+          "type": "textarea",
+          "id": "typical",
+          "label": "Typical Brands"
+        },
+
+        {
+          "type": "textarea",
+          "id": "why",
+          "label": "Why This Matters"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Comparison Table",
+      "category": "Custom",
+      "blocks": [{ "type": "row" }, { "type": "row" }, { "type": "row" }, { "type": "row" }]
+    }
+  ]
+}
+{% endschema %}

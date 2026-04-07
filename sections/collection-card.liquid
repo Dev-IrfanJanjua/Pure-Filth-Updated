@@ -1,0 +1,708 @@
+{% style %}
+  .section-{{ section.id }}{
+    background: {{ section.settings.section_bg }};
+    padding-top: {{ section.settings.padding_top_desktop }}px;
+    padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+    position: relative;
+  }
+
+  .section-{{ section.id }} .collection-cards-head{
+    text-align:center;
+    margin-bottom: 32px;
+  }
+
+  .section-{{ section.id }} a.collection-card-link {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.section-{{ section.id }} .collection-card:hover {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      transform: scale(1.02);
+    }
+
+  /* DESKTOP GRID */
+
+  .section-{{ section.id }} .desktop-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 16px;
+  }
+
+  /* MOBILE GRID */
+
+  .section-{{ section.id }} .mobile-grid{
+    display:none;
+  }
+
+  /* MOBILE SWIPER */
+
+  .section-{{ section.id }} .mobile-swiper{
+    display:none;
+  }
+
+  .section-{{ section.id }} .collection-card{
+    border-radius: 12px;
+    padding: 24px 12px 20px;
+    position:relative;
+    overflow:hidden;
+    transition: all 0.3s ease;
+  }
+
+  .collection-card_img{
+    text-align:center;
+  }
+
+.collection-card_img img {
+    width: 100%;
+    max-height: 280px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.collection-card_img {
+    max-width: 197px;
+    width: 100%;
+    height: 226px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.collection-card-tag {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    transform: translatex(-50%);
+    z-index: 0;
+    width: 100%;
+}
+
+.collection-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background: #FFFFFF1A;
+    padding: 12px;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+}
+
+  .collection-card-btn{
+    display:flex;
+  }
+
+  .collection-card-btn img{
+    width: 36px;
+    height: 36px;
+    display: block;
+  }
+
+  .collection-cards-footer{
+    text-align:center;
+    margin-top: 32px;
+  }
+
+  .collection-main-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 20px;
+  border-radius:60px;
+  text-decoration:none;
+  background: {{ section.settings.button_bg }};
+  transition: all 0.3s ease;
+}
+
+.collection-main-btn:hover .collection-main-btn-icon{
+    transform: translateX(4px);
+}
+
+a.collection-main-btn:hover {
+    transform: translateY(-2px);
+}
+
+.collection-main-btn-icon{
+  background: {{ section.settings.button_icon_bg }};
+  border-radius: 70px;
+  padding: 10px 12px;
+  display:flex;
+  transition: all 0.3s ease;
+}
+
+.collection-main-btn-icon img{
+    width: 26px;
+    height: 16px;
+    display: block;
+}
+
+span.collection-main-btn_text {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h2.collection-cards-title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+strong.collection-card-bottom-title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+}
+
+p.collection-card-bottom-subtitle {
+    font-family: 'GT Cinetype';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin: 12px 0 0;
+}
+
+.collection-cards-section-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.collection-cards-section-img {
+    max-width: 250px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: auto;
+}
+
+  /* MOBILE */
+
+  @media(max-width:768px){
+
+  .section-{{ section.id }}{
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  /* hide desktop */
+
+  .section-{{ section.id }} .desktop-grid{
+    display:none;
+  }
+
+  .section-{{ section.id }} .collection-cards-head {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+h2.collection-cards-title {
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.collection-card-tag {
+    top: 30px;
+    font-size: 42px;
+}
+
+.collection-card-bottom {
+    padding: 8px;
+}
+
+strong.collection-card-bottom-title {
+    font-size: 24px;
+}
+
+p.collection-card-bottom-subtitle {
+    margin: 6px 0 0;
+}
+
+.collection-cards-footer {
+    display: none;
+}
+
+.collection-cards-section-img {
+    max-width: 140px;
+    top: -20px;
+}
+
+.collection-card_img{
+  height: 200px;
+}
+
+.collection-card_img img {
+    max-height: 250px;
+}
+
+  /* mobile grid */
+
+  {% if section.settings.mobile_layout == 'grid' %}
+
+  .section-{{ section.id }} .mobile-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  {% endif %}
+
+  /* mobile swiper */
+
+  {% if section.settings.mobile_layout == 'swiper' %}
+
+    .section-{{ section.id }} .page-width{
+        padding: 0;
+    }
+
+    .section-{{ section.id }} .collection-card{
+        aspect-ratio: 0.81/1;
+      }
+
+      .collection-card_img{
+        height: 245px;
+      }
+
+      .collection-card_img img {
+          max-height: 300px;
+      }
+
+  .section-{{ section.id }} .mobile-swiper{
+    display:block;
+    padding-left: 16px;
+  }
+
+  .mobile-swiper .swiper-wrapper{
+    display:flex;
+  }
+
+  .mobile-swiper .swiper-slide{
+    width:auto;
+  }
+
+  .section-{{ section.id }} .collection-cards-head {
+    padding: 0 16px;
+}
+
+.swiper-pagination.collection-swiper-pagination {
+    position: static;
+    margin-top: 24px;
+}
+
+.swiper-pagination.collection-swiper-pagination span.swiper-pagination-bullet {
+    background: #000;
+    opacity: 1;
+    height: 8px;
+    width: 8px;
+    transition: max-width 0.3s ease;
+}
+
+.swiper-pagination.collection-swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    max-width: 30px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+  {% endif %}
+
+  }
+{% endstyle %}
+
+<section class="collection-cards-section section-{{ section.id }}">
+    {% if section.settings.sec_img != blank %}
+        <div class="collection-cards-section-img">
+            {{ section.settings.sec_img | image_url: width: 1600 | image_tag:
+                widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                alt: "image",
+                loading: "lazy"
+            }}
+        </div>
+    {% endif %}
+  <div class="page-width">
+    <div class="collection-cards-head">
+      {% if section.settings.title != blank %}
+        <h2 class="collection-cards-title">{{ section.settings.title }}</h2>
+      {% endif %}
+    </div>
+
+    {%- comment -%}
+      DESKTOP GRID
+    {%- endcomment -%}
+
+    <div class="desktop-grid">
+      {% for block in section.blocks %}
+        {% assign collection = collections[block.settings.collection] %}
+
+        <div class="collection-card" style="background: {{ block.settings.card_bg }}">
+          <a href="{{ collection.url }}" class="collection-card-link"></a>
+          {% if block.settings.tag != blank %}
+            <span class="collection-card-tag">{{ block.settings.tag }}</span>
+          {% endif %}
+
+          <div class="collection-card_img">
+            {% if block.settings.custom_image != blank %}
+              {{ block.settings.custom_image | image_url: width: 1000 | image_tag }}
+            {% elsif collection.featured_image != blank %}
+              {{ collection.featured_image | image_url: width: 1000 | image_tag }}
+            {% endif %}
+          </div>
+
+          <div class="collection-card-bottom">
+            <div class="collection-card-bottom_head">
+              <strong class="collection-card-bottom-title">
+                {% if block.settings.title != blank %}
+                  {{ block.settings.title }}
+                {% else %}
+                  {{ collection.title }}
+                {% endif %}
+              </strong>
+
+              {% if block.settings.subtitle != blank %}
+                <p class="collection-card-bottom-subtitle">{{ block.settings.subtitle }}</p>
+              {% endif %}
+            </div>
+
+            <a href="{{ collection.url }}" class="collection-card-btn">
+              {% if section.settings.card_icon != blank %}
+                {{ section.settings.card_icon | image_url: width: 50 | image_tag }}
+              {% endif %}
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    {%- comment -%}
+      MOBILE GRID
+    {%- endcomment -%}
+
+    {% if section.settings.mobile_layout == 'grid' %}
+      <div class="mobile-grid">
+        {% for block in section.blocks %}
+          {% assign collection = collections[block.settings.collection] %}
+
+          <div class="collection-card" style="background: {{ block.settings.card_bg }}">
+            <a href="{{ collection.url }}" class="collection-card-link"></a>
+            {% if block.settings.tag != blank %}
+              <span class="collection-card-tag">{{ block.settings.tag }}</span>
+            {% endif %}
+
+            <div class="collection-card_img">
+              {% if block.settings.custom_image != blank %}
+                {{ block.settings.custom_image | image_url: width: 600 | image_tag }}
+              {% elsif collection.featured_image != blank %}
+                {{ collection.featured_image | image_url: width: 600 | image_tag }}
+              {% endif %}
+            </div>
+
+            <div class="collection-card-bottom">
+                <div class="collection-card-bottom_head">
+                    <strong class="collection-card-bottom-title">
+                        {% if block.settings.title != blank %}
+                          {{ block.settings.title }}
+                        {% else %}
+                          {{ collection.title }}
+                        {% endif %}
+                    </strong>
+
+                    {% if block.settings.subtitle != blank %}
+                        <p class="collection-card-bottom-subtitle">{{ block.settings.subtitle }}</p>
+                    {% endif %}
+                </div>
+
+              <a href="{{ collection.url }}" class="collection-card-btn">
+                {% if section.settings.card_icon != blank %}
+                  {{ section.settings.card_icon | image_url: width: 50 | image_tag }}
+                {% endif %}
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {%- comment -%}
+      MOBILE SWIPER
+    {%- endcomment -%}
+
+    {% if section.settings.mobile_layout == 'swiper' %}
+        <div class="mobile-swiper">
+            <div class="swiper cards-{{ section.id }}">
+              <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                  {% assign collection = collections[block.settings.collection] %}
+      
+                  <div class="swiper-slide">
+                    <div class="collection-card" style="background: {{ block.settings.card_bg }}">
+                      <a href="{{ collection.url }}" class="collection-card-link"></a>
+                      {% if block.settings.tag != blank %}
+                        <span class="collection-card-tag">{{ block.settings.tag }}</span>
+                      {% endif %}
+      
+                      <div class="collection-card_img">
+                        {% if block.settings.custom_image != blank %}
+                          {{ block.settings.custom_image | image_url: width: 1000 | image_tag }}
+                        {% elsif collection.featured_image != blank %}
+                          {{ collection.featured_image | image_url: width: 1000 | image_tag }}
+                        {% endif %}
+                      </div>
+      
+                      <div class="collection-card-bottom">
+                        <div class="collection-card-bottom_head">
+                            <strong class="collection-card-bottom-title">
+                                {% if block.settings.title != blank %}
+                                  {{ block.settings.title }}
+                                {% else %}
+                                  {{ collection.title }}
+                                {% endif %}
+                            </strong>
+
+                            {% if block.settings.subtitle != blank %}
+                                <p class="collection-card-bottom-subtitle">{{ block.settings.subtitle }}</p>
+                            {% endif %}
+                        </div>
+      
+                        <a href="{{ collection.url }}" class="collection-card-btn">
+                          {% if section.settings.card_icon != blank %}
+                            {{ section.settings.card_icon | image_url: width: 50 | image_tag }}
+                          {% endif %}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+              <div class="swiper-pagination collection-swiper-pagination"></div>
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="collection-cards-footer">
+      {% if section.settings.button_text != blank %}
+        <a href="{{ section.settings.button_link }}" class="collection-main-btn">
+          <span class="collection-main-btn_text">{{ section.settings.button_text }}</span>
+
+          {% if section.settings.button_icon != blank %}
+            <span class="collection-main-btn-icon">
+              {{ section.settings.button_icon | image_url: width: 50 | image_tag }}
+            </span>
+          {% endif %}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% if section.settings.mobile_layout == 'swiper' %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.innerWidth <= 768) {
+        new Swiper('.cards-{{ section.id }}', {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+          speed: 800,
+          pagination: {
+                el: '.cards-{{ section.id }} .collection-swiper-pagination',
+                clickable: true
+            }
+        });
+      }
+    });
+  </script>
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "Collection Cards",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "sec_img",
+      "label": "Section BG Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button Icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_icon",
+      "label": "Card Arrow Icon"
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_icon_bg",
+      "label": "Button Icon Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile Layout",
+      "default": "swiper",
+      "options": [
+        {
+          "value": "swiper",
+          "label": "Swiper"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 80,
+      "label": "Padding Top Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 80,
+      "label": "Padding Bottom Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "label": "Padding Top Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "label": "Padding Bottom Mobile"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection Card",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Top Tag"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_image",
+          "label": "Custom Image (Fallback)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title (if no collection)"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "color",
+          "id": "card_bg",
+          "label": "Card Background"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Collection Cards",
+      "category": "Custom",
+      "blocks": [
+        { "type": "collection" },
+        { "type": "collection" },
+        { "type": "collection" }
+      ]
+    }
+  ]
+}
+{% endschema %}

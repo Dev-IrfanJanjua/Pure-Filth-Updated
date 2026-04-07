@@ -1,0 +1,130 @@
+{% style %}
+.cstm_pdp_purchase-options { margin-bottom: 32px; }
+h3.cstm_pdp_purchase-options-title { font-family: GT Cinetype; font-weight: 700; font-size: 20px; line-height: 23px; text-transform: uppercase; color: #000; margin: 0 0 16px; }
+.cstm_pdp_purchase-options-bndl { display: flex; flex-direction: column-reverse; gap: 16px; }
+.cstm_pdp_purchase-option { display: flex; align-items: center; gap: 10px; border: 1px solid #00000033; padding: 20px 12px; cursor: pointer; border-radius: 18px; position: relative; }
+.cstm_pdp_purchase-option input { appearance: none; position: absolute; margin: 0; padding: 0; }
+span.cstm_pdp_purchase-option_icon { width: 24px; height: 24px; border: 1px solid #969696; border-radius: 50%; position: relative; transition: all 0.3s ease; }
+span.cstm_pdp_purchase-option_icon:before { content: ""; width: 14px; height: 14px; display: block; background: {{ block.settings.icon_color }}; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: all 0.3s ease; opacity: 0; }
+.cstm_pdp_purchase-option:has(input:checked) span.cstm_pdp_purchase-option_icon:before { opacity: 1; border-color: {{ block.settings.icon_color }}; }
+.cstm_pdp_purchase-option_title { font-family: GT Cinetype; font-weight: 700; font-size: 16px; line-height: 120%; text-transform: uppercase; color: #000; }
+.cstm_pdp_purchase-option_bottom { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+.cstm_pdp_purchase-option_list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.cstm_pdp_purchase-option_list-item { display: flex; align-items: center; gap: 6px; }
+.cstm_pdp_purchase-option_list-text { font-family: GT Cinetype; font-weight: 400; font-size: 16px; color: #000; }
+.pdp_subscription-options select { padding: 10px; border-radius: 4px; border: 1px solid #1e1e1e; outline: none; cursor: pointer; }
+{% endstyle %}
+
+<div class="cstm_pdp_purchase-options">
+
+  <h3 class="cstm_pdp_purchase-options-title">Choose Your PLAN:</h3>
+
+  <div class="cstm_pdp_purchase-options-bndl">
+
+    <!-- ONE TIME -->
+    {% unless current_variant.requires_selling_plan %}
+      <label class="cstm_pdp_purchase-option">
+        <input type="radio" name="cstm_purchase_option" value="one-time" id="one_time" checked>
+        <span class="cstm_pdp_purchase-option_icon"></span>
+        <span class="cstm_pdp_purchase-option_title">One-time purchase</span>
+      </label>
+    {% endunless %}
+
+    <div class="cstm_pdp_purchase-option-seperate"><span>OR</span></div>
+
+    <!-- SUBSCRIPTION -->
+<!-- Loop over subscription groups -->
+{% for group in product.selling_plan_groups %}
+  <label class="cstm_pdp_purchase-option cstm_pdp_purchase-option_selling">
+    <div class="cstm_pdp_purchase-option_top">
+      <input type="radio"
+             name="cstm_purchase_option"
+             value="subscription"
+             id="subscription_{{ group.id }}">
+      <span class="cstm_pdp_purchase-option_icon"></span>
+      <span class="cstm_pdp_purchase-option_title">{{ group.name }}</span>
+    </div>
+
+    <div class="cstm_pdp_purchase-option_bottom">
+      <ul class="cstm_pdp_purchase-option_list">
+        {% for i in (1..5) %}
+          {% assign text_key = 'list_text_' | append: i %}
+          {% assign text_value = block.settings[text_key] %}
+          {% if text_value != blank %}
+            <li class="cstm_pdp_purchase-option_list-item">
+              <span class="cstm_pdp_purchase-option_list-text">{{ text_value }}</span>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      <div class="pdp_subscription-options">
+        <select name="selling_plan"
+                class="cstm_selling_plan_dropdown"
+                data-group-id="{{ group.id }}">
+          {% for plan in group.selling_plans %}
+            <option value="{{ plan.id }}">{{ plan.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+  </label>
+{% endfor %}
+
+
+  </div>
+
+  <!-- Hidden input to submit selected selling plan -->
+  <input type="hidden" class="selling_plan_id" name="selling_plan_id" value="">
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const oneTimeRadio = document.getElementById('one_time');
+  const subscriptionRadios = document.querySelectorAll('input[name="cstm_purchase_option"][value="subscription"]');
+  const sellingPlanDropdowns = document.querySelectorAll('.cstm_selling_plan_dropdown');
+  const hiddenInput = document.querySelector('.selling_plan_id');
+
+  // Enable/disable dropdowns and update hidden input
+  function updateSellingPlan() {
+    if (oneTimeRadio.checked) {
+      // One-time purchase selected
+      hiddenInput.value = ''; // Clear selling plan
+      sellingPlanDropdowns.forEach(d => d.disabled = true);
+    } else {
+      // Subscription selected
+      let selectedRadio = Array.from(subscriptionRadios).find(r => r.checked);
+      if (!selectedRadio) return;
+
+      const groupId = selectedRadio.id.replace('subscription_', '');
+      sellingPlanDropdowns.forEach(d => {
+        if (d.dataset.groupId === groupId) {
+          d.disabled = false;
+          hiddenInput.value = d.value; // Set hidden input to selected plan
+        } else {
+          d.disabled = true; // Disable other dropdowns
+        }
+      });
+    }
+  }
+
+  // Listen to radio changes
+  oneTimeRadio.addEventListener('change', updateSellingPlan);
+  subscriptionRadios.forEach(radio => radio.addEventListener('change', updateSellingPlan));
+
+  // Listen to dropdown changes → update hidden input immediately
+  sellingPlanDropdowns.forEach(select => {
+    select.addEventListener('change', () => {
+      const groupId = select.dataset.groupId;
+      const radio = document.getElementById('subscription_' + groupId);
+      if (radio && radio.checked) {
+        hiddenInput.value = select.value;
+      }
+    });
+  });
+
+  // Initialize on page load
+  updateSellingPlan();
+});
+</script>

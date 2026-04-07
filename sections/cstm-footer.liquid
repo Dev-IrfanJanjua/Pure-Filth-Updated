@@ -1,0 +1,723 @@
+{% style %}
+.footer-section.section-{{ section.id }} {
+  background-color: {{ section.settings.bg_color }};
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+
+.footer-wrapper-{{ section.id }} {
+  display: flex;
+  flex-wrap: wrap;
+  gap: {{ section.settings.gap }}px ;
+  justify-content: space-between;
+}
+
+/* Newsletter Block */
+.footer-newsletter-column {
+    width: {{ section.settings.newsletter_width }}%;
+    background: {{ section.settings.newsletter_bg }};
+    border-radius: 20px;
+    padding: 39px 32px 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.footer_content-right{
+    max-width: calc(100% - ({{ section.settings.newsletter_width }}% + {{ section.settings.gap }}px ));
+    width: 100%;
+}
+
+.footer-newsletter-content {
+  position: relative;
+  z-index: 1;
+}
+
+h2.footer-newsletter-content_title {
+    margin: 0 0 12px;
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    max-width: 408px;
+}
+
+p.footer-newsletter-content_subtitle {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin: 0;
+    color: #000;
+}
+
+.footer-newsletter-content_head {
+    margin-bottom: 32px;
+}
+
+small.footer-newsletter-content_small {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin: 16px 0 0;
+    display: block;
+    color: #000;
+}
+
+.footer-newsletter-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    /* padding: 0 80px; */
+    padding: 0;
+}
+
+.footer-newsletter-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cstm-newsletter-field {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+input.cstm-newsletter-input {
+    border: none;
+    padding: 16px 6px 16px 20px;
+    outline: none;
+    border-radius: 50px;
+    width: 100%;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+button.cstm-newsletter-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 100px;
+    position: absolute;
+    z-index: 2;
+    right: 6px;
+    top: 50%;
+    transform: translatey(-50%);
+    cursor: pointer;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+/* Menus Column */
+.footer-menus-column {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-menu-block {
+  min-width: 150px;
+}
+
+.footer-menu-title {
+    margin: 0 0 24px;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    display: block;
+}
+
+.footer-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-menu-list a {
+    text-decoration: none;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+/* underline */
+
+.footer-menu-list a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0%;
+    height:2px;
+    background:#000;
+    transition:width 0.35s ease;
+}
+
+/* hover */
+
+.footer-menu-list a:hover::after{
+    width:100%;
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+    margin-top: 54px;
+    padding-top: 16px;
+    border-top: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-copyright {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+}
+
+.footer-large-logo {
+    margin-top: 54px;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.footer-large-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.footer-payment-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-payment-icons img {
+  height: 24px;
+}
+
+/* Mobile Accordion Logic */
+@media (max-width: 768px) {
+
+    .footer-section.section-{{ section.id }} {
+        padding-top: {{ section.settings.padding_top_mob }}px;
+        padding-bottom: {{ section.settings.padding_bottom_mob }}px;
+    }
+
+  .footer-newsletter-column {
+    width: 100% !important;
+    border-radius: 16px;
+    padding: 28px 16px 0;
+    gap: 6px;
+}
+  
+h2.footer-newsletter-content_title {
+    font-size: 24px;
+}
+
+.footer-newsletter-content_head {
+    margin-bottom: 16px;
+}
+
+small.footer-newsletter-content_small {
+    font-size: 16px;
+}
+
+.footer-newsletter-image {
+    padding: 0 13px;
+}
+
+.footer_content-right {
+    max-width: 100%;
+    width: 100%;
+}
+
+.footer-menus-column {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+}
+
+.footer-menu-block {
+    border-bottom: 1px solid #00000080;
+}
+
+.footer-menu-title {
+    padding: 20px 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+  .footer-menu-list {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+.footer-bottom-bar {
+    flex-direction: column-reverse;
+    gap: 18px;
+    text-align: center;
+    margin-top: 32px;
+    border: none;
+    padding-top: 18px;
+}
+
+.footer-payment-icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-large-logo {
+    margin-top: 32px;
+}
+
+.footer-menu-block.is-active {
+    padding-bottom: 20px;
+}
+
+.footer-menu-title_icon{
+    display: block !important;
+    transition: all 0.3s ease;
+}
+
+.footer-menu-block.is-active .footer-menu-title_icon{
+    transform: rotate(180deg);
+}
+
+}
+{% endstyle %}
+
+<footer class="footer-section section-{{ section.id }}">
+  <div class="page-width">
+    <div class="footer-wrapper-{{ section.id }} footer-wrapper">
+      
+      {% comment %} NEWSLETTER COLUMN {% endcomment %}
+      <div class="footer-newsletter-column">
+        <div class="footer-newsletter-content">
+            <div class="footer-newsletter-content_head">
+                {% if section.settings.newsletter_heading != blank %}
+                  <h2 class="footer-newsletter-content_title">{{ section.settings.newsletter_heading }}</h2>
+                {% endif %}
+                {% if section.settings.newsletter_subtext != blank %}
+                  <p class="footer-newsletter-content_subtitle">{{ section.settings.newsletter_subtext }}</p>
+                {% endif %}
+            </div>
+
+          <div class="footer-form-wrapper">
+            {% form 'customer', class: 'cstm-newsletter-form' %}
+                <input type="hidden" name="contact[tags]" value="newsletter">
+
+                <div class="cstm-newsletter-field">
+                    <input
+                    type="email"
+                    name="contact[email]"
+                    class="cstm-newsletter-input"
+                    value="{{ form.email }}"
+                    placeholder="Enter your email"
+                    required
+                    >
+
+                    <button type="submit" class="cstm-newsletter-btn">
+                    Subscribe
+                    </button>
+                </div>
+
+                {% if form.posted_successfully? %}
+                    <p class="cstm-newsletter-success">
+                    Thanks for subscribing!
+                    </p>
+                {% endif %}
+
+                {% if form.errors %}
+                    <small class="newsletter-error">
+                    {{ form.errors | default_errors }}
+                    </small>
+                {% endif %}
+            {% endform %}
+            {% if section.settings.terms_text != blank %}
+              <small class="footer-newsletter-content_small">{{ section.settings.terms_text }}</small>
+            {% endif %}
+          </div>
+
+        </div>
+
+        {% if section.settings.newsletter_image != blank %}
+          <div class="footer-newsletter-image">
+            {{ section.settings.newsletter_image | image_url: width: 600 | image_tag }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="footer_content-right">
+          {% comment %} MENUS COLUMN {% endcomment %}
+          <div class="footer-menus-column">
+            {% for block in section.blocks %}
+              {% if block.type == 'menu' %}
+                <div class="footer-menu-block" {{ block.shopify_attributes }}>
+                  <span class="footer-menu-title">{{ block.settings.title }}
+                    <span class="footer-menu-title_icon" style="display: none;">
+                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.99805 8.50586L5.5498 8.05762L0.487305 2.99512L0.0390625 2.54687L0.935547 1.65039L1.38379 2.09863L5.99805 6.73925L10.6123 2.125L11.0605 1.67676L11.957 2.54687L11.5088 2.99512L6.44629 8.05762L5.99805 8.50586Z" fill="black"/>
+                        </svg>
+                    </span>
+                  </span>
+                  <ul class="footer-menu-list">
+                    {% for link in linklists[block.settings.menu].links %}
+                      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% comment %} BOTTOM BAR {% endcomment %}
+          <div class="footer-bottom-bar">
+            <div class="footer-copyright">
+              {{ section.settings.copyright_text | replace: '<p>', '' | replace: '</p>', ''  }}
+            </div>
+            
+            <div class="footer-payment-icons">
+              {% for type in shop.enabled_payment_types %}
+                {{ type | payment_type_svg_tag: class: 'payment-icon' }}
+              {% endfor %}
+            </div>
+          </div>
+      
+          {% comment %} BIG LOGO FOOTER {% endcomment %}
+          {% if section.settings.footer_logo != blank %}
+            <a href="/" class="footer-large-logo">
+              {{ section.settings.footer_logo | image_url: width: 1400 | image_tag }}
+            </a>
+          {% endif %}
+        </div>
+    </div>
+    
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  if (window.innerWidth <= 768) {
+
+    const menuBlocks = document.querySelectorAll('.footer-menu-block');
+
+    menuBlocks.forEach(block => {
+      const title = block.querySelector('.footer-menu-title');
+      const list = block.querySelector('.footer-menu-list');
+
+      // ✅ Initial state
+      list.style.maxHeight = "0px";
+      list.style.overflow = "hidden";
+      list.style.transition = "max-height 0.35s ease";
+
+      title.addEventListener('click', function() {
+
+        const isActive = block.classList.contains('is-active');
+
+        // ✅ CLOSE ALL MENUS FIRST
+        menuBlocks.forEach(otherBlock => {
+          otherBlock.classList.remove('is-active');
+          const otherList = otherBlock.querySelector('.footer-menu-list');
+          if (otherList) {
+            otherList.style.maxHeight = "0px";
+          }
+        });
+
+        // ✅ TOGGLE CURRENT
+        if (!isActive) {
+          block.classList.add('is-active');
+          list.style.maxHeight = list.scrollHeight + "px";
+        }
+
+      });
+    });
+
+  }
+
+});
+</script>
+
+{% schema %}
+{
+  "name": "Custom Footer",
+  "settings": [
+    {
+      "type": "color_background",
+      "id": "bg_color",
+      "label": "Section Background",
+      "default": "#f9f7f2"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Space Between (Gap)",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Newsletter Settings"
+    },
+    {
+      "type": "range",
+      "id": "newsletter_width",
+      "min": 20,
+      "max": 50,
+      "step": 1,
+      "unit": "%",
+      "label": "Newsletter Column Width",
+      "default": 35
+    },
+    {
+      "type": "color_background",
+      "id": "newsletter_bg",
+      "label": "Newsletter Box Background",
+      "default": "#ffcc4d"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_heading",
+      "label": "Heading",
+      "default": "10% OFF YOUR FIRST ORDER"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_subtext",
+      "label": "Subtext",
+      "default": "Stay up to receive discounts, updates and more."
+    },
+    {
+      "type": "text",
+      "id": "terms_text",
+      "label": "Terms Text",
+      "default": "By subscribing you agree to Terms of use & privacy policy"
+    },
+    {
+      "type": "image_picker",
+      "id": "newsletter_image",
+      "label": "Newsletter Character Image"
+    },
+    {
+      "type": "header",
+      "content": "Bottom Bar"
+    },
+    {
+      "type": "richtext",
+      "id": "copyright_text",
+      "label": "Copyright Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_logo",
+      "label": "Large Bottom Logo"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 60,
+      "label": "Padding Top Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 40,
+      "label": "Padding Bottom Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mob",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 60,
+      "label": "Padding Top Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mob",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 40,
+      "label": "Padding Bottom Mobile"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "Footer Menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Menu Title"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Select Menu"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Professional Footer",
+      "category": "Footer",
+      "blocks": [
+        { "type": "menu" },
+        { "type": "menu" },
+        { "type": "menu" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% comment %} ===== templates stylliing ======= {% endcomment %}
+
+{%  style %}
+
+
+{% if template.name == 'product' %}
+  h2.footer-newsletter-content_title,
+  p.footer-newsletter-content_subtitle,
+  small.footer-newsletter-content_small{
+    color: #fff;
+  }
+{% endif %}
+
+/* ========= product Cahaga 2 ========= */
+
+{% if template.suffix == 'mushroom-powder' %}
+  h2.footer-newsletter-content_title,
+  p.footer-newsletter-content_subtitle,
+  small.footer-newsletter-content_small{
+    color: #000;
+  }
+
+  button.cstm-newsletter-btn{
+    background: #FEC700;
+  }
+
+{% endif %}
+
+{% if template.suffix == 'chaga-2' %}
+  .footer-section.section-{{ section.id }}{
+    background-color: #E2F3FF;
+  }
+  .footer-newsletter-column,
+  button.cstm-newsletter-btn{
+    background: #038BFF;
+  }
+{% endif %}
+
+{% if template.suffix == 'cordyceps-2' %}
+  .footer-section.section-{{ section.id }}{
+    background-color: #FFEEEE;
+  }
+  .footer-newsletter-column,
+  button.cstm-newsletter-btn{
+    background: #D52626;
+  }
+{% endif %}
+
+{% if template.suffix == 'turkey-2' %}
+  .footer-section.section-{{ section.id }}{
+    background-color: #F0FFF7;
+  }
+  .footer-newsletter-column{
+    background: #00883E;
+  }
+{% endif %}
+
+{% if template.suffix == 'reishi-2' %}
+  .footer-section.section-{{ section.id }}{
+    background-color: #F1EAFF;
+  }
+  .footer-newsletter-column{
+    background: #4E377D;
+  }
+{% endif %}
+
+{% if template.suffix == 'tremella-2' %}
+  .footer-section.section-{{ section.id }}{
+    background-color: #FFE6F9;
+  }
+  .footer-newsletter-column{
+    background: #D27ABC;
+  }
+{% endif %}
+
+{% endstyle %}

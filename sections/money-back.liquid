@@ -1,0 +1,595 @@
+{% style %}
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  background: {{ section.settings.section_bg }};
+  position: relative;
+}
+
+.section-{{ section.id }} .money-back-wrapper{
+    background: {{ section.settings.Content_bg }} ;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 24px;
+    padding: 140px 60px 60px;
+    border: 1px solid #E6E6E6;
+    position: relative;
+}
+
+.money-back-abs-img {
+    max-width: 200px;
+    width: 100%;
+    position: absolute;
+    top: -120px;
+    left: 0;
+}
+
+.money-back-abs-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section-{{ section.id }} .money-back-wrapper-img {
+    max-width: 234px;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-{{ section.id }} .money-back-wrapper-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.section-{{ section.id }} .money-back-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+}
+
+.section-{{ section.id }} .money-back-subtitle{
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    /* text-transform: uppercase; */
+    color: {{ section.settings.text_color }};
+    max-width: 474px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-{{ section.id }} span.money-back-btn-text {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: {{ section.settings.button_icon_bg }};
+}
+
+.section-{{ section.id }} .money-back-title{
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 100%;
+    letter-spacing: 3px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    max-width: 592px;
+    margin: 0 auto;
+    color: {{ section.settings.text_color }} ;
+}
+
+.section-{{ section.id }} .money-back-button{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  background: {{ section.settings.button_bg }};
+  padding:10px 16px;
+  border-radius:75px;
+  transition:all .3s ease;
+}
+
+.section-{{ section.id }} .money-back-button:hover {
+  transform:translateY(-2px);
+}
+
+.section-{{ section.id }} .money-back-button:hover .money-back-btn-icon{
+  transform:translateX(4px);
+}
+
+.section-{{ section.id }} .money-back-btn-icon{
+  background: {{ section.settings.button_icon_bg }};
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 12px;
+  border-radius:60px;
+  transition:all .3s ease;
+}
+
+
+.section-{{ section.id }} .money-back-btn-icon img{
+  width: 26px;
+  height: 16px;
+  display:block;
+}
+
+
+.section-{{ section.id }} .money-back-blocks{
+      display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.section-{{ section.id }} .money-back-block{
+    display: flex;
+    gap: 18px;
+    max-width: calc(33.3% - 11px);
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.section-{{ section.id }} .money-back-block:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: scale(1.02);
+}
+
+.section-{{ section.id }} .benefit-block-icon{
+    max-width: 52px;
+    width: 100%;
+    height: auto;
+}
+
+.section-{{ section.id }} .benefit-block-icon img{
+  width:100%;
+  height: 100%;
+  display:block;
+  object-fit: cover;
+}
+
+.section-{{ section.id }} .money-back-block_title{
+      margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20.8px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.section-{{ section.id }} .money-back-block-subtitle{
+      margin: 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #000;
+}
+
+.section-{{ section.id }} .money-back-content_bg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.section-{{ section.id }} .money-back-content_bg img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ======== reverse order on product page ========== */
+
+{% if section.settings.title_first %}
+  .section-{{ section.id }} .money-back-title {
+    order: 1;
+  }
+
+  .section-{{ section.id }} .money-back-subtitle {
+    order: 2;
+  }
+
+  .section-{{ section.id }} .money-back-button {
+    order: 3;
+  }
+
+{% endif %}
+
+.template--product span.money-back-btn-text {
+    color: #000 !important;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .money-back-wrapper{
+    padding: 109px 12px 40px;
+}
+
+.section-{{ section.id }} .money-back-wrapper-img {
+    max-width: 154px;
+    top: 15px;
+}
+
+.section-{{ section.id }} .money-back-content {
+    gap: 24px;
+}
+
+.section-{{ section.id }} .money-back-subtitle {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.section-{{ section.id }} .money-back-title {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1px;
+}
+
+.section-{{ section.id }} .money-back-btn-icon {
+    padding: 7px 8px;
+}
+
+.money-back-abs-img {
+    max-width: 140px;
+    top: -90px;
+    left: -30px;
+}
+
+
+.section-{{ section.id }} .money-back-blocks {
+    gap: 8px;
+}
+
+.section-{{ section.id }} .money-back-block {
+    gap: 12px;
+    max-width: 100%;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.section-{{ section.id }} .money-back-block_title {
+    margin-top: 6px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.section-{{ section.id }} .money-back-content_bg-desk{
+  display: none !important;
+}
+
+.section-{{ section.id }} .money-back-content_bg-mob{
+  display: block !important;
+}
+
+}
+
+{% endstyle %}
+
+
+<section class="money-back-section section-{{ section.id }}">
+    {% if section.settings.bg_image != blank %}
+        <div class="money-back-abs-img">
+            {{ section.settings.bg_image | image_url: width: 1600 | image_tag:
+                widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                alt: "image",
+                loading: "lazy"
+            }}
+        </div>
+    {% endif %}
+    <div class="page-width">
+        <div class="money-back-wrapper">
+
+          {% if section.settings.content_bg-img_desk != blank or section.settings.content_bg-img_mob != blank %}
+            <div class="money-back-content_bg">
+              {% if section.settings.content_bg-img_desk != blank %}
+                {{ section.settings.content_bg-img_desk | image_url: width: 1600 | image_tag:
+                      widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                      alt: "image",
+                      loading: "lazy",
+                      clas: 'money-back-content_bg-desk'
+                  }}
+              {% endif %}
+  
+              {% if section.settings.content_bg-img_mob != blank %}
+                {{ section.settings.content_bg-img_mob | image_url: width: 1600 | image_tag:
+                      widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                      alt: "image",
+                      loading: "lazy",
+                      clas: 'money-back-content_bg-mob',
+                      style: 'display: none;'
+                  }}
+              {% endif %}
+            </div>
+          {% endif %}
+
+            {% if section.settings.image != blank %}
+            <div class="money-back-wrapper-img">
+                {{ section.settings.image | image_url: width: 1600 | image_tag }}
+            </div>
+            {% endif %}
+
+            <div class="money-back-content">
+
+                {% if section.settings.subtitle != blank %}
+                <p class="money-back-subtitle">
+                    {{ section.settings.subtitle }}
+                </p>
+                {% endif %}
+
+                {% if section.settings.title != blank %}
+                <h2 class="money-back-title">
+                    {{ section.settings.title }}
+                </h2>
+                {% endif %}
+
+                  {% if section.blocks.size > 0 %}
+                    <div class="money-back-blocks">
+
+                      {% for block in section.blocks %}
+                      <div class="money-back-block" {{ block.shopify_attributes }}>
+
+                        {% if block.settings.icon != blank %}
+                        <div class="benefit-block-icon">
+                          {{ block.settings.icon | image_url: width:200 | image_tag }}
+                        </div>
+                        {% endif %}
+
+                          {% if block.settings.title != blank %}
+                          <h3 class="money-back-block_title">
+                            {{ block.settings.title }}
+                          </h3>
+                          {% endif %}
+
+                          {% if block.settings.subtitle != blank %}
+                          <p class="money-back-block-subtitle">
+                            {{ block.settings.subtitle }}
+                          </p>
+                          {% endif %}
+
+                      </div>
+                      {% endfor %}
+
+                    </div>
+                  {% endif %}
+                
+                {% if section.settings.button_text != blank %}
+                    <a href="{{ section.settings.button_link }}" class="money-back-button">
+    
+                        <span class="money-back-btn-text">
+                            {{ section.settings.button_text }}
+                        </span>
+    
+                        {% if section.settings.button_icon != blank %}
+                        <div class="money-back-btn-icon">
+                            {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                        </div>
+                        {% endif %}
+    
+                    </a>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Money Back Section",
+  "settings": [
+
+    {
+      "type": "checkbox",
+      "id": "title_first",
+      "label": "Title First",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "content_bg-img_desk",
+      "label": "Content Background Image Dekstop"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "content_bg-img_mob",
+      "label": "Content Background Image Mobile"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Left Image"
+    },
+
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000"
+    },
+
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button Icon"
+    },
+
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color_background",
+      "id": "Content_bg",
+      "label": "Content Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#000000"
+    },
+
+    {
+      "type": "color",
+      "id": "button_icon_bg",
+      "label": "Button Icon Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "label": "Padding Top Desktop",
+      "default": 80
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "label": "Padding Bottom Desktop",
+      "default": 80
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "label": "Padding Top Mobile",
+      "default": 40
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "label": "Padding Bottom Mobile",
+      "default": 40
+    }
+
+  ],
+
+  "blocks":[
+    {
+      "type":"money_back",
+      "name":"Money Back Block",
+      "settings":[
+
+        {
+          "type":"image_picker",
+          "id":"icon",
+          "label":"Icon"
+        },
+
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Title"
+        },
+
+        {
+          "type":"text",
+          "id":"subtitle",
+          "label":"Subtitle"
+        }
+
+      ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Money Back Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

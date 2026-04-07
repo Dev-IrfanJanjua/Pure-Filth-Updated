@@ -1,0 +1,329 @@
+{% style %}
+.sec-{{ section.id }} {
+    padding-block: {{ section.settings.padding_block }}px;
+    overflow: hidden;
+    background-color: {{ section.settings.background_color }};
+    {% if section.settings.border %}
+        border-top: 1px solid {{ section.settings.border_color }};
+        border-bottom: 1px solid {{ section.settings.border_color }};
+    {% endif %}
+}
+
+.section-{{ section.id }}{
+    padding-top: {{ section.settings.padding_sec_top }}px;
+    padding-bottom: {{ section.settings.padding_sec_bottom }}px;
+}
+
+.csym-track-mf {
+    display: flex;
+      animation: scroll-left 30s linear infinite; /* fast */
+    width: max-content;
+    will-change: transform; /* Helps with smooth rendering */
+}
+
+.cysm-feature-icon-item-mf {
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+    white-space: nowrap;
+}
+
+/* .cysm-feature-icon-item-mf img {
+    min-width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-right: 24px;
+    width: 60px;
+} */
+
+.cysm-feature-icon-item-mf img {
+    min-width: 60px;
+    max-height: 56px;
+    flex-shrink: 0;
+    margin-right: 0;
+    width: fit-content;
+}
+
+.cysm-feature-icon-item-mf span {
+    color: #000;
+    font-family: Helvetica !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15.6px;
+    letter-spacing: 0.65px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+h2.cstm_marquee_main-title {
+    text-align: center;
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin: 0 0 16px;
+    color: #000;
+}
+
+
+/* Keyframes for continuous scroll */
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+/* ======== if dont need marquee ========= */
+
+.cstm_marquee_main-blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1082px;
+    margin: 0 auto;
+}
+
+.cysm-feature-icon-item-mf {
+    max-width: calc(25% - 18px);
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px){
+    .sec-{{ section.id }} {
+        padding-block: {{ section.settings.padding_block_mob }}px;
+    }
+
+    .section-{{ section.id }}{
+        padding-top: {{ section.settings.padding_sec_top_mob }}px;
+        padding-bottom: {{ section.settings.padding_sec_bottom_mob }}px;
+    }
+
+    .cysm-feature-icon-item-mf {
+        margin-right: 20px;
+    }
+
+    .cysm-feature-icon-item-mf span {
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+
+    h2.cstm_marquee_main-title {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .cstm_marquee_main-blocks {
+        gap: 8px 14px;
+    }
+
+
+
+    /* ============ if marquee is not neeeded ========= */
+
+    .cysm-feature-icon-item-mf {
+        margin-right: 0px;
+        max-width: calc(33.3% - 10px);
+    }
+
+    .cysm-feature-icon-item-mf img {
+        height: auto;
+    }
+
+}
+
+{% endstyle %}
+
+{% if section.settings.hide %}
+<style>
+    @media (min-width: 768px) {
+        .sec-{{ section.id }} {
+            display: none;
+        }
+    }
+</style>
+{% endif %}
+
+<section class="cstm_marquee_main section-{{ section.id }}">
+    <div class="page-width">
+        {% if section.settings.sec_title != blank %}
+            <h2 class="cstm_marquee_main-title">{{ section.settings.sec_title }}</h2>
+        {% endif %}
+    
+        <div class="cstm_marquee_main-blocks">
+            {% for block in section.blocks %}
+                <div class="cysm-feature-icon-item-mf">
+                    {% if block.settings.icon %}
+                        <img src="{{ block.settings.icon | image_url }}" alt="{{ block.settings.icon.alt }}" width="auto" height="auto" loading="eager" fetchpriority="high">
+                    {% endif %}
+                    <span>{{ block.settings.title }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+        {% comment %} <div class="csym-container-mf sec-{{ section.id }}" style="background-color: {{section.settings.background_color}};">
+            <div class="csym-track-mf">
+                {% for block in section.blocks %}
+                    <div class="cysm-feature-icon-item-mf">
+                        {% if block.settings.icon %}
+                            <img src="{{ block.settings.icon | image_url }}" alt="{{ block.settings.icon.alt }}" width="auto" height="auto" loading="eager" fetchpriority="high">
+                        {% endif %}
+                        <span>{{ block.settings.title }}</span>
+                    </div>
+                {% endfor %}
+        
+                <!-- Duplicate the content once for seamless looping -->
+                {% for block in section.blocks %}
+                    <div class="cysm-feature-icon-item-mf">
+                        {% if block.settings.icon %}
+                            <img src="{{ block.settings.icon | image_url }}" alt="{{ block.settings.icon.alt }}" width="auto" height="auto" loading="eager" fetchpriority="high">
+                        {% endif %}
+                        <span>{{ block.settings.title }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </div> {% endcomment %}
+</section>
+
+
+{% schema %}
+{
+    "name": "Custom Marquee",
+    "tag": "section",
+    "class": "scrolling-feature-icons",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "hide",
+            "label": "Hide Desktop"
+        },
+        {
+            "type": "checkbox",
+            "id": "border",
+            "label": "Show Border"
+        },
+        {
+            "type": "text",
+            "id": "sec_title",
+            "label": "Section Title"
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color",
+            "default": "#E2F1C4",
+            "info": "Choose a background color for the section"
+        },
+        {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border Color"
+        },
+        {
+            "type": "header",
+            "content": "Marquee Padding"
+        },
+        {
+            "type": "range",
+            "id": "padding_block",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding Block",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "padding_block_mob",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding Block Mobile",
+            "default": 0
+        },
+        {
+            "type": "header",
+            "content": "Section Padding Desktop"
+        },
+        {
+            "type": "range",
+            "id": "padding_sec_top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding Top",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "padding_sec_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding Bottom",
+            "default": 0
+        },
+        {
+            "type": "header",
+            "content": "Section Padding Mobile"
+        },
+        {
+            "type": "range",
+            "id": "padding_sec_top_mob",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding Top Mobile",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "padding_sec_bottom_mob",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding Bottom Mobile",
+            "default": 0
+        }
+    ],
+    "blocks": [
+        {
+            "type": "feature",
+            "name": "Feature",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "Icon"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Feature Title",
+                    "default": "Feature"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Custom Marquee",
+            "category": "Custom"
+        }
+    ]
+}
+{% endschema %}
