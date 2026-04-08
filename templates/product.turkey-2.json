@@ -31,7 +31,7 @@
         "custom_richtext_a9Tp7h": {
           "type": "custom-richtext",
           "settings": {
-            "rich-text": "<p>Support mental clarity, focus, and cognitive performance with 100% pure Lion’s Mane mushroom, crafted for daily routines and long-term brain health.</p>"
+            "rich-text": "<p>Turkey Tail supports gut health and a balanced microbiome. Rich in prebiotic compounds and beta-glucans, it helps nourish beneficial gut bacteria while supporting digestion and natural defences.</p>"
           }
         },
         "custom_list_JjVr6n": {
@@ -39,9 +39,9 @@
           "settings": {
             "list_icon": "shopify://shop_images/verify_2.svg",
             "list_item_1": "100% Fruiting body extract",
-            "list_item_2": "Sugar & caffeine free",
+            "list_item_2": "SINGLE INGREDIENT FORMULA",
             "list_item_3": "Third-party tested",
-            "list_item_4": "",
+            "list_item_4": "Organic and Halal",
             "list_item_5": ""
           }
         },
@@ -50,13 +50,13 @@
           "settings": {
             "bg_clr": "#F0FFF7",
             "image1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_1.svg",
-            "text1": "Maintenance (daily)",
+            "text1": "Daily Maintenance",
             "image2": "shopify://shop_images/Group_8.svg",
             "text2": "Prebiotic",
             "image3": "shopify://shop_images/Vector_4.svg",
             "text3": "Gut health",
             "image4": "shopify://shop_images/icon.svg_-_2026-03-18T120241.826_1_1.svg",
-            "text4": "Antioxidant"
+            "text4": "Gut microbiome balance"
           }
         },
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
@@ -84,8 +84,11 @@
         "1e939cd6-0955-4135-a9e5-c50faef01437": {
           "type": "purchase_options",
           "settings": {
+            "headline": "Most popular: Get 20% off",
+            "headline_bg_color": "#00B453",
+            "headline_text_color": "#000000",
             "bg_color": "#F0FFF7",
-            "icon_color": "#00883e",
+            "icon_color": "#00b453",
             "spacing_bottom": "1",
             "list_text_1": "Delivered every 30 days",
             "list_text_2": "Pause or cancel anytime",
@@ -109,11 +112,20 @@
           "type": "custom_feature",
           "settings": {
             "list_icon_1": "shopify://shop_images/Vector_3.svg",
-            "list_item_1": "Ships within 24 hours",
-            "list_icon_2": "shopify://shop_images/icon.svg_-_2026-03-10T152143.679_1.svg",
-            "list_item_2": "Secure checkout",
-            "list_icon_3": "shopify://shop_images/icon.svg_-_2026-03-10T152305.312_1.svg",
-            "list_item_3": "30-day money back guarantee"
+            "list_item_1": "Ships from UAE",
+            "list_icon_2": "shopify://shop_images/svg714.svg",
+            "list_item_2": "Same Day & Next Day Delivery",
+            "list_icon_3": "shopify://shop_images/Capa_1.svg",
+            "list_item_3": "Third-Party Tested"
+          }
+        },
+        "moneyback_8p8MDE": {
+          "type": "moneyback",
+          "settings": {
+            "money_text": "30 day money back guarantee",
+            "text_color": "#000000",
+            "bg_color": "#F0FFF7",
+            "border_color": "#0000001F"
           }
         },
         "content_tabs_fEGJi4": {
@@ -197,16 +209,17 @@
           "type": "optiona_product",
           "settings": {
             "show_svg": true,
-            "main_heading": "Complete Your Routine",
-            "inner_title": "",
-            "inner_subtitle": "",
+            "main_heading": "TRY ALL SIX",
+            "image": "shopify://shop_images/Frame_2147242232.png",
+            "inner_title": "FIND YOUR FAVOURITE",
+            "inner_subtitle": "Six mushrooms. 5 servings in each pouch. The easiest way to discover what works for you.",
             "bg_color": "#f0fff7"
           }
         },
         "tabs_block_nbWnUF": {
           "type": "tabs_block",
           "settings": {
-            "border_clr": "#00883e",
+            "border_clr": "#00b453",
             "tab_title_1": "HOW TO USE",
             "tab_content_1": "<p>Add 1 teaspoon daily to coffee, tea, smoothies, or warm water. Best taken consistently for noticeable results.</p>",
             "tab_title_2": "INGREDIENTS",
@@ -237,6 +250,7 @@
         "1e939cd6-0955-4135-a9e5-c50faef01437",
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
         "custom_feature_rB8z8F",
+        "moneyback_8p8MDE",
         "content_tabs_fEGJi4",
         "description_qA3HqH",
         "content_block_idt6CB",
@@ -360,33 +374,33 @@
         "benefit_WKqMVF": {
           "type": "benefit",
           "settings": {
-            "icon": "shopify://shop_images/Frame_2147228878_12.svg",
-            "title": "Boosts Brain Health",
-            "subtitle": "Enhances memory, focus, and cognitive performance."
+            "icon": "shopify://shop_images/Frame_2147228878_6_aade2534-8d11-4719-9352-c3707fafbbf1.svg",
+            "title": "<p>DAILY GUT SUPPORT</p>",
+            "subtitle": "Supports long-term gut health and overall wellbeing."
           }
         },
         "benefit_t6Y68M": {
           "type": "benefit",
           "settings": {
-            "icon": "shopify://shop_images/Frame_2147228878_13.svg",
-            "title": "Supports Nerve Growth",
-            "subtitle": "Stimulates nerve growth, promoting brain health."
+            "icon": "shopify://shop_images/Frame_2147228878_7_b0385de8-a4c8-4be3-872b-31eb69090f7f.svg",
+            "title": "<p>Prebiotic</p>",
+            "subtitle": "Feeds good bacteria and supports healthy digestive system balance."
           }
         },
         "benefit_zetj78": {
           "type": "benefit",
           "settings": {
-            "icon": "shopify://shop_images/Frame_2147228878_14.svg",
-            "title": "Reduces Inflammation",
-            "subtitle": "Fights inflammation and oxidative stress naturally."
+            "icon": "shopify://shop_images/Frame_2147228878_8_f83a109d-79b3-448d-903d-bee0fb98a547.svg",
+            "title": "<p>Gut health</p>",
+            "subtitle": "Improves digestion and promotes a healthy gut environment daily."
           }
         },
         "benefit_KrxLfN": {
           "type": "benefit",
           "settings": {
-            "icon": "shopify://shop_images/Frame_2147228878_15.svg",
-            "title": "Enhances Mood",
-            "subtitle": "Reduces anxiety and promotes emotional balance."
+            "icon": "shopify://shop_images/Frame_2147228878_9_631c77c1-629f-4f07-944b-28808531214f.svg",
+            "title": "<p>GUT MICROBIOME SUPPORT<br/></p>",
+            "subtitle": "Helps nourish beneficial bacteria in the gut."
           }
         }
       },
@@ -398,18 +412,18 @@
       ],
       "name": "Benefits Section",
       "settings": {
-        "sec_img_desk": "shopify://shop_images/Our_story_11.png",
-        "sec_img_mob": "shopify://shop_images/Our_story_12.png",
+        "sec_img_desk": "shopify://shop_images/Our_story_2_8c1e67f0-96cf-4107-a52f-55c5f0dd9d3a.png",
+        "sec_img_mob": "shopify://shop_images/Our_story_3_aa84700a-c6da-41fd-b8f6-ff27e347a653.png",
         "section_bg": "",
         "title": "Real Benefits You Can Feel",
-        "subtitle": "",
-        "image": "shopify://shop_images/Rectangle_6_1.png",
-        "button_text": "Shop Pure Filth",
+        "subtitle": "Turkey Tail is best known for supporting gut health, digestive balance, and a thriving gut microbiome.",
+        "image": "shopify://shop_images/Rectangle_6_7439420f-320e-4f0d-beb6-be69f5c80f53.png",
+        "button_text": "",
         "button_link": "",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "button_bg": "#000000",
         "button_icon_bg": "#ffffff",
-        "text_color": "#ffffff",
+        "text_color": "#000000",
         "padding_top_desktop": 80,
         "padding_bottom_desktop": 80,
         "padding_top_mobile": 0,
@@ -422,11 +436,11 @@
       "settings": {
         "pdp": true,
         "abs_image": "shopify://shop_images/0st7MqmOLuNNmDy9SoFwE67dXmM.png_1.png",
-        "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM.png_6.png",
-        "title": "Fuel Your Mind, Naturally",
-        "description": "<p>Lion’s Mane is a functional mushroom known for supporting focus, mental clarity, and general brain health - without any stimulants.</p><p></p><ul><li>Contains hericenones and erinacines associated with brain support</li><li>20:1 concentrated extract for higher active compounds</li><li>100% fruiting body extract (no grain-grown mycelium)</li><li>Dual extracted to capture the full spectrum of compounds</li><li>No fillers, additives or hidden ingredients<br/></li></ul>",
+        "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM.png_2_994fc861-cb04-4d38-91b3-0b7260bde73f.png",
+        "title": "<p>BALANCE YOUR GUT, NATURALLY</p>",
+        "description": "<p>Turkey Tail has been used for centuries as a powerful mushroom for gut health and microbiome balance.</p><p></p><ul><li>Contains natural prebiotic compounds and beta-glucans that help nourish beneficial gut bacteria.</li><li>15:1 high ratio extract for potent benefits you can actually feel.</li><li>100% fruiting body extract (no grain-grown mycelium).</li><li>Dual extracted to capture the full spectrum of compounds.</li><li>Single ingredient formula. No fillers, flavorings or additives.</li></ul>",
         "list_icon": "shopify://shop_images/verify_4fb1713f-9459-42e1-8740-4abcd7aeffc0.svg",
-        "button_text": "Shop Pure Filth",
+        "button_text": "",
         "button_link": "shopify://collections/all",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "section_bg": "#ffffff",
@@ -494,7 +508,7 @@
           "settings": {
             "bg_color": "#ffffff",
             "simple_title": "15:1 HIGH-POTENCY EXTRACT",
-            "simple_desc": "<p>Delivers significantly more active compounds than standard mushroom powders (usually 10:1).</p>"
+            "simple_desc": "<p>Delivers significantly more active compounds than standard mushroom powders (usually 6:1).</p>"
           }
         },
         "simple_card_UNnWaW": {
@@ -556,9 +570,9 @@
       ],
       "name": "Special Section",
       "settings": {
-        "section_bg": "#00883E",
-        "title": "WHY PURE FILTH LION'S MANE HITS DIFFERENT",
-        "title_color": "#ffffff",
+        "section_bg": "#00B453",
+        "title": "WHY PURE FILTH Turkey Tail HITS DIFFERENT",
+        "title_color": "#000000",
         "main_image": "shopify://shop_images/Background_Border_4.png",
         "overlay_title": "",
         "overlay_text": "",
@@ -572,17 +586,18 @@
       "type": "money-back",
       "name": "Money Back Section",
       "settings": {
-        "image": "shopify://shop_images/image_2861_1.png",
+        "title_first": true,
+        "image": "shopify://shop_images/Group_1707479854.svg",
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
         "title": "30 day money back guarantee",
-        "text_color": "#ffffff",
+        "text_color": "#000000",
         "button_text": "LEARN MORE",
         "button_link": "shopify://collections/all",
         "button_icon": "shopify://shop_images/Frame_2147242027.svg",
         "section_bg": "#ffffff",
-        "Content_bg": "#00883E",
+        "Content_bg": "#00B453",
         "button_bg": "#ffffff",
-        "button_icon_bg": "#000000",
+        "button_icon_bg": "#00b453",
         "padding_top_desktop": 180,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 70,
@@ -682,12 +697,12 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165.png",
             "top_title": "MORNING",
-            "image": "shopify://shop_images/Frame_2147242242_9.png",
-            "title": "FOCUS FIRST. GUT READY.",
-            "subtitle": "Turkey Tail + Lion’s Mane",
-            "button_text": "ADD Lion’s Mane",
+            "image": "shopify://shop_images/Frame_2147242242_8_d683b7f1-460f-44df-a24a-3bd7cf86c328.png",
+            "title": "FOCUS FIRST. HYDRATE SKIN.",
+            "subtitle": "Lion’s Mane + Tremella",
+            "button_text": "SHOP MORNING",
             "button_link": "#",
-            "button_text_scnd": " Learn more",
+            "button_text_scnd": "",
             "button_link_scnd": "#"
           }
         },
@@ -696,12 +711,12 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
             "top_title": "AFTERNOON",
-            "image": "shopify://shop_images/Frame_2147242242_10.png",
-            "title": "STAY SHARP. POWER THROUGH.",
-            "subtitle": "Turkey Tail + Cordyceps",
-            "button_text": "ADD CORDYCEPS",
+            "image": "shopify://shop_images/Frame_2147242242_6_801c56ae-b6de-4f96-a494-e3afd385caf6.png",
+            "title": "DEFEND DAILY. ENERGY BOOST.",
+            "subtitle": "Chaga + Cordyceps",
+            "button_text": "sHOP AFTERNOON",
             "button_link": "#",
-            "button_text_scnd": " Learn more",
+            "button_text_scnd": "",
             "button_link_scnd": "#"
           }
         },
@@ -710,12 +725,12 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
             "top_title": "EVENING",
-            "image": "shopify://shop_images/Frame_2147242242_11.png",
-            "title": "CLARITY BY DAY. CALM BY NIGHT.",
-            "subtitle": "Turkey Tail + Reishi",
-            "button_text": "ADD REISHI",
+            "image": "shopify://shop_images/Frame_2147242242_7_a2c2c845-6835-494d-a4f2-237f589d8c6e.png",
+            "title": "CALM DOWN. RESET GUT.",
+            "subtitle": "Reishi + Turkey Tail",
+            "button_text": "SHOP EVENING",
             "button_link": "#",
-            "button_text_scnd": " Learn more",
+            "button_text_scnd": "",
             "button_link_scnd": "#"
           }
         }
@@ -729,8 +744,9 @@
       "settings": {
         "title": "Build Your Routine",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
-        "button_bg": "#000000",
+        "button_bg": "#00b453",
         "button_icon_bg": "#ffffff",
+        "button_text": "#000000",
         "section_bg": "#ffffff",
         "cards_bg": "#f0fff7",
         "padding_top_desktop": 80,
@@ -824,12 +840,13 @@
       ],
       "name": "Testimonial Slider",
       "settings": {
+        "title_first": true,
         "section_bg": "",
         "card_bg": "#f0fff7",
         "title": "Filthy Reviews",
-        "reviews_img": "shopify://shop_images/Stars.png",
-        "reviews_title": "4.8 average rating",
-        "reviews_subtitle": "Based on 2,470+ verified reviews",
+        "reviews_img": "shopify://shop_images/Frame_36_1.svg",
+        "reviews_title": "<strong>4.8</strong> average rating",
+        "reviews_subtitle": "",
         "slides_per_view": 3.5,
         "center_slide": true,
         "padding_top_desktop": 100,
@@ -844,42 +861,42 @@
         "accordion_item_gW8bkU": {
           "type": "accordion_item",
           "settings": {
-            "question": "What is Lion’s Mane?",
+            "question": "How are your mushroom powders made?",
             "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
           }
         },
         "accordion_item_BAtKnY": {
           "type": "accordion_item",
           "settings": {
-            "question": "What does Lion’s Mane help with?",
+            "question": "Do your supplements have any alcohol in them?",
             "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
           }
         },
         "accordion_item_kHLwPL": {
           "type": "accordion_item",
           "settings": {
-            "question": "Is Pure Filth Lion’s Mane blended with anything else?",
+            "question": "How do I take Pure Filth mushrooms?",
             "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
           }
         },
         "accordion_item_aJgbxJ": {
           "type": "accordion_item",
           "settings": {
-            "question": "Will this make me feel wired or overstimulated?",
+            "question": "Are your mushrooms legal?",
             "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
           }
         },
         "accordion_item_eij4i7": {
           "type": "accordion_item",
           "settings": {
-            "question": "Can I take this daily?",
+            "question": "Do your products actually work?",
             "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
           }
         },
         "accordion_item_kT9Mcr": {
           "type": "accordion_item",
           "settings": {
-            "question": "Is this suitable for beginners?",
+            "question": "Are Pure Filth mushrooms vegan and gluten-free?",
             "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
           }
         }
@@ -903,7 +920,7 @@
         "item_border": "#f0fff7",
         "heading": "Have Questions? We’ve Got Answers",
         "description": "",
-        "button_text": "get started today",
+        "button_text": "",
         "button_link": "#",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "button_bg": "#000000",

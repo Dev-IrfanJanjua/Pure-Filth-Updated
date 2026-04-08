@@ -139,18 +139,13 @@ a.routine-block-button_secondary:hover{
 }
 
 span.routine-block-btn-text {
-    color: #fff;
+    color: {{ section.settings.button_text }};
     font-family: GT Cinetype;
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0px;
     text-transform: uppercase;
-}
-
-.template--chaga-2 span.routine-block-btn-text,
-.template--mushroom-powder span.routine-block-btn-text{
-  color: #000;
 }
 
 .section-{{ section.id }} .routine-block-button:hover .routine-block-btn-icon{
@@ -411,6 +406,13 @@ h4.routine-blcok_head_title {
       "type": "color",
       "id": "button_icon_bg",
       "label": "Button Icon Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color",
+      "id": "button_text",
+      "label": "Button Text",
       "default": "#ffffff"
     },
 

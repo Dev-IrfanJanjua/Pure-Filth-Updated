@@ -192,7 +192,7 @@ background: #FAF7ED;
 }
 
 .pro_section_main_custom_class button.button.product-selector__submit {
-    background: #4E377D;
+    background: #7B65FF;
     padding: 16px;
     border-radius: 75px;
     position: relative;
@@ -376,7 +376,7 @@ div#product-media-gallery {
 }
 
 .template--turkey-2 .pro_section_main_custom_class button.button.product-selector__submit{
-    background: #00883E !important;
+    background: #00B453 !important;
 }
 
 .template--tremella-2 .pro_section_main_custom_class label.swatch.swatch--square.is-active{
@@ -384,7 +384,7 @@ div#product-media-gallery {
 }
 
 .template--tremella-2 .pro_section_main_custom_class button.button.product-selector__submit{
-    background: #D27ABC !important;
+    background: #ED87D0 !important;
 }
 
 /* =========== sticky add to cart ===========  */
