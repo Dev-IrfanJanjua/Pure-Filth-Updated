@@ -186,22 +186,60 @@
             <div class="cs_pro_custom_richtext">{{  block.settings.rich-text }}</div>
             {%- when 'custom-icon-text' -%}
               <div class="cs_pro-icon_text_main">
-                <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
-                  <img src="{{ block.settings.image1 | image_url }}" width="100%" height="auto" loading="egar">
-                  <h4 class="cs_pro_icon_text_text">{{ block.settings.text1 }}</h4>
-                </div>
-                <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
-                  <img src="{{ block.settings.image2 | image_url }}" width="100%" height="auto" loading="egar">
-                  <h4 class="cs_pro_icon_text_text">{{ block.settings.text2 }}</h4>
-                </div>
-                <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
-                  <img src="{{ block.settings.image3 | image_url }}" width="100%" height="auto" loading="egar">
-                  <h4 class="cs_pro_icon_text_text">{{ block.settings.text3 }}</h4>
-                </div>
-                <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
-                  <img src="{{ block.settings.image4 | image_url }}" width="100%" height="auto" loading="egar">
-                  <h4 class="cs_pro_icon_text_text">{{ block.settings.text4 }}</h4>
-                </div>
+                {% if block.settings.image1 %}
+                  <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
+                    <img src="{{ block.settings.image1 | image_url }}" width="100%" height="auto" loading="egar" alt="{{ block.settings.text1 }}">
+                    <h4 class="cs_pro_icon_text_text">{{ block.settings.text1 }}</h4>
+                  </div>
+                {% endif %}
+                {% if block.settings.image2 %}
+                  <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
+                    <img src="{{ block.settings.image2 | image_url }}" width="100%" height="auto" loading="egar" alt="{{ block.settings.text2 }}">
+                    <h4 class="cs_pro_icon_text_text">{{ block.settings.text2 }}</h4>
+                  </div>
+                {% endif %}
+                {% if block.settings.image3 %}
+                  <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
+                    <img src="{{ block.settings.image3 | image_url }}" width="100%" height="auto" loading="egar" alt="{{ block.settings.text3 }}">
+                    <h4 class="cs_pro_icon_text_text">{{ block.settings.text3 }}</h4>
+                  </div>
+                {% endif %}
+                {% if block.settings.image4 %}
+                  <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
+                    <img src="{{ block.settings.image4 | image_url }}" width="100%" height="auto" loading="egar" alt="{{ block.settings.text4 }}">
+                    <h4 class="cs_pro_icon_text_text">{{ block.settings.text4 }}</h4>
+                  </div>
+                {% endif %}
+                {% if block.settings.image5 %}
+                  <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
+                    <img src="{{ block.settings.image5 | image_url }}" width="100%" height="auto" loading="egar" alt="{{ block.settings.text5 }}">
+                    <h4 class="cs_pro_icon_text_text">{{ block.settings.text5 }}</h4>
+                  </div>
+                {% endif %}
+                {% if block.settings.image6 %}
+                  <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
+                    <img src="{{ block.settings.image6 | image_url }}" width="100%" height="auto" loading="egar" alt="{{ block.settings.text6 }}">
+                    <h4 class="cs_pro_icon_text_text">{{ block.settings.text6 }}</h4>
+                  </div>
+                {% endif %}
+                {% if block.settings.image7 %}
+                  <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
+                    <img src="{{ block.settings.image7 | image_url }}" width="100%" height="auto" loading="egar" alt="{{ block.settings.text7 }}">
+                    <h4 class="cs_pro_icon_text_text">{{ block.settings.text7 }}</h4>
+                  </div>
+                {% endif %}
+                {% if block.settings.image8 %}
+                  <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
+                    <img src="{{ block.settings.image8 | image_url }}" width="100%" height="auto" loading="egar" alt="{{ block.settings.text8 }}">
+                    <h4 class="cs_pro_icon_text_text">{{ block.settings.text8 }}</h4>
+                  </div>
+                {% endif %}
+                {% if block.settings.image9 %}
+                  <div class="cs_pro_icon_text_in" style="background: {{ block.settings.bg_clr }} ">
+                    <img src="{{ block.settings.image9 | image_url }}" width="100%" height="auto" loading="egar" alt="{{ block.settings.text9 }}">
+                    <h4 class="cs_pro_icon_text_text">{{ block.settings.text9 }}</h4>
+                  </div>
+                {% endif %}
               </div>
       {%- when 'sku' -%}
         {%- assign product_first_available_variant = product.selected_or_first_available_variant -%}

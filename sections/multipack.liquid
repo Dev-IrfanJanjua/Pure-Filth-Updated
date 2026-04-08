@@ -1,0 +1,841 @@
+{% liquid
+  assign mobile_layout = section.settings.mobile_layout
+%}
+
+<section
+  class="multipack-section color-{{ section.id }} {% if mobile_layout == 'swiper' %}multipack-section--mobile-swiper{% else %}multipack-section--mobile-grid{% endif %}"
+  style="
+    --section-bg: {{ section.settings.section_bg }};
+    --card-bg: {{ section.settings.card_bg }};
+    --btn-bg: {{ section.settings.button_bg }};
+    --btn-color: {{ section.settings.button_text_color }};
+    --pt-desktop: {{ section.settings.padding_top_desktop }}px;
+    --pb-desktop: {{ section.settings.padding_bottom_desktop }}px;
+    --pt-mobile: {{ section.settings.padding_top_mobile }}px;
+    --pb-mobile: {{ section.settings.padding_bottom_mobile }}px;
+  "
+>
+  <div class="page-width">
+    <div class="multipack-wrapper">
+      {% if section.settings.title != blank or section.settings.description != blank %}
+        <div class="multipack-head">
+          {% if section.settings.title != blank %}
+            <h2 class="multipack-title">{{ section.settings.title }}</h2>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+            <div class="multipack-desc rte">{{ section.settings.description }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="multipack-blocks-wrapper">
+        <div class="multipack-blocks {% if mobile_layout == 'swiper' %}swiper{% endif %}">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              <div
+                class="multipack-card {% if mobile_layout == 'swiper' %}swiper-slide{% endif %}"
+                style="background: {{ block.settings.card_bg }};"
+                {{ block.shopify_attributes }}
+              >
+                {% if block.settings.background_image != blank %}
+                  <div class="multipack-card-bg">
+                    {{ block.settings.background_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '375, 550, 750, 1100, 1200', class: 'multipack-card-bg_image' }}
+                  </div>
+                {% endif %}
+
+                <div class="multipack-card-inner">
+                  <div class="multipack-card-content">
+                    <div class="multipack-card-head">
+                      <div class="multipack-card-head_text">
+                        {% if block.settings.title != blank %}
+                          <h3 class="multipack-card-title">{{ block.settings.title }}</h3>
+                        {% endif %}
+
+                        {% if block.settings.subtitle != blank %}
+                          <p class="multipack-card-subtitle {% if section.settings.hide_subtitle %}hide_subtitle{% endif %}">{{ block.settings.subtitle }}</p>
+                        {% endif %}
+                      </div>
+
+                      {% if block.settings.image != blank %}
+                        <div class="multipack-card-head-image">
+                          {{ block.settings.image | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '80, 120, 160', class: 'multipack-card-head-image_img' }}
+                        </div>
+                      {% endif %}
+                    </div>
+
+                    <ul class="multipack-card-icons_list" role="list">
+                      {% for i in (1..5) %}
+                        {% assign icon_key = 'icon_' | append: i %}
+                        {% assign text_key = 'icon_text_' | append: i %}
+
+                        {% if block.settings[text_key] != blank or block.settings[icon_key] != blank %}
+                          <li class="multipack-card-icon-item">
+                            {% if block.settings[icon_key] != blank %}
+                              <div class="multipack-card-icon-item_icon">
+                                {{ block.settings[icon_key] | image_url: width: 48 | image_tag: loading: 'lazy', widths: '24, 48', class: 'multipack-card-icon-item_icon-image' }}
+                              </div>
+                            {% endif %}
+
+                            {% if block.settings[text_key] != blank %}
+                              <span class="multipack-card-icon-item_title">{{ block.settings[text_key] }}</span>
+                            {% endif %}
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  </div>
+
+                  {% if block.settings.description != blank %}
+                    <div class="multipack-card-description rte">
+                      {{ block.settings.description | replace: '<p>', '' | replace: '</p>', '' }}
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.button_text != blank %}
+                    <a href="{{ block.settings.button_url }}" class="multipack-card-btn">
+                      <span class="multipack-card-btn_text">{{ block.settings.button_text }}</span>
+
+                      <span class="multipack-card-btn_ico">
+                        {% if section.settings.button_icon != blank %}
+                          {{ section.settings.button_icon | image_url: width: 100 | image_tag: loading: 'lazy', widths: '12, 24', class: 'multipack-card-btn_ico_image' }}
+                        {% endif %}
+                      </span>
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        {% if mobile_layout == 'swiper' %}
+          <div class="multipack-swiper-pagination"></div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .multipack-section {
+    background: var(--section-bg);
+    padding-top: var(--pt-mobile);
+    padding-bottom: var(--pb-mobile);
+  }
+
+  @media screen and (min-width: 990px) {
+    .multipack-section {
+      padding-top: var(--pt-desktop);
+      padding-bottom: var(--pb-desktop);
+    }
+  }
+
+  .multipack-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .multipack-head {
+    max-width: 760px;
+  }
+
+.multipack-title {
+    margin: 0;
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+  .multipack-desc {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: 0.8;
+  }
+
+  .multipack-desc > *:first-child {
+    margin-top: 0;
+  }
+
+  .multipack-desc > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .multipack-blocks {
+    display: block;
+  }
+
+  @media screen and (min-width: 769px) {
+    .multipack-blocks .swiper-wrapper {
+      display: grid;
+      grid-template-columns: repeat( {{ section.settings.columns }} , minmax(0, 1fr));
+      gap: 12px;
+    }
+  }
+
+
+  .multipack-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    isolation: isolate;
+  }
+
+  .multipack-card-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+  }
+
+  .multipack-card-bg_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .multipack-card-inner {
+    position: relative;
+    z-index: 2;
+    padding: 38px 15px;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .multipack-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .multipack-card-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+.multipack-card-title {
+    margin: 0;
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40.65px;
+    letter-spacing: 1.69px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.multipack-card-subtitle {
+    margin: 11px 0 0;
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #000;
+}
+
+.multipack-card-head-image {
+    max-width: 140px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+  .multipack-card-head-image_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+.multipack-card-icons_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.multipack-card-icon-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #FFFFFF80;
+    border-radius: 72px;
+    padding: 8px;
+}
+
+.multipack-card-icon-item_icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.multipack-card-icon-item_icon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.multipack-card-icon-item_title {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    vertical-align: middle;
+    color: #010E11;
+}
+
+.multipack-card-description ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.multipack-card-description ul li {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.63px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 13px;
+    color: #000;
+}
+
+.multipack-card-description ul li:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background-image: url('{{ section.settings.desc_icon | image_url: width: 100 }}');
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.multipack-card-btn {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background: var(--btn-bg);
+    padding: 10px 16px;
+    border-radius: 75px;
+    max-width: fit-content;
+    transition: all .3s ease;
+}
+
+span.multipack-card-btn_ico img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.multipack-card-btn_text {
+    color: var(--btn-color);
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.multipack-card-btn_ico {
+    width: 50px;
+    height: 36px;
+    transition: transform .3s ease;
+    flex-shrink: 0;
+}
+
+.multipack-card-btn:hover{
+    transform: translateY(-2px);
+}
+
+.multipack-card-btn:hover .multipack-card-btn_ico {
+    transform: translateX(4px);
+}
+
+.multipack-swiper-pagination {
+    display: none;
+}
+
+.multipack-blocks-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+{% if template.suffix == 'bundle' %}
+
+h3.multipack-card-title {
+    font-size: 50px;
+    line-height: 52px;
+}
+
+p.multipack-card-subtitle {
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.multipack-card-head-image {
+    max-width: 200px;
+}
+
+.multipack-card-icon-item {
+    gap: 7px;
+    padding: 12px;
+}
+
+.multipack-card-icon-item_icon {
+    width: 28px;
+    height: 28px;
+}
+
+span.multipack-card-icon-item_title {
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.multipack-card-description ul {
+    gap: 16px;
+}
+
+.multipack-card-description ul li {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.multipack-card-description ul li:before {
+    width: 24px;
+    height: 24px;
+}
+
+.multipack-card-inner {
+    gap: 50px;
+    padding: 40px 32px;
+}
+
+.multipack-card {
+    border-radius: 24px;
+}
+
+@media screen and (max-width: 768px) {
+
+h3.multipack-card-title {
+    font-size: 28px;
+    line-height: 38px;
+}
+
+span.multipack-card-icon-item_title {
+    font-size: 16px;
+    line-height: 140%;
+}
+
+p.multipack-card-subtitle {
+    font-size: 16px;
+}
+
+a.multipack-card-btn {
+    margin-top: 8px;
+}
+
+}
+
+{% endif %}
+
+
+  @media screen and (max-width: 768px) {
+    .multipack-title {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    .multipack-card-inner {
+        padding: 40px 16px;
+        gap: 20px;
+    }
+
+    .multipack-card-content {
+        gap: 20px;
+    }
+
+    .multipack-wrapper {
+      gap: 24px;
+    }
+
+    .multipack-card-head {
+        gap: 28px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .multipack-card-head-image {
+        max-width: 184px;
+    }
+
+    .multipack-card-title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .multipack-card-subtitle {
+        margin: 6px 0 0;
+    }
+
+    .multipack-section--mobile-grid .multipack-blocks,
+    .multipack-section--mobile-grid .multipack-blocks .swiper-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .multipack-card-description ul {
+        gap: 16px;
+    }
+
+    .multipack-card-description ul li {
+        font-size: 16px;
+        line-height: 100%;
+    }
+
+    .multipack-section--mobile-swiper .multipack-blocks.swiper {
+      overflow: hidden;
+    }
+
+    .multipack-section--mobile-swiper .multipack-blocks.swiper .swiper-wrapper {
+      display: flex;
+      gap: 0;
+    }
+
+    .multipack-swiper-pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 8px;
+    }
+
+    .multipack-swiper-pagination .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      margin: 0 !important;
+      background: #000;
+      opacity: 1;
+    }
+
+    .multipack-swiper-pagination .swiper-pagination-bullet-active {
+        max-width: 30px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .hide_subtitle{
+        display: none !important;
+    }
+
+  }
+
+</style>
+
+{% if section.settings.mobile_layout == 'swiper' %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.innerWidth > 768) return;
+      if (typeof Swiper === 'undefined') return;
+
+      document.querySelectorAll('.multipack-section--mobile-swiper').forEach(function(section) {
+        const container = section.querySelector('.multipack-blocks.swiper');
+        const pagination = section.querySelector('.multipack-swiper-pagination');
+
+        if (!container) return;
+
+        new Swiper(container, {
+          slidesPerView: 1,
+          spaceBetween: 12,
+          pagination: {
+            el: pagination,
+            clickable: true
+          }
+        });
+      });
+    });
+  </script>
+{% endif %}
+
+
+
+{% schema %}
+{
+  "name": "Multipack Section",
+  "settings": [
+    {
+        "type": "checkbox",
+        "id": "hide_subtitle",
+        "label": "Hide subtitle on Mobile",
+        "default": false
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Main title",
+      "default": "Choose the multipack that fits you"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Section description",
+      "default": "<p>Add a supporting description for the section here.</p>"
+    },
+    {
+        "type": "image_picker",
+        "id": "desc_icon",
+        "label": "Description icon",
+        "info": "Icon for list items in blocks description. Recommended size: 20x20px."
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "label": "Columns",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile layout",
+      "default": "swiper",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "swiper",
+          "label": "Swiper"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section background",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button background",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button icon"
+    },
+    {
+      "type": "header",
+      "content": "Desktop spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Mobile spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "color",
+          "id": "card_bg",
+          "label": "Card background",
+          "default": "#ffffff"
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Top image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Card title",
+          "default": "Starter Pack"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Perfect for first-time customers"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_1",
+          "label": "Icon 1"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_1",
+          "label": "Icon text 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_2",
+          "label": "Icon 2"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_2",
+          "label": "Icon text 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_3",
+          "label": "Icon 3"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_3",
+          "label": "Icon text 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_4",
+          "label": "Icon 4"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_4",
+          "label": "Icon text 4"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_5",
+          "label": "Icon 5"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_5",
+          "label": "Icon text 5"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Card description",
+          "default": "<p>Write your card description here.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Shop now"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multipack Section",
+      "blocks": [
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
