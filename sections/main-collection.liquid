@@ -1,7 +1,9 @@
 {%- render 'css', css: 'section-collection.css' -%}
 {%- render 'css', css: 'component-card-product.css' -%}
 {%- render 'css', css: 'component-card-text.css' -%}
-
+{% if section.settings.cstm_tyle %}
+  {{ 'custom-collection.css' | asset_url | stylesheet_tag }}
+{% endif %}
 {%- style -%}
   #shopify-section-{{ section.id }} > div {
     padding-block-start: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_top }});
@@ -64,7 +66,7 @@
         {%- else -%}
           <div class="collection-grid-container js-collection-grid{% if section.settings.enable_infinity_scroll %} infinity-scroll-active{% endif %}" id="ProductGridContainer">
             <div
-              class="collection__grid{% if section.settings.products_per_row_mobile != '2' %} collection__grid-single{% endif %}"
+              class="collection__grid{% if section.settings.products_per_row_mobile != '2' %} collection__grid-single{% endif %} {% if section.settings.cstm_tyle %} custom-collection__grid {% endif %} "
               id="product-grid"
               data-id="{{- section.id -}}"
               data-cols="{{- section.settings.products_per_row -}}"
@@ -91,7 +93,11 @@
                   else
                     assign image_loading = 'lazy'
                   endif
-                  render 'card-product', product_ref: product_ref, section_id: section.id, image_loading: image_loading
+                  if section.settings.cstm_tyle
+                  render 'cstm-card-product', product_ref: product_ref, section_id: section.id, image_loading: image_loading
+                  else
+                  render 'card-product', product_ref: product_ref, section_id: section.id, image_loading: image_loading 
+                  endif
                 endfor
               -%}
             </div>
@@ -125,6 +131,12 @@
   "name": "t:sections.main-collection.name",
   "tag": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "cstm_tyle",
+      "label": "Enable custom style",
+      "default": false
+    },
     {
       "type": "header",
       "content": "t:sections.global.header.general.content"

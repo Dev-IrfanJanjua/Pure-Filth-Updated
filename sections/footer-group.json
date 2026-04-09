@@ -219,6 +219,7 @@
       ],
       "name": "Custom Professional Footer",
       "settings": {
+        "icon_type": "social",
         "bg_color": "#F8F6EF",
         "gap": 80,
         "newsletter_width": 38,
@@ -232,7 +233,11 @@
         "padding_top": 60,
         "padding_bottom": 60,
         "padding_top_mob": 40,
-        "padding_bottom_mob": 20
+        "padding_bottom_mob": 20,
+        "tiktok_icon": "shopify://shop_images/Social_Icons.svg",
+        "tiktok_link": "#",
+        "instagram_icon": "shopify://shop_images/Social_Icons_1.svg",
+        "instagram_link": "#"
       }
     }
   },

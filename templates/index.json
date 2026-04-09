@@ -127,8 +127,8 @@
       "type": "cstm-hero-banner",
       "name": "Hero Banner",
       "settings": {
-        "main_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0_png_2fe56c58-c3fe-4ce9-8787-2bc267518ff7.png",
-        "mobile_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_2.png",
+        "main_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_5.png",
+        "mobile_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_4.png",
         "review_img": "shopify://shop_images/Stars_8.svg",
         "list_icon": "shopify://shop_images/verify.svg",
         "review_text": "2,240+ FILTHY customers",
@@ -249,7 +249,7 @@
         "main_img": "shopify://shop_images/us_vs_them.png",
         "mobile_img": "shopify://shop_images/us_vs_them_1.png",
         "title": "<p>ADD SOME FILTH TO YOUR DAY</p>",
-        "description": "<p>One scoop. One mug. Once Daily Habit. <br/>No hacks. No overthinking. No Nonsense.</p>",
+        "description": "<p>One scoop. One mug. Once Daily Habit.  <br/>No overthinking. No Nonsense.</p>",
         "button_text": "Choose your filth",
         "button_icon": "shopify://shop_images/Frame_2147242027.svg",
         "button_link": "shopify://collections",
@@ -554,81 +554,13 @@
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "button_bg": "#000000",
         "button_icon_bg": "#ffffff",
+        "button_text": "#ffffff",
         "section_bg": "#ffffff",
         "cards_bg": "#faf7ed",
         "padding_top_desktop": 0,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0
-      }
-    },
-    "marquee_39wPP9": {
-      "type": "marquee",
-      "blocks": {
-        "feature_qnVrtC": {
-          "type": "feature",
-          "settings": {
-            "icon": "shopify://shop_images/image_2841.png",
-            "title": ""
-          }
-        },
-        "feature_3M4xkF": {
-          "type": "feature",
-          "settings": {
-            "icon": "shopify://shop_images/image_2842.png",
-            "title": ""
-          }
-        },
-        "feature_xaYiXa": {
-          "type": "feature",
-          "settings": {
-            "icon": "shopify://shop_images/image_2843.png",
-            "title": ""
-          }
-        },
-        "feature_EePfxb": {
-          "type": "feature",
-          "settings": {
-            "icon": "shopify://shop_images/image_2844.png",
-            "title": ""
-          }
-        },
-        "feature_HV9LEX": {
-          "type": "feature",
-          "settings": {
-            "icon": "shopify://shop_images/image_2867.png",
-            "title": ""
-          }
-        },
-        "feature_j7egWj": {
-          "type": "feature",
-          "settings": {
-            "icon": "shopify://shop_images/image_2845.png",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_qnVrtC",
-        "feature_3M4xkF",
-        "feature_xaYiXa",
-        "feature_EePfxb",
-        "feature_HV9LEX",
-        "feature_j7egWj"
-      ],
-      "name": "Custom Marquee",
-      "settings": {
-        "hide": false,
-        "border": false,
-        "sec_title": "our stockists",
-        "background_color": "rgba(0,0,0,0)",
-        "border_color": "",
-        "padding_block": 35,
-        "padding_block_mob": 0,
-        "padding_sec_top": 100,
-        "padding_sec_bottom": 100,
-        "padding_sec_top_mob": 40,
-        "padding_sec_bottom_mob": 40
       }
     },
     "video_slider_qw3NeQ": {
@@ -700,13 +632,82 @@
         "rating_text": "2,440+ Reviews",
         "header_text": "<p>what our loyal customers are saying?</p>",
         "slides_per_view_desktop": 4,
-        "background_color": "#fffcf6",
-        "padding_top_desktop": 100,
-        "padding_bottom_desktop": 100,
+        "background_color": "rgba(0,0,0,0)",
+        "padding_top_desktop": 75,
+        "padding_bottom_desktop": 80,
         "padding_top_mobile": 40,
-        "padding_bottom_mobile": 40,
+        "padding_bottom_mobile": 30,
         "items_primary_color": "",
         "items_light_color": ""
+      }
+    },
+    "marquee_39wPP9": {
+      "type": "marquee",
+      "blocks": {
+        "feature_qnVrtC": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2841.png",
+            "title": ""
+          }
+        },
+        "feature_3M4xkF": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2842.png",
+            "title": ""
+          }
+        },
+        "feature_xaYiXa": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2843.png",
+            "title": ""
+          }
+        },
+        "feature_EePfxb": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2844.png",
+            "title": ""
+          }
+        },
+        "feature_HV9LEX": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/logo_x2F_full.svg",
+            "title": ""
+          }
+        },
+        "feature_j7egWj": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/image_2845.png",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_qnVrtC",
+        "feature_3M4xkF",
+        "feature_xaYiXa",
+        "feature_EePfxb",
+        "feature_HV9LEX",
+        "feature_j7egWj"
+      ],
+      "name": "Custom Marquee",
+      "settings": {
+        "hide": false,
+        "border": false,
+        "sec_title": "our stockists",
+        "background_color": "rgba(0,0,0,0)",
+        "border_color": "",
+        "padding_block": 35,
+        "padding_block_mob": 0,
+        "padding_sec_top": 44,
+        "padding_sec_bottom": 44,
+        "padding_sec_top_mob": 44,
+        "padding_sec_bottom_mob": 44
       }
     },
     "story_behind_jtdUt8": {
@@ -716,7 +717,7 @@
         "pdp": false,
         "abs_image": "shopify://shop_images/tempImageYExoTd_1.png",
         "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM_png.png",
-        "title": "THE STORY BEHIND THE FILTH",
+        "title": "<p>THE STORY BEHIND THE FILTH</p>",
         "description": "<p>I’m Olly, the guy behind this filthy venture. The story kicked off in 2023 while wrestling with my pesky ADHD. My hunt for pure, uninterrupted focus led me to Lion’s Mane. <br/><br/>What started as a personal experiment soon morphed into a full-blown mushroom business. But not just any mushrooms would do. I spent two years chasing down the purest, most potent fungi. And in February 2025, we finally launched PURE FILTH into the wild, proudly built in the UAE.</p>",
         "button_text": "Shop Pure Filth",
         "button_link": "shopify://pages/our-story",
@@ -724,7 +725,7 @@
         "section_bg": "#ffffff",
         "button_bg": "#000000",
         "button_icon_bg": "#ffffff",
-        "padding_top_desktop": 100,
+        "padding_top_desktop": 80,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 40,
         "padding_bottom_mobile": 40
@@ -866,8 +867,9 @@
       "type": "money-back",
       "name": "Money Back Section",
       "settings": {
+        "title_first": false,
         "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
-        "image": "shopify://shop_images/Group_1707479854.svg",
+        "image": "shopify://shop_images/PDP_Badge.svg",
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll REFUND YOU",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
@@ -878,7 +880,7 @@
         "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
         "button_bg": "#000000",
         "button_icon_bg": "#ffffff",
-        "padding_top_desktop": 180,
+        "padding_top_desktop": 120,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 70,
         "padding_bottom_mobile": 40
@@ -1497,8 +1499,8 @@
     "how_to_buy_68BkDx",
     "build_perfect_eDHefQ",
     "routine_67g93h",
-    "marquee_39wPP9",
     "video_slider_qw3NeQ",
+    "marquee_39wPP9",
     "story_behind_jtdUt8",
     "comp_jNz79M",
     "run_out_section_rePwTx",

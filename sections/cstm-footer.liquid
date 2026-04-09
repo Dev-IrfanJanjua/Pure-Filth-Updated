@@ -245,6 +245,33 @@ button.cstm-newsletter-btn {
   height: 24px;
 }
 
+a.footer-social-icon {
+    width: 26px;
+    height: 26px;
+    display: block;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a.footer-social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+a.footer-social-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 /* Mobile Accordion Logic */
 @media (max-width: 768px) {
 
@@ -431,12 +458,27 @@ small.footer-newsletter-content_small {
             <div class="footer-copyright">
               {{ section.settings.copyright_text | replace: '<p>', '' | replace: '</p>', ''  }}
             </div>
-            
-            <div class="footer-payment-icons">
-              {% for type in shop.enabled_payment_types %}
-                {{ type | payment_type_svg_tag: class: 'payment-icon' }}
-              {% endfor %}
-            </div>
+            {% if section.settings.icon_type == 'payment' %}
+              <div class="footer-payment-icons">
+                {% for type in shop.enabled_payment_types %}
+                  {{ type | payment_type_svg_tag: class: 'payment-icon' }}
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if section.settings.icon_type == 'social' %}
+              <div class="footer-social-icons">
+                {% if section.settings.tiktok_link %}
+                  <a href="{{ section.settings.tiktok_link }}" target="_blank" rel="noopener noreferrer" class="footer-social-icon">
+                    {{ section.settings.tiktok_icon | image_url: width: 100 | image_tag: alt: 'TikTok icon' }}
+                  </a>
+                {% endif %}
+                {% if section.settings.instagram_link %}
+                  <a href="{{ section.settings.instagram_link }}" target="_blank" rel="noopener noreferrer" class="footer-social-icon">
+                    {{ section.settings.instagram_icon | image_url: width: 100 | image_tag: alt: 'Instagram icon' }}
+                  </a>
+                {% endif %}
+              </div>
+            {% endif %}
           </div>
       
           {% comment %} BIG LOGO FOOTER {% endcomment %}
@@ -498,6 +540,22 @@ document.addEventListener('DOMContentLoaded', function() {
 {
   "name": "Custom Footer",
   "settings": [
+    {
+      "type": "select",
+      "id": "icon_type",
+      "label": "Choose Icons to Show",
+      "default": "social",
+      "options": [
+        {
+          "value": "social",
+          "label": "Show Social Icons"
+        },
+        {
+          "value": "payment",
+          "label": "Show Payment Icons"
+        }
+      ]
+    },
     {
       "type": "color_background",
       "id": "bg_color",
@@ -610,6 +668,30 @@ document.addEventListener('DOMContentLoaded', function() {
       "step": 1,
       "default": 40,
       "label": "Padding Bottom Mobile"
+    },
+    {
+      "type": "header",
+      "content": "Social Icons"
+    },
+    {
+      "type": "image_picker",
+      "id": "tiktok_icon",
+      "label": "TikTok Icon"
+    },
+    {
+      "type": "url",
+      "id": "tiktok_link",
+      "label": "TikTok Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "instagram_icon",
+      "label": "Instagram Icon"
+    },
+    {
+      "type": "url",
+      "id": "instagram_link",
+      "label": "Instagram Link"
     }
   ],
   "blocks": [
@@ -720,6 +802,13 @@ document.addEventListener('DOMContentLoaded', function() {
   .footer-newsletter-column,
   button.cstm-newsletter-btn{
     background: #ED87D0;
+  }
+{% endif %}
+
+{% if template.name == 'index' %}
+  button.cstm-newsletter-btn{
+    background: #FEC700;
+    color: #000;
   }
 {% endif %}
 
