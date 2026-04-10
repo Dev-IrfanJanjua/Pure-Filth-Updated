@@ -169,45 +169,42 @@
     {%- comment %} Render Button {% endcomment -%}
     <form class="product-card__add-to-cart--form" action="/cart/add" method="post">
       
-        {% if product_ref.variants.size > 1 %}
-            <div class="collection-card__varients">
-                {%- comment %} Variant Selector {% endcomment -%}
-                {% if product_ref.variants.size > 1 %}
-                  <select name="id" class="product-card__variant-select">
-                    {% for variant in product_ref.variants %}
-                      {% if variant.available %}
-                        <option 
-                            value="{{ variant.id }}" 
-                            data-price="{{ variant.price | money }}"
-                            data-tag="{{ variant.metafields.custom.variant_tag | escape }}"
-                            {% unless variant.available %}disabled{% endunless %}
-                        >
-                          {{ variant.title }} 
-                        </option>
-                      {% else %}
-                        <option value="{{ variant.id }}" disabled>
-                          {{ variant.title }} — Sold Out
-                        </option>
-                      {% endif %}
-                    {% endfor %}
-                  </select>
-    
-                  {% if product_ref.selected_or_first_available_variant.metafields.custom.variant_tag %}
-                    <div class="collection-card__variant-tag">
-                        {{ product_ref.selected_or_first_available_variant.metafields.custom.variant_tag }}
-                    </div>
-                  {% endif %}
-    
+      <div class="collection-card__varients {% if product_ref.variants.size == 1 %} collection-card__varients_none {% endif %} ">
+          {%- comment %} Variant Selector {% endcomment -%}
+          {% if product_ref.variants.size > 1 %}
+            <select name="id" class="product-card__variant-select">
+              {% for variant in product_ref.variants %}
+                {% if variant.available %}
+                  <option 
+                      value="{{ variant.id }}" 
+                      data-price="{{ variant.price | money }}"
+                      data-tag="{{ variant.metafields.custom.variant_tag | escape }}"
+                      {% unless variant.available %}disabled{% endunless %}
+                  >
+                    {{ variant.title }} 
+                  </option>
                 {% else %}
-                  <input type="hidden" name="id" value="{{ product_ref.selected_or_first_available_variant.id }}">
+                  <option value="{{ variant.id }}" disabled>
+                    {{ variant.title }} — Sold Out
+                  </option>
                 {% endif %}
-                <span class="collection-card__icon">
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L10 10L19 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </span>
-            </div>
-        {% endif %}
+              {% endfor %}
+            </select>
+            <span class="collection-card__icon">
+              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L10 10L19 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            {% if product_ref.selected_or_first_available_variant.metafields.custom.variant_tag %}
+              <div class="collection-card__variant-tag">
+                  {{ product_ref.selected_or_first_available_variant.metafields.custom.variant_tag }}
+              </div>
+            {% endif %}
+
+          {% else %}
+            <input type="hidden" name="id" value="{{ product_ref.selected_or_first_available_variant.id }}">
+          {% endif %}
+      </div>
       <input type="hidden" name="quantity" value="1">
       {% assign plans = product_ref.selected_or_first_available_variant.selling_plan_allocations %}
       {% if plans.size > 0 %}

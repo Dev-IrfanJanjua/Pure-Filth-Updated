@@ -348,6 +348,9 @@ label.collection-subscribe-toggle input:checked + .subscribe-toggle__switch .sub
   /* background: #049849; */
 }
 
+.collection-card__varients_none {
+    display: none !important;
+}
 
 @media screen and (max-width: 768px){
 

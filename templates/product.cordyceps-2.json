@@ -56,7 +56,12 @@
             "image3": "shopify://shop_images/icon.svg_-_2026-01-26T160747.431_1_df084ba1-2738-4823-81c5-ce88f1bd3821.svg",
             "text3": "Energy boost",
             "image4": "shopify://shop_images/icon.svg_-_2026-03-18T115710.504_1_6a937084-a937-47fb-8f77-8b76115a84b3.svg",
-            "text4": "ATP production"
+            "text4": "ATP production",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": ""
           }
         },
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
@@ -126,6 +131,17 @@
             "text_color": "#151515",
             "bg_color": "#FFEEEE",
             "border_color": "#0000001F"
+          }
+        },
+        "icon_list_9YTGm4": {
+          "type": "icon_list",
+          "settings": {
+            "icon_1": "shopify://shop_images/Frame_2147242267_1.svg",
+            "icon_2": "shopify://shop_images/Frame_2147242268_1.svg",
+            "icon_3": "shopify://shop_images/Frame_2147242272_1.svg",
+            "icon_4": "shopify://shop_images/Frame_2147242274.svg",
+            "icon_5": "shopify://shop_images/Frame_2147242270_1.svg",
+            "icon_6": "shopify://shop_images/Frame_2147242673.svg"
           }
         },
         "content_tabs_fEGJi4": {
@@ -251,6 +267,7 @@
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
         "custom_feature_rB8z8F",
         "moneyback_QcGtTd",
+        "icon_list_9YTGm4",
         "content_tabs_fEGJi4",
         "description_qA3HqH",
         "content_block_idt6CB",
@@ -437,7 +454,7 @@
         "pdp": true,
         "abs_image": "shopify://shop_images/0st7MqmOLuNNmDy9SoFwE67dXmM.png_1.png",
         "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM_png_525ad14b-b9ee-45dc-9f5a-79d9c232e368.png",
-        "title": "Fuel Your Body, Naturally",
+        "title": "<p>Fuel Your Body, Naturally</p>",
         "description": "<p>Cordyceps has long been valued for supporting energy production and endurance. It works by supporting the body’s ability to produce ATP, the cellular energy your muscles rely on during physical activity.</p><p></p><ul><li>Contains cordycepin and beta-glucans associated with sustained energy support.</li><li>10:1 high ratio extract for potent benefits you can actually feel.</li><li>100% fruiting body extract (no grain-grown mycelium).</li><li>Dual extracted to capture the full spectrum of compounds.</li><li>Single ingredient formula. No fillers, flavourings or additives.</li></ul>",
         "list_icon": "shopify://shop_images/verify_4fb1713f-9459-42e1-8740-4abcd7aeffc0.svg",
         "button_text": "",
@@ -586,6 +603,7 @@
       "type": "money-back",
       "name": "Money Back Section",
       "settings": {
+        "title_first": false,
         "image": "shopify://shop_images/Group_1707479854.svg",
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
         "title": "30 day money back guarantee",
@@ -745,6 +763,7 @@
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "button_bg": "#d52626",
         "button_icon_bg": "#ffffff",
+        "button_text": "#ffffff",
         "section_bg": "#ffffff",
         "cards_bg": "#ffeeee",
         "padding_top_desktop": 80,
@@ -838,6 +857,7 @@
       ],
       "name": "Testimonial Slider",
       "settings": {
+        "title_first": false,
         "section_bg": "",
         "card_bg": "#ffeeee",
         "title": "Filthy Reviews",

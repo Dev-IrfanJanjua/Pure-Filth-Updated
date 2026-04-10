@@ -275,6 +275,9 @@
           product_block_class: product_block_class
         -%} {% endcomment %}
 
+      {%- when 'icon_list' -%}
+        {% render 'pdp_icon-list', block: block %}
+
       {%- when 'moneyback' -%}
         {% render 'money-back-guarantee', block: block %}
 
