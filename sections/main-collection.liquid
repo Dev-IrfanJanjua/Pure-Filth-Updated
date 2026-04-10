@@ -53,8 +53,33 @@
 
   {{ facets_html }}
 
-  <div class="container {{ section.settings.section_width }}">
+  <div class="container {{ section.settings.section_width }} {% if section.settings.cstm_tyle %} page-width {% endif %}  ">
     <div class="collection__inner">
+      {% if section.settings.cstm_tyle %}
+        <div class="collection__header custom-collection__header">
+          <h2 class="custom-collection__title">{{ section.settings.custom_heading | default: collection.title }}</h2>
+          <div class="collection_blocks">
+            <div class="collection_blocks__inner">
+                {% for block in section.blocks %}
+                  {% if block.type == 'tabs' %}
+                    <a href="{{ block.settings.link }}" class="collection_blocks__item {% if block.settings.link == collection.url %} active{% endif %}">{{ block.settings.text }}</a>                
+                  {% endif %}
+                {% endfor %}
+            </div>
+            <div class="collection-subscribe-toggle-wrapper">
+              <label class="collection-subscribe-toggle">
+                <input type="checkbox" name="subscribe_save" hidden class="subscribe-toggle__checkbox">
+                <span class="subscribe-toggle__switch">
+                  <span class="subscribe-toggle__dot"></span>
+                </span>
+              </label>
+              {% if section.settings.toggle_text %}
+                <span class="subscribe-toggle__text"> {{ section.settings.toggle_text }} </span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
 
       {%- paginate collection.products by products_per_page -%}
         {%- if collection.products_count == 0 -%}
@@ -136,6 +161,22 @@
       "id": "cstm_tyle",
       "label": "Enable custom style",
       "default": false
+    },
+    {
+      "type": "header",
+      "content": "Custom Content",
+      "info": "Custom content for the collection section. Works when custom style is enabled."
+    },
+    {
+      "type": "text",
+      "id": "custom_heading",
+      "label": "Custom Heading",
+    },
+    {
+      "type": "text",
+      "id": "toggle_text",
+      "label": "Toggle Text",
+      "default": "Subscribe + Save Up To 20%"
     },
     {
       "type": "header",
@@ -332,6 +373,22 @@
   ],
   "max_blocks": 5,
   "blocks": [
+    {
+      "type": "tabs",
+      "name": "Collection Tabs",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Collection Name"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Collection URL"
+        }
+      ]
+    },
     {
       "type": "text-card",
       "name": "t:sections.main-collection.blocks.text-card.name",

@@ -228,6 +228,127 @@ span.buy-button__icon svg {
     display: block;
 }
 
+.collection__inner {
+    flex-direction: column;
+}
+
+.collection__header.custom-collection__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+h2.custom-collection__title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+}
+
+.collection_blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.collection_blocks__inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+a.collection_blocks__item {
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    border-radius: 48px;
+    font-family: GT Cinetype;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #000;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.3s;
+}
+
+a.collection_blocks__item.active,
+a.collection_blocks__item:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* *========== Collection Toggle ========== */
+
+.collection-subscribe-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+label.collection-subscribe-toggle {
+    cursor: pointer;
+}
+
+.subscribe-toggle__switch {
+    width: 55px;
+    height: 24px;
+    display: block;
+    background: #FAF7ED;
+    border-radius: 999px;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid #CCCCCC;
+}
+
+.subscribe-toggle__dot {
+    width: 16px;
+    height: 16px;
+    background: #CCCCCC;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transition: all 0.3s ease;
+    transform: translatey(-50%);
+}
+
+span.subscribe-toggle__text {
+    font-family: GT Cinetype;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19.8px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #454545;
+}
+
+label.collection-subscribe-toggle input:checked + .subscribe-toggle__switch {
+  background: #C3FFDE;
+}
+
+label.collection-subscribe-toggle input:checked + .subscribe-toggle__switch .subscribe-toggle__dot {
+  right: 5px;
+  left: auto;
+  background: #049849;
+}
+
+
 @media screen and (max-width: 768px){
 
 .custom-collection__grid product-card.product-card {
@@ -297,6 +418,26 @@ span.buy-button__text {
 span.buy-button__icon {
     width: 40px;
     height: 30px;
+}
+
+h2.custom-collection__title {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.collection__header.custom-collection__header {
+    gap: 14px;
+}
+
+.collection_blocks__inner {
+    gap: 8px;
+    justify-content: center;
+}
+
+a.collection_blocks__item {
+    padding: 7px 15px;
+    font-size: 14px;
+    line-height: 14px;
 }
 
 

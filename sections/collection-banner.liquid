@@ -1,0 +1,442 @@
+{% style %}
+
+.section-{{ section.id }}{
+  position: relative;
+  background: {{ section.settings.section_bg }};
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+}
+
+.section-{{ section.id }} .page-width{
+    padding-left: 42px;
+    padding-right: 72px;
+}
+
+.section-{{ section.id }} .collection-banner-section_img{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+
+h2.collection-banner-title {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 76PX;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 0 10px;
+    max-width: 574px;
+    width: 100%;
+}
+
+p.collection-banner-subtitle {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+    margin: 0;
+}
+
+span.collection-banner-btn-text {
+    color: {{ section.settings.button_icon_bg }};
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.section-{{ section.id }} .collection-banner-section_img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.section-{{ section.id }} .collection-banner-wrapper{
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap: 20px;
+}
+
+.section-{{ section.id }} .collection-banner-content{
+    max-width: 46.4%;
+    width: 100%;
+    padding-bottom: 54px;
+}
+
+.collection-banner-image {
+    max-width: 44%;
+    width: 100%;
+    height: auto;
+}
+
+.section-{{ section.id }} .collection-banner-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.section-{{ section.id }} .collection-banner-button{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  background: {{ section.settings.button_bg }};
+  padding:10px 16px;
+  border-radius:60px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section-{{ section.id }} .collection-banner-btn-icon{
+  background: {{ section.settings.button_icon_bg }};
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 10px 12px;
+  border-radius:60px;
+  transition: all 0.3s ease;
+}
+
+.section-{{ section.id }} .collection-banner-button:hover{
+  transform: translateY(-2px);
+}
+
+.section-{{ section.id }} .collection-banner-button:hover .collection-banner-btn-icon{
+    transform: translateX(4px);
+}
+
+.section-{{ section.id }} .collection-banner-btn-icon img{
+    width: 26px;
+    height: 16px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.section-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+}
+
+.section-{{ section.id }} .page-width{
+    padding: 0 16px;
+}
+
+.section-{{ section.id }} .collection-banner-wrapper{
+  flex-direction:column;
+  text-align: center;
+  gap: 10px;
+}
+
+.section-{{ section.id }} .collection-banner-content {
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+
+h2.collection-banner-title {
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0px 0 12px;
+    text-align: left;
+}
+
+p.collection-banner-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.section-{{ section.id }} .collection-banner-button {
+    margin-top: 24px;
+}
+
+.collection-banner-image {
+    max-width: 100%;
+}
+
+.collection-banner-section_img-desk{
+    display: none !important;
+}
+
+.collection-banner-section_img-mob{
+    display: block !important;
+}
+
+}
+
+{% endstyle %}
+
+
+
+<section class="collection-banner-section section-{{ section.id }} {% if section.settings.subcription %} sub-{{ section.id }} {% endif %} ">
+
+    {% if section.settings.bg_image != blank or section.settings.bg_image_mob != blank %}
+        <div class="collection-banner-section_img">
+            {% if section.settings.bg_image != blank %}
+                {{ section.settings.bg_image | image_url: width:1600 | image_tag: class: 'collection-banner-section_img-desk' }}
+            {% endif %}
+            {% if section.settings.bg_image_mob != blank %}
+                {{ section.settings.bg_image_mob | image_url: width:1600 | image_tag: class: 'collection-banner-section_img-mob', style: 'display: none' }}
+            {% endif %}
+        </div>
+    {% endif %}
+
+    <div class="page-width">
+        <div class="collection-banner-wrapper">
+
+            <div class="collection-banner-content">
+
+                <div class="collection-banner-head">
+
+                    {% if section.settings.title_tag != blank %}
+                        <h3 class="collection-banner-title-tag">
+                            {{ section.settings.title_tag }}
+                        </h3>
+                    {% endif %}
+
+                    {% if section.settings.title != blank %}
+                        <h2 class="collection-banner-title">
+                            {{ section.settings.title }}
+                        </h2>
+                    {% endif %}
+
+                    {% if section.settings.subtitle != blank %}
+                        <p class="collection-banner-subtitle">
+                            {{ section.settings.subtitle }}
+                        </p>
+                    {% endif %}
+
+                    {% if section.settings.desc != blank %}
+                        <div class="collection-banner-desc">
+                            {{ section.settings.desc | replace: '<p>', '' | replace: '</p>', '' }}
+                        </div>
+                    {% endif %}
+
+                </div>
+                <ul class="collection_baner-blocks">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'list' %}
+                            <li class="collection_banner-block">
+                                {% if block.settings.icon != blank %}
+                                    <div class="collection_banner-block-icon">
+                                        {{ block.settings.icon | image_url: width: 160 | image_tag:
+                                            alt: "image",
+                                            loading: "lazy"
+                                        }}
+                                    </div>
+                                {% endif %}
+                                {% if block.settings.icon_text != blank %}
+                                    <span class="collection_banner-block-text">{{ block.settings.icon_text }}</span>
+                                {% endif %}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+
+                {% if section.settings.button_text != blank %}
+                <a href="{{ section.settings.button_link }}" class="collection-banner-button">
+
+                    <span class="collection-banner-btn-text">
+                        {{ section.settings.button_text }}
+                    </span>
+
+                    {% if section.settings.button_icon != blank %}
+                    <div class="collection-banner-btn-icon">
+                        {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                    </div>
+                    {% endif %}
+
+                </a>
+                {% endif %}
+
+            </div>
+
+
+            <div class="collection-banner-image">
+                {% if section.settings.image != blank %}
+                    {{ section.settings.image | image_url: width:900 | image_tag }}
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Collection Banner",
+  "settings": [
+
+    {
+        "type": "checkbox",
+        "id": "subcription",
+        "label": "Subcription Collection"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image Desktop"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "bg_image_mob",
+      "label": "Background Image Mobile"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Right Image"
+    },
+
+    {
+      "type": "text",
+      "id": "title_tag",
+      "label": "Title Tag"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Description"
+    },
+
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button Icon"
+    },
+
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#000000"
+    },
+
+    {
+      "type": "color",
+      "id": "button_icon_bg",
+      "label": "Button Icon Background",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Bottom Mobile"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "list",
+        "name": "Icon List",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "icon",
+                "label": "Select an icon"
+            },
+            {
+                "type": "text",
+                "id": "icon_text",
+                "label": "Icon Text"
+            }
+        ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Collection Banner",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

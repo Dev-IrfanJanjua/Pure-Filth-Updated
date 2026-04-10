@@ -236,7 +236,7 @@
         "button_icon_bg": "#ffffff",
         "section_bg": "#ffffff",
         "mobile_layout": "swiper",
-        "padding_top_desktop": 100,
+        "padding_top_desktop": 32,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 40,
         "padding_bottom_mobile": 40
@@ -244,6 +244,58 @@
     },
     "bg_content_section_3KYDXn": {
       "type": "bg_content-section",
+      "blocks": {
+        "list_qVGD7d": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147242267.svg",
+            "icon_text": ""
+          }
+        },
+        "list_bUpRiV": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147242268.svg",
+            "icon_text": ""
+          }
+        },
+        "list_xPtccY": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147242270.svg",
+            "icon_text": ""
+          }
+        },
+        "list_CCreWV": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147242271.svg",
+            "icon_text": ""
+          }
+        },
+        "list_U6aRxE": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147242272.svg",
+            "icon_text": ""
+          }
+        },
+        "list_WWYQbK": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147242273.svg",
+            "icon_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_qVGD7d",
+        "list_bUpRiV",
+        "list_xPtccY",
+        "list_CCreWV",
+        "list_U6aRxE",
+        "list_WWYQbK"
+      ],
       "name": "Background Content Section",
       "settings": {
         "main_img": "shopify://shop_images/us_vs_them.png",
@@ -371,7 +423,7 @@
         "bg_image": "shopify://shop_images/Frame_2147241648.png",
         "bg_image_mob": "shopify://shop_images/Banner_2_2.png",
         "image": "shopify://shop_images/Frame_2147242212_dedecf42-2156-43b1-9767-99c30c2fdd20.png",
-        "title": "Not sure where to start? We’ll point you to the right Filth.",
+        "title": "Not sure where to start? TAKE THE FILTH QUIZ.",
         "subtitle": "Answer a few quick questions to discover what suits you best. Get personalized recommendations tailored to your goals.",
         "button_text": "Start the Quiz",
         "button_link": "shopify://collections/all",
@@ -391,10 +443,10 @@
         "step_cmjGgk": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/image_2793_1.png",
+            "image": "shopify://shop_images/PF_10g_multipack_mockup_45_angle_1.png",
             "title": "STARTER Pack (10g Set)",
             "subtitle": "Try all of them out in one pack",
-            "button_text": "Shop All",
+            "button_text": "Shop multipack",
             "button_link": "shopify://collections/all"
           }
         },
@@ -411,10 +463,10 @@
         "step_zdYXG6": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/image_2793.png",
+            "image": "shopify://shop_images/Group_1707479868.png",
             "title": "AUTO-PILOT (Subscribe)",
             "subtitle": "Save 20% and never run out.",
-            "button_text": "Shop All",
+            "button_text": "Subscribe Now",
             "button_link": "shopify://collections/all"
           }
         }
@@ -628,7 +680,7 @@
       "name": "Video Slider Formulas",
       "settings": {
         "pdp": false,
-        "stars_image": "shopify://shop_images/Frame_36_a748b337-fff3-4d6f-8873-c4cb696114e2.svg",
+        "stars_image": "shopify://shop_images/Frame_36_2.svg",
         "rating_text": "2,440+ Reviews",
         "header_text": "<p>what our loyal customers are saying?</p>",
         "slides_per_view_desktop": 4,
@@ -719,10 +771,10 @@
         "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM_png.png",
         "title": "<p>THE STORY BEHIND THE FILTH</p>",
         "description": "<p>I’m Olly, the guy behind this filthy venture. The story kicked off in 2023 while wrestling with my pesky ADHD. My hunt for pure, uninterrupted focus led me to Lion’s Mane. <br/><br/>What started as a personal experiment soon morphed into a full-blown mushroom business. But not just any mushrooms would do. I spent two years chasing down the purest, most potent fungi. And in February 2025, we finally launched PURE FILTH into the wild, proudly built in the UAE.</p>",
-        "button_text": "Shop Pure Filth",
+        "button_text": "Learn more",
         "button_link": "shopify://pages/our-story",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
-        "section_bg": "#ffffff",
+        "section_bg": "#faf7ed",
         "button_bg": "#000000",
         "button_icon_bg": "#ffffff",
         "padding_top_desktop": 80,
@@ -849,8 +901,8 @@
       "settings": {
         "title": "NEVER RUN OUT OF FILTH",
         "subtitle": "Enjoy hassle-free delivery with our subscription program.",
-        "image": "shopify://shop_images/col-right.png",
-        "image_mob": "shopify://shop_images/col-right_1.png",
+        "image": "shopify://shop_images/20250925_1950_Product_Mockup_Creation_remix_01k60nheq1evx9ra93g8hzkwb0_1_1.png",
+        "image_mob": "shopify://shop_images/20250925_1950_Product_Mockup_Creation_remix_01k60nheq1evx9ra93g8hzkwb0_1_2.png",
         "wrapper_bg": "#fffcf6",
         "button_bg": "#000000",
         "button_icon_bg": "#ffffff",

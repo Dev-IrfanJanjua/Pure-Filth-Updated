@@ -29,13 +29,52 @@
     },
     "collection_banner_TnyeLg": {
       "type": "collection-banner",
+      "blocks": {
+        "list_aUXLJT": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1707479819.svg",
+            "icon_text": "Save 20% on orders"
+          }
+        },
+        "list_8QPac9": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1707479819_1.svg",
+            "icon_text": "Free delivery for subscription orders"
+          }
+        },
+        "list_GinidE": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1707479819_2.svg",
+            "icon_text": "Change frequency anytime"
+          }
+        },
+        "list_a8Fzbw": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1707479819_3.svg",
+            "icon_text": "Pause, or cancel at any time"
+          }
+        }
+      },
+      "block_order": [
+        "list_aUXLJT",
+        "list_8QPac9",
+        "list_GinidE",
+        "list_a8Fzbw"
+      ],
       "name": "Collection Banner",
       "settings": {
+        "subcription": true,
         "bg_image": "shopify://shop_images/Frame_2147228309.png",
         "bg_image_mob": "shopify://shop_images/Banner_2_45ba763f-97c9-46f5-aa05-4734e7852d7d.png",
-        "image": "shopify://shop_images/Frame_2147242212_1.png",
-        "title": "All Filthy Products",
-        "subtitle": "EXPLORE THE FILTHY COLLECTION",
+        "image": "shopify://shop_images/20250925_1950_Product_Mockup_Creation_remix_01k60nheq1evx9ra93g8hzkwb0_1.png",
+        "title_tag": "Save 20% on Every Order",
+        "title": "Subscribe & Never Run Out",
+        "subtitle": "Get your favorites delivered automatically. No hassle, no last-minute reorders.",
+        "desc": "",
         "button_text": "",
         "button_link": "",
         "section_bg": "#ffffff",

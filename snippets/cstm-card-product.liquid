@@ -45,7 +45,7 @@
   </style>
 
   {% comment %} Render | Product Media {% endcomment %}
-  <div class="{{ media_classes }}" style="background: {{ product_ref.metafields.custom.collecetion_bg | default: '#fff' }}" >
+  <div class="{{ media_classes }}" style="background: {{ product_ref.metafields.custom.collecetion_bg | default: '#FAF7ED' }}" >
     {% liquid
       assign hover_media = product_ref.media[1]
 
@@ -89,206 +89,6 @@
   </div>
 {%- endcapture -%}
 
-{% comment %} Product Add-To-Cart Button {% endcomment %}
-{% comment %} {%- capture add_to_cart_button -%}
-  {%- if settings.product_card_enable_quick_add_to_cart_button -%}
-
-    {% comment %} Variables | Product Add-To-Cart Button {% endcomment %}
-    {%- assign button_classes = 'button product-card__add-to-cart--button color-' | append: settings.product_card_action_buttons_color_scheme | append: ' ' -%}
-    {%- if settings.product_card_add_to_cart_btn_content == 'icon' -%}
-      {%- assign button_classes = button_classes | append: 'button--icon' -%}
-      {%- if settings.button_border_radius == '0' -%}
-        {%- assign button_classes = button_classes | append: ' button--rounded-0' -%}
-      {%- endif -%}
-    {%- else -%}
-      {%- assign button_classes = button_classes | append: 'button--uppercase button--filled' -%}
-    {%- endif -%}
-
-    {%- capture button_content -%}
-      {%- assign button_label = '' -%}
-      {%- if product_ref.variants.size == 1 -%}
-        {%- assign button_label = 'theme.actions.add_to_cart' | t  -%}
-      {%- elsif product_ref.variants.size > 1  -%}
-        {%- assign button_label = 'product.choose_options' | t  -%}
-      {%- endif -%}
-      {%- if settings.product_card_add_to_cart_btn_content contains 'icon' -%}
-        {% render 'icon', icon_name: 'theme-plus' %}
-      {%- endif -%}
-      {%- if settings.product_card_add_to_cart_btn_content contains 'text' -%}
-        <span>{{- button_label -}}</span>
-      {%- else -%}
-        <span class="visually-hidden">{{- button_label -}}</span>
-      {%- endif -%}
-    {%- endcapture -%}
-
-    {% comment %} Render | Product Add-To-Cart Button {% endcomment %}
-    {%- if product_ref.variants.size == 1 -%}
-      <button
-        type="submit"
-        class="{{ button_classes }}"
-        {%- unless product_ref.available -%}disabled{%- endunless -%}
-      >
-        {{- button_content -}}
-      </button>
-    {%- elsif product_ref.variants.size > 1  -%}
-      <button
-        type="button"
-        class="quick-cart-drawer__trigger {{ button_classes }}"
-        tabindex="{% if is_in_drawer == true %}-1{% else %}0{% endif %}"
-        aria-expanded="false"
-        aria-controls="quick-cart-drawer"
-        data-product-url="{{- product_ref.handle | prepend: '/products/'  -}}"
-        {%- unless product_ref.available -%}disabled{%- endunless -%}
-      >
-        {{- button_content -}}
-        <div class="quick-cart-drawer__trigger--loading">
-          {%- render 'loading-spinner' -%}
-        </div>
-      </button>
-    {%- endif -%}
-  {%- endif -%}
-{%- endcapture -%} 
-
-{% comment %} Product Add-To-Cart Form {% endcomment %}
-{%- capture add_to_cart -%}
-  {%- if product_ref.available -%}
-    {%- capture variant_id_input -%}
-      <input type='hidden' name='id' data-productid='{{ product.id }}' value='{{- product_ref.selected_or_first_available_variant.id -}}'>
-    {%- endcapture -%}
-
-    {%- if product_ref.variants.size == 1 and product_ref.available -%}
-      {% comment %} Render | Product Add-To-Cart Form {% endcomment %}
-      <form class="product-card__add-to-cart--form">
-        {{ variant_id_input }}
-        <input type='hidden' name='quantity' value='1'>
-        {{ add_to_cart_button }}
-      </form>
-    {%- else -%}
-      {{ variant_id_input }}
-    {%- endif -%}
-    {%- if product_ref.variants.size > 1 -%}
-      {{ add_to_cart_button }}
-    {%- endif -%}
-  {%- endif -%}
-{%- endcapture -%}
-
-{% comment %} Product Variants || Options || Swatches {% endcomment %}
-{%- capture product_variants -%}
-  {%- if product_ref.available and variants_display_desktop != 'none' or variants_display_mobile != 'none' -%}
-    {% comment %} Variables | Product Swatches {% endcomment %}
-    {%- capture color_codes -%}{% render 'color-codes-to-check' %}{%- endcapture -%}
-    {%- assign swatch_options = settings.swatches_option | split: ',' -%}
-    {%- assign current_swatch_options = '' -%}
-    {%- for swatch_opt in swatch_options -%}
-      {%- assign swatch_opt_striped = swatch_opt | strip -%}
-      {%- assign swatch_option = product_ref.options_by_name[swatch_opt_striped].values | join: ',' -%}
-      {%- assign current_swatch_options = current_swatch_options | append: swatch_option | append: ',' -%}
-    {%- endfor -%}
-    {%- assign current_swatch_options = current_swatch_options | split: ','-%}
-
-    {% comment %} Check for variant priorty  {% endcomment %}
-    {% assign swatches_option_array = settings.swatches_option | split: ',' %}
-
-    {% comment %} Render | Product Variants & Swatches {% endcomment %}
-    <div class="product-card__variants">
-      <ul class="product-card__variants--list{% if variants_display_desktop == 'info' %} product-card__variants--list-info{% endif %}{% if variants_display_mobile == 'info' %} product-card__variants--list-info-mobile{% endif %}">
-        {%- comment -%}digifist-note -- this part is a need max variant setting{%- endcomment -%}
-        {%- for opts in (1..3) -%}
-          {%- assign options = blank -%}
-          {%- if opts == 1 -%}
-            {%- assign options = product_ref.options_with_values[0] -%}
-          {%- elsif opts == 2 -%}
-            {%- assign options = product_ref.options_with_values[1] -%}
-          {%- elsif opts == 3 -%}
-            {%- assign options = product_ref.options_with_values[2] -%}
-          {%- endif -%}
-          {%- if options.values != blank -%}
-            <li>
-
-              {%- if variants_display_desktop == 'info' or variants_display_mobile == 'info' -%}
-                {%- capture swatch_info_class -%}
-                  {%- if variants_display_desktop == 'info' and variants_display_mobile != 'info'  -%}
-                    small-hide
-                  {%- elsif variants_display_mobile == 'info' and variants_display_desktop != 'info' -%}
-                    small-up-hide
-                  {%- endif -%}
-                {%- endcapture -%}
-                  <span {% unless swatch_info_class == blank %}class="{{- swatch_info_class -}}"{% endunless %} >
-                    {{ options.values.size }} {{ product_ref.options_with_values[forloop.index0].name -}}
-                  </span>
-              {%- endif -%}
-
-              {%- if options.values.size > 1 -%}
-                {%- capture swatch_button_class -%}
-                  {%- unless swatches_option_array contains options.name -%}
-                    hidden-variant
-                  {%- else -%}
-                    {%- if variants_display_desktop != 'button' and variants_display_mobile == 'button' -%}
-                      hidden-variant-desktop
-                    {%- elsif variants_display_mobile != 'button' and variants_display_desktop == 'button' -%}
-                      hidden-variant-mobile
-                    {%- elsif variants_display_desktop != 'button' and variants_display_mobile != 'button' -%}
-                      hidden-variant
-                    {%- endif -%}
-                  {%- endunless -%}
-                {%- endcapture -%}
-
-                <ul class="product-card__variants--option {{  swatch_button_class }}">
-                  {%- for opt in options.values -%}
-
-                    {% comment %} Product Swatch Check {% endcomment %}
-                    {%- assign swatch_check = false -%}
-                    {%- if settings.product_card_swatches_show -%}
-                      {%- for option in current_swatch_options -%}
-                        {%- if option == opt -%}
-                          {%- assign swatch_check = opt | strip | handleize -%}
-                          {%- unless color_codes contains swatch_check -%}
-                            {%- assign swatch_check = 'default' -%}
-                          {%- endunless -%}
-                          {% break %}
-                        {%- endif -%}
-                      {%- endfor -%}
-                    {%- endif -%}
-
-                    {% comment %} Unique element ID for js actions {% endcomment %}
-                    {%- assign section_id = section_id | default: '' -%}
-                    {%- capture variant_id -%}
-                      {{- section_id -}}{{- product_ref.id -}}-variant-option-{{- opts -}}-{{- forloop.index -}}-{{ block_index  }}
-                    {%- endcapture -%}
-
-                    <li class="button button--outlined button--small button--rounded{% if settings.button_border_radius == '0' %}-0{% endif %} button--variant{% if swatch_check %} button--swatch{% endif %}{% if settings.product_card_swatches_style_circle and swatch_check %} button--swatch-rounded{% endif %}{%- if forloop.first %} checked{%- endif -%}">
-                      <input
-                        type="radio"
-                        name="{{ product_ref.id}}-option[{{ opts }}]"
-                        id="{{ variant_id }}"
-                        class="hidden variant-option-radio-input"
-                        value="{{ opt }}"
-                        {%- if forloop.first -%}checked{%- endif -%}
-                      >
-                      <label for="{{ variant_id }}"{% if swatch_check %} class="swatch--{{ swatch_check | handleize }}{% unless settings.product_card_swatches_style_circle %} rounded-0{% endunless %}"{% endif %} title="{{- swatch_check | capitalize -}}">
-                        <span{% if swatch_check %} class="visually-hidden"{% endif %}>{{ opt }}</span>
-                      </label>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              {%- endif -%}
-            </li>
-          {%- endif -%}
-        {%- endfor -%}
-      </ul>
-
-      <script data-product-variants-json type="application/json">
-        {{- product_ref.variants | json -}}
-      </script>
-    </div>
-  {%- endif -%}
-{%- endcapture -%}
-
-{%- assign product_link_with_variant = product_ref.url | append: '?variant=' | append: product_ref.selected_or_first_available_variant.id -%}
-
-{%- if search_product -%}
-  {%- assign product_link_with_variant = product_ref.url -%}
-{%- endif -%} {% endcomment %}
 
 <product-card class="product-card{% if layout_type == 'horizontal' %} product-card__horizontal{% endif %}{% unless product_ref.available %} product-card__sold-out{% endunless %}">
   <div class="product-card__actions">
@@ -409,6 +209,15 @@
             </div>
         {% endif %}
       <input type="hidden" name="quantity" value="1">
+      {% assign plans = product_ref.selected_or_first_available_variant.selling_plan_allocations %}
+      {% if plans.size > 0 %}
+        <input class="selling-plan-input" 
+          type="hidden" 
+          name="selling_plan" 
+          value="{{ plans.first.selling_plan.id }}"
+          disabled
+        >
+      {% endif %}
       
       <button type="submit" class="{{ button_classes }}" 
         {%- unless product_ref.available -%}disabled{%- endunless -%}
@@ -462,5 +271,24 @@
       const selected = this.options[this.selectedIndex];
       tagEl.textContent = selected.dataset.tag || '';
     });
+  });
+</script>
+
+
+{% comment %} ==== selling plan toggle on checkbox ===== {% endcomment %}
+
+<script>
+  document.querySelectorAll('.product-card__add-to-cart--form').forEach(form => {
+    const checkbox = document.querySelector('.subscribe-toggle__checkbox');
+    const sellingPlanInput = form.querySelector('.selling-plan-input');
+
+    if (!checkbox || !sellingPlanInput) return;
+
+    const updateSellingPlan = () => {
+      sellingPlanInput.disabled = !checkbox.checked;
+    };
+
+    updateSellingPlan();
+    checkbox.addEventListener('change', updateSellingPlan);
   });
 </script>
