@@ -80,10 +80,12 @@
         "section_bg": "#ffffff",
         "button_bg": "#000000",
         "button_icon_bg": "#ffffff",
-        "padding_top_desktop": 80,
+        "padding_top_desktop": 140,
         "padding_bottom_desktop": 0,
-        "padding_top_mobile": 40,
-        "padding_bottom_mobile": 0
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 0,
+        "margin_top": -80,
+        "margin_top_mobile": -60
       }
     },
     "main": {

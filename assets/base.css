@@ -3884,3 +3884,13 @@ legend.shopify_subscriptions_app__title {
     display: block;
     height: 16px;
 }
+
+/* ==== header transparent on collection pages === */
+
+body.template--collection .color-scheme-1.gradient {
+    background: transparent;
+}
+
+body.template--collection .header:after {
+    background-color: #00000033;
+}
