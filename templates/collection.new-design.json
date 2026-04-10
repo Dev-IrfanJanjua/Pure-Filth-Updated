@@ -106,7 +106,11 @@
         "section_width": "max-w-page",
         "color_scheme": "",
         "spacing_top": "2",
-        "spacing_bottom": "2"
+        "spacing_bottom": "2",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
       }
     },
     "f8303da3-c3cb-4a90-a63a-7a628615aa6f": {

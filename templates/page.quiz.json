@@ -1,0 +1,90 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_banner_Vrcqhn": {
+      "type": "hero-banner",
+      "blocks": {
+        "slide_eYtRGQ": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme": "scheme-1",
+            "header_menu_text_color": "#ffffff",
+            "image": "shopify://shop_images/olly_PF_Smaller-web-new.jpg",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "enable_media_overlay_desktop": false,
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "enable_media_overlay_mobile": true,
+            "content_position_horizontal": "align-center text-center",
+            "content_position_vertical": "justify-end",
+            "heading": "",
+            "subheading": "",
+            "subheading_link": "",
+            "text": "",
+            "button_label_1": "",
+            "button_link_1": "/",
+            "button_style_1": "button--filled",
+            "button_label_2": "",
+            "button_link_2": "/",
+            "button_style_2": "button--outlined"
+          }
+        }
+      },
+      "block_order": [
+        "slide_eYtRGQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "slider_height": 85,
+        "slideshow_autoplay_interval": 6,
+        "show_slideshow_navigation": false,
+        "slideshow_navigation_position": "hero__swiper-buttons--left",
+        "color_scheme_arrows": "",
+        "show_slideshow_pagination": false,
+        "slideshow_pagination_style": "style-1",
+        "floating_bar": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "breadcrumbs": true,
+        "show_page_title": true,
+        "page_title_alignment": "text-center",
+        "info_title": "",
+        "info_content": "",
+        "section_width": "max-w-narrower",
+        "color_scheme": "",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
+      }
+    },
+    "custom_liquid_YAhJ3h": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.name",
+      "settings": {
+        "custom_liquid": "<div id=\"dF8yW5\"\n           data-quizLang=\"en\" ></div>\n<script data-qz-key=\"dF8yW5\" src=\"https://api.quizell.com/js/qzembed.js?v=25009\"></script>",
+        "section_width": "max-w-page",
+        "color_scheme": "",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
+      }
+    }
+  },
+  "order": [
+    "hero_banner_Vrcqhn",
+    "main",
+    "custom_liquid_YAhJ3h"
+  ]
+}

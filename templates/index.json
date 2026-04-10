@@ -426,7 +426,7 @@
         "title": "Not sure where to start? TAKE THE FILTH QUIZ.",
         "subtitle": "Answer a few quick questions to discover what suits you best. Get personalized recommendations tailored to your goals.",
         "button_text": "Start the Quiz",
-        "button_link": "shopify://collections/all",
+        "button_link": "shopify://pages/quiz",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "section_bg": "#ffffff",
         "button_bg": "#000000",
