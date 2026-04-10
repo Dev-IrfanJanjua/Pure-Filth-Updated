@@ -49,11 +49,11 @@
   endif
 -%}
 
-<div class="collection js-animation-fade-in color-{{ section.settings.color_scheme }} {{ settings.card_product_layout }}">
+<div class="collection js-animation-fade-in color-{{ section.settings.color_scheme }} {{ settings.card_product_layout }} {% if section.settings.cstm_tyle %} collection-{{ section.id }} {% endif %}" >
 
   {{ facets_html }}
 
-  <div class="container {{ section.settings.section_width }} {% if section.settings.cstm_tyle %} page-width {% endif %}  ">
+  <div class="container {{ section.settings.section_width }} {% if section.settings.cstm_tyle %} page-width {% endif %}">
     <div class="collection__inner">
       {% if section.settings.cstm_tyle %}
         <div class="collection__header custom-collection__header">
@@ -369,6 +369,45 @@
         }
       ],
       "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Top Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":80,
+      "label":"Padding Bottom Desktop"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Top Mobile"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min":0,
+      "max":200,
+      "step":4,
+      "default":40,
+      "label":"Padding Bottom Mobile"
     }
   ],
   "max_blocks": 5,
@@ -506,3 +545,22 @@
   ]
 }
 {% endschema %}
+
+
+{% style %}
+
+.collection-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_desktop }}px !important;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px !important;
+}
+
+@media screen and (max-width: 768px){
+
+.collection-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top_mobile }}px !important;
+  padding-bottom: {{ section.settings.padding_bottom_mobile }}px !important;
+}
+
+}
+
+{% endstyle %}
