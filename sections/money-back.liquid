@@ -302,7 +302,7 @@
 {% endstyle %}
 
 
-<section class="money-back-section section-{{ section.id }}">
+<section class="money-back-section section-{{ section.id }} fade-in-section">
     {% if section.settings.bg_image != blank %}
         <div class="money-back-abs-img">
             {{ section.settings.bg_image | image_url: width: 1600 | image_tag:

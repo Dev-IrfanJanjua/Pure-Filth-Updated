@@ -344,7 +344,7 @@ p.collection-card-bottom-subtitle {
   }
 {% endstyle %}
 
-<section class="collection-cards-section section-{{ section.id }}">
+<section class="collection-cards-section section-{{ section.id }} fade-in-section">
     {% if section.settings.sec_img != blank %}
         <div class="collection-cards-section-img">
             {{ section.settings.sec_img | image_url: width: 1600 | image_tag:

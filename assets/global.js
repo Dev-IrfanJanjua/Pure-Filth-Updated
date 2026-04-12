@@ -2555,3 +2555,35 @@ function formatPrice(moneyString, amount) {
   return newValue;
 }
 
+// ===== Fade in function for section fuction add in global.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+});
+
+
+// const loadCSS = (href) => {
+//   const link = document.createElement('link');
+//   link.rel = 'stylesheet';
+//   link.href = href;
+//   document.head.appendChild(link);
+// };
+
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach(e => {
+//     if (e.isIntersecting) {
+//       loadCSS('/cdn/shop/t/your-theme/assets/section.css');
+//       observer.disconnect();
+//     }
+//   });
+// });
+
+// observer.observe(document.querySelector('.fade-in-section'));

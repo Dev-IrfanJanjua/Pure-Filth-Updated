@@ -3894,3 +3894,16 @@ body.template--collection .color-scheme-1.gradient {
 body.template--collection .header:after {
     background-color: #00000033;
 }
+
+
+/* ==== Fade in on scrool for section style ==== */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

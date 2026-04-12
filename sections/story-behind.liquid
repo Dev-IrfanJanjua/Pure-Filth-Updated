@@ -259,7 +259,7 @@ span.story-behind-btn-text {
 {% endstyle %}
 
 
-<section class="story-behind-section section-{{ section.id }} {% if section.settings.pdp %} pdp-{{ section.id }} {% endif %}">
+<section class="fade-in-section section-{{ section.id }} {% if section.settings.pdp %} pdp-{{ section.id }} {% endif %}">
     {% if section.settings.abs_image != blank %}
         <div class="story-behind-abs_img">
             {{ section.settings.abs_image | image_url: width:1600 | image_tag }}
