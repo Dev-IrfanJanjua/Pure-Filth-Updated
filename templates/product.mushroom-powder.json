@@ -56,7 +56,12 @@
             "image3": "shopify://shop_images/icon.svg_-_2026-03-10T141012.534_1_cac868d6-789b-45ac-bcc5-cac70623c3bc.svg",
             "text3": "Morning clarity",
             "image4": "shopify://shop_images/icon.svg_-_2026-01-26T160747.431_1_df084ba1-2738-4823-81c5-ce88f1bd3821.svg",
-            "text4": "Energy"
+            "text4": "Energy",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": ""
           }
         },
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
@@ -126,6 +131,17 @@
             "text_color": "#000000",
             "bg_color": "#FFF9E5",
             "border_color": "#0000001F"
+          }
+        },
+        "icon_list_KgPWEM": {
+          "type": "icon_list",
+          "settings": {
+            "icon_1": "shopify://shop_images/Frame_2147242267_2.svg",
+            "icon_2": "shopify://shop_images/Frame_2147242268_2.svg",
+            "icon_3": "shopify://shop_images/Frame_2147242272_2.svg",
+            "icon_4": "shopify://shop_images/Frame_2147242274_1.svg",
+            "icon_5": "shopify://shop_images/Frame_2147242270_2.svg",
+            "icon_6": "shopify://shop_images/Frame_2147242673_1.svg"
           }
         },
         "content_tabs_fEGJi4": {
@@ -251,6 +267,7 @@
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
         "custom_feature_rB8z8F",
         "moneyback_qLqiaV",
+        "icon_list_KgPWEM",
         "content_tabs_fEGJi4",
         "description_qA3HqH",
         "content_block_idt6CB",
@@ -437,7 +454,7 @@
         "pdp": true,
         "abs_image": "shopify://shop_images/0st7MqmOLuNNmDy9SoFwE67dXmM_png.png",
         "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM.png_3.png",
-        "title": "Fuel Your Mind, Naturally",
+        "title": "<p>Fuel Your Mind, Naturally</p>",
         "description": "<p>Lion’s Mane is a functional mushroom known for supporting focus, mental clarity, and general brain health - without any stimulants.</p><p></p><ul><li>Contains hericenones and erinacines associated with brain support.</li><li>20:1 high ratio extract for potent benefits you can actually feel.</li><li>100% fruiting body extract (no grain-grown mycelium).</li><li>Dual extracted to capture the full spectrum of compounds.</li><li>Single ingredient formula. No fillers, flavourings or additives.</li></ul>",
         "list_icon": "shopify://shop_images/verify_4fb1713f-9459-42e1-8740-4abcd7aeffc0.svg",
         "button_text": "",
@@ -586,6 +603,7 @@
       "type": "money-back",
       "name": "Money Back Section",
       "settings": {
+        "title_first": false,
         "image": "shopify://shop_images/Group_1707479854.svg",
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
         "title": "30 day money back guarantee",
@@ -595,8 +613,8 @@
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "section_bg": "#ffffff",
         "Content_bg": "#FEC700",
-        "button_bg": "#ffffff",
-        "button_icon_bg": "#fec700",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
         "padding_top_desktop": 180,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 70,
@@ -745,6 +763,7 @@
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "button_bg": "#fec700",
         "button_icon_bg": "#ffffff",
+        "button_text": "#000000",
         "section_bg": "#ffffff",
         "cards_bg": "#faf7ed",
         "padding_top_desktop": 80,
@@ -838,6 +857,7 @@
       ],
       "name": "Testimonial Slider",
       "settings": {
+        "title_first": false,
         "section_bg": "",
         "card_bg": "#f8f6ef",
         "title": "Filthy Reviews",

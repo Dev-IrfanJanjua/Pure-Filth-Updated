@@ -357,6 +357,10 @@ div#product-media-gallery {
 
 /* ============ template colors stylling =========== */
 
+.template--product .pro_section_main_custom_class button.button.product-selector__submit{
+    color: #000;
+}
+
 .template--mushroom-powder .pro_section_main_custom_class label.swatch.swatch--square.is-active{
     background: #FAF7ED;
 }

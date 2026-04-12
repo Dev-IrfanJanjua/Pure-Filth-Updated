@@ -56,7 +56,12 @@
             "image3": "shopify://shop_images/icon.svg_-_2026-03-18T120241.826_1.svg",
             "text3": "Antioxidant rich",
             "image4": "shopify://shop_images/icon.svg_-_2026-03-18T120409.922_1.svg",
-            "text4": "Anti-inflammatory"
+            "text4": "Anti-inflammatory",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": ""
           }
         },
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
@@ -126,6 +131,17 @@
             "text_color": "#000000",
             "bg_color": "#E2F3FF",
             "border_color": "#0000001F"
+          }
+        },
+        "icon_list_NGd38t": {
+          "type": "icon_list",
+          "settings": {
+            "icon_1": "shopify://shop_images/Frame_2147242267_3.svg",
+            "icon_2": "shopify://shop_images/Frame_2147242268_3.svg",
+            "icon_3": "shopify://shop_images/Frame_2147242272_3.svg",
+            "icon_4": "shopify://shop_images/Frame_2147242274_2.svg",
+            "icon_5": "shopify://shop_images/Frame_2147242270_3.svg",
+            "icon_6": "shopify://shop_images/Frame_2147242673_2.svg"
           }
         },
         "content_tabs_fEGJi4": {
@@ -251,6 +267,7 @@
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
         "custom_feature_rB8z8F",
         "moneyback_We74c3",
+        "icon_list_NGd38t",
         "content_tabs_fEGJi4",
         "description_qA3HqH",
         "content_block_idt6CB",
@@ -593,11 +610,11 @@
         "text_color": "#000000",
         "button_text": "LEARN MORE",
         "button_link": "shopify://collections/all",
-        "button_icon": "shopify://shop_images/Frame_2147242027.svg",
+        "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",
         "section_bg": "#ffffff",
         "Content_bg": "#038BFF",
-        "button_bg": "#ffffff",
-        "button_icon_bg": "#038bff",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
         "padding_top_desktop": 180,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 70,
@@ -746,6 +763,7 @@
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "button_bg": "#038bff",
         "button_icon_bg": "#ffffff",
+        "button_text": "#000000",
         "section_bg": "#ffffff",
         "cards_bg": "#e2f3ff",
         "padding_top_desktop": 80,

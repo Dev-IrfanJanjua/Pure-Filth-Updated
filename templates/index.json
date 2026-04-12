@@ -236,7 +236,7 @@
         "button_icon_bg": "#ffffff",
         "section_bg": "#ffffff",
         "mobile_layout": "swiper",
-        "padding_top_desktop": 32,
+        "padding_top_desktop": 100,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 40,
         "padding_bottom_mobile": 40

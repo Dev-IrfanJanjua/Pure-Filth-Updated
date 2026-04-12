@@ -235,9 +235,9 @@
         "padding_top_mob": 40,
         "padding_bottom_mob": 20,
         "tiktok_icon": "shopify://shop_images/Social_Icons.svg",
-        "tiktok_link": "#",
+        "tiktok_link": "https://www.tiktok.com",
         "instagram_icon": "shopify://shop_images/Social_Icons_1.svg",
-        "instagram_link": "#"
+        "instagram_link": "https://www.instagram.com"
       }
     }
   },

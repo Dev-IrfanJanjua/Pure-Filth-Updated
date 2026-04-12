@@ -79,7 +79,7 @@
     line-height: 100%;
     letter-spacing: 0px;
     text-transform: uppercase;
-    color: {{ section.settings.button_icon_bg }};
+    color: {{ section.settings.button_text_color }};
 }
 
 .section-{{ section.id }} .money-back-title{
@@ -227,10 +227,6 @@
   }
 
 {% endif %}
-
-.template--product span.money-back-btn-text {
-    color: #000 !important;
-}
 
 /* Mobile */
 
@@ -467,6 +463,13 @@
       "id": "text_color",
       "label": "Text Color",
       "default": "#000"
+    },
+
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#fff"
     },
 
     {

@@ -732,22 +732,17 @@ document.addEventListener('DOMContentLoaded', function() {
 {%  style %}
 
 
-{% if template.name == 'product' %}
+{% comment %} {% if template.name == 'product' %}
   h2.footer-newsletter-content_title,
   p.footer-newsletter-content_subtitle,
   small.footer-newsletter-content_small{
     color: #fff;
   }
-{% endif %}
+{% endif %} {% endcomment %}
 
 /* ========= product Cahaga 2 ========= */
 
 {% if template.suffix == 'mushroom-powder' %}
-  h2.footer-newsletter-content_title,
-  p.footer-newsletter-content_subtitle,
-  small.footer-newsletter-content_small{
-    color: #000;
-  }
 
   button.cstm-newsletter-btn{
     background: #FEC700;
@@ -808,6 +803,12 @@ document.addEventListener('DOMContentLoaded', function() {
 {% if template.name == 'index' %}
   button.cstm-newsletter-btn{
     background: #FEC700;
+    color: #000;
+  }
+{% endif %}
+
+{% if template.name == 'product' %}
+  button.cstm-newsletter-btn{
     color: #000;
   }
 {% endif %}

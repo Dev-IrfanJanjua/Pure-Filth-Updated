@@ -56,7 +56,12 @@
             "image3": "shopify://shop_images/icon.svg_-_2026-03-18T121437.551_1.svg",
             "text3": "Balances Cortisol",
             "image4": "shopify://shop_images/icon.svg_-_2026-03-18T121810.629_1_f17cb824-ce05-45f3-95dc-20ea08640036.svg",
-            "text4": "Anxiety"
+            "text4": "Anxiety",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": ""
           }
         },
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
@@ -126,6 +131,17 @@
             "text_color": "#000000",
             "bg_color": "#F1EAFF",
             "border_color": "#0000001F"
+          }
+        },
+        "icon_list_QRRFFr": {
+          "type": "icon_list",
+          "settings": {
+            "icon_1": "shopify://shop_images/Frame_2147242272_5.svg",
+            "icon_2": "shopify://shop_images/Frame_2147242268_5.svg",
+            "icon_3": "shopify://shop_images/Frame_2147242272_6.svg",
+            "icon_4": "shopify://shop_images/Frame_2147242274_4.svg",
+            "icon_5": "shopify://shop_images/Frame_2147242270_5.svg",
+            "icon_6": "shopify://shop_images/Frame_2147242673_4.svg"
           }
         },
         "content_tabs_fEGJi4": {
@@ -251,6 +267,7 @@
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
         "custom_feature_rB8z8F",
         "moneyback_KMEd6F",
+        "icon_list_QRRFFr",
         "content_tabs_fEGJi4",
         "description_qA3HqH",
         "content_block_idt6CB",
@@ -591,13 +608,14 @@
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
+        "button_text_color": "#ffffff",
         "button_text": "LEARN MORE",
         "button_link": "shopify://collections/all",
-        "button_icon": "shopify://shop_images/Frame_2147242027.svg",
+        "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",
         "section_bg": "#ffffff",
         "Content_bg": "#7B65FF",
-        "button_bg": "#ffffff",
-        "button_icon_bg": "#7b65ff",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
         "padding_top_desktop": 180,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 70,
