@@ -186,7 +186,7 @@ span.reviews-card_name,
 
                     {% if section.settings.stars_image != blank %}
                     <div class="reviews-starts_img">
-                        {{ section.settings.stars_image | image_url: width:200 | image_tag }}
+                        {{ section.settings.stars_image | image_url: width:200 | image_tag: alt: "image" }}
                     </div>
                     {% endif %}
 
@@ -212,7 +212,7 @@ span.reviews-card_name,
 
                                 {% if block.settings.image != blank %}
                                 <div class="reviews-card_image">
-                                    {{ block.settings.image | image_url: width:600 | image_tag }}
+                                    {{ block.settings.image | image_url: width:600 | image_tag: alt: "image" }}
                                 </div>
                                 {% endif %}
 

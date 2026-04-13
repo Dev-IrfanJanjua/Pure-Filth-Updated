@@ -286,14 +286,14 @@ span.testimonial-reviews-title {
 
                 {% if block.settings.image != blank %}
                 <div class="testimonial-card-img">
-                  {{ block.settings.image | image_url: width: 1600 | image_tag }}
+                  {{ block.settings.image | image_url: width: 1600 | image_tag: alt: "image" }}
                 </div>
                 {% endif %}
 
                 <div class="testimonial-stars-img_wrapper">
                   {% if block.settings.stars != blank %}
                   <div class="testimonial-stars-img">
-                    {{ block.settings.stars | image_url: width: 1000 | image_tag }}
+                    {{ block.settings.stars | image_url: width: 1000 | image_tag: alt: "image" }}
                   </div>
                   {% endif %}
                   {% if block.settings.stars_title != blank %}

@@ -154,7 +154,7 @@
                 <div class="enjoy-slider-card_img">
 
                   {% if block.settings.image != blank %}
-                  {{ block.settings.image | image_url: width:1000 | image_tag }}
+                  {{ block.settings.image | image_url: width:1000 | image_tag: alt: "image" }}
                   {% endif %}
 
                   {% if block.settings.step != blank %}

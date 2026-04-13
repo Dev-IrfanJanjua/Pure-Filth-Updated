@@ -2557,45 +2557,29 @@ function formatPrice(moneyString, amount) {
 
 // ===== Fade in function for section fuction add in global.js
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(e => {
-//       if (e.isIntersecting) {
-//         e.target.classList.add('is-visible');
-//         observer.unobserve(e.target);
-//       }
-//     });
-//   }, { threshold: 0.12 });
-//   document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
-// });
-
-// ==== Fade in function for section for blocks and heading to fade in or fade up fuction add in global.js
-
 document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const el = entry.target;
 
+        // Assign index to children dynamically
+        const children = el.querySelectorAll(
+          '.fade-in-item, .fade-in-up, .fade-in-left'
+        );
+
+        children.forEach((child, index) => {
+          child.style.setProperty('--i', index);
+        });
+
         el.classList.add('is-visible');
-
-        // stagger only if it's a section
-        if (el.classList.contains('fade-in-section')) {
-          const children = el.querySelectorAll('.fade-in-item');
-
-          children.forEach((child, index) => {
-            setTimeout(() => {
-              child.classList.add('is-visible');
-            }, index * 400);
-          });
-        }
-
         observer.unobserve(el);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.2 });
 
-  document.querySelectorAll(
-    '.fade-in-section, .fade-in-item, .fade-in-up, .fade-in-left'
-  ).forEach(el => observer.observe(el));
+  document.querySelectorAll('.fade-in-section').forEach(el => {
+    observer.observe(el);
+  });
 });
+

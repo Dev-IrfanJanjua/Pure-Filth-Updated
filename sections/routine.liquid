@@ -281,7 +281,7 @@ h4.routine-blcok_head_title {
 
     {% if section.settings.abs_image != blank %}
     <div class="routine_abs_img">
-        {{ section.settings.abs_image | image_url: width:1600 | image_tag }}
+        {{ section.settings.abs_image | image_url: width:1600 | image_tag: alt: "image" }}
     </div>
     {% endif %}
 
@@ -317,7 +317,7 @@ h4.routine-blcok_head_title {
 
                     {% if block.settings.image != blank %}
                     <div class="routine-blcok_img">
-                        {{ block.settings.image | image_url: width:800 | image_tag }}
+                        {{ block.settings.image | image_url: width:800 | image_tag: alt: "image" }}
                     </div>
                     {% endif %}
 
@@ -349,7 +349,7 @@ h4.routine-blcok_head_title {
     
                                 {% if section.settings.button_icon != blank %}
                                 <div class="routine-block-btn-icon">
-                                    {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                                    {{ section.settings.button_icon | image_url: width:100 | image_tag: alt: "image" }}
                                 </div>
                                 {% endif %}
     

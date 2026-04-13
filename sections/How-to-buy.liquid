@@ -208,7 +208,7 @@ span.how-to-buy-block-btn-text {
 
     {% if section.settings.abs_image != blank %}
     <div class="how-to-buy_abs_img">
-        {{ section.settings.abs_image | image_url: width:1600 | image_tag }}
+        {{ section.settings.abs_image | image_url: width:1600 | image_tag: alt: "image" }}
     </div>
     {% endif %}
 
@@ -229,7 +229,7 @@ span.how-to-buy-block-btn-text {
 
                     {% if block.settings.image != blank %}
                     <div class="how-to-buy-blcok_img">
-                        {{ block.settings.image | image_url: width:800 | image_tag }}
+                        {{ block.settings.image | image_url: width:800 | image_tag: alt: "image" }}
                     </div>
                     {% endif %}
 
@@ -260,7 +260,7 @@ span.how-to-buy-block-btn-text {
 
                             {% if section.settings.button_icon != blank %}
                             <div class="how-to-buy-block-btn-icon">
-                                {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                                {{ section.settings.button_icon | image_url: width:100 | image_tag: alt: "image" }}
                             </div>
                             {% endif %}
 

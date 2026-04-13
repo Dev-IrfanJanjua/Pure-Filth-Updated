@@ -262,7 +262,7 @@ span.story-behind-btn-text {
 <section class="fade-in-section section-{{ section.id }} {% if section.settings.pdp %} pdp-{{ section.id }} {% endif %}">
     {% if section.settings.abs_image != blank %}
         <div class="story-behind-abs_img">
-            {{ section.settings.abs_image | image_url: width:1600 | image_tag }}
+            {{ section.settings.abs_image | image_url: width:1600 | image_tag: alt: "image" }}
         </div>
     {% endif %}
     <div class="page-width">
@@ -270,7 +270,7 @@ span.story-behind-btn-text {
 
             {% if section.settings.image != blank %}
             <div class="story-behind-image">
-                {{ section.settings.image | image_url: width:1600 | image_tag }}
+                {{ section.settings.image | image_url: width:1600 | image_tag: alt: "image" }}
             </div>
             {% endif %}
 
@@ -297,7 +297,7 @@ span.story-behind-btn-text {
     
                         {% if section.settings.button_icon != blank %}
                         <div class="story-behind-btn-icon">
-                            {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                            {{ section.settings.button_icon | image_url: width:100 | image_tag: alt: "image" }}
                         </div>
                         {% endif %}
                     </a>

@@ -460,7 +460,7 @@ p.special-content_image-subtitle {
 <section class="special-section section-{{ section.id }}">
   <div class="special-section-bg_image">
     {% if section.settings.bg_desktop != blank %}
-      {{ section.settings.bg_desktop | image_url: width: 2000 | image_tag }}
+      {{ section.settings.bg_desktop | image_url: width: 2000 | image_tag: alt: "image" }}
     {% endif %}
   </div>
 
@@ -479,7 +479,7 @@ p.special-content_image-subtitle {
                   <div class="special-card-top-head">
                     {% if block.settings.head_icon != blank %}
                       <div class="special-card-top-head_icon">
-                        {{ block.settings.head_icon | image_url: width: 100 | image_tag }}
+                        {{ block.settings.head_icon | image_url: width: 100 | image_tag: alt: "image" }}
                       </div>
                     {% endif %}
 
@@ -496,7 +496,7 @@ p.special-content_image-subtitle {
                       {% if text != blank %}
                         <li class="special-card-top-list-item">
                           <span class="special-card-top-list-item_icon">
-                            {{ block.settings.list_icon | image_url: width: 60 | image_tag }}
+                            {{ block.settings.list_icon | image_url: width: 60 | image_tag: alt: "image" }}
                           </span>
 
                           <span class="special-card-top-list-item_text">
@@ -510,7 +510,7 @@ p.special-content_image-subtitle {
 
                 {% if block.settings.image != blank %}
                   <div class="special-card-top-image">
-                    {{ block.settings.image | image_url: width: 800 | image_tag }}
+                    {{ block.settings.image | image_url: width: 800 | image_tag: alt: "image" }}
                   </div>
                 {% endif %}
               </div>
@@ -520,7 +520,7 @@ p.special-content_image-subtitle {
               <div class="special-card-bottom" {{ block.shopify_attributes }}>
                 {% if block.settings.image != blank %}
                   <div class="special-card-bottom_image">
-                    {{ block.settings.image | image_url: width: 800 | image_tag }}
+                    {{ block.settings.image | image_url: width: 800 | image_tag: alt: "image" }}
                   </div>
                 {% endif %}
 
@@ -540,7 +540,7 @@ p.special-content_image-subtitle {
                       {% if text != blank %}
                         <li class="special-card-bottom_list-item">
                           <span class="special-card-bottom_list-icon">
-                            {{ icon | image_url: width: 60 | image_tag }}
+                            {{ icon | image_url: width: 60 | image_tag: alt: "image" }}
                           </span>
 
                           <span class="special-card-bottom-_list-text">
@@ -568,14 +568,14 @@ p.special-content_image-subtitle {
 
         <div class="special-content-image">
           {% if section.settings.main_image != blank %}
-            {{ section.settings.main_image | image_url: width: 1600 | image_tag }}
+            {{ section.settings.main_image | image_url: width: 1600 | image_tag: alt: "image" }}
           {% endif %}
 
           {% if section.settings.overlay_icon != blank or section.settings.overlay_title != blank %}
             <div class="special-content_image-content">
               {% if section.settings.overlay_icon != blank %}
                 <div class="special-content_image_icon">
-                  {{ section.settings.overlay_icon | image_url: width: 100 | image_tag }}
+                  {{ section.settings.overlay_icon | image_url: width: 100 | image_tag: alt: "image" }}
                 </div>
               {% endif %}
   

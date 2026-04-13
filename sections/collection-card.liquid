@@ -370,16 +370,16 @@ p.collection-card-bottom-subtitle {
         {% assign collection = collections[block.settings.collection] %}
 
         <div class="collection-card fade-in-item" style="background: {{ block.settings.card_bg }}">
-          <a href="{{ collection.url }}" class="collection-card-link"></a>
+          <a href="{{ block.settings.card_link }}" class="collection-card-link"></a>
           {% if block.settings.tag != blank %}
             <span class="collection-card-tag">{{ block.settings.tag }}</span>
           {% endif %}
 
           <div class="collection-card_img">
             {% if block.settings.custom_image != blank %}
-              {{ block.settings.custom_image | image_url: width: 1000 | image_tag }}
+              {{ block.settings.custom_image | image_url: width: 1000 | image_tag: alt: "image" }}
             {% elsif collection.featured_image != blank %}
-              {{ collection.featured_image | image_url: width: 1000 | image_tag }}
+              {{ collection.featured_image | image_url: width: 1000 | image_tag: alt: "image" }}
             {% endif %}
           </div>
 
@@ -400,7 +400,7 @@ p.collection-card-bottom-subtitle {
 
             <a href="{{ collection.url }}" class="collection-card-btn">
               {% if section.settings.card_icon != blank %}
-                {{ section.settings.card_icon | image_url: width: 50 | image_tag }}
+                {{ section.settings.card_icon | image_url: width: 50 | image_tag: alt: "image" }}
               {% endif %}
             </a>
           </div>
@@ -425,9 +425,9 @@ p.collection-card-bottom-subtitle {
 
             <div class="collection-card_img">
               {% if block.settings.custom_image != blank %}
-                {{ block.settings.custom_image | image_url: width: 600 | image_tag }}
+                {{ block.settings.custom_image | image_url: width: 600 | image_tag: alt: "image" }}
               {% elsif collection.featured_image != blank %}
-                {{ collection.featured_image | image_url: width: 600 | image_tag }}
+                {{ collection.featured_image | image_url: width: 600 | image_tag: alt: "image" }}
               {% endif %}
             </div>
 
@@ -448,7 +448,7 @@ p.collection-card-bottom-subtitle {
 
               <a href="{{ collection.url }}" class="collection-card-btn">
                 {% if section.settings.card_icon != blank %}
-                  {{ section.settings.card_icon | image_url: width: 50 | image_tag }}
+                  {{ section.settings.card_icon | image_url: width: 50 | image_tag: alt: "image" }}
                 {% endif %}
               </a>
             </div>
@@ -477,9 +477,9 @@ p.collection-card-bottom-subtitle {
       
                       <div class="collection-card_img">
                         {% if block.settings.custom_image != blank %}
-                          {{ block.settings.custom_image | image_url: width: 1000 | image_tag }}
+                          {{ block.settings.custom_image | image_url: width: 1000 | image_tag: alt: "image" }}
                         {% elsif collection.featured_image != blank %}
-                          {{ collection.featured_image | image_url: width: 1000 | image_tag }}
+                          {{ collection.featured_image | image_url: width: 1000 | image_tag: alt: "image" }}
                         {% endif %}
                       </div>
       
@@ -500,7 +500,7 @@ p.collection-card-bottom-subtitle {
       
                         <a href="{{ collection.url }}" class="collection-card-btn">
                           {% if section.settings.card_icon != blank %}
-                            {{ section.settings.card_icon | image_url: width: 50 | image_tag }}
+                            {{ section.settings.card_icon | image_url: width: 50 | image_tag: alt: "image" }}
                           {% endif %}
                         </a>
                       </div>
@@ -520,7 +520,7 @@ p.collection-card-bottom-subtitle {
 
           {% if section.settings.button_icon != blank %}
             <span class="collection-main-btn-icon">
-              {{ section.settings.button_icon | image_url: width: 50 | image_tag }}
+              {{ section.settings.button_icon | image_url: width: 50 | image_tag: alt: "image" }}
             </span>
           {% endif %}
         </a>
@@ -663,6 +663,11 @@ p.collection-card-bottom-subtitle {
           "type": "collection",
           "id": "collection",
           "label": "Collection"
+        },
+        {
+          "type": "url",
+          "id": "card_link",
+          "label": "Card Link"
         },
         {
           "type": "text",

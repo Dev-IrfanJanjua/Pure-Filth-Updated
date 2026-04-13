@@ -314,7 +314,7 @@
 
             {% if block.settings.icon != blank %}
             <div class="benefit-block-icon">
-              {{ block.settings.icon | image_url: width:200 | image_tag }}
+              {{ block.settings.icon | image_url: width:200 | image_tag: alt: "image" }}
             </div>
             {% endif %}
 
@@ -345,7 +345,7 @@
 
           {% if section.settings.button_icon != blank %}
           <div class="benefits-btn-icon">
-            {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+            {{ section.settings.button_icon | image_url: width:100 | image_tag: alt: "image" }}
           </div>
           {% endif %}
 
@@ -357,7 +357,7 @@
 
       {% if section.settings.image != blank %}
       <div class="benefits-image">
-        {{ section.settings.image | image_url: width:1600 | image_tag }}
+        {{ section.settings.image | image_url: width:1600 | image_tag: alt: "image" }}
       </div>
       {% endif %}
 

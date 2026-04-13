@@ -256,7 +256,7 @@ span.vs-video-card_abs-text {
         <div class="vide-slider-ratings">
             {% if section.settings.stars_image != blank %}
             <div class="vide-slider-starts_img">
-                {{ section.settings.stars_image | image_url: width:200 | image_tag }}
+                {{ section.settings.stars_image | image_url: width:200 | image_tag: alt: "image" }}
             </div>
             {% endif %}
             {% if section.settings.rating_text != blank %}

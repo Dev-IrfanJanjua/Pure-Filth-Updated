@@ -426,7 +426,7 @@ small.footer-newsletter-content_small {
 
         {% if section.settings.newsletter_image != blank %}
           <div class="footer-newsletter-image">
-            {{ section.settings.newsletter_image | image_url: width: 600 | image_tag }}
+            {{ section.settings.newsletter_image | image_url: width: 600 | image_tag: alt: "image" }}
           </div>
         {% endif %}
       </div>
@@ -484,7 +484,7 @@ small.footer-newsletter-content_small {
           {% comment %} BIG LOGO FOOTER {% endcomment %}
           {% if section.settings.footer_logo != blank %}
             <a href="/" class="footer-large-logo">
-              {{ section.settings.footer_logo | image_url: width: 1400 | image_tag }}
+              {{ section.settings.footer_logo | image_url: width: 1400 | image_tag: alt: "image" }}
             </a>
           {% endif %}
         </div>
@@ -810,6 +810,30 @@ document.addEventListener('DOMContentLoaded', function() {
 {% if template.name == 'product' %}
   button.cstm-newsletter-btn{
     color: #000;
+  }
+{% endif %}
+
+{% if template.suffix == 'multipack' %}
+  button.cstm-newsletter-btn{
+    color: #fff ;
+  }
+{% endif %}
+
+{% if template.suffix == 'bundle' %}
+  button.cstm-newsletter-btn{
+    color: #fff ;
+  }
+{% endif %}
+
+{% if template.suffix == 'afternoon' %}
+  button.cstm-newsletter-btn{
+    color: #fff ;
+  }
+{% endif %}
+
+{% if template.suffix == 'evening' %}
+  button.cstm-newsletter-btn{
+    color: #fff ;
   }
 {% endif %}
 

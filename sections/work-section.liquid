@@ -207,7 +207,7 @@ h3.work-card-title {
 
                     {% if block.settings.card_icon != blank %}
                     <div class="work-card_img">
-                        {{ block.settings.card_icon | image_url: width:500 | image_tag }}
+                        {{ block.settings.card_icon | image_url: width:500 | image_tag: alt: "image" }}
                     </div>
                     {% endif %}
 
@@ -227,7 +227,7 @@ h3.work-card-title {
                             </span>
                             {% if section.settings.button_icon != blank %}
                             <div class="work-card-btn-icon">
-                                {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                                {{ section.settings.button_icon | image_url: width:100 | image_tag: alt: "image" }}
                             </div>
                             {% endif %}
                         </a>
@@ -247,7 +247,7 @@ h3.work-card-title {
 
                 {% if section.settings.button_icon != blank %}
                 <div class="work-card-btn-icon">
-                    {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                    {{ section.settings.button_icon | image_url: width:100 | image_tag: alt: "image" }}
                 </div>
                 {% endif %}
             </a>

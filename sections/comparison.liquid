@@ -240,7 +240,7 @@ span.comparison-cell_inner-text {
 
           <div class="comparison-head-brand comparison-logo">
             {% if section.settings.brand_logo != blank %}
-              {{ section.settings.brand_logo | image_url: width: 200 | image_tag }}
+              {{ section.settings.brand_logo | image_url: width: 200 | image_tag: alt: "image" }}
             {% else %}
               {{ section.settings.col_2 }}
             {% endif %}

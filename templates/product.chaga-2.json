@@ -91,7 +91,7 @@
           "settings": {
             "headline": "Most popular: Get 20% off",
             "headline_bg_color": "#038BFF",
-            "headline_text_color": "#ffffff",
+            "headline_text_color": "#000000",
             "bg_color": "#E2F3FF",
             "icon_color": "#038bff",
             "spacing_bottom": "1",
@@ -455,7 +455,7 @@
         "abs_image": "shopify://shop_images/0st7MqmOLuNNmDy9SoFwE67dXmM.png_1.png",
         "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM.png_1_25677c10-e7c3-4a0b-94c6-3b33fb76d4cf.png",
         "title": "<p>DEFEND YOUR <br/>BODY, NATURALLY</p>",
-        "description": "<p>Chaga is naturally rich in antioxidants that help support immune health while protecting the body from oxidative stress. </p><p></p><ul><li>One teaspoon of Chaga has the same amount of antioxidants as 600 blueberries.</li><li>15:1 high ratio extract for potent benefits you can actually feel</li><li>100% fruiting body extract (no grain-grown mycelium)</li><li>Dual extracted to capture the full spectrum of compounds</li><li>Single ingredient formula. No fillers, flavorings or additives.</li></ul>",
+        "description": "<p>Chaga is naturally rich in antioxidants that help support immune health while protecting the body from oxidative stress. </p><p></p><ul><li>One teaspoon of Chaga delivers antioxidants comparable to around 600 blueberries.</li><li>Rich in polyphenols and beta-glucans associated with immune support.</li><li>Helps protect cells from oxidative stress and environmental damage.</li><li>Traditionally used to support resilience and long-term wellbeing.</li></ul>",
         "list_icon": "shopify://shop_images/verify_4fb1713f-9459-42e1-8740-4abcd7aeffc0.svg",
         "button_text": "",
         "button_link": "shopify://collections/all",
@@ -525,7 +525,7 @@
           "settings": {
             "bg_color": "#ffffff",
             "simple_title": "15:1 HIGH-POTENCY EXTRACT",
-            "simple_desc": "<p>Delivers significantly more active compounds than standard mushroom powders (usually 6:1).</p>"
+            "simple_desc": "<p>Many mushroom supplements use low-strength powders. Our 15:1 extract concentrates far more active compounds into every serving.</p>"
           }
         },
         "simple_card_UNnWaW": {
@@ -533,7 +533,7 @@
           "settings": {
             "bg_color": "#ffffff",
             "simple_title": "FRUITING BODY ONLY",
-            "simple_desc": "<p>No grain-grown mycelium. Only the part of the mushroom that contains the highest levels of active compounds.</p>"
+            "simple_desc": "<p>Many supplements use grain-grown mycelium, which contains less of the beneficial compounds found in mushrooms. Pure Filth uses only the fruiting body, the part richest in bioactive compounds.</p>"
           }
         },
         "simple_card_f6xAQg": {
@@ -541,7 +541,7 @@
           "settings": {
             "bg_color": "#ffffff",
             "simple_title": "DUAL EXTRACTION",
-            "simple_desc": "<p>Water and alcohol extraction ensures the full spectrum of beneficial compounds is available.</p>"
+            "simple_desc": "<p>Some mushroom powders rely on simple grinding. We use dual extraction (water + alcohol), which unlocks the full spectrum of bioactive compounds.</p>"
           }
         },
         "top_card_8bnhGk": {
@@ -604,10 +604,11 @@
       "name": "Money Back Section",
       "settings": {
         "title_first": true,
-        "image": "shopify://shop_images/Group_1707479854.svg",
+        "image": "shopify://shop_images/Section_badge.svg",
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
+        "button_text_color": "#ffffff",
         "button_text": "LEARN MORE",
         "button_link": "shopify://collections/all",
         "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",

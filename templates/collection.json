@@ -11,6 +11,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "collection_description": true,
         "text_truncate": 3,
@@ -26,22 +27,90 @@
         "spacing_bottom": "0"
       }
     },
+    "collection_banner_TnyeLg": {
+      "type": "collection-banner",
+      "name": "Collection Banner",
+      "settings": {
+        "subcription": false,
+        "bg_image": "shopify://shop_images/Frame_2147228309.png",
+        "bg_image_mob": "shopify://shop_images/Banner_2_45ba763f-97c9-46f5-aa05-4734e7852d7d.png",
+        "image": "shopify://shop_images/Frame_2147242212_1.png",
+        "title_tag": "",
+        "title": "All Filthy Products",
+        "subtitle": "EXPLORE THE FILTHY COLLECTION",
+        "desc": "",
+        "button_text": "",
+        "button_link": "",
+        "section_bg": "#ffffff",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 140,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 0,
+        "margin_top": -80,
+        "margin_top_mobile": -60
+      }
+    },
     "main": {
       "type": "main-collection",
+      "blocks": {
+        "tabs_3RKbxd": {
+          "type": "tabs",
+          "settings": {
+            "text": "All PRODUCTS",
+            "link": "shopify://collections/all"
+          }
+        },
+        "tabs_iV6n9t": {
+          "type": "tabs",
+          "settings": {
+            "text": "Bundles",
+            "link": "shopify://collections/all-filthy-products"
+          }
+        },
+        "tabs_HHWynJ": {
+          "type": "tabs",
+          "settings": {
+            "text": "Single Powders",
+            "link": "shopify://collections/powders"
+          }
+        },
+        "tabs_8Np78h": {
+          "type": "tabs",
+          "settings": {
+            "text": "Multipacks",
+            "link": "shopify://collections/multipacks"
+          }
+        }
+      },
+      "block_order": [
+        "tabs_3RKbxd",
+        "tabs_iV6n9t",
+        "tabs_HHWynJ",
+        "tabs_8Np78h"
+      ],
       "settings": {
-        "enable_products_count": true,
+        "cstm_tyle": true,
+        "custom_heading": "",
+        "toggle_text": "Subscribe + Save Up To 20%",
+        "enable_products_count": false,
         "enable_sorting": false,
         "enable_filters": false,
         "enable_opened_accordions": false,
         "filters_shape": "rounded",
         "products_per_row": "3",
-        "products_per_row_mobile": "2",
+        "products_per_row_mobile": "1",
         "products_per_page": 12,
         "pagination_style": "default",
         "section_width": "max-w-page",
         "color_scheme": "",
         "spacing_top": "2",
-        "spacing_bottom": "2"
+        "spacing_bottom": "2",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
       }
     },
     "f8303da3-c3cb-4a90-a63a-7a628615aa6f": {
@@ -62,6 +131,7 @@
   },
   "order": [
     "banner",
+    "collection_banner_TnyeLg",
     "main",
     "f8303da3-c3cb-4a90-a63a-7a628615aa6f"
   ]

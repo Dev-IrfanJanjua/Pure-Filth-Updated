@@ -180,7 +180,7 @@
             <div class="cs_pro_custom_rev_img">
               <img src="{{ product.metafields.custom.reviews_stars | image_url }}" width="100%" height="auto" loading="egar">
             </div>
-            <div class="cs_pro_custom_rev_text">{{ product.metafields.custom.reviews_text }}</div>
+            <div class="cs_pro_custom_rev_text"> <span class="cs_pro_custom_rev_text_rat">{{ product.metafields.custom.reviews_rating }}</span> <span class="cs_pro_custom_rev_text_text">{{ product.metafields.custom.reviews_text }}</span></div>
           </div>
           {%- when 'custom-richtext' -%}
             <div class="cs_pro_custom_richtext">{{  block.settings.rich-text }}</div>

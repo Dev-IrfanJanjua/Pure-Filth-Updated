@@ -338,14 +338,14 @@ span.subscribe-toggle__text {
     color: #454545;
 }
 
-/* label.collection-subscribe-toggle input:checked + .subscribe-toggle__switch {
-  background: #C3FFDE;
-} */
+label.collection-subscribe-toggle input:checked + .subscribe-toggle__switch {
+  background: #00000055;
+} 
 
 label.collection-subscribe-toggle input:checked + .subscribe-toggle__switch .subscribe-toggle__dot {
   right: 5px;
   left: auto;
-  /* background: #049849; */
+  background: #000
 }
 
 .collection-card__varients_none {

@@ -12,7 +12,7 @@
     max-width: 100%;
     width: 100%;
     border-radius: 24px;
-    padding: 140px 60px 60px;
+    padding: 160px 60px 60px;
     border: 1px solid #E6E6E6;
     position: relative;
 }
@@ -340,7 +340,7 @@
 
             {% if section.settings.image != blank %}
             <div class="money-back-wrapper-img">
-                {{ section.settings.image | image_url: width: 1600 | image_tag }}
+                {{ section.settings.image | image_url: width: 1600 | image_tag: alt: "image" }}
             </div>
             {% endif %}
 
@@ -366,7 +366,7 @@
 
                         {% if block.settings.icon != blank %}
                         <div class="benefit-block-icon">
-                          {{ block.settings.icon | image_url: width:200 | image_tag }}
+                          {{ block.settings.icon | image_url: width:200 | image_tag: alt: "image" }}
                         </div>
                         {% endif %}
 
@@ -397,7 +397,7 @@
     
                         {% if section.settings.button_icon != blank %}
                         <div class="money-back-btn-icon">
-                            {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                            {{ section.settings.button_icon | image_url: width:100 | image_tag: alt: "image" }}
                         </div>
                         {% endif %}
     

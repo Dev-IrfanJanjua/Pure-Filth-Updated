@@ -266,7 +266,7 @@ p.run-out-subtitle {
 
                         {% if block.settings.icon != blank %}
                         <div class="run-out-block-icon">
-                            {{ block.settings.icon | image_url: width:100 | image_tag }}
+                            {{ block.settings.icon | image_url: width:100 | image_tag: alt: "image" }}
                         </div>
                         {% endif %}
 
@@ -292,7 +292,7 @@ p.run-out-subtitle {
 
                     {% if section.settings.button_icon != blank %}
                     <div class="run-out-btn-icon">
-                        {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                        {{ section.settings.button_icon | image_url: width:100 | image_tag: alt: "image" }}
                     </div>
                     {% endif %}
 
@@ -305,10 +305,10 @@ p.run-out-subtitle {
             {% if section.settings.image != blank or section.settings.image_mob != blank %}
             <div class="run-out-image">
                 {% if section.settings.image != blank %}
-                    {{ section.settings.image | image_url: width:1600 | image_tag: class: 'run-out-image_desk' }}
+                    {{ section.settings.image | image_url: width:1600 | image_tag: class: 'run-out-image_desk', alt: "image" }}
                 {% endif %}
                 {% if section.settings.image_mob != blank %}
-                    {{ section.settings.image_mob | image_url: width:1600 | image_tag: class: 'run-out-image_mob', style : 'display: none;' }}
+                    {{ section.settings.image_mob | image_url: width:1600 | image_tag: class: 'run-out-image_mob', style : 'display: none;', alt: "image" }}
                 {% endif %}
             </div>
             {% endif %}

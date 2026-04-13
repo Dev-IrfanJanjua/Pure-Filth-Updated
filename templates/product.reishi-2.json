@@ -454,8 +454,8 @@
         "pdp": true,
         "abs_image": "shopify://shop_images/0st7MqmOLuNNmDy9SoFwE67dXmM.png_1.png",
         "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM.png_3_ea475369-7c29-4d0e-9822-ab6af89e5e32.png",
-        "title": "<p>Calm your body, Naturally.</p>",
-        "description": "<p>Reishi is one of the most respected mushrooms for relaxation and stress support.</p><p></p><ul><li>Rich in triterpenes and beta-glucans, Reishi helps the body adapt to stress.</li><li>15:1 high ratio extract for potent benefits you can actually feel.</li><li>100% fruiting body extract (no grain-grown mycelium).</li><li>Dual extracted to capture the full spectrum of compounds.</li><li>Single ingredient formula. No fillers, flavorings or additives.</li></ul>",
+        "title": "<p>Calm your body, <br/>Naturally.</p>",
+        "description": "<p>Reishi is one of the most respected mushrooms for relaxation and stress support.</p><ul><li>Naturally rich in triterpenes and beta-glucans associated with stress support.</li><li>Helps the body adapt to physical and mental stress.</li><li>Supports balanced cortisol levels and a calmer nervous system.</li><li>Traditionally used to promote relaxation and deeper sleep.</li></ul>",
         "list_icon": "shopify://shop_images/verify_4fb1713f-9459-42e1-8740-4abcd7aeffc0.svg",
         "button_text": "",
         "button_link": "shopify://collections/all",
@@ -525,7 +525,7 @@
           "settings": {
             "bg_color": "#ffffff",
             "simple_title": "15:1 HIGH-POTENCY EXTRACT",
-            "simple_desc": "<p>Delivers significantly more active compounds than standard mushroom powders (usually 6:1).</p>"
+            "simple_desc": "<p>Many mushroom supplements use low-strength powders. Our 15:1 extract concentrates far more active compounds into every serving.</p>"
           }
         },
         "simple_card_UNnWaW": {
@@ -533,7 +533,7 @@
           "settings": {
             "bg_color": "#ffffff",
             "simple_title": "FRUITING BODY ONLY",
-            "simple_desc": "<p>No grain-grown mycelium. Only the part of the mushroom that contains the highest levels of active compounds.</p>"
+            "simple_desc": "<p>Many supplements use grain-grown mycelium, which contains less of the beneficial compounds found in mushrooms. Pure Filth uses only the fruiting body, the part richest in bioactive compounds.</p>"
           }
         },
         "simple_card_f6xAQg": {
@@ -541,7 +541,7 @@
           "settings": {
             "bg_color": "#ffffff",
             "simple_title": "DUAL EXTRACTION",
-            "simple_desc": "<p>Water and alcohol extraction ensures the full spectrum of beneficial compounds is available.</p>"
+            "simple_desc": "<p>Some mushroom powders rely on simple grinding. We use dual extraction (water + alcohol), which unlocks the full spectrum of bioactive compounds.</p>"
           }
         },
         "top_card_8bnhGk": {
@@ -604,7 +604,7 @@
       "name": "Money Back Section",
       "settings": {
         "title_first": true,
-        "image": "shopify://shop_images/Group_1707479854.svg",
+        "image": "shopify://shop_images/Section_badge.svg",
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
         "title": "30 day money back guarantee",
         "text_color": "#000000",

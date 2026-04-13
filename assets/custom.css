@@ -67,13 +67,22 @@ background: #FAF7ED;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.32px;
+    text-underline-position: from-font;
+}
+
+.cs_pro_custom_rev_text_text{
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: auto;
     text-decoration-thickness: auto;
     text-underline-offset: auto;
-    text-underline-position: from-font;
 }
+
+.cs_pro_custom_rev_text_rat{
+    font-weight: 700;
+    margin-right: 5px;
+}
+
 .cs_pro_custom_richtext p{
     margin: 0;
     color: #000;
@@ -206,11 +215,10 @@ background: #FAF7ED;
     font-weight: 700;
     font-style: Bold;
     font-size: 20px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
 }
 
 .pro_section_main_custom_class span.swatch-variant-tag {
@@ -272,11 +280,14 @@ background: #FAF7ED;
     display: flex;
     gap: 40px !important;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .pro_section_main_custom_class .product-grid__item.product-grid__item--media {
     max-width: 54%;
     width: 100%;
+    position: sticky;
+    top: 10px;
 }
 
 .pro_section_main_custom_class .product-grid__item.product-grid__item--content {
@@ -302,6 +313,7 @@ background: #FAF7ED;
 
 .pro_section_main_custom_class .product-grid__item.product-grid__item--media {
     max-width: 100%;
+    position: static;
 }
 
 .pro_section_main_custom_class .product-grid__item.product-grid__item--content {
@@ -357,9 +369,9 @@ div#product-media-gallery {
 
 /* ============ template colors stylling =========== */
 
-.template--product .pro_section_main_custom_class button.button.product-selector__submit{
+/* .template--product .pro_section_main_custom_class button.button.product-selector__submit{
     color: #000;
-}
+} */
 
 .template--mushroom-powder .pro_section_main_custom_class label.swatch.swatch--square.is-active{
     background: #FAF7ED;
@@ -376,6 +388,7 @@ div#product-media-gallery {
 
 .template--cordyceps-2 .pro_section_main_custom_class button.button.product-selector__submit{
     background: #D52626 !important;
+    color: #000;
 }
 
 .template--chaga-2 .pro_section_main_custom_class label.swatch.swatch--square.is-active{
@@ -384,6 +397,7 @@ div#product-media-gallery {
 
 .template--chaga-2 .pro_section_main_custom_class button.button.product-selector__submit{
     background: #038BFF !important;
+    color: #000;
 }
 
 .template--turkey-2 .pro_section_main_custom_class label.swatch.swatch--square.is-active{
@@ -392,6 +406,7 @@ div#product-media-gallery {
 
 .template--turkey-2 .pro_section_main_custom_class button.button.product-selector__submit{
     background: #00B453 !important;
+    color: #000;
 }
 
 .template--tremella-2 .pro_section_main_custom_class label.swatch.swatch--square.is-active{
@@ -402,9 +417,12 @@ div#product-media-gallery {
     background: #ED87D0 !important;
 }
 
+.template--evening .pro_section_main_custom_class button.button.product-selector__submit,
+.template--afternoon .pro_section_main_custom_class button.button.product-selector__submit,
 .template--multipack .pro_section_main_custom_class button.button.product-selector__submit,
 .template--bundle .pro_section_main_custom_class button.button.product-selector__submit{
     background: #000 !important;
+    color: #fff;
 }
 
 /* =========== sticky add to cart ===========  */

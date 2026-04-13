@@ -31,7 +31,7 @@
         "custom_richtext_a9Tp7h": {
           "type": "custom-richtext",
           "settings": {
-            "rich-text": "<p>Cordyceps is a functional mushroom known for supporting natural energy, stamina, and physical performance. Whether you need a afternoon energy boost or a natural pre-workout, Cordyceps has got you.</p>"
+            "rich-text": "<p>Chaga + cordyceps</p>"
           }
         },
         "custom_list_JjVr6n": {
@@ -39,26 +39,28 @@
           "settings": {
             "list_icon": "shopify://shop_images/verify_2.svg",
             "list_item_1": "100% Fruiting body extract",
-            "list_item_2": "Sugar & caffeine free",
-            "list_item_3": "Third-party tested",
-            "list_item_4": "Organic and Halal",
-            "list_item_5": ""
+            "list_item_2": "SINGLE INGREDIENT FORMULA",
+            "list_item_3": "Sugar & caffeine free",
+            "list_item_4": "Third-party tested",
+            "list_item_5": "Organic and Halal"
           }
         },
         "custom_icon_text_phnHQx": {
           "type": "custom-icon-text",
           "settings": {
-            "bg_clr": "#FFEEEE",
-            "image1": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_5b78b3a9-7526-4164-905d-c122a6171b08.svg",
-            "text1": "Fast acting (45 mins)",
-            "image2": "shopify://shop_images/icon.svg_-_2026-03-18T115211.557_1_a6d0f11d-cf1d-4ec7-948b-f0f4658e43f9.svg",
-            "text2": "Pre-workout use",
-            "image3": "shopify://shop_images/icon.svg_-_2026-01-26T160747.431_1_df084ba1-2738-4823-81c5-ce88f1bd3821.svg",
-            "text3": "Energy boost",
-            "image4": "shopify://shop_images/icon.svg_-_2026-03-18T115710.504_1_6a937084-a937-47fb-8f77-8b76115a84b3.svg",
-            "text4": "ATP production",
-            "text5": "",
-            "text6": "",
+            "bg_clr": "#F8F6EF",
+            "image1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_e204b097-c6af-491f-a6ee-aed540393089.svg",
+            "text1": "Daily Maintenance",
+            "image2": "shopify://shop_images/icon.svg_-_2026-01-26T160747.431_1_1.svg",
+            "text2": "Energy boost",
+            "image3": "shopify://shop_images/Group.svg",
+            "text3": "Pre-workout use",
+            "image4": "shopify://shop_images/Group_2_384486a3-254d-48bb-8ca1-fc89e27474f9.svg",
+            "text4": "Antioxidant rich",
+            "image5": "shopify://shop_images/x33_6_Atp_Molecule.svg",
+            "text5": "ATP production",
+            "image6": "shopify://shop_images/icon.svg_-_2026-03-18T120409.922_1_e360adb3-672c-480f-991b-fc0a4681d654.svg",
+            "text6": "Anti-inflammatory",
             "text7": "",
             "text8": "",
             "text9": ""
@@ -76,6 +78,7 @@
         },
         "1e939cd6-0958-4135-a9e5-c50faef01437": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "title": "Variant picker",
             "spacing_bottom": "1",
@@ -89,11 +92,11 @@
         "1e939cd6-0955-4135-a9e5-c50faef01437": {
           "type": "purchase_options",
           "settings": {
-            "headline": "Most popular: Get 20% off",
-            "headline_bg_color": "#D52626",
+            "headline": "Most popular: save 100 Aed",
+            "headline_bg_color": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
             "headline_text_color": "#000000",
-            "bg_color": "#FFEEEE",
-            "icon_color": "#d52626",
+            "bg_color": "#F8F6EF",
+            "icon_color": "#000000",
             "spacing_bottom": "1",
             "list_text_1": "Delivered every 30 days",
             "list_text_2": "Pause or cancel anytime",
@@ -117,31 +120,31 @@
           "type": "custom_feature",
           "settings": {
             "list_icon_1": "shopify://shop_images/Vector_3.svg",
-            "list_item_1": "Ship from UAE",
-            "list_icon_2": "shopify://shop_images/svg714.svg",
+            "list_item_1": "Ships from UAE",
+            "list_icon_2": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_5b78b3a9-7526-4164-905d-c122a6171b08.svg",
             "list_item_2": "Same Day & Next Day Delivery",
             "list_icon_3": "shopify://shop_images/Capa_1.svg",
             "list_item_3": "Third-Party Tested"
           }
         },
-        "moneyback_QcGtTd": {
+        "moneyback_We74c3": {
           "type": "moneyback",
           "settings": {
             "money_text": "30 day money back guarantee",
-            "text_color": "#151515",
-            "bg_color": "#FFEEEE",
+            "text_color": "#000000",
+            "bg_color": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
             "border_color": "#0000001F"
           }
         },
-        "icon_list_9YTGm4": {
+        "icon_list_h9Rmyg": {
           "type": "icon_list",
           "settings": {
-            "icon_1": "shopify://shop_images/Frame_2147242267_1.svg",
-            "icon_2": "shopify://shop_images/Frame_2147242268_1.svg",
-            "icon_3": "shopify://shop_images/Frame_2147242272_1.svg",
-            "icon_4": "shopify://shop_images/Frame_2147242274.svg",
-            "icon_5": "shopify://shop_images/Frame_2147242270_1.svg",
-            "icon_6": "shopify://shop_images/Frame_2147242673.svg"
+            "icon_1": "shopify://shop_images/Frame_2147242267_7.svg",
+            "icon_2": "shopify://shop_images/Frame_2147242268_7.svg",
+            "icon_3": "shopify://shop_images/Frame_2147242272_8.svg",
+            "icon_4": "shopify://shop_images/Frame_2147242274_6.svg",
+            "icon_5": "shopify://shop_images/Frame_2147242270_7.svg",
+            "icon_6": "shopify://shop_images/Frame_2147242673_6.svg"
           }
         },
         "content_tabs_fEGJi4": {
@@ -223,19 +226,20 @@
         },
         "optiona_product_PtrBpJ": {
           "type": "optiona_product",
+          "disabled": true,
           "settings": {
             "show_svg": true,
             "main_heading": "TRY ALL SIX",
             "image": "shopify://shop_images/Frame_2147242232.png",
             "inner_title": "FIND YOUR FAVOURITE",
             "inner_subtitle": "Six mushrooms. 5 servings in each pouch. The easiest way to discover what works for you.",
-            "bg_color": "#ffeeee"
+            "bg_color": "#e2f3ff"
           }
         },
         "tabs_block_nbWnUF": {
           "type": "tabs_block",
           "settings": {
-            "border_clr": "#d52626",
+            "border_clr": "#000000",
             "tab_title_1": "HOW TO USE",
             "tab_content_1": "<p>Add 1 teaspoon daily to coffee, tea, smoothies, or warm water. Best taken consistently for noticeable results.</p>",
             "tab_title_2": "INGREDIENTS",
@@ -266,8 +270,8 @@
         "1e939cd6-0955-4135-a9e5-c50faef01437",
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
         "custom_feature_rB8z8F",
-        "moneyback_QcGtTd",
-        "icon_list_9YTGm4",
+        "moneyback_We74c3",
+        "icon_list_h9Rmyg",
         "content_tabs_fEGJi4",
         "description_qA3HqH",
         "content_block_idt6CB",
@@ -385,39 +389,212 @@
         "spacing_bottom": "4"
       }
     },
+    "multipack_t79irt": {
+      "type": "multipack",
+      "blocks": {
+        "card_ziDpra": {
+          "type": "card",
+          "settings": {
+            "card_bg": "rgba(0,0,0,0)",
+            "background_image": "shopify://shop_images/Frame_2147242608.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk_png.png",
+            "title": "Cordyceps",
+            "subtitle": "Energy & Performance",
+            "qty": "100g - 50 servings.",
+            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_2.svg",
+            "icon_text_1": "Fast acting (45 min)",
+            "icon_2": "shopify://shop_images/Group.svg",
+            "icon_text_2": "Pre-workout use",
+            "icon_3": "shopify://shop_images/icon.svg_-_2026-01-26T160747.431_1_1.svg",
+            "icon_text_3": "Energy boost",
+            "icon_4": "shopify://shop_images/icon.svg_-_2026-03-18T115710.504_1_6a937084-a937-47fb-8f77-8b76115a84b3.svg",
+            "icon_text_4": "ATP production",
+            "icon_text_5": "",
+            "description": "<ul><li>Contains cordycepin and beta-glucans associated with sustained energy support</li><li>Supports ATP production, the cellular energy used during physical activity</li><li>Helps improve oxygen utilisation during exercise</li><li>Traditionally used to support stamina, endurance, and performance</li></ul>",
+            "button_text": "LEARN MORE",
+            "button_url": ""
+          }
+        },
+        "card_7McVe8": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "card_bg": "rgba(0,0,0,0)",
+            "background_image": "shopify://shop_images/Frame_2147242259.png",
+            "image": "shopify://shop_images/image_2862.png",
+            "title": "LION'S MANE",
+            "subtitle": "Focus & Clarity",
+            "qty": "100g - 50 servings.",
+            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-10T141012.534_1_cac868d6-789b-45ac-bcc5-cac70623c3bc.svg",
+            "icon_text_1": "Morning clarity",
+            "icon_2": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_1_db4d7bd7-a103-488f-9bd3-d65f76f2af2a.svg",
+            "icon_text_2": "Fast Acting (45 min)",
+            "icon_3": "shopify://shop_images/icon.svg_-_2026-01-26T160931.273_1_351dd372-1565-4ba0-a484-f296ed9c0c3e.svg",
+            "icon_text_3": "Morning clarity",
+            "icon_4": "shopify://shop_images/icon.svg_-_2026-01-26T160747.431_1_1.svg",
+            "icon_text_4": "Energy",
+            "icon_text_5": "",
+            "description": "<ul><li>Contains hericenones and erinacines linked to nerve growth factor (NGF) and brain support.</li><li>Traditionally used to support memory, focus, and nervous system health</li><li>Supports mental clarity and balanced cognitive performance</li><li>Non-stimulant support for daily focus and productivity</li></ul>",
+            "button_text": "LEARN MORE",
+            "button_url": ""
+          }
+        },
+        "card_aKY6VE": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "card_bg": "rgba(0,0,0,0)",
+            "background_image": "shopify://shop_images/Frame_2147242259_1.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_1.png",
+            "title": "Turkey Tail",
+            "subtitle": "Turkey Tail supports gut health and a balanced microbiome. Rich in prebiotic compounds and beta-glucans, it helps nourish beneficial gut bacteria while supporting digestion and natural defences.",
+            "qty": "",
+            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_e204b097-c6af-491f-a6ee-aed540393089.svg",
+            "icon_text_1": "Maintenance (Daily)",
+            "icon_2": "shopify://shop_images/Group_1.svg",
+            "icon_text_2": "Prebiotic",
+            "icon_3": "shopify://shop_images/Vector_8.svg",
+            "icon_text_3": "Gut health",
+            "icon_4": "shopify://shop_images/Group_2_384486a3-254d-48bb-8ca1-fc89e27474f9.svg",
+            "icon_text_4": "Gut microbiome balance",
+            "icon_text_5": "",
+            "description": "<ul><li>Contains natural prebiotic compounds and beta-glucans that help nourish beneficial gut bacteria.</li><li>15:1 high ratio extract for potent benefits you can actually feel.</li><li>100% fruiting body extract (no grain-grown mycelium).</li><li>Dual extracted to capture the full spectrum of compounds.</li><li>Single ingredient formula. No fillers, flavorings or additives.</li></ul>",
+            "button_text": "LEARN MORE",
+            "button_url": ""
+          }
+        },
+        "card_Ggwzni": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "card_bg": "rgba(0,0,0,0)",
+            "background_image": "shopify://shop_images/Frame_2147242610.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_2.png",
+            "title": "TREMELLA",
+            "subtitle": "Skin hydration & Glow",
+            "qty": "100g - 50 servings.",
+            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_e204b097-c6af-491f-a6ee-aed540393089.svg",
+            "icon_text_1": "Daily maintenance",
+            "icon_2": "shopify://shop_images/icon.svg_-_2026-03-18T122528.567_1_9477ce0d-f4ad-457b-93e3-73cfb105ca96.svg",
+            "icon_text_2": "Hydrates Skin",
+            "icon_3": "shopify://shop_images/icon.svg_-_2026-03-18T122258.281_1_1113b779-193b-4a25-afc6-469c35c1f7bc.svg",
+            "icon_text_3": "Clears Skin",
+            "icon_4": "shopify://shop_images/Exp-1.-O_255d3257-7d1d-4313-b46b-743c3d14be81.svg",
+            "icon_text_4": "Skin Elasticity",
+            "icon_text_5": "",
+            "description": "<ul><li>Naturally rich in polysaccharides associated with skin hydration.</li><li>Helps support the body’s natural collagen production.</li><li>Supports smoother, more hydrated and resilient skin.</li><li>Traditionally used in beauty and wellness for skin support.</li></ul>",
+            "button_text": "LEARN MORE",
+            "button_url": ""
+          }
+        },
+        "card_VLGWxc": {
+          "type": "card",
+          "settings": {
+            "card_bg": "rgba(0,0,0,0)",
+            "background_image": "shopify://shop_images/Frame_2147242611.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_3.png",
+            "title": "Chaga",
+            "subtitle": "Immunity & Deffence",
+            "qty": "100g - 50 servings.",
+            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_e204b097-c6af-491f-a6ee-aed540393089.svg",
+            "icon_text_1": "Daily maintenance",
+            "icon_2": "shopify://shop_images/icon.svg_-_2026-03-18T120156.472_1_0b7baccf-5d9d-4a0f-bd27-9eef29ae1ace.svg",
+            "icon_text_2": "Daily defence",
+            "icon_3": "shopify://shop_images/Group_2_384486a3-254d-48bb-8ca1-fc89e27474f9.svg",
+            "icon_text_3": "Antioxidant rich",
+            "icon_4": "shopify://shop_images/icon.svg_-_2026-03-18T120409.922_1_e360adb3-672c-480f-991b-fc0a4681d654.svg",
+            "icon_text_4": "Anti-inflammatory",
+            "icon_text_5": "",
+            "description": "<ul><li>One teaspoon of Chaga delivers antioxidants comparable to around 600 blueberries.</li><li>Rich in polyphenols and beta-glucans associated with immune support.</li><li>Helps protect cells from oxidative stress and environmental damage.</li><li>Traditionally used to support resilience and long-term wellbeing.</li></ul>",
+            "button_text": "LEARN MORE",
+            "button_url": ""
+          }
+        },
+        "card_eYDpmF": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "card_bg": "rgba(0,0,0,0)",
+            "background_image": "shopify://shop_images/Frame_2147242612.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_4.png",
+            "title": "Reishi",
+            "subtitle": "Reishi has been used for centuries to support relaxation and recovery. Rich in bioactive compounds, it helps the body adapt to stress, supporting healthy cortisol balance while promoting calm and restful sleep.",
+            "qty": "",
+            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-18T121810.629_1_f17cb824-ce05-45f3-95dc-20ea08640036.svg",
+            "icon_text_1": "Anxiety",
+            "icon_2": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_1_db4d7bd7-a103-488f-9bd3-d65f76f2af2a.svg",
+            "icon_text_2": "Fast Acting (45 min)",
+            "icon_3": "shopify://shop_images/icon.svg_-_2026-03-18T121648.834_1_c7fa0811-bf17-4a2e-89eb-aa57991f682d.svg",
+            "icon_text_3": "Sleep",
+            "icon_4": "shopify://shop_images/icon.svg_-_2026-03-18T121437.551_1_1.svg",
+            "icon_text_4": "Balances Cortisol",
+            "icon_text_5": "",
+            "description": "<ul><li>Rich in triterpenes and beta-glucans, Reishi helps the body adapt to stress.</li><li>15:1 high ratio extract for potent benefits you can actually feel.</li><li>100% fruiting body extract (no grain-grown mycelium).</li><li>Dual extracted to capture the full spectrum of compounds</li><li>Single ingredient formula. No fillers, flavorings or additives.</li></ul>",
+            "button_text": "LEARN MORE",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_ziDpra",
+        "card_7McVe8",
+        "card_aKY6VE",
+        "card_Ggwzni",
+        "card_VLGWxc",
+        "card_eYDpmF"
+      ],
+      "name": "Multipack Section",
+      "settings": {
+        "bundle_tem": true,
+        "hide_subtitle": false,
+        "title": "Real Benefits You Can Feel",
+        "description": "",
+        "desc_icon": "shopify://shop_images/verify_195edc2e-9480-41b4-a51e-bac30c4c29ed.svg",
+        "columns": 2,
+        "mobile_layout": "grid",
+        "section_bg": "#ffffff",
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1_18723bc8-adba-4013-9b8e-6e861ff49e70.svg",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
     "benefits_cQkaGh": {
       "type": "benefits",
       "blocks": {
         "benefit_WKqMVF": {
           "type": "benefit",
           "settings": {
-            "icon": "shopify://shop_images/Frame_2147228879.svg",
-            "title": "<p>BOOSTS NATURAL <br/>ENERGY</p>",
-            "subtitle": "Supports sustained energy without caffeine crashes."
+            "icon": "shopify://shop_images/Frame_2147228878_2_e8577d23-0ed1-4474-b989-93486f9bcce3.svg",
+            "title": "<p>Daily maintenance</p>",
+            "subtitle": "Supports daily wellness, balance, and long term health."
           }
         },
         "benefit_t6Y68M": {
           "type": "benefit",
           "settings": {
-            "icon": "shopify://shop_images/Frame_2147228880.svg",
-            "title": "<p>SUPPORTS PHYSICAL <br/>PERFORMANCE</p>",
-            "subtitle": "Helps improve endurance and stamina during activity."
+            "icon": "shopify://shop_images/Frame_2147228878_3_89a0f495-09b6-4bc4-aa0d-1c855bd3561f.svg",
+            "title": "<p>Immunity boost</p>",
+            "subtitle": "Strengthens immune system and helps defend against illnesses."
           }
         },
         "benefit_zetj78": {
           "type": "benefit",
           "settings": {
-            "icon": "shopify://shop_images/Frame_2147228878_6360965f-038c-4d22-83af-f3ea19675eca.svg",
-            "title": "<p>REDUCES <br/>FATIGUE</p>",
-            "subtitle": "Helps the body stay energised during demanding days."
+            "icon": "shopify://shop_images/Frame_2147228878_4_f546a8d2-e204-41ec-83df-5c0b5c70ba98.svg",
+            "title": "<p>Antioxidant</p>",
+            "subtitle": "Rich in antioxidants protecting cells from oxidative stress."
           }
         },
         "benefit_KrxLfN": {
           "type": "benefit",
           "settings": {
-            "icon": "shopify://shop_images/Frame_2147228878_1_b16654de-2bdf-424e-8260-f6a736046067.svg",
-            "title": "<p>SUPPORTS OXYGEN <br/>UTILISATION</p>",
-            "subtitle": "Helps the body use oxygen more efficiently during exercise."
+            "icon": "shopify://shop_images/Frame_2147228878_5_f120dd59-ec58-4505-a9c0-38cf5fb739ba.svg",
+            "title": "<p>Anti-inflammatory</p>",
+            "subtitle": "Helps reduce inflammation and supports overall body recovery."
           }
         }
       },
@@ -427,14 +604,15 @@
         "benefit_zetj78",
         "benefit_KrxLfN"
       ],
+      "disabled": true,
       "name": "Benefits Section",
       "settings": {
-        "sec_img_desk": "shopify://shop_images/Our_story_7.png",
-        "sec_img_mob": "shopify://shop_images/Our_story_8.png",
+        "sec_img_desk": "shopify://shop_images/Our_story_b347fd07-a950-43c7-bf51-de6b76aab599.png",
+        "sec_img_mob": "shopify://shop_images/Our_story_1_baae90b3-ca04-43ce-83b9-83f64b567e7a.png",
         "section_bg": "",
         "title": "Real Benefits You Can Feel",
-        "subtitle": "Cordyceps is best known for supporting natural energy, physical performance, reduced fatigue, and efficient oxygen utilisation during activity.",
-        "image": "shopify://shop_images/Rectangle_7.png",
+        "subtitle": "Chaga is best known for supporting immune defence, antioxidant protection, and overall daily resilience.",
+        "image": "shopify://shop_images/Rectangle_6_1.png",
         "button_text": "",
         "button_link": "",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
@@ -449,13 +627,14 @@
     },
     "story_behind_TKeagc": {
       "type": "story-behind",
+      "disabled": true,
       "name": "Story Behind Section",
       "settings": {
         "pdp": true,
         "abs_image": "shopify://shop_images/0st7MqmOLuNNmDy9SoFwE67dXmM.png_1.png",
-        "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM_png_525ad14b-b9ee-45dc-9f5a-79d9c232e368.png",
-        "title": "<p>Fuel Your Body, Naturally</p>",
-        "description": "<p>Cordyceps has long been valued for supporting energy production and endurance. It works by supporting the body’s ability to produce ATP, the cellular energy your muscles rely on during physical activity.</p><p></p><ul><li>Contains cordycepin and beta-glucans associated with sustained energy support.</li><li>Supports ATP production, the cellular energy used during physical activity</li><li>Helps improve oxygen utilisation during exercise.</li><li>Traditionally used to support stamina, endurance, and performance.</li></ul>",
+        "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM.png_1_25677c10-e7c3-4a0b-94c6-3b33fb76d4cf.png",
+        "title": "<p>DEFEND YOUR <br/>BODY, NATURALLY</p>",
+        "description": "<p>Chaga is naturally rich in antioxidants that help support immune health while protecting the body from oxidative stress. </p><p></p><ul><li>One teaspoon of Chaga has the same amount of antioxidants as 600 blueberries.</li><li>15:1 high ratio extract for potent benefits you can actually feel</li><li>100% fruiting body extract (no grain-grown mycelium)</li><li>Dual extracted to capture the full spectrum of compounds</li><li>Single ingredient formula. No fillers, flavorings or additives.</li></ul>",
         "list_icon": "shopify://shop_images/verify_4fb1713f-9459-42e1-8740-4abcd7aeffc0.svg",
         "button_text": "",
         "button_link": "shopify://collections/all",
@@ -469,31 +648,31 @@
         "padding_bottom_mobile": 40
       }
     },
-    "enjoy_slider_fPXa9h": {
+    "enjoy_slider_eeedzh": {
       "type": "enjoy-slider",
       "blocks": {
-        "slide_UWhNpb": {
+        "slide_MaAjeQ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/025826ed1c25fb6fa94aeed94f86c35048c4e2e0.png",
+            "image": "shopify://shop_images/520c0add181895ed8d4ca9a3bb52fade5ba8081f.png",
             "step": "First Step",
             "title": "Add 1 teaspoon",
             "subtitle": "Stir into coffee, tea or smoothies"
           }
         },
-        "slide_dUQCh6": {
+        "slide_bBtmzf": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/35308dc7db661e2eae16705beb7ea3001c78aee1.png",
+            "image": "shopify://shop_images/7fd10af6badba00714228234d74b5a60da6c5572.png",
             "step": "Second Step",
             "title": "MIX INTO YOUR DRINK",
             "subtitle": "Hot or cold works perfectly"
           }
         },
-        "slide_Wan4td": {
+        "slide_CWw8HA": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/fbddf467b4f6a73d777bcf5a117cba007233de22.png",
+            "image": "shopify://shop_images/c5fa44b9f871f1642cca5b9be95cd28ee5deb231.png",
             "step": "Third Step",
             "title": "ENJOY DAILY",
             "subtitle": "Build it into your routine"
@@ -501,9 +680,9 @@
         }
       },
       "block_order": [
-        "slide_UWhNpb",
-        "slide_dUQCh6",
-        "slide_Wan4td"
+        "slide_MaAjeQ",
+        "slide_bBtmzf",
+        "slide_CWw8HA"
       ],
       "name": "Enjoy Slider",
       "settings": {
@@ -511,10 +690,59 @@
         "title": "ONE SCOOP. ANY DRINK. DONE.",
         "desktop_slides": 3,
         "mobile_slides": 1.1,
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 100,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 0,
         "padding_top_mobile": 40,
-        "padding_bottom_mobile": 40
+        "padding_bottom_mobile": 0
+      }
+    },
+    "enjoy_slider_HdAUih": {
+      "type": "enjoy-slider",
+      "blocks": {
+        "slide_bE9wa4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/27dbfad32c7c83412d33abae755d4b10811bf6cb.png",
+            "step": "First Step",
+            "title": "Add 1 teaspoon",
+            "subtitle": "Stir into coffee, tea or smoothies"
+          }
+        },
+        "slide_aDc7xN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/76e5875947356c077d60f6add192c8e33ce98b15.png",
+            "step": "Second Step",
+            "title": "MIX INTO YOUR DRINK",
+            "subtitle": "Hot or cold works perfectly"
+          }
+        },
+        "slide_RhDTGe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/aa335080352a027d7e24172cf3ddd65a186aee42.png",
+            "step": "Third Step",
+            "title": "Drink it daily",
+            "subtitle": "Build it into your routine"
+          }
+        }
+      },
+      "block_order": [
+        "slide_bE9wa4",
+        "slide_aDc7xN",
+        "slide_RhDTGe"
+      ],
+      "disabled": true,
+      "name": "Enjoy Slider",
+      "settings": {
+        "section_bg": "",
+        "title": "ONE SCOOP. ANY DRINK. DONE.",
+        "desktop_slides": 3,
+        "mobile_slides": 1.1,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 0
       }
     },
     "special_section_74QzEN": {
@@ -524,8 +752,8 @@
           "type": "simple_card",
           "settings": {
             "bg_color": "#ffffff",
-            "simple_title": "10:1 HIGH-POTENCY EXTRACT",
-            "simple_desc": "<p>Many mushroom supplements use low-strength powders. Our 10:1 extract concentrates far more active compounds into every serving.</p>"
+            "simple_title": "15:1 HIGH-POTENCY EXTRACT",
+            "simple_desc": "<p>Delivers significantly more active compounds than standard mushroom powders (usually 6:1).</p>"
           }
         },
         "simple_card_UNnWaW": {
@@ -533,7 +761,7 @@
           "settings": {
             "bg_color": "#ffffff",
             "simple_title": "FRUITING BODY ONLY",
-            "simple_desc": "<p>Many supplements use grain-grown mycelium, which contains less of the beneficial compounds found in mushrooms. Pure Filth uses only the fruiting body, the part richest in bioactive compounds.</p>"
+            "simple_desc": "<p>No grain-grown mycelium. Only the part of the mushroom that contains the highest levels of active compounds.</p>"
           }
         },
         "simple_card_f6xAQg": {
@@ -541,7 +769,7 @@
           "settings": {
             "bg_color": "#ffffff",
             "simple_title": "DUAL EXTRACTION",
-            "simple_desc": "<p>Some mushroom powders rely on simple grinding. We use dual extraction (water + alcohol), which unlocks the full spectrum of bioactive compounds.</p>"
+            "simple_desc": "<p>Water and alcohol extraction ensures the full spectrum of beneficial compounds is available.</p>"
           }
         },
         "top_card_8bnhGk": {
@@ -585,12 +813,13 @@
         "top_card_8bnhGk",
         "bottom_card_4DXj6B"
       ],
+      "disabled": true,
       "name": "Special Section",
       "settings": {
-        "section_bg": "#D52626",
-        "title": "WHY PURE FILTH Cordyceps HITS DIFFERENT",
+        "section_bg": "#038BFF",
+        "title": "WHY PURE FILTH Chaga HITS DIFFERENT",
         "title_color": "#000000",
-        "main_image": "shopify://shop_images/Background_Border_2.png",
+        "main_image": "shopify://shop_images/Background_Border_3.png",
         "overlay_title": "",
         "overlay_text": "",
         "padding_top_desktop": 80,
@@ -599,97 +828,67 @@
         "padding_bottom_mobile": 40
       }
     },
-    "money_back_aG9pad": {
-      "type": "money-back",
-      "name": "Money Back Section",
-      "settings": {
-        "title_first": true,
-        "image": "shopify://shop_images/Section_badge.svg",
-        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
-        "title": "30 day money back guarantee",
-        "text_color": "#000000",
-        "button_text_color": "#ffffff",
-        "button_text": "LEARN MORE",
-        "button_link": "shopify://collections/all",
-        "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",
-        "section_bg": "#ffffff",
-        "Content_bg": "#D52626",
-        "button_bg": "#000000",
-        "button_icon_bg": "#ffffff",
-        "padding_top_desktop": 180,
-        "padding_bottom_desktop": 100,
-        "padding_top_mobile": 70,
-        "padding_bottom_mobile": 40
-      }
-    },
-    "video_slider_KjYwtX": {
+    "video_slider_x93pnd": {
       "type": "video-slider",
       "blocks": {
-        "video_kjqiMV": {
+        "video_MK7MmE": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/PUREFILTHSTEP1-ezgif.com-gif-to-mp4-converter.mp4",
-            "abs_img": "shopify://shop_images/Group_5.svg",
             "abs_text": "Focus"
           }
         },
-        "video_zcA6TL": {
+        "video_GKADda": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
-            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-15T134441.846_1.svg",
             "abs_text": "Clarity"
           }
         },
-        "video_x4qJR7": {
+        "video_3UAUKR": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
-            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-27T192103.195_1.svg",
             "abs_text": "Memory"
           }
         },
-        "video_C3VN4f": {
+        "video_b6pEGV": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
-            "abs_img": "shopify://shop_images/Group_6.svg",
             "abs_text": "Mood"
           }
         },
-        "video_F4XKfJ": {
+        "video_3piGcC": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
-            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-15T134441.846_1.svg",
             "abs_text": "Clarity"
           }
         },
-        "video_LmHUEt": {
+        "video_KijEwt": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
-            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-27T192103.195_1.svg",
             "abs_text": "Memory"
           }
         },
-        "video_fKyy7A": {
+        "video_cgKrwh": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
-            "abs_img": "shopify://shop_images/Group_6.svg",
             "abs_text": "Mood"
           }
         }
       },
       "block_order": [
-        "video_kjqiMV",
-        "video_zcA6TL",
-        "video_x4qJR7",
-        "video_C3VN4f",
-        "video_F4XKfJ",
-        "video_LmHUEt",
-        "video_fKyy7A"
+        "video_MK7MmE",
+        "video_GKADda",
+        "video_3UAUKR",
+        "video_b6pEGV",
+        "video_3piGcC",
+        "video_KijEwt",
+        "video_cgKrwh"
       ],
       "name": "Video Slider Formulas",
       "settings": {
@@ -699,12 +898,112 @@
         "header_text": "<p>REAL PEOPLE. <br/>REAL FILTHY RESULTS.</p>",
         "slides_per_view_desktop": 4,
         "background_color": "rgba(0,0,0,0)",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 25,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
         "items_primary_color": "",
         "items_light_color": ""
+      }
+    },
+    "comp_pNaDkU": {
+      "type": "comp",
+      "blocks": {
+        "row_7yqbEw": {
+          "type": "row",
+          "settings": {
+            "feature": "100% FRUITING BODY",
+            "brand": "ONLY FRUITING BODY USED",
+            "typical": "Often mycelium grown on grain.",
+            "why": "The fruiting body contains the highest levels of active compounds."
+          }
+        },
+        "row_FpjCeq": {
+          "type": "row",
+          "settings": {
+            "feature": "RATIO (POTENCY)",
+            "brand": "15:1 - 20: 1 EXTRACT",
+            "typical": "4:1 - 10:1 Extract",
+            "why": "The higher the ratio, the more potent the supplement."
+          }
+        },
+        "row_p3UxMg": {
+          "type": "row",
+          "settings": {
+            "feature": "EXTRACTION METHOD",
+            "brand": "DUAL EXTRACTION",
+            "typical": "Often single extraction or not disclosed",
+            "why": "To get the most bioactive ingredients \nout of the mushroom, dual extraction is needed."
+          }
+        },
+        "row_3fhXdm": {
+          "type": "row",
+          "settings": {
+            "feature": "THIRD PARTY TESTED",
+            "brand": "INDEPENDENTLY LAB TESTED",
+            "typical": "Rarely disclosed",
+            "why": "Ensures purity and checks for heavy metals or contaminants."
+          }
+        },
+        "row_yW6pWW": {
+          "type": "row",
+          "settings": {
+            "feature": "Active Compound  Transparency",
+            "brand": "Yes",
+            "typical": "Not disclosed",
+            "why": "Shows exactly how much of the active compounds you're getting."
+          }
+        }
+      },
+      "block_order": [
+        "row_7yqbEw",
+        "row_FpjCeq",
+        "row_p3UxMg",
+        "row_3fhXdm",
+        "row_yW6pWW"
+      ],
+      "name": "Comparison Table (Scrollable)",
+      "settings": {
+        "image_bg": "shopify://shop_images/image_2793_2.png",
+        "image_bg_mob": "shopify://shop_images/image_2793_3.png",
+        "title": "WHY PURE FILTH HITS DIFFERENT",
+        "subtitle": "Not all mushroom supplements are created equal.",
+        "col_1": "FEATURES",
+        "col_2": "Your Brand",
+        "col_3": "TYPICAL MUSHROOM BRANDs",
+        "col_4": "WHY THIS MATTERS",
+        "brand_logo": "shopify://shop_images/image_2764.png",
+        "section_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
+        "highlight_bg": "#ffffff",
+        "table_head_bg": "",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "money_back_bQi3Q3": {
+      "type": "money-back",
+      "name": "Money Back Section",
+      "settings": {
+        "title_first": true,
+        "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
+        "image": "shopify://shop_images/PDP_Badge.svg",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll REFUND YOU",
+        "title": "30 day money back guarantee",
+        "text_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_text": "LEARN MORE",
+        "button_link": "shopify://collections/all",
+        "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",
+        "section_bg": "#ffffff",
+        "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 200,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 110,
+        "padding_bottom_mobile": 40
       }
     },
     "routine_MaXLqX": {
@@ -715,7 +1014,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165.png",
             "top_title": "MORNING",
-            "image": "shopify://shop_images/Frame_2147242242_9_6daa9242-03d0-4483-aa15-c7e6042988e4.png",
+            "image": "shopify://shop_images/Frame_2147242242_8_d683b7f1-460f-44df-a24a-3bd7cf86c328.png",
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
@@ -729,7 +1028,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
             "top_title": "AFTERNOON",
-            "image": "shopify://shop_images/Frame_2147242242_1_d21db629-5c81-4a16-9675-97ba8eba5b67.png",
+            "image": "shopify://shop_images/Frame_2147242242_6_801c56ae-b6de-4f96-a494-e3afd385caf6.png",
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
@@ -743,7 +1042,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
             "top_title": "EVENING",
-            "image": "shopify://shop_images/Frame_2147242242_2_fd66dd82-318f-490a-8981-727543d96797.png",
+            "image": "shopify://shop_images/Frame_2147242242_7_a2c2c845-6835-494d-a4f2-237f589d8c6e.png",
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
@@ -758,15 +1057,16 @@
         "step_CWVnBj",
         "step_WMAKfL"
       ],
+      "disabled": true,
       "name": "Routine Section",
       "settings": {
         "title": "Build Your Routine",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
-        "button_bg": "#d52626",
+        "button_bg": "#038bff",
         "button_icon_bg": "#ffffff",
-        "button_text": "#000000",
+        "button_text": "#ffffff",
         "section_bg": "#ffffff",
-        "cards_bg": "#ffeeee",
+        "cards_bg": "#e2f3ff",
         "padding_top_desktop": 80,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 40,
@@ -858,18 +1158,18 @@
       ],
       "name": "Testimonial Slider",
       "settings": {
-        "title_first": false,
+        "title_first": true,
         "section_bg": "",
-        "card_bg": "#ffeeee",
+        "card_bg": "#f8f6ef",
         "title": "Filthy Reviews",
-        "reviews_img": "shopify://shop_images/Stars.png",
+        "reviews_img": "shopify://shop_images/Frame_36_1.svg",
         "reviews_title": "<strong>4.8</strong> average rating",
         "reviews_subtitle": "",
         "slides_per_view": 3.5,
         "center_slide": true,
         "padding_top_desktop": 100,
         "padding_bottom_desktop": 100,
-        "padding_top_mobile": 40,
+        "padding_top_mobile": 0,
         "padding_bottom_mobile": 40
       }
     },
@@ -900,7 +1200,7 @@
         "accordion_item_aJgbxJ": {
           "type": "accordion_item",
           "settings": {
-            "question": "How do I take Pure Filth mushrooms?",
+            "question": "How do I take Pure Fifth mushrooms?",
             "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
           }
         },
@@ -918,17 +1218,10 @@
             "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
           }
         },
-        "accordion_item_JcbKG9": {
+        "accordion_item_rfqVEz": {
           "type": "accordion_item",
           "settings": {
-            "question": "Are Pure Filth mushrooms vegan and gluten-free?",
-            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
-          }
-        },
-        "accordion_item_nyRnCa": {
-          "type": "accordion_item",
-          "settings": {
-            "question": "Can I take these supplements daily?",
+            "question": "Are Pure Fifth mushrooms vegan and gluten-free?",
             "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
           }
         }
@@ -940,8 +1233,7 @@
         "accordion_item_aJgbxJ",
         "accordion_item_eij4i7",
         "accordion_item_kT9Mcr",
-        "accordion_item_JcbKG9",
-        "accordion_item_nyRnCa"
+        "accordion_item_rfqVEz"
       ],
       "name": "FAQs Section",
       "settings": {
@@ -950,8 +1242,8 @@
         "padding_bottom": 100,
         "mbl_padding_top": 0,
         "mbl_padding_bottom": 40,
-        "bg_color_faqs": "#FFEEEE",
-        "item_border": "#ffeeee",
+        "bg_color_faqs": "#F8F6EF",
+        "item_border": "#f8f6ef",
         "heading": "Have Questions? We’ve Got Answers",
         "description": "",
         "button_text": "",
@@ -971,12 +1263,15 @@
     "main",
     "complete_the_set_LAN4cq",
     "recommendations",
+    "multipack_t79irt",
     "benefits_cQkaGh",
     "story_behind_TKeagc",
-    "enjoy_slider_fPXa9h",
+    "enjoy_slider_eeedzh",
+    "enjoy_slider_HdAUih",
     "special_section_74QzEN",
-    "money_back_aG9pad",
-    "video_slider_KjYwtX",
+    "video_slider_x93pnd",
+    "comp_pNaDkU",
+    "money_back_bQi3Q3",
     "routine_MaXLqX",
     "testimonial_YNU6TX",
     "pdp_faqs_tiNRVd",

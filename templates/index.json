@@ -136,7 +136,7 @@
         "description": "<p>FUNCtional Mushroom extracts designed for:</p><ul><li>focus + Clean Energy</li><li>Calm + Better sleep</li><li>Immunity + Gut + SKIN</li></ul>",
         "button_text": "FIND YOUR FILTH",
         "button_icon": "shopify://shop_images/Frame_2147242027.svg",
-        "button_link": "shopify://collections",
+        "button_link": "shopify://collections/all-filthy-products",
         "bg_color": "#ffffff",
         "button_bg": "#ffffff",
         "button_icon_bg": "#000000",
@@ -153,6 +153,7 @@
           "type": "collection",
           "settings": {
             "collection": "all-filthy-products",
+            "card_link": "shopify://products/lions-mane-mushroom-powder",
             "tag": "FOCUS",
             "custom_image": "shopify://shop_images/am02clipped.webm_12.png",
             "title": "Lion's Mane",
@@ -164,6 +165,7 @@
           "type": "collection",
           "settings": {
             "collection": "powders",
+            "card_link": "shopify://products/cordyceps-mushroom-powder",
             "tag": "ENERGY",
             "custom_image": "shopify://shop_images/am02clipped.webm_7.png",
             "title": "cordyceps",
@@ -175,6 +177,7 @@
           "type": "collection",
           "settings": {
             "collection": "the-filthy-lineup",
+            "card_link": "shopify://products/reishi-mushroom-powder",
             "tag": "RELAX",
             "custom_image": "shopify://shop_images/am02clipped.webm_8.png",
             "title": "Reishi",
@@ -186,6 +189,7 @@
           "type": "collection",
           "settings": {
             "collection": "the-filthy-lineup",
+            "card_link": "shopify://products/turkey-tail-mushroom-powder",
             "tag": "GUT HEALTH",
             "custom_image": "shopify://shop_images/am02clipped.webm_9.png",
             "title": "turkey tail",
@@ -197,6 +201,7 @@
           "type": "collection",
           "settings": {
             "collection": "all-filthy-products",
+            "card_link": "shopify://products/tremella-mushroom-powder",
             "tag": "BEAUTY",
             "custom_image": "shopify://shop_images/am02clipped.webm_10.png",
             "title": "TREMELLA",
@@ -208,6 +213,7 @@
           "type": "collection",
           "settings": {
             "collection": "all-filthy-products",
+            "card_link": "shopify://products/chaga-mushroom-powder",
             "tag": "IMMUNITY",
             "custom_image": "shopify://shop_images/am02clipped.webm_11.png",
             "title": "CHAGA",
@@ -229,7 +235,7 @@
         "sec_img": "shopify://shop_images/tempImageYExoTd_1_4.png",
         "title": "WHAT BENEFIT DO YOU NEED?",
         "button_text": "Shop Pure Filth",
-        "button_link": "shopify://collections",
+        "button_link": "shopify://collections/all-filthy-products",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "card_icon": "shopify://shop_images/67caea9cdd6f427348ad4714_ButtonNavigation_20_1__svg.svg",
         "button_bg": "#000000",
@@ -304,7 +310,7 @@
         "description": "<p>One scoop. One mug. Once Daily Habit.  <br/>No overthinking. No Nonsense.</p>",
         "button_text": "Choose your filth",
         "button_icon": "shopify://shop_images/Frame_2147242027.svg",
-        "button_link": "shopify://collections",
+        "button_link": "shopify://collections/multipacks",
         "bg_color": "#ffffff",
         "button_bg": "#ffffff",
         "button_icon_bg": "#000000",
@@ -447,7 +453,7 @@
             "title": "STARTER Pack (10g Set)",
             "subtitle": "Try all of them out in one pack",
             "button_text": "Shop multipack",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://collections/multipacks"
           }
         },
         "step_DixFdq": {
@@ -561,7 +567,7 @@
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
-            "button_link": "#",
+            "button_link": "shopify://products/new-the-small-ones-6-mushrooms-mulitpack-10g",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -575,7 +581,7 @@
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
-            "button_link": "#",
+            "button_link": "shopify://products/new-the-big-ones-6-mushroom-multipack-100g-copy",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -589,7 +595,7 @@
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
-            "button_link": "#",
+            "button_link": "shopify://products/new-the-small-ones-6-mushrooms-mulitpack-10g",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -772,7 +778,7 @@
         "title": "<p>THE STORY BEHIND THE FILTH</p>",
         "description": "<p>I’m Olly, the guy behind this filthy venture. The story kicked off in 2023 while wrestling with my pesky ADHD. My hunt for pure, uninterrupted focus led me to Lion’s Mane. <br/><br/>What started as a personal experiment soon morphed into a full-blown mushroom business. But not just any mushrooms would do. I spent two years chasing down the purest, most potent fungi. And in February 2025, we finally launched PURE FILTH into the wild, proudly built in the UAE.</p>",
         "button_text": "Learn more",
-        "button_link": "shopify://pages/our-story",
+        "button_link": "#",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "section_bg": "#faf7ed",
         "button_bg": "#000000",
@@ -908,7 +914,7 @@
         "button_icon_bg": "#ffffff",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "button_text": "SUBSCRIBE NOW",
-        "button_link": "shopify://collections/all",
+        "button_link": "shopify://collections/multipacks",
         "padding_top_desktop": 100,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 40,
@@ -925,8 +931,9 @@
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll REFUND YOU",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
+        "button_text_color": "#ffffff",
         "button_text": "LEARN MORE",
-        "button_link": "shopify://collections/all",
+        "button_link": "#",
         "button_icon": "shopify://shop_images/Frame_2147242027_e2029eb5-2cf1-4f25-8c0f-ee810464ebb2.svg",
         "section_bg": "#ffffff",
         "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",

@@ -181,10 +181,10 @@ p.not-sure-subtitle {
     {% if section.settings.bg_image != blank or section.settings.bg_image_mob != blank %}
         <div class="not-sure-section_img">
             {% if section.settings.bg_image != blank %}
-                {{ section.settings.bg_image | image_url: width:1600 | image_tag: class: 'not-sure-section_img-desk' }}
+                {{ section.settings.bg_image | image_url: width:1600 | image_tag: class: 'not-sure-section_img-desk', alt: "image" }}
             {% endif %}
             {% if section.settings.bg_image_mob != blank %}
-                {{ section.settings.bg_image_mob | image_url: width:1600 | image_tag: class: 'not-sure-section_img-mob', style: 'display: none' }}
+                {{ section.settings.bg_image_mob | image_url: width:1600 | image_tag: class: 'not-sure-section_img-mob', style: 'display: none', alt: "image" }}
             {% endif %}
         </div>
     {% endif %}
@@ -219,7 +219,7 @@ p.not-sure-subtitle {
 
                     {% if section.settings.button_icon != blank %}
                     <div class="not-sure-btn-icon">
-                        {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                        {{ section.settings.button_icon | image_url: width:100 | image_tag: alt: "image" }}
                     </div>
                     {% endif %}
 
@@ -231,7 +231,7 @@ p.not-sure-subtitle {
 
             <div class="not-sure-image">
                 {% if section.settings.image != blank %}
-                    {{ section.settings.image | image_url: width:900 | image_tag }}
+                    {{ section.settings.image | image_url: width:900 | image_tag: alt: "image" }}
                 {% endif %}
             </div>
 

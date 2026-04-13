@@ -524,7 +524,7 @@
                 
                 data-media-id="{{ featured_media.id }}"
               >
-                {{ featured_media | image_url: width: 1280 | image_tag: loading: loading}}
+                {{ featured_media | image_url: width: 1280 | image_tag: loading: loading, alt: "image" }}
               </div>
             {% when 'external_video' %}
               <div class="pw-product-video"
@@ -696,7 +696,7 @@
               {% endif %}
               {% if block.settings.feature_image != blank  %}
                 <div class="pw-feature-icon">
-                  {{ block.settings.feature_image | image_url: width: 150 | image_tag: loading: loading }}
+                  {{ block.settings.feature_image | image_url: width: 150 | image_tag: loading: loading, alt: "image" }}
                 </div>
               {% endif %}
               {% if block.settings.feature_text != blank %}

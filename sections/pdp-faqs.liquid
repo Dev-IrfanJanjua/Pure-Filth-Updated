@@ -257,7 +257,7 @@
 
                 {% if section.settings.button_icon != blank %}
                 <div class="faqs-btn-icon">
-                    {{ section.settings.button_icon | image_url: width:100 | image_tag }}
+                    {{ section.settings.button_icon | image_url: width:100 | image_tag: alt: "image" }}
                 </div>
                 {% endif %}
 

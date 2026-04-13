@@ -3,7 +3,7 @@
 %}
 
 <section
-  class="multipack-section color-{{ section.id }} {% if mobile_layout == 'swiper' %}multipack-section--mobile-swiper{% else %}multipack-section--mobile-grid{% endif %}"
+  class="multipack-section fade-in-section  color-{{ section.id }} {% if mobile_layout == 'swiper' %}multipack-section--mobile-swiper{% else %}multipack-section--mobile-grid{% endif %} {% if section.settings.bundle_tem %} bundle-{{ section.id }} {% endif %}"
   style="
     --section-bg: {{ section.settings.section_bg }};
     --card-bg: {{ section.settings.card_bg }};
@@ -18,7 +18,7 @@
   <div class="page-width">
     <div class="multipack-wrapper">
       {% if section.settings.title != blank or section.settings.description != blank %}
-        <div class="multipack-head">
+        <div class="multipack-head fade-in-left">
           {% if section.settings.title != blank %}
             <h2 class="multipack-title">{{ section.settings.title }}</h2>
           {% endif %}
@@ -34,13 +34,13 @@
           <div class="swiper-wrapper">
             {% for block in section.blocks %}
               <div
-                class="multipack-card {% if mobile_layout == 'swiper' %}swiper-slide{% endif %}"
+                class="multipack-card fade-in-item {% if mobile_layout == 'swiper' %}swiper-slide{% endif %}"
                 style="background: {{ block.settings.card_bg }};"
                 {{ block.shopify_attributes }}
               >
                 {% if block.settings.background_image != blank %}
                   <div class="multipack-card-bg">
-                    {{ block.settings.background_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '375, 550, 750, 1100, 1200', class: 'multipack-card-bg_image' }}
+                    {{ block.settings.background_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '375, 550, 750, 1100, 1200', class: 'multipack-card-bg_image', alt: "image" }}
                   </div>
                 {% endif %}
 
@@ -51,20 +51,46 @@
                         {% if block.settings.title != blank %}
                           <h3 class="multipack-card-title">{{ block.settings.title }}</h3>
                         {% endif %}
+                        <div class="multipack-card-head_info">
+                          {% if block.settings.subtitle != blank %}
+                            <p class="multipack-card-subtitle {% if section.settings.hide_subtitle %}hide_subtitle{% endif %}">{{ block.settings.subtitle }}</p>
+                          {% endif %}
+                          {% if block.settings.qty != blank %}
+                            <p class="multipack-card-qty">{{ block.settings.qty }}</p>
+                          {% endif %}
+                        </div>
+                        
+                        <ul class="multipack-card-icons_list multipack-card-icons_list_desk" role="list">
+                          {% for i in (1..5) %}
+                            {% assign icon_key = 'icon_' | append: i %}
+                            {% assign text_key = 'icon_text_' | append: i %}
 
-                        {% if block.settings.subtitle != blank %}
-                          <p class="multipack-card-subtitle {% if section.settings.hide_subtitle %}hide_subtitle{% endif %}">{{ block.settings.subtitle }}</p>
-                        {% endif %}
+                            {% if block.settings[text_key] != blank or block.settings[icon_key] != blank %}
+                              <li class="multipack-card-icon-item">
+                                {% if block.settings[icon_key] != blank %}
+                                  <div class="multipack-card-icon-item_icon">
+                                    {{ block.settings[icon_key] | image_url: width: 48 | image_tag: loading: 'lazy', widths: '24, 48', class: 'multipack-card-icon-item_icon-image', alt: "image" }}
+                                  </div>
+                                {% endif %}
+
+                                {% if block.settings[text_key] != blank %}
+                                  <span class="multipack-card-icon-item_title">{{ block.settings[text_key] }}</span>
+                                {% endif %}
+                              </li>
+                            {% endif %}
+                          {% endfor %}
+                        </ul>
+
                       </div>
 
                       {% if block.settings.image != blank %}
                         <div class="multipack-card-head-image">
-                          {{ block.settings.image | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '80, 120, 160', class: 'multipack-card-head-image_img' }}
+                          {{ block.settings.image | image_url: width: 1600 | image_tag: loading: 'lazy', class: 'multipack-card-head-image_img', alt: "image" }}
                         </div>
                       {% endif %}
                     </div>
 
-                    <ul class="multipack-card-icons_list" role="list">
+                    <ul class="multipack-card-icons_list multipack-card-icons_list_desk_mob" role="list">
                       {% for i in (1..5) %}
                         {% assign icon_key = 'icon_' | append: i %}
                         {% assign text_key = 'icon_text_' | append: i %}
@@ -73,7 +99,7 @@
                           <li class="multipack-card-icon-item">
                             {% if block.settings[icon_key] != blank %}
                               <div class="multipack-card-icon-item_icon">
-                                {{ block.settings[icon_key] | image_url: width: 48 | image_tag: loading: 'lazy', widths: '24, 48', class: 'multipack-card-icon-item_icon-image' }}
+                                {{ block.settings[icon_key] | image_url: width: 48 | image_tag: loading: 'lazy', widths: '24, 48', class: 'multipack-card-icon-item_icon-image', alt: "image" }}
                               </div>
                             {% endif %}
 
@@ -98,7 +124,7 @@
 
                       <span class="multipack-card-btn_ico">
                         {% if section.settings.button_icon != blank %}
-                          {{ section.settings.button_icon | image_url: width: 100 | image_tag: loading: 'lazy', widths: '12, 24', class: 'multipack-card-btn_ico_image' }}
+                          {{ section.settings.button_icon | image_url: width: 100 | image_tag: loading: 'lazy', widths: '12, 24', class: 'multipack-card-btn_ico_image', alt: "image" }}
                         {% endif %}
                       </span>
                     </a>
@@ -216,7 +242,7 @@
   .multipack-card-content {
     display: flex;
     flex-direction: column;
-    gap: 11px;
+    gap: 0;
   }
 
   .multipack-card-head {
@@ -239,7 +265,7 @@
 }
 
 .multipack-card-subtitle {
-    margin: 11px 0 0;
+    margin: 0;
     font-family: GT Cinetype;
     font-weight: 400;
     font-size: 14px;
@@ -391,83 +417,146 @@ span.multipack-card-btn_ico img {
     overflow: hidden;
 }
 
-{% if template.suffix == 'bundle' %}
+ul.multipack-card-icons_list.multipack-card-icons_list_desk_mob {
+    display: none;
+}
 
-h3.multipack-card-title {
+p.multipack-card-qty {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18.63px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+    margin: 0;
+}
+
+.multipack-card-head_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 7px 0 19px;
+}
+
+.bundle-{{ section.id }} h3.multipack-card-title {
     font-size: 50px;
     line-height: 52px;
 }
 
-p.multipack-card-subtitle {
+.bundle-{{ section.id }} .multipack-card-head{
+  align-items: center;
+}
+
+.bundle-{{ section.id }} p.multipack-card-subtitle {
     font-size: 18px;
     line-height: 29px;
 }
 
-.multipack-card-head-image {
+.bundle-{{ section.id }} p.multipack-card-qty {
+    font-size: 20px;
+}
+
+.bundle-{{ section.id }} .multipack-card-head-image {
     max-width: 200px;
 }
 
-.multipack-card-icon-item {
+.bundle-{{ section.id }} .multipack-card-icon-item {
     gap: 7px;
     padding: 12px;
 }
 
-.multipack-card-icon-item_icon {
-    width: 28px;
-    height: 28px;
+.bundle-{{ section.id }} .multipack-card-icon-item_icon {
+    width: 25px;
+    height: 25px;
 }
 
-span.multipack-card-icon-item_title {
+.bundle-{{ section.id }} span.multipack-card-icon-item_title {
     font-size: 18px;
     line-height: 140%;
 }
 
-.multipack-card-description ul {
+.bundle-{{ section.id }} .multipack-card-description ul {
     gap: 16px;
 }
 
-.multipack-card-description ul li {
+.bundle-{{ section.id }} .multipack-card-description ul li {
     font-size: 18px;
     line-height: 22px;
 }
 
-.multipack-card-description ul li:before {
+.bundle-{{ section.id }} .multipack-card-description ul li:before {
     width: 24px;
     height: 24px;
 }
 
-.multipack-card-inner {
+.bundle-{{ section.id }} .multipack-card-inner {
     gap: 50px;
     padding: 40px 32px;
 }
 
-.multipack-card {
+.bundle-{{ section.id }} .multipack-card {
     border-radius: 24px;
+}
+
+.bundle-{{ section.id }} ul.multipack-card-icons_list.multipack-card-icons_list_desk {
+    display: none;
+}
+
+.bundle-{{ section.id }} ul.multipack-card-icons_list.multipack-card-icons_list_desk_mob {
+    display: flex;
+    margin-top: 25px;
 }
 
 @media screen and (max-width: 768px) {
 
-h3.multipack-card-title {
+.bundle-{{ section.id }} h3.multipack-card-title {
     font-size: 28px;
     line-height: 38px;
 }
 
-span.multipack-card-icon-item_title {
-    font-size: 16px;
+.bundle-{{ section.id }} .multipack-card-inner {
+    padding: 40px 16px;
+    gap: 20px;
+}
+.bundle-{{ section.id }} span.multipack-card-icon-item_title {
+    font-size: 12px;
     line-height: 140%;
 }
 
-p.multipack-card-subtitle {
+.bundle-{{ section.id }} .multipack-card-icon-item_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.bundle-{{ section.id }} .multipack-card-description ul li {
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.bundle-{{ section.id }} ul.multipack-card-icons_list.multipack-card-icons_list_desk_mob {
+    margin-top: 0px;
+}
+
+.bundle-{{ section.id }} p.multipack-card-subtitle {
     font-size: 16px;
 }
 
-a.multipack-card-btn {
+.bundle-{{ section.id }} a.multipack-card-btn {
     margin-top: 8px;
 }
 
+.bundle-{{ section.id }} .multipack-card-head_text {
+    align-self: self-start;
+    width: 100%;
 }
 
-{% endif %}
+.bundle-{{ section.id }} p.multipack-card-qty {
+    font-size: 14px;
+}
+
+}
+
 
 
   @media screen and (max-width: 768px) {
@@ -478,10 +567,6 @@ a.multipack-card-btn {
 
     .multipack-card-inner {
         padding: 40px 16px;
-        gap: 20px;
-    }
-
-    .multipack-card-content {
         gap: 20px;
     }
 
@@ -504,9 +589,6 @@ a.multipack-card-btn {
         line-height: 38px;
     }
 
-    .multipack-card-subtitle {
-        margin: 6px 0 0;
-    }
 
     .multipack-section--mobile-grid .multipack-blocks,
     .multipack-section--mobile-grid .multipack-blocks .swiper-wrapper {
@@ -558,6 +640,14 @@ a.multipack-card-btn {
         display: none !important;
     }
 
+    .multipack-card-head_info {
+        flex-direction: row;
+        gap: 5px;
+        margin: 16px 0 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
   }
 
 </style>
@@ -593,6 +683,12 @@ a.multipack-card-btn {
 {
   "name": "Multipack Section",
   "settings": [
+    {
+        "type": "checkbox",
+        "id": "bundle_tem",
+        "label": "Bundle Template",
+        "default": false
+    },
     {
         "type": "checkbox",
         "id": "hide_subtitle",
@@ -750,6 +846,11 @@ a.multipack-card-btn {
           "id": "subtitle",
           "label": "Subtitle",
           "default": "Perfect for first-time customers"
+        },
+        {
+          "type": "text",
+          "id": "qty",
+          "label": "Quantity Text"
         },
         {
           "type": "image_picker",

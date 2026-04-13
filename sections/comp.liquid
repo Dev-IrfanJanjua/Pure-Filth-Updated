@@ -358,7 +358,7 @@ td.col-feature {
 
             <th class="col-brand highlight comparison-logo">
               {% if section.settings.brand_logo != blank %}
-                {{ section.settings.brand_logo | image_url: width: 200 | image_tag }}
+                {{ section.settings.brand_logo | image_url: width: 200 | image_tag: alt: "image" }}
               {% else %}
                 {{ section.settings.col_2 }}
               {% endif %}

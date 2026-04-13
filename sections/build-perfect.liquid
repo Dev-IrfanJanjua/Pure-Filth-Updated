@@ -289,10 +289,10 @@ li.build-perfect-block {
                 {% if section.settings.abs_image != blank or section.settings.abs_image_mob != blank %}
                 <div class="build-perfect-content-abs-img">
                     {% if section.settings.abs_image != blank %}
-                        {{ section.settings.abs_image | image_url: width: 1600 | image_tag: class: 'build-perfect-content-abs-img-desk' }}
+                        {{ section.settings.abs_image | image_url: width: 1600 | image_tag: class: 'build-perfect-content-abs-img-desk', alt: "image" }}
                     {% endif %}
                     {% if section.settings.abs_image_mob != blank %}
-                        {{ section.settings.abs_image_mob | image_url: width: 1600 | image_tag: class: 'build-perfect-content-abs-img-mob', style: 'display: none' }}
+                        {{ section.settings.abs_image_mob | image_url: width: 1600 | image_tag: class: 'build-perfect-content-abs-img-mob', style: 'display: none', alt: "image" }}
                     {% endif %}
                 </div>
                 {% endif %}
@@ -324,7 +324,7 @@ li.build-perfect-block {
 
                     {% if block.settings.image != blank %}
                     <div class="build-perfect-block-img">
-                        {{ block.settings.image | image_url: width: 1000 | image_tag }}
+                        {{ block.settings.image | image_url: width: 1000 | image_tag: alt: "image" }}
                     </div>
                     {% endif %}
 
