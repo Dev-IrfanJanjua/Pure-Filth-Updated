@@ -2586,7 +2586,7 @@ document.addEventListener('DOMContentLoaded', () => {
           children.forEach((child, index) => {
             setTimeout(() => {
               child.classList.add('is-visible');
-            }, index * 120);
+            }, index * 400);
           });
         }
 
