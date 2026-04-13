@@ -216,7 +216,7 @@ span.how-to-buy-block-btn-text {
         <div class="how-to-buy-wrapper">
 
             {% if section.settings.title != blank %}
-            <h2 class="how-to-buy-title">
+            <h2 class="how-to-buy-title fade-in-left">
                 {{ section.settings.title }}
             </h2>
             {% endif %}
@@ -225,7 +225,7 @@ span.how-to-buy-block-btn-text {
             <div class="how-to-buy-blocks">
 
                 {% for block in section.blocks %}
-                <div class="how-to-buy-block" {{ block.shopify_attributes }}>
+                <div class="how-to-buy-block fade-in-item" {{ block.shopify_attributes }}>
 
                     {% if block.settings.image != blank %}
                     <div class="how-to-buy-blcok_img">

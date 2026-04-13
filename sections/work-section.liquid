@@ -195,7 +195,7 @@ h3.work-card-title {
         <div class="work-wrapper">
 
             {% if section.settings.title != blank %}
-            <h2 class="work-wrapper-title">
+            <h2 class="work-wrapper-title fade-in-left">
                 {{ section.settings.title }}
             </h2>
             {% endif %}
@@ -203,7 +203,7 @@ h3.work-card-title {
             <div class="work-cards">
 
                 {% for block in section.blocks %}
-                <div class="work-card" {{ block.shopify_attributes }}>
+                <div class="work-card fade-in-item" {{ block.shopify_attributes }}>
 
                     {% if block.settings.card_icon != blank %}
                     <div class="work-card_img">

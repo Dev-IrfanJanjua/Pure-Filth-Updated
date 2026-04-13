@@ -357,7 +357,7 @@ p.collection-card-bottom-subtitle {
   <div class="page-width">
     <div class="collection-cards-head">
       {% if section.settings.title != blank %}
-        <h2 class="collection-cards-title">{{ section.settings.title }}</h2>
+        <h2 class="collection-cards-title fade-in-left">{{ section.settings.title }}</h2>
       {% endif %}
     </div>
 
@@ -369,7 +369,7 @@ p.collection-card-bottom-subtitle {
       {% for block in section.blocks %}
         {% assign collection = collections[block.settings.collection] %}
 
-        <div class="collection-card" style="background: {{ block.settings.card_bg }}">
+        <div class="collection-card fade-in-item" style="background: {{ block.settings.card_bg }}">
           <a href="{{ collection.url }}" class="collection-card-link"></a>
           {% if block.settings.tag != blank %}
             <span class="collection-card-tag">{{ block.settings.tag }}</span>

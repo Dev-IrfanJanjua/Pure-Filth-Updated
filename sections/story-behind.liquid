@@ -275,7 +275,7 @@ span.story-behind-btn-text {
             {% endif %}
 
             <div class="story-behind-content {% if section.settings.pdp %} story-behind-content_pdp-{{ section.id }} {% endif %}">
-                <div class="story-behind-content_inner">
+                <div class="story-behind-content_inner fade-in-up">
                     {% if section.settings.title != blank %}
                     <h2 class="story-behind-title">
                         {{ section.settings.title | replace: '<p>', '' | replace: '</p>', '' }}

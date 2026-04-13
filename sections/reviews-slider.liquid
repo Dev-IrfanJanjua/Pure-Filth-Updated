@@ -168,7 +168,7 @@ span.reviews-card_name,
     <div class="page-width">
         <div class="reviews-wrapper">
 
-            <div class="reviews-head">
+            <div class="reviews-head fade-in-up">
 
                 {% if section.settings.title != blank %}
                 <h2 class="reviews_title">
@@ -208,7 +208,7 @@ span.reviews-card_name,
 
                         {% for block in section.blocks %}
                         <div class="swiper-slide" {{ block.shopify_attributes }}>
-                            <div class="reviews_card">
+                            <div class="reviews_card fade-in-item">
 
                                 {% if block.settings.image != blank %}
                                 <div class="reviews-card_image">

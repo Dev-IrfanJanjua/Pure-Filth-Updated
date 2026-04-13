@@ -252,7 +252,7 @@ span.vs-video-card_abs-text {
 
 
 <div id="video-slider-formulas-section" class="fade-in-section video-slider-formulas section-{{ section.id }} {% if section.settings.slides_per_view_desktop == 3 %}three-slides-container{% endif %} {% if section.settings.pdp %} pdp-{{ section.id }} {% endif %}">
-    <div class="vide-slider_head">
+    <div class="vide-slider_head fade-in-up">
         <div class="vide-slider-ratings">
             {% if section.settings.stars_image != blank %}
             <div class="vide-slider-starts_img">
@@ -275,7 +275,7 @@ span.vs-video-card_abs-text {
         {% for block in section.blocks %}
             {% assign video_poster = block.settings.video | img_url: ""   %}
           <div class="swiper-slide vs-slide">
-            <div class="vs-video-card">
+            <div class="vs-video-card fade-in-item">
               {% if block.settings.abs_img != blank or block.settings.abs_text != blank %}
                 <div class="vs-video-card_abs-content">
                   {% if block.settings.abs_img != blank %}

@@ -266,17 +266,17 @@ ul.bg_content-blocks {
         <div class="bg_content-wrapper">
 
             {% if section.settings.title != blank %}
-                <h2 class="bg_content_title">{{ section.settings.title | remove: '<p>' | remove: '</p>' }}</h2>
+                <h2 class="bg_content_title fade-in-left">{{ section.settings.title | remove: '<p>' | remove: '</p>' }}</h2>
             {% endif %}
 
             {% if section.settings.description != blank %}
-                <div class="bg_content_desc">{{ section.settings.description | remove: '<p>' | remove: '</p>' }}</div>
+                <div class="bg_content_desc fade-in-left">{{ section.settings.description | remove: '<p>' | remove: '</p>' }}</div>
             {% endif %}
 
             <ul class="bg_content-blocks">
               {% for block in section.blocks %}
                 {%  if block.type == 'list' %}
-                  <li class="bs_content-block">
+                  <li class="bs_content-block fade-in-item">
                     {% if block.settings.icon != blank %}
                         <div class="bs_content-block-icon">
                             {{ block.settings.icon | image_url: width: 160 | image_tag:
@@ -294,7 +294,7 @@ ul.bg_content-blocks {
             </ul>
 
             {% if section.settings.button_text != blank %}
-                <a href="{{ section.settings.button_link }}" class="bg_content_button">
+                <a href="{{ section.settings.button_link }}" class="bg_content_button fade-in-up">
                     <span class="her-banner_button-text">{{ section.settings.button_text }}</span>
                     {% if section.settings.button_icon != blank %}
                         <div class="bg_content_button-icon">

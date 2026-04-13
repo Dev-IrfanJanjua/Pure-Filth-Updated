@@ -241,7 +241,7 @@ p.run-out-subtitle {
 
             <div class="run-out-content">
 
-                <div class="run-out-head">
+                <div class="run-out-head fade-in-up">
 
                     {% if section.settings.title != blank %}
                     <h2 class="run-out-title">
@@ -262,7 +262,7 @@ p.run-out-subtitle {
                 <ul class="run-out-blocks">
 
                     {% for block in section.blocks %}
-                    <li class="run-out-block" {{ block.shopify_attributes }}>
+                    <li class="run-out-block fade-in-item" {{ block.shopify_attributes }}>
 
                         {% if block.settings.icon != blank %}
                         <div class="run-out-block-icon">

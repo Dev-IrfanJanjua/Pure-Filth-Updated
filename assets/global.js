@@ -2557,33 +2557,45 @@ function formatPrice(moneyString, amount) {
 
 // ===== Fade in function for section fuction add in global.js
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(e => {
+//       if (e.isIntersecting) {
+//         e.target.classList.add('is-visible');
+//         observer.unobserve(e.target);
+//       }
+//     });
+//   }, { threshold: 0.12 });
+//   document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+// });
+
+// ==== Fade in function for section for blocks and heading to fade in or fade up fuction add in global.js
+
 document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('is-visible');
-        observer.unobserve(e.target);
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+
+        el.classList.add('is-visible');
+
+        // stagger only if it's a section
+        if (el.classList.contains('fade-in-section')) {
+          const children = el.querySelectorAll('.fade-in-item');
+
+          children.forEach((child, index) => {
+            setTimeout(() => {
+              child.classList.add('is-visible');
+            }, index * 120);
+          });
+        }
+
+        observer.unobserve(el);
       }
     });
   }, { threshold: 0.12 });
-  document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+
+  document.querySelectorAll(
+    '.fade-in-section, .fade-in-item, .fade-in-up, .fade-in-left'
+  ).forEach(el => observer.observe(el));
 });
-
-
-// const loadCSS = (href) => {
-//   const link = document.createElement('link');
-//   link.rel = 'stylesheet';
-//   link.href = href;
-//   document.head.appendChild(link);
-// };
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach(e => {
-//     if (e.isIntersecting) {
-//       loadCSS('/cdn/shop/t/your-theme/assets/section.css');
-//       observer.disconnect();
-//     }
-//   });
-// });
-
-// observer.observe(document.querySelector('.fade-in-section'));
