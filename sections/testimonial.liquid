@@ -230,21 +230,21 @@ span.testimonial-reviews-title {
 {% endstyle %}
 
 
-<section class="testimonial-section section-{{ section.id }}">
+<section class="testimonial-section section-{{ section.id }} fade-in-section ">
 
   {% comment %} <div class="page-width"> {% endcomment %}
 
     <div class="testimonial-wrapper">
 
-      <div class="testimonial-wrapper_head">
+      <div class="testimonial-wrapper_head fade-in-up">
         {% if section.settings.title != blank %}
-        <h2 class="testimonial-title">
+        <h2 class="testimonial-title fade-in-left">
           {{ section.settings.title }}
         </h2>
         {% endif %}
 
         {% if section.settings.reviews_title != blank %}
-          <div class="testimonial-reviews-wrapper">
+          <div class="testimonial-reviews-wrapper fade-in-up">
             <div class="testimonial-reviews-head">
               {% if section.settings.reviews_img != blank %}
                 <div class="testimonial-reviews-img">
@@ -282,7 +282,7 @@ span.testimonial-reviews-title {
             {% for block in section.blocks %}
             <div class="swiper-slide" {{ block.shopify_attributes }}>
 
-              <div class="testimonial-card">
+              <div class="testimonial-card fade-in-item">
 
                 {% if block.settings.image != blank %}
                 <div class="testimonial-card-img">

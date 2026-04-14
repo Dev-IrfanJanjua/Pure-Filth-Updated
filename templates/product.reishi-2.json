@@ -74,6 +74,12 @@
             "show_price_custom_info": ""
           }
         },
+        "pdp_dropdown_H9m8fK": {
+          "type": "Pdp_dropdown",
+          "settings": {
+            "background": "#f0fff7"
+          }
+        },
         "1e939cd6-0958-4135-a9e5-c50faef01437": {
           "type": "variant_picker",
           "settings": {
@@ -90,6 +96,7 @@
           "type": "purchase_options",
           "settings": {
             "headline": "Most popular: Get 20% off",
+            "sub_title": "Subscribe & Save",
             "headline_bg_color": "#7B65FF",
             "headline_text_color": "#000000",
             "bg_color": "#F1EAFF",
@@ -262,6 +269,7 @@
         "custom_list_JjVr6n",
         "custom_icon_text_phnHQx",
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b",
+        "pdp_dropdown_H9m8fK",
         "1e939cd6-0958-4135-a9e5-c50faef01437",
         "1e939cd6-0955-4135-a9e5-c50faef01437",
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",

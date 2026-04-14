@@ -237,13 +237,13 @@
 }
 </style>
 
-<section class="section-{{ section.id }}-padding section-{{ section.id }} faq-accordion-section pdp-section">
+<section class=" fade-in-section section-{{ section.id }}-padding section-{{ section.id }} faq-accordion-section pdp-section">
   <div class="faq--wrapper">
     <div class="page-width">
       <div class="faq-main-wrapper csp-img">
         <div class="faq-left-content">
             {% if section.settings.heading != blank %}
-                <div class="faqs-title">{{ section.settings.heading }}</div>
+                <div class="faqs-title fade-in-left">{{ section.settings.heading }}</div>
             {% endif %}
             {% if section.settings.description != blank %}
                 <div class="faqs-des">{{ section.settings.description }}</div>
@@ -266,7 +266,7 @@
         </div>
         <div class="faq-right-accordion">
           {% for block in section.blocks %}
-            <div class="accordion-item" data-accordion-item>
+            <div class="accordion-item fade-in-item" data-accordion-item>
               <div class="accordion-header">
                 <div class="accordion-question">{{ block.settings.question }}</div>
                 <div class="accordion-icon">

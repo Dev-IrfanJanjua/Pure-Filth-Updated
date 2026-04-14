@@ -193,15 +193,15 @@
         "menu_qQQTmX": {
           "type": "menu",
           "settings": {
-            "title": "Shop",
-            "menu": "shop"
+            "title": "Menu",
+            "menu": "menu"
           }
         },
         "menu_GEXqV3": {
           "type": "menu",
           "settings": {
-            "title": "Learn",
-            "menu": "learn"
+            "title": "Company",
+            "menu": "company"
           }
         },
         "menu_NtMNpx": {
@@ -235,9 +235,9 @@
         "padding_top_mob": 40,
         "padding_bottom_mob": 20,
         "tiktok_icon": "shopify://shop_images/Social_Icons.svg",
-        "tiktok_link": "https://www.tiktok.com",
+        "tiktok_link": "",
         "instagram_icon": "shopify://shop_images/Social_Icons_1.svg",
-        "instagram_link": "https://www.instagram.com"
+        "instagram_link": "https://www.instagram.com/getpurefilth"
       }
     }
   },

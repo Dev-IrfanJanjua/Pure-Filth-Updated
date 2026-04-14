@@ -1,0 +1,132 @@
+{% style %}
+
+.product-dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 14px 0 0px;
+}
+
+.dropdown-toggle {
+    padding: 20px 12px;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid #00000033;
+    border-radius: 12px;
+    background: {{ block.settings.background }} ;
+    box-shadow: none;
+    position: relative;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-align: start;
+    color: #000000;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: {{ block.settings.background }};
+    min-width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    padding-bottom: 20px;
+    border-radius: 12px;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+span.dropdown-toggle_icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 15px;
+    height: auto;
+    display: block;
+}
+
+h3.produt-dropdown-title {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin: 0 0 16px;
+    color: #000;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.product-dropdown.active .dropdown-menu {
+  display: block;
+}
+
+@media screen and (max-width: 768px){
+    .product-dropdown {
+        margin: 24px 0 0px;
+    }
+
+    h3.produt-dropdown-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+}
+
+
+{% endstyle %}
+
+{% assign dropdown_products = product.metafields.custom.product_dropdown.value %}
+
+<div class="product-dropdown">
+
+
+    <h3 class="produt-dropdown-title">Choose your Mushroom:</h3>
+
+  <button class="dropdown-toggle">
+      {{ product.title }}
+      <span class="dropdown-toggle_icon">
+        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.95898 6.85547L5.51074 6.40723L0.448242 1.34473L0 0.896484L0.896484 0L1.34473 0.448239L5.95898 5.08886L10.5732 0.474609L11.0215 0.026367L11.918 0.896484L11.4698 1.34473L6.40723 6.40723L5.95898 6.85547Z" fill="black"/>
+        </svg>
+      </span>
+  </button>
+
+  <ul class="dropdown-menu">
+    {% for item in dropdown_products %}
+      <li class="dropdown-item">
+        <a href="{{ item.url }}" class="dropdown-item_link">
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelector(".product-dropdown");
+    const button = dropdown.querySelector(".dropdown-toggle");
+
+    button.addEventListener("click", function () {
+      dropdown.classList.toggle("active");
+    });
+  });
+</script>

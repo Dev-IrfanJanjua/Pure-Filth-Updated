@@ -153,7 +153,7 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient {% if section.settings.cstm_style %}cstm_header_color{% endif %}">
   <div id="header" class="header js-header{{ header_classes }} section-{{ section.id }} {% if section.settings.cstm_style %}cstm_header{% endif %}">
     <div class="container {{ section.settings.section_width }} {% if section.settings.cstm_style %}page-width{% endif %}">
 

@@ -41,6 +41,22 @@
             {%- endif -%}
           </p>
 
+
+          <div class="upsell_product-price-wrapper">
+            <div class="upsell_product-prices">
+              <span class="upsell_product-price-main">{{ product.selected_or_first_available_variant.price | money }}</span>
+              <span class="upsell_product-price-compare">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
+            </div>
+            {% assign price = product.selected_or_first_available_variant.price %}
+            {% assign compare = product.selected_or_first_available_variant.compare_at_price %}
+
+            {% if compare > price %}
+              <span class="upsell-product-saving">
+                save {{ compare | minus: price | money }}
+              </span>
+            {% endif %}
+          </div>
+
           <div class="upsell_add-button">
             <product-form
                 id="ProductForm-{{- section.id -}}"
@@ -185,6 +201,54 @@
 
 .upsell_add-button button.button.product-selector__submit:hover{
     color: #fff;
+}
+
+span.upsell_product-price-main {
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+span.upsell_product-price-compare {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-decoration-style: solid;
+    text-decoration-thickness: 6.5%;
+    color: #00000080;
+}
+
+span.upsell-product-saving {
+    border: 1px solid #00000033;
+    padding: 8px;
+    background: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: GT Cinetype;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 10px;
+    letter-spacing: 0.9px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.upsell_product-price-wrapper {
+    margin-top: 8px;
+    display: flex;
+    align-items: start;
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 @media (max-width: 768px) {

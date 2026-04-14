@@ -74,6 +74,12 @@
             "show_price_custom_info": ""
           }
         },
+        "pdp_dropdown_ykDyRP": {
+          "type": "Pdp_dropdown",
+          "settings": {
+            "background": "#ffeeee"
+          }
+        },
         "1e939cd6-0958-4135-a9e5-c50faef01437": {
           "type": "variant_picker",
           "settings": {
@@ -90,6 +96,7 @@
           "type": "purchase_options",
           "settings": {
             "headline": "Most popular: Get 20% off",
+            "sub_title": "Subscribe & Save",
             "headline_bg_color": "#D52626",
             "headline_text_color": "#000000",
             "bg_color": "#FFEEEE",
@@ -262,6 +269,7 @@
         "custom_list_JjVr6n",
         "custom_icon_text_phnHQx",
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b",
+        "pdp_dropdown_ykDyRP",
         "1e939cd6-0958-4135-a9e5-c50faef01437",
         "1e939cd6-0955-4135-a9e5-c50faef01437",
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
@@ -880,56 +888,56 @@
           "type": "accordion_item",
           "settings": {
             "question": "Are your mushrooms third-party tested?",
-            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+            "answer": "<p>Damn right they are. We wouldn't dream of letting anything less than filthy perfection pass through the lab. Each batch is tested for quality, potency, and purity, so you know you're getting the good stuff‚ no fillers, no nasties, just 100% mushroom goodness.</p>"
           }
         },
         "accordion_item_BAtKnY": {
           "type": "accordion_item",
           "settings": {
             "question": "How are your mushroom powders made?",
-            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+            "answer": "<p>We use a dual extraction method to make sure we’re pulling out all the good stuff. That means both water and alcohol extractions to get every last drop of those bioactive compounds. What you end up with is a potent, powerful powder ready to fuel your day.</p>"
           }
         },
         "accordion_item_kHLwPL": {
           "type": "accordion_item",
           "settings": {
             "question": "Do your supplements have any alcohol in them?",
-            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+            "answer": "<p>I know we said the dual extraction method invovled alcohol as part of the process. But there are zero traces of it in the final product. So unless you're chugging your mushrooms down with a whiskey chaser (no judgement here), no, there's absolutely no alcohol involved. Our products are all sober and straight to the point.</p>"
           }
         },
         "accordion_item_aJgbxJ": {
           "type": "accordion_item",
           "settings": {
             "question": "How do I take Pure Filth mushrooms?",
-            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+            "answer": "<p>Mix 'em, sip 'em, sprinkle 'em on your avo toast‚ whatever floats your fungi boat. Our powders are versatile enough to slip into your daily routine. Hot drinks, smoothies, protein shakes or even on your favourite dessert. Filthy, but functional.</p>"
           }
         },
         "accordion_item_eij4i7": {
           "type": "accordion_item",
           "settings": {
             "question": "Are your mushrooms legal?",
-            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+            "answer": "<p>Only on the path to better health, mate. These are functional mushrooms (aKa, healthy and legal), not the psychedelic kind. You'll be more 'focused and fabulous' than ‚'floating in outer space.'</p>"
           }
         },
         "accordion_item_kT9Mcr": {
           "type": "accordion_item",
           "settings": {
             "question": "Do your products actually work?",
-            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+            "answer": "<p>We wouldn't have spent two years tracking down the best mushrooms on the planet if they didn't. Each one is packed with bioactive compounds that support your energy, focus, stress levels, gut health, skin and overall well-being. You'll feel it, and if you don't, well‚ maybe you're already superhuman.</p>"
           }
         },
         "accordion_item_JcbKG9": {
           "type": "accordion_item",
           "settings": {
             "question": "Are Pure Filth mushrooms vegan and gluten-free?",
-            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+            "answer": "<p>Yes and Yes. Our mushrooms are all plant-based and free from any gluten or other rubbish you don't need. Just pure fungi goodness, with nothing hiding in the shadows or small print.</p>"
           }
         },
         "accordion_item_nyRnCa": {
           "type": "accordion_item",
           "settings": {
             "question": "Can I take these supplements daily?",
-            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+            "answer": "<p>Absolutely! These mushrooms are the daily habit you never knew you needed. Think of it as a filthy little ritual for better energy, focus, and zen vibes all day long.</p>"
           }
         }
       },

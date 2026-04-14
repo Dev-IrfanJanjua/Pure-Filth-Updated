@@ -49,14 +49,14 @@
   endif
 -%}
 
-<div class="collection js-animation-fade-in color-{{ section.settings.color_scheme }} {{ settings.card_product_layout }} {% if section.settings.cstm_tyle %} collection-{{ section.id }} {% endif %}" >
+<div class="fade-in-section collection js-animation-fade-in color-{{ section.settings.color_scheme }} {{ settings.card_product_layout }} {% if section.settings.cstm_tyle %} collection-{{ section.id }} {% endif %}" >
 
   {{ facets_html }}
 
   <div class="container {{ section.settings.section_width }} {% if section.settings.cstm_tyle %} page-width {% endif %}">
     <div class="collection__inner">
       {% if section.settings.cstm_tyle %}
-        <div class="collection__header custom-collection__header">
+        <div class="collection__header custom-collection__header fade-in-up">
           <h2 class="custom-collection__title">{{ section.settings.custom_heading | default: collection.title }}</h2>
           <div class="collection_blocks">
             <div class="collection_blocks__inner">

@@ -25,6 +25,9 @@
         <h1 class="{{ product_block_class }}" {{ block.shopify_attributes }}>
           {{- product.title | escape -}}
         </h1>
+      {%- when 'pdp_heading_tag' -%}
+        <div class="Pdp-heading-tag">{{ block.settings.pdp_heading_tag }}</div>
+
       {%- when 'badge' -%}
         {%- assign product_block_class = 'product__badges' | append: ' ' | append: product_block_class -%}
         <div class="{{ product_block_class }}" {{ block.shopify_attributes }}>
@@ -175,6 +178,8 @@
             </accordion-default>
           {% endif %}
         </div>
+        {%- when 'Pdp_dropdown' -%}
+          {% render 'product-dropdown', block: block, product: product %}
         {%- when 'custom-reviews' -%}
           <div class="cs_pro_custom_rev_main">
             <div class="cs_pro_custom_rev_img">
@@ -280,9 +285,9 @@
 
       {%- when 'moneyback' -%}
         {% render 'money-back-guarantee', block: block %}
-
-      {%- when 'pdp-tag' -%}
-        <div class="product_tag_cstm"> {{ block.settings.pdp_tag }} </div>
+        
+      {%- when 'cstm_pdp_tag' -%}
+        <div class="product_tag_cstm"> {{ block.settings.pdp_tag }}</div>
 
       {%- when 'purchase_options' -%}
         {%- render 'cstm-selling-plan',

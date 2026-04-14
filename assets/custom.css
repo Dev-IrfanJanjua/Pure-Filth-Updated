@@ -16,7 +16,7 @@
     font-weight: 700;
     line-height: 100%; /* 52px */
     letter-spacing: 4px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin: 0 !important;
 }
 .image-grid {
@@ -240,8 +240,9 @@ background: #FAF7ED;
 }
 
 .pro_section_main_custom_class label.swatch.swatch--square.is-active span.swatch-variant-tag {
-    background: #1CC84D;
-    color: #fff !important;
+    background: var(--tag_bg-color) ;
+    color: var(--tag-color) !important;
+    /* background: #1CC84D; */
 }
 
 .pro_section_main_custom_class .cstm_buy-btn-icon-abs {
@@ -301,6 +302,17 @@ background: #FAF7ED;
 
 .pro_section_main_custom_class .product__media .media.media--portrait {
     border-radius: 16px !important;
+}
+
+.product_tag_cstm {
+    font-family: PP Formula;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 4px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
 }
 
 
@@ -365,6 +377,12 @@ div#product-media-gallery {
     margin-bottom: 24px;
 }
 
+.product_tag_cstm {
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 2px;
+}
+
 }
 
 /* ============ template colors stylling =========== */
@@ -373,47 +391,47 @@ div#product-media-gallery {
     color: #000;
 } */
 
-.template--mushroom-powder .pro_section_main_custom_class label.swatch.swatch--square.is-active{
+.template--lions-mane-product .pro_section_main_custom_class label.swatch.swatch--square.is-active{
     background: #FAF7ED;
 }
 
-.template--mushroom-powder .pro_section_main_custom_class button.button.product-selector__submit{
+.template--lions-mane-product .pro_section_main_custom_class button.button.product-selector__submit{
     background: #FEC700 !important;
     color: #000 !important;
 }
 
-.template--cordyceps-2 .pro_section_main_custom_class label.swatch.swatch--square.is-active{
+.template--cordyceps-product .pro_section_main_custom_class label.swatch.swatch--square.is-active{
     background: #FFEEEE;
 }
 
-.template--cordyceps-2 .pro_section_main_custom_class button.button.product-selector__submit{
+.template--cordyceps-product .pro_section_main_custom_class button.button.product-selector__submit{
     background: #D52626 !important;
     color: #000;
 }
 
-.template--chaga-2 .pro_section_main_custom_class label.swatch.swatch--square.is-active{
+.template--chaga-product .pro_section_main_custom_class label.swatch.swatch--square.is-active{
     background: #E2F3FF;
 }
 
-.template--chaga-2 .pro_section_main_custom_class button.button.product-selector__submit{
+.template--chaga-product .pro_section_main_custom_class button.button.product-selector__submit{
     background: #038BFF !important;
     color: #000;
 }
 
-.template--turkey-2 .pro_section_main_custom_class label.swatch.swatch--square.is-active{
+.template--turkey-tail-product .pro_section_main_custom_class label.swatch.swatch--square.is-active{
     background: #F0FFF7;
 }
 
-.template--turkey-2 .pro_section_main_custom_class button.button.product-selector__submit{
+.template--turkey-tail-product .pro_section_main_custom_class button.button.product-selector__submit{
     background: #00B453 !important;
     color: #000;
 }
 
-.template--tremella-2 .pro_section_main_custom_class label.swatch.swatch--square.is-active{
+.template--tremella-product .pro_section_main_custom_class label.swatch.swatch--square.is-active{
     background: #FFE6F9;
 }
 
-.template--tremella-2 .pro_section_main_custom_class button.button.product-selector__submit{
+.template--tremella-product .pro_section_main_custom_class button.button.product-selector__submit{
     background: #ED87D0 !important;
 }
 

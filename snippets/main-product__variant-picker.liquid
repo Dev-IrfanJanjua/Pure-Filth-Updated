@@ -110,12 +110,14 @@
                     for variant in product.variants
                       if variant.options contains value
                         assign variant_price = variant.price
+                        assign compare_price = variant.compare_at_price
                         break
                       endif
                     endfor
 
                     assign discount = variant_price | times: 0.2
                     assign final_price = variant_price | minus: discount
+                    assign compare_price = compare_price
 
                     assign variant_tag = ''
                     for variant in product.variants
@@ -125,7 +127,7 @@
                       endif
                     endfor
 
-                    render 'product-swatch', value: value, colors_for_check: color_codes, class: swatch_class, id: id, name: name, attr: attr, show_label: show_label, variant_img: variant_img, tabindex: '0', variant_tag: variant_tag, price: variant_price, discount_price: final_price
+                    render 'product-swatch', value: value, colors_for_check: color_codes, class: swatch_class, id: id, name: name, attr: attr, show_label: show_label, variant_img: variant_img, tabindex: '0', variant_tag: variant_tag, price: variant_price, discount_price: final_price, compare_price: compare_price, block: block
                   -%}
                 </li>
                 {% comment %}

@@ -12,165 +12,179 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "custom_reviews_9gTjYL": {
+          "type": "custom-reviews",
+          "settings": {}
+        },
+        "cstm_pdp_tag_mypHQC": {
+          "type": "cstm_pdp_tag",
+          "settings": {
+            "pdp_tag": "{{ product.metafields.custom.title_tag.value }}"
+          }
+        },
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8": {
           "type": "title",
           "settings": {
             "spacing_bottom": "1"
           }
         },
-        "text_qa4eEX": {
-          "type": "text",
+        "custom_richtext_a9Tp7h": {
+          "type": "custom-richtext",
           "settings": {
-            "spacing_bottom": "auto",
-            "text": "THE IMMUNITY MUSHROOM",
-            "text_style": "link",
-            "link_to_resource": "none"
+            "rich-text": "<p>Chaga is loaded with powerful antioxidants that help support immune health and protect the body. Just one teaspoon of Chaga delivers antioxidant power comparable to 600 blueberries.</p>"
+          }
+        },
+        "custom_list_JjVr6n": {
+          "type": "custom_list",
+          "settings": {
+            "list_icon": "shopify://shop_images/verify_2.svg",
+            "list_item_1": "100% Fruiting body extract",
+            "list_item_2": "SINGLE INGREDIENT FORMULA",
+            "list_item_3": "Third-party tested",
+            "list_item_4": "Organic and Halal",
+            "list_item_5": ""
+          }
+        },
+        "custom_icon_text_phnHQx": {
+          "type": "custom-icon-text",
+          "settings": {
+            "bg_clr": "#E2F3FF",
+            "image1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1.svg",
+            "text1": "Daily Defence",
+            "image2": "shopify://shop_images/icon.svg_-_2026-03-18T120156.472_1.svg",
+            "text2": "Daily Maintenance",
+            "image3": "shopify://shop_images/icon.svg_-_2026-03-18T120241.826_1.svg",
+            "text3": "Antioxidant rich",
+            "image4": "shopify://shop_images/icon.svg_-_2026-03-18T120409.922_1.svg",
+            "text4": "Anti-inflammatory",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": ""
           }
         },
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
           "type": "price",
+          "disabled": true,
           "settings": {
-            "spacing_bottom": "auto",
+            "spacing_bottom": "1",
             "show_price_tax_info": true,
             "show_price_shipping_info": false,
             "show_price_custom_info": ""
           }
         },
-        "1e939cd6-0955-4135-a9e5-c50faef01437": {
-          "type": "purchase_options",
-          "disabled": true,
+        "pdp_dropdown_rAmYV7": {
+          "type": "Pdp_dropdown",
           "settings": {
-            "spacing_bottom": "1"
+            "background": "#e2f3ff"
           }
         },
         "1e939cd6-0958-4135-a9e5-c50faef01437": {
           "type": "variant_picker",
           "settings": {
             "title": "Variant picker",
+            "tag_bg": "#1cc84d",
+            "tag_color": "#ffffff",
             "spacing_bottom": "1",
             "variant_picker_type": "buttons",
             "show_variant_images": false,
             "variant_picker_layout": "product-selector--default",
             "size_guide_page": "size-guide",
-            "sizes_option": "Size"
+            "sizes_option": "Choose your Size:"
           }
         },
-        "subscriptions_app_block_NyFLVE": {
-          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+        "1e939cd6-0955-4135-a9e5-c50faef01437": {
+          "type": "purchase_options",
           "settings": {
-            "subscription_policy_url": "",
-            "color_text_body": "#151515",
-            "dividers_color": "#151515",
-            "border_thickness": 1,
-            "border_radius": 6,
-            "product": "{{product}}"
+            "headline": "Most popular: Get 20% off",
+            "sub_title": "Subscribe & Save",
+            "headline_bg_color": "#038BFF",
+            "headline_text_color": "#000000",
+            "bg_color": "#E2F3FF",
+            "icon_color": "#038bff",
+            "spacing_bottom": "1",
+            "list_text_1": "Delivered every 30 days",
+            "list_text_2": "Pause or cancel anytime",
+            "list_text_3": "Early access to new drops",
+            "list_text_4": "Never run out",
+            "list_text_5": ""
           }
         },
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8": {
           "type": "buy_buttons",
           "settings": {
+            "show_icon": true,
             "spacing_bottom": "1",
-            "show_quantity": true,
+            "show_quantity": false,
             "quantity_type": "inline",
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
         },
-        "e6d841d6-2f71-40b3-956a-912df13f9f6e": {
-          "type": "inventory_notice",
-          "disabled": true,
+        "custom_feature_rB8z8F": {
+          "type": "custom_feature",
           "settings": {
-            "spacing_bottom": "1",
-            "inventory_threshold": 15,
-            "notice_just_text": false
+            "list_icon_1": "shopify://shop_images/Vector_3.svg",
+            "list_item_1": "Ships from UAE",
+            "list_icon_2": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_5b78b3a9-7526-4164-905d-c122a6171b08.svg",
+            "list_item_2": "Same Day & Next Day Delivery",
+            "list_icon_3": "shopify://shop_images/Capa_1.svg",
+            "list_item_3": "Third-Party Tested"
           }
         },
-        "text_d4pg97": {
-          "type": "text",
+        "moneyback_We74c3": {
+          "type": "moneyback",
           "settings": {
-            "spacing_bottom": "1",
-            "text": "2g Serving Size",
-            "text_style": "body",
-            "link_to_resource": "none"
+            "money_text": "30 day money back guarantee",
+            "text_color": "#000000",
+            "bg_color": "#E2F3FF",
+            "border_color": "#0000001F"
           }
         },
-        "text_3fbiKY": {
-          "type": "text",
+        "icon_list_NGd38t": {
+          "type": "icon_list",
           "settings": {
-            "spacing_bottom": "1",
-            "text": "1 Ingredient (100% Mushroom)",
-            "text_style": "body",
-            "link_to_resource": "none"
-          }
-        },
-        "b2dabe12-2158-4ba6-bc54-9baae453acf5": {
-          "type": "text",
-          "settings": {
-            "spacing_bottom": "1",
-            "text": "100% Fruiting Bodied",
-            "text_style": "body",
-            "link_to_resource": "none"
-          }
-        },
-        "text_L4MyHj": {
-          "type": "text",
-          "settings": {
-            "spacing_bottom": "1",
-            "text": "Third-Party Tested",
-            "text_style": "body",
-            "link_to_resource": "none"
-          }
-        },
-        "text_iYBpPE": {
-          "type": "text",
-          "settings": {
-            "spacing_bottom": "1",
-            "text": "No Sugar, Additives, Fillers or Preservatives",
-            "text_style": "body",
-            "link_to_resource": "none"
+            "icon_1": "shopify://shop_images/Frame_2147242267_3.svg",
+            "icon_2": "shopify://shop_images/Frame_2147242268_3.svg",
+            "icon_3": "shopify://shop_images/Frame_2147242272_3.svg",
+            "icon_4": "shopify://shop_images/Frame_2147242274_2.svg",
+            "icon_5": "shopify://shop_images/Frame_2147242270_3.svg",
+            "icon_6": "shopify://shop_images/Frame_2147242673_2.svg"
           }
         },
         "content_tabs_fEGJi4": {
           "type": "content_tabs",
+          "disabled": true,
           "settings": {
             "tabs_alignment": "start",
             "tabs_content_alignment": "start"
           }
         },
+        "description_qA3HqH": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "spacing_bottom": "auto",
+            "behaviour": "tab",
+            "heading": "Description",
+            "text_truncate": 0,
+            "icon": "theme-plus"
+          }
+        },
         "content_block_idt6CB": {
           "type": "content_block",
+          "disabled": true,
           "settings": {
             "behaviour": "row",
             "heading": "Description",
-            "row_content": "<p><strong>THE IMMUNITY MUSHROOM<br/></strong>Chaga is the immune system's powerhouse, it is one of the most potent natural superfoods in the world. </p><p>A single teaspoon of Chaga is said to have the same amount of antioxidants as a whopping 600 blueberries. </p><p>This mighty mushroom is an all-around immunity juggernaut— anti-inflammatory, antiviral, antibacterial, and antifungal. A true legend in the mushroom game. </p>",
+            "row_content": "",
             "icon": "",
             "page": "",
             "spacing_bottom": "0"
           }
         },
         "content_block_y7VbNC": {
-          "type": "content_block",
-          "settings": {
-            "behaviour": "row",
-            "heading": "How to use",
-            "row_content": "<p>Add 2 grams (approx. 1 teaspoon) into hot water, coffee, protein shake or whatever tickles your fancy.</p><p>Consult your doctor before use if you have a medical condition, are taking any medication, are pregnant or breastfeeding. This product is not intended to diagnose, treat, cure or prevent any disease.<br/><br/></p>",
-            "icon": "",
-            "page": "",
-            "spacing_bottom": "0"
-          }
-        },
-        "content_block_bcpNqN": {
-          "type": "content_block",
-          "settings": {
-            "behaviour": "row",
-            "heading": "Ingredients",
-            "row_content": "<p>100% Chaga Mushroom Powder. </p>",
-            "icon": "",
-            "page": "",
-            "spacing_bottom": "1"
-          }
-        },
-        "content_block_3FcYA8": {
           "type": "content_block",
           "disabled": true,
           "settings": {
@@ -182,6 +196,15 @@
             "spacing_bottom": "0"
           }
         },
+        "e6d841d6-2f71-40b3-956a-912df13f9f6e": {
+          "type": "inventory_notice",
+          "disabled": true,
+          "settings": {
+            "spacing_bottom": "1",
+            "inventory_threshold": 15,
+            "notice_just_text": true
+          }
+        },
         "7be6b89c-da83-4ff2-9b85-44fb28cbfa27": {
           "type": "pickup-availability",
           "disabled": true,
@@ -191,85 +214,92 @@
         },
         "content_grid_W3Mqy6": {
           "type": "content_grid",
+          "disabled": true,
           "settings": {
-            "heading": "SHIPS FROM UAE",
+            "heading": "Fast global shipping",
             "icon": "theme-box"
           }
         },
-        "content_grid_iCJFCN": {
-          "type": "content_grid",
-          "settings": {
-            "heading": "SAME DAY & NEXT DAY DELIVERY",
-            "icon": "option-stopwatch"
-          }
-        },
-        "content_grid_HTRRPP": {
-          "type": "content_grid",
+        "complementary_products_h7nWQd": {
+          "type": "complementary_products",
           "disabled": true,
           "settings": {
-            "heading": "100% secure payments",
-            "icon": "theme-padlock"
+            "spacing_bottom": "1",
+            "heading": "You may also like",
+            "icon": "theme-box",
+            "limit": 4
           }
         },
-        "content_grid_AAkHkC": {
-          "type": "content_grid",
-          "disabled": true,
+        "optiona_product_PtrBpJ": {
+          "type": "optiona_product",
           "settings": {
-            "heading": "Free climate compensated shipping",
-            "icon": "option-apple"
+            "show_svg": true,
+            "main_heading": "TRY ALL SIX",
+            "image": "shopify://shop_images/Frame_2147242232.png",
+            "inner_title": "FIND YOUR FAVOURITE",
+            "inner_subtitle": "Six mushrooms. 5 servings in each pouch. The easiest way to discover what works for you.",
+            "bg_color": "#e2f3ff"
+          }
+        },
+        "tabs_block_nbWnUF": {
+          "type": "tabs_block",
+          "settings": {
+            "border_clr": "#038bff",
+            "tab_title_1": "HOW TO USE",
+            "tab_content_1": "<p>Add 2 grams (approx. 1 teaspoon) into hot water, coffee, protein shake or whatever tickles your fancy.</p><p>Consult your doctor before use if you have a medical condition, are taking any medication, are pregnant or breastfeeding. This product is not intended to diagnose, treat, cure or prevent any disease.</p>",
+            "tab_title_2": "INGREDIENTS",
+            "tab_content_2": "<p>100% Chaga Mushroom Powder.</p>",
+            "tab_title_3": "SHIPPING & RETURN",
+            "tab_content_3": "<p>We offer fast and reliable shipping, with orders processed within 1–2 business days. Delivery times may vary based on your location. Returns are accepted within a specified period if the product is unused and in its original condition.</p>"
           }
         },
         "goback_WQBHtg": {
           "type": "goback",
+          "disabled": true,
           "settings": {
             "goback_style": "text",
             "goback_label": "Back",
             "display_goback_mobile": "on-media"
           }
-        },
-        "custom_liquid_V49TNA": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": ""
-          }
         }
       },
       "block_order": [
+        "custom_reviews_9gTjYL",
+        "cstm_pdp_tag_mypHQC",
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
-        "text_qa4eEX",
+        "custom_richtext_a9Tp7h",
+        "custom_list_JjVr6n",
+        "custom_icon_text_phnHQx",
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b",
-        "1e939cd6-0955-4135-a9e5-c50faef01437",
+        "pdp_dropdown_rAmYV7",
         "1e939cd6-0958-4135-a9e5-c50faef01437",
-        "subscriptions_app_block_NyFLVE",
+        "1e939cd6-0955-4135-a9e5-c50faef01437",
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
-        "e6d841d6-2f71-40b3-956a-912df13f9f6e",
-        "text_d4pg97",
-        "text_3fbiKY",
-        "b2dabe12-2158-4ba6-bc54-9baae453acf5",
-        "text_L4MyHj",
-        "text_iYBpPE",
+        "custom_feature_rB8z8F",
+        "moneyback_We74c3",
+        "icon_list_NGd38t",
         "content_tabs_fEGJi4",
+        "description_qA3HqH",
         "content_block_idt6CB",
         "content_block_y7VbNC",
-        "content_block_bcpNqN",
-        "content_block_3FcYA8",
+        "e6d841d6-2f71-40b3-956a-912df13f9f6e",
         "7be6b89c-da83-4ff2-9b85-44fb28cbfa27",
         "content_grid_W3Mqy6",
-        "content_grid_iCJFCN",
-        "content_grid_HTRRPP",
-        "content_grid_AAkHkC",
-        "goback_WQBHtg",
-        "custom_liquid_V49TNA"
+        "complementary_products_h7nWQd",
+        "optiona_product_PtrBpJ",
+        "tabs_block_nbWnUF",
+        "goback_WQBHtg"
       ],
       "settings": {
+        "custoom-class": true,
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",
-        "product_media_with_thumbs": "desktop_and_mobile",
+        "product_media_with_thumbs": "none",
         "product_media_thumbs_ratio": "portrait",
         "product_media_object_fit": "contain",
         "adaptive_ratio_and_auto_height": "default",
-        "media_transparent_background": true,
-        "disable_media_zoom": false,
+        "media_transparent_background": false,
+        "disable_media_zoom": true,
         "gallery_arrows_show_on": "desktop",
         "display_media_gallery_pagination": "none",
         "show_media_index": false,
@@ -277,7 +307,7 @@
         "metafield_as_seen_on": "",
         "color_scheme_arrows": "",
         "enable_sticky_info": true,
-        "enable_actions_bar": true,
+        "enable_actions_bar": false,
         "media_grid_size": "large",
         "media_grid_position": "start",
         "grid_gap": "1",
@@ -289,662 +319,767 @@
         "spacing_bottom": "0"
       }
     },
-    "full_width_banner_9WzHry": {
-      "type": "full-width-banner",
+    "complete_the_set_LAN4cq": {
+      "type": "complete-the-set",
       "blocks": {
-        "heading_VmmpaH": {
-          "type": "heading",
+        "collapsible_UeyH3r": {
+          "type": "collapsible",
           "settings": {
-            "block_width": "max-w-full",
-            "heading": "CHAGA <em>BENEFITS</em>",
-            "heading_size": "h3"
+            "block_type": "drawer",
+            "heading": "Description",
+            "link": "",
+            "content": "<p>Chaga is the immune system's powerhouse, it is one of the most potent natural superfoods in the world. A single teaspoon of Chaga is said to have the same amount of antioxidants as a whopping 600 blueberries. This mighty mushroom is an all-around immunity juggernaut— anti-inflammatory, antiviral, antibacterial, and antifungal. A true legend in the mushroom game. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_A663MD": {
+          "type": "collapsible",
+          "settings": {
+            "block_type": "drawer",
+            "heading": "Delivery & Returns",
+            "link": "",
+            "content": "<p>Shipping and returns can be inserted here.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_qFP38k": {
+          "type": "collapsible",
+          "settings": {
+            "block_type": "drawer",
+            "heading": "Contact us",
+            "link": "",
+            "content": "<p>Contact information can be entered here.</p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "heading_VmmpaH"
-      ],
-      "settings": {
-        "full_width_banner_height": 20,
-        "full_width_banner_mobile_height": 20,
-        "content_position_horizontal": "align-center text-center",
-        "content_position_vertical": "justify-center",
-        "video_desktop_external": "",
-        "show_controls_on_video": false,
-        "video_mobile_external": "",
-        "show_controls_on_video_mobile": false,
-        "section_width": "max-w-full",
-        "color_scheme": "scheme-1",
-        "color_scheme_for_content": "scheme-6",
-        "spacing_top": "1",
-        "spacing_bottom": "0"
-      }
-    },
-    "multitile_wDmz3U": {
-      "type": "multitile",
-      "blocks": {
-        "tile_YqeBbi": {
-          "type": "tile",
-          "settings": {
-            "show_on": "both",
-            "column_factor": 3,
-            "row_factor": 2,
-            "tile_aspect_ratio": "4/3",
-            "color_scheme": "scheme-6",
-            "gradient_background_color": "",
-            "content_position_vertical": "justify-center",
-            "content_alignment": "align-center text-center",
-            "content_alignment_for_mobile": "center",
-            "heading": "IMMUNITY BOOSTING",
-            "heading_size": "h3",
-            "text": "<p>Research shows that Chaga can support the immune system by boosting the production of important cells like cytokines, IL-6, and T lymphocytes. These cells help the body fight off infections and regulate inflammation.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "button--filled",
-            "image": "shopify://shop_images/Green_Smoothie_1.1.png",
-            "video_external": "",
-            "show_controls_on_video": false,
-            "video_external_mobile": "",
-            "show_controls_on_video_mobile": false,
-            "spacing_inner": "1"
-          }
-        },
-        "tile_BWn4eV": {
-          "type": "tile",
-          "settings": {
-            "show_on": "both",
-            "column_factor": 3,
-            "row_factor": 2,
-            "tile_aspect_ratio": "4/3",
-            "color_scheme": "scheme-6",
-            "gradient_background_color": "",
-            "content_position_vertical": "justify-center",
-            "content_alignment": "align-center text-center",
-            "content_alignment_for_mobile": "center",
-            "heading": "ANTIOXIDANT POWERHOUSE",
-            "heading_size": "h3",
-            "text": "<p>1 teaspoon of Chaga has the same antioxidants as 600 blueberries. Save a Blueberry and eat some Chaga. It is said to be the most dense antioxidant superfood on the planet. </p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "button--filled",
-            "image": "shopify://shop_images/Blueberries_3.png",
-            "video_external": "",
-            "show_controls_on_video": false,
-            "video_external_mobile": "",
-            "show_controls_on_video_mobile": false,
-            "spacing_inner": "2"
-          }
-        },
-        "tile_raz4bP": {
-          "type": "tile",
-          "settings": {
-            "show_on": "both",
-            "column_factor": 3,
-            "row_factor": 2,
-            "tile_aspect_ratio": "4/3",
-            "color_scheme": "scheme-6",
-            "gradient_background_color": "",
-            "content_position_vertical": "justify-center",
-            "content_alignment": "align-center text-center",
-            "content_alignment_for_mobile": "center",
-            "heading": "ENERGY BOOSTER",
-            "heading_size": "h3",
-            "text": "<p>Chaga provides a steady energy boost without the caffeine jitters by reducing oxidative stress, supporting cell function, and improving endurance while combating fatigue.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "button--filled",
-            "image": "shopify://shop_images/Coffee_Cup_2.png",
-            "video_external": "",
-            "show_controls_on_video": false,
-            "video_external_mobile": "",
-            "show_controls_on_video_mobile": false,
-            "spacing_inner": "2"
-          }
-        },
-        "tile_zfTrKP": {
-          "type": "tile",
-          "settings": {
-            "show_on": "both",
-            "column_factor": 3,
-            "row_factor": 2,
-            "tile_aspect_ratio": "4/3",
-            "color_scheme": "scheme-6",
-            "gradient_background_color": "",
-            "content_position_vertical": "justify-center",
-            "content_alignment": "align-center text-center",
-            "content_alignment_for_mobile": "center",
-            "heading": "SKIN HEALTH",
-            "heading_size": "h3",
-            "text": "<p>Chaga's high levels of antioxidants, especially betulinic acid, may reduce oxidative stress linked to skin aging, while also stimulating collagen production for improved elasticity and youthfulness.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "button--filled",
-            "image": "shopify://shop_images/Skin_1.png",
-            "video_external": "",
-            "show_controls_on_video": false,
-            "video_external_mobile": "",
-            "show_controls_on_video_mobile": false,
-            "spacing_inner": "2"
-          }
-        }
-      },
-      "block_order": [
-        "tile_YqeBbi",
-        "tile_BWn4eV",
-        "tile_raz4bP",
-        "tile_zfTrKP"
-      ],
-      "settings": {
-        "block_order_mobile": false,
-        "color_scheme": "",
-        "section_width": "max-w-fluid",
-        "spacing_top": "1",
-        "spacing_bottom": "1"
-      }
-    },
-    "marquees_NPty3a": {
-      "type": "marquees",
-      "blocks": {
-        "item_a6iBEj": {
-          "type": "item",
-          "settings": {
-            "icon": "",
-            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
-            "title": "The only sick days you'll be taking are ones when you're sick of people's Bullsh*t.",
-            "link": ""
-          }
-        },
-        "item_D4z3Lq": {
-          "type": "item",
-          "settings": {
-            "icon": "",
-            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
-            "title": "Flu who? Never heard of her.",
-            "link": ""
-          }
-        },
-        "item_dTVMgD": {
-          "type": "item",
-          "settings": {
-            "icon": "",
-            "custom_icon": "shopify://shop_images/Mushroom_Icon_white.png",
-            "title": "Catch flights, not colds.",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_a6iBEj",
-        "item_D4z3Lq",
-        "item_dTVMgD"
+        "collapsible_UeyH3r",
+        "collapsible_A663MD",
+        "collapsible_qFP38k"
       ],
       "disabled": true,
       "settings": {
-        "enable_animation": true,
-        "marquee_duration_rate": 9,
-        "marquee_font_size": 3,
-        "marquee_items_spacing": 0.4,
-        "color_scheme": "scheme-6",
-        "spacing_top": "0",
-        "spacing_bottom": "0"
-      }
-    },
-    "ss_feature_10_WAqaxe": {
-      "type": "ss-feature-10",
-      "blocks": {
-        "details_JfnG9d": {
-          "type": "details",
-          "settings": {
-            "image": "shopify://shop_images/PUREFILTH_STEP1_Resize3.gif",
-            "title": "STEP 1 - ADD FILTH",
-            "text": "One heaped teaspoon of the good stuff should do it. But if you need an extra boost two is also fine. You can also mix mushrooms.",
-            "details": ""
-          }
-        },
-        "details_JfXBpA": {
-          "type": "details",
-          "settings": {
-            "image": "shopify://shop_images/PUREFILTH_STEP2_Resize.gif",
-            "title": "STEP 2 - ADD HOT WATER",
-            "text": "We say hot water as it dissolves faster (and looks better in the GIF) but you can use whatever you want, just give it a good stir.",
-            "details": ""
-          }
-        },
-        "details_BLnjhk": {
-          "type": "details",
-          "settings": {
-            "image": "shopify://shop_images/PUREFILTH_STEP3_Resize.gif",
-            "title": "STEP 3 - STIR YOUR FILTH",
-            "text": "No one likes a clumpy mushroom nuggets in their drink, so make sure you give it a good stir to dissolve and gulp down all that filth.",
-            "details": ""
-          }
-        },
-        "details_TnXTHT": {
-          "type": "details",
-          "settings": {
-            "image": "shopify://shop_images/PUREFILTH_STEP4_Resize.gif",
-            "title": "STEP 4 - ADD MILK",
-            "text": "If you want to go 'au natural' and really taste that earthy goodness, you can skip this step. No complaining if it tastes crap though.",
-            "details": ""
-          }
-        }
-      },
-      "block_order": [
-        "details_JfnG9d",
-        "details_JfXBpA",
-        "details_BLnjhk",
-        "details_TnXTHT"
-      ],
-      "settings": {
-        "heading": "<h2>HOW TO TAKE YOUR FILTH</h2>",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 48,
-        "heading_size_mobile": 32,
-        "heading_height": 200,
-        "heading_align": "center",
-        "items_row": 4,
-        "items_row_mobile": 1,
-        "items_gap": 60,
-        "items_gap_mobile": 30,
-        "items_mt": 52,
-        "image_ratio": "square",
-        "image_border_thickness": 0,
-        "image_radius": 8,
-        "hide_image": false,
-        "title_custom": false,
-        "title_font": "josefin_sans_n4",
-        "title_size": 18,
-        "title_size_mobile": 18,
-        "title_height": 150,
-        "title_mt": 24,
-        "title_align": "left",
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_size": 16,
-        "text_size_mobile": 16,
-        "text_height": 130,
-        "text_mt": 16,
-        "text_align": "left",
-        "details_custom": false,
-        "details_font": "josefin_sans_n4",
-        "details_size": 16,
-        "details_size_mobile": 16,
-        "details_height": 130,
-        "details_mt": 16,
-        "details_align": "left",
-        "image_bg_color": "#313131",
-        "image_border_color": "#121212",
-        "title_color": "#121212",
-        "text_color": "#121212",
-        "details_color": "#121212",
-        "heading_color": "#121212",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#121212",
-        "margin_top": 16,
-        "margin_bottom": 32,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 4.5,
-        "full_width": false,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": true
-      }
-    },
-    "new_marquee_LEpgQc": {
-      "type": "new_marquee",
-      "custom_css": [
-        "h2 {font-family: Poppins, sans-serif !important;}"
-      ],
-      "settings": {
-        "marquee_speed": 100,
-        "icons-1": "shopify://shop_images/Mushroom_Icon_white.webp",
-        "text-1": "The only sick days you'll be taking are ones when you're sick of people's Bullsh*t.",
-        "icons-2": "shopify://shop_images/Mushroom_Icon_white.webp",
-        "text-2": "Flu who? Never heard of her.",
-        "icons-3": "shopify://shop_images/Mushroom_Icon_white.webp",
-        "text-3": "Catch flights, not colds.",
-        "text-4": "",
-        "text-5": ""
-      }
-    },
-    "166904322806a89075": {
-      "type": "apps",
-      "settings": {}
-    },
-    "testimonials_FbhVEb": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_7cNewA": {
-          "type": "testimonial",
-          "settings": {
-            "author": "Jane Doe",
-            "quote": "<p>“I absolutely love the quality of my Leo Bikini Bottoms.”</p>",
-            "rating_score": 5,
-            "color_scheme": ""
-          }
-        },
-        "testimonial_Rj6BGh": {
-          "type": "testimonial",
-          "settings": {
-            "author": "Jane Doe",
-            "quote": "<p>“I absolutely love the quality of my Leo Bikini Bottoms.”</p>",
-            "rating_score": 5,
-            "color_scheme": ""
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_7cNewA",
-        "testimonial_Rj6BGh"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Testimonials",
+        "heading": "Complete the <em>set</em>",
         "heading_size": "h3",
-        "subheading": "",
-        "rating_icon": "star",
-        "layout": "horizontal-w-media",
-        "slider_autoplay": 3.5,
-        "image_position": "image-start",
-        "image_aspect_ratio": "1/1",
-        "media_show_on": "desktop",
-        "spacing_inner": "2",
+        "content_type": "products",
+        "featured_image_aspect_ratio": "4/3",
+        "flip_desktop": true,
+        "flip_mobile": true,
         "section_width": "max-w-page",
         "color_scheme": "",
-        "spacing_top": "2",
-        "spacing_bottom": "2"
-      }
-    },
-    "accordions_cpYPCT": {
-      "type": "accordions",
-      "blocks": {
-        "topic_TJib8Q": {
-          "type": "topic",
-          "settings": {
-            "is_open": true,
-            "title": "Are your mushrooms third-party tested?",
-            "text": "<p>Damn right they are. We wouldn't dream of letting anything less than filthy perfection pass through the lab. Each batch is tested for quality, potency, and purity, so you know you're getting the good stuff‚ no fillers, no nasties, just 100% mushroom goodness.</p>",
-            "page": ""
-          }
-        },
-        "topic_FbLTaf": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "How are your mushroom powders made?",
-            "text": "<p>We use a dual extraction method to make sure we’re pulling out all the good stuff. That means both water and alcohol extractions to get every last drop of those bioactive compounds. What you end up with is a potent, powerful powder ready to fuel your day.</p>",
-            "page": ""
-          }
-        },
-        "topic_3jWykg": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Do your supplements have any alcohol in them?",
-            "text": "<p>I know we said the dual extraction method invovled alcohol as part of the process. But there are zero traces of it in the final product. So unless you're chugging your mushrooms down with a whiskey chaser (no judgement here), no, there's absolutely no alcohol involved. Our products are all sober and straight to the point.</p>",
-            "page": ""
-          }
-        },
-        "topic_NagHJV": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "How do I take Pure Filth mushrooms?",
-            "text": "<p>Mix 'em, sip 'em, sprinkle 'em on your avo toast‚ whatever floats your fungi boat. Our powders are versatile enough to slip into your daily routine. Hot drinks, smoothies, protein shakes or even on your favourite dessert. Filthy, but functional.</p>",
-            "page": ""
-          }
-        },
-        "topic_c9yc8t": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Are your mushrooms legal?",
-            "text": "<p>Course they are! These are functional mushrooms (aKa, healthy and legal), not the psychedelic kind. You'll be more 'focused and fabulous'  than ‚'floating in outer space.'</p>",
-            "page": ""
-          }
-        },
-        "topic_6Kg84A": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Do your products actually work?",
-            "text": "<p>We wouldn't have spent two years tracking down the best mushrooms on the planet if they didn't. Each one is packed with bioactive compounds that support your energy, focus, stress levels, gut health, skin  and overall well-being. You'll feel it, and if you don't, well‚ maybe you're already superhuman.</p>",
-            "page": ""
-          }
-        },
-        "topic_CnYmjg": {
-          "type": "topic",
-          "disabled": true,
-          "settings": {
-            "is_open": false,
-            "title": "How long does shipping take?",
-            "text": "<p>We don't mess around. Orders are shipped straight from the UAE, and we aim to get them to your door as fast as possible. Typically, you'll have your hands on them within 1-2  business days. If it's a mushroom emergency, we do also offer same day delivery to mainland Dubai if you order before 2pm and you pay a little extra shipping.</p>",
-            "page": ""
-          }
-        },
-        "topic_PYnYqd": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Are Pure Filth mushrooms vegan and gluten-free?",
-            "text": "<p>Yes and Yes. Our mushrooms are all plant-based and free from any gluten or other rubbish  you don't need. Just pure fungi goodness, with nothing hiding in the shadows or small print.</p>",
-            "page": ""
-          }
-        },
-        "topic_8UzUDg": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "What's the difference between fruiting body and mycelium?",
-            "text": "<p>Glad you asked. Fruiting body is the real MVP. It's where all the bioactive goodness lives. Mycelium? That's the rooty stuff some brands use, but it's packed with grains and filler. Not our vibe. Stick with the fruiting body and you're golden.</p>",
-            "page": ""
-          }
-        },
-        "topic_b4gzQF": {
-          "type": "topic",
-          "disabled": true,
-          "settings": {
-            "is_open": false,
-            "title": "What's your return policy?",
-            "text": "<p>If you're not feeling the filth, we've got you covered. You've got 30 days to send it back, no questions asked (well, maybe a few, but we'll be nice). Just make sure the product's unopened, and we'll sort you out.</p>",
-            "page": ""
-          }
-        },
-        "topic_kMCzhY": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Can I take these supplements daily?",
-            "text": "<p>Absolutely! These mushrooms are the daily habit you never knew you needed. Think of it as a filthy little ritual for better energy, focus, and zen vibes all day long.</p>",
-            "page": ""
-          }
-        },
-        "topic_TXxrWX": {
-          "type": "topic",
-          "disabled": true,
-          "settings": {
-            "is_open": false,
-            "title": "How should I store the mushrooms?",
-            "text": "<p>Cool, dry, and out of direct sunlight, just like you after a weekend brunch. Also, keep them sealed air tight otherwise the moisture in the air may make them go hard. Hard powders are not the one. </p>",
-            "page": ""
-          }
-        },
-        "topic_VHzCgr": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Are your products sugar-free?",
-            "text": "<p>Correct, no added sugar here. We keep it pure and natural. This does mean they do taste a little 'earthy', so if you are a snowflake can can't stomach a little filth, maybe mix it in a smoothie or add some honey. But whatever you do, don't whinge. No one likes a whinger. Get a grip and  suck it up. It's good for you, like really good. Your body will thank you. </p>",
-            "page": ""
-          }
-        },
-        "topic_yepfYh": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "How do I know which mushroom is right for me?",
-            "text": "<p>Easy. Need focus? Go for Lion's Mane. Looking for stress relief? Reishi’s got your back. Craving more energy? Cordyceps is your jam. Need to boost immunity? Chaga’s your go-to. Want glowing skin? Tremella’s here to hydrate. Feeling like your gut could use some love? Turkey Tail’s got you covered. We’ve got a filthy fix for whatever you need.</p>",
-            "page": ""
-          }
-        },
-        "topic_3UeA4r": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Can I take more than one Pure Filth product at once?",
-            "text": "<p>We recommend a serving of 2 grams at once. You can take up to 6 grams of mushrooms over a 24 hour period. Therefore, you can mix and match if you fancy it. Stack 'em up if you need to supercharge your day, or just stick with one if you're keeping it simple. Either way, you're on the right path to filth-fuelled wellness.</p>",
-            "page": ""
-          }
-        },
-        "topic_t8mhJE": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Where are your ingredients sourced from?",
-            "text": "<p>Our filthy little mushrooms are sourced from the best growers in China, where they've been cultivating these fungi for centuries. We've scoured the earth to bring you the most potent and pure mushrooms‚ because only the best will do for our crew.</p>",
-            "page": ""
-          }
-        },
-        "topic_BpM69q": {
-          "type": "topic",
-          "disabled": true,
-          "settings": {
-            "is_open": false,
-            "title": "Are your mushrooms organic?",
-            "text": "<p>Oh, you bet they are. Pure, organic, and free from any dodgy chemicals. We like to keep things as natural as possible—just mushrooms, as Mother Nature intended. No pesticides, no nasty surprises, just the real deal.</p>",
-            "page": ""
-          }
-        },
-        "topic_BELjm3": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Can I take them if I'm breastfeeding or pregnant?",
-            "text": "<p>We love a good mushroom, but if you’re pregnant or breastfeeding, it’s always best to check with your healthcare provider before diving in. We’re potent, but we want to be safe, too.</p>",
-            "page": ""
-          }
-        },
-        "topic_UykfmQ": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "How often do I take them?",
-            "text": "<p>Daily, baby! These mushrooms are designed to be a filthy little habit you can keep up with every day. Whether it's in your morning coffee or your afternoon smoothie, just make sure you’re getting your daily dose of fungi goodness.</p>",
-            "page": ""
-          }
-        },
-        "topic_T7dUye": {
-          "type": "topic",
-          "disabled": true,
-          "settings": {
-            "is_open": false,
-            "title": "Where do you ship to?",
-            "text": "<p>Right now, we’re keeping it local to the UAE. If you’re outside the UAE and desperate for a taste of the filthy life, drop us an email at hello@getpurefilth.com and we’ll see what we can do. No promises, but we’ll give it a go!</p>",
-            "page": ""
-          }
-        },
-        "topic_EtKnBz": {
-          "type": "topic",
-          "disabled": true,
-          "settings": {
-            "is_open": false,
-            "title": "How many servings are in a pouch?",
-            "text": "<p>Each 100g pouch packs in 50 servings of pure mushroom goodness (that’s 2 grams or one teaspoon per serving). So, if you’re the kind who likes to keep it all to yourself, you’ve got about two months' worth of filth to enjoy.</p>",
-            "page": ""
-          }
-        },
-        "topic_Cz49yd": {
-          "type": "topic",
-          "disabled": true,
-          "settings": {
-            "is_open": false,
-            "title": "Do you work with distributors, partners, influencers, or unicorns?",
-            "text": "<p>We’re open to chats with all the above—especially unicorns. However, if you’re any of the above and reading this, feel free to drop us a line at hello@getpurefilth.com. Let’s make some filthy magic happen.</p>",
-            "page": ""
-          }
-        },
-        "topic_4t8w3n": {
-          "type": "topic",
-          "disabled": true,
-          "settings": {
-            "is_open": false,
-            "title": "Do you take cash payments?",
-            "text": "<p>As much as we love caaaaash money, we only take online payments, I’m afraid. Also, this is the 21st century, next you'll be asking us if we still accept carrier pigeons or take cheques! Come on now, let’s keep it digital folks.</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "topic_TJib8Q",
-        "topic_FbLTaf",
-        "topic_3jWykg",
-        "topic_NagHJV",
-        "topic_c9yc8t",
-        "topic_6Kg84A",
-        "topic_CnYmjg",
-        "topic_PYnYqd",
-        "topic_8UzUDg",
-        "topic_b4gzQF",
-        "topic_kMCzhY",
-        "topic_TXxrWX",
-        "topic_VHzCgr",
-        "topic_yepfYh",
-        "topic_3UeA4r",
-        "topic_t8mhJE",
-        "topic_BpM69q",
-        "topic_BELjm3",
-        "topic_UykfmQ",
-        "topic_T7dUye",
-        "topic_EtKnBz",
-        "topic_Cz49yd",
-        "topic_4t8w3n"
-      ],
-      "settings": {
-        "heading": "FAQ's",
-        "heading_size": "h4",
-        "section_width": "max-w-narrower",
-        "color_scheme": "scheme-7",
         "spacing_top": "2",
         "spacing_bottom": "2"
       }
     },
     "recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "layout": "layout-1",
         "enable_slideshow_overflow": false,
-        "heading": "More filth for you:",
+        "heading": "You may also like",
         "heading_size": "h3",
         "subheading": "",
         "button_label": "View all",
-        "button_link": "shopify://collections/all",
+        "button_link": "",
         "button_style": "button--filled",
         "show_navigation_arrows": true,
         "slider_autoplay": 10,
         "tabs_button_style": "tab-btn-filled",
         "max_products": 8,
-        "show_unavailable_products": true,
+        "show_unavailable_products": false,
         "section_width": "max-w-page",
         "color_scheme": "",
         "spacing_top": "4",
         "spacing_bottom": "4"
       }
+    },
+    "benefits_cQkaGh": {
+      "type": "benefits",
+      "blocks": {
+        "benefit_WKqMVF": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147228878_2_e8577d23-0ed1-4474-b989-93486f9bcce3.svg",
+            "title": "<p>Daily maintenance</p>",
+            "subtitle": "Supports daily wellness, balance, and long term health."
+          }
+        },
+        "benefit_t6Y68M": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147228878_3_89a0f495-09b6-4bc4-aa0d-1c855bd3561f.svg",
+            "title": "<p>Immunity boost</p>",
+            "subtitle": "Strengthens immune system and helps defend against illnesses."
+          }
+        },
+        "benefit_zetj78": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147228878_4_f546a8d2-e204-41ec-83df-5c0b5c70ba98.svg",
+            "title": "<p>Antioxidant</p>",
+            "subtitle": "Rich in antioxidants protecting cells from oxidative stress."
+          }
+        },
+        "benefit_KrxLfN": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Frame_2147228878_5_f120dd59-ec58-4505-a9c0-38cf5fb739ba.svg",
+            "title": "<p>Anti-inflammatory</p>",
+            "subtitle": "Helps reduce inflammation and supports overall body recovery."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_WKqMVF",
+        "benefit_t6Y68M",
+        "benefit_zetj78",
+        "benefit_KrxLfN"
+      ],
+      "name": "Benefits Section",
+      "settings": {
+        "sec_img_desk": "shopify://shop_images/Our_story_b347fd07-a950-43c7-bf51-de6b76aab599.png",
+        "sec_img_mob": "shopify://shop_images/Our_story_1_baae90b3-ca04-43ce-83b9-83f64b567e7a.png",
+        "section_bg": "",
+        "title": "Real Benefits You Can Feel",
+        "subtitle": "Chaga is best known for supporting immune defence, antioxidant protection, and overall daily resilience.",
+        "image": "shopify://shop_images/Rectangle_6_1.png",
+        "button_text": "",
+        "button_link": "",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "text_color": "#000000",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "story_behind_TKeagc": {
+      "type": "story-behind",
+      "name": "Story Behind Section",
+      "settings": {
+        "pdp": true,
+        "abs_image": "shopify://shop_images/0st7MqmOLuNNmDy9SoFwE67dXmM.png_1.png",
+        "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM.png_1_25677c10-e7c3-4a0b-94c6-3b33fb76d4cf.png",
+        "title": "<p>DEFEND YOUR <br/>BODY, NATURALLY</p>",
+        "description": "<p>Chaga is naturally rich in antioxidants that help support immune health while protecting the body from oxidative stress. </p><p></p><ul><li>One teaspoon of Chaga delivers antioxidants comparable to around 600 blueberries.</li><li>Rich in polyphenols and beta-glucans associated with immune support.</li><li>Helps protect cells from oxidative stress and environmental damage.</li><li>Traditionally used to support resilience and long-term wellbeing.</li></ul>",
+        "list_icon": "shopify://shop_images/verify_4fb1713f-9459-42e1-8740-4abcd7aeffc0.svg",
+        "button_text": "",
+        "button_link": "shopify://collections/all",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "section_bg": "#ffffff",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "enjoy_slider_fPXa9h": {
+      "type": "enjoy-slider",
+      "blocks": {
+        "slide_UWhNpb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/520c0add181895ed8d4ca9a3bb52fade5ba8081f.png",
+            "step": "First Step",
+            "title": "Add 1 teaspoon",
+            "subtitle": "Stir into coffee, tea or smoothies"
+          }
+        },
+        "slide_dUQCh6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/7fd10af6badba00714228234d74b5a60da6c5572.png",
+            "step": "Second Step",
+            "title": "MIX INTO YOUR DRINK",
+            "subtitle": "Hot or cold works perfectly"
+          }
+        },
+        "slide_Wan4td": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/c5fa44b9f871f1642cca5b9be95cd28ee5deb231.png",
+            "step": "Third Step",
+            "title": "ENJOY DAILY",
+            "subtitle": "Build it into your routine"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UWhNpb",
+        "slide_dUQCh6",
+        "slide_Wan4td"
+      ],
+      "name": "Enjoy Slider",
+      "settings": {
+        "section_bg": "",
+        "title": "ONE SCOOP. ANY DRINK. DONE.",
+        "desktop_slides": 3,
+        "mobile_slides": 1.1,
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "special_section_74QzEN": {
+      "type": "special-section",
+      "blocks": {
+        "simple_card_xedpn4": {
+          "type": "simple_card",
+          "settings": {
+            "bg_color": "#ffffff",
+            "simple_title": "15:1 HIGH-POTENCY EXTRACT",
+            "simple_desc": "<p>Many mushroom supplements use low-strength powders. Our 15:1 extract concentrates far more active compounds into every serving.</p>"
+          }
+        },
+        "simple_card_UNnWaW": {
+          "type": "simple_card",
+          "settings": {
+            "bg_color": "#ffffff",
+            "simple_title": "FRUITING BODY ONLY",
+            "simple_desc": "<p>Many supplements use grain-grown mycelium, which contains less of the beneficial compounds found in mushrooms. Pure Filth uses only the fruiting body, the part richest in bioactive compounds.</p>"
+          }
+        },
+        "simple_card_f6xAQg": {
+          "type": "simple_card",
+          "settings": {
+            "bg_color": "#ffffff",
+            "simple_title": "DUAL EXTRACTION",
+            "simple_desc": "<p>Some mushroom powders rely on simple grinding. We use dual extraction (water + alcohol), which unlocks the full spectrum of bioactive compounds.</p>"
+          }
+        },
+        "top_card_8bnhGk": {
+          "type": "top_card",
+          "disabled": true,
+          "settings": {
+            "head_icon": "shopify://shop_images/icon.svg_-_2026-01-26T131622.723_1.svg",
+            "title": "Nothing Hidden Nothing Added",
+            "list_icon": "shopify://shop_images/Image_1.svg",
+            "image": "shopify://shop_images/image_2793_5.png",
+            "item_1": "Boosts Brain Health & Focus",
+            "item_2": "Promotes Nerve Growth & Clarity",
+            "item_3": "100% Pure, No Additives",
+            "item_4": "",
+            "item_5": "",
+            "item_6": ""
+          }
+        },
+        "bottom_card_4DXj6B": {
+          "type": "bottom_card",
+          "disabled": true,
+          "settings": {
+            "title": "100% Pure. One Ingredient.",
+            "image": "shopify://shop_images/Frame_2147241896.png",
+            "icon_1": "shopify://shop_images/Frame_2147241930.svg",
+            "item_1": "100% Organic",
+            "icon_2": "shopify://shop_images/Group_2.svg",
+            "item_2": "NO Additives",
+            "icon_3": "shopify://shop_images/Group_3.svg",
+            "item_3": "Non GMO",
+            "item_4": "",
+            "item_5": "",
+            "item_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "simple_card_xedpn4",
+        "simple_card_UNnWaW",
+        "simple_card_f6xAQg",
+        "top_card_8bnhGk",
+        "bottom_card_4DXj6B"
+      ],
+      "name": "Special Section",
+      "settings": {
+        "section_bg": "#038BFF",
+        "title": "WHY PURE FILTH Chaga HITS DIFFERENT",
+        "title_color": "#000000",
+        "main_image": "shopify://shop_images/Background_Border_3.png",
+        "overlay_title": "",
+        "overlay_text": "",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "money_back_aG9pad": {
+      "type": "money-back",
+      "name": "Money Back Section",
+      "settings": {
+        "title_first": true,
+        "image": "shopify://shop_images/Section_badge.svg",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
+        "title": "30 day money back guarantee",
+        "text_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_text": "LEARN MORE",
+        "button_link": "shopify://collections/all",
+        "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",
+        "section_bg": "#ffffff",
+        "Content_bg": "#038BFF",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 180,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 70,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "video_slider_x93pnd": {
+      "type": "video-slider",
+      "blocks": {
+        "video_MK7MmE": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/0227 (1).mov",
+            "abs_img": "shopify://shop_images/Group_5.svg",
+            "abs_text": "Focus"
+          }
+        },
+        "video_GKADda": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
+            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-15T134441.846_1.svg",
+            "abs_text": "Clarity"
+          }
+        },
+        "video_3UAUKR": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
+            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-27T192103.195_1.svg",
+            "abs_text": "Memory"
+          }
+        },
+        "video_b6pEGV": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
+            "abs_img": "shopify://shop_images/Group_6.svg",
+            "abs_text": "Mood"
+          }
+        },
+        "video_3piGcC": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
+            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-15T134441.846_1.svg",
+            "abs_text": "Clarity"
+          }
+        },
+        "video_KijEwt": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
+            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-27T192103.195_1.svg",
+            "abs_text": "Memory"
+          }
+        },
+        "video_cgKrwh": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
+            "abs_img": "shopify://shop_images/Group_6.svg",
+            "abs_text": "Mood"
+          }
+        }
+      },
+      "block_order": [
+        "video_MK7MmE",
+        "video_GKADda",
+        "video_3UAUKR",
+        "video_b6pEGV",
+        "video_3piGcC",
+        "video_KijEwt",
+        "video_cgKrwh"
+      ],
+      "name": "Video Slider Formulas",
+      "settings": {
+        "pdp": false,
+        "stars_image": "shopify://shop_images/Frame_36_4.svg",
+        "rating_text": "2,440+ Reviews",
+        "header_text": "<p>REAL PEOPLE. <br/>REAL FILTHY RESULTS.</p>",
+        "slides_per_view_desktop": 4,
+        "background_color": "rgba(0,0,0,0)",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 25,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "items_primary_color": "",
+        "items_light_color": ""
+      }
+    },
+    "routine_MaXLqX": {
+      "type": "routine",
+      "blocks": {
+        "step_jWeXwC": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165.png",
+            "top_title": "MORNING",
+            "image": "shopify://shop_images/Frame_2147242242_8_d683b7f1-460f-44df-a24a-3bd7cf86c328.png",
+            "title": "FOCUS FIRST. HYDRATE SKIN.",
+            "subtitle": "Lion’s Mane + Tremella",
+            "button_text": "SHOP MORNING",
+            "button_link": "#",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        },
+        "step_CWVnBj": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
+            "top_title": "AFTERNOON",
+            "image": "shopify://shop_images/Frame_2147242242_6_801c56ae-b6de-4f96-a494-e3afd385caf6.png",
+            "title": "DEFEND DAILY. ENERGY BOOST.",
+            "subtitle": "Chaga + Cordyceps",
+            "button_text": "sHOP AFTERNOON",
+            "button_link": "#",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        },
+        "step_WMAKfL": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
+            "top_title": "EVENING",
+            "image": "shopify://shop_images/Frame_2147242242_7_a2c2c845-6835-494d-a4f2-237f589d8c6e.png",
+            "title": "CALM DOWN. RESET GUT.",
+            "subtitle": "Reishi + Turkey Tail",
+            "button_text": "SHOP EVENING",
+            "button_link": "#",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        }
+      },
+      "block_order": [
+        "step_jWeXwC",
+        "step_CWVnBj",
+        "step_WMAKfL"
+      ],
+      "name": "Routine Section",
+      "settings": {
+        "title": "Build Your Routine",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#038bff",
+        "button_icon_bg": "#ffffff",
+        "button_text": "#000000",
+        "section_bg": "#ffffff",
+        "cards_bg": "#e2f3ff",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "testimonial_YNU6TX": {
+      "type": "testimonial",
+      "blocks": {
+        "testimonial_FT3Gtf": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_AmmcKy": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_cDn9rc": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_ce4Ne3": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_BGwVYX": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_wgWXkb": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_jkYx8Y": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_FT3Gtf",
+        "testimonial_AmmcKy",
+        "testimonial_cDn9rc",
+        "testimonial_ce4Ne3",
+        "testimonial_BGwVYX",
+        "testimonial_wgWXkb",
+        "testimonial_jkYx8Y"
+      ],
+      "name": "Testimonial Slider",
+      "settings": {
+        "title_first": true,
+        "section_bg": "",
+        "card_bg": "#e2f3ff",
+        "title": "Filthy Reviews",
+        "reviews_img": "shopify://shop_images/Frame_36_1.svg",
+        "reviews_title": "<strong>4.8</strong> average rating",
+        "reviews_subtitle": "",
+        "slides_per_view": 3.5,
+        "center_slide": true,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "pdp_faqs_JkMmhm": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "accordion_item_Ukkppp": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are your mushrooms third-party tested?",
+            "answer": "<p>Damn right they are. We wouldn't dream of letting anything less than filthy perfection pass through the lab. Each batch is tested for quality, potency, and purity, so you know you're getting the good stuff‚ no fillers, no nasties, just 100% mushroom goodness.</p>"
+          }
+        },
+        "accordion_item_PtNpG7": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How are your mushroom powders made?",
+            "answer": "<p>We use a dual extraction method to make sure we’re pulling out all the good stuff. That means both water and alcohol extractions to get every last drop of those bioactive compounds. What you end up with is a potent, powerful powder ready to fuel your day.</p>"
+          }
+        },
+        "accordion_item_ptQEDV": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Do your supplements have any alcohol in them?",
+            "answer": "<p>I know we said the dual extraction method invovled alcohol as part of the process. But there are zero traces of it in the final product. So unless you're chugging your mushrooms down with a whiskey chaser (no judgement here), no, there's absolutely no alcohol involved. Our products are all sober and straight to the point.</p>"
+          }
+        },
+        "accordion_item_wDzCJU": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How do I take Pure Filth mushrooms?",
+            "answer": "<p>Mix 'em, sip 'em, sprinkle 'em on your avo toast‚ whatever floats your fungi boat. Our powders are versatile enough to slip into your daily routine. Hot drinks, smoothies, protein shakes or even on your favourite dessert. Filthy, but functional.</p>"
+          }
+        },
+        "accordion_item_MkqiXb": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are your mushrooms legal?",
+            "answer": "<p>Only on the path to better health, mate. These are functional mushrooms (aKa, healthy and legal), not the psychedelic kind. You'll be more 'focused and fabulous' than ‚'floating in outer space.'</p>"
+          }
+        },
+        "accordion_item_XVUfHq": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Do your products actually work?",
+            "answer": "<p>We wouldn't have spent two years tracking down the best mushrooms on the planet if they didn't. Each one is packed with bioactive compounds that support your energy, focus, stress levels, gut health, skin and overall well-being. You'll feel it, and if you don't, well‚ maybe you're already superhuman.</p>"
+          }
+        },
+        "accordion_item_NYPqzP": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are Pure Filth mushrooms vegan and gluten-free?",
+            "answer": "<p>Yes and Yes. Our mushrooms are all plant-based and free from any gluten or other rubbish you don't need. Just pure fungi goodness, with nothing hiding in the shadows or small print.</p>"
+          }
+        },
+        "accordion_item_LmAMbc": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Can I take these supplements daily?",
+            "answer": "<p>Absolutely! These mushrooms are the daily habit you never knew you needed. Think of it as a filthy little ritual for better energy, focus, and zen vibes all day long.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_Ukkppp",
+        "accordion_item_PtNpG7",
+        "accordion_item_ptQEDV",
+        "accordion_item_wDzCJU",
+        "accordion_item_MkqiXb",
+        "accordion_item_XVUfHq",
+        "accordion_item_NYPqzP",
+        "accordion_item_LmAMbc"
+      ],
+      "name": "FAQs Section",
+      "settings": {
+        "bg_color": "",
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "mbl_padding_top": 0,
+        "mbl_padding_bottom": 40,
+        "bg_color_faqs": "#E2F3FF",
+        "item_border": "#e2f3ff",
+        "heading": "Have Questions? We’ve Got Answers",
+        "description": "",
+        "button_text": "",
+        "button_link": "#",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff"
+      }
+    },
+    "pdp_faqs_tiNRVd": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "accordion_item_gW8bkU": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are your mushrooms third-party tested?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_BAtKnY": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How are your mushroom powders made?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_kHLwPL": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Do your supplements have any alcohol in them?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_aJgbxJ": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How do I take Pure Fifth mushrooms?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_eij4i7": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are your mushrooms legal?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_kT9Mcr": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Do your products actually work?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_rfqVEz": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are Pure Fifth mushrooms vegan and gluten-free?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        },
+        "accordion_item_GApcnW": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "What’s the difference between fruiting body and mycelium?",
+            "answer": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat architecto maiores eius aliquid voluptatum nesciunt, dolorum asperiores veritatis itaque!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_gW8bkU",
+        "accordion_item_BAtKnY",
+        "accordion_item_kHLwPL",
+        "accordion_item_aJgbxJ",
+        "accordion_item_eij4i7",
+        "accordion_item_kT9Mcr",
+        "accordion_item_rfqVEz",
+        "accordion_item_GApcnW"
+      ],
+      "disabled": true,
+      "name": "FAQs Section",
+      "settings": {
+        "bg_color": "",
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "mbl_padding_top": 0,
+        "mbl_padding_bottom": 40,
+        "bg_color_faqs": "#E2F3FF",
+        "item_border": "#e2f3ff",
+        "heading": "Have Questions? We’ve Got Answers",
+        "description": "",
+        "button_text": "",
+        "button_link": "#",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff"
+      }
+    },
+    "166904322806a89075": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "full_width_banner_9WzHry",
-    "multitile_wDmz3U",
-    "marquees_NPty3a",
-    "new_marquee_LEpgQc",
-    "ss_feature_10_WAqaxe",
-    "166904322806a89075",
-    "testimonials_FbhVEb",
-    "accordions_cpYPCT",
-    "recommendations"
+    "complete_the_set_LAN4cq",
+    "recommendations",
+    "benefits_cQkaGh",
+    "story_behind_TKeagc",
+    "enjoy_slider_fPXa9h",
+    "special_section_74QzEN",
+    "money_back_aG9pad",
+    "video_slider_x93pnd",
+    "routine_MaXLqX",
+    "testimonial_YNU6TX",
+    "pdp_faqs_JkMmhm",
+    "pdp_faqs_tiNRVd",
+    "166904322806a89075"
   ]
 }

@@ -262,7 +262,7 @@
 {% endstyle %}
 
 
-<section class="benefits-section section-{{ section.id }}">
+<section class="benefits-section section-{{ section.id }} fade-in-section ">
     {% if section.settings.sec_img_desk != blank or section.settings.sec_img_mob != blank %}
         <div class="benefits-section-img">
             {% if section.settings.sec_img_desk != blank %}
@@ -290,7 +290,7 @@
 
       <div class="benefits-content">
 
-        <div class="benefits-head">
+        <div class="benefits-head fade-in-left">
 
           {% if section.settings.title != blank %}
           <h2 class="benefits-title">
@@ -310,7 +310,7 @@
         <div class="benefits-blocks">
 
           {% for block in section.blocks %}
-          <div class="benefits-block" {{ block.shopify_attributes }}>
+          <div class="benefits-block fade-in-item" {{ block.shopify_attributes }}>
 
             {% if block.settings.icon != blank %}
             <div class="benefit-block-icon">

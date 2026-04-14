@@ -24,7 +24,7 @@ h3.pdp_purchase-options-title {
 
 .pdp_purchase-option {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 10px;
     border: 2px solid #00000033;
     padding: 20px 12px;
@@ -127,6 +127,7 @@ span.pdp_purchase-option_icon {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-shrink: 0;
 }
 
 span.pdp_purchase-option_icon:before {
@@ -184,11 +185,11 @@ label.pdp_purchase-option.pdp_purchase-option_one {
 
 .pdp_purchase-option_selling_top {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     max-width: 100%;
     width: 100%;
-    gap: 10px;
+    gap: 5px;
     padding: 0 12px;
 }
 
@@ -221,6 +222,54 @@ span.pdp_purchase-option-head-title {
     text-transform: uppercase;
 }
 
+.pdp_purchase-option_one-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+span.pdp_compare_price_compare {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-decoration: line-through;
+    color: #5D5D5D;
+}
+
+span.pdp_price.pdp_price_price.pdp_purchase-option_selling_comp {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: line-through;
+    color: #1E1E1E;
+}
+
+.pdp_purchase-option_selling-prices {
+    text-align: end;
+    line-height: 100%;
+}
+
+span.pdp_purchase-option_selling-prices_serving {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #00000099;
+    margin-top: 4px;
+}
+
+.pdp_purchase-option_selling-prices-wrapper {
+    text-align: end;
+    line-height: 100%;
+}
+
 @media screen and (max-width: 768px){
 .pdp_purchase-options {
     margin-bottom: 24px;
@@ -251,6 +300,10 @@ span.pdp_purchase-option-head-title {
     border-radius: 8px;
 }
 
+span.pdp_price.pdp_price_price.pdp_purchase-option_selling_comp {
+    font-size: 14px;
+}
+
 }
 
 
@@ -277,7 +330,10 @@ span.pdp_purchase-option-head-title {
             <span class="pdp_purchase-option_icon" style="display: block;"></span>
             <span class="pdp_purchase-option_title">One-time purchase</span>
         </div>
-        <span class="pdp_price pdp_price_price"></span>
+        <div class="pdp_purchase-option_one-prices">
+          <span class="pdp_price pdp_price_price">{{ product.selected_or_first_available_variant.price | money }}</span>
+          <span class="pdp_compare_price_compare">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
+        </div>
       </label>
     {% endunless %}
 
@@ -307,10 +363,16 @@ span.pdp_purchase-option-head-title {
                 >
                 <span class="pdp_purchase-option_icon" style="display: block;"></span>
                 <span class="pdp_purchase-option_title">
-                  {{ group.name }}
+                  {{ block.settings.sub_title | default: group.name }}
                 </span>
             </div>
-            <span class="pdp_compare_price pdp_price_price"></span>
+            <div class="pdp_purchase-option_selling-prices-wrapper">
+              <div class="pdp_purchase-option_selling-prices">
+                <span class="pdp_compare_price pdp_price_price">{{ product.selected_or_first_available_selling_plan_allocation.price | money }}</span>
+                <span class="pdp_price pdp_price_price pdp_purchase-option_selling_comp">{{ product.selected_or_first_available_variant.price | money }}</span>
+              </div>
+                <span class="pdp_purchase-option_selling-prices_serving">{{ product.selected_or_first_available_variant.price | divided_by: 30 | money }} per serving</span>
+            </div>
         </div>
         
 
@@ -420,26 +482,75 @@ document.addEventListener("DOMContentLoaded", function () {
   // 3. Page load par check karein
   syncSellingPlan();
 });
-</script>
+
+document.addEventListener('change', function (e) {
+  if (e.target.name === 'purchase_option') {
+    const sellingPlanSelect = document.querySelector('[data-selling-plan-selector]');
+    
+    if (e.target.value === 'one-time') {
+      sellingPlanSelect.disabled = true;
+    } else {
+      sellingPlanSelect.disabled = false;
+    }
+  }
+});
+
+</script> 
 
 
 
 {% comment %} ========== pricess ======= {% endcomment %}
 
 <script>
-  function updatePriceDisplay(input) {
+  {% comment %} function updatePriceDisplay(input) {
     const label = document.querySelector(`label[for="${input.id}"]`);
     if (!label) return;
 
     const price = label.getAttribute('data-price');
     const discPrice = label.getAttribute('data-disc_price');
+    const compPrice = label.getAttribute('data-comp_price');
 
     const priceEl = document.querySelector('.pdp_price');
     const comparePriceEl = document.querySelector('.pdp_compare_price');
+    const compPriceEl = document.querySelector('.pdp_compare_price_compare');
 
     if (priceEl) priceEl.textContent = price || '';
     if (comparePriceEl) comparePriceEl.textContent = discPrice || '';
-  }
+    if (compPriceEl) compPriceEl.textContent = compPrice || '';
+
+  } {% endcomment %}
+
+  function updatePriceDisplay(input) {
+  const label = document.querySelector(`label[for="${input.id}"]`);
+  if (!label) return;
+
+  const price = label.getAttribute('data-price');
+  const discPrice = label.getAttribute('data-disc_price');
+  const compPrice = label.getAttribute('data-comp_price');
+  const servingPrice = label.getAttribute('data-serving');
+
+  const priceEls = document.querySelectorAll('.pdp_price');
+  const comparePriceEls = document.querySelectorAll('.pdp_compare_price');
+  const compPriceEls = document.querySelectorAll('.pdp_compare_price_compare');
+  const servingEls = document.querySelectorAll('.pdp_purchase-option_selling-prices_serving');
+
+  priceEls.forEach(el => {
+    el.textContent = price || '';
+  });
+
+  comparePriceEls.forEach(el => {
+    el.textContent = discPrice || '';
+  });
+
+  compPriceEls.forEach(el => {
+    el.textContent = compPrice || '';
+  });
+
+  servingEls.forEach(el => {
+    el.textContent = servingPrice || '';
+  });
+
+}
 
   // Handle swatch change
   document.addEventListener('change', function (e) {

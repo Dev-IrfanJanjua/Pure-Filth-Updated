@@ -627,49 +627,49 @@
         "video_htq99g": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/PUREFILTHSTEP1-ezgif.com-gif-to-mp4-converter.mp4",
+            "video": "shopify://files/videos/83a95871889f47709d125af342ca1163.MOV",
             "abs_text": ""
           }
         },
         "video_ieBJpq": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
+            "video": "shopify://files/videos/0227 (1).mov",
             "abs_text": ""
           }
         },
         "video_qXD8fc": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
+            "video": "shopify://files/videos/1106 Reishi.mov",
             "abs_text": ""
           }
         },
         "video_mdnne6": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
+            "video": "shopify://files/videos/Blake Short Version HD Caption.mov",
             "abs_text": ""
           }
         },
         "video_Ukx7bP": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
+            "video": "shopify://files/videos/Dayle Short v2 Captions.mov",
             "abs_text": ""
           }
         },
         "video_MmgJDm": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
+            "video": "shopify://files/videos/PureFilth-V1.mp4",
             "abs_text": ""
           }
         },
         "video_FCLcP4": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
+            "video": "shopify://files/videos/Levi.mov",
             "abs_text": ""
           }
         }
@@ -692,7 +692,7 @@
         "slides_per_view_desktop": 4,
         "background_color": "rgba(0,0,0,0)",
         "padding_top_desktop": 75,
-        "padding_bottom_desktop": 80,
+        "padding_bottom_desktop": 0,
         "padding_top_mobile": 40,
         "padding_bottom_mobile": 30,
         "items_primary_color": "",
@@ -762,8 +762,8 @@
         "border_color": "",
         "padding_block": 35,
         "padding_block_mob": 0,
-        "padding_sec_top": 44,
-        "padding_sec_bottom": 44,
+        "padding_sec_top": 80,
+        "padding_sec_bottom": 80,
         "padding_sec_top_mob": 44,
         "padding_sec_bottom_mob": 44
       }

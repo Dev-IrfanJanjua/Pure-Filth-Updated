@@ -467,12 +467,12 @@ small.footer-newsletter-content_small {
             {% endif %}
             {% if section.settings.icon_type == 'social' %}
               <div class="footer-social-icons">
-                {% if section.settings.tiktok_link %}
+                {% if section.settings.tiktok_link != blank %}
                   <a href="{{ section.settings.tiktok_link }}" target="_blank" rel="noopener noreferrer" class="footer-social-icon">
                     {{ section.settings.tiktok_icon | image_url: width: 100 | image_tag: alt: 'TikTok icon' }}
                   </a>
                 {% endif %}
-                {% if section.settings.instagram_link %}
+                {% if section.settings.instagram_link != blank %}
                   <a href="{{ section.settings.instagram_link }}" target="_blank" rel="noopener noreferrer" class="footer-social-icon">
                     {{ section.settings.instagram_icon | image_url: width: 100 | image_tag: alt: 'Instagram icon' }}
                   </a>
@@ -742,7 +742,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* ========= product Cahaga 2 ========= */
 
-{% if template.suffix == 'mushroom-powder' %}
+{% if template.suffix == 'lions-mane-product' %}
 
   button.cstm-newsletter-btn{
     background: #FEC700;
@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 {% endif %}
 
-{% if template.suffix == 'chaga-2' %}
+{% if template.suffix == 'chaga-product' %}
   .footer-section.section-{{ section.id }}{
     background-color: #E2F3FF;
   }
@@ -760,7 +760,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 {% endif %}
 
-{% if template.suffix == 'cordyceps-2' %}
+{% if template.suffix == 'cordyceps-product' %}
   .footer-section.section-{{ section.id }}{
     background-color: #FFEEEE;
   }
@@ -770,7 +770,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 {% endif %}
 
-{% if template.suffix == 'turkey-2' %}
+{% if template.suffix == 'turkey-tail-product' %}
   .footer-section.section-{{ section.id }}{
     background-color: #F0FFF7;
   }
@@ -780,7 +780,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 {% endif %}
 
-{% if template.suffix == 'reishi-2' %}
+{% if template.suffix == 'reishi-product' %}
   .footer-section.section-{{ section.id }}{
     background-color: #F1EAFF;
   }
@@ -790,7 +790,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 {% endif %}
 
-{% if template.suffix == 'tremella-2' %}
+{% if template.suffix == 'tremella-product' %}
   .footer-section.section-{{ section.id }}{
     background-color: #FFE6F9;
   }

@@ -84,7 +84,7 @@
             </div>
           </div>
           <div class="cs_product_other_images">
-            {% assign images = product.images | slice: 0, 5 %}
+            {% assign images = product.images | slice: 0, 4 %}
             {% assign total = images.size %}
 
             <div class="image-grid">
@@ -142,13 +142,25 @@
       "type": "@app"
     },
     {
-      "type": "pdp_tag",
+      "type": "cstm_pdp_tag",
       "name": "Product Tag",
       "settings": [
         {
           "type": "inline_richtext",
           "id": "pdp_tag",
           "label": "Product Tag"
+        }
+      ]
+    },
+    {
+      "type": "pdp_heading_tag",
+      "name": "Product Heading Tag",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading_tag",
+          "label": "Heading Tag",
+          "default": "Heading Tag"
         }
       ]
     },
@@ -891,6 +903,18 @@
           "default": "Variant picker"
         },
         {
+          "type": "color",
+          "id": "tag_bg",
+          "label": "Active Tag BG",
+          "default": "#1CC84D"
+        },
+        {
+          "type": "color",
+          "id": "tag_color",
+          "label": "Active Tag Color",
+          "default": "#fff"
+        },
+        {
           "type": "select",
           "id": "spacing_bottom",
           "label": "t:sections.global.spacing.bottom.for__blocks.label",
@@ -1012,6 +1036,18 @@
       ]
     },
     {
+      "type": "Pdp_dropdown",
+      "name": "Product Dropdown",
+      "settings": [
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background color",
+          "default": "#FFE6F9"
+        }
+      ]
+    },
+    {
       "type": "purchase_options",
       "name": "t:sections.main-product.blocks.purchase_options.name",
       "limit": 1,
@@ -1021,6 +1057,12 @@
           "id": "headline",
           "label": "Heading",
           "default": "Purchase Options"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "label": "Subscription Title",
+          "default": "Subscribe & Save"
         },
         {
           "type": "color_background",

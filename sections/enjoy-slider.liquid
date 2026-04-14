@@ -21,16 +21,23 @@
 
 .section-{{ section.id }} .enjoy-slider-card{
   overflow:hidden;
+  transition: all 0.3s ease;
+}
+
+.section-{{ section.id }} .enjoy-slider-card:hover .enjoy-slider-card_img {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1.02);
 }
 
 .section-{{ section.id }} .enjoy-slider-card_img{
-      position: relative;
+    position: relative;
     max-width: 100%;
     width: 100%;
     height: auto;
     aspect-ratio: 2 / 2.5;
     border-radius: 16px;
     overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .section-{{ section.id }} .enjoy-slider-card_img img{
@@ -128,13 +135,13 @@
 {% endstyle %}
 
 
-<section class="enjoy-slider-section section-{{ section.id }}">
+<section class="enjoy-slider-section section-{{ section.id }} fade-in-section ">
   <div class="page-width">
 
     <div class="enjoy-slider-wrapper">
 
       {% if section.settings.title != blank %}
-      <h2 class="enjoy-slider-title">
+      <h2 class="enjoy-slider-title fade-in-left">
         {{ section.settings.title }}
       </h2>
       {% endif %}
@@ -149,7 +156,7 @@
             {% for block in section.blocks %}
             <div class="swiper-slide" {{ block.shopify_attributes }}>
 
-              <div class="enjoy-slider-card">
+              <div class="enjoy-slider-card fade-in-item">
 
                 <div class="enjoy-slider-card_img">
 

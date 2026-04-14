@@ -53,13 +53,15 @@
   <label
     for="{{- id -}}"
     data-price="{{ price | money }}"
+    data-serving="{{ price | divided_by: 30 | money }} per serving"
     data-disc_price="{{ discount_price | money }}/mo"
+    data-comp_price="{{ compare_price | money }}"
     class="swatch{% if class contains 'color'  %} swatch--circle swatch--labeled{% unless colors_for_check contains option_value_handle %} swatch--default{% endunless %}{% else %} {{ settings.product_swatch_style }}{% endif %} swatch--{{ option_value_handle }} {{ class }}"
     title="{{- value -}}" {% if tabindex  %} tabindex={{- tabindex -}} {% endif %}
   >
 
     {% if variant_tag != blank %}
-      <span class="swatch-variant-tag">{{ variant_tag }}</span>
+      <span class="swatch-variant-tag" style="--tag_bg-color: {{ block.settings.tag_bg }}; --tag-color: {{ block.settings.tag_color }} " >{{ variant_tag }}</span>
     {% endif %}
     <span {% unless show_label %}class="visually-hidden"{% endunless %}>
       {{- value -}}

@@ -238,6 +238,7 @@ span.special-card-bottom_list-icon {
     max-width: calc(100% - (52% + 16px));
     width: 100%;
     height: auto;
+    align-self: stretch;
   }
 
   .section-{{ section.id }} .special-content-image img{
@@ -457,7 +458,7 @@ p.special-content_image-subtitle {
   }
 {% endstyle %}
 
-<section class="special-section section-{{ section.id }}">
+<section class="special-section section-{{ section.id }} fade-in-section ">
   <div class="special-section-bg_image">
     {% if section.settings.bg_desktop != blank %}
       {{ section.settings.bg_desktop | image_url: width: 2000 | image_tag: alt: "image" }}
@@ -467,7 +468,7 @@ p.special-content_image-subtitle {
   <div class="page-width">
     <div class="special-section-wrapper">
       {% if section.settings.title != blank %}
-        <h2 class="special-section-title">{{ section.settings.title }}</h2>
+        <h2 class="special-section-title fade-in-left">{{ section.settings.title }}</h2>
       {% endif %}
 
       <div class="special-section-body">
@@ -554,7 +555,7 @@ p.special-content_image-subtitle {
               </div>
             {% endif %}
             {% if block.type == 'simple_card' %}
-              <div class="special-simple-card" style="background-color: {{ block.settings.bg_color }}">
+              <div class="special-simple-card fade-in-item" style="background-color: {{ block.settings.bg_color }}">
                 {% if block.settings.simple_title != blank %}
                   <h3 class="special-simple-card_title">{{ block.settings.simple_title }}</h3>
                 {% endif %}
@@ -566,7 +567,7 @@ p.special-content_image-subtitle {
           {% endfor %}
         </div>
 
-        <div class="special-content-image">
+        <div class="special-content-image fade-in-up">
           {% if section.settings.main_image != blank %}
             {{ section.settings.main_image | image_url: width: 1600 | image_tag: alt: "image" }}
           {% endif %}
