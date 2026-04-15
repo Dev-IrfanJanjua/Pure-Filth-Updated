@@ -58,15 +58,8 @@
         "tabs_3RKbxd": {
           "type": "tabs",
           "settings": {
-            "text": "All PRODUCTS",
+            "text": "All Products",
             "link": "shopify://collections/all"
-          }
-        },
-        "tabs_iV6n9t": {
-          "type": "tabs",
-          "settings": {
-            "text": "Bundles",
-            "link": "shopify://collections/all-filthy-products"
           }
         },
         "tabs_HHWynJ": {
@@ -74,6 +67,13 @@
           "settings": {
             "text": "Single Powders",
             "link": "shopify://collections/powders"
+          }
+        },
+        "tabs_iV6n9t": {
+          "type": "tabs",
+          "settings": {
+            "text": "Bundles",
+            "link": "shopify://collections/bundles"
           }
         },
         "tabs_8Np78h": {
@@ -86,13 +86,12 @@
       },
       "block_order": [
         "tabs_3RKbxd",
-        "tabs_iV6n9t",
         "tabs_HHWynJ",
+        "tabs_iV6n9t",
         "tabs_8Np78h"
       ],
       "settings": {
         "cstm_tyle": true,
-        "custom_heading": "",
         "toggle_text": "Subscribe + Save Up To 20%",
         "enable_products_count": false,
         "enable_sorting": false,

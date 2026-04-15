@@ -58,6 +58,7 @@
       {% if section.settings.cstm_tyle %}
         <div class="collection__header custom-collection__header fade-in-up">
           <h2 class="custom-collection__title">{{ section.settings.custom_heading | default: collection.title }}</h2>
+
           <div class="collection_blocks">
             <div class="collection_blocks__inner">
                 {% for block in section.blocks %}

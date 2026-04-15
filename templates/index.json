@@ -127,8 +127,8 @@
       "type": "cstm-hero-banner",
       "name": "Hero Banner",
       "settings": {
-        "main_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_5.png",
-        "mobile_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_4.png",
+        "main_img": "shopify://shop_images/Frame_2147241933_1.png",
+        "mobile_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_6.png",
         "review_img": "shopify://shop_images/Stars_8.svg",
         "list_icon": "shopify://shop_images/verify.svg",
         "review_text": "2,240+ FILTHY customers",
@@ -155,7 +155,7 @@
             "collection": "all-filthy-products",
             "card_link": "shopify://products/lions-mane-mushroom-powder",
             "tag": "FOCUS",
-            "custom_image": "shopify://shop_images/am02clipped.webm_12.png",
+            "custom_image": "shopify://shop_images/am02clipped.webm_5_407622f9-a5eb-4851-ab0a-4675bf767f85.png",
             "title": "Lion's Mane",
             "subtitle": "Cognitive Performance",
             "card_bg": "#fff1c6"
@@ -167,7 +167,7 @@
             "collection": "powders",
             "card_link": "shopify://products/cordyceps-mushroom-powder",
             "tag": "ENERGY",
-            "custom_image": "shopify://shop_images/am02clipped.webm_7.png",
+            "custom_image": "shopify://shop_images/am02clipped.webm_4_8b23b462-84ce-480d-8594-ddb6f5770f22.png",
             "title": "cordyceps",
             "subtitle": "Physical Performance",
             "card_bg": "#ffbfc1"
@@ -179,7 +179,7 @@
             "collection": "the-filthy-lineup",
             "card_link": "shopify://products/reishi-mushroom-powder",
             "tag": "RELAX",
-            "custom_image": "shopify://shop_images/am02clipped.webm_8.png",
+            "custom_image": "shopify://shop_images/am02clipped.webm_3_26611dee-729d-4927-acd4-f6517a6c3be7.png",
             "title": "Reishi",
             "subtitle": "Stress & Sleep Support",
             "card_bg": "#ddccff"
@@ -191,7 +191,7 @@
             "collection": "the-filthy-lineup",
             "card_link": "shopify://products/turkey-tail-mushroom-powder",
             "tag": "GUT HEALTH",
-            "custom_image": "shopify://shop_images/am02clipped.webm_9.png",
+            "custom_image": "shopify://shop_images/am02clipped.webm_2_7e2ea8b3-22a3-4e1b-9986-487161456adb.png",
             "title": "turkey tail",
             "subtitle": "Digestive Support",
             "card_bg": "#c3ffde"
@@ -203,7 +203,7 @@
             "collection": "all-filthy-products",
             "card_link": "shopify://products/tremella-mushroom-powder",
             "tag": "BEAUTY",
-            "custom_image": "shopify://shop_images/am02clipped.webm_10.png",
+            "custom_image": "shopify://shop_images/am02clipped.webm_1_3e4ea71c-db8a-48cb-b4a9-c487425798d7.png",
             "title": "TREMELLA",
             "subtitle": "Skin Hydration",
             "card_bg": "#fdd4f3"
@@ -215,7 +215,7 @@
             "collection": "all-filthy-products",
             "card_link": "shopify://products/chaga-mushroom-powder",
             "tag": "IMMUNITY",
-            "custom_image": "shopify://shop_images/am02clipped.webm_11.png",
+            "custom_image": "shopify://shop_images/fd569e46cc1bddff8c6365b13e494b137bc7f7a6.png",
             "title": "CHAGA",
             "subtitle": "Immune Defence",
             "card_bg": "#7cc9f6"
@@ -459,7 +459,7 @@
         "step_DixFdq": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/Frame_2147242205.png",
+            "image": "shopify://shop_images/Frame_2147242205_1.png",
             "title": "DAILY DRIVER (100g)",
             "subtitle": "Best value for every day use.",
             "button_text": "Shop All",
@@ -563,7 +563,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165.png",
             "top_title": "MORNING",
-            "image": "shopify://shop_images/Frame_2147242242_718aa5ab-bb6f-4264-9f2f-2bb1925a3959.png",
+            "image": "shopify://shop_images/Frame_2147242242_10_3c37ea77-fba2-4d45-ba15-6ff48c88ef54.png",
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
@@ -591,7 +591,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
             "top_title": "EVENING",
-            "image": "shopify://shop_images/Frame_2147242242_2_fd66dd82-318f-490a-8981-727543d96797.png",
+            "image": "shopify://shop_images/Frame_2147242242_11_364683ec-074c-46a8-aedb-77c0e285be96.png",
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
@@ -659,17 +659,17 @@
             "abs_text": ""
           }
         },
-        "video_MmgJDm": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/PureFilth-V1.mp4",
-            "abs_text": ""
-          }
-        },
         "video_FCLcP4": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/Levi.mov",
+            "abs_text": ""
+          }
+        },
+        "video_MmgJDm": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/PureFilth-V1.mp4",
             "abs_text": ""
           }
         }
@@ -680,8 +680,8 @@
         "video_qXD8fc",
         "video_mdnne6",
         "video_Ukx7bP",
-        "video_MmgJDm",
-        "video_FCLcP4"
+        "video_FCLcP4",
+        "video_MmgJDm"
       ],
       "name": "Video Slider Formulas",
       "settings": {
@@ -928,7 +928,7 @@
         "title_first": false,
         "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
         "image": "shopify://shop_images/PDP_Badge.svg",
-        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll REFUND YOU",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
         "button_text_color": "#ffffff",

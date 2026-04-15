@@ -92,7 +92,7 @@
 
 <product-card class="product-card fade-in-item{% if layout_type == 'horizontal' %} product-card__horizontal{% endif %}{% unless product_ref.available %} product-card__sold-out{% endunless %}">
   <div class="product-card__actions">
-    <a href="{{ product_link_with_variant }}" tabindex="-1" class="product-card__link" data-product-link title="{{ 'product.go_to_title' | t : title: product_ref.title }}">
+    <a href="{{ product_ref.url }}" tabindex="-1" class="product-card__link" data-product-link title="{{ 'product.go_to_title' | t : title: product_ref.title }}">
       {{ media }}
     </a>
     {% unless layout_type == 'horizontal' %}
@@ -121,7 +121,7 @@
     -%}
     <div class="{{ product_card_info_classes }}">
       <h3 class="product-card__title">
-        <a href="{{ product_link_with_variant }}" class="product-card__link" tabindex="{% if is_in_drawer == true %}-1{% else %}0{% endif %}" data-product-link title="{{ 'product.go_to_title' | t : title: product_ref.title }}">
+        <a href="{{ product_ref.url }}" class="product-card__link" tabindex="{% if is_in_drawer == true %}-1{% else %}0{% endif %}" data-product-link title="{{ 'product.go_to_title' | t : title: product_ref.title }}">
           <span>{{ product_ref.metafields.custom.collection_card_title | default: product_ref.title | default: product_title_placeholder }}</span>
         </a>
         {% comment %} {% render 'product-badges', product: product_ref %} {% endcomment %}
@@ -170,6 +170,22 @@
     <form class="product-card__add-to-cart--form" action="/cart/add" method="post">
       
       <div class="collection-card__varients {% if product_ref.variants.size == 1 %} collection-card__varients_none {% endif %} ">
+
+        {% comment %} ========= Bigger Variant selected By defualt ======= {% endcomment %}
+
+          {% assign largest_variant = product_ref.variants.first %}
+          {% assign max_size = 0 %}
+
+          {% for variant in product_ref.variants %}
+            {% assign size_text = variant.title | split: 'g' | first %}
+            {% assign size = size_text | plus: 0 %}
+
+            {% if size > max_size %}
+              {% assign max_size = size %}
+              {% assign largest_variant = variant %}
+            {% endif %}
+          {% endfor %}
+
           {%- comment %} Variant Selector {% endcomment -%}
           {% if product_ref.variants.size > 1 %}
             <select name="id" class="product-card__variant-select">
@@ -180,6 +196,7 @@
                       data-price="{{ variant.price | money }}"
                       data-tag="{{ variant.metafields.custom.variant_tag | escape }}"
                       {% unless variant.available %}disabled{% endunless %}
+                      {% if variant.id == largest_variant.id %}selected{% endif %}
                   >
                     {{ variant.title }} 
                   </option>
@@ -195,18 +212,18 @@
                   <path d="M1 1L10 10L19 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
-            {% if product_ref.selected_or_first_available_variant.metafields.custom.variant_tag %}
+            {% if largest_variant.metafields.custom.variant_tag %}
               <div class="collection-card__variant-tag">
-                  {{ product_ref.selected_or_first_available_variant.metafields.custom.variant_tag }}
+                  {{ largest_variant.metafields.custom.variant_tag }}
               </div>
             {% endif %}
 
           {% else %}
-            <input type="hidden" name="id" value="{{ product_ref.selected_or_first_available_variant.id }}">
+            <input type="hidden" name="id" value="{{ largest_variant.id }}">
           {% endif %}
       </div>
       <input type="hidden" name="quantity" value="1">
-      {% assign plans = product_ref.selected_or_first_available_variant.selling_plan_allocations %}
+      {% assign plans = largest_variant.selling_plan_allocations %}
       {% if plans.size > 0 %}
         <input class="selling-plan-input" 
           type="hidden" 
@@ -220,7 +237,7 @@
         {%- unless product_ref.available -%}disabled{%- endunless -%}
       >
         <span class="buy-button__text">
-            Buy — {{ product_ref.selected_or_first_available_variant.price | money }}
+            Buy — {{ largest_variant.price | money }}
         </span>
         <span class="buy-button__icon">
             <svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">

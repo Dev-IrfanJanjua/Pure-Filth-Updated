@@ -85,6 +85,7 @@
           "settings": {
             "title": "Variant picker",
             "tag_bg": "#1cc84d",
+            "tag_color": "#ffffff",
             "spacing_bottom": "1",
             "variant_picker_type": "buttons",
             "show_variant_images": false,
@@ -426,7 +427,7 @@
           "settings": {
             "icon": "shopify://shop_images/Frame_2147228878_17_b3425860-7721-4c81-ae1e-d39f5a7d409f.svg",
             "title": "<p>ANTIOXIDANT PROTECTION</p>",
-            "subtitle": "Helps protect skin from oxidative stress that contributes to premature ageing."
+            "subtitle": "Helps protect skin from oxidative stress that contributes to ageing."
           }
         }
       },
@@ -631,6 +632,84 @@
         "padding_bottom_mobile": 40
       }
     },
+    "video_slider_Tn7LbW": {
+      "type": "video-slider",
+      "blocks": {
+        "video_RigzHp": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/83a95871889f47709d125af342ca1163.MOV",
+            "abs_text": ""
+          }
+        },
+        "video_N9nixM": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/0227 (1).mov",
+            "abs_text": ""
+          }
+        },
+        "video_kpXJjY": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/1106 Reishi.mov",
+            "abs_text": ""
+          }
+        },
+        "video_Bx4PBG": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Blake Short Version HD Caption.mov",
+            "abs_text": ""
+          }
+        },
+        "video_aTYLrU": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Dayle Short v2 Captions.mov",
+            "abs_text": ""
+          }
+        },
+        "video_t7VRcF": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Levi.mov",
+            "abs_text": ""
+          }
+        },
+        "video_eK747a": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/PureFilth-V1.mp4",
+            "abs_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_RigzHp",
+        "video_N9nixM",
+        "video_kpXJjY",
+        "video_Bx4PBG",
+        "video_aTYLrU",
+        "video_t7VRcF",
+        "video_eK747a"
+      ],
+      "name": "Video Slider Formulas",
+      "settings": {
+        "pdp": false,
+        "stars_image": "shopify://shop_images/Frame_36_2.svg",
+        "rating_text": "2,440+ Reviews",
+        "header_text": "<p>what our loyal customers are saying?</p>",
+        "slides_per_view_desktop": 4,
+        "background_color": "rgba(0,0,0,0)",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 25,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "items_primary_color": "",
+        "items_light_color": ""
+      }
+    },
     "video_slider_GxwPPg": {
       "type": "video-slider",
       "blocks": {
@@ -700,6 +779,7 @@
         "video_jhgrAE",
         "video_icqw6X"
       ],
+      "disabled": true,
       "name": "Video Slider Formulas",
       "settings": {
         "pdp": false,
@@ -778,6 +858,106 @@
         "cards_bg": "#ffe6f9",
         "padding_top_desktop": 80,
         "padding_bottom_desktop": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "testimonial_CYm7pU": {
+      "type": "testimonial",
+      "blocks": {
+        "testimonial_TBPmJy": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Andy.B"
+          }
+        },
+        "testimonial_7Gw4qK": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_tBybpJ": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
+        },
+        "testimonial_pbPcAQ": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_MCf8JV": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Andy.B"
+          }
+        },
+        "testimonial_Yj7eFF": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_rJxpfA": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_TBPmJy",
+        "testimonial_7Gw4qK",
+        "testimonial_tBybpJ",
+        "testimonial_pbPcAQ",
+        "testimonial_MCf8JV",
+        "testimonial_Yj7eFF",
+        "testimonial_rJxpfA"
+      ],
+      "name": "Testimonial Slider",
+      "settings": {
+        "title_first": true,
+        "section_bg": "",
+        "card_bg": "#ffe6f9",
+        "title": "Filthy Reviews",
+        "reviews_img": "shopify://shop_images/Stars.png",
+        "reviews_title": "4.8 average rating",
+        "reviews_subtitle": "",
+        "slides_per_view": 3.5,
+        "center_slide": true,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
         "padding_top_mobile": 40,
         "padding_bottom_mobile": 40
       }
@@ -865,6 +1045,7 @@
         "testimonial_wgWXkb",
         "testimonial_jkYx8Y"
       ],
+      "disabled": true,
       "name": "Testimonial Slider",
       "settings": {
         "title_first": true,
@@ -1066,8 +1247,10 @@
     "enjoy_slider_fPXa9h",
     "special_section_74QzEN",
     "money_back_aG9pad",
+    "video_slider_Tn7LbW",
     "video_slider_GxwPPg",
     "routine_MaXLqX",
+    "testimonial_CYm7pU",
     "testimonial_YNU6TX",
     "pdp_faqs_k6Hi3e",
     "pdp_faqs_tiNRVd",

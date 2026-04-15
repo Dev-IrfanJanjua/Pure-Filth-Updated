@@ -639,56 +639,42 @@
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/0227 (1).mov",
-            "abs_img": "shopify://shop_images/Group_5.svg",
             "abs_text": "Focus"
           }
         },
         "video_GKADda": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
-            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-15T134441.846_1.svg",
+            "video": "shopify://files/videos/PF_Testimonial_4_V.mov",
             "abs_text": "Clarity"
           }
         },
         "video_3UAUKR": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
-            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-27T192103.195_1.svg",
+            "video": "shopify://files/videos/Blake Short Version HD Caption.mov",
             "abs_text": "Memory"
           }
         },
         "video_b6pEGV": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
-            "abs_img": "shopify://shop_images/Group_6.svg",
+            "video": "shopify://files/videos/Dayle Short v2 Captions.mov",
             "abs_text": "Mood"
           }
         },
         "video_3piGcC": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
-            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-15T134441.846_1.svg",
+            "video": "shopify://files/videos/Jacques Short.mov",
             "abs_text": "Clarity"
           }
         },
         "video_KijEwt": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
-            "abs_img": "shopify://shop_images/icon.svg_-_2026-01-27T192103.195_1.svg",
+            "video": "shopify://files/videos/1106 Reishi.mov",
             "abs_text": "Memory"
-          }
-        },
-        "video_cgKrwh": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
-            "abs_img": "shopify://shop_images/Group_6.svg",
-            "abs_text": "Mood"
           }
         }
       },
@@ -698,8 +684,7 @@
         "video_3UAUKR",
         "video_b6pEGV",
         "video_3piGcC",
-        "video_KijEwt",
-        "video_cgKrwh"
+        "video_KijEwt"
       ],
       "name": "Video Slider Formulas",
       "settings": {
@@ -779,6 +764,106 @@
         "cards_bg": "#e2f3ff",
         "padding_top_desktop": 80,
         "padding_bottom_desktop": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "testimonial_4ehawY": {
+      "type": "testimonial",
+      "blocks": {
+        "testimonial_qDxMqe": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Andy.B"
+          }
+        },
+        "testimonial_RjzWgh": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_GFTE6m": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
+        },
+        "testimonial_kPVQ8g": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_bXp4RU": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Andy.B"
+          }
+        },
+        "testimonial_tLcYR6": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_CfPRBG": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_qDxMqe",
+        "testimonial_RjzWgh",
+        "testimonial_GFTE6m",
+        "testimonial_kPVQ8g",
+        "testimonial_bXp4RU",
+        "testimonial_tLcYR6",
+        "testimonial_CfPRBG"
+      ],
+      "name": "Testimonial Slider",
+      "settings": {
+        "title_first": true,
+        "section_bg": "",
+        "card_bg": "#e2f3ff",
+        "title": "Filthy Reviews",
+        "reviews_img": "shopify://shop_images/Stars.png",
+        "reviews_title": "4.8 average rating",
+        "reviews_subtitle": "",
+        "slides_per_view": 3.5,
+        "center_slide": true,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
         "padding_top_mobile": 40,
         "padding_bottom_mobile": 40
       }
@@ -866,6 +951,7 @@
         "testimonial_wgWXkb",
         "testimonial_jkYx8Y"
       ],
+      "disabled": true,
       "name": "Testimonial Slider",
       "settings": {
         "title_first": true,
@@ -1077,6 +1163,7 @@
     "money_back_aG9pad",
     "video_slider_x93pnd",
     "routine_MaXLqX",
+    "testimonial_4ehawY",
     "testimonial_YNU6TX",
     "pdp_faqs_JkMmhm",
     "pdp_faqs_tiNRVd",
