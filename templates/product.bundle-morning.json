@@ -31,7 +31,7 @@
         "custom_richtext_a9Tp7h": {
           "type": "custom-richtext",
           "settings": {
-            "rich-text": "<p>LION'S MANE  + Tremella </p>"
+            "rich-text": "<p>Two 100g pouches, 50 servings each. Lion’s Mane sharpens focus and clarity, Tremella hydrates skin and supports collagen. Built for mornings, this duo gets your brain switched on and your skin looking alive from the start.</p>"
           }
         },
         "custom_list_JjVr6n": {
@@ -92,10 +92,18 @@
             "sizes_option": "Choose your Size:"
           }
         },
+        "pdp_dropdown_Azd43f": {
+          "type": "Pdp_dropdown",
+          "settings": {
+            "margin": true,
+            "drop_title": "Choose your bundle",
+            "background": "#faf7ed"
+          }
+        },
         "1e939cd6-0955-4135-a9e5-c50faef01437": {
           "type": "purchase_options",
           "settings": {
-            "headline": "Most popular: Get 20% off",
+            "headline": "MOST POPULAR: GET 20% OFF",
             "sub_title": "Subscribe & Save",
             "headline_bg_color": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
             "headline_text_color": "#000000",
@@ -245,9 +253,9 @@
           "settings": {
             "border_clr": "#000000",
             "tab_title_1": "HOW TO USE",
-            "tab_content_1": "<p>Add 2 grams (approx. 1 teaspoon) into hot water, coffee, protein shake or whatever tickles your fancy.</p><p>Consult your doctor before use if you have a medical condition, are taking any medication, are pregnant or breastfeeding. This product is not intended to diagnose, treat, cure or prevent any disease.</p>",
+            "tab_content_1": "<p>Add 2 grams (approx. 1 teaspoon) into hot water, coffee, protein shake or whatever tickles your fancy. Consult your doctor before use if you have a medical condition, are taking any medication, are pregnant or breastfeeding. This product is not intended to diagnose, treat, cure or prevent any disease.</p>",
             "tab_title_2": "INGREDIENTS",
-            "tab_content_2": "<p>100% Mushroom Powder.</p>",
+            "tab_content_2": "<p>100% Tremella Mushroom Powder.<br/>100% Lion's Mane Mushroom Powder.</p>",
             "tab_title_3": "SHIPPING & RETURN",
             "tab_content_3": "<p>Order before 1pm for same day delivery, or before 10pm for next day. Simple. Fast. No excuses.<br/><br/>Not feeling the filth? You’ve got 30 days to make it right. Reach out and we’ll sort it.</p>"
           }
@@ -271,6 +279,7 @@
         "custom_icon_text_phnHQx",
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b",
         "1e939cd6-0958-4135-a9e5-c50faef01437",
+        "pdp_dropdown_Azd43f",
         "1e939cd6-0955-4135-a9e5-c50faef01437",
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
         "custom_feature_rB8z8F",
@@ -428,7 +437,7 @@
             "image": "shopify://shop_images/image_2862.png",
             "title": "LION'S MANE",
             "subtitle": "Focus & Clarity",
-            "qty": "100g - 50 servings.",
+            "qty": "100g - 50 servings",
             "icon_1": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_1_db4d7bd7-a103-488f-9bd3-d65f76f2af2a.svg",
             "icon_text_1": "Fast acting (45 min)",
             "icon_2": "shopify://shop_images/icon.svg_-_2026-01-26T160931.273_1_1.svg",
@@ -475,7 +484,7 @@
             "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_2.png",
             "title": "TREMELLA",
             "subtitle": "Skin hydration & Glow",
-            "qty": "100g - 50 servings.",
+            "qty": "100g - 50 servings",
             "icon_1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_e204b097-c6af-491f-a6ee-aed540393089.svg",
             "icon_text_1": "Daily maintenance",
             "icon_2": "shopify://shop_images/icon.svg_-_2026-03-18T122528.567_1_9477ce0d-f4ad-457b-93e3-73cfb105ca96.svg",
@@ -923,17 +932,17 @@
           "settings": {
             "feature": "100% FRUITING BODY",
             "brand": "ONLY FRUITING BODY USED",
-            "typical": "Often mycelium grown on grain.",
-            "why": "The fruiting body contains the highest levels of active compounds."
+            "typical": "Often mycelium grown on grain",
+            "why": "The fruiting body contains the highest levels of active compounds"
           }
         },
         "row_FpjCeq": {
           "type": "row",
           "settings": {
             "feature": "RATIO (POTENCY)",
-            "brand": "15:1 - 20: 1 EXTRACT",
-            "typical": "4:1 - 10:1 Extract",
-            "why": "The higher the ratio, the more potent the supplement."
+            "brand": "10:1 - 20:1 Extract",
+            "typical": "4:1 - 8:1 Extract",
+            "why": "The higher the ratio, the more potent the supplement"
           }
         },
         "row_p3UxMg": {
@@ -942,7 +951,7 @@
             "feature": "EXTRACTION METHOD",
             "brand": "DUAL EXTRACTION",
             "typical": "Often single extraction or not disclosed",
-            "why": "To get the most bioactive ingredients \nout of the mushroom, dual extraction is needed."
+            "why": "To get the most bioactive ingredients \nout of the mushroom, dual extraction is needed"
           }
         },
         "row_3fhXdm": {
@@ -951,7 +960,7 @@
             "feature": "THIRD PARTY TESTED",
             "brand": "INDEPENDENTLY LAB TESTED",
             "typical": "Rarely disclosed",
-            "why": "Ensures purity and checks for heavy metals or contaminants."
+            "why": "Ensures purity and checks for heavy metals or contaminants"
           }
         },
         "row_yW6pWW": {
@@ -960,7 +969,7 @@
             "feature": "Active Compound  Transparency",
             "brand": "Yes",
             "typical": "Not disclosed",
-            "why": "Shows exactly how much of the active compounds you're getting."
+            "why": "Shows exactly how much of the active compounds you're getting"
           }
         }
       },
@@ -998,7 +1007,7 @@
         "title_first": true,
         "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
         "image": "shopify://shop_images/PDP_Badge.svg",
-        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll REFUND YOU",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
         "button_text_color": "#ffffff",
@@ -1012,6 +1021,73 @@
         "padding_top_desktop": 200,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 110,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "routine_azJ4GL": {
+      "type": "routine",
+      "blocks": {
+        "step_PEE7pA": {
+          "type": "step",
+          "disabled": true,
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165.png",
+            "top_title": "MORNING",
+            "image": "shopify://shop_images/Frame_2147242242_8_d683b7f1-460f-44df-a24a-3bd7cf86c328.png",
+            "title": "FOCUS FIRST. HYDRATE SKIN.",
+            "subtitle": "Lion’s Mane + Tremella",
+            "button_text": "SHOP MORNING",
+            "button_link": "#",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        },
+        "step_MWiNKq": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
+            "top_title": "AFTERNOON",
+            "image": "shopify://shop_images/Frame_2147242242_6_801c56ae-b6de-4f96-a494-e3afd385caf6.png",
+            "title": "DEFEND DAILY. ENERGY BOOST.",
+            "subtitle": "Chaga + Cordyceps",
+            "button_text": "sHOP AFTERNOON",
+            "button_link": "#",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        },
+        "step_xB8QWm": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
+            "top_title": "EVENING",
+            "image": "shopify://shop_images/Frame_2147242242_7_a2c2c845-6835-494d-a4f2-237f589d8c6e.png",
+            "title": "CALM DOWN. RESET GUT.",
+            "subtitle": "Reishi + Turkey Tail",
+            "button_text": "SHOP EVENING",
+            "button_link": "#",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        }
+      },
+      "block_order": [
+        "step_PEE7pA",
+        "step_MWiNKq",
+        "step_xB8QWm"
+      ],
+      "name": "Routine Section",
+      "settings": {
+        "title": "Build Your Routine",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "button_text": "#ffffff",
+        "section_bg": "#ffffff",
+        "cards_bg": "#faf7ed",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 40,
         "padding_bottom_mobile": 40
       }
     },
@@ -1365,6 +1441,7 @@
     "video_slider_x93pnd",
     "comp_pNaDkU",
     "money_back_bQi3Q3",
+    "routine_azJ4GL",
     "routine_MaXLqX",
     "testimonial_d9teAy",
     "pdp_faqs_4nNiyf",

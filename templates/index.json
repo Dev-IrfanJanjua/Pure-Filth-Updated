@@ -430,7 +430,7 @@
         "bg_image_mob": "shopify://shop_images/Banner_2_2.png",
         "image": "shopify://shop_images/Frame_2147242212_dedecf42-2156-43b1-9767-99c30c2fdd20.png",
         "title": "Not sure where to start? TAKE THE FILTH QUIZ.",
-        "subtitle": "Answer a few quick questions to discover what suits you best. Get personalized recommendations tailored to your goals.",
+        "subtitle": "Answer a few quick questions to discover what suits you best. Get personalised recommendations tailored to your goals.",
         "button_text": "Start the Quiz",
         "button_link": "shopify://pages/quiz",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
@@ -461,7 +461,7 @@
           "settings": {
             "image": "shopify://shop_images/Frame_2147242205_1.png",
             "title": "DAILY DRIVER (100g)",
-            "subtitle": "Best value for every day use.",
+            "subtitle": "Best value for every day use",
             "button_text": "Shop All",
             "button_link": "shopify://products/new-the-big-ones-6-mushroom-multipack-100g-copy"
           }
@@ -471,7 +471,7 @@
           "settings": {
             "image": "shopify://shop_images/Group_1707479868.png",
             "title": "AUTO-PILOT (Subscribe)",
-            "subtitle": "Save 20% and never run out.",
+            "subtitle": "Save 20% and never run out",
             "button_text": "Subscribe Now",
             "button_link": "shopify://collections/all-filthy-products"
           }
@@ -773,17 +773,17 @@
           "settings": {
             "feature": "100% FRUITING BODY",
             "brand": "ONLY FRUITING BODY USED",
-            "typical": "Often mycelium grown on grain.",
-            "why": "The fruiting body contains the highest levels of active compounds."
+            "typical": "Often mycelium grown on grain",
+            "why": "The fruiting body contains the highest levels of active compounds"
           }
         },
         "row_4yx7Ae": {
           "type": "row",
           "settings": {
             "feature": "RATIO (POTENCY)",
-            "brand": "15:1 - 20: 1 EXTRACT",
-            "typical": "4:1 - 10:1 Extract",
-            "why": "The higher the ratio, the more potent the supplement."
+            "brand": "10:1 - 20:1 Extract",
+            "typical": "4:1 - 8:1 Extract",
+            "why": "The higher the ratio, the more potent the supplement"
           }
         },
         "row_kxzGJY": {
@@ -792,7 +792,7 @@
             "feature": "EXTRACTION METHOD",
             "brand": "DUAL EXTRACTION",
             "typical": "Often single extraction or not disclosed",
-            "why": "To get the most bioactive ingredients \nout of the mushroom, dual extraction is needed."
+            "why": "To get the most bioactive ingredients \nout of the mushroom, dual extraction is needed"
           }
         },
         "row_akUUnq": {
@@ -801,7 +801,7 @@
             "feature": "THIRD PARTY TESTED",
             "brand": "INDEPENDENTLY LAB TESTED",
             "typical": "Rarely disclosed",
-            "why": "Ensures purity and checks for heavy metals or contaminants."
+            "why": "Ensures purity and checks for heavy metals or contaminants"
           }
         },
         "row_UfJ3zm": {
@@ -810,7 +810,7 @@
             "feature": "Active Compound  Transparency",
             "brand": "Yes",
             "typical": "Not disclosed",
-            "why": "Shows exactly how much of the active compounds you're getting."
+            "why": "Shows exactly how much of the active compounds you're getting"
           }
         }
       },

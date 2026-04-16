@@ -47,7 +47,7 @@
             "text1": "Focus",
             "image2": "shopify://shop_images/icon.svg_-_2026-01-26T160747.431_1_1.svg",
             "text2": "Energy",
-            "image3": "shopify://shop_images/icon.svg_-_2026-01-15T134441.846_1_8d2646ad-6982-4ef7-bec4-27b72db816ab.svg",
+            "image3": "shopify://shop_images/icon.svg_-_2026-03-18T121648.834_1.svg",
             "text3": "Relax",
             "image4": "shopify://shop_images/Vector_8.svg",
             "text4": "Gut Health",
@@ -238,7 +238,7 @@
           "settings": {
             "border_clr": "#000000",
             "tab_title_1": "HOW TO USE",
-            "tab_content_1": "<p>Add 2 grams (approx. 1 teaspoon) into hot water, coffee, protein shake or whatever tickles your fancy.</p><p>Consult your doctor before use if you have a medical condition, are taking any medication, are pregnant or breastfeeding. This product is not intended to diagnose, treat, cure or prevent any disease.</p>",
+            "tab_content_1": "<p>Add 2 grams (approx. 1 teaspoon) into hot water, coffee, protein shake or whatever tickles your fancy. Consult your doctor before use if you have a medical condition, are taking any medication, are pregnant or breastfeeding. This product is not intended to diagnose, treat, cure or prevent any disease.</p>",
             "tab_title_2": "INGREDIENTS",
             "tab_content_2": "<p>100% Mushroom Powder.</p>",
             "tab_title_3": "SHIPPING & RETURN",
@@ -396,11 +396,11 @@
             "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk_png.png",
             "title": "Cordyceps",
             "subtitle": "Energy & Performance",
-            "qty": "100g - 50 servings.",
-            "icon_1": "shopify://shop_images/Group.svg",
-            "icon_text_1": "Pre-workout use",
-            "icon_2": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_1_db4d7bd7-a103-488f-9bd3-d65f76f2af2a.svg",
-            "icon_text_2": "Fast Acting (45 min)",
+            "qty": "100g - 50 servings",
+            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_2.svg",
+            "icon_text_1": "Fast Acting (45 min)",
+            "icon_2": "shopify://shop_images/Group.svg",
+            "icon_text_2": "Pre-workout use",
             "icon_3": "shopify://shop_images/icon.svg_-_2026-01-26T160747.431_1_1.svg",
             "icon_text_3": "Energy boost",
             "icon_4": "shopify://shop_images/x33_6_Atp_Molecule.svg",
@@ -419,19 +419,42 @@
             "image": "shopify://shop_images/image_2862.png",
             "title": "LION'S MANE",
             "subtitle": "Focus & Clarity",
-            "qty": "10g - 50 servings.",
-            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-10T141012.534_1_cac868d6-789b-45ac-bcc5-cac70623c3bc.svg",
-            "icon_text_1": "Morning clarity",
-            "icon_2": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_1_db4d7bd7-a103-488f-9bd3-d65f76f2af2a.svg",
-            "icon_text_2": "Fast Acting (45 min)",
+            "qty": "100g - 50 servings",
+            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_5b78b3a9-7526-4164-905d-c122a6171b08.svg",
+            "icon_text_1": "Fast Acting (45 min)",
+            "icon_2": "shopify://shop_images/icon.svg_-_2026-03-10T141012.534_1_cac868d6-789b-45ac-bcc5-cac70623c3bc.svg",
+            "icon_text_2": "Morning clarity",
             "icon_3": "shopify://shop_images/icon.svg_-_2026-01-26T160931.273_1_351dd372-1565-4ba0-a484-f296ed9c0c3e.svg",
-            "icon_text_3": "Morning clarity",
+            "icon_text_3": "Focus",
             "icon_4": "shopify://shop_images/icon.svg_-_2026-01-26T160747.431_1_1.svg",
             "icon_text_4": "Energy",
             "icon_text_5": "",
             "description": "<ul><li>Contains hericenones and erinacines linked to nerve growth factor (NGF) and brain support.</li><li>Traditionally used to support memory, focus, and nervous system health</li><li>Supports mental clarity and balanced cognitive performance</li><li>Non-stimulant support for daily focus and productivity</li></ul>",
             "button_text": "LEARN MORE",
             "button_url": "shopify://products/lions-mane-mushroom-powder"
+          }
+        },
+        "card_eYDpmF": {
+          "type": "card",
+          "settings": {
+            "card_bg": "rgba(0,0,0,0)",
+            "background_image": "shopify://shop_images/Frame_2147242612.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_4.png",
+            "title": "Reishi",
+            "subtitle": "Relaxation & Sleep",
+            "qty": "100g - 50 servings",
+            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_1_db4d7bd7-a103-488f-9bd3-d65f76f2af2a.svg",
+            "icon_text_1": "Fast Acting (45 min)",
+            "icon_2": "shopify://shop_images/icon.svg_-_2026-03-18T121810.629_1_1.svg",
+            "icon_text_2": "Anxiety",
+            "icon_3": "shopify://shop_images/icon.svg_-_2026-03-18T121648.834_1_c7fa0811-bf17-4a2e-89eb-aa57991f682d.svg",
+            "icon_text_3": "Sleep",
+            "icon_4": "shopify://shop_images/icon.svg_-_2026-03-18T121437.551_1_1.svg",
+            "icon_text_4": "Balances Cortisol",
+            "icon_text_5": "",
+            "description": "<ul><li>Naturally rich in triterpenes and beta-glucans associated with stress support.</li><li>Contains beta-glucans associated with immune and digestive support.</li><li>Supports balanced cortisol levels and a calmer nervous system.</li><li>Traditionally used to promote relaxation and deeper sleep.</li></ul>",
+            "button_text": "LEARN MORE",
+            "button_url": "shopify://products/reishi-mushroom-powder"
           }
         },
         "card_aKY6VE": {
@@ -442,7 +465,7 @@
             "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_1.png",
             "title": "Turkey Tail",
             "subtitle": "Gut Health & Digestion",
-            "qty": "100g - 50 servings.",
+            "qty": "100g - 50 servings",
             "icon_1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_e204b097-c6af-491f-a6ee-aed540393089.svg",
             "icon_text_1": "Maintenance (Daily)",
             "icon_2": "shopify://shop_images/Group_1.svg",
@@ -464,8 +487,8 @@
             "background_image": "shopify://shop_images/Frame_2147242610.png",
             "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_2.png",
             "title": "TREMELLA",
-            "subtitle": "SKIN HYDRATION & GLOW",
-            "qty": "100g - 50 servings.",
+            "subtitle": "Skin Hydration & Glow",
+            "qty": "100g - 50 servings",
             "icon_1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_e204b097-c6af-491f-a6ee-aed540393089.svg",
             "icon_text_1": "Maintenance (daily)",
             "icon_2": "shopify://shop_images/icon.svg_-_2026-03-18T122528.567_1_9477ce0d-f4ad-457b-93e3-73cfb105ca96.svg",
@@ -487,8 +510,8 @@
             "background_image": "shopify://shop_images/Frame_2147242611.png",
             "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_3.png",
             "title": "Chaga",
-            "subtitle": "IMMUNITY & DEFENCE",
-            "qty": "10g - 50 servings.",
+            "subtitle": "Immunity & Defence",
+            "qty": "100g - 50 servings",
             "icon_1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_e204b097-c6af-491f-a6ee-aed540393089.svg",
             "icon_text_1": "Maintenance (daily)",
             "icon_2": "shopify://shop_images/Group_2_384486a3-254d-48bb-8ca1-fc89e27474f9.svg",
@@ -502,38 +525,15 @@
             "button_text": "LEARN MORE",
             "button_url": "shopify://products/chaga-mushroom-powder"
           }
-        },
-        "card_eYDpmF": {
-          "type": "card",
-          "settings": {
-            "card_bg": "rgba(0,0,0,0)",
-            "background_image": "shopify://shop_images/Frame_2147242612.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_4.png",
-            "title": "Reishi",
-            "subtitle": "Relaxation & Sleep",
-            "qty": "100g - 50 servings.",
-            "icon_1": "shopify://shop_images/icon.svg_-_2026-03-18T121810.629_1_f17cb824-ce05-45f3-95dc-20ea08640036.svg",
-            "icon_text_1": "Anxiety",
-            "icon_2": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_1_db4d7bd7-a103-488f-9bd3-d65f76f2af2a.svg",
-            "icon_text_2": "Fast Acting (45 min)",
-            "icon_3": "shopify://shop_images/icon.svg_-_2026-03-18T121648.834_1_c7fa0811-bf17-4a2e-89eb-aa57991f682d.svg",
-            "icon_text_3": "Sleep",
-            "icon_4": "shopify://shop_images/icon.svg_-_2026-03-18T121437.551_1_1.svg",
-            "icon_text_4": "Balances Cortisol",
-            "icon_text_5": "",
-            "description": "<ul><li>Naturally rich in triterpenes and beta-glucans associated with stress support.</li><li>Contains beta-glucans associated with immune and digestive support.</li><li>Supports balanced cortisol levels and a calmer nervous system.</li><li>Traditionally used to promote relaxation and deeper sleep.</li></ul>",
-            "button_text": "LEARN MORE",
-            "button_url": "shopify://products/reishi-mushroom-powder"
-          }
         }
       },
       "block_order": [
         "card_ziDpra",
         "card_7McVe8",
+        "card_eYDpmF",
         "card_aKY6VE",
         "card_Ggwzni",
-        "card_VLGWxc",
-        "card_eYDpmF"
+        "card_VLGWxc"
       ],
       "name": "Multipack Section",
       "settings": {
@@ -968,17 +968,17 @@
           "settings": {
             "feature": "100% FRUITING BODY",
             "brand": "ONLY FRUITING BODY USED",
-            "typical": "Often mycelium grown on grain.",
-            "why": "The fruiting body contains the highest levels of active compounds."
+            "typical": "Often mycelium grown on grain",
+            "why": "The fruiting body contains the highest levels of active compounds"
           }
         },
         "row_FpjCeq": {
           "type": "row",
           "settings": {
             "feature": "RATIO (POTENCY)",
-            "brand": "15:1 - 20: 1 EXTRACT",
-            "typical": "4:1 - 10:1 Extract",
-            "why": "The higher the ratio, the more potent the supplement."
+            "brand": "10:1 - 20:1 Extract",
+            "typical": "4:1 - 8:1 Extract",
+            "why": "The higher the ratio, the more potent the supplement"
           }
         },
         "row_p3UxMg": {
@@ -987,7 +987,7 @@
             "feature": "EXTRACTION METHOD",
             "brand": "DUAL EXTRACTION",
             "typical": "Often single extraction or not disclosed",
-            "why": "To get the most bioactive ingredients \nout of the mushroom, dual extraction is needed."
+            "why": "To get the most bioactive ingredients \nout of the mushroom, dual extraction is needed"
           }
         },
         "row_3fhXdm": {
@@ -996,7 +996,7 @@
             "feature": "THIRD PARTY TESTED",
             "brand": "INDEPENDENTLY LAB TESTED",
             "typical": "Rarely disclosed",
-            "why": "Ensures purity and checks for heavy metals or contaminants."
+            "why": "Ensures purity and checks for heavy metals or contaminants"
           }
         },
         "row_yW6pWW": {
@@ -1005,7 +1005,7 @@
             "feature": "Active Compound  Transparency",
             "brand": "Yes",
             "typical": "Not disclosed",
-            "why": "Shows exactly how much of the active compounds you're getting."
+            "why": "Shows exactly how much of the active compounds you're getting"
           }
         }
       },
@@ -1043,7 +1043,7 @@
         "title_first": true,
         "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
         "image": "shopify://shop_images/PDP_Badge.svg",
-        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll REFUND YOU",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
         "button_text_color": "#000000",

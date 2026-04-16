@@ -84,7 +84,7 @@
             </div>
           </div>
           <div class="cs_product_other_images">
-            {% assign images = product.images | slice: 0, 4 %}
+            {% assign images = product.images | slice: 1, 5 %}
             {% assign total = images.size %}
 
             <div class="image-grid">
@@ -1039,6 +1039,18 @@
       "type": "Pdp_dropdown",
       "name": "Product Dropdown",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "margin",
+          "label": "Add Margin Bottom",
+          "info": "Enable on bundle pages."
+        },
+        {
+          "type": "text",
+          "id": "drop_title",
+          "label": "Dropdown Title",
+          "default": "Choose your Mushroom:"
+        },
         {
           "type": "color",
           "id": "background",

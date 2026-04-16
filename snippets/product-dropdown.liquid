@@ -83,9 +83,17 @@ h3.produt-dropdown-title {
   display: block;
 }
 
+.product-dropdown_margin{
+  margin-bottom: 32px;
+}
+
 @media screen and (max-width: 768px){
     .product-dropdown {
         margin: 24px 0 0px;
+    }
+
+    .product-dropdown_margin{
+      margin-bottom: 24px;
     }
 
     h3.produt-dropdown-title {
@@ -100,10 +108,10 @@ h3.produt-dropdown-title {
 
 {% assign dropdown_products = product.metafields.custom.product_dropdown.value %}
 
-<div class="product-dropdown">
+<div class="product-dropdown {% if block.settings.margin %}product-dropdown_margin{% endif %} ">
 
 
-    <h3 class="produt-dropdown-title">Choose your Mushroom:</h3>
+  <h3 class="produt-dropdown-title">{{ block.settings.drop_title }}</h3>
 
   <button class="dropdown-toggle">
       {{ product.title }}

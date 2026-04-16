@@ -221,6 +221,7 @@ form.product-card__add-to-cart--form {
     letter-spacing: 0;
     vertical-align: middle;
     color: #000;
+    text-transform: uppercase;
 }
 
 .product-card .product-card__content {

@@ -155,9 +155,19 @@
     height: 16px;
 }
 
-.section-{{ section.id }} .benefits-image{
-      max-width: 50%;
+/* .section-{{ section.id }} .benefits-image{
+    max-width: 50%;
     width: 100%;
+} */
+
+.section-{{ section.id }} .benefits-image{
+    max-width: 650px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    left: auto;
+    transform: translatey(-50%);
 }
 
 .section-{{ section.id }} .benefits-image img{
@@ -195,6 +205,14 @@
     padding: 0;
 }
 
+.section-{{ section.id }} .benefits-image_desk{
+  display: none !important;
+}
+
+.section-{{ section.id }} .benefits-image_mob{
+  display: block !important;
+}
+
 .section-{{ section.id }} .benefits-wrapper{
     flex-direction: column-reverse;
     gap: 20px;
@@ -203,6 +221,8 @@
 .section-{{ section.id }} .benefits-image {
     max-width: 100%;
     width: 100%;
+    position: static;
+    transform: unset;
 }
 
 .section-{{ section.id }} .benefits-content{
@@ -284,6 +304,15 @@
             {% endif %}
         </div>
     {% endif %}
+
+    {% comment %} ==== right image ==== {% endcomment %}
+
+    {% if section.settings.image != blank %}
+      <div class="benefits-image benefits-image_desk">
+        {{ section.settings.image | image_url: width:1600 | image_tag: alt: "image" }}
+      </div>
+    {% endif %}
+
   <div class="page-width">
 
     <div class="benefits-wrapper">
@@ -356,7 +385,7 @@
 
 
       {% if section.settings.image != blank %}
-      <div class="benefits-image">
+      <div class="benefits-image benefits-image_mob" style="display: none;">
         {{ section.settings.image | image_url: width:1600 | image_tag: alt: "image" }}
       </div>
       {% endif %}

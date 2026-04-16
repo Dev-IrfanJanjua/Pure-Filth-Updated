@@ -31,7 +31,7 @@
         "custom_richtext_a9Tp7h": {
           "type": "custom-richtext",
           "settings": {
-            "rich-text": "<p>Chaga + cordyceps</p>"
+            "rich-text": "<p>Two 100g pouches, 50 servings each. Chaga supports immunity with powerful antioxidants, while Cordyceps fuels clean energy, stamina and ATP production. Built for the afternoon slump, this duo keeps you sharp, steady and switched on.</p>"
           }
         },
         "custom_list_JjVr6n": {
@@ -91,10 +91,18 @@
             "sizes_option": "Choose your Size:"
           }
         },
+        "pdp_dropdown_dMPXLt": {
+          "type": "Pdp_dropdown",
+          "settings": {
+            "margin": true,
+            "drop_title": "Choose your bundle",
+            "background": "#faf7ed"
+          }
+        },
         "1e939cd6-0955-4135-a9e5-c50faef01437": {
           "type": "purchase_options",
           "settings": {
-            "headline": "Most popular: save 100 Aed",
+            "headline": "MOST POPULAR: GET 20% OFF",
             "sub_title": "Subscribe & Save",
             "headline_bg_color": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
             "headline_text_color": "#000000",
@@ -244,9 +252,9 @@
           "settings": {
             "border_clr": "#000000",
             "tab_title_1": "HOW TO USE",
-            "tab_content_1": "<p>Add 2 grams (approx. 1 teaspoon) into hot water, coffee, protein shake or whatever tickles your fancy.</p><p>Consult your doctor before use if you have a medical condition, are taking any medication, are pregnant or breastfeeding. This product is not intended to diagnose, treat, cure or prevent any disease.</p>",
+            "tab_content_1": "<p>Add 2 grams (approx. 1 teaspoon) into hot water, coffee, protein shake or whatever tickles your fancy. Consult your doctor before use if you have a medical condition, are taking any medication, are pregnant or breastfeeding. This product is not intended to diagnose, treat, cure or prevent any disease.</p>",
             "tab_title_2": "INGREDIENTS",
-            "tab_content_2": "<p>100% Mushroom Powder.</p>",
+            "tab_content_2": "<p>100% Chaga Mushroom Powder.<br/>100% Cordyceps Mushroom Powder.</p>",
             "tab_title_3": "SHIPPING & RETURN",
             "tab_content_3": "<p>Order before 1pm for same day delivery, or before 10pm for next day. Simple. Fast. No excuses.<br/><br/>Not feeling the filth? You’ve got 30 days to make it right. Reach out and we’ll sort it.</p>"
           }
@@ -270,6 +278,7 @@
         "custom_icon_text_phnHQx",
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b",
         "1e939cd6-0958-4135-a9e5-c50faef01437",
+        "pdp_dropdown_dMPXLt",
         "1e939cd6-0955-4135-a9e5-c50faef01437",
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
         "custom_feature_rB8z8F",
@@ -403,7 +412,7 @@
             "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk_png.png",
             "title": "Cordyceps",
             "subtitle": "Energy & Performance",
-            "qty": "100g - 50 servings.",
+            "qty": "100g - 50 servings",
             "icon_1": "shopify://shop_images/icon.svg_-_2026-03-13T142746.051_1_2.svg",
             "icon_text_1": "Fast acting (45 min)",
             "icon_2": "shopify://shop_images/Group.svg",
@@ -497,12 +506,12 @@
             "background_image": "shopify://shop_images/Frame_2147242611.png",
             "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_3.png",
             "title": "Chaga",
-            "subtitle": "Immunity & Deffence",
-            "qty": "100g - 50 servings.",
+            "subtitle": "Immunity & Defence",
+            "qty": "100g - 50 servings",
             "icon_1": "shopify://shop_images/icon.svg_-_2026-03-18T120047.147_1_e204b097-c6af-491f-a6ee-aed540393089.svg",
             "icon_text_1": "Daily maintenance",
             "icon_2": "shopify://shop_images/icon.svg_-_2026-03-18T120156.472_1_0b7baccf-5d9d-4a0f-bd27-9eef29ae1ace.svg",
-            "icon_text_2": "Daily defence",
+            "icon_text_2": "Daily Defence",
             "icon_3": "shopify://shop_images/Group_2_384486a3-254d-48bb-8ca1-fc89e27474f9.svg",
             "icon_text_3": "Antioxidant rich",
             "icon_4": "shopify://shop_images/icon.svg_-_2026-03-18T120409.922_1_e360adb3-672c-480f-991b-fc0a4681d654.svg",
@@ -893,17 +902,17 @@
           "settings": {
             "feature": "100% FRUITING BODY",
             "brand": "ONLY FRUITING BODY USED",
-            "typical": "Often mycelium grown on grain.",
-            "why": "The fruiting body contains the highest levels of active compounds."
+            "typical": "Often mycelium grown on grain",
+            "why": "The fruiting body contains the highest levels of active compounds"
           }
         },
         "row_FpjCeq": {
           "type": "row",
           "settings": {
             "feature": "RATIO (POTENCY)",
-            "brand": "15:1 - 20: 1 EXTRACT",
-            "typical": "4:1 - 10:1 Extract",
-            "why": "The higher the ratio, the more potent the supplement."
+            "brand": "10:1 - 20:1 Extract",
+            "typical": "4:1 - 8:1 Extract",
+            "why": "The higher the ratio, the more potent the supplement"
           }
         },
         "row_p3UxMg": {
@@ -912,7 +921,7 @@
             "feature": "EXTRACTION METHOD",
             "brand": "DUAL EXTRACTION",
             "typical": "Often single extraction or not disclosed",
-            "why": "To get the most bioactive ingredients \nout of the mushroom, dual extraction is needed."
+            "why": "To get the most bioactive ingredients \nout of the mushroom, dual extraction is needed"
           }
         },
         "row_3fhXdm": {
@@ -921,7 +930,7 @@
             "feature": "THIRD PARTY TESTED",
             "brand": "INDEPENDENTLY LAB TESTED",
             "typical": "Rarely disclosed",
-            "why": "Ensures purity and checks for heavy metals or contaminants."
+            "why": "Ensures purity and checks for heavy metals or contaminants"
           }
         },
         "row_yW6pWW": {
@@ -930,7 +939,7 @@
             "feature": "Active Compound  Transparency",
             "brand": "Yes",
             "typical": "Not disclosed",
-            "why": "Shows exactly how much of the active compounds you're getting."
+            "why": "Shows exactly how much of the active compounds you're getting"
           }
         }
       },
@@ -968,7 +977,7 @@
         "title_first": true,
         "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
         "image": "shopify://shop_images/PDP_Badge.svg",
-        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll REFUND YOU",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
         "button_text_color": "#ffffff",
@@ -1004,6 +1013,7 @@
         },
         "step_CWVnBj": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
             "top_title": "AFTERNOON",
@@ -1036,16 +1046,15 @@
         "step_CWVnBj",
         "step_WMAKfL"
       ],
-      "disabled": true,
       "name": "Routine Section",
       "settings": {
         "title": "Build Your Routine",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
-        "button_bg": "#038bff",
+        "button_bg": "#000000",
         "button_icon_bg": "#ffffff",
         "button_text": "#ffffff",
         "section_bg": "#ffffff",
-        "cards_bg": "#e2f3ff",
+        "cards_bg": "#faf7ed",
         "padding_top_desktop": 80,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 40,

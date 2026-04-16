@@ -32,6 +32,9 @@
   box-sizing: border-box;
   border-radius: 16px;
 background: #FAF7ED;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .half-width {
@@ -127,6 +130,7 @@ background: #FAF7ED;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
+    text-transform: capitalize;
     line-height: 140%; /* 22.4px */
  }
  /* ----var--- */

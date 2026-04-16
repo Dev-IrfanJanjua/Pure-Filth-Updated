@@ -96,7 +96,7 @@ th.col-typical {
   }
 
   .comparison-cell_inner-text{
-    max-width: 146px;
+    max-width: 145px;
     display:inline-block;
   }
 
@@ -178,9 +178,13 @@ td.col-typical.col-typical-2 span.comparison-cell_inner-text {
     max-width: 100px;
 }
 
+tr.row_no_border td {
+    border-bottom: none;
+}
+
   /* MOBILE */
 
-  @media(max-width:768px){
+@media(max-width:768px){
 
 .section-{{ section.id }}{
   padding-top: {{ section.settings.padding_top_mobile }}px;
@@ -382,7 +386,7 @@ td.col-feature {
 
         <tbody>
           {% for block in section.blocks %}
-            <tr {{ block.shopify_attributes }} >
+            <tr {{ block.shopify_attributes }} {% if forloop.last %} class="row_no_border" {% endif %}>
               <td class="col-feature">
                 {{ block.settings.feature }}
               </td>
