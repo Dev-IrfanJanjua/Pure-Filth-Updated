@@ -84,7 +84,7 @@
             </div>
           </div>
           <div class="cs_product_other_images">
-            {% assign images = product.images | slice: 1, 5 %}
+            {% assign images = product.images | slice: 1, 4 %}
             {% assign total = images.size %}
 
             <div class="image-grid">
@@ -1556,6 +1556,11 @@
       "type": "checkbox",
       "id": "custoom-class",
       "label": "Custom Class"
+    },
+    {
+      "type": "image_picker",
+      "id": "gallery_icon",
+      "label": "Gallery Icon"
     },
     {
       "type": "header",

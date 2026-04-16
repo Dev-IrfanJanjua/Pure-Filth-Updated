@@ -41,7 +41,7 @@
     {% liquid
       assign media_ratio_class = blank
       if media.preview_image.aspect_ratio < 1
-        assign media_ratio_class = 'media--portrait'
+        assign media_ratio_class = 'media--portrait main'
       elsif media.preview_image.aspect_ratio > 1
         assign media_ratio_class = 'media--landscape'
       endif
@@ -53,6 +53,9 @@
     %}
 
     <div class="{{- media_class -}}">
+      {% if section.settings.gallery_icon != blank and media_index == 0 %}
+        <span class="pdp_image-svg">{{ section.settings.gallery_icon | image_url: width: 400 | image_tag: alt: "image" }}</span>
+      {% endif %}
       {%- case media.media_type -%}
         {%- when 'video' -%}
           {{- media | video_tag: image_size: '600x', muted: true, loop: true, controls: settings.show_controls_on_product_video -}}

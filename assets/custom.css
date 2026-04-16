@@ -307,6 +307,23 @@ background: #FAF7ED;
 
 .pro_section_main_custom_class .product__media .media.media--portrait {
     border-radius: 16px !important;
+    position: relative;
+}
+
+span.pdp_image-svg img {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    min-height: unset !important;
+}
+
+span.pdp_image-svg {
+    width: 138px;
+    height: 138px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 12px;
 }
 
 .product_tag_cstm {
@@ -387,6 +404,13 @@ div#product-media-gallery {
     font-size: 24px;
     line-height: 100%;
     letter-spacing: 2px;
+}
+
+span.pdp_image-svg {
+    width: 70px;
+    height: 70px;
+    top: 12px;
+    right: 12px;
 }
 
 }

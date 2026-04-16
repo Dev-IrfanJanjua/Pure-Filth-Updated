@@ -77,6 +77,8 @@
         "pdp_dropdown_BbnfTE": {
           "type": "Pdp_dropdown",
           "settings": {
+            "margin": false,
+            "drop_title": "Choose your Mushroom:",
             "background": "#f1eaff"
           }
         },
@@ -292,6 +294,7 @@
       ],
       "settings": {
         "custoom-class": true,
+        "gallery_icon": "shopify://shop_images/Group_1707479853.svg",
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",
         "product_media_with_thumbs": "none",

@@ -368,6 +368,33 @@ label.collection-subscribe-toggle input:checked + .subscribe-toggle__switch .sub
     display: none !important;
 }
 
+/* ==== hover show second image ===== */
+
+.product-card__media.product-card__media--hoverable img.hover-img{
+    opacity: 0 !important;
+}
+
+.product-card__media.product-card__media--hoverable{
+    transition: all 0.3s ease !important;
+}
+
+@media (hover: hover) {
+  .is--hovering .product-card__media.product-card__media--hoverable img:first-child {
+    z-index: 0;
+    opacity: 0 !important;
+  }
+
+  .is--hovering .product-card__media.product-card__media--hoverable img:last-child {
+    z-index: 1;
+    opacity: 1 !important;
+  }
+
+  .is--hovering .product-card__media.product-card__media--hoverable img.hover-img{
+    opacity: 1 !important;
+}
+
+}
+
 @media screen and (max-width: 768px){
 
 .custom-collection__grid product-card.product-card {
