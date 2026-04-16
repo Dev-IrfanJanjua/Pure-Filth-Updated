@@ -16,12 +16,6 @@
           "type": "custom-reviews",
           "settings": {}
         },
-        "pdp_tag_kttQH3": {
-          "type": "pdp_tag",
-          "settings": {
-            "pdp_tag": "Relax & CLARITY"
-          }
-        },
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8": {
           "type": "title",
           "settings": {
@@ -260,7 +254,6 @@
       },
       "block_order": [
         "custom_reviews_9gTjYL",
-        "pdp_tag_kttQH3",
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
         "custom_richtext_a9Tp7h",
         "custom_list_JjVr6n",

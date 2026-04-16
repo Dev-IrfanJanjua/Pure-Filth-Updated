@@ -649,17 +649,17 @@
             "abs_text": ""
           }
         },
-        "video_LzWE3p": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/PF_Testimonial_4_V.mov",
-            "abs_text": ""
-          }
-        },
         "video_hLHTgb": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/PureFilth-V1.mp4",
+            "abs_text": ""
+          }
+        },
+        "video_LzWE3p": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/PF_Testimonial_4_V.mov",
             "abs_text": ""
           }
         }
@@ -667,13 +667,13 @@
       "block_order": [
         "video_yp97pA",
         "video_3T9GgN",
-        "video_LzWE3p",
-        "video_hLHTgb"
+        "video_hLHTgb",
+        "video_LzWE3p"
       ],
       "name": "Video Slider Formulas",
       "settings": {
         "pdp": false,
-        "stars_image": "shopify://shop_images/Frame_36_4.svg",
+        "stars_image": "shopify://shop_images/Stars_2_54e0ad41-9809-41c6-ac23-b8ad4c6dad85.svg",
         "rating_text": "2,440+ Reviews",
         "header_text": "<p>REAL PEOPLE. <br/>REAL FILTHY RESULTS.</p>",
         "slides_per_view_desktop": 4,
@@ -698,7 +698,7 @@
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
-            "button_link": "#",
+            "button_link": "shopify://products/morning-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -712,7 +712,7 @@
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
-            "button_link": "#",
+            "button_link": "shopify://products/afternoon-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -726,7 +726,7 @@
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
-            "button_link": "#",
+            "button_link": "shopify://products/evening-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -765,20 +765,10 @@
             "name": "Andy.B"
           }
         },
-        "testimonial_AmmcKy": {
+        "testimonial_g8Um4D": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_160813.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
-            "name": "Max.F"
-          }
-        },
-        "testimonial_cDn9rc": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
             "stars": "shopify://shop_images/Stars.png",
             "stars_title": "4.8 rating",
             "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
@@ -828,8 +818,7 @@
       },
       "block_order": [
         "testimonial_FT3Gtf",
-        "testimonial_AmmcKy",
-        "testimonial_cDn9rc",
+        "testimonial_g8Um4D",
         "testimonial_ce4Ne3",
         "testimonial_BGwVYX",
         "testimonial_wgWXkb",

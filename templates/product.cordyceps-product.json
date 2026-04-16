@@ -638,42 +638,28 @@
         "video_kjqiMV": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/0414.mov",
+            "video": "shopify://files/videos/Gem Captions.mov",
             "abs_text": ""
           }
         },
         "video_zcA6TL": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/1106 Cordyceps.mov",
+            "video": "shopify://files/videos/1106 Reishi.mov",
             "abs_text": ""
           }
         },
         "video_x4qJR7": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Levi.mov",
+            "video": "shopify://files/videos/Jacques Short.mov",
             "abs_text": ""
           }
         },
         "video_C3VN4f": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Nic Captions.mov",
-            "abs_text": ""
-          }
-        },
-        "video_F4XKfJ": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Jacques Short.mov",
-            "abs_text": ""
-          }
-        },
-        "video_LmHUEt": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Gem Captions.mov",
+            "video": "shopify://files/videos/Levi.mov",
             "abs_text": ""
           }
         }
@@ -682,14 +668,12 @@
         "video_kjqiMV",
         "video_zcA6TL",
         "video_x4qJR7",
-        "video_C3VN4f",
-        "video_F4XKfJ",
-        "video_LmHUEt"
+        "video_C3VN4f"
       ],
       "name": "Video Slider Formulas",
       "settings": {
         "pdp": false,
-        "stars_image": "shopify://shop_images/Frame_36_4.svg",
+        "stars_image": "shopify://shop_images/Stars_2_54e0ad41-9809-41c6-ac23-b8ad4c6dad85.svg",
         "rating_text": "2,440+ Reviews",
         "header_text": "<p>REAL PEOPLE. <br/>REAL FILTHY RESULTS.</p>",
         "slides_per_view_desktop": 4,
@@ -714,7 +698,7 @@
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
-            "button_link": "#",
+            "button_link": "shopify://products/morning-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -728,7 +712,7 @@
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
-            "button_link": "#",
+            "button_link": "shopify://products/afternoon-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -742,7 +726,7 @@
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
-            "button_link": "#",
+            "button_link": "shopify://products/evening-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -794,7 +778,7 @@
         "testimonial_K7w9AC": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
             "stars": "shopify://shop_images/Stars.png",
             "stars_title": "4.8 rating",
             "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
@@ -859,107 +843,6 @@
         "title": "Filthy Reviews",
         "reviews_img": "shopify://shop_images/Stars.png",
         "reviews_title": "4.8 average rating",
-        "reviews_subtitle": "",
-        "slides_per_view": 3.5,
-        "center_slide": true,
-        "padding_top_desktop": 100,
-        "padding_bottom_desktop": 100,
-        "padding_top_mobile": 40,
-        "padding_bottom_mobile": 40
-      }
-    },
-    "testimonial_YNU6TX": {
-      "type": "testimonial",
-      "blocks": {
-        "testimonial_FT3Gtf": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_AmmcKy": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
-            "name": "Max.F"
-          }
-        },
-        "testimonial_cDn9rc": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_ce4Ne3": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_BGwVYX": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_wgWXkb": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
-            "name": "Max.F"
-          }
-        },
-        "testimonial_jkYx8Y": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
-            "name": "Steph.G"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_FT3Gtf",
-        "testimonial_AmmcKy",
-        "testimonial_cDn9rc",
-        "testimonial_ce4Ne3",
-        "testimonial_BGwVYX",
-        "testimonial_wgWXkb",
-        "testimonial_jkYx8Y"
-      ],
-      "disabled": true,
-      "name": "Testimonial Slider",
-      "settings": {
-        "title_first": false,
-        "section_bg": "",
-        "card_bg": "#ffeeee",
-        "title": "Filthy Reviews",
-        "reviews_img": "shopify://shop_images/Stars.png",
-        "reviews_title": "<strong>4.8</strong> average rating",
         "reviews_subtitle": "",
         "slides_per_view": 3.5,
         "center_slide": true,
@@ -1075,7 +958,6 @@
     "video_slider_KjYwtX",
     "routine_MaXLqX",
     "testimonial_kNnJeW",
-    "testimonial_YNU6TX",
     "pdp_faqs_QE6B9r",
     "166904322806a89075"
   ]

@@ -827,6 +827,60 @@
         "padding_bottom_mobile": 40
       }
     },
+    "video_slider_NGmgHb": {
+      "type": "video-slider",
+      "blocks": {
+        "video_HJpbGL": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Dayle Short v2 Captions.mov",
+            "abs_text": ""
+          }
+        },
+        "video_XVbdnh": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/1106 Cordyceps.mov",
+            "abs_text": ""
+          }
+        },
+        "video_ffQg36": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Blake Short Version HD Caption.mov",
+            "abs_text": ""
+          }
+        },
+        "video_BJMjGa": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/83a95871889f47709d125af342ca1163.MOV",
+            "abs_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_HJpbGL",
+        "video_XVbdnh",
+        "video_ffQg36",
+        "video_BJMjGa"
+      ],
+      "name": "Video Slider Formulas",
+      "settings": {
+        "pdp": false,
+        "stars_image": "shopify://shop_images/Frame_36_2.svg",
+        "rating_text": "2,440+ Reviews",
+        "header_text": "<p>REAL PEOPLE. <br/>REAL FILTHY RESULTS.</p>",
+        "slides_per_view_desktop": 4,
+        "background_color": "rgba(0,0,0,0)",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "items_primary_color": "",
+        "items_light_color": ""
+      }
+    },
     "video_slider_x93pnd": {
       "type": "video-slider",
       "blocks": {
@@ -896,6 +950,7 @@
         "video_KijEwt",
         "video_cgKrwh"
       ],
+      "disabled": true,
       "name": "Video Slider Formulas",
       "settings": {
         "pdp": false,
@@ -1162,6 +1217,7 @@
         "testimonial_wgWXkb",
         "testimonial_jkYx8Y"
       ],
+      "disabled": true,
       "name": "Testimonial Slider",
       "settings": {
         "title_first": true,
@@ -1177,6 +1233,167 @@
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 40
+      }
+    },
+    "testimonial_yJD6AN": {
+      "type": "testimonial",
+      "blocks": {
+        "testimonial_nqWdNM": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Andy.B"
+          }
+        },
+        "testimonial_eHMRH3": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
+        },
+        "testimonial_X3VMX8": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_trEEEU": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Andy.B"
+          }
+        },
+        "testimonial_PVXARe": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_7j3UCQ": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_nqWdNM",
+        "testimonial_eHMRH3",
+        "testimonial_X3VMX8",
+        "testimonial_trEEEU",
+        "testimonial_PVXARe",
+        "testimonial_7j3UCQ"
+      ],
+      "name": "Testimonial Slider",
+      "settings": {
+        "title_first": true,
+        "section_bg": "",
+        "card_bg": "#f8f6ef",
+        "title": "Filthy Reviews",
+        "reviews_img": "shopify://shop_images/Stars.png",
+        "reviews_title": "4.8 average rating",
+        "reviews_subtitle": "",
+        "slides_per_view": 3.5,
+        "center_slide": true,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "pdp_faqs_Fc8ah9": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "accordion_item_WWg73C": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are your mushrooms third-party tested?",
+            "answer": "<p>Damn right they are. We wouldn't dream of letting anything less than filthy perfection pass through the lab. Each batch is tested for quality, potency, and purity, so you know you're getting the good stuff‚ no fillers, no nasties, just 100% mushroom goodness.</p>"
+          }
+        },
+        "accordion_item_BzY7wH": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How are your mushroom powders made?",
+            "answer": "<p>We use a dual extraction method to make sure we’re pulling out all the good stuff. That means both water and alcohol extractions to get every last drop of those bioactive compounds. What you end up with is a potent, powerful powder ready to fuel your day.</p>"
+          }
+        },
+        "accordion_item_wkKqUU": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How do I take Pure Filth mushrooms?",
+            "answer": "<p>Mix 'em, sip 'em, sprinkle 'em on your avo toast‚ whatever floats your fungi boat. Our powders are versatile enough to slip into your daily routine. Hot drinks, smoothies, protein shakes or even on your favourite dessert. Filthy, but functional.</p>"
+          }
+        },
+        "accordion_item_3egicE": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are your mushrooms legal?",
+            "answer": "<p>Only on the path to better health, mate. These are functional mushrooms (aKa, healthy and legal), not the psychedelic kind. You'll be more 'focused and fabulous' than ‚'floating in outer space.'</p>"
+          }
+        },
+        "accordion_item_m7y93W": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Do your products actually work?",
+            "answer": "<p>We wouldn't have spent two years tracking down the best mushrooms on the planet if they didn't. Each one is packed with bioactive compounds that support your energy, focus, stress levels, gut health, skin and overall well-being. You'll feel it, and if you don't, well‚ maybe you're already superhuman.</p>"
+          }
+        },
+        "accordion_item_RPn4g3": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are Pure Filth mushrooms vegan and gluten-free?",
+            "answer": "<p>Yes and Yes. Our mushrooms are all plant-based and free from any gluten or other rubbish you don't need. Just pure fungi goodness, with nothing hiding in the shadows or small print.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_WWg73C",
+        "accordion_item_BzY7wH",
+        "accordion_item_wkKqUU",
+        "accordion_item_3egicE",
+        "accordion_item_m7y93W",
+        "accordion_item_RPn4g3"
+      ],
+      "name": "FAQs Section",
+      "settings": {
+        "bg_color": "",
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "mbl_padding_top": 0,
+        "mbl_padding_bottom": 40,
+        "bg_color_faqs": "#F8F6EF",
+        "item_border": "#f8f6ef",
+        "heading": "Have Questions? We’ve Got Answers",
+        "description": "",
+        "button_text": "",
+        "button_link": "#",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff"
       }
     },
     "pdp_faqs_tiNRVd": {
@@ -1241,6 +1458,7 @@
         "accordion_item_kT9Mcr",
         "accordion_item_rfqVEz"
       ],
+      "disabled": true,
       "name": "FAQs Section",
       "settings": {
         "bg_color": "",
@@ -1275,11 +1493,14 @@
     "enjoy_slider_eTNQHw",
     "enjoy_slider_WK4XQz",
     "special_section_74QzEN",
+    "video_slider_NGmgHb",
     "video_slider_x93pnd",
     "comp_pNaDkU",
     "money_back_bQi3Q3",
     "routine_MaXLqX",
     "testimonial_YNU6TX",
+    "testimonial_yJD6AN",
+    "pdp_faqs_Fc8ah9",
     "pdp_faqs_tiNRVd",
     "166904322806a89075"
   ]

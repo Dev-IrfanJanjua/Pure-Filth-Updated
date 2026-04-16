@@ -4040,3 +4040,7 @@ body.template--collection .header:after {
 .fade-in-left {
   transition-delay: calc(var(--i) * var(--stagger));
 }
+
+html{
+  scroll-behavior: smooth;
+}

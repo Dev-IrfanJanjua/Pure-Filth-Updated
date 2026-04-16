@@ -638,43 +638,29 @@
         "video_MK7MmE": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/0227 (1).mov",
-            "abs_text": "Focus"
+            "video": "shopify://files/videos/1106 Cordyceps.mov",
+            "abs_text": ""
           }
         },
         "video_GKADda": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/PF_Testimonial_4_V.mov",
-            "abs_text": "Clarity"
+            "video": "shopify://files/videos/0227 (1).mov",
+            "abs_text": ""
           }
         },
         "video_3UAUKR": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Blake Short Version HD Caption.mov",
-            "abs_text": "Memory"
+            "video": "shopify://files/videos/0608(1).mov",
+            "abs_text": ""
           }
         },
         "video_b6pEGV": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Dayle Short v2 Captions.mov",
-            "abs_text": "Mood"
-          }
-        },
-        "video_3piGcC": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Jacques Short.mov",
-            "abs_text": "Clarity"
-          }
-        },
-        "video_KijEwt": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/1106 Reishi.mov",
-            "abs_text": "Memory"
+            "video": "shopify://files/videos/Blake Short Version HD Caption.mov",
+            "abs_text": ""
           }
         }
       },
@@ -682,14 +668,12 @@
         "video_MK7MmE",
         "video_GKADda",
         "video_3UAUKR",
-        "video_b6pEGV",
-        "video_3piGcC",
-        "video_KijEwt"
+        "video_b6pEGV"
       ],
       "name": "Video Slider Formulas",
       "settings": {
         "pdp": false,
-        "stars_image": "shopify://shop_images/Frame_36_4.svg",
+        "stars_image": "shopify://shop_images/Stars_2_54e0ad41-9809-41c6-ac23-b8ad4c6dad85.svg",
         "rating_text": "2,440+ Reviews",
         "header_text": "<p>REAL PEOPLE. <br/>REAL FILTHY RESULTS.</p>",
         "slides_per_view_desktop": 4,
@@ -714,7 +698,7 @@
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
-            "button_link": "#",
+            "button_link": "shopify://products/morning-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -728,7 +712,7 @@
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
-            "button_link": "#",
+            "button_link": "shopify://products/afternoon-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -742,7 +726,7 @@
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
-            "button_link": "#",
+            "button_link": "shopify://products/evening-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -794,7 +778,7 @@
         "testimonial_GFTE6m": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
             "stars": "shopify://shop_images/Stars.png",
             "stars_title": "4.8 rating",
             "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",

@@ -190,15 +190,17 @@
           {% if product_ref.variants.size > 1 %}
             <select name="id" class="product-card__variant-select">
               {% for variant in product_ref.variants %}
+                {% assign allocation = variant.selling_plan_allocations.first %}
                 {% if variant.available %}
-                  <option 
+                  <option
                       value="{{ variant.id }}" 
                       data-price="{{ variant.price | money }}"
+                      data-sub-price="{% if allocation %}{{ allocation.price | money }}{% endif %}"
                       data-tag="{{ variant.metafields.custom.variant_tag | escape }}"
                       {% unless variant.available %}disabled{% endunless %}
                       {% if variant.id == largest_variant.id %}selected{% endif %}
                   >
-                    {{ variant.title }} 
+                    {{ variant.title }}
                   </option>
                 {% else %}
                   <option value="{{ variant.id }}" disabled>
@@ -237,7 +239,7 @@
         {%- unless product_ref.available -%}disabled{%- endunless -%}
       >
         <span class="buy-button__text">
-            Buy — {{ largest_variant.price | money }}
+            Buy — <span class="price-text">{{ largest_variant.price | money }}</span>
         </span>
         <span class="buy-button__icon">
             <svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +257,7 @@
 
 {% comment %} ==== update the price in the main collection file to show the price of the selected variant instead of the product price.==== {% endcomment %}
 
-<script>
+{% comment %} <script>
   document.querySelectorAll('.product-card__add-to-cart--form').forEach(form => {
     const select = form.querySelector('.product-card__variant-select');
     const buttonText = form.querySelector('.buy-button__text');
@@ -269,7 +271,7 @@
       buttonText.textContent = `Buy — ${price}`;
     });
   });
-</script>
+</script> {% endcomment %}
 
 
 {% comment %} ===== variant tag display logic in the main collection file ===== {% endcomment %}
@@ -305,4 +307,42 @@
     updateSellingPlan();
     checkbox.addEventListener('change', updateSellingPlan);
   });
+</script>
+
+
+{% comment %} ====== price update on toggle Shows the subscription price when input checked. ========== {% endcomment %}
+
+<script>
+document.querySelectorAll('.product-card__add-to-cart--form').forEach(form => {
+
+  const select = form.querySelector('.product-card__variant-select');
+  const checkbox = form.closest('.product-card')?.querySelector('.subscribe-toggle__checkbox') 
+                  || document.querySelector('.subscribe-toggle__checkbox');
+  const priceEl = form.querySelector('.price-text');
+
+  if (!select || !checkbox || !priceEl) return;
+
+  const updatePrice = () => {
+    const selectedOption = select.options[select.selectedIndex];
+
+    const normalPrice = selectedOption.dataset.price;
+    const subPrice = selectedOption.dataset.subPrice;
+
+    if (checkbox.checked && subPrice) {
+      priceEl.textContent = subPrice;
+    } else {
+      priceEl.textContent = normalPrice;
+    }
+  };
+
+  // Initial load
+  updatePrice();
+
+  // Variant change
+  select.addEventListener('change', updatePrice);
+
+  // Toggle change
+  checkbox.addEventListener('change', updatePrice);
+
+});
 </script>

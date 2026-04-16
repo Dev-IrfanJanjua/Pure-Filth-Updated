@@ -128,6 +128,7 @@ td.col-feature {
     font-family: PP Formula !important;
     letter-spacing: 0.6px !important;
     font-size: 24px !important;
+    line-height: 100% !important;
 }
 
 th.col-feature {
@@ -171,6 +172,10 @@ td.col-why {
 
 .highlight span.comparison-cell_inner-text {
     font-weight: 700;
+}
+
+td.col-typical.col-typical-2 span.comparison-cell_inner-text {
+    max-width: 100px;
 }
 
   /* MOBILE */
@@ -377,7 +382,7 @@ td.col-feature {
 
         <tbody>
           {% for block in section.blocks %}
-            <tr {{ block.shopify_attributes }}>
+            <tr {{ block.shopify_attributes }} >
               <td class="col-feature">
                 {{ block.settings.feature }}
               </td>
@@ -388,7 +393,7 @@ td.col-feature {
                 </span>
               </td>
 
-              <td class="col-typical">
+              <td class="col-typical col-typical-{{ forloop.index }}">
                 <span class="comparison-cell_inner-text">
                   {{ block.settings.typical }}
                 </span>

@@ -71,7 +71,7 @@
 .section-{{ section.id }} .how-to-buy-blcok_img img{
   width:100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display:block;
 }
 
@@ -80,7 +80,7 @@
     font-family: PP Formula;
     font-weight: 700;
     font-size: 36px;
-    line-height: 23px;
+    line-height: 100%;
     letter-spacing: 1px;
     text-align: center;
     vertical-align: middle;
@@ -146,6 +146,11 @@ span.how-to-buy-block-btn-text {
   width: 22px;
   height: 13px;
   display:block;
+}
+
+.how-to-buy-blcok_img.how-to-buy-blcok_img-2 {
+    padding-right: 25px;
+    margin-left: -15px;
 }
 
 
@@ -228,7 +233,7 @@ span.how-to-buy-block-btn-text {
                 <div class="how-to-buy-block fade-in-item" {{ block.shopify_attributes }}>
 
                     {% if block.settings.image != blank %}
-                    <div class="how-to-buy-blcok_img">
+                    <div class="how-to-buy-blcok_img how-to-buy-blcok_img-{{ forloop.index }}">
                         {{ block.settings.image | image_url: width:800 | image_tag: alt: "image" }}
                     </div>
                     {% endif %}

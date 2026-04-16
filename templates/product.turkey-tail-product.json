@@ -632,68 +632,45 @@
         "padding_bottom_mobile": 40
       }
     },
-    "video_slider_pye6D7": {
+    "video_slider_GqzzKK": {
       "type": "video-slider",
       "blocks": {
-        "video_wGdn9f": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/83a95871889f47709d125af342ca1163.MOV",
-            "abs_text": ""
-          }
-        },
-        "video_rQpepp": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/0227 (1).mov",
-            "abs_text": ""
-          }
-        },
-        "video_4JBmce": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/1106 Reishi.mov",
-            "abs_text": ""
-          }
-        },
-        "video_gHndcK": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Blake Short Version HD Caption.mov",
-            "abs_text": ""
-          }
-        },
-        "video_ajQMbP": {
+        "video_tRkWhn": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/Dayle Short v2 Captions.mov",
             "abs_text": ""
           }
         },
-        "video_cpTiyh": {
+        "video_qACT4L": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Levi.mov",
+            "video": "shopify://files/videos/1106 Cordyceps.mov",
             "abs_text": ""
           }
         },
-        "video_dAiFBB": {
+        "video_97dJ4G": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/PureFilth-V1.mp4",
+            "video": "shopify://files/videos/Blake Short Version HD Caption.mov",
+            "abs_text": ""
+          }
+        },
+        "video_gd9gxT": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/83a95871889f47709d125af342ca1163.MOV",
             "abs_text": ""
           }
         }
       },
       "block_order": [
-        "video_wGdn9f",
-        "video_rQpepp",
-        "video_4JBmce",
-        "video_gHndcK",
-        "video_ajQMbP",
-        "video_cpTiyh",
-        "video_dAiFBB"
+        "video_tRkWhn",
+        "video_qACT4L",
+        "video_97dJ4G",
+        "video_gd9gxT"
       ],
+      "disabled": true,
       "name": "Video Slider Formulas",
       "settings": {
         "pdp": false,
@@ -710,73 +687,48 @@
         "items_light_color": ""
       }
     },
-    "video_slider_3KzTfX": {
+    "video_slider_ALer7E": {
       "type": "video-slider",
       "blocks": {
-        "video_mUfi39": {
+        "video_HMGedp": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/PUREFILTHSTEP1-ezgif.com-gif-to-mp4-converter.mp4",
-            "abs_text": "Focus"
+            "video": "shopify://files/videos/Dayle Short v2 Captions.mov",
+            "abs_text": ""
           }
         },
-        "video_X87yjH": {
+        "video_76dmiw": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
-            "abs_text": "Clarity"
+            "video": "shopify://files/videos/1106 Cordyceps.mov",
+            "abs_text": ""
           }
         },
-        "video_xA4Nd4": {
+        "video_EKyXje": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
-            "abs_text": "Memory"
+            "video": "shopify://files/videos/Blake Short Version HD Caption.mov",
+            "abs_text": ""
           }
         },
-        "video_mQxefr": {
+        "video_AFdXXP": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
-            "abs_text": "Mood"
-          }
-        },
-        "video_CyyaUk": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/WHAT. A. SHOW. 🤩Last week we were fortunate enough to be exhibiting at @dubaiactiveshow - @duba.mp4",
-            "abs_text": "Clarity"
-          }
-        },
-        "video_R73a7d": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/HIT MY RECORD WITH RED ONE HIP THRUST 150 KG 🔥I’m really happy I found this brand @getpurefilth.mp4",
-            "abs_text": "Memory"
-          }
-        },
-        "video_KPmRi9": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Weekend mode- ON. 🦁🧊🍄 Filthy focus on ice, because Saturdays deserve brains and bad decisions.mp4",
-            "abs_text": "Mood"
+            "video": "shopify://files/videos/83a95871889f47709d125af342ca1163.MOV",
+            "abs_text": ""
           }
         }
       },
       "block_order": [
-        "video_mUfi39",
-        "video_X87yjH",
-        "video_xA4Nd4",
-        "video_mQxefr",
-        "video_CyyaUk",
-        "video_R73a7d",
-        "video_KPmRi9"
+        "video_HMGedp",
+        "video_76dmiw",
+        "video_EKyXje",
+        "video_AFdXXP"
       ],
-      "disabled": true,
       "name": "Video Slider Formulas",
       "settings": {
         "pdp": false,
-        "stars_image": "shopify://shop_images/Stars_2_54e0ad41-9809-41c6-ac23-b8ad4c6dad85.svg",
+        "stars_image": "shopify://shop_images/Frame_36_2.svg",
         "rating_text": "2,440+ Reviews",
         "header_text": "<p>REAL PEOPLE. <br/>REAL FILTHY RESULTS.</p>",
         "slides_per_view_desktop": 4,
@@ -801,7 +753,7 @@
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
-            "button_link": "#",
+            "button_link": "shopify://products/morning-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -815,7 +767,7 @@
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
-            "button_link": "#",
+            "button_link": "shopify://products/afternoon-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -829,7 +781,7 @@
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
-            "button_link": "#",
+            "button_link": "shopify://products/evening-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -881,7 +833,7 @@
         "testimonial_g3JFhc": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
             "stars": "shopify://shop_images/Stars.png",
             "stars_title": "4.8 rating",
             "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
@@ -946,107 +898,6 @@
         "title": "Filthy Reviews",
         "reviews_img": "shopify://shop_images/Stars.png",
         "reviews_title": "4.8 average rating",
-        "reviews_subtitle": "",
-        "slides_per_view": 3.5,
-        "center_slide": true,
-        "padding_top_desktop": 100,
-        "padding_bottom_desktop": 100,
-        "padding_top_mobile": 40,
-        "padding_bottom_mobile": 40
-      }
-    },
-    "testimonial_YNU6TX": {
-      "type": "testimonial",
-      "blocks": {
-        "testimonial_FT3Gtf": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_AmmcKy": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
-            "name": "Max.F"
-          }
-        },
-        "testimonial_cDn9rc": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_ce4Ne3": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_BGwVYX": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_wgWXkb": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
-            "name": "Max.F"
-          }
-        },
-        "testimonial_jkYx8Y": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
-            "name": "Steph.G"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_FT3Gtf",
-        "testimonial_AmmcKy",
-        "testimonial_cDn9rc",
-        "testimonial_ce4Ne3",
-        "testimonial_BGwVYX",
-        "testimonial_wgWXkb",
-        "testimonial_jkYx8Y"
-      ],
-      "disabled": true,
-      "name": "Testimonial Slider",
-      "settings": {
-        "title_first": true,
-        "section_bg": "",
-        "card_bg": "#f0fff7",
-        "title": "Filthy Reviews",
-        "reviews_img": "shopify://shop_images/Frame_36_1.svg",
-        "reviews_title": "<strong>4.8</strong> average rating",
         "reviews_subtitle": "",
         "slides_per_view": 3.5,
         "center_slide": true,
@@ -1233,11 +1084,10 @@
     "enjoy_slider_fPXa9h",
     "special_section_74QzEN",
     "money_back_aG9pad",
-    "video_slider_pye6D7",
-    "video_slider_3KzTfX",
+    "video_slider_GqzzKK",
+    "video_slider_ALer7E",
     "routine_MaXLqX",
     "testimonial_8gGER7",
-    "testimonial_YNU6TX",
     "pdp_faqs_QWqREM",
     "pdp_faqs_tiNRVd",
     "166904322806a89075"
