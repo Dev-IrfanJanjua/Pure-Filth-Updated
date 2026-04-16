@@ -94,15 +94,8 @@
         "tabs_3RKbxd": {
           "type": "tabs",
           "settings": {
-            "text": "All PRODUCTS",
+            "text": "All Products",
             "link": "shopify://collections/all"
-          }
-        },
-        "tabs_iV6n9t": {
-          "type": "tabs",
-          "settings": {
-            "text": "Bundles",
-            "link": "shopify://collections/all-filthy-products"
           }
         },
         "tabs_HHWynJ": {
@@ -110,6 +103,13 @@
           "settings": {
             "text": "Single Powders",
             "link": "shopify://collections/powders"
+          }
+        },
+        "tabs_iV6n9t": {
+          "type": "tabs",
+          "settings": {
+            "text": "Bundles",
+            "link": "shopify://collections/all-filthy-products"
           }
         },
         "tabs_8Np78h": {
@@ -122,8 +122,8 @@
       },
       "block_order": [
         "tabs_3RKbxd",
-        "tabs_iV6n9t",
         "tabs_HHWynJ",
+        "tabs_iV6n9t",
         "tabs_8Np78h"
       ],
       "settings": {
@@ -142,7 +142,11 @@
         "section_width": "max-w-page",
         "color_scheme": "",
         "spacing_top": "2",
-        "spacing_bottom": "2"
+        "spacing_bottom": "2",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
       }
     },
     "f8303da3-c3cb-4a90-a63a-7a628615aa6f": {

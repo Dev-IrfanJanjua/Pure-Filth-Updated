@@ -127,7 +127,7 @@
       "type": "cstm-hero-banner",
       "name": "Hero Banner",
       "settings": {
-        "main_img": "shopify://shop_images/Frame_2147241933_1.png",
+        "main_img": "shopify://shop_images/Frame_2147241933_2.webp",
         "mobile_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_6.png",
         "review_img": "shopify://shop_images/Stars_8.svg",
         "list_icon": "shopify://shop_images/verify.svg",
@@ -453,7 +453,7 @@
             "title": "STARTER Pack (10g Set)",
             "subtitle": "Try all of them out in one pack",
             "button_text": "Shop multipack",
-            "button_link": "shopify://collections/multipacks"
+            "button_link": "shopify://products/new-the-small-ones-6-mushrooms-mulitpack-10g"
           }
         },
         "step_DixFdq": {
@@ -463,7 +463,7 @@
             "title": "DAILY DRIVER (100g)",
             "subtitle": "Best value for every day use.",
             "button_text": "Shop All",
-            "button_link": "shopify://collections/all-filthy-products"
+            "button_link": "shopify://products/new-the-big-ones-6-mushroom-multipack-100g-copy"
           }
         },
         "step_zdYXG6": {
@@ -473,7 +473,7 @@
             "title": "AUTO-PILOT (Subscribe)",
             "subtitle": "Save 20% and never run out.",
             "button_text": "Subscribe Now",
-            "button_link": "shopify://collections/multipacks"
+            "button_link": "shopify://collections/all-filthy-products"
           }
         }
       },

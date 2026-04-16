@@ -244,11 +244,11 @@
           "settings": {
             "border_clr": "#000000",
             "tab_title_1": "HOW TO USE",
-            "tab_content_1": "<p>Add 1 teaspoon daily to coffee, tea, smoothies, or warm water. Best taken consistently for noticeable results.</p>",
+            "tab_content_1": "<p>Add 2 grams (approx. 1 teaspoon) into hot water, coffee, protein shake or whatever tickles your fancy.</p><p>Consult your doctor before use if you have a medical condition, are taking any medication, are pregnant or breastfeeding. This product is not intended to diagnose, treat, cure or prevent any disease.</p>",
             "tab_title_2": "INGREDIENTS",
-            "tab_content_2": "<p>Lorem 1</p>",
+            "tab_content_2": "<p>100% Mushroom Powder.</p>",
             "tab_title_3": "SHIPPING & RETURN",
-            "tab_content_3": "<p>Lorem 2</p>"
+            "tab_content_3": "<p>Order before 1pm for same day delivery, or before 10pm for next day. Simple. Fast. No excuses.<br/><br/>Not feeling the filth? You’ve got 30 days to make it right. Reach out and we’ll sort it.</p>"
           }
         },
         "goback_WQBHtg": {
@@ -415,7 +415,7 @@
             "icon_text_5": "",
             "description": "<ul><li>Contains cordycepin and beta-glucans associated with sustained energy support</li><li>Supports ATP production, the cellular energy used during physical activity</li><li>Helps improve oxygen utilisation during exercise</li><li>Traditionally used to support stamina, endurance, and performance</li></ul>",
             "button_text": "LEARN MORE",
-            "button_url": ""
+            "button_url": "shopify://products/cordyceps-mushroom-powder"
           }
         },
         "card_7McVe8": {
@@ -510,7 +510,7 @@
             "icon_text_5": "",
             "description": "<ul><li>One teaspoon of Chaga delivers antioxidants comparable to around 600 blueberries.</li><li>Rich in polyphenols and beta-glucans associated with immune support.</li><li>Helps protect cells from oxidative stress and environmental damage.</li><li>Traditionally used to support resilience and long-term wellbeing.</li></ul>",
             "button_text": "LEARN MORE",
-            "button_url": ""
+            "button_url": "shopify://products/chaga-mushroom-powder"
           }
         },
         "card_eYDpmF": {
@@ -973,7 +973,7 @@
         "text_color": "#000000",
         "button_text_color": "#ffffff",
         "button_text": "LEARN MORE",
-        "button_link": "shopify://collections/all",
+        "button_link": "shopify://pages/our-story",
         "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",
         "section_bg": "#ffffff",
         "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
@@ -1065,14 +1065,14 @@
             "name": "Andy.B"
           }
         },
-        "testimonial_VXVTN9": {
+        "testimonial_iBFqeM": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
+            "image": "shopify://shop_images/Rectangle_160813.png",
             "stars": "shopify://shop_images/Stars.png",
             "stars_title": "4.8 rating",
-            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
-            "name": "Ben.N"
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
           }
         },
         "testimonial_mPy6mr": {
@@ -1085,7 +1085,17 @@
             "name": "Steph.G"
           }
         },
-        "testimonial_8Rg7rw": {
+        "testimonial_VXVTN9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
+        },
+        "testimonial_8xj9Cx": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
@@ -1095,7 +1105,7 @@
             "name": "Andy.B"
           }
         },
-        "testimonial_iBFqeM": {
+        "testimonial_yi3RBU": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/Rectangle_160813.png",
@@ -1105,7 +1115,7 @@
             "name": "Max.F"
           }
         },
-        "testimonial_tWVrbX": {
+        "testimonial_VNgLA3": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/Rectangle_160813_1.png",
@@ -1114,15 +1124,27 @@
             "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
             "name": "Steph.G"
           }
+        },
+        "testimonial_AcfWAw": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
         }
       },
       "block_order": [
         "testimonial_gpTtyk",
-        "testimonial_VXVTN9",
-        "testimonial_mPy6mr",
-        "testimonial_8Rg7rw",
         "testimonial_iBFqeM",
-        "testimonial_tWVrbX"
+        "testimonial_mPy6mr",
+        "testimonial_VXVTN9",
+        "testimonial_8xj9Cx",
+        "testimonial_yi3RBU",
+        "testimonial_VNgLA3",
+        "testimonial_AcfWAw"
       ],
       "name": "Testimonial Slider",
       "settings": {

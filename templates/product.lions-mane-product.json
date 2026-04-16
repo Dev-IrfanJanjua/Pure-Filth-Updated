@@ -250,7 +250,7 @@
             "tab_title_2": "INGREDIENTS",
             "tab_content_2": "<p>100% Lion's Mane Mushroom Powder.</p>",
             "tab_title_3": "SHIPPING & RETURN",
-            "tab_content_3": "<p>We offer fast and reliable shipping, with orders processed within 1–2 business days. Delivery times may vary based on your location. Returns are accepted within a specified period if the product is unused and in its original condition.</p>"
+            "tab_content_3": "<p>Order before 1pm for same day delivery, or before 10pm for next day. Simple. Fast. No excuses.<br/><br/>Not feeling the filth? You’ve got 30 days to make it right. Reach out and we’ll sort it.</p>"
           }
         },
         "goback_WQBHtg": {
@@ -620,7 +620,7 @@
         "text_color": "#000000",
         "button_text_color": "#ffffff",
         "button_text": "LEARN MORE",
-        "button_link": "shopify://collections/all",
+        "button_link": "shopify://pages/our-story",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "section_bg": "#ffffff",
         "Content_bg": "#FEC700",
@@ -752,10 +752,10 @@
         "padding_bottom_mobile": 40
       }
     },
-    "testimonial_YNU6TX": {
+    "testimonial_G8LiKh": {
       "type": "testimonial",
       "blocks": {
-        "testimonial_FT3Gtf": {
+        "testimonial_TM8zYb": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
@@ -765,37 +765,7 @@
             "name": "Andy.B"
           }
         },
-        "testimonial_g8Um4D": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
-            "name": "Ben.N"
-          }
-        },
-        "testimonial_ce4Ne3": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_BGwVYX": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
-            "name": "Andy.B"
-          }
-        },
-        "testimonial_wgWXkb": {
+        "testimonial_wzBjMg": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/Rectangle_160813.png",
@@ -805,7 +775,7 @@
             "name": "Max.F"
           }
         },
-        "testimonial_jkYx8Y": {
+        "testimonial_mUJPXh": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/Rectangle_160813_1.png",
@@ -814,15 +784,67 @@
             "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
             "name": "Steph.G"
           }
+        },
+        "testimonial_BcYnrE": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
+        },
+        "testimonial_EWiAjt": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Andy.B"
+          }
+        },
+        "testimonial_bphXab": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_CPp7wa": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_g7PpK9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
         }
       },
       "block_order": [
-        "testimonial_FT3Gtf",
-        "testimonial_g8Um4D",
-        "testimonial_ce4Ne3",
-        "testimonial_BGwVYX",
-        "testimonial_wgWXkb",
-        "testimonial_jkYx8Y"
+        "testimonial_TM8zYb",
+        "testimonial_wzBjMg",
+        "testimonial_mUJPXh",
+        "testimonial_BcYnrE",
+        "testimonial_EWiAjt",
+        "testimonial_bphXab",
+        "testimonial_CPp7wa",
+        "testimonial_g7PpK9"
       ],
       "name": "Testimonial Slider",
       "settings": {
@@ -837,7 +859,7 @@
         "center_slide": true,
         "padding_top_desktop": 100,
         "padding_bottom_desktop": 100,
-        "padding_top_mobile": 40,
+        "padding_top_mobile": 0,
         "padding_bottom_mobile": 40
       }
     },
@@ -922,7 +944,7 @@
     "money_back_aG9pad",
     "video_slider_DA8F63",
     "routine_MaXLqX",
-    "testimonial_YNU6TX",
+    "testimonial_G8LiKh",
     "pdp_faqs_tiNRVd",
     "166904322806a89075"
   ]

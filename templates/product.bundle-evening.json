@@ -245,11 +245,11 @@
           "settings": {
             "border_clr": "#000000",
             "tab_title_1": "HOW TO USE",
-            "tab_content_1": "<p>Add 1 teaspoon daily to coffee, tea, smoothies, or warm water. Best taken consistently for noticeable results.</p>",
+            "tab_content_1": "<p>Add 2 grams (approx. 1 teaspoon) into hot water, coffee, protein shake or whatever tickles your fancy.</p><p>Consult your doctor before use if you have a medical condition, are taking any medication, are pregnant or breastfeeding. This product is not intended to diagnose, treat, cure or prevent any disease.</p>",
             "tab_title_2": "INGREDIENTS",
-            "tab_content_2": "<p>Lorem 1</p>",
+            "tab_content_2": "<p>100% Mushroom Powder.</p>",
             "tab_title_3": "SHIPPING & RETURN",
-            "tab_content_3": "<p>Lorem 2</p>"
+            "tab_content_3": "<p>Order before 1pm for same day delivery, or before 10pm for next day. Simple. Fast. No excuses.<br/><br/>Not feeling the filth? You’ve got 30 days to make it right. Reach out and we’ll sort it.</p>"
           }
         },
         "goback_WQBHtg": {
@@ -488,7 +488,7 @@
             "icon_text_5": "",
             "description": "<ul><li>Naturally rich in triterpenes and beta-glucans associated with stress support.</li><li>Contains beta-glucans associated with immune and digestive support.</li><li>Supports balanced cortisol levels and a calmer nervous system.</li><li>Traditionally used to promote relaxation and deeper sleep.</li></ul>",
             "button_text": "LEARN MORE",
-            "button_url": ""
+            "button_url": "shopify://products/reishi-mushroom-powder"
           }
         },
         "card_aKY6VE": {
@@ -511,7 +511,7 @@
             "icon_text_5": "",
             "description": "<ul><li>Naturally rich in prebiotic compounds that nourish beneficial gut bacteria.</li><li>Contains beta-glucans associated with immune and digestive support.</li><li>Supports microbiome balance and digestive wellbeing.</li><li>Traditionally used to promote gut health and overall resilience.</li></ul>",
             "button_text": "LEARN MORE",
-            "button_url": ""
+            "button_url": "shopify://products/turkey-tail-mushroom-powder"
           }
         },
         "card_VLGWxc": {
@@ -974,7 +974,7 @@
         "text_color": "#000000",
         "button_text_color": "#ffffff",
         "button_text": "LEARN MORE",
-        "button_link": "shopify://collections/all",
+        "button_link": "shopify://pages/our-story",
         "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",
         "section_bg": "#ffffff",
         "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
@@ -1154,10 +1154,10 @@
         "padding_bottom_mobile": 40
       }
     },
-    "testimonial_QJxhD7": {
+    "testimonial_9jngCA": {
       "type": "testimonial",
       "blocks": {
-        "testimonial_ydCCww": {
+        "testimonial_Nm4gLh": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
@@ -1167,37 +1167,7 @@
             "name": "Andy.B"
           }
         },
-        "testimonial_8fMVWK": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
-            "name": "Ben.N"
-          }
-        },
-        "testimonial_9EGL6J": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_rbDKYF": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
-            "name": "Andy.B"
-          }
-        },
-        "testimonial_fNUVtr": {
+        "testimonial_gkGapk": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/Rectangle_160813.png",
@@ -1207,7 +1177,7 @@
             "name": "Max.F"
           }
         },
-        "testimonial_UGydqr": {
+        "testimonial_R78prc": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/Rectangle_160813_1.png",
@@ -1216,15 +1186,67 @@
             "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
             "name": "Steph.G"
           }
+        },
+        "testimonial_H3NWR8": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
+        },
+        "testimonial_bCpkFr": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Andy.B"
+          }
+        },
+        "testimonial_fwTrGU": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_Fqiiti": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_8YDWCY": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/336f8fb46eea79f2238d8121d8de96eae832984a.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
         }
       },
       "block_order": [
-        "testimonial_ydCCww",
-        "testimonial_8fMVWK",
-        "testimonial_9EGL6J",
-        "testimonial_rbDKYF",
-        "testimonial_fNUVtr",
-        "testimonial_UGydqr"
+        "testimonial_Nm4gLh",
+        "testimonial_gkGapk",
+        "testimonial_R78prc",
+        "testimonial_H3NWR8",
+        "testimonial_bCpkFr",
+        "testimonial_fwTrGU",
+        "testimonial_Fqiiti",
+        "testimonial_8YDWCY"
       ],
       "name": "Testimonial Slider",
       "settings": {
@@ -1417,7 +1439,7 @@
     "money_back_bQi3Q3",
     "routine_MaXLqX",
     "testimonial_YNU6TX",
-    "testimonial_QJxhD7",
+    "testimonial_9jngCA",
     "pdp_faqs_UGyQHH",
     "pdp_faqs_tiNRVd",
     "166904322806a89075"
