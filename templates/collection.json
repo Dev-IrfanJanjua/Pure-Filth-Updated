@@ -59,7 +59,7 @@
           "type": "tabs",
           "settings": {
             "text": "All Products",
-            "link": "shopify://collections/all"
+            "link": "shopify://collections/all-filthy-products"
           }
         },
         "tabs_HHWynJ": {
@@ -73,7 +73,7 @@
           "type": "tabs",
           "settings": {
             "text": "Bundles",
-            "link": "shopify://collections/all-filthy-products"
+            "link": "shopify://collections/bundles"
           }
         },
         "tabs_8Np78h": {

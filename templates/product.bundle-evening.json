@@ -299,6 +299,7 @@
       ],
       "settings": {
         "custoom-class": true,
+        "aspect_one": true,
         "gallery_icon": "shopify://shop_images/Group_1707479853.svg",
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",
@@ -972,30 +973,6 @@
         "padding_bottom_mobile": 40
       }
     },
-    "money_back_bQi3Q3": {
-      "type": "money-back",
-      "name": "Money Back Section",
-      "settings": {
-        "title_first": true,
-        "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
-        "image": "shopify://shop_images/PDP_Badge.svg",
-        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
-        "title": "30 day money back guarantee",
-        "text_color": "#000000",
-        "button_text_color": "#ffffff",
-        "button_text": "LEARN MORE",
-        "button_link": "shopify://pages/our-story",
-        "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",
-        "section_bg": "#ffffff",
-        "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
-        "button_bg": "#000000",
-        "button_icon_bg": "#ffffff",
-        "padding_top_desktop": 200,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 110,
-        "padding_bottom_mobile": 40
-      }
-    },
     "routine_gpCQcL": {
       "type": "routine",
       "blocks": {
@@ -1060,6 +1037,30 @@
         "padding_top_desktop": 80,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "money_back_bQi3Q3": {
+      "type": "money-back",
+      "name": "Money Back Section",
+      "settings": {
+        "title_first": true,
+        "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
+        "image": "shopify://shop_images/PDP_Badge.svg",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
+        "title": "30 day money back guarantee",
+        "text_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_text": "LEARN MORE",
+        "button_link": "shopify://pages/our-story",
+        "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",
+        "section_bg": "#ffffff",
+        "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 200,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 110,
         "padding_bottom_mobile": 40
       }
     },
@@ -1513,8 +1514,8 @@
     "special_section_74QzEN",
     "video_slider_74pwDx",
     "comp_pNaDkU",
-    "money_back_bQi3Q3",
     "routine_gpCQcL",
+    "money_back_bQi3Q3",
     "routine_MaXLqX",
     "testimonial_YNU6TX",
     "testimonial_9jngCA",

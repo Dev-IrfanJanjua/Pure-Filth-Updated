@@ -92,9 +92,78 @@
 
 <product-card class="product-card fade-in-item{% if layout_type == 'horizontal' %} product-card__horizontal{% endif %}{% unless product_ref.available %} product-card__sold-out{% endunless %}">
   <div class="product-card__actions">
+    {% comment %} {%  if product_ref.variants.size > 1 %}
+      {% comment %} <a href="{{ product_ref.url }}" tabindex="-1" class="product-card__link" data-product-link title="{{ 'product.go_to_title' | t : title: product_ref.title }}">
+        {% assign variant_images = '' %}
+
+<div class="variant-images-wrapper">
+
+  {% for variant in product_ref.variants %}
+
+    {% assign images = variant.metafields.custom.variant_image.value %}
+
+{% if images != blank %}
+  {% assign img = images[0] %}
+
+  {% if img != blank %}
+    {% assign current_variant = product_ref.selected_or_first_available_variant %}
+    <img
+  src="{{ img | image_url: width: 600 }}"
+  class="variant-metafield-image"
+  style="{% if variant.id == current_variant.id %}display:block;{% else %}display:none;{% endif %}"
+  data-variant-id="{{ variant.id }}"
+>
+  {% endif %}
+{% endif %}
+
+  {% endfor %}
+{% assign variant = product_ref.selected_or_first_available_variant %}
+
+Variant ID: {{ variant.id }}<br>
+Raw metafield: {{ variant.metafields.custom.variant_image | json }}<br>
+Value: {{ variant.metafields.custom.variant_image.value | json }}<br>
+product_ref available: {{ product_ref.available }}<br>
+product_ref images: {{ product_ref.images[0] | image_url: width: 600 }}
+</div>
+
+      </a> {% endcomment %}
+
+      <a href="{{ product_ref.url }}" tabindex="-1" class="product-card__link" data-product-link title="{{ 'product.go_to_title' | t : title: product_ref.title }}">
+
+  <div class="variant-images-wrapper" data-product-id="{{ product_ref.id }}">
+
+    {% assign current_variant = product_ref.selected_or_first_available_variant %}
+
+    {% for variant in product_ref.variants %}
+      {% assign images = variant.metafields.custom.variant_image.value %}
+      {% assign img = images[0] %}
+
+      {%- assign img_src = img | image_url: width: 600 -%}
+      Images: {{ images | size }} <br>
+First image: {{ images[0].image }} <br>
+      {% if img != blank %}
+      {% else %}
+        {% comment %} {%- assign img_src = product_ref.featured_image | image_url: width: 600 -%} {% endcomment %}
+      {% endif %}
+
+      <img
+        src="{{ img_src }}"
+        class="variant-metafield-image{% if variant.id == current_variant.id %} is-active{% endif %}"
+        data-variant-id="{{ variant.id }}"
+        alt="{{ variant.title | escape }}"
+        loading="lazy"
+      >
+    {% endfor %}
+
+  </div>
+
+</a>
+    {% else %} {% endcomment %}
     <a href="{{ product_ref.url }}" tabindex="-1" class="product-card__link" data-product-link title="{{ 'product.go_to_title' | t : title: product_ref.title }}">
-      {{ media }}
+        {{ media }}
+        {% comment %} {{ media }} {% endcomment %}
     </a>
+    {% comment %} {% endif %} {% endcomment %}
     {% unless layout_type == 'horizontal' %}
       {% comment %}
       <button type="button"
@@ -346,3 +415,42 @@ document.querySelectorAll('.product-card__add-to-cart--form').forEach(form => {
 
 });
 </script>
+
+{% comment %} ====== collection page images change on variant change ===== {% endcomment %}
+
+<script>
+// Place this in your theme.js or a <script> tag at the bottom of the section
+document.addEventListener('DOMContentLoaded', () => {
+  // Listen for Shopify's native variant change event
+  document.addEventListener('variant:changed', (event) => {
+    const variant = event.detail.variant;
+    if (!variant) return;
+
+    // Find the wrapper closest to the dispatched event, or query all wrappers
+    document.querySelectorAll('.variant-images-wrapper').forEach((wrapper) => {
+      const imgs = wrapper.querySelectorAll('.variant-metafield-image');
+
+      imgs.forEach((img) => {
+        if (img.dataset.variantId === String(variant.id)) {
+          img.classList.add('is-active');
+        } else {
+          img.classList.remove('is-active');
+        }
+      });
+    });
+  });
+});
+</script>
+
+
+{% style %}
+
+.variant-metafield-image {
+  display: none;
+}
+
+.variant-metafield-image.is-active {
+  display: block;
+}
+
+{% endstyle %}

@@ -1837,6 +1837,7 @@ product-modal {
 
 .product__media-layout--full--sm .swiper-slide .media {
   border-radius: 0 !important;
+  aspect-ratio: 1;
 }
 
 @media screen and (min-width: 750px) {

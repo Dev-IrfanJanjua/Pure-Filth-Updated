@@ -100,6 +100,7 @@
           "type": "purchase_options",
           "settings": {
             "headline": "Most popular: Get 20% off",
+            "serving": 7,
             "sub_title": "Subscribe & Save",
             "headline_bg_color": "#ED87D0",
             "headline_text_color": "#000000",
@@ -294,6 +295,7 @@
       ],
       "settings": {
         "custoom-class": true,
+        "aspect_one": false,
         "gallery_icon": "shopify://shop_images/Group_1707479853.svg",
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",

@@ -50,9 +50,21 @@
     </span>
   </label>
 {% else %}
+
+{% comment %} {% assign v = variant %}
+{% assign serving = v.metafields.custom.serving_number.value | default: block.settings.serving | plus: 0 %}
+
+{% if serving == blank or serving == 0 %}
+  {% assign serving = block.settings.serving | plus: 0 %}
+{% endif %}
+
+{% if serving == 0 %}
+  {% assign serving = 1 %}
+{% endif %} {% endcomment %}
   <label
     for="{{- id -}}"
     data-price="{{ price | money }}"
+    {% comment %} data-serving="{{ price | divided_by: serving | money }} per serving" {% endcomment %}
     data-serving="{{ price | divided_by: 30 | money }} per serving"
     data-disc_price="{{ discount_price | money }}/mo"
     data-comp_price="{{ compare_price | money }}"

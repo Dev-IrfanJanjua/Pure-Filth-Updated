@@ -89,16 +89,19 @@
 
             <div class="image-grid">
               {% for image in images %}
-                
-                {% assign is_last = forloop.last %}
+                {% assign is_last = false %}
+                {% if forloop.index == 1 or forloop.index == 2 %}
+                  {% assign is_last = true %}
+                {% endif %}
                 {% assign is_odd = total | modulo: 2 %}
 
                 <div class="image-item 
-                  {% if is_last and is_odd == 1 %}
-                    full-width
+                  {% if is_last %}
+                    full-width image-item_first
                   {% else %}
                     half-width
                   {% endif %}
+                  {% if section.settings.aspect_one %}image-item_one{% endif %}
                 ">
                   <img src="{{ image | img_url: '600x600' }}" alt="{{ product.title }}">
                 </div>
@@ -1071,6 +1074,12 @@
           "default": "Purchase Options"
         },
         {
+          "type": "number",
+          "id": "serving",
+          "label": "Serving Number",
+          
+        },
+        {
           "type": "text",
           "id": "sub_title",
           "label": "Subscription Title",
@@ -1556,6 +1565,11 @@
       "type": "checkbox",
       "id": "custoom-class",
       "label": "Custom Class"
+    },
+    {
+      "type": "checkbox",
+      "id": "aspect_one",
+      "label": "Gallery Top images Aspect 1"
     },
     {
       "type": "image_picker",
