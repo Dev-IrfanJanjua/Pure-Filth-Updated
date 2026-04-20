@@ -152,7 +152,7 @@
         <div class="product__media--swiper-wrapper" id="product-media--photoswipe">
           <div
             class="swiper"
-            data-slider
+            {% comment %} data-slider {% endcomment %}
             data-swiper-options='{{- swiper_options -}}'
             id="product-media-gallery"
           >
@@ -361,3 +361,17 @@
     </div>
   {%- endunless-%}
 {%- endif -%}
+
+
+{% style %}
+.pro_section_main_custom_class .swiper-slide:not(:first-child) {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px){
+  .pro_section_main_custom_class product-media.product__media {
+    padding: 0 16px;
+}
+}
+
+{% endstyle %}

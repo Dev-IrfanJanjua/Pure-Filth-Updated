@@ -69,7 +69,7 @@
             </div>
             <div class="collection-subscribe-toggle-wrapper">
               <label class="collection-subscribe-toggle">
-                <input type="checkbox" name="subscribe_save" hidden class="subscribe-toggle__checkbox">
+                <input type="checkbox" name="subscribe_save" hidden class="subscribe-toggle__checkbox" {% if template.suffix == 'subscription' %}checked{% endif %} >
                 <span class="subscribe-toggle__switch">
                   <span class="subscribe-toggle__dot"></span>
                 </span>

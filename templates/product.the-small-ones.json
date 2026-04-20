@@ -403,7 +403,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242608.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_5.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_14.png",
             "title": "Cordyceps",
             "subtitle": "Energy & Performance",
             "qty": "10g - 5 servings",
@@ -416,7 +416,7 @@
             "icon_4": "shopify://shop_images/x33_6_Atp_Molecule.svg",
             "icon_text_4": "ATP production",
             "icon_text_5": "",
-            "description": "<ul><li>Contains cordycepin and beta-glucans associated with sustained energy support</li><li>Supports ATP production, the cellular energy used during physical activity</li><li>Helps improve oxygen utilisation during exercise</li><li>Traditionally used to support stamina, endurance, and performance</li></ul>",
+            "description": "<ul><li>Contains cordycepin and beta-glucans associated with sustained energy support.</li><li>Supports ATP production, the cellular energy used during physical activity.</li><li>Helps improve oxygen utilisation during exercise.</li><li>Traditionally used to support stamina, endurance, and performance.</li></ul>",
             "button_text": "LEARN MORE",
             "button_url": "shopify://products/cordyceps-mushroom-powder"
           }
@@ -426,7 +426,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242259.png",
-            "image": "shopify://shop_images/image_2862_1.png",
+            "image": "shopify://shop_images/image_2862_1_3519b502-b8f2-43a5-b828-05e4065f6266.png",
             "title": "LION'S MANE",
             "subtitle": "Focus & Clarity",
             "qty": "10g - 5 servings",
@@ -439,7 +439,7 @@
             "icon_4": "shopify://shop_images/icon.svg_-_2026-01-26T160747.431_1_1.svg",
             "icon_text_4": "Energy",
             "icon_text_5": "",
-            "description": "<ul><li>Contains hericenones and erinacines linked to nerve growth factor (NGF) and brain support.</li><li>Traditionally used to support memory, focus, and nervous system health</li><li>Supports mental clarity and balanced cognitive performance</li><li>Non-stimulant support for daily focus and productivity</li></ul>",
+            "description": "<ul><li>Contains hericenones and erinacines linked to nerve growth factor (NGF) and brain support.</li><li>Traditionally used to support memory, focus, and nervous system health.</li><li>Supports mental clarity and balanced cognitive performance.</li><li>Non-stimulant support for daily focus and productivity.</li></ul>",
             "button_text": "LEARN MORE",
             "button_url": "shopify://products/lions-mane-mushroom-powder"
           }
@@ -449,7 +449,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242612.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_9.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_16.png",
             "title": "Reishi",
             "subtitle": "Relaxation & Sleep",
             "qty": "10g - 5 servings",
@@ -472,7 +472,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242259_1.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_6.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_18.png",
             "title": "Turkey Tail",
             "subtitle": "Gut Health & Digestion",
             "qty": "10g - 5 servings",
@@ -495,7 +495,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242610.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_7.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_15.png",
             "title": "TREMELLA",
             "subtitle": "Skin Hydration & Glow",
             "qty": "10g - 5 servings",
@@ -518,7 +518,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242611.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_8.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_17.png",
             "title": "Chaga",
             "subtitle": "Immunity & Defence",
             "qty": "10g - 5 servings",
@@ -1051,14 +1051,13 @@
       "name": "Money Back Section",
       "settings": {
         "title_first": true,
-        "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
         "image": "shopify://shop_images/PDP_Badge.svg",
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
         "button_text_color": "#000000",
         "button_text": "LEARN MORE",
-        "button_link": "shopify://pages/our-story",
+        "button_link": "shopify://policies/refund-policy",
         "button_icon": "shopify://shop_images/Frame_2147242027_2.svg",
         "section_bg": "#ffffff",
         "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",

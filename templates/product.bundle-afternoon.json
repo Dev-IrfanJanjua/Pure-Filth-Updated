@@ -425,7 +425,7 @@
             "icon_4": "shopify://shop_images/icon.svg_-_2026-03-18T115710.504_1_6a937084-a937-47fb-8f77-8b76115a84b3.svg",
             "icon_text_4": "ATP production",
             "icon_text_5": "",
-            "description": "<ul><li>Contains cordycepin and beta-glucans associated with sustained energy support</li><li>Supports ATP production, the cellular energy used during physical activity</li><li>Helps improve oxygen utilisation during exercise</li><li>Traditionally used to support stamina, endurance, and performance</li></ul>",
+            "description": "<ul><li>Contains cordycepin and beta-glucans associated with sustained energy support.</li><li>Supports ATP production, the cellular energy used during physical activity.</li><li>Helps improve oxygen utilisation during exercise.</li><li>Traditionally used to support stamina, endurance, and performance.</li></ul>",
             "button_text": "LEARN MORE",
             "button_url": "shopify://products/cordyceps-mushroom-powder"
           }
@@ -1045,14 +1045,13 @@
       "name": "Money Back Section",
       "settings": {
         "title_first": true,
-        "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
         "image": "shopify://shop_images/PDP_Badge.svg",
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
         "button_text_color": "#ffffff",
         "button_text": "LEARN MORE",
-        "button_link": "shopify://pages/our-story",
+        "button_link": "shopify://policies/refund-policy",
         "button_icon": "shopify://shop_images/Frame_2147242027_3.svg",
         "section_bg": "#ffffff",
         "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",

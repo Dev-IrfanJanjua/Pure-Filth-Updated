@@ -127,7 +127,7 @@
       "type": "cstm-hero-banner",
       "name": "Hero Banner",
       "settings": {
-        "main_img": "shopify://shop_images/Frame_2147241933_2.webp",
+        "main_img": "shopify://shop_images/Frame_2147241933_1.png",
         "mobile_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_6.png",
         "review_img": "shopify://shop_images/Stars_8.svg",
         "list_icon": "shopify://shop_images/verify.svg",
@@ -232,7 +232,6 @@
       ],
       "name": "Collection Cards",
       "settings": {
-        "sec_img": "shopify://shop_images/tempImageYExoTd_1_4.png",
         "title": "WHAT BENEFIT DO YOU NEED?",
         "button_text": "Shop Pure Filth",
         "button_link": "shopify://collections/all-filthy-products",
@@ -367,8 +366,8 @@
         "button_bg": "#000000",
         "button_icon_bg": "#ffffff",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
-        "outer_button_text": "Learn more",
-        "outer_button_link": "shopify://pages/our-story",
+        "outer_button_text": "",
+        "outer_button_link": "",
         "padding_top_desktop": 100,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 40,
@@ -428,7 +427,7 @@
       "settings": {
         "bg_image": "shopify://shop_images/Frame_2147241648.png",
         "bg_image_mob": "shopify://shop_images/Banner_2_2.png",
-        "image": "shopify://shop_images/Frame_2147242212_dedecf42-2156-43b1-9767-99c30c2fdd20.png",
+        "image": "shopify://shop_images/Frame_2147242212_3.png",
         "title": "Not sure where to start? TAKE THE FILTH QUIZ.",
         "subtitle": "Answer a few quick questions to discover what suits you best. Get personalised recommendations tailored to your goals.",
         "button_text": "Start the Quiz",
@@ -459,11 +458,11 @@
         "step_DixFdq": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/Frame_2147242205_1.png",
+            "image": "shopify://shop_images/Frame_2147242205_e43c3484-6825-4747-87c2-c192c81a882c.png",
             "title": "DAILY DRIVER (100g)",
             "subtitle": "Best value for every day use",
             "button_text": "Shop All",
-            "button_link": "shopify://products/new-the-big-ones-6-mushroom-multipack-100g-copy"
+            "button_link": "shopify://collections/powders"
           }
         },
         "step_zdYXG6": {
@@ -473,7 +472,7 @@
             "title": "AUTO-PILOT (Subscribe)",
             "subtitle": "Save 20% and never run out",
             "button_text": "Subscribe Now",
-            "button_link": "shopify://collections/all-filthy-products"
+            "button_link": "shopify://collections/all-products"
           }
         }
       },
@@ -484,7 +483,6 @@
       ],
       "name": "How To Buy Section",
       "settings": {
-        "abs_image": "shopify://shop_images/tempImageYExoTd_1_2.png",
         "title": "HOW TO BUY",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "button_bg": "#151515",
@@ -563,7 +561,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165.png",
             "top_title": "MORNING",
-            "image": "shopify://shop_images/Frame_2147242691.png",
+            "image": "shopify://shop_images/Frame_2147242691_1.png",
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
@@ -577,7 +575,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
             "top_title": "AFTERNOON",
-            "image": "shopify://shop_images/Frame_2147242242_10_a03fb717-8fda-4970-88f2-49873c4a3eff.png",
+            "image": "shopify://shop_images/Frame_2147242242_11_8ce1002c-c15a-4eca-b1b9-8282598f875b.png",
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
@@ -591,7 +589,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
             "top_title": "EVENING",
-            "image": "shopify://shop_images/Frame_2147242693.png",
+            "image": "shopify://shop_images/Frame_2147242693_1.png",
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
@@ -890,7 +888,7 @@
         "button_icon_bg": "#ffffff",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "button_text": "SUBSCRIBE NOW",
-        "button_link": "shopify://collections/multipacks",
+        "button_link": "shopify://collections/all-products",
         "padding_top_desktop": 100,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 40,
@@ -901,15 +899,14 @@
       "type": "money-back",
       "name": "Money Back Section",
       "settings": {
-        "title_first": false,
-        "bg_image": "shopify://shop_images/tempImageYExoTd_1_1.png",
+        "title_first": true,
         "image": "shopify://shop_images/PDP_Badge.svg",
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
         "button_text_color": "#ffffff",
         "button_text": "LEARN MORE",
-        "button_link": "shopify://pages/our-story",
+        "button_link": "shopify://policies/refund-policy",
         "button_icon": "shopify://shop_images/Frame_2147242027_e2029eb5-2cf1-4f25-8c0f-ee810464ebb2.svg",
         "section_bg": "#ffffff",
         "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",

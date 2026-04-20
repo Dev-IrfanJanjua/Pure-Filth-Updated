@@ -624,7 +624,7 @@
         "text_color": "#000000",
         "button_text_color": "#ffffff",
         "button_text": "LEARN MORE",
-        "button_link": "shopify://pages/our-story",
+        "button_link": "shopify://policies/refund-policy",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "section_bg": "#ffffff",
         "Content_bg": "#FEC700",
