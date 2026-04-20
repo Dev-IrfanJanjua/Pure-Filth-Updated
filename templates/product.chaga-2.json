@@ -16,12 +16,6 @@
           "type": "custom-reviews",
           "settings": {}
         },
-        "pdp_tag_kttQH3": {
-          "type": "pdp_tag",
-          "settings": {
-            "pdp_tag": "Relax & CLARITY"
-          }
-        },
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8": {
           "type": "title",
           "settings": {
@@ -78,6 +72,8 @@
           "type": "variant_picker",
           "settings": {
             "title": "Variant picker",
+            "tag_bg": "#1cc84d",
+            "tag_color": "#ffffff",
             "spacing_bottom": "1",
             "variant_picker_type": "buttons",
             "show_variant_images": false,
@@ -90,6 +86,7 @@
           "type": "purchase_options",
           "settings": {
             "headline": "Most popular: Get 20% off",
+            "sub_title": "Subscribe & Save",
             "headline_bg_color": "#038BFF",
             "headline_text_color": "#000000",
             "bg_color": "#E2F3FF",
@@ -256,7 +253,6 @@
       },
       "block_order": [
         "custom_reviews_9gTjYL",
-        "pdp_tag_kttQH3",
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
         "custom_richtext_a9Tp7h",
         "custom_list_JjVr6n",
@@ -282,6 +278,7 @@
       ],
       "settings": {
         "custoom-class": true,
+        "aspect_one": false,
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",
         "product_media_with_thumbs": "none",

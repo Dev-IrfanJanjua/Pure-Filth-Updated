@@ -290,7 +290,10 @@ First image: {{ images[0].image }} <br>
             {% endif %}
 
           {% else %}
-            <input type="hidden" name="id" value="{{ largest_variant.id }}">
+            <input type="hidden" name="id" value="{{ largest_variant.id }}"
+                data-price="{{ largest_variant.price | money }}"
+                data-sub-price="{% if largest_variant.selling_plan_allocations.first %}{{ largest_variant.selling_plan_allocations.first.price | money }}{% endif %}"
+            >
           {% endif %}
       </div>
       <input type="hidden" name="quantity" value="1">
@@ -298,6 +301,8 @@ First image: {{ images[0].image }} <br>
       {% if plans.size > 0 %}
         <input class="selling-plan-input" 
           type="hidden" 
+          data-price="{{ largest_variant.price | money }}"
+          data-sub-price="{{ largest_variant.selling_plan_allocations.first.price | money }}"
           name="selling_plan" 
           value="{{ plans.first.selling_plan.id }}"
           disabled
@@ -381,7 +386,7 @@ First image: {{ images[0].image }} <br>
 
 {% comment %} ====== price update on toggle Shows the subscription price when input checked. ========== {% endcomment %}
 
-<script>
+{% comment %} <script>
 document.querySelectorAll('.product-card__add-to-cart--form').forEach(form => {
 
   const select = form.querySelector('.product-card__variant-select');
@@ -414,7 +419,63 @@ document.querySelectorAll('.product-card__add-to-cart--form').forEach(form => {
   checkbox.addEventListener('change', updatePrice);
 
 });
+</script> {% endcomment %}
+
+
+{% comment %} ========== for 1 vriant only ======== {% endcomment %}
+
+<script>
+document.querySelectorAll('.product-card__add-to-cart--form').forEach(form => {
+
+  const select = form.querySelector('.product-card__variant-select');
+  const input = form.querySelector('input[name="id"]'); // single variant fallback
+  const checkbox = form.closest('.product-card')?.querySelector('.subscribe-toggle__checkbox') 
+                  || document.querySelector('.subscribe-toggle__checkbox');
+  const priceEl = form.querySelector('.price-text');
+
+  if (!priceEl) return;
+
+  const updatePrice = () => {
+    let normalPrice = null;
+    let subPrice = null;
+
+    // CASE 1: Multiple variants (select)
+    if (select) {
+      const selectedOption = select.options[select.selectedIndex];
+      normalPrice = selectedOption?.dataset.price;
+      subPrice = selectedOption?.dataset.subPrice;
+    }
+
+    // CASE 2: Single variant (hidden input)
+    if (!select && input) {
+      normalPrice = input.dataset.price;
+      subPrice = input.dataset.subPrice;
+    }
+
+    // Update UI
+    if (checkbox?.checked && subPrice) {
+      priceEl.textContent = subPrice;
+    } else if (normalPrice) {
+      priceEl.textContent = normalPrice;
+    }
+  };
+
+  // Initial load
+  updatePrice();
+
+  // Variant change (select only)
+  if (select) {
+    select.addEventListener('change', updatePrice);
+  }
+
+  // Toggle change
+  if (checkbox) {
+    checkbox.addEventListener('change', updatePrice);
+  }
+
+});
 </script>
+
 
 {% comment %} ====== collection page images change on variant change ===== {% endcomment %}
 
