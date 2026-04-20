@@ -77,11 +77,12 @@ small.footer-newsletter-content_small {
 }
 
 .footer-newsletter-image {
-    max-width: 100%;
+    max-width: 78%;
     width: 100%;
     height: auto;
     /* padding: 0 80px; */
     padding: 0;
+    margin: 0 auto;
 }
 
 .footer-newsletter-image img {
@@ -418,7 +419,7 @@ small.footer-newsletter-content_small {
                 {% endif %}
             {% endform %}
             {% if section.settings.terms_text != blank %}
-              <small class="footer-newsletter-content_small">{{ section.settings.terms_text }}</small>
+              <small class="footer-newsletter-content_small">{{ section.settings.terms_text | replace: '<p>', '' | replace: '</p>', '' }}</small>
             {% endif %}
           </div>
 
@@ -605,10 +606,9 @@ document.addEventListener('DOMContentLoaded', function() {
       "default": "Stay up to receive discounts, updates and more."
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "terms_text",
-      "label": "Terms Text",
-      "default": "By subscribing you agree to Terms of use & privacy policy"
+      "label": "Terms Text"
     },
     {
       "type": "image_picker",

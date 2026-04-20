@@ -16,12 +16,6 @@
           "type": "custom-reviews",
           "settings": {}
         },
-        "pdp_tag_kttQH3": {
-          "type": "pdp_tag",
-          "settings": {
-            "pdp_tag": "Relax & CLARITY"
-          }
-        },
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8": {
           "type": "title",
           "settings": {
@@ -77,6 +71,8 @@
         "pdp_dropdown_ykDyRP": {
           "type": "Pdp_dropdown",
           "settings": {
+            "margin": false,
+            "drop_title": "Choose your Mushroom:",
             "background": "#ffeeee"
           }
         },
@@ -84,6 +80,8 @@
           "type": "variant_picker",
           "settings": {
             "title": "Variant picker",
+            "tag_bg": "#1cc84d",
+            "tag_color": "#ffffff",
             "spacing_bottom": "1",
             "variant_picker_type": "buttons",
             "show_variant_images": false,
@@ -124,7 +122,7 @@
           "type": "custom_feature",
           "settings": {
             "list_icon_1": "shopify://shop_images/Vector_3.svg",
-            "list_item_1": "Ship from UAE",
+            "list_item_1": "Ships from UAE",
             "list_icon_2": "shopify://shop_images/svg714.svg",
             "list_item_2": "Same Day & Next Day Delivery",
             "list_icon_3": "shopify://shop_images/Capa_1.svg",
@@ -263,7 +261,6 @@
       },
       "block_order": [
         "custom_reviews_9gTjYL",
-        "pdp_tag_kttQH3",
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
         "custom_richtext_a9Tp7h",
         "custom_list_JjVr6n",
@@ -290,6 +287,7 @@
       ],
       "settings": {
         "custoom-class": true,
+        "aspect_one": false,
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",
         "product_media_with_thumbs": "none",
@@ -598,7 +596,7 @@
         "section_bg": "#D52626",
         "title": "WHY PURE FILTH Cordyceps HITS DIFFERENT",
         "title_color": "#000000",
-        "main_image": "shopify://shop_images/Background_Border_2.png",
+        "main_image": "shopify://shop_images/Background_Border_1_f1b0b249-0826-4eb1-8245-6556dedb83a3.png",
         "overlay_title": "",
         "overlay_text": "",
         "padding_top_desktop": 80,

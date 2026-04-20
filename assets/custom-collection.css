@@ -374,23 +374,31 @@ label.collection-subscribe-toggle input:checked + .subscribe-toggle__switch .sub
     opacity: 0 !important;
 }
 
+.custom-collection__grid .product-card__actions .product-card__media img{
+    opacity: 1 !important;
+}
+
 .product-card__media.product-card__media--hoverable{
     transition: all 0.3s ease !important;
 }
 
+.custom-collection__grid .product-card__actions .product-card__media img:last-of-type {
+    display: none !important;
+}
+
 @media (hover: hover) {
   .is--hovering .product-card__media.product-card__media--hoverable img:first-child {
-    z-index: 0;
-    opacity: 0 !important;
-  }
-
-  .is--hovering .product-card__media.product-card__media--hoverable img:last-child {
     z-index: 1;
     opacity: 1 !important;
   }
 
+  .is--hovering .product-card__media.product-card__media--hoverable img:last-child {
+    z-index: 0;
+    opacity: 0 !important;
+  }
+
   .is--hovering .product-card__media.product-card__media--hoverable img.hover-img{
-    opacity: 1 !important;
+    opacity: 0 !important;
 }
 
 }

@@ -1836,7 +1836,7 @@ product-modal {
 }
 
 .product__media-layout--full--sm .swiper-slide .media {
-  border-radius: 0 !important;
+  /* border-radius: 0 !important; */
   aspect-ratio: 1;
 }
 

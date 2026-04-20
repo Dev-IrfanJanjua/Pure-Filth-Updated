@@ -373,21 +373,7 @@ span.pdp_price.pdp_price_price.pdp_purchase-option_selling_comp {
                 <span class="pdp_price pdp_price_price pdp_purchase-option_selling_comp">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
               </div>
                 <span class="pdp_purchase-option_selling-prices_serving">{{ product.selected_or_first_available_variant.price | divided_by: 30 | money }} per serving</span>
-                  {% comment %} {% assign current_variant = product.selected_or_first_available_variant %}
-                  {% assign variant_serving = current_variant.metafields.custom.serving_number.value %}
-
-                  {% if product.variants.size > 1 and variant_serving != blank and variant_serving > 0 %}
-                    {% assign divisor = variant_serving %}
-                  {% else %}
-                    {% assign divisor = block.settings.serving %}
-                  {% endif %}
-
-                  <span 
-                    class="pdp_purchase-option_selling-prices_serving"
-                    data-default-serving="{{ block.settings.serving }}"
-                  >
-                    {{ current_variant.price | divided_by: divisor | money }} per serving
-                  </span> {% endcomment %}
+                {% comment %} <span class="pdp_purchase-option_selling-prices_serving_text">{{  }}</span> {% endcomment %}
             </div>
         </div>
         

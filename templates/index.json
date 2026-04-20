@@ -310,7 +310,7 @@
         "description": "<p>One scoop. One mug. Once Daily Habit.  <br/>No overthinking. No Nonsense.</p>",
         "button_text": "Choose your filth",
         "button_icon": "shopify://shop_images/Frame_2147242027.svg",
-        "button_link": "shopify://collections/bundles",
+        "button_link": "shopify://collections/all",
         "bg_color": "#ffffff",
         "button_bg": "#ffffff",
         "button_icon_bg": "#000000",
