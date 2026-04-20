@@ -294,6 +294,7 @@
       ],
       "settings": {
         "custoom-class": true,
+        "aspect_one": false,
         "gallery_icon": "shopify://shop_images/Group_1707479853.svg",
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",
@@ -488,7 +489,7 @@
         "slide_UWhNpb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/2b808b9ce2eaa297059ca685f64a78d739e55fe8.png",
+            "image": "shopify://shop_images/image_2895.png",
             "step": "First Step",
             "title": "Add 1 teaspoon",
             "subtitle": "Stir into coffee, tea or smoothies"
@@ -497,7 +498,7 @@
         "slide_dUQCh6": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/03f0b8b6639948e0f75a2ec34eb201e00adee771.png",
+            "image": "shopify://shop_images/image_2896.png",
             "step": "Second Step",
             "title": "MIX INTO YOUR DRINK",
             "subtitle": "Hot or cold works perfectly"

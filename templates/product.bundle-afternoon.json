@@ -103,6 +103,7 @@
           "type": "purchase_options",
           "settings": {
             "headline": "MOST POPULAR: GET 20% OFF",
+            "serving": 100,
             "sub_title": "Subscribe & Save",
             "headline_bg_color": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
             "headline_text_color": "#000000",
@@ -411,7 +412,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242608.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk_png.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_5_d924038a-cc7e-4466-82aa-2959599a884c.png",
             "title": "Cordyceps",
             "subtitle": "Energy & Performance",
             "qty": "100g - 50 servings",
@@ -506,7 +507,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242611.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_3.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_9_ba039644-eb9a-4ec4-b5a0-48f5efff4c92.png",
             "title": "Chaga",
             "subtitle": "Immunity & Defence",
             "qty": "100g - 50 servings",
@@ -668,7 +669,7 @@
         "slide_MaAjeQ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/520c0add181895ed8d4ca9a3bb52fade5ba8081f.png",
+            "image": "shopify://shop_images/image_2885.png",
             "step": "First Step",
             "title": "Add 1 teaspoon",
             "subtitle": "Stir into coffee, tea or smoothies"
@@ -677,7 +678,7 @@
         "slide_bBtmzf": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/7fd10af6badba00714228234d74b5a60da6c5572.png",
+            "image": "shopify://shop_images/image_2887_a70d5f2d-d118-418f-bc8c-316922a83be6.png",
             "step": "Second Step",
             "title": "MIX INTO YOUR DRINK",
             "subtitle": "Hot or cold works perfectly"
@@ -686,7 +687,7 @@
         "slide_CWw8HA": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/c5fa44b9f871f1642cca5b9be95cd28ee5deb231.png",
+            "image": "shopify://shop_images/image_2894.png",
             "step": "Third Step",
             "title": "ENJOY DAILY",
             "subtitle": "Build it into your routine"

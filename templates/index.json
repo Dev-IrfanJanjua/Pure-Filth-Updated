@@ -310,7 +310,7 @@
         "description": "<p>One scoop. One mug. Once Daily Habit.  <br/>No overthinking. No Nonsense.</p>",
         "button_text": "Choose your filth",
         "button_icon": "shopify://shop_images/Frame_2147242027.svg",
-        "button_link": "shopify://collections/all",
+        "button_link": "shopify://collections/all-filthy-products",
         "bg_color": "#ffffff",
         "button_bg": "#ffffff",
         "button_icon_bg": "#000000",
@@ -563,7 +563,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165.png",
             "top_title": "MORNING",
-            "image": "shopify://shop_images/Frame_2147242242_10_3c37ea77-fba2-4d45-ba15-6ff48c88ef54.png",
+            "image": "shopify://shop_images/Frame_2147242691.png",
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
@@ -577,7 +577,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
             "top_title": "AFTERNOON",
-            "image": "shopify://shop_images/Frame_2147242242_1_d21db629-5c81-4a16-9675-97ba8eba5b67.png",
+            "image": "shopify://shop_images/Frame_2147242242_10_a03fb717-8fda-4970-88f2-49873c4a3eff.png",
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
@@ -591,7 +591,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
             "top_title": "EVENING",
-            "image": "shopify://shop_images/Frame_2147242242_11_364683ec-074c-46a8-aedb-77c0e285be96.png",
+            "image": "shopify://shop_images/Frame_2147242693.png",
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",

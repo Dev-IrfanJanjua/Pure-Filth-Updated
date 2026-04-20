@@ -124,11 +124,12 @@
                     for variant in product.variants
                       if variant.option1 == value
                         assign variant_tag = variant.metafields.custom.variant_tag.value
+                        assign serving_number = variant.metafields.custom.serving_number.value
                         break
                       endif
                     endfor
 
-                    render 'product-swatch', value: value, colors_for_check: color_codes, class: swatch_class, id: id, name: name, attr: attr, show_label: show_label, variant_img: variant_img, tabindex: '0', variant_tag: variant_tag, price: variant_price, discount_price: final_price, compare_price: compare_price, block: block
+                    render 'product-swatch', value: value, colors_for_check: color_codes, class: swatch_class, id: id, name: name, attr: attr, show_label: show_label, variant_img: variant_img, tabindex: '0', variant_tag: variant_tag, price: variant_price, discount_price: final_price, compare_price: compare_price, block: block, serving-number: serving_number, selling_plan_price: selling_plan_price
                   -%}
                 </li>
                 {% comment %}

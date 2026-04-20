@@ -266,6 +266,17 @@ span.pdp_purchase-option_selling-prices_serving {
     margin-top: 4px;
 }
 
+span.pdp_purchase-option_selling-prices_serving_text {
+    font-family: GT Cinetype;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #00000099;
+    margin-top: 4px;
+}
+
 .pdp_purchase-option_selling-prices-wrapper {
     text-align: end;
     line-height: 100%;
@@ -372,8 +383,16 @@ span.pdp_price.pdp_price_price.pdp_purchase-option_selling_comp {
                 <span class="pdp_compare_price pdp_price_price">{{ product.selected_or_first_available_selling_plan_allocation.price | money }}</span>
                 <span class="pdp_price pdp_price_price pdp_purchase-option_selling_comp">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
               </div>
-                <span class="pdp_purchase-option_selling-prices_serving">{{ product.selected_or_first_available_variant.price | divided_by: 30 | money }} per serving</span>
-                {% comment %} <span class="pdp_purchase-option_selling-prices_serving_text">{{  }}</span> {% endcomment %}
+
+              {% assign selling_price = product.selected_or_first_available_selling_plan_allocation.price %}
+              {% assign ser_numb = block.settings.serving | default: 30 %}
+
+              <span class="pdp_purchase-option_selling-prices_serving_text">
+                {% if ser_numb != 0 and selling_price %}
+                  {{ selling_price | divided_by: ser_numb | money }} per serving
+                {% endif %}
+              </span>
+                {% comment %} <span class="pdp_purchase-option_selling-prices_serving">{{ product.selected_or_first_available_variant.price | divided_by: 30 | money }} per serving</span> {% endcomment %}
             </div>
         </div>
         
@@ -530,11 +549,13 @@ document.addEventListener('change', function (e) {
   const discPrice = label.getAttribute('data-disc_price');
   const compPrice = label.getAttribute('data-comp_price');
   const servingPrice = label.getAttribute('data-serving');
+  const perServe = label.getAttribute('data-per-serve');
 
   const priceEls = document.querySelectorAll('.pdp_price');
   const comparePriceEls = document.querySelectorAll('.pdp_compare_price');
   const compPriceEls = document.querySelectorAll('.pdp_compare_price_compare');
   const servingEls = document.querySelectorAll('.pdp_purchase-option_selling-prices_serving');
+  const perServeEls = document.querySelectorAll('.pdp_purchase-option_selling-prices_serving_text');
 
   priceEls.forEach(el => {
     el.textContent = price || '';
@@ -550,6 +571,10 @@ document.addEventListener('change', function (e) {
 
   servingEls.forEach(el => {
     el.textContent = servingPrice || '';
+  });
+
+  perServeEls.forEach(el => {
+    el.textContent = perServe || '';
   });
 
 }
@@ -575,3 +600,4 @@ document.addEventListener('change', function (e) {
     if (checked) updatePriceDisplay(checked);
   });
 </script>
+

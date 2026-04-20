@@ -104,6 +104,7 @@
           "type": "purchase_options",
           "settings": {
             "headline": "MOST POPULAR: GET 20% OFF",
+            "serving": 100,
             "sub_title": "Subscribe & Save",
             "headline_bg_color": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
             "headline_text_color": "#000000",
@@ -299,6 +300,7 @@
       ],
       "settings": {
         "custoom-class": true,
+        "aspect_one": true,
         "gallery_icon": "shopify://shop_images/Group_1707479853.svg",
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",
@@ -435,7 +437,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242259.png",
-            "image": "shopify://shop_images/image_2862.png",
+            "image": "shopify://shop_images/image_2863_2521bd8d-e2ae-4941-a383-512aee8473ec.png",
             "title": "LION'S MANE",
             "subtitle": "Focus & Clarity",
             "qty": "100g - 50 servings",
@@ -482,7 +484,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242610.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_2.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_7_cce9533b-df15-48ff-8865-f1a41a85262b.png",
             "title": "TREMELLA",
             "subtitle": "Skin hydration & Glow",
             "qty": "100g - 50 servings",
@@ -668,7 +670,7 @@
         "slide_bE9wa4": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/27dbfad32c7c83412d33abae755d4b10811bf6cb.png",
+            "image": "shopify://shop_images/image_2891.png",
             "step": "First Step",
             "title": "Add 1 teaspoon",
             "subtitle": "Stir into coffee, tea or smoothies"
@@ -677,7 +679,7 @@
         "slide_aDc7xN": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/76e5875947356c077d60f6add192c8e33ce98b15.png",
+            "image": "shopify://shop_images/image_2892.png",
             "step": "Second Step",
             "title": "MIX INTO YOUR DRINK",
             "subtitle": "Hot or cold works perfectly"
@@ -686,7 +688,7 @@
         "slide_RhDTGe": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/aa335080352a027d7e24172cf3ddd65a186aee42.png",
+            "image": "shopify://shop_images/image_2893.png",
             "step": "Third Step",
             "title": "Drink it daily",
             "subtitle": "Build it into your routine"

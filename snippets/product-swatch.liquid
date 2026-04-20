@@ -61,13 +61,21 @@
 {% if serving == 0 %}
   {% assign serving = 1 %}
 {% endif %} {% endcomment %}
+
+{% assign selling_price = discount_price %}
+{% assign serving_num = serving-number %}
+{% assign per_serving = selling_price | divided_by: serving_num %}
+
   <label
     for="{{- id -}}"
     data-price="{{ price | money }}"
     {% comment %} data-serving="{{ price | divided_by: serving | money }} per serving" {% endcomment %}
-    data-serving="{{ price | divided_by: 30 | money }} per serving"
+    data-serving-number="{{ serving-number }}"
     data-disc_price="{{ discount_price | money }}/mo"
+    data-selling-price="{{ discount_price | money}}"
+    data-serving="{{ price | divided_by: 30 | money }} per serving"
     data-comp_price="{{ compare_price | money }}"
+    data-per-serve="{{ per_serving | money }} per servings"
     class="swatch{% if class contains 'color'  %} swatch--circle swatch--labeled{% unless colors_for_check contains option_value_handle %} swatch--default{% endunless %}{% else %} {{ settings.product_swatch_style }}{% endif %} swatch--{{ option_value_handle }} {{ class }}"
     title="{{- value -}}" {% if tabindex  %} tabindex={{- tabindex -}} {% endif %}
   >

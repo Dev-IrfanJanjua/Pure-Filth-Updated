@@ -114,7 +114,7 @@ h3.produt-dropdown-title {
   <h3 class="produt-dropdown-title">{{ block.settings.drop_title }}</h3>
 
   <button class="dropdown-toggle">
-      {{ product.title }}
+      {{ product.metafields.custom.dropdown_title | default: product.title }}
       <span class="dropdown-toggle_icon">
         <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.95898 6.85547L5.51074 6.40723L0.448242 1.34473L0 0.896484L0.896484 0L1.34473 0.448239L5.95898 5.08886L10.5732 0.474609L11.0215 0.026367L11.918 0.896484L11.4698 1.34473L6.40723 6.40723L5.95898 6.85547Z" fill="black"/>
@@ -126,7 +126,7 @@ h3.produt-dropdown-title {
     {% for item in dropdown_products %}
       <li class="dropdown-item">
         <a href="{{ item.url }}" class="dropdown-item_link">
-          {{ item.title }}
+          {{ item.metafields.custom.dropdown_title | default: item.title }}
         </a>
       </li>
     {% endfor %}

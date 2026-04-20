@@ -294,6 +294,7 @@
       ],
       "settings": {
         "custoom-class": true,
+        "aspect_one": false,
         "gallery_icon": "shopify://shop_images/Group_1707479853.svg",
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",
@@ -488,7 +489,7 @@
         "slide_UWhNpb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/e5292270524f85da78f1ffff0ff7204ec448f1cd.png",
+            "image": "shopify://shop_images/image_2898.png",
             "step": "First Step",
             "title": "Add 1 teaspoon",
             "subtitle": "Stir into coffee, tea or smoothies"
@@ -497,7 +498,7 @@
         "slide_dUQCh6": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/cb835ccab7b4361288aa1d5b16c8bbd0fae5ebb0.png",
+            "image": "shopify://shop_images/image_2899.png",
             "step": "Second Step",
             "title": "MIX INTO YOUR DRINK",
             "subtitle": "Hot or cold works perfectly"
@@ -506,7 +507,7 @@
         "slide_Wan4td": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/262777af594c042a234cfd4dfce03e50ebdef3b7.png",
+            "image": "shopify://shop_images/image_2900.png",
             "step": "Third Step",
             "title": "ENJOY DAILY",
             "subtitle": "Build it into your routine"
