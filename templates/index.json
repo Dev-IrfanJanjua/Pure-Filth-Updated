@@ -472,7 +472,7 @@
             "title": "AUTO-PILOT (Subscribe)",
             "subtitle": "Save 20% and never run out",
             "button_text": "Subscribe Now",
-            "button_link": "shopify://collections/all-products"
+            "button_link": "shopify://collections/all-products-subscription"
           }
         }
       },
@@ -561,7 +561,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165.png",
             "top_title": "MORNING",
-            "image": "shopify://shop_images/Frame_2147242691_1.png",
+            "image": "shopify://shop_images/Frame_2147242698.png",
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
@@ -575,7 +575,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
             "top_title": "AFTERNOON",
-            "image": "shopify://shop_images/Frame_2147242242_11_8ce1002c-c15a-4eca-b1b9-8282598f875b.png",
+            "image": "shopify://shop_images/Frame_2147242699.png",
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
@@ -589,7 +589,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
             "top_title": "EVENING",
-            "image": "shopify://shop_images/Frame_2147242693_1.png",
+            "image": "shopify://shop_images/Frame_2147242697.png",
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
@@ -747,7 +747,6 @@
       "name": "Story Behind Section",
       "settings": {
         "pdp": false,
-        "abs_image": "shopify://shop_images/tempImageYExoTd_1.png",
         "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM_png.png",
         "title": "<p>THE STORY BEHIND THE FILTH</p>",
         "description": "<p>I’m Olly, the guy behind this filthy venture. The story kicked off in 2023 while wrestling with my pesky ADHD. My hunt for pure, uninterrupted focus led me to Lion’s Mane. <br/><br/>What started as a personal experiment soon morphed into a full-blown mushroom business. But not just any mushrooms would do. I spent two years chasing down the purest, most potent fungi. And in February 2025, we finally launched PURE FILTH into the wild, proudly built in the UAE.</p>",
@@ -888,7 +887,7 @@
         "button_icon_bg": "#ffffff",
         "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
         "button_text": "SUBSCRIBE NOW",
-        "button_link": "shopify://collections/all-products",
+        "button_link": "shopify://collections/all-products-subscription",
         "padding_top_desktop": 100,
         "padding_bottom_desktop": 100,
         "padding_top_mobile": 40,
@@ -901,8 +900,8 @@
       "settings": {
         "title_first": true,
         "image": "shopify://shop_images/PDP_Badge.svg",
-        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
-        "title": "30 day money back guarantee.",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
+        "title": "30 day money back guarantee",
         "text_color": "#000000",
         "button_text_color": "#ffffff",
         "button_text": "LEARN MORE",

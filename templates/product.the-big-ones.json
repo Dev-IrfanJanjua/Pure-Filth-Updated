@@ -1039,13 +1039,79 @@
         "padding_bottom_mobile": 40
       }
     },
+    "routine_p7zjbt": {
+      "type": "routine",
+      "blocks": {
+        "step_td7gDY": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165.png",
+            "top_title": "MORNING",
+            "image": "shopify://shop_images/Frame_2147242242_8_d683b7f1-460f-44df-a24a-3bd7cf86c328.png",
+            "title": "FOCUS FIRST. HYDRATE SKIN.",
+            "subtitle": "Lion’s Mane + Tremella",
+            "button_text": "SHOP MORNING",
+            "button_link": "shopify://products/morning-bundle",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        },
+        "step_YyKVAU": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
+            "top_title": "AFTERNOON",
+            "image": "shopify://shop_images/Frame_2147242242_6_801c56ae-b6de-4f96-a494-e3afd385caf6.png",
+            "title": "DEFEND DAILY. ENERGY BOOST.",
+            "subtitle": "Chaga + Cordyceps",
+            "button_text": "sHOP AFTERNOON",
+            "button_link": "shopify://products/afternoon-bundle",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        },
+        "step_jmBWJz": {
+          "type": "step",
+          "settings": {
+            "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
+            "top_title": "EVENING",
+            "image": "shopify://shop_images/Frame_2147242242_7_a2c2c845-6835-494d-a4f2-237f589d8c6e.png",
+            "title": "CALM DOWN. RESET GUT.",
+            "subtitle": "Reishi + Turkey Tail",
+            "button_text": "SHOP EVENING",
+            "button_link": "shopify://products/evening-bundle",
+            "button_text_scnd": "",
+            "button_link_scnd": "#"
+          }
+        }
+      },
+      "block_order": [
+        "step_td7gDY",
+        "step_YyKVAU",
+        "step_jmBWJz"
+      ],
+      "name": "Routine Section",
+      "settings": {
+        "title": "Build Your Routine",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "button_text": "#ffffff",
+        "section_bg": "#ffffff",
+        "cards_bg": "#faf7ed",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
     "money_back_bQi3Q3": {
       "type": "money-back",
       "name": "Money Back Section",
       "settings": {
         "title_first": true,
         "image": "shopify://shop_images/PDP_Badge.svg",
-        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
         "title": "30 day money back guarantee",
         "text_color": "#000000",
         "button_text_color": "#000000",
@@ -1513,6 +1579,7 @@
     "video_slider_MYEAUN",
     "video_slider_x93pnd",
     "comp_pNaDkU",
+    "routine_p7zjbt",
     "money_back_bQi3Q3",
     "routine_MaXLqX",
     "testimonial_YNU6TX",

@@ -1030,7 +1030,7 @@
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
-            "button_link": "#",
+            "button_link": "shopify://products/afternoon-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
@@ -1044,7 +1044,7 @@
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
-            "button_link": "#",
+            "button_link": "shopify://products/evening-bundle",
             "button_text_scnd": "",
             "button_link_scnd": "#"
           }
