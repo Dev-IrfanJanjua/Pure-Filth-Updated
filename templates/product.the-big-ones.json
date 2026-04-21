@@ -60,6 +60,14 @@
             "text9": ""
           }
         },
+        "pdp_dropdown_6ddh4p": {
+          "type": "Pdp_dropdown",
+          "settings": {
+            "margin": true,
+            "drop_title": "Choose your multipack:",
+            "background": "#faf7ed"
+          }
+        },
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
           "type": "price",
           "disabled": true,
@@ -262,6 +270,7 @@
         "custom_richtext_a9Tp7h",
         "custom_list_JjVr6n",
         "custom_icon_text_phnHQx",
+        "pdp_dropdown_6ddh4p",
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b",
         "1e939cd6-0958-4135-a9e5-c50faef01437",
         "1e939cd6-0955-4135-a9e5-c50faef01437",
@@ -396,7 +405,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242608.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_5_d924038a-cc7e-4466-82aa-2959599a884c.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_19.png",
             "title": "Cordyceps",
             "subtitle": "Energy & Performance",
             "qty": "100g - 50 servings",
@@ -419,7 +428,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242259.png",
-            "image": "shopify://shop_images/image_2863_2521bd8d-e2ae-4941-a383-512aee8473ec.png",
+            "image": "shopify://shop_images/image_2901.png",
             "title": "LION'S MANE",
             "subtitle": "Focus & Clarity",
             "qty": "100g - 50 servings",
@@ -442,7 +451,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242612.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_10.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_23.png",
             "title": "Reishi",
             "subtitle": "Relaxation & Sleep",
             "qty": "100g - 50 servings",
@@ -465,7 +474,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242259_1.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_6_41f33107-226f-48e6-88fb-ae9f6f89ce24.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_20.png",
             "title": "Turkey Tail",
             "subtitle": "Gut Health & Digestion",
             "qty": "100g - 50 servings",
@@ -488,7 +497,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242610.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_7_cce9533b-df15-48ff-8865-f1a41a85262b.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_21.png",
             "title": "TREMELLA",
             "subtitle": "Skin Hydration & Glow",
             "qty": "100g - 50 servings",
@@ -511,7 +520,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242611.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_9_ba039644-eb9a-4ec4-b5a0-48f5efff4c92.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_22.png",
             "title": "Chaga",
             "subtitle": "Immunity & Defence",
             "qty": "100g - 50 servings",

@@ -96,7 +96,7 @@
           "type": "Pdp_dropdown",
           "settings": {
             "margin": true,
-            "drop_title": "Choose your bundle",
+            "drop_title": "Choose your bundle:",
             "background": "#faf7ed"
           }
         },
@@ -437,7 +437,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242259.png",
-            "image": "shopify://shop_images/image_2863_2521bd8d-e2ae-4941-a383-512aee8473ec.png",
+            "image": "shopify://shop_images/image_2901.png",
             "title": "LION'S MANE",
             "subtitle": "Focus & Clarity",
             "qty": "100g - 50 servings",
@@ -484,7 +484,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242610.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_7_cce9533b-df15-48ff-8865-f1a41a85262b.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_21.png",
             "title": "TREMELLA",
             "subtitle": "Skin hydration & Glow",
             "qty": "100g - 50 servings",

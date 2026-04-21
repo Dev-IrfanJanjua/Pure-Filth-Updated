@@ -95,7 +95,7 @@
           "type": "Pdp_dropdown",
           "settings": {
             "margin": true,
-            "drop_title": "Choose your bundle",
+            "drop_title": "Choose your bundle:",
             "background": "#faf7ed"
           }
         },
@@ -412,7 +412,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242608.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_5_d924038a-cc7e-4466-82aa-2959599a884c.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_19.png",
             "title": "Cordyceps",
             "subtitle": "Energy & Performance",
             "qty": "100g - 50 servings",
@@ -507,7 +507,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242611.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_9_ba039644-eb9a-4ec4-b5a0-48f5efff4c92.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_22.png",
             "title": "Chaga",
             "subtitle": "Immunity & Defence",
             "qty": "100g - 50 servings",

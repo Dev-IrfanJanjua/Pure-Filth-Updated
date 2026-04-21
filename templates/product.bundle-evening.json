@@ -96,7 +96,7 @@
           "type": "Pdp_dropdown",
           "settings": {
             "margin": true,
-            "drop_title": "Choose your bundle",
+            "drop_title": "Choose your bundle:",
             "background": "#faf7ed"
           }
         },
@@ -485,7 +485,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242612.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_10.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_23.png",
             "title": "Reishi",
             "subtitle": "Relaxation & Sleep",
             "qty": "100g - 50 servings",
@@ -508,7 +508,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242259_1.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_6_41f33107-226f-48e6-88fb-ae9f6f89ce24.png",
+            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_20.png",
             "title": "Turkey Tail",
             "subtitle": "Gut Health & Digestion",
             "qty": "100g - 50 servings",

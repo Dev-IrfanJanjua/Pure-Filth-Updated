@@ -66,6 +66,14 @@
             "text9": ""
           }
         },
+        "pdp_dropdown_i4YjAV": {
+          "type": "Pdp_dropdown",
+          "settings": {
+            "margin": true,
+            "drop_title": "Choose your multipack:",
+            "background": "#faf7ed"
+          }
+        },
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
           "type": "price",
           "disabled": true,
@@ -269,6 +277,7 @@
         "custom_richtext_a9Tp7h",
         "custom_list_JjVr6n",
         "custom_icon_text_phnHQx",
+        "pdp_dropdown_i4YjAV",
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b",
         "1e939cd6-0958-4135-a9e5-c50faef01437",
         "1e939cd6-0955-4135-a9e5-c50faef01437",
