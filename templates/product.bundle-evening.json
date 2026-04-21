@@ -561,7 +561,7 @@
       ],
       "name": "Multipack Section",
       "settings": {
-        "bundle_tem": true,
+        "bundle_tem": false,
         "hide_subtitle": false,
         "title": "Real Benefits You Can Feel",
         "description": "",
