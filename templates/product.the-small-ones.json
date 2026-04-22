@@ -412,7 +412,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242608.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_14.png",
+            "image": "shopify://shop_images/Cordyceps.png",
             "title": "Cordyceps",
             "subtitle": "Energy & Performance",
             "qty": "10g - 5 servings",
@@ -435,7 +435,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242259.png",
-            "image": "shopify://shop_images/image_2862_1_3519b502-b8f2-43a5-b828-05e4065f6266.png",
+            "image": "shopify://shop_images/Lion_s_mane.png",
             "title": "LION'S MANE",
             "subtitle": "Focus & Clarity",
             "qty": "10g - 5 servings",
@@ -458,7 +458,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242612.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_16.png",
+            "image": "shopify://shop_images/Reishi.png",
             "title": "Reishi",
             "subtitle": "Relaxation & Sleep",
             "qty": "10g - 5 servings",
@@ -481,7 +481,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242259_1.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_18.png",
+            "image": "shopify://shop_images/Turkey_Tail.png",
             "title": "Turkey Tail",
             "subtitle": "Gut Health & Digestion",
             "qty": "10g - 5 servings",
@@ -504,7 +504,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242610.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_15.png",
+            "image": "shopify://shop_images/Tremella.png",
             "title": "TREMELLA",
             "subtitle": "Skin Hydration & Glow",
             "qty": "10g - 5 servings",
@@ -527,7 +527,7 @@
           "settings": {
             "card_bg": "rgba(0,0,0,0)",
             "background_image": "shopify://shop_images/Frame_2147242611.png",
-            "image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_17.png",
+            "image": "shopify://shop_images/Chage.png",
             "title": "Chaga",
             "subtitle": "Immunity & Defence",
             "qty": "10g - 5 servings",

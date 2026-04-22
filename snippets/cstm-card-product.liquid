@@ -160,7 +160,35 @@ First image: {{ images[0].image }} <br>
 </a>
     {% else %} {% endcomment %}
     <a href="{{ product_ref.url }}" tabindex="-1" class="product-card__link" data-product-link title="{{ 'product.go_to_title' | t : title: product_ref.title }}">
-        {{ media }}
+      {{ media }}
+        <div class="variant-images" style="background: {{ product_ref.metafields.custom.collecetion_bg | default: '#FAF7ED' }}">
+         {% if product_ref.variants.size > 1 %}
+           {% for variant in product_ref.variants %}
+             {% if variant.image %}
+               <img 
+                 src="{{ variant.image | image_url: width: 1600 }}" 
+                 alt="{{ variant.title }}"
+                 class="variant-img {% if variant.id == largest_variant.id %}is-active{% endif %}"
+                 data-variant-id="{{ variant.id }}"
+               >
+             {% endif %}
+           {% endfor %}
+         {% else %}
+          {% assign variant = product_ref.selected_or_first_available_variant %}
+          {% if variant.featured_image %}
+            {% assign img = variant.featured_image %}
+          {% else %}
+            {% assign img = product_ref.featured_image %}
+          {% endif %}
+          <img 
+            src="{{ img | image_url: width: 1600 }}" 
+            alt="{{ variant.title }}"
+            class="product-img is-active"
+            data-variant-id="{{ variant.id }}"
+          >
+         {% endif %}
+         <span class="cstm-product_tag">{{ product_ref.metafields.custom.collection_tag | join: ', ' }}</span>
+        </div>
         {% comment %} {{ media }} {% endcomment %}
     </a>
     {% comment %} {% endif %} {% endcomment %}
@@ -479,7 +507,7 @@ document.querySelectorAll('.product-card__add-to-cart--form').forEach(form => {
 
 {% comment %} ====== collection page images change on variant change ===== {% endcomment %}
 
-<script>
+{% comment %} <script>
 // Place this in your theme.js or a <script> tag at the bottom of the section
 document.addEventListener('DOMContentLoaded', () => {
   // Listen for Shopify's native variant change event
@@ -501,17 +529,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+</script> {% endcomment %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll("product-card").forEach(card => {
+
+    const select = card.querySelector(".product-card__variant-select");
+    const images = card.querySelectorAll(".variant-img");
+
+    if (!select || images.length === 0) return;
+
+    function updateVariantImage() {
+      const selectedVariantId = select.value;
+
+      images.forEach(img => {
+        img.classList.toggle(
+          "is-active",
+          img.dataset.variantId === selectedVariantId
+        );
+      });
+    }
+
+    // Initial run
+    updateVariantImage();
+
+    // On change
+    select.addEventListener("change", updateVariantImage);
+
+  });
+
+});
 </script>
 
 
 {% style %}
 
-.variant-metafield-image {
-  display: none;
+.product-card__media {
+    display: none;
 }
 
-.variant-metafield-image.is-active {
-  display: block;
+.variant-img { display: none; }
+.variant-img.is-active { display: block; }
+
+.variant-images {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
 }
+
+.variant-images img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 
 {% endstyle %}

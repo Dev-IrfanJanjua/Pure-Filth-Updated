@@ -4044,3 +4044,385 @@ body.template--collection .header:after {
 html{
   scroll-behavior: smooth;
 }
+
+/* ===== Cart drawer and policies ======== */
+
+p.cart-drawer__title {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-family: "PP Formula";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h3.cart-item__title a.full-unstyled-link {
+    color: #000;
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.cart-item__actions--price .cart-item__price {
+    margin: 0;
+    color: #000;
+    font-family: "GT Cinetype";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.cart-drawer .cart-item__media .media {
+    aspect-ratio: 1;
+    background: #F8F6EF;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+p.cart-item__plan.vvv {
+    color: #000;
+    font-family: "GT Cinetype";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.cart-drawer__summary-content span {
+    color: #000;
+    font-family: PP Formula;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .72px !important;
+    text-transform: uppercase;
+}
+
+p.cart__summary-tax {
+    color: #000;
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    margin: 0;
+}
+
+.cart-drawer__summary-actions a, 
+.cart-drawer__summary-actions button {
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 75px;
+    letter-spacing: 0;    
+}
+
+cart-drawer .cart-item__price {
+    margin: 5px 0px;
+    font-size: 14px;
+}
+
+.shopify-policy__title h1 {
+    color: #000;
+    font-family: "PP Formula";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.shopify-policy__body .rte p {
+    color: #000;
+    font-family: "GT Cinetype";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 10px;
+}
+
+.shopify-policy__body h3 span {
+    color: #000;
+    font-family: "PP Formula";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 25px 0 20px;
+    display: block;
+}
+
+.product-card__media >img:nth-child(2) {
+    display: none !important;
+}
+
+.section__head--buttons a.button {
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 75px;
+    letter-spacing: 0;
+}
+
+.swiper-buttons.card-slider__buttons button.swiper-button {
+    width: 20px;
+    height: 20px;
+}
+
+.swiper-buttons.card-slider__buttons button.swiper-button svg {
+    width: 100%;
+    height: 100%;
+}
+
+button.button.cart__summary-button.button--full {
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 75px;
+    letter-spacing: 0;
+}
+
+.cart__dynamic-checkout.additional-checkout-buttons {
+    border-radius: 75px;
+    overflow: hidden;
+}
+
+small#shopify-buyer-consent {
+    font-family: "GT Cinetype";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+h2.section__heading.h3,
+h4.cart__title.h4 {
+    font-family: "PP Formula";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.template--cart h6.cart__summary-total.h6 {
+    margin-bottom: 20px;
+}
+
+.template--cart .cart-item__content-area .media {
+    background: #FAF7ED;
+    padding: 5px;
+}
+
+.template--cart .product-card__media {
+    background: #FAF7ED;
+}
+
+.template--cart .product-card__actions {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart__subtitle h2, 
+.cart__subtitle em,
+.cart-drawer__empty-text h2,
+.cart-drawer__empty-text em {
+    color: #000;
+    font-family: "PP Formula";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p.cart__empty-description,
+.cart-drawer__empty-desc {
+    color: #000;
+    text-align: center;
+    font-family: "GT Cinetype";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 1;
+}
+
+a.button.cart__empty-button,
+.cart-drawer__empty a.button {
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #000;
+    color: #fff;
+    letter-spacing: normal;
+    border-radius: 75px;
+}
+
+a.button.cart__empty-button:hover,
+.cart-drawer__empty a.button:hover {
+   background: #fff;
+    color: #000;
+}
+
+.cart__items__head span {
+    color: #000 !important;
+    text-align: center;
+    font-family: "GT Cinetype";
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110% !important;
+    opacity: 1 !important;
+}
+
+.cart-item__price-content + dl {
+    margin-top: 10px !important;
+}
+
+span.cart-item__price.ccc,
+h6.cart__summary-total.h6 {
+    color: #000 !important;
+    font-family: "GT Cinetype";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110% !important;
+}
+
+.cart-item__price-content + dl dd {
+    opacity: 1;
+    color: #000;
+    text-align: center;
+    font-family: "GT Cinetype";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+.breadcrumbs__list li a, .breadcrumbs__list li span {
+    font-family: "GT Cinetype";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+li.breadcrumbs__separator {
+    font-size: 18px;
+}
+
+.cart__main-header a.link,
+.cart__summary-actions a.button.button--text {
+    color: #000;
+    text-align: center;
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+cart-drawer .cart-item__price {
+    margin-top: 10px !important;
+}
+
+span.cart-drawer__total-price {
+    color: #000;
+    text-align: center;
+    font-family: "GT Cinetype";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+@media screen and (max-width: 768px) {
+  
+p.cart-drawer__title {
+    font-size: 40px;
+}
+
+.shopify-policy__title h1{
+  font-size: 40px;
+}
+
+.shopify-policy__body h3 span {
+    font-size: 24px;
+    margin: 15px 0 10px;
+}
+
+.shopify-policy__body .rte p {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 5px;
+}
+
+.template--cart .cart-item {
+    padding-bottom: 40px;
+}
+
+.section.layout-1 .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-feed:not(.section-featured-products) .section__head {
+    margin: 0;
+}
+
+.section.layout-1 .section__foot {
+    margin-top: 50px;
+}
+
+.template--cart .cart-item__info {
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.template--cart .cart-item__info dl:last-child {
+    margin: 0;
+}
+
+.template--cart .cart-item__price-content + dl dd {
+    font-size: 12px;
+}
+
+.template--cart .cart-item__price-content .cart-item__price.ccc {
+    margin: 0;
+}
+
+.template--cart .cart__items-grid .cart-item .cart-item__discounted-prices {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.template--cart h6.cart__summary-total.h6 {
+    margin-bottom: 10px;
+}
+
+}

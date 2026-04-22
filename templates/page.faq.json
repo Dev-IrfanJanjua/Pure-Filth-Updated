@@ -37,6 +37,7 @@
     },
     "seo_content_jjGDDL": {
       "type": "seo-content",
+      "disabled": true,
       "settings": {
         "heading": "Frequently asked questions",
         "heading_size": "h3",
@@ -295,6 +296,7 @@
         "topic_eYkKR7",
         "topic_DdFVb8"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h3",
@@ -302,6 +304,134 @@
         "color_scheme": "scheme-1",
         "spacing_top": "0",
         "spacing_bottom": "4"
+      }
+    },
+    "pdp_faqs_Jdbhrw": {
+      "type": "pdp-faqs",
+      "blocks": {
+        "accordion_item_G8TGBm": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Do your products actually work?",
+            "answer": "<p>We didn’t spend two years hunting down the best mushrooms on the planet for a placebo. Each one is packed with bioactive compounds that support energy, focus, stress, gut health and skin. You’ll feel it.</p><p>If you don’t, you’re covered by our 30 day money back guarantee.</p>"
+          }
+        },
+        "accordion_item_wKmzRV": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "What do they taste like?",
+            "answer": "<p>Not gonna lie, they taste like mushrooms. Earthy, a bit bold, not your vanilla latte.</p><p>If you’re fussy, mix it into coffee, smoothies or something sweet. If not, neck it and get on with your life.</p>"
+          }
+        },
+        "accordion_item_7fxCrL": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How do I take Pure Filth mushrooms and what with?",
+            "answer": "<p>Chuck it in your coffee, smoothie or shake. Whatever you’re already having.</p><p>Hot or cold, doesn’t matter. Just get it in and crack on.</p>"
+          }
+        },
+        "accordion_item_7tpfUk": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Can I take them daily and can I stack them?",
+            "answer": "<p>Daily, baby. One serving is 2g. You can go up to 6g per day, so feel free to mix and match if you want to level things up. Or keep it simple.</p>"
+          }
+        },
+        "accordion_item_ULzQhU": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are your mushrooms third party tested?",
+            "answer": "<p>Damn right. Every batch is tested for quality, potency, and purity. No fillers, no nasties, just the good stuff.</p>"
+          }
+        },
+        "accordion_item_QV4GPr": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "What’s the difference between fruiting body and mycelium?",
+            "answer": "<p>Fruiting body is where the bioactive compounds live. That’s the part you actually want.</p><p>Mycelium is the root like structure often grown on grains, which means more filler and less fungi. Not our vibe.</p>"
+          }
+        },
+        "accordion_item_9cgV7F": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How are your mushrooms made and is there alcohol in them?",
+            "answer": "<p>We use a dual extraction method using water and alcohol to pull out all the good stuff.</p><p>The final product contains zero alcohol. Just pure, potent mushroom powder.</p>"
+          }
+        },
+        "accordion_item_iym9Dh": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are your mushrooms legal?",
+            "answer": "<p>Relax. These are functional mushrooms, not the psychedelic kind.</p><p>Think focus and calm, not seeing sounds.</p>"
+          }
+        },
+        "accordion_item_hUY8jx": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are they vegan, gluten free and sugar free?",
+            "answer": "<p>Yes, yes and yes. No animal products, no gluten, no added sugar. Just pure fungi.</p>"
+          }
+        },
+        "accordion_item_yccbae": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How do I know which mushroom is right for me?",
+            "answer": "<p>Need focus, go for Lion’s Mane.<br/>Want to relax, Reishi has you covered.<br/>Low on energy, Cordyceps is your go to.<br/>For immunity, Chaga.<br/>For skin, Tremella.<br/>For gut health, Turkey Tail.</p><p>Want us to do the thinking for you? Take the quiz and we’ll point you in the right direction.</p>"
+          }
+        },
+        "accordion_item_G6Bq9Y": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How should I store them?",
+            "answer": "<p>Keep them cool, dry, and sealed. Moisture will make the powder clump and no one wants that.</p>"
+          }
+        },
+        "accordion_item_MELiQH": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Can I take them if I’m pregnant or breastfeeding?",
+            "answer": "<p>Best to check with your doctor first. We’re all for feeling good, but safety comes first.</p>"
+          }
+        },
+        "accordion_item_JVWnCx": {
+          "type": "accordion_item",
+          "settings": {
+            "question": "30 day money back guarantee",
+            "answer": "<p>Try it for 30 days. If you’re not feeling the filth, we’ll make it right.</p><p>No drama. Just drop us a message at <a href=\"mailto:hello@getpurefilth.com\" target=\"_blank\" title=\"mailto:hello@getpurefilth.com\">hello@getpurefilth.com</a> and we’ll take a look.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_G8TGBm",
+        "accordion_item_wKmzRV",
+        "accordion_item_7fxCrL",
+        "accordion_item_7tpfUk",
+        "accordion_item_ULzQhU",
+        "accordion_item_QV4GPr",
+        "accordion_item_9cgV7F",
+        "accordion_item_iym9Dh",
+        "accordion_item_hUY8jx",
+        "accordion_item_yccbae",
+        "accordion_item_G6Bq9Y",
+        "accordion_item_MELiQH",
+        "accordion_item_JVWnCx"
+      ],
+      "name": "FAQs Section",
+      "settings": {
+        "bg_color": "",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "mbl_padding_top": 40,
+        "mbl_padding_bottom": 40,
+        "bg_color_faqs": "#F8F6EF",
+        "item_border": "#f8f6ef",
+        "heading": "Have Questions? We’ve Got Answers",
+        "description": "",
+        "button_text": "",
+        "button_link": "#",
+        "button_icon": "shopify://shop_images/Frame_2147242027_1.svg",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff"
       }
     },
     "accordions": {
@@ -345,6 +475,7 @@
     "e4a22221-96e8-47eb-8e41-ff9780104ed3",
     "seo_content_jjGDDL",
     "15d37dcd-dfe5-404c-80f1-8f76c2017e23",
+    "pdp_faqs_Jdbhrw",
     "accordions"
   ]
 }
