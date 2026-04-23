@@ -15,10 +15,11 @@
       "type": "cart-drawer",
       "settings": {
         "card_media_aspect_ratio": "3/4",
-        "cart_title": "<h2>It’s a little<br><em>empty</em> here</h2>",
+        "cart_title": "<h2>It’s a little<br/><em>empty</em> here</h2>",
         "cart_desc": "You cart is currently empty",
+        "use_icon": true,
         "button_text": "Start Shopping",
-        "button_url": "shopify://collections"
+        "button_url": "shopify://collections/all"
       }
     },
     "quick-cart-drawer": {

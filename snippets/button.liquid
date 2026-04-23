@@ -71,6 +71,22 @@ Usage:
         {% render 'icon', icon_name: icon_name, class: 'icon', text: value %}
       {%- else -%}
         {{- value -}}
+        {% if show_icon or use_icon or use_icon %}
+          <span class="cstm_arrow-icon">
+            <svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="50" height="36" rx="18" fill="white"/>
+              <path d="M12 17.6621H38M38 17.6621L30 9.66211M38 17.6621L30 25.6621" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        {% endif %}
+        {% comment %} {% if use_icon %}
+          <span class="cstm_arrow-icon">
+            <svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="50" height="36" rx="18" fill="white"/>
+              <path d="M12 17.6621H38M38 17.6621L30 9.66211M38 17.6621L30 25.6621" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        {% endif %} {% endcomment %}
       {%- endif -%}
 
     </a>
@@ -92,8 +108,17 @@ Usage:
         </div>
       {%- endif -%}
 
+      
+      {% if use_icon  %}
+        <div class="cstm_cart-icon">
+          <svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="50" height="36" rx="18" fill="white"/>
+            <path d="M12 17.6621H38M38 17.6621L30 9.66211M38 17.6621L30 25.6621" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      {% endif %}
 
-      {% if show_icon %}
+      {% if show_icon  %}
         <div class="cstm_buy-btn-icon cstm_buy-btn-icon-abs">
           <svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="50" height="36" rx="18" fill="white"/>

@@ -30,7 +30,7 @@
 
           {%- liquid
             assign button_value = 'theme.actions.start_shopping' | t
-            render 'button', type: 'link', value: button_value, href: routes.all_products_collection_url, button_style: 'button--outlined', class: 'button cart__empty-button' -%}
+            render 'button', type: 'link', value: button_value, href: routes.all_products_collection_url, button_style: 'button--outlined', class: 'button cart__empty-button', use_icon: section.settings.use_icon -%}
         {%- endif -%}
       </div>
 
@@ -149,7 +149,7 @@
 
                 {%- liquid
                   assign value = 'cart.checkout' | t
-                  render 'button', type: 'submit', name: 'checkout', value: value, class: 'button cart__summary-button', fullwidth: true, style: 'solid'
+                  render 'button', type: 'submit', name: 'checkout', value: value, class: 'button cart__summary-button', fullwidth: true, style: 'solid', use_icon: section.settings.use_icon
                   assign value = nil
                 -%}
                 {%- if settings.enable_dynamic_checkout and additional_checkout_buttons -%}
@@ -178,6 +178,11 @@
   "name": "t:sections.main-cart.name",
   "tag": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_icon",
+      "label": "Use Icon"
+    },
     {
       "type": "richtext",
       "id": "empty_cart",

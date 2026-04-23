@@ -58,7 +58,8 @@
         class: 'button custom_class',
         button_style: section.settings.button_style,
         value: section.settings.button_label,
-        href: section.settings.button_link
+        href: section.settings.button_link,
+        show_icon: section.settings.show_icon
       -%}
     {%- endcapture -%}
   {%- endif -%}
@@ -69,7 +70,7 @@
 
         {%- if section.settings.heading != blank or section_button != blank -%}
           <div class="section__head">
-            <div class="section__head-title">
+            <div class="section__head-title aaaaaa">
               {%- if section.settings.subheading != blank -%}
                 <span class="h6">{{- section.settings.subheading -}}</span>
               {%- endif -%}

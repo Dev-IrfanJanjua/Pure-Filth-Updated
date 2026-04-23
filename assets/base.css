@@ -4112,6 +4112,10 @@ p.cart__summary-tax {
     font-weight: 400;
     line-height: 110%;
     margin: 0;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
 }
 
 .cart-drawer__summary-actions a, 
@@ -4170,7 +4174,7 @@ cart-drawer .cart-item__price {
 }
 
 .section__head--buttons a.button {
-    font-family: "GT Cinetype";
+    font-family: GT Cinetype;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -4178,6 +4182,29 @@ cart-drawer .cart-item__price {
     text-transform: uppercase;
     border-radius: 75px;
     letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+
+.template--cart h6.cart__summary-total.h6 span:first-of-type {
+    text-transform: uppercase;
+}
+
+.section__head--buttons a.button .cstm_arrow-icon{
+  transition: all 0.3s ease;
+}
+
+.section__head--buttons a.button:hover{
+  transform: translatey(-2px);
+  background: #000;
+  color: #fff;
+}
+
+.section__head--buttons a.button:hover .cstm_arrow-icon{
+  transform: translatex(4px);
 }
 
 .swiper-buttons.card-slider__buttons button.swiper-button {
@@ -4191,7 +4218,7 @@ cart-drawer .cart-item__price {
 }
 
 button.button.cart__summary-button.button--full {
-    font-family: "GT Cinetype";
+    font-family: GT Cinetype;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -4199,6 +4226,30 @@ button.button.cart__summary-button.button--full {
     text-transform: uppercase;
     border-radius: 75px;
     letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 18px 20px;
+    transition: all 0.3s ease;
+}
+
+button.button.cart__summary-button.button--full:hover{
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+button.button.cart__summary-button.button--full:hover .cstm_cart-icon{
+  transform: translate(4px, -50%);
+}
+
+.cstm_cart-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
 }
 
 .cart__dynamic-checkout.additional-checkout-buttons {
@@ -4272,7 +4323,7 @@ p.cart__empty-description,
 
 a.button.cart__empty-button,
 .cart-drawer__empty a.button {
-    font-family: "GT Cinetype";
+    font-family: GT Cinetype;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -4282,6 +4333,28 @@ a.button.cart__empty-button,
     color: #fff;
     letter-spacing: normal;
     border-radius: 75px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+a.button.cart__empty-button:hover,
+.cart-drawer__empty a.button:hover{
+  background: #000 !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+a.button.cart__empty-button .cstm_arrow-icon,
+.cart-drawer__empty a.button .cstm_arrow-icon{
+  transition: all 0.3s ease;
+}
+
+a.button.cart__empty-button:hover .cstm_arrow-icon,
+.cart-drawer__empty a.button:hover .cstm_arrow-icon{
+  transform: translateX(4px);
 }
 
 a.button.cart__empty-button:hover,
@@ -4359,6 +4432,20 @@ span.cart-drawer__total-price {
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
+}
+
+.cart__main-header a.link {
+    display: none;
+}
+
+.cart__summary-note label {
+    color: #000;
+    font-family: "GT Cinetype";
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 110% !important;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {

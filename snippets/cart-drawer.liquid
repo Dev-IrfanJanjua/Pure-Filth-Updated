@@ -92,7 +92,7 @@
               {%- liquid
                 if section.settings.button_text != blank and section.settings.button_url != blank
                   assign value = section.settings.button_text
-                  render 'button', type: 'link', href: section.settings.button_url, value: value, style: 'solid', fullwidth: false, class: 'button', button_style: 'button--outlined'
+                  render 'button', type: 'link', href: section.settings.button_url, value: value, style: 'solid', fullwidth: false, class: 'button', button_style: 'button--outlined', use_icon: section.settings.use_icon
                   assign value = nil
                 endif
               -%}

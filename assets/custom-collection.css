@@ -306,6 +306,7 @@ a.collection_blocks__item {
     align-items: center;
     justify-content: center;
     transition: all ease 0.3s;
+    text-transform: uppercase;
 }
 
 a.collection_blocks__item.active,

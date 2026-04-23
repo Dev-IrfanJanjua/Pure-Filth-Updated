@@ -12,6 +12,7 @@
     "main": {
       "type": "main-cart",
       "settings": {
+        "use_icon": true,
         "empty_cart": "<h2>It’s a little<br/><em>empty</em> here</h2>",
         "section_width": "max-w-page",
         "color_scheme": "",
@@ -22,13 +23,14 @@
     "13608375-b086-4634-863b-df6b4d0bc7ca": {
       "type": "product-recommendations",
       "settings": {
+        "show_icon": true,
         "layout": "layout-1",
         "enable_slideshow_overflow": false,
         "heading": "You may also like",
         "heading_size": "h3",
         "subheading": "",
         "button_label": "View all",
-        "button_link": "",
+        "button_link": "shopify://collections/all",
         "button_style": "button--filled",
         "show_navigation_arrows": true,
         "slider_autoplay": 0,
