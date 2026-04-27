@@ -1,3 +1,57 @@
+.template--contact.scroll-y-0 img.header__logo-image-transparent.new,
+.template--faq.scroll-y-0 img.header__logo-image-transparent.new,
+.template--about-us.scroll-y-0 img.header__logo-image-transparent.new,
+.template--blog.scroll-y-0 img.header__logo-image-transparent.new {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+.template--contact.scroll-y-0 img.header__logo-image.new,
+.template--faq.scroll-y-0 img.header__logo-image.new,
+.template--about-us.scroll-y-0 img.header__logo-image.new,
+.template--blog.scroll-y-0 img.header__logo-image.new {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+.template--contact.scroll-y-0 .cstm_header ul.header__nav-items li.header__nav-item:last-of-type a,
+.template--faq.scroll-y-0 .cstm_header ul.header__nav-items li.header__nav-item:last-of-type a,
+.template--about-us.scroll-y-0 .cstm_header ul.header__nav-items li.header__nav-item:last-of-type a,
+.template--blog.scroll-y-0 .cstm_header ul.header__nav-items li.header__nav-item:last-of-type a,
+.template--index .cstm_header ul.header__nav-items li.header__nav-item:last-of-type a{
+    background: #fff;
+    color: #000;
+}  
+
+.template--contact.scroll-y-0 .cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg path,
+.template--faq.scroll-y-0 .cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg path,
+.template--about-us.scroll-y-0 .cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg path,
+.template--blog.scroll-y-0 .cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg path,
+.template--index .cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg path{
+    fill: #fff;
+    stroke: #fff;
+}
+
+.template--contact.scroll-y-0 .cstm_header li.header__utils-item:not(.header__utils-item--cart) a.header__utils-link.text--link,
+.template--faq.scroll-y-0 .cstm_header li.header__utils-item:not(.header__utils-item--cart) a.header__utils-link.text--link,
+.template--about-us.scroll-y-0 .cstm_header li.header__utils-item:not(.header__utils-item--cart) a.header__utils-link.text--link,
+.template--blog.scroll-y-0 .cstm_header li.header__utils-item:not(.header__utils-item--cart) a.header__utils-link.text--link,
+.template--index .cstm_header li.header__utils-item:not(.header__utils-item--cart) a.header__utils-link.text--link{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.template--contact.scroll-y-0 .cstm_header a.header__nav-link.js-nav-link.text--link,
+.template--faq.scroll-y-0 .cstm_header a.header__nav-link.js-nav-link.text--link,
+.template--about-us.scroll-y-0 .cstm_header a.header__nav-link.js-nav-link.text--link,
+.template--blog.scroll-y-0 .cstm_header a.header__nav-link.js-nav-link.text--link,
+.template--index .cstm_header a.header__nav-link.js-nav-link.text--link{
+    color: #fff;
+}
+
+
 .cstm_header {
     background: #FFFFFF33 !important;
     /* backdrop-filter: blur(60px); */
@@ -24,10 +78,6 @@
     padding: 12px 0;
 }
 
-.template--index .cstm_header a.header__nav-link.js-nav-link.text--link{
-    color: #fff;
-}
-
 .cstm_header ul.header__nav-items {
     gap: 18px;
 }
@@ -47,11 +97,6 @@
     border: 1px solid #000;
     padding: 11.3px 25px;
     border-radius: 80px;
-}
-
-.template--index .cstm_header li.header__utils-item:not(.header__utils-item--cart) a.header__utils-link.text--link{
-    color: #fff;
-    border: 1px solid #fff;
 }
 
 .cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a:before,
@@ -81,11 +126,6 @@
 .cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg path{
     fill: #000;
     stroke: #000;
-}
-
-.template--index .cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a svg path{
-    fill: #fff;
-    stroke: #fff;
 }
 
 
@@ -125,11 +165,6 @@
     text-transform: uppercase;
     border-radius: 80px;
 }
-
-.template--index .cstm_header ul.header__nav-items li.header__nav-item:last-of-type a{
-    background: #fff;
-    color: #000;
-}  
 
 .cstm_header ul.header__nav-items li.header__nav-item:last-of-type a:before{
     display: none;
