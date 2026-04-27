@@ -239,12 +239,17 @@
         "instagram_icon": "shopify://shop_images/Social_Icons_1.svg",
         "instagram_link": "https://www.instagram.com/getpurefilth"
       }
+    },
+    "apps_9PWKCF": {
+      "type": "apps",
+      "settings": {}
     }
   },
   "order": [
     "trust_indicators_DXmKCE",
     "footer",
     "footer_JadcgE",
-    "cstm_footer_xGEX8N"
+    "cstm_footer_xGEX8N",
+    "apps_9PWKCF"
   ]
 }

@@ -83,9 +83,16 @@
     {% if variant_tag != blank %}
       <span class="swatch-variant-tag" style="--tag_bg-color: {{ block.settings.tag_bg }}; --tag-color: {{ block.settings.tag_color }} " >{{ variant_tag }}</span>
     {% endif %}
-    <span {% unless show_label %}class="visually-hidden"{% endunless %}>
+    {% comment %} <span {% unless show_label %}class="visually-hidden"{% endunless %}>
       {{- value -}}
-    </span>
+    </span> {% endcomment %}
+    <span {% unless show_label %}class="visually-hidden"{% endunless %}>
+  {% assign value_parts = value | split: '(' %}
+  <span style="font-weight: 900 !important; color:#000; font-size: 16px;">{{ value_parts[0] }}</span>
+  {% if value_parts[1] %}
+    <span style="display: block; white-space: nowrap; font-size:10px !important;">({{ value_parts[1] }}</span>
+  {% endif %}
+</span>
   </label>
 {% endif %}
 

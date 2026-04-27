@@ -30,6 +30,7 @@
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8": {
           "type": "buy_buttons",
           "settings": {
+            "show_icon": false,
             "spacing_bottom": "1",
             "show_quantity": true,
             "quantity_type": "inline",
@@ -117,6 +118,8 @@
           "type": "variant_picker",
           "settings": {
             "title": "Variant picker",
+            "tag_bg": "#1cc84d",
+            "tag_color": "#ffffff",
             "spacing_bottom": "1",
             "variant_picker_type": "buttons",
             "show_variant_images": false,
@@ -128,7 +131,18 @@
         "1e939cd6-0955-4135-a9e5-c50faef01437": {
           "type": "purchase_options",
           "settings": {
-            "spacing_bottom": "1"
+            "headline": "Purchase Options",
+            "sub_title": "Subscribe & Save",
+            "headline_bg_color": "",
+            "headline_text_color": "#4e377d",
+            "bg_color": "",
+            "icon_color": "#4e377d",
+            "spacing_bottom": "1",
+            "list_text_1": "",
+            "list_text_2": "",
+            "list_text_3": "",
+            "list_text_4": "",
+            "list_text_5": ""
           }
         },
         "e6d841d6-2f71-40b3-956a-912df13f9f6e": {
@@ -215,6 +229,8 @@
         "goback_WQBHtg"
       ],
       "settings": {
+        "custoom-class": false,
+        "aspect_one": false,
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",
         "product_media_with_thumbs": "desktop_and_mobile",
@@ -298,6 +314,7 @@
     "recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "show_icon": false,
         "layout": "layout-1",
         "enable_slideshow_overflow": false,
         "heading": "You may also like",
@@ -320,12 +337,31 @@
     "166904322806a89075": {
       "type": "apps",
       "settings": {}
+    },
+    "apps_iKYmrW": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_MUy3Y4": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_MUy3Y4"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
     "complete_the_set_LAN4cq",
     "recommendations",
-    "166904322806a89075"
+    "166904322806a89075",
+    "apps_iKYmrW"
   ]
 }

@@ -16,12 +16,6 @@
           "type": "custom-reviews",
           "settings": {}
         },
-        "pdp_tag_kttQH3": {
-          "type": "pdp_tag",
-          "settings": {
-            "pdp_tag": "Relax & CLARITY"
-          }
-        },
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8": {
           "type": "title",
           "settings": {
@@ -78,6 +72,8 @@
           "type": "variant_picker",
           "settings": {
             "title": "Variant picker",
+            "tag_bg": "#1cc84d",
+            "tag_color": "#ffffff",
             "spacing_bottom": "1",
             "variant_picker_type": "buttons",
             "show_variant_images": false,
@@ -90,6 +86,7 @@
           "type": "purchase_options",
           "settings": {
             "headline": "Most popular: Get 20% off",
+            "sub_title": "Subscribe & Save",
             "headline_bg_color": "#ED87D0",
             "headline_text_color": "#000000",
             "bg_color": "#FFE6F9",
@@ -256,7 +253,6 @@
       },
       "block_order": [
         "custom_reviews_9gTjYL",
-        "pdp_tag_kttQH3",
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
         "custom_richtext_a9Tp7h",
         "custom_list_JjVr6n",
@@ -282,6 +278,7 @@
       ],
       "settings": {
         "custoom-class": true,
+        "aspect_one": false,
         "product_media_layout": "product__media-layout--full",
         "product_media_layout_mobile": "product__media-layout--full--sm",
         "product_media_with_thumbs": "none",
@@ -366,6 +363,7 @@
       "type": "product-recommendations",
       "disabled": true,
       "settings": {
+        "show_icon": false,
         "layout": "layout-1",
         "enable_slideshow_overflow": false,
         "heading": "You may also like",
@@ -452,7 +450,6 @@
       "name": "Story Behind Section",
       "settings": {
         "pdp": true,
-        "abs_image": "shopify://shop_images/0st7MqmOLuNNmDy9SoFwE67dXmM.png_1.png",
         "image": "shopify://shop_images/ePJSJxHeS4ly70wLMQTfrIz4sM.png_4_11ca8d5c-7324-4d7e-839b-0a981a88870f.png",
         "title": "<p>HYDRATE YOUR SKIN, <br/>NATURALLY</p>",
         "description": "<p>Tremella has long been valued for its powerful skin-supporting properties, holding up to 500× its weight in water.</p><ul><li>Naturally rich in polysaccharides associated with skin hydration.</li><li>Helps support the body’s natural collagen production.</li><li>Supports smoother, more hydrated and resilient skin.</li><li>Traditionally used in beauty and wellness for skin support.</li></ul>",
@@ -957,6 +954,24 @@
       "type": "apps",
       "disabled": true,
       "settings": {}
+    },
+    "apps_p8Xekw": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_ahW6AU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_ahW6AU"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -972,6 +987,7 @@
     "routine_MaXLqX",
     "testimonial_YNU6TX",
     "pdp_faqs_tiNRVd",
-    "166904322806a89075"
+    "166904322806a89075",
+    "apps_p8Xekw"
   ]
 }

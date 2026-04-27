@@ -1,0 +1,345 @@
+{% style %}
+.cstm-contact-section-{{ section.id }} {
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  background: {{ section.settings.section_bg }};
+}
+
+.cstm-contact-container {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cstm-contact-wrapper {
+  background: {{ section.settings.wrapper_bg }};
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.cstm-contact_title {
+    color: #000;
+    text-align: center;
+    font-family: "PP Formula";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+}
+
+.cstm-contact-form-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cstm-contact-content_title {
+    margin-bottom: 24px;
+    color: var(--Black, #111);
+    font-family: "PP Formula";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cstm-contact-form-row {
+    display: flex;
+    gap: 12px;
+}
+
+form#contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cstm-contact-form-row input {
+  width: 100%;
+}
+
+.cstm-contact-field {
+    max-width: 100%;
+    width: 100%;
+}
+
+.cstm-contact-field input,
+.cstm-contact-field textarea {
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    color: #757575;
+    font-family: "GT Cinetype";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.42px;
+    text-transform: capitalize;
+    min-height: 50px;
+}
+
+.cstm-contact-field input::placeholder,
+.cstm-contact-field textarea::placeholder {
+    color: #757575;
+    font-family: "GT Cinetype";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    letter-spacing: -0.42px;
+    text-transform: capitalize;
+}
+
+.cstm-contact-field label {
+    color: #141414;
+    font-family: "GT Cinetype";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.cstm-contact-submit {
+    margin-top: 4px;
+}
+
+.cstm-contact-submit button {
+    width: 100%;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 1px solid #000;
+}
+
+.cstm-contact-submit button:hover {
+    background: #fff;
+    color: #000;
+}
+
+#contact_message {
+  resize: none;
+}
+
+p.cstm-contact-success {
+    font-family: "GT Cinetype";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: green;
+    margin: 0;
+}
+
+#contact_email{
+  text-transform: lowercase;
+}
+
+@media (max-width: 768px) {
+  .cstm-contact-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  .cstm-contact-container {
+    padding-top: 24px;
+}
+
+.cstm-contact_title {
+    font-size: 32px;
+    line-height: normal;
+    margin: 0 0 24px;
+}
+
+.cstm-contact-wrapper {
+    padding: 24px 16px;
+}
+
+.cstm-contact-content_title {
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.cstm-contact-form-row {
+    flex-direction: column;
+}
+
+.cstm-contact-field label {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+
+p.cstm-contact-success {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+}
+
+{% endstyle %}
+
+<div class="cstm-contact-section cstm-contact-section-{{ section.id }}">
+  <div class="page-width">
+    <div class="cstm-contact-container">
+      <div class="cstm-contact_title">
+        {{ section.settings.section_title }}
+      </div>
+  
+      <div class="cstm-contact-wrapper">
+        
+        <div class="cstm-contact-form-content">
+          
+          {% if section.settings.content_title != blank %}
+            <h2 class="cstm-contact-content_title">{{ section.settings.content_title }}</h2>
+          {% endif %}
+  
+          {% form 'contact' %}
+
+            {% if form.posted_successfully? %}
+              <p class="cstm-contact-success">Thank you! Your message has been sent successfully.</p>
+            {% endif %}
+
+            {% if form.errors %}
+              <div class="cstm-contact-errors">
+                {{ form.errors | default_errors }}
+              </div>
+            {% endif %}
+            
+            <div class="cstm-contact-form-row">
+              <div class="cstm-contact-field">
+                <label for="contact_name">Name</label>
+                <input type="text" name="contact[name]" id="contact_name" placeholder="Enter Your Name">
+              </div>
+              <div class="cstm-contact-field">
+                <label for="contact_email">Email</label>
+                <input type="email" name="contact[email]" 
+                  id="contact_email" 
+                  placeholder="Enter Your Email" 
+                  autocomplete="email"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  spellcheck="false"
+                  inputmode="email"
+                  required
+                >
+              </div>
+            </div>
+  
+            <div class="cstm-contact-field">
+              <label for="contact_phone">Phone Number</label>
+              <input type="tel" name="contact[phone]" id="contact_phone" placeholder="Enter Your Phone Number">
+            </div>
+  
+            <div class="cstm-contact-field">
+              <label for="contact_message">Message</label>
+              <textarea name="contact[body]" id="contact_message" placeholder="Write Your Message Here..." rows="6"></textarea>
+            </div>
+  
+            <div class="cstm-contact-submit">
+              <button type="submit">Submit</button>
+            </div>
+  
+          {% endform %}
+  
+        </div>
+  
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Contact Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "GET IN TOUCH"
+    },
+    {
+      "type": "text",
+      "id": "content_title",
+      "label": "Content Title",
+      "default": "SEND US A MESSAGE"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "wrapper_bg",
+      "label": "Content Wrapper Background",
+      "default": "#e9e3d8"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "label": "Padding Top Desktop",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "label": "Padding Bottom Desktop",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding Top Mobile",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding Bottom Mobile",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Contact Section"
+    }
+  ]
+}
+{% endschema %}

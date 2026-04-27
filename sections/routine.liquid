@@ -257,7 +257,7 @@ h4.routine-blcok_head_title {
 }
 
 .section-{{ section.id }} .routine-blcok_img {
-    height: 140px;
+    height: auto;
 }
 
 .routine-block_content {
@@ -321,7 +321,7 @@ h4.routine-blcok_head_title {
 
                     {% if block.settings.image != blank %}
                     <div class="routine-blcok_img">
-                        {{ block.settings.image | image_url: width:800 | image_tag: alt: "image" }}
+                        {{ block.settings.image | image_url: width:800 | image_tag: alt: "image bb" }}
                     </div>
                     {% endif %}
 

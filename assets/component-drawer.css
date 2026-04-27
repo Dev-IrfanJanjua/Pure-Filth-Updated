@@ -483,6 +483,7 @@ html.no-js .drawer__nav details[open] .drawer__nav-link svg {
   letter-spacing: 0.028rem;
   text-transform: capitalize;
   font-family: var(--font-body-family);
+  text-transform:uppercase;
 }
 
 @media (hover: hover) {

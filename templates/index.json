@@ -128,7 +128,7 @@
       "name": "Hero Banner",
       "settings": {
         "main_img": "shopify://shop_images/Frame_2147241933_1.png",
-        "mobile_img": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_6.png",
+        "mobile_img": "shopify://shop_images/Frame_2147242722.png",
         "review_img": "shopify://shop_images/Stars_8.svg",
         "list_icon": "shopify://shop_images/verify.svg",
         "review_text": "2,240+ FILTHY customers",
@@ -153,7 +153,7 @@
           "type": "collection",
           "settings": {
             "collection": "all-filthy-products",
-            "card_link": "shopify://products/lions-mane-mushroom-powder",
+            "pdp_link": "shopify://products/lions-mane-mushroom-powder",
             "tag": "FOCUS",
             "custom_image": "shopify://shop_images/image_2901_1.png",
             "title": "Lion's Mane",
@@ -165,7 +165,7 @@
           "type": "collection",
           "settings": {
             "collection": "powders",
-            "card_link": "shopify://products/cordyceps-mushroom-powder",
+            "pdp_link": "shopify://products/cordyceps-mushroom-powder",
             "tag": "ENERGY",
             "custom_image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_27.png",
             "title": "cordyceps",
@@ -177,7 +177,7 @@
           "type": "collection",
           "settings": {
             "collection": "the-filthy-lineup",
-            "card_link": "shopify://products/reishi-mushroom-powder",
+            "pdp_link": "shopify://products/reishi-mushroom-powder",
             "tag": "RELAX",
             "custom_image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_26.png",
             "title": "Reishi",
@@ -189,7 +189,7 @@
           "type": "collection",
           "settings": {
             "collection": "the-filthy-lineup",
-            "card_link": "shopify://products/turkey-tail-mushroom-powder",
+            "pdp_link": "shopify://products/turkey-tail-mushroom-powder",
             "tag": "GUT HEALTH",
             "custom_image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_24.png",
             "title": "turkey tail",
@@ -201,7 +201,7 @@
           "type": "collection",
           "settings": {
             "collection": "all-filthy-products",
-            "card_link": "shopify://products/tremella-mushroom-powder",
+            "pdp_link": "shopify://products/tremella-mushroom-powder",
             "tag": "BEAUTY",
             "custom_image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_28.png",
             "title": "TREMELLA",
@@ -213,7 +213,7 @@
           "type": "collection",
           "settings": {
             "collection": "all-filthy-products",
-            "card_link": "shopify://products/chaga-mushroom-powder",
+            "pdp_link": "shopify://products/chaga-mushroom-powder",
             "tag": "IMMUNITY",
             "custom_image": "shopify://shop_images/R5qS0L5OBTcRNMbtL8XzbAOLSkk.png_25.png",
             "title": "CHAGA",
@@ -412,7 +412,7 @@
         "title": "REAL ReSULTS. NO NONSENSE.",
         "subtitle": "",
         "stars_image": "shopify://shop_images/Stars.svg",
-        "rating_text": "4.8/5 Star Average",
+        "rating_text": "5/5 Star Average",
         "section_bg": "#ffffff",
         "card_bg": "#f8f6ef",
         "padding_top_desktop": 100,
@@ -458,7 +458,7 @@
         "step_DixFdq": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/Frame_2147242212_5.png",
+            "image": "shopify://shop_images/Frame_2147242205_1_780a4069-a332-43b0-85d5-4f2cfe59813d.png",
             "title": "DAILY DRIVER (100g)",
             "subtitle": "Best value for every day use",
             "button_text": "Shop All",
@@ -589,7 +589,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
             "top_title": "EVENING",
-            "image": "shopify://shop_images/Frame_2147242697.png",
+            "image": "shopify://shop_images/Frame_2147242703.png",
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
@@ -899,7 +899,7 @@
       "name": "Money Back Section",
       "settings": {
         "title_first": true,
-        "image": "shopify://shop_images/PDP_Badge.svg",
+        "image": "shopify://shop_images/PDP_Badge_2ab8b467-24e9-4319-af84-f07bf7d5c010.svg",
         "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
         "title": "30 day money back guarantee",
         "text_color": "#000000",

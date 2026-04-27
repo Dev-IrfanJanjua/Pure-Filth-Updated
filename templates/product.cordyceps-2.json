@@ -372,6 +372,7 @@
       "type": "product-recommendations",
       "disabled": true,
       "settings": {
+        "show_icon": false,
         "layout": "layout-1",
         "enable_slideshow_overflow": false,
         "heading": "You may also like",
@@ -721,7 +722,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165.png",
             "top_title": "MORNING",
-            "image": "shopify://shop_images/Frame_2147242242_9_6daa9242-03d0-4483-aa15-c7e6042988e4.png",
+            "image": "shopify://shop_images/Frame_2147242698_4.png",
             "title": "FOCUS FIRST. HYDRATE SKIN.",
             "subtitle": "Lion’s Mane + Tremella",
             "button_text": "SHOP MORNING",
@@ -735,7 +736,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_1.png",
             "top_title": "AFTERNOON",
-            "image": "shopify://shop_images/Frame_2147242242_1_d21db629-5c81-4a16-9675-97ba8eba5b67.png",
+            "image": "shopify://shop_images/Frame2147242699_3.png",
             "title": "DEFEND DAILY. ENERGY BOOST.",
             "subtitle": "Chaga + Cordyceps",
             "button_text": "sHOP AFTERNOON",
@@ -749,7 +750,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
             "top_title": "EVENING",
-            "image": "shopify://shop_images/Frame_2147242242_2_fd66dd82-318f-490a-8981-727543d96797.png",
+            "image": "shopify://shop_images/Frame_2147242242_7_837d97bb-e226-4a2c-8c44-4bf3fd6cb904.png",
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
@@ -971,6 +972,24 @@
       "type": "apps",
       "disabled": true,
       "settings": {}
+    },
+    "apps_bjtUE4": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_YzDxG8": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_YzDxG8"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -986,6 +1005,7 @@
     "routine_MaXLqX",
     "testimonial_YNU6TX",
     "pdp_faqs_tiNRVd",
-    "166904322806a89075"
+    "166904322806a89075",
+    "apps_bjtUE4"
   ]
 }

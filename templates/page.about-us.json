@@ -72,34 +72,131 @@
     },
     "1775738908fe2bc606": {
       "type": "apps",
+      "disabled": true,
+      "settings": {}
+    },
+    "cstm_page_banner_PHkq4q": {
+      "type": "cstm-page-banner",
+      "name": "Custom Page Banner",
+      "settings": {
+        "heading": "<h1>OUR STORY</h1>",
+        "font_size": 72,
+        "font_size_mob": 40,
+        "heading_color": "#ffffff",
+        "bg_color": "#ffffff",
+        "desktop_image": "shopify://shop_images/content_2.png",
+        "mobile_image": "shopify://shop_images/content_3.png",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "margin_top": -80,
+        "margin_top_mob": -70
+      }
+    },
+    "about_us_waGfAJ": {
+      "type": "about-us",
+      "name": "About Section",
+      "settings": {
+        "title": "HEY, HELLO, HI.",
+        "description": "<p>Welcome to PURE FILTH, where we don’t just sell mushrooms, we celebrate the little buggers.</p><p>I'm Olly, the guy behind this filthy venture. The journey kicked off while wrestling with my pesky ADHD. My quest for pure, uninterrupted focus led me to Lion’s Mane mushroom, and just like that, a new world opened up. The more I looked, the more I found. From Reishi soothing my stress, to Cordyceps injecting energy into my dopamine deprived days, I was sold.</p><p>What started off as a personal quest morphed into a full-blown mushroom mission. But, not just any mushrooms would do. I spent over two years chasing down the most potent mushrooms out there. Only the finest fruiting bodies would do, no fillers, no grains, no nonsense.</p><p></p>",
+        "image": "shopify://shop_images/Frame_2147241530.png",
+        "author_image": "shopify://shop_images/Ellipse_557.png",
+        "author_name": "Olly Joshi‏",
+        "author_position": "Founder of PURE FILTH",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "section_bg": "#ffffff",
+        "content_bg": "#faf7ed"
+      }
+    },
+    "video_slider_jRnLjB": {
+      "type": "video-slider",
       "blocks": {
-        "tangent_quiz_tangent_iframe_Wyn4iA": {
-          "type": "shopify://apps/tangent-quiz/blocks/tangent-iframe/51b4f65b-1bd1-4373-a212-7af0ce5a9774",
+        "video_yxtCWy": {
+          "type": "video",
           "settings": {
-            "form_id": "69d79abb8ccc13a38640df43",
-            "width": 80,
-            "scroll_margin": 120
+            "video": "shopify://files/videos/Dayle Short v2 Captions.mov",
+            "abs_text": ""
           }
         },
-        "tangent_quiz_tangent_product_recommendation_xcKq6i": {
-          "type": "shopify://apps/tangent-quiz/blocks/tangent-product-recommendation/51b4f65b-1bd1-4373-a212-7af0ce5a9774",
+        "video_DLQNzM": {
+          "type": "video",
           "settings": {
-            "width": 100,
-            "show_variants": true,
-            "custom_css_text_area": ""
+            "video": "shopify://files/videos/1106 Cordyceps.mov",
+            "abs_text": ""
+          }
+        },
+        "video_d7WTct": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Blake Short Version HD Caption.mov",
+            "abs_text": ""
+          }
+        },
+        "video_8bTYbt": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/83a95871889f47709d125af342ca1163.MOV",
+            "abs_text": ""
           }
         }
       },
       "block_order": [
-        "tangent_quiz_tangent_iframe_Wyn4iA",
-        "tangent_quiz_tangent_product_recommendation_xcKq6i"
+        "video_yxtCWy",
+        "video_DLQNzM",
+        "video_d7WTct",
+        "video_8bTYbt"
       ],
-      "settings": {}
+      "name": "Video Slider Formulas",
+      "settings": {
+        "pdp": false,
+        "stars_image": "shopify://shop_images/Frame_36_2.svg",
+        "rating_text": "2,440+ Reviews",
+        "header_text": "<p>what our loyal customers are saying?</p>",
+        "slides_per_view_desktop": 4,
+        "background_color": "rgba(0,0,0,0)",
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "items_primary_color": "",
+        "items_light_color": ""
+      }
+    },
+    "money_back_7Jt6T9": {
+      "type": "money-back",
+      "name": "Money Back Section",
+      "settings": {
+        "title_first": true,
+        "image": "shopify://shop_images/PDP_Badge_2ab8b467-24e9-4319-af84-f07bf7d5c010.svg",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
+        "title": "30 day money back guarantee",
+        "text_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_text": "LEARN MORE",
+        "button_link": "shopify://policies/refund-policy",
+        "button_icon": "shopify://shop_images/Frame_2147242027_e2029eb5-2cf1-4f25-8c0f-ee810464ebb2.svg",
+        "section_bg": "#ffffff",
+        "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 120,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 70,
+        "padding_bottom_mobile": 40
+      }
     }
   },
   "order": [
     "1658995208ad05f95f",
     "9585dbdf-5519-43bd-a4c5-6aa99afe9a31",
-    "1775738908fe2bc606"
+    "1775738908fe2bc606",
+    "cstm_page_banner_PHkq4q",
+    "about_us_waGfAJ",
+    "video_slider_jRnLjB",
+    "money_back_7Jt6T9"
   ]
 }

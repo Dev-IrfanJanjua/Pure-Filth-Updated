@@ -31,13 +31,16 @@
         "heading_KKwpjb",
         "breadcrumbs_EnCfjq"
       ],
+      "disabled": true,
       "settings": {
         "full_width_banner_height": 70,
         "full_width_banner_mobile_height": 40,
         "content_position_horizontal": "align-center text-center",
         "content_position_vertical": "justify-center",
         "video_desktop_external": "",
+        "show_controls_on_video": false,
         "video_mobile_external": "",
+        "show_controls_on_video_mobile": false,
         "section_width": "max-w-full",
         "color_scheme": "scheme-1",
         "color_scheme_for_content": "scheme-6",
@@ -45,26 +48,75 @@
         "spacing_bottom": "2"
       }
     },
+    "cstm_page_banner_CLRXpj": {
+      "type": "cstm-page-banner",
+      "name": "Custom Page Banner",
+      "settings": {
+        "heading": "<h1>FILTHY BLOG</h1>",
+        "font_size": 72,
+        "font_size_mob": 40,
+        "heading_color": "#ffffff",
+        "bg_color": "#ffffff",
+        "desktop_image": "shopify://shop_images/content_4.png",
+        "mobile_image": "shopify://shop_images/content_5.png",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "margin_top": -80,
+        "margin_top_mob": -70
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
+        "cstm_style": true,
         "enable_filtering_by_tags": true,
         "articles_per_page": 16,
         "show_excerpt": false,
         "show_date": true,
         "show_author": true,
-        "content_alignment": "text-center",
+        "content_alignment": "text-start",
         "card_media_aspect_ratio": "1/1",
-        "section_width": "max-w-narrow",
+        "section_width": "max-w-page",
         "color_scheme": "",
         "spacing_grid": "2",
         "spacing_top": "2",
-        "spacing_bottom": "6"
+        "spacing_bottom": "6",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "money_back_BJD6Jb": {
+      "type": "money-back",
+      "name": "Money Back Section",
+      "settings": {
+        "title_first": true,
+        "image": "shopify://shop_images/PDP_Badge_2ab8b467-24e9-4319-af84-f07bf7d5c010.svg",
+        "subtitle": "Try it for 30 days. If you don’t feel it, we’ll refund you.",
+        "title": "30 day money back guarantee",
+        "text_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_text": "LEARN MORE",
+        "button_link": "shopify://policies/refund-policy",
+        "button_icon": "shopify://shop_images/Frame_2147242027_e2029eb5-2cf1-4f25-8c0f-ee810464ebb2.svg",
+        "section_bg": "#ffffff",
+        "Content_bg": "linear-gradient(130.76deg, rgba(221, 204, 255, 1) 2.27%, rgba(255, 191, 193, 0.4) 51.14%, rgba(253, 212, 243, 1) 100.01%)",
+        "button_bg": "#000000",
+        "button_icon_bg": "#ffffff",
+        "padding_top_desktop": 120,
+        "padding_bottom_desktop": 100,
+        "padding_top_mobile": 70,
+        "padding_bottom_mobile": 40
       }
     }
   },
   "order": [
     "banner",
-    "main"
+    "cstm_page_banner_CLRXpj",
+    "main",
+    "money_back_BJD6Jb"
   ]
 }

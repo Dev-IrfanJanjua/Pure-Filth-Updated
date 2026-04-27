@@ -32,9 +32,57 @@
           echo 'image' | placeholder_svg_tag: 'placeholder-svg'
         endif
       -%}
+      <div class="blog-media-abs">
+        {% if article.tags contains "Organic & Halal" %}
+          <span class="article-tag">Organic & Halal</span>
+        {% endif %}
+        {%- if show_date -%}
+          {%- assign date_format = 'theme.date.format_short' | t -%}
+          {%- assign published_at = article.published_at | date: date_format -%}
+          <span class="article-card__date">
+            {{ article.published_at | date: "%d.%m.%Y" }}
+          </span>
+        {%- endif -%}
+      </div>
+
     </div>
 
     {%- assign content_alignment = content_alignment | default: '' -%}
+
+    {%- if show_author or show_date -%}
+      <div class="card-article__meta">
+        <div class="blog_author_info">
+          {% if article.metafields.custom.author_image != blank %}
+            <div class="blog_author_image">
+              {{ article.metafields.custom.author_image.value 
+                | image_url: width: 1600 
+                | image_tag:
+                  widths: '50,100,150,200,250,300,400,500,600,800,1200,1600',
+                  alt: article.title,
+                  loading: 'lazy'
+              }}
+            </div>
+          {% endif %}
+          <span class="article-card__author">
+            {%- if show_author -%}
+              {%- if show_date -%}
+                {{- article_author -}}
+              {%- else -%}
+                {{- 'blog.posted_by' | t: author: article_author -}}
+              {%- endif -%}
+            {%- endif -%}
+          </span>
+        </div>
+
+        {% comment %} {%- if show_date -%}
+          {%- assign date_format = 'theme.date.format_short' | t -%}
+          {%- assign published_at = article.published_at | date: date_format -%}
+          <span class="article-card__date">
+            {{ 'blog.posted_on' | t: date: published_at -}}
+          </span>
+        {%- endif -%} {% endcomment %}
+      </div>
+    {%- endif -%}
 
     <div class="card-article__content {{ content_alignment }}">
       <h3 class="card-article__title h6">
@@ -51,7 +99,7 @@
         {%- endif -%}
       {%- endif -%}
 
-      {%- if show_author or show_date -%}
+      {% comment %} {%- if show_author or show_date -%}
         <div class="card-article__meta">
           <span class="article-card__author">
             {%- if show_author -%}
@@ -71,7 +119,7 @@
             </span>
           {%- endif -%}
         </div>
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
 
       {%- if show_read_more -%}
         <div class="card-article__read-more text--link">

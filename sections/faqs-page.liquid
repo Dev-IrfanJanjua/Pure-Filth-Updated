@@ -1,0 +1,908 @@
+{% comment %}
+  ============================================================
+  PAGE FAQ SECTION — page-faq-section.liquid
+  Senior Shopify Liquid Section
+  ============================================================
+{% endcomment %}
+
+{% style %}
+  /* ── Root & Section ──────────────────────────────────── */
+  .page-faq-section.section-{{ section.id }} {
+    background-color: {{ section.settings.section_bg_color }};
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  /* ── Tabs Bar ────────────────────────────────────────── */
+.page-faqs-tabs-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    margin-bottom: 24px;
+    justify-content: start;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    margin-right: -16px;
+}
+
+  .page-faqs-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 42px;
+    border: 1px solid {{ section.settings.tab_border_color }};
+    background-color: {{ section.settings.tab_bg_color }};
+    color: {{ section.settings.tab_text_color }};
+    cursor: pointer;
+    transition: background-color 0.22s ease, color 0.22s ease, border-color 0.22s ease;
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    min-width: fit-content;
+  }
+
+  .page-faqs-tab-btn:hover,
+  .page-faqs-tab-btn[aria-selected="true"] {
+    background-color: {{ section.settings.tab_active_bg_color }};
+    color: {{ section.settings.tab_active_text_color }};
+    border-color: {{ section.settings.tab_active_bg_color }};
+  }
+
+  /* ── FAQ Blocks ──────────────────────────────────────── */
+  .page-faqs-block {
+    background-color: {{ section.settings.content_bg_color }};
+    border-radius: {{ section.settings.content_border_radius }}px;
+    padding: 40px 16px;
+    margin-bottom: 40px;
+    display: none;
+  }
+
+  .page-faqs-block.is-visible {
+    display: block;
+  }
+
+  /* ── Block Inner Layout ──────────────────────────────── */
+  .page-faqs-block-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .page-faqs-block:last-of-type {
+        margin: 0;
+    }
+
+  /* ── Sticky Block Title ──────────────────────────────── */
+  .page-faqs-block-title-wrap {
+    margin-bottom: 24px;
+  }
+
+  .page-faqs-block-title {
+        color: {{ section.settings.block_title_color }};
+        margin: 0;
+        word-break: break-word;
+        text-align: left;
+        font-family: "PP Formula";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+  }
+
+  /* ── FAQ List ────────────────────────────────────────── */
+  .page-faqs-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* ── FAQ Item ────────────────────────────────────────── */
+  .page-faqs-item {
+    border-bottom: 1px solid {{ section.settings.faq_divider_color }};
+  }
+
+  /* ── FAQ Question Button ─────────────────────────────── */
+  .page-faqs-question {
+    color: {{ section.settings.faq_question_color }};
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0 0 20px 0;
+    text-align: left;
+    cursor: pointer;
+    gap: 16px;
+    transition: color 0.2s ease;
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  .page-faqs-question:hover {
+    color: {{ section.settings.faq_question_hover_color }};
+  }
+
+  /* ── FAQ Chevron ─────────────────────────────────────── */
+  .page-faqs-chevron {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    color: {{ section.settings.faq_question_color }};
+  }
+
+  .page-faqs-item.is-open .page-faqs-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* ── FAQ Answer (animated height) ───────────────────── */
+  .page-faqs-answer-wrap {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+  }
+
+  .page-faqs-item.is-open .page-faqs-answer-wrap {
+    grid-template-rows: 1fr;
+  }
+
+  .page-faqs-answer-inner {
+    overflow: hidden;
+  }
+
+  .page-faqs-answer {
+    padding-bottom: 20px;
+    color: {{ section.settings.faq_answer_color }};
+    font-family: "GT Cinetype";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .page-faqs-answer p:first-child { margin-top: 0; }
+  .page-faqs-answer p:last-child  { margin-bottom: 0; }
+
+
+  @media screen and (min-width: 768px) {
+    .page-faq-section.section-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top_desktop }}px;
+      padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+    }
+
+    .page-faqs-tab-btn {
+        padding: 20px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .page-faqs-block-inner {
+        gap: 40px;
+        align-items: start;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul.page-faqs-list {
+        max-width: 50%;
+        width: 100%;
+    }
+
+    .page-faqs-block{
+        padding: 40px;
+    }
+
+    .page-faqs-tabs-bar{
+        margin-bottom: 40px;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .page-faqs-block-title-wrap {
+      position: sticky;
+      top: 24px;
+      margin-bottom: 0;
+    }
+    .page-faqs-block-title {
+        text-align: center;
+        font-size: 60px;
+        line-height: 66px;
+  }
+
+  .page-faqs-question {
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .page-faqs-answer{
+    font-size: 18px;
+  }
+    
+  }
+
+
+{% endstyle %}
+
+<section
+  class="page-faq-section section-{{ section.id }}"
+  aria-label="FAQ"
+  data-section-id="{{ section.id }}"
+>
+  <div class="page-width">
+    <div class="page-faqs-wrapper">
+
+      {%- comment -%} ── Build tab list from blocks ── {%- endcomment -%}
+      {%- assign faq_blocks = section.blocks | where: "type", "faq_group" -%}
+
+      {%- if faq_blocks.size > 0 -%}
+
+        {%- comment -%} ── TABS BAR ── {%- endcomment -%}
+        <nav class="page-faqs-tabs-bar" role="tablist" aria-label="FAQ categories">
+          <button
+            class="page-faqs-tab-btn"
+            role="tab"
+            aria-selected="true"
+            data-tab-target="all"
+            aria-controls="page-faqs-panel-all"
+          >
+            All
+          </button>
+
+          {%- for block in faq_blocks -%}
+            {%- assign tab_id = 'page-faqs-panel-' | append: block.id -%}
+            <button
+              class="page-faqs-tab-btn"
+              role="tab"
+              aria-selected="false"
+              data-tab-target="{{ block.id }}"
+              aria-controls="{{ tab_id }}"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.tab_label | escape }}
+            </button>
+          {%- endfor -%}
+        </nav>
+
+        {%- comment -%} ── FAQ BLOCKS ── {%- endcomment -%}
+        <div class="page-faqs-panels" id="page-faqs-panel-all">
+
+          {%- for block in faq_blocks -%}
+            {%- assign panel_id = 'page-faqs-panel-' | append: block.id -%}
+            <div
+              class="page-faqs-block is-visible"
+              id="{{ panel_id }}"
+              data-block-id="{{ block.id }}"
+              role="tabpanel"
+            >
+              <div class="page-faqs-block-inner">
+
+                {%- comment -%} ── Sticky Title ── {%- endcomment -%}
+                <div class="page-faqs-block-title-wrap">
+                  <h2 class="page-faqs-block-title">
+                    {{ block.settings.section_title | escape }}
+                  </h2>
+                </div>
+
+                {%- comment -%} ── FAQ Items ── {%- endcomment -%}
+                <ul class="page-faqs-list" aria-label="{{ block.settings.section_title | escape }}">
+
+                  {%- for i in (1..20) -%}
+                    {%- assign q_key = 'faq_q_' | append: i -%}
+                    {%- assign a_key = 'faq_a_' | append: i -%}
+                    {%- assign q_val = block.settings[q_key] -%}
+                    {%- assign a_val = block.settings[a_key] -%}
+
+                    {%- if q_val != blank and a_val != blank -%}
+                      {%- assign item_id = section.id | append: '-' | append: block.id | append: '-faq-' | append: i -%}
+                      <li class="page-faqs-item" data-faq-item>
+                        <button
+                          class="page-faqs-question"
+                          aria-expanded="false"
+                          aria-controls="page-faqs-answer-{{ item_id }}"
+                          id="page-faqs-question-{{ item_id }}"
+                          data-faq-trigger
+                        >
+                          <span>{{ q_val | escape }}</span>
+                          <svg class="page-faqs-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                          </svg>
+                        </button>
+
+                        <div
+                          class="page-faqs-answer-wrap"
+                          id="page-faqs-answer-{{ item_id }}"
+                          role="region"
+                          aria-labelledby="page-faqs-question-{{ item_id }}"
+                        >
+                          <div class="page-faqs-answer-inner">
+                            <div class="page-faqs-answer">
+                              {{ a_val }}
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    {%- endif -%}
+                  {%- endfor -%}
+
+                </ul>
+              </div>{%- comment -%} /.page-faqs-block-inner {%- endcomment -%}
+            </div>{%- comment -%} /.page-faqs-block {%- endcomment -%}
+          {%- endfor -%}
+
+        </div>{%- comment -%} /.page-faqs-panels {%- endcomment -%}
+
+      {%- endif -%}
+
+    </div>{%- comment -%} /.page-faqs-wrapper {%- endcomment -%}
+  </div>{%- comment -%} /.page-width {%- endcomment -%}
+</section>
+
+<script>
+(function () {
+  var section = document.querySelector('.page-faq-section.section-{{ section.id }}');
+  if (!section) return;
+
+  /* ── TAB SWITCHING ─────────────────────────────────── */
+  var tabBtns  = section.querySelectorAll('[data-tab-target]');
+  var allBlocks = section.querySelectorAll('.page-faqs-block');
+
+  function showTab(target) {
+    tabBtns.forEach(function (btn) {
+      btn.setAttribute('aria-selected', btn.dataset.tabTarget === target ? 'true' : 'false');
+    });
+
+    allBlocks.forEach(function (block) {
+      if (target === 'all') {
+        block.classList.add('is-visible');
+      } else {
+        block.classList.toggle('is-visible', block.dataset.blockId === target);
+      }
+    });
+  }
+
+  tabBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      showTab(btn.dataset.tabTarget);
+    });
+  });
+
+  /* ── FAQ ACCORDION ─────────────────────────────────── */
+  section.addEventListener('click', function (e) {
+    var trigger = e.target.closest('[data-faq-trigger]');
+    if (!trigger) return;
+
+    var item    = trigger.closest('[data-faq-item]');
+    var isOpen  = item.classList.contains('is-open');
+
+    /* Close all in same list */
+    var list = item.closest('.page-faqs-list');
+    list.querySelectorAll('[data-faq-item].is-open').forEach(function (openItem) {
+      openItem.classList.remove('is-open');
+      openItem.querySelector('[data-faq-trigger]').setAttribute('aria-expanded', 'false');
+    });
+
+    /* Toggle clicked */
+    if (!isOpen) {
+      item.classList.add('is-open');
+      trigger.setAttribute('aria-expanded', 'true');
+    }
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "FAQ Section",
+  "tag": "section",
+  "class": "page-faq-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Padding — Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding Top (Mobile)",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding Bottom (Mobile)",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Section Padding — Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "label": "Padding Top (Desktop)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "label": "Padding Bottom (Desktop)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Section Background"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section Background Color",
+      "default": "#f5f0e8"
+    },
+    {
+      "type": "header",
+      "content": "Content Block Background"
+    },
+    {
+      "type": "color",
+      "id": "content_bg_color",
+      "label": "Content Block Background Color",
+      "default": "#ede8dc"
+    },
+    {
+      "type": "range",
+      "id": "content_border_radius",
+      "label": "Content Block Border Radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Tab Buttons"
+    },
+    {
+      "type": "color",
+      "id": "tab_bg_color",
+      "label": "Tab Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "tab_text_color",
+      "label": "Tab Text Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color_background",
+      "id": "tab_border_color",
+      "label": "Tab Border Color",
+      "default": "#cccccc"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_bg_color",
+      "label": "Active Tab Background",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_text_color",
+      "label": "Active Tab Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Block Title"
+    },
+    {
+      "type": "color",
+      "id": "block_title_color",
+      "label": "Block Title Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "FAQ Items"
+    },
+    {
+      "type": "color_background",
+      "id": "faq_divider_color",
+      "label": "Divider Color",
+      "default": "#c8c2b4"
+    },
+    {
+      "type": "color",
+      "id": "faq_question_color",
+      "label": "Question Text Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "faq_question_hover_color",
+      "label": "Question Hover Color",
+      "default": "#555555"
+    },
+    {
+      "type": "color",
+      "id": "faq_answer_color",
+      "label": "Answer Text Color",
+      "default": "#444444"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_group",
+      "name": "FAQ Group (Tab)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_label",
+          "label": "Tab Button Label",
+          "default": "About Us"
+        },
+        {
+          "type": "text",
+          "id": "section_title",
+          "label": "Section Title (Sticky)",
+          "default": "ABOUT US"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 1"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_1",
+          "label": "Question 1"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_1",
+          "label": "Answer 1"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 2"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_2",
+          "label": "Question 2"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_2",
+          "label": "Answer 2"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 3"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_3",
+          "label": "Question 3"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_3",
+          "label": "Answer 3"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 4"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_4",
+          "label": "Question 4"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_4",
+          "label": "Answer 4"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 5"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_5",
+          "label": "Question 5"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_5",
+          "label": "Answer 5"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 6"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_6",
+          "label": "Question 6"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_6",
+          "label": "Answer 6"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 7"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_7",
+          "label": "Question 7"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_7",
+          "label": "Answer 7"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 8"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_8",
+          "label": "Question 8"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_8",
+          "label": "Answer 8"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 9"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_9",
+          "label": "Question 9"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_9",
+          "label": "Answer 9"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 10"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_10",
+          "label": "Question 10"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_10",
+          "label": "Answer 10"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 11"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_11",
+          "label": "Question 11"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_11",
+          "label": "Answer 11"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 12"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_12",
+          "label": "Question 12"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_12",
+          "label": "Answer 12"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 13"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_13",
+          "label": "Question 13"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_13",
+          "label": "Answer 13"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 14"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_14",
+          "label": "Question 14"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_14",
+          "label": "Answer 14"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 15"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_15",
+          "label": "Question 15"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_15",
+          "label": "Answer 15"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 16"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_16",
+          "label": "Question 16"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_16",
+          "label": "Answer 16"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 17"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_17",
+          "label": "Question 17"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_17",
+          "label": "Answer 17"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 18"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_18",
+          "label": "Question 18"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_18",
+          "label": "Answer 18"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 19"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_19",
+          "label": "Question 19"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_19",
+          "label": "Answer 19"
+        },
+        {
+          "type": "header",
+          "content": "FAQ Item 20"
+        },
+        {
+          "type": "text",
+          "id": "faq_q_20",
+          "label": "Question 20"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_a_20",
+          "label": "Answer 20"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Section",
+      "category": "Pages",
+      "blocks": [
+        {
+          "type": "faq_group",
+          "settings": {
+            "tab_label": "About Pure Filth",
+            "section_title": "ABOUT PURE FILTH",
+            "faq_q_1": "Are your mushrooms third-party tested?",
+            "faq_a_1": "<p>Yes, all our mushroom products are independently tested by certified third-party labs to ensure purity and potency.</p>",
+            "faq_q_2": "How are your mushroom powders made?",
+            "faq_a_2": "<p>Our powders are made using a dual-extraction process to capture both water-soluble and alcohol-soluble compounds for maximum benefit.</p>",
+            "faq_q_3": "Do your supplements have any alcohol in them?",
+            "faq_a_3": "<p>No, our final products contain no alcohol. Alcohol is only used during the extraction process and is fully evaporated before packaging.</p>",
+            "faq_q_4": "Are your mushrooms legal?",
+            "faq_a_4": "<p>Absolutely. We only use functional mushroom species that are fully legal everywhere.</p>",
+            "faq_q_5": "Are Pure Filth mushrooms vegan and gluten-free?",
+            "faq_a_5": "<p>Yes! All our products are 100% vegan and certified gluten-free.</p>"
+          }
+        },
+        {
+          "type": "faq_group",
+          "settings": {
+            "tab_label": "Order Information",
+            "section_title": "ORDER INFORMATION",
+            "faq_q_1": "How long does shipping take?",
+            "faq_a_1": "<p>Standard shipping takes 3–5 business days. Express options are available at checkout.</p>",
+            "faq_q_2": "What's your return policy?",
+            "faq_a_2": "<p>We offer a 30-day satisfaction guarantee. If you're not happy, contact us for a full refund or exchange.</p>",
+            "faq_q_3": "Where do you ship to?",
+            "faq_a_3": "<p>We currently ship to the US, Canada, UK, and Australia. More countries coming soon.</p>",
+            "faq_q_4": "How can I track my order?",
+            "faq_a_4": "<p>You'll receive a tracking link via email as soon as your order ships.</p>",
+            "faq_q_5": "What payment methods do you accept?",
+            "faq_a_5": "<p>We accept all major credit cards, PayPal, Apple Pay, and Google Pay.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -152,8 +152,8 @@
                           </p>
                         {%- endif -%}
                       </div>
-                      <span class="cart-drawer__total-price" data-cart-total-price="{{- cart.total_price -}}">
-                        {{- cart.total_price | money_with_currency -}}
+                      <span class="cart__total-price" data-cart-total-price="{{- cart.total_price | money_with_currency -}}">
+                           {{- cart.total_price | money_with_currency -}}
                       </span>
                     </div>
                     {%- if cart.cart_level_discount_applications.size > 0 -%}

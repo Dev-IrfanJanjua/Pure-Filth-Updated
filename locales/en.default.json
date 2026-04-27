@@ -204,7 +204,7 @@
   },
   "customer": {
     "account": {
-      "label": "Account",
+      "label": "Login",
       "title": "Welcome, {{first_name}}!",
       "overview": "Account overview",
       "addresses": "Addresses",

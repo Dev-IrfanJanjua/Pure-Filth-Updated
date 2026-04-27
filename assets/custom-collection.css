@@ -31,7 +31,7 @@
 
 span.cstm-product_tag {
     position: absolute;
-    top: 17px;
+    top: 14px;
     left: 50%;
     transform: translatex(-50%);
     font-family: PP Formula;
@@ -494,6 +494,7 @@ h2.custom-collection__title {
 
 .collection_blocks__inner {
     justify-content: center;
+    max-width:330px;
 }
 
 a.collection_blocks__item {

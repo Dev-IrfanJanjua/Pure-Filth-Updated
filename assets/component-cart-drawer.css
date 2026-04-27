@@ -214,7 +214,7 @@ body:has(cart-drawer.is-visible) {
   margin: 0;
 }
 
-.cart-drawer__total-price {
+.cart__total-price {
   font-family: var(--font-body-family);
   font-size: 2.1rem;
   font-weight: 600;
@@ -383,4 +383,19 @@ cart-drawer .cart-item__price {
   .cart-drawer__summary-tax {
     font-size: var(--font-size-static-small);
   }
+
+
+}
+
+
+@media screen and (max-width: 786px) {
+      .cart-drawer__summary-total {
+    letter-spacing: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 0 2.4rem;
+    max-height: max-content;
+    gap: .4rem;
+}
 }

@@ -380,6 +380,7 @@
       "type": "product-recommendations",
       "disabled": true,
       "settings": {
+        "show_icon": false,
         "layout": "layout-1",
         "enable_slideshow_overflow": false,
         "heading": "You may also like",
@@ -726,7 +727,7 @@
           "settings": {
             "header_icon": "shopify://shop_images/Frame_2147229165_2.png",
             "top_title": "EVENING",
-            "image": "shopify://shop_images/Frame_2147242242_2_fd66dd82-318f-490a-8981-727543d96797.png",
+            "image": "shopify://shop_images/centered_Image.png",
             "title": "CALM DOWN. RESET GUT.",
             "subtitle": "Reishi + Turkey Tail",
             "button_text": "SHOP EVENING",
@@ -752,6 +753,117 @@
         "cards_bg": "#ffeeee",
         "padding_top_desktop": 80,
         "padding_bottom_desktop": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "testimonial_fUADF7": {
+      "type": "testimonial",
+      "blocks": {
+        "testimonial_XeVEgy": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "5 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Andy.B"
+          }
+        },
+        "testimonial_Pypeb9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_WbcbR3": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-5_430x_f0087f54-4358-4333-984f-b2a5a5d5d048.webp",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "5 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_An7pAA": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-2_430x_934aaa35-4713-49cc-acbd-f049021719ab.webp",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "5 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
+        },
+        "testimonial_pEw7y7": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "5 rating",
+            "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
+            "name": "Andy.B"
+          }
+        },
+        "testimonial_DJ7QwX": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_160813.png",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "4.8 rating",
+            "message": "\"I normally struggle to concentrate for\nlong periods when editing and require\n20 coffees to get through it (giving me\njitters). This Lion's Mane is a game\nchanger for me No jitters, just laser\nfocus.\"",
+            "name": "Max.F"
+          }
+        },
+        "testimonial_FPVeMg": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-5_430x_f0087f54-4358-4333-984f-b2a5a5d5d048.webp",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "5 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_mYE8rM": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-2_430x_934aaa35-4713-49cc-acbd-f049021719ab.webp",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "5 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_XeVEgy",
+        "testimonial_Pypeb9",
+        "testimonial_WbcbR3",
+        "testimonial_An7pAA",
+        "testimonial_pEw7y7",
+        "testimonial_DJ7QwX",
+        "testimonial_FPVeMg",
+        "testimonial_mYE8rM"
+      ],
+      "name": "Testimonial Slider",
+      "settings": {
+        "title_first": false,
+        "section_bg": "",
+        "card_bg": "#ffeeee",
+        "title": "Filthy Reviews",
+        "reviews_img": "shopify://shop_images/Stars.png",
+        "reviews_title": "4.8 average rating",
+        "reviews_subtitle": "",
+        "slides_per_view": 3.5,
+        "center_slide": true,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 100,
         "padding_top_mobile": 40,
         "padding_bottom_mobile": 40
       }
@@ -839,6 +951,7 @@
         "testimonial_7TAXcK",
         "testimonial_tedqX9"
       ],
+      "disabled": true,
       "name": "Testimonial Slider",
       "settings": {
         "title_first": false,
@@ -948,6 +1061,24 @@
       "type": "apps",
       "disabled": true,
       "settings": {}
+    },
+    "apps_fxxP3B": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_RpVbVg": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_RpVbVg"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -961,8 +1092,10 @@
     "money_back_aG9pad",
     "video_slider_KjYwtX",
     "routine_MaXLqX",
+    "testimonial_fUADF7",
     "testimonial_kNnJeW",
     "pdp_faqs_QE6B9r",
-    "166904322806a89075"
+    "166904322806a89075",
+    "apps_fxxP3B"
   ]
 }

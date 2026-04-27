@@ -1,0 +1,358 @@
+{% style %}
+.section-{{ section.id }} {
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  background-color: {{ section.settings.section_bg }};
+}
+
+.section-{{ section.id }} .about-content {
+    background-color: {{ section.settings.content_bg }};
+    max-width: 50%;
+    width: 100%;
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+h2.about-title {
+    color: #000;
+    text-align: center;
+    font-family: "PP Formula";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.about-desc p {
+    color: #000;
+    font-family: "GT Cinetype";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0 0 36px;
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 50px;
+}
+
+h3.about-author_name {
+    color: var(--Rich-Black, #000);
+    font-family: "GT Cinetype";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0;
+}
+
+p.about-author_position {
+    color: #464646;
+    text-align: center;
+    font-family: "GT Cinetype";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0 0;
+}
+
+.about-author_info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-desc p:last-child {
+    margin: 0;
+}
+
+.about-author_img {
+    max-width: 70px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.about-wrapper-body {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.about-author_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-image {
+    max-width: calc(50% - 40px);
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-desc {
+    overflow-y: scroll;
+    max-height: 420px;
+    position: relative;
+    margin-right: -40px;
+    padding-right: 40px;
+}
+
+.about-desc::after {
+  content: "";
+  position: sticky;
+  display: block;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 20%; /* your required fade area */
+  pointer-events: none;
+
+  /* smooth opacity fade */
+  background: linear-gradient(
+    to bottom,
+    rgba(250, 247, 238, 0) 0%,
+    rgba(250, 247, 238, 0.4) 40%,
+    rgba(250, 247, 238, 0.8) 70%,
+    rgba(250, 247, 238, 1) 100%
+  );
+}
+
+.about-desc::after {
+    height: 75px;
+    background: linear-gradient(
+    to bottom,
+    rgba(250, 247, 238, 0) 0%,
+    rgba(250, 247, 238, 0.3) 20%,
+    rgba(250, 247, 238, 0.6) 20%,
+    rgba(250, 247, 238, 1) 90%
+  );
+}
+
+@media (max-width: 768px) {
+  .section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  .about-wrapper-body {
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-image {
+    max-width: 100%;
+}
+
+.section-{{ section.id }} .about-content {
+    max-width: 100%;
+    padding: 40px 11px;
+}
+
+.about-desc {
+    max-height: 420px;
+    margin-right: -11px;
+    padding-right: 11px;
+}
+
+.about-desc p {
+    font-size: 16px;
+}
+
+h2.about-title {
+    font-size: 32px;
+    line-height: normal;
+}
+
+}
+{% endstyle %}
+
+<section class="about-section section-{{ section.id }}">
+    <div class="page-width">
+        <div class="about-wrapper">
+
+            <div class="about-head">
+                {% if section.settings.title != blank %}
+                    <h2 class="about-title">{{ section.settings.title }}</h2>
+                {% endif %}
+            </div>
+
+            <div class="about-wrapper-body">
+
+                <div class="about-image">
+                    {% if section.settings.image != blank %}
+                        {{ section.settings.image | image_url: width: 1600 | image_tag:
+                            widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                            alt: "image",
+                            loading: "lazy"
+                        }}
+                    {% endif %}
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-desc">
+                        {% if section.settings.description != blank %}
+                            {{ section.settings.description }}
+                        {% endif %}
+                    </div>
+
+                    <div class="about-info">
+
+                        <div class="about-author_img">
+                            {% if section.settings.author_image != blank %}
+                                {{ section.settings.author_image | image_url: width: 1600 | image_tag:
+                                    widths: '50, 100, 150, 200, 250, 300, 400, 500,600,1440',
+                                    alt: "image",
+                                    loading: "lazy"
+                                }}
+                            {% endif %}
+                        </div>
+
+                        <div class="about-author_info">
+
+                            {% if section.settings.author_name != blank %}
+                                <h3 class="about-author_name">
+                                    {{ section.settings.author_name }}
+                                </h3>
+                            {% endif %}
+
+                            {% if section.settings.author_position != blank %}
+                                <p class="about-author_position">
+                                    {{ section.settings.author_position }}
+                                </p>
+                            {% endif %}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_image",
+      "label": "Author Image"
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Author Name"
+    },
+    {
+      "type": "text",
+      "id": "author_position",
+      "label": "Author Position"
+    },
+
+    {
+      "type": "header",
+      "content": "Spacing Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "label": "Padding Top (Desktop)",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "label": "Padding Bottom (Desktop)",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding Top (Mobile)",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding Bottom (Mobile)",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 30
+    },
+
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "content_bg",
+      "label": "Content Background",
+      "default": "#f7f7f7"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Section"
+    }
+  ]
+}
+{% endschema %}

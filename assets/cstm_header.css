@@ -165,6 +165,7 @@
     font-family: 'GT Cinetype';
     letter-spacing: 0;
     line-height: 100%;
+    text-transform: uppercase;
 }
 
 .cstm_header li.header__utils-item.header__utils-item--cart.header__utils-item--mobile a {

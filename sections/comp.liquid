@@ -197,26 +197,53 @@ tr.row_no_border td {
 
 /* wrapper allows horizontal scroll */
 
-.comparison_table-wrapper{
-  overflow-x:auto;
+/* .comparison_table-wrapper {
+  overflow-x: auto;
   padding: 0;
   scrollbar-width: thin;
   scrollbar-color: #FFBFC1 #f0f0f0;
+
+  overflow-x: scroll; 
 }
 
 .comparison_table-wrapper::-webkit-scrollbar {
-    height: 10px; /* horizontal scrollbar height */
+  height: 10px;
 }
-
 .comparison_table-wrapper::-webkit-scrollbar-track {
-    background: #f0f0f0; /* track color */
-    margin: 5px 0; /* vertical margins on track */
+  background: #f0f0f0;
+  margin: 5px 0;
+}
+.comparison_table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #FFBFC1;
+  border-radius: 5px;
+  border: 1px solid #FFBFC1;
+} */
+
+.comparison_table-wrapper {
+  overflow-x: scroll;
+  padding: 0;
+  padding-bottom: 4px;
+  position: relative;
+
+  scrollbar-width: thin;
+  scrollbar-color: #FFBFC1 #f0f0f0;
+
+  /* iOS Safari - force scrollbar visible */
+  -webkit-overflow-scrolling: auto; /* 'auto' instead of 'touch' */
 }
 
+.comparison_table-wrapper::-webkit-scrollbar {
+  height: 10px;
+  -webkit-appearance: none; /* force webkit to render scrollbar */
+}
+.comparison_table-wrapper::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
 .comparison_table-wrapper::-webkit-scrollbar-thumb {
-    background-color: #FFBFC1; /* scrollbar color */
-    border-radius: 5px;
-    border: 1px solid #FFBFC1; /* optional: adds space around thumb */
+  background-color: #FFBFC1;
+  border-radius: 5px;
+  -webkit-appearance: none;
 }
 
 /* 4 columns but viewport shows 3 */
@@ -414,6 +441,30 @@ td.col-feature {
   </div>
 </section>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const wrapper = document.querySelector('.comparison_table-wrapper');
+  if (!wrapper) return;
+
+  let scrollTimer = null;
+
+  wrapper.addEventListener('scroll', function () {
+    // Add class while scrolling → browser default scrollbar
+    wrapper.classList.add('is-scrolling');
+
+    // Clear previous timer
+    clearTimeout(scrollTimer);
+
+    // After scroll stops → remove class, custom scrollbar returns
+    scrollTimer = setTimeout(function () {
+      wrapper.classList.remove('is-scrolling');
+    }, 1000); // 1 second after scroll stops
+  });
+});
+</script>
+
+
 {% schema %}
 {
   "name": "Comparison (Scrollable)",
@@ -579,3 +630,4 @@ td.col-feature {
   ]
 }
 {% endschema %}
+

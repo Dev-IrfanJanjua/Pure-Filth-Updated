@@ -380,6 +380,7 @@
       "type": "product-recommendations",
       "disabled": true,
       "settings": {
+        "show_icon": false,
         "layout": "layout-1",
         "enable_slideshow_overflow": false,
         "heading": "You may also like",
@@ -828,6 +829,7 @@
         "testimonial_tLcYR6",
         "testimonial_CfPRBG"
       ],
+      "disabled": true,
       "name": "Testimonial Slider",
       "settings": {
         "title_first": true,
@@ -845,20 +847,20 @@
         "padding_bottom_mobile": 40
       }
     },
-    "testimonial_YNU6TX": {
+    "testimonial_mUJjTt": {
       "type": "testimonial",
       "blocks": {
-        "testimonial_FT3Gtf": {
+        "testimonial_jjkKXw": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
             "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
+            "stars_title": "5 rating",
             "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
-            "name": "Steph.G"
+            "name": "Andy.B"
           }
         },
-        "testimonial_AmmcKy": {
+        "testimonial_eM4WcP": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/Rectangle_160813.png",
@@ -868,37 +870,37 @@
             "name": "Max.F"
           }
         },
-        "testimonial_cDn9rc": {
+        "testimonial_dGg6NX": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "image": "shopify://shop_images/Image-5_430x_f0087f54-4358-4333-984f-b2a5a5d5d048.webp",
             "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
+            "stars_title": "5 rating",
+            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
+            "name": "Steph.G"
+          }
+        },
+        "testimonial_ipgmNW": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-2_430x_934aaa35-4713-49cc-acbd-f049021719ab.webp",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "5 rating",
             "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
-            "name": "Steph.G"
+            "name": "Ben.N"
           }
         },
-        "testimonial_ce4Ne3": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
-            "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
-            "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
-            "name": "Steph.G"
-          }
-        },
-        "testimonial_BGwVYX": {
+        "testimonial_yN33HW": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/0bc231062ab412f6f8cb5de7fa21b9b098166485.jpg",
             "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
+            "stars_title": "5 rating",
             "message": "\"Perfect way to start my day, I mix my\nmushrooms to get all the benefits in one\nsupercharged morning coffee.\"",
-            "name": "Steph.G"
+            "name": "Andy.B"
           }
         },
-        "testimonial_wgWXkb": {
+        "testimonial_xtTBL6": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/Rectangle_160813.png",
@@ -908,35 +910,45 @@
             "name": "Max.F"
           }
         },
-        "testimonial_jkYx8Y": {
+        "testimonial_PEXryp": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_160813_1.png",
+            "image": "shopify://shop_images/Image-5_430x_f0087f54-4358-4333-984f-b2a5a5d5d048.webp",
             "stars": "shopify://shop_images/Stars.png",
-            "stars_title": "4.8 rating",
+            "stars_title": "5 rating",
             "message": "\"Always struggled to concentrate due to\nhaving ADHD. This is no longer the\ncase. Never knew it was possible to\nconcentrate like this!\"",
             "name": "Steph.G"
+          }
+        },
+        "testimonial_9zyHF9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Image-2_430x_934aaa35-4713-49cc-acbd-f049021719ab.webp",
+            "stars": "shopify://shop_images/Stars.png",
+            "stars_title": "5 rating",
+            "message": "\"Since moving to Dubai, my gut hasn't\nbeen happy. I’ve tested multiple\ndifferent supplements and none have\nworked until I tried Pure Filth’s Turkey\nTail. It’s amazing!\"",
+            "name": "Ben.N"
           }
         }
       },
       "block_order": [
-        "testimonial_FT3Gtf",
-        "testimonial_AmmcKy",
-        "testimonial_cDn9rc",
-        "testimonial_ce4Ne3",
-        "testimonial_BGwVYX",
-        "testimonial_wgWXkb",
-        "testimonial_jkYx8Y"
+        "testimonial_jjkKXw",
+        "testimonial_eM4WcP",
+        "testimonial_dGg6NX",
+        "testimonial_ipgmNW",
+        "testimonial_yN33HW",
+        "testimonial_xtTBL6",
+        "testimonial_PEXryp",
+        "testimonial_9zyHF9"
       ],
-      "disabled": true,
       "name": "Testimonial Slider",
       "settings": {
         "title_first": true,
         "section_bg": "",
         "card_bg": "#e2f3ff",
         "title": "Filthy Reviews",
-        "reviews_img": "shopify://shop_images/Frame_36_1.svg",
-        "reviews_title": "<strong>4.8</strong> average rating",
+        "reviews_img": "shopify://shop_images/Stars.png",
+        "reviews_title": "4.8 average rating",
         "reviews_subtitle": "",
         "slides_per_view": 3.5,
         "center_slide": true,
@@ -1127,6 +1139,24 @@
       "type": "apps",
       "disabled": true,
       "settings": {}
+    },
+    "apps_a3QHbX": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_6wfDhT": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_6wfDhT"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -1141,9 +1171,10 @@
     "video_slider_x93pnd",
     "routine_MaXLqX",
     "testimonial_4ehawY",
-    "testimonial_YNU6TX",
+    "testimonial_mUJjTt",
     "pdp_faqs_JkMmhm",
     "pdp_faqs_tiNRVd",
-    "166904322806a89075"
+    "166904322806a89075",
+    "apps_a3QHbX"
   ]
 }

@@ -27,7 +27,9 @@
         },
         "49dec847-5c39-4243-98ff-d31ae7b80081": {
           "type": "featured_image",
-          "settings": {}
+          "settings": {
+            "media_aspect_ratio": "16/9"
+          }
         },
         "86ec49f0-5185-4270-96d6-23ad2d7aecdc": {
           "type": "content",
@@ -41,9 +43,15 @@
         "86ec49f0-5185-4270-96d6-23ad2d7aecdc"
       ],
       "settings": {
-        "show_back_to_blog_button": true,
-        "show_socials_sharing": true,
-        "comments_per_page": 5
+        "cstm_style": true,
+        "show_back_to_blog_button": false,
+        "show_socials_sharing": false,
+        "comments_per_page": 5,
+        "color_scheme_comments": "",
+        "section_width": "max-w-page",
+        "color_scheme": "",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
       }
     }
   },

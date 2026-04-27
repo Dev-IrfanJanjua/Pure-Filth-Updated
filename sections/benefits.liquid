@@ -220,10 +220,14 @@
 }
 
 .section-{{ section.id }} .benefits-image {
-    max-width: 100%;
+    max-width: 360px;
     width: 100%;
     position: static;
-    transform: translatex(8%);
+    transform: translatex(11%);
+    max-height:360px;
+}
+.section-{{ section.id }} .benefits-image img {
+  height:auto;
 }
 
 .section-{{ section.id }} .benefits-content{
@@ -236,7 +240,6 @@
 .section-{{ section.id }} .benefits-title {
     font-size: 32px;
     line-height: 100%;
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -277,6 +280,9 @@
 .section-{{ section.id }} .benefits-section-img-mob{
     display: block !important;
 }
+
+
+
 
 }
 
