@@ -9,24 +9,8 @@
  */
 {
   "sections": {
-    "cstm_page_banner_HzHVWc": {
-      "type": "cstm-page-banner",
-      "name": "Custom Page Banner",
-      "settings": {
-        "heading": "CONTACT US",
-        "heading_color": "#ffffff",
-        "bg_color": "#ffffff",
-        "desktop_image": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_7.png",
-        "mobile_image": "shopify://shop_images/2cwEDMWwyC3XC0gCv6vUk8XB5P0.png_8.png",
-        "padding_top_desktop": 0,
-        "padding_bottom_desktop": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0
-      }
-    },
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "breadcrumbs": true,
         "show_page_title": true,
@@ -118,7 +102,6 @@
         "field_CQfU3F",
         "field_DT6Mbx"
       ],
-      "disabled": true,
       "settings": {
         "section_width": "max-w-narrower",
         "color_scheme": "scheme-1",
@@ -138,27 +121,11 @@
         "spacing_top": "2",
         "spacing_bottom": "2"
       }
-    },
-    "contact_section_eTyhac": {
-      "type": "contact-section",
-      "name": "Custom Contact Section",
-      "settings": {
-        "section_title": "GET IN TOUCH",
-        "content_title": "SEND US A MESSAGE",
-        "section_bg": "#ffffff",
-        "wrapper_bg": "#faf7ed",
-        "padding_top_desktop": 100,
-        "padding_bottom_desktop": 100,
-        "padding_top_mobile": 40,
-        "padding_bottom_mobile": 40
-      }
     }
   },
   "order": [
-    "cstm_page_banner_HzHVWc",
     "main",
     "form",
-    "map",
-    "contact_section_eTyhac"
+    "map"
   ]
 }

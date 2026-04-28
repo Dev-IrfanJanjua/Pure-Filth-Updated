@@ -4941,3 +4941,9 @@ a.drawer__subs-link {
     font-family: "GT Cinetype" !important;
     font-weight: 600 !important;
 }
+
+.jm-cluster.jm-review-widget-header__summary-section {
+    max-width: 660px !important;
+    justify-content: unset !important;
+    margin: 0 auto !important;
+}
