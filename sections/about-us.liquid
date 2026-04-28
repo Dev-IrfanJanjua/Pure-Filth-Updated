@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 60px;
+    gap: 30px;
 }
 
 h2.about-title {
@@ -119,6 +119,7 @@ p.about-author_position {
     padding-right: 40px;
 }
 
+{% comment %}
 .about-desc::after {
   content: "";
   position: sticky;
@@ -149,6 +150,8 @@ p.about-author_position {
     rgba(250, 247, 238, 1) 90%
   );
 }
+
+{% endcomment %}
 
 @media (max-width: 768px) {
   .section-{{ section.id }} {
