@@ -542,6 +542,7 @@
         },
         "faq_group_TfTbrF": {
           "type": "faq_group",
+          "disabled": true,
           "settings": {
             "tab_label": "Order Information",
             "section_title": "ORDER INFORMATION",
